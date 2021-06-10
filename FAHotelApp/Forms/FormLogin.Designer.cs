@@ -50,6 +50,7 @@
 			this.timer1 = new System.Windows.Forms.Timer(this.components);
 			this.lbTime = new System.Windows.Forms.Label();
 			this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
+			this.btnExit = new Guna.UI2.WinForms.Guna2Button();
 			this.guna2Panel2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
@@ -68,6 +69,7 @@
 			// guna2Panel2
 			// 
 			this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
+			this.guna2Panel2.Controls.Add(this.btnExit);
 			this.guna2Panel2.Controls.Add(this.cbUserType);
 			this.guna2Panel2.Controls.Add(this.label5);
 			this.guna2Panel2.Controls.Add(this.label4);
@@ -352,6 +354,28 @@
 			this.guna2PictureBox2.TabStop = false;
 			this.guna2PictureBox2.UseTransparentBackground = true;
 			// 
+			// btnExit
+			// 
+			this.btnExit.Animated = true;
+			this.btnExit.BackColor = System.Drawing.Color.Transparent;
+			this.btnExit.BorderRadius = 10;
+			this.btnExit.CheckedState.Parent = this.btnExit;
+			this.btnExit.CustomImages.Parent = this.btnExit;
+			this.btnExit.DisabledState.Parent = this.btnExit;
+			this.btnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(201)))), ((int)(((byte)(71)))));
+			this.btnExit.Font = new System.Drawing.Font("Montserrat", 8.999999F);
+			this.btnExit.ForeColor = System.Drawing.Color.White;
+			this.btnExit.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+			this.btnExit.HoverState.Parent = this.btnExit;
+			this.btnExit.Location = new System.Drawing.Point(114, 510);
+			this.btnExit.Name = "btnExit";
+			this.btnExit.ShadowDecoration.Parent = this.btnExit;
+			this.btnExit.Size = new System.Drawing.Size(336, 39);
+			this.btnExit.TabIndex = 11;
+			this.btnExit.Text = "Exit";
+			this.btnExit.UseTransparentBackground = true;
+			this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+			// 
 			// FormLogin
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -400,5 +424,6 @@
 		private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
 		private System.Windows.Forms.Timer timer1;
 		private System.Windows.Forms.Label lbTime;
+		private Guna.UI2.WinForms.Guna2Button btnExit;
 	}
 }

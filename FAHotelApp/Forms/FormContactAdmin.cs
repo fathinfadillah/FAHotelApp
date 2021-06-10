@@ -42,8 +42,8 @@ namespace FAHotelApp
 			try
 			{
 				SmtpClient clientDetails = new SmtpClient();
-				clientDetails.Port = Convert.ToInt32(txtServerPortNo.Text.Trim());
-				clientDetails.Host = txtSMPTServer.Text.Trim();
+				clientDetails.Port = Convert.ToInt32(cbServerPortNo.Text.Trim());
+				clientDetails.Host = cbSMPTServer.Text.Trim();
 				clientDetails.EnableSsl = tsSSL.Checked;
 				clientDetails.DeliveryMethod = SmtpDeliveryMethod.Network;
 				clientDetails.UseDefaultCredentials = false;

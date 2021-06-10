@@ -33,11 +33,17 @@
 			this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
 			this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
 			this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+			this.cbSMPTServer = new Guna.UI2.WinForms.Guna2ComboBox();
+			this.cbServerPortNo = new Guna.UI2.WinForms.Guna2ComboBox();
+			this.label1 = new System.Windows.Forms.Label();
+			this.tsSSL = new Guna.UI2.WinForms.Guna2ToggleSwitch();
+			this.txtRecipientEmail = new Guna.UI2.WinForms.Guna2TextBox();
+			this.txtSubject = new Guna.UI2.WinForms.Guna2TextBox();
+			this.btnBack = new Guna.UI2.WinForms.Guna2Button();
+			this.txtSenderPassword = new Guna.UI2.WinForms.Guna2TextBox();
 			this.txtBody = new Guna.UI2.WinForms.Guna2TextBox();
 			this.lbTime = new System.Windows.Forms.Label();
 			this.lbDate = new System.Windows.Forms.Label();
-			this.txtServerPortNo = new Guna.UI2.WinForms.Guna2TextBox();
-			this.txtSMPTServer = new Guna.UI2.WinForms.Guna2TextBox();
 			this.label5 = new System.Windows.Forms.Label();
 			this.label4 = new System.Windows.Forms.Label();
 			this.btnSend = new Guna.UI2.WinForms.Guna2Button();
@@ -46,12 +52,6 @@
 			this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
 			this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
 			this.timer1 = new System.Windows.Forms.Timer(this.components);
-			this.txtSenderPassword = new Guna.UI2.WinForms.Guna2TextBox();
-			this.btnBack = new Guna.UI2.WinForms.Guna2Button();
-			this.txtSubject = new Guna.UI2.WinForms.Guna2TextBox();
-			this.txtRecipientEmail = new Guna.UI2.WinForms.Guna2TextBox();
-			this.tsSSL = new Guna.UI2.WinForms.Guna2ToggleSwitch();
-			this.label1 = new System.Windows.Forms.Label();
 			this.guna2Panel2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
 			this.SuspendLayout();
@@ -69,6 +69,8 @@
 			// guna2Panel2
 			// 
 			this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
+			this.guna2Panel2.Controls.Add(this.cbSMPTServer);
+			this.guna2Panel2.Controls.Add(this.cbServerPortNo);
 			this.guna2Panel2.Controls.Add(this.label1);
 			this.guna2Panel2.Controls.Add(this.tsSSL);
 			this.guna2Panel2.Controls.Add(this.txtRecipientEmail);
@@ -78,8 +80,6 @@
 			this.guna2Panel2.Controls.Add(this.txtBody);
 			this.guna2Panel2.Controls.Add(this.lbTime);
 			this.guna2Panel2.Controls.Add(this.lbDate);
-			this.guna2Panel2.Controls.Add(this.txtServerPortNo);
-			this.guna2Panel2.Controls.Add(this.txtSMPTServer);
 			this.guna2Panel2.Controls.Add(this.label5);
 			this.guna2Panel2.Controls.Add(this.label4);
 			this.guna2Panel2.Controls.Add(this.btnSend);
@@ -91,6 +91,193 @@
 			this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
 			this.guna2Panel2.Size = new System.Drawing.Size(1040, 666);
 			this.guna2Panel2.TabIndex = 5;
+			// 
+			// cbSMPTServer
+			// 
+			this.cbSMPTServer.BackColor = System.Drawing.Color.Transparent;
+			this.cbSMPTServer.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
+			this.cbSMPTServer.BorderRadius = 6;
+			this.cbSMPTServer.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+			this.cbSMPTServer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.cbSMPTServer.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.cbSMPTServer.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.cbSMPTServer.FocusedState.Parent = this.cbSMPTServer;
+			this.cbSMPTServer.Font = new System.Drawing.Font("Segoe UI", 10F);
+			this.cbSMPTServer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
+			this.cbSMPTServer.HoverState.Parent = this.cbSMPTServer;
+			this.cbSMPTServer.ItemHeight = 30;
+			this.cbSMPTServer.Items.AddRange(new object[] {
+            "smtp.gmail.com"});
+			this.cbSMPTServer.ItemsAppearance.Parent = this.cbSMPTServer;
+			this.cbSMPTServer.Location = new System.Drawing.Point(114, 302);
+			this.cbSMPTServer.Name = "cbSMPTServer";
+			this.cbSMPTServer.ShadowDecoration.Parent = this.cbSMPTServer;
+			this.cbSMPTServer.Size = new System.Drawing.Size(336, 36);
+			this.cbSMPTServer.StartIndex = 0;
+			this.cbSMPTServer.TabIndex = 3;
+			// 
+			// cbServerPortNo
+			// 
+			this.cbServerPortNo.BackColor = System.Drawing.Color.Transparent;
+			this.cbServerPortNo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
+			this.cbServerPortNo.BorderRadius = 6;
+			this.cbServerPortNo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+			this.cbServerPortNo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.cbServerPortNo.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.cbServerPortNo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.cbServerPortNo.FocusedState.Parent = this.cbServerPortNo;
+			this.cbServerPortNo.Font = new System.Drawing.Font("Segoe UI", 10F);
+			this.cbServerPortNo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
+			this.cbServerPortNo.HoverState.Parent = this.cbServerPortNo;
+			this.cbServerPortNo.ItemHeight = 30;
+			this.cbServerPortNo.Items.AddRange(new object[] {
+            "587"});
+			this.cbServerPortNo.ItemsAppearance.Parent = this.cbServerPortNo;
+			this.cbServerPortNo.Location = new System.Drawing.Point(114, 344);
+			this.cbServerPortNo.Name = "cbServerPortNo";
+			this.cbServerPortNo.ShadowDecoration.Parent = this.cbServerPortNo;
+			this.cbServerPortNo.Size = new System.Drawing.Size(336, 36);
+			this.cbServerPortNo.StartIndex = 0;
+			this.cbServerPortNo.TabIndex = 4;
+			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.ForeColor = System.Drawing.Color.Black;
+			this.label1.Location = new System.Drawing.Point(155, 392);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(32, 18);
+			this.label1.TabIndex = 18;
+			this.label1.Text = "SSL";
+			// 
+			// tsSSL
+			// 
+			this.tsSSL.Animated = true;
+			this.tsSSL.BackColor = System.Drawing.Color.Transparent;
+			this.tsSSL.Checked = true;
+			this.tsSSL.CheckedState.BorderColor = System.Drawing.Color.Black;
+			this.tsSSL.CheckedState.FillColor = System.Drawing.Color.Black;
+			this.tsSSL.CheckedState.InnerBorderColor = System.Drawing.Color.White;
+			this.tsSSL.CheckedState.InnerColor = System.Drawing.Color.White;
+			this.tsSSL.CheckedState.Parent = this.tsSSL;
+			this.tsSSL.Location = new System.Drawing.Point(114, 392);
+			this.tsSSL.Name = "tsSSL";
+			this.tsSSL.ShadowDecoration.Parent = this.tsSSL;
+			this.tsSSL.Size = new System.Drawing.Size(35, 20);
+			this.tsSSL.TabIndex = 5;
+			this.tsSSL.UncheckedState.BorderColor = System.Drawing.Color.Black;
+			this.tsSSL.UncheckedState.BorderThickness = 2;
+			this.tsSSL.UncheckedState.FillColor = System.Drawing.Color.White;
+			this.tsSSL.UncheckedState.InnerBorderColor = System.Drawing.Color.Black;
+			this.tsSSL.UncheckedState.InnerColor = System.Drawing.Color.Black;
+			this.tsSSL.UncheckedState.Parent = this.tsSSL;
+			// 
+			// txtRecipientEmail
+			// 
+			this.txtRecipientEmail.Animated = true;
+			this.txtRecipientEmail.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
+			this.txtRecipientEmail.BorderRadius = 6;
+			this.txtRecipientEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.txtRecipientEmail.DefaultText = "fahotel.management@gmail.com";
+			this.txtRecipientEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+			this.txtRecipientEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+			this.txtRecipientEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.txtRecipientEmail.DisabledState.Parent = this.txtRecipientEmail;
+			this.txtRecipientEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.txtRecipientEmail.Enabled = false;
+			this.txtRecipientEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.txtRecipientEmail.FocusedState.Parent = this.txtRecipientEmail;
+			this.txtRecipientEmail.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.txtRecipientEmail.ForeColor = System.Drawing.Color.Black;
+			this.txtRecipientEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.txtRecipientEmail.HoverState.Parent = this.txtRecipientEmail;
+			this.txtRecipientEmail.Location = new System.Drawing.Point(114, 435);
+			this.txtRecipientEmail.Name = "txtRecipientEmail";
+			this.txtRecipientEmail.PasswordChar = '\0';
+			this.txtRecipientEmail.PlaceholderText = "Recipient Email";
+			this.txtRecipientEmail.SelectedText = "";
+			this.txtRecipientEmail.SelectionStart = 28;
+			this.txtRecipientEmail.ShadowDecoration.Parent = this.txtRecipientEmail;
+			this.txtRecipientEmail.Size = new System.Drawing.Size(336, 36);
+			this.txtRecipientEmail.TabIndex = 6;
+			// 
+			// txtSubject
+			// 
+			this.txtSubject.Animated = true;
+			this.txtSubject.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
+			this.txtSubject.BorderRadius = 6;
+			this.txtSubject.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.txtSubject.DefaultText = "";
+			this.txtSubject.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+			this.txtSubject.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+			this.txtSubject.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.txtSubject.DisabledState.Parent = this.txtSubject;
+			this.txtSubject.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.txtSubject.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.txtSubject.FocusedState.Parent = this.txtSubject;
+			this.txtSubject.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.txtSubject.ForeColor = System.Drawing.Color.Black;
+			this.txtSubject.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.txtSubject.HoverState.Parent = this.txtSubject;
+			this.txtSubject.Location = new System.Drawing.Point(114, 477);
+			this.txtSubject.Name = "txtSubject";
+			this.txtSubject.PasswordChar = '\0';
+			this.txtSubject.PlaceholderText = "Subject";
+			this.txtSubject.SelectedText = "";
+			this.txtSubject.ShadowDecoration.Parent = this.txtSubject;
+			this.txtSubject.Size = new System.Drawing.Size(336, 36);
+			this.txtSubject.TabIndex = 7;
+			// 
+			// btnBack
+			// 
+			this.btnBack.Animated = true;
+			this.btnBack.BackColor = System.Drawing.Color.Transparent;
+			this.btnBack.BorderRadius = 10;
+			this.btnBack.CheckedState.Parent = this.btnBack;
+			this.btnBack.CustomImages.Parent = this.btnBack;
+			this.btnBack.DisabledState.Parent = this.btnBack;
+			this.btnBack.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(201)))), ((int)(((byte)(71)))));
+			this.btnBack.Font = new System.Drawing.Font("Montserrat", 8.999999F);
+			this.btnBack.ForeColor = System.Drawing.Color.White;
+			this.btnBack.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+			this.btnBack.HoverState.Parent = this.btnBack;
+			this.btnBack.Location = new System.Drawing.Point(114, 559);
+			this.btnBack.Name = "btnBack";
+			this.btnBack.ShadowDecoration.Parent = this.btnBack;
+			this.btnBack.Size = new System.Drawing.Size(336, 39);
+			this.btnBack.TabIndex = 10;
+			this.btnBack.Text = "Back";
+			this.btnBack.UseTransparentBackground = true;
+			this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+			// 
+			// txtSenderPassword
+			// 
+			this.txtSenderPassword.Animated = true;
+			this.txtSenderPassword.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
+			this.txtSenderPassword.BorderRadius = 6;
+			this.txtSenderPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.txtSenderPassword.DefaultText = "";
+			this.txtSenderPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+			this.txtSenderPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+			this.txtSenderPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.txtSenderPassword.DisabledState.Parent = this.txtSenderPassword;
+			this.txtSenderPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.txtSenderPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.txtSenderPassword.FocusedState.Parent = this.txtSenderPassword;
+			this.txtSenderPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.txtSenderPassword.ForeColor = System.Drawing.Color.Black;
+			this.txtSenderPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.txtSenderPassword.HoverState.Parent = this.txtSenderPassword;
+			this.txtSenderPassword.Location = new System.Drawing.Point(114, 260);
+			this.txtSenderPassword.Name = "txtSenderPassword";
+			this.txtSenderPassword.PasswordChar = '\0';
+			this.txtSenderPassword.PlaceholderText = "Sender Password";
+			this.txtSenderPassword.SelectedText = "";
+			this.txtSenderPassword.ShadowDecoration.Parent = this.txtSenderPassword;
+			this.txtSenderPassword.Size = new System.Drawing.Size(336, 36);
+			this.txtSenderPassword.TabIndex = 2;
+			this.txtSenderPassword.UseSystemPasswordChar = true;
 			// 
 			// txtBody
 			// 
@@ -144,60 +331,6 @@
 			this.lbDate.Size = new System.Drawing.Size(41, 18);
 			this.lbDate.TabIndex = 15;
 			this.lbDate.Text = "Date";
-			// 
-			// txtServerPortNo
-			// 
-			this.txtServerPortNo.Animated = true;
-			this.txtServerPortNo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
-			this.txtServerPortNo.BorderRadius = 6;
-			this.txtServerPortNo.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.txtServerPortNo.DefaultText = "";
-			this.txtServerPortNo.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-			this.txtServerPortNo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-			this.txtServerPortNo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-			this.txtServerPortNo.DisabledState.Parent = this.txtServerPortNo;
-			this.txtServerPortNo.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-			this.txtServerPortNo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.txtServerPortNo.FocusedState.Parent = this.txtServerPortNo;
-			this.txtServerPortNo.Font = new System.Drawing.Font("Segoe UI", 9F);
-			this.txtServerPortNo.ForeColor = System.Drawing.Color.Black;
-			this.txtServerPortNo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.txtServerPortNo.HoverState.Parent = this.txtServerPortNo;
-			this.txtServerPortNo.Location = new System.Drawing.Point(114, 344);
-			this.txtServerPortNo.Name = "txtServerPortNo";
-			this.txtServerPortNo.PasswordChar = '\0';
-			this.txtServerPortNo.PlaceholderText = "Server Port No";
-			this.txtServerPortNo.SelectedText = "";
-			this.txtServerPortNo.ShadowDecoration.Parent = this.txtServerPortNo;
-			this.txtServerPortNo.Size = new System.Drawing.Size(336, 36);
-			this.txtServerPortNo.TabIndex = 4;
-			// 
-			// txtSMPTServer
-			// 
-			this.txtSMPTServer.Animated = true;
-			this.txtSMPTServer.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
-			this.txtSMPTServer.BorderRadius = 6;
-			this.txtSMPTServer.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.txtSMPTServer.DefaultText = "";
-			this.txtSMPTServer.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-			this.txtSMPTServer.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-			this.txtSMPTServer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-			this.txtSMPTServer.DisabledState.Parent = this.txtSMPTServer;
-			this.txtSMPTServer.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-			this.txtSMPTServer.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.txtSMPTServer.FocusedState.Parent = this.txtSMPTServer;
-			this.txtSMPTServer.Font = new System.Drawing.Font("Segoe UI", 9F);
-			this.txtSMPTServer.ForeColor = System.Drawing.Color.Black;
-			this.txtSMPTServer.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.txtSMPTServer.HoverState.Parent = this.txtSMPTServer;
-			this.txtSMPTServer.Location = new System.Drawing.Point(114, 302);
-			this.txtSMPTServer.Name = "txtSMPTServer";
-			this.txtSMPTServer.PasswordChar = '\0';
-			this.txtSMPTServer.PlaceholderText = "SMPT Server";
-			this.txtSMPTServer.SelectedText = "";
-			this.txtSMPTServer.ShadowDecoration.Parent = this.txtSMPTServer;
-			this.txtSMPTServer.Size = new System.Drawing.Size(336, 36);
-			this.txtSMPTServer.TabIndex = 3;
 			// 
 			// label5
 			// 
@@ -314,144 +447,6 @@
 			// 
 			this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
 			// 
-			// txtSenderPassword
-			// 
-			this.txtSenderPassword.Animated = true;
-			this.txtSenderPassword.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
-			this.txtSenderPassword.BorderRadius = 6;
-			this.txtSenderPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.txtSenderPassword.DefaultText = "";
-			this.txtSenderPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-			this.txtSenderPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-			this.txtSenderPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-			this.txtSenderPassword.DisabledState.Parent = this.txtSenderPassword;
-			this.txtSenderPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-			this.txtSenderPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.txtSenderPassword.FocusedState.Parent = this.txtSenderPassword;
-			this.txtSenderPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
-			this.txtSenderPassword.ForeColor = System.Drawing.Color.Black;
-			this.txtSenderPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.txtSenderPassword.HoverState.Parent = this.txtSenderPassword;
-			this.txtSenderPassword.Location = new System.Drawing.Point(114, 260);
-			this.txtSenderPassword.Name = "txtSenderPassword";
-			this.txtSenderPassword.PasswordChar = '\0';
-			this.txtSenderPassword.PlaceholderText = "Sender Password";
-			this.txtSenderPassword.SelectedText = "";
-			this.txtSenderPassword.ShadowDecoration.Parent = this.txtSenderPassword;
-			this.txtSenderPassword.Size = new System.Drawing.Size(336, 36);
-			this.txtSenderPassword.TabIndex = 2;
-			this.txtSenderPassword.UseSystemPasswordChar = true;
-			// 
-			// btnBack
-			// 
-			this.btnBack.Animated = true;
-			this.btnBack.BackColor = System.Drawing.Color.Transparent;
-			this.btnBack.BorderRadius = 10;
-			this.btnBack.CheckedState.Parent = this.btnBack;
-			this.btnBack.CustomImages.Parent = this.btnBack;
-			this.btnBack.DisabledState.Parent = this.btnBack;
-			this.btnBack.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(201)))), ((int)(((byte)(71)))));
-			this.btnBack.Font = new System.Drawing.Font("Montserrat", 8.999999F);
-			this.btnBack.ForeColor = System.Drawing.Color.White;
-			this.btnBack.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-			this.btnBack.HoverState.Parent = this.btnBack;
-			this.btnBack.Location = new System.Drawing.Point(114, 559);
-			this.btnBack.Name = "btnBack";
-			this.btnBack.ShadowDecoration.Parent = this.btnBack;
-			this.btnBack.Size = new System.Drawing.Size(336, 39);
-			this.btnBack.TabIndex = 10;
-			this.btnBack.Text = "Back";
-			this.btnBack.UseTransparentBackground = true;
-			this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-			// 
-			// txtSubject
-			// 
-			this.txtSubject.Animated = true;
-			this.txtSubject.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
-			this.txtSubject.BorderRadius = 6;
-			this.txtSubject.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.txtSubject.DefaultText = "";
-			this.txtSubject.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-			this.txtSubject.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-			this.txtSubject.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-			this.txtSubject.DisabledState.Parent = this.txtSubject;
-			this.txtSubject.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-			this.txtSubject.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.txtSubject.FocusedState.Parent = this.txtSubject;
-			this.txtSubject.Font = new System.Drawing.Font("Segoe UI", 9F);
-			this.txtSubject.ForeColor = System.Drawing.Color.Black;
-			this.txtSubject.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.txtSubject.HoverState.Parent = this.txtSubject;
-			this.txtSubject.Location = new System.Drawing.Point(114, 477);
-			this.txtSubject.Name = "txtSubject";
-			this.txtSubject.PasswordChar = '\0';
-			this.txtSubject.PlaceholderText = "Subject";
-			this.txtSubject.SelectedText = "";
-			this.txtSubject.ShadowDecoration.Parent = this.txtSubject;
-			this.txtSubject.Size = new System.Drawing.Size(336, 36);
-			this.txtSubject.TabIndex = 7;
-			// 
-			// txtRecipientEmail
-			// 
-			this.txtRecipientEmail.Animated = true;
-			this.txtRecipientEmail.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
-			this.txtRecipientEmail.BorderRadius = 6;
-			this.txtRecipientEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.txtRecipientEmail.DefaultText = "fahotel.management@gmail.com";
-			this.txtRecipientEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-			this.txtRecipientEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-			this.txtRecipientEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-			this.txtRecipientEmail.DisabledState.Parent = this.txtRecipientEmail;
-			this.txtRecipientEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-			this.txtRecipientEmail.Enabled = false;
-			this.txtRecipientEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.txtRecipientEmail.FocusedState.Parent = this.txtRecipientEmail;
-			this.txtRecipientEmail.Font = new System.Drawing.Font("Segoe UI", 9F);
-			this.txtRecipientEmail.ForeColor = System.Drawing.Color.Black;
-			this.txtRecipientEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.txtRecipientEmail.HoverState.Parent = this.txtRecipientEmail;
-			this.txtRecipientEmail.Location = new System.Drawing.Point(114, 435);
-			this.txtRecipientEmail.Name = "txtRecipientEmail";
-			this.txtRecipientEmail.PasswordChar = '\0';
-			this.txtRecipientEmail.PlaceholderText = "Recipient Email";
-			this.txtRecipientEmail.SelectedText = "";
-			this.txtRecipientEmail.ShadowDecoration.Parent = this.txtRecipientEmail;
-			this.txtRecipientEmail.Size = new System.Drawing.Size(336, 36);
-			this.txtRecipientEmail.TabIndex = 6;
-			// 
-			// tsSSL
-			// 
-			this.tsSSL.Animated = true;
-			this.tsSSL.BackColor = System.Drawing.Color.Transparent;
-			this.tsSSL.Checked = true;
-			this.tsSSL.CheckedState.BorderColor = System.Drawing.Color.Black;
-			this.tsSSL.CheckedState.FillColor = System.Drawing.Color.Black;
-			this.tsSSL.CheckedState.InnerBorderColor = System.Drawing.Color.White;
-			this.tsSSL.CheckedState.InnerColor = System.Drawing.Color.White;
-			this.tsSSL.CheckedState.Parent = this.tsSSL;
-			this.tsSSL.Location = new System.Drawing.Point(114, 392);
-			this.tsSSL.Name = "tsSSL";
-			this.tsSSL.ShadowDecoration.Parent = this.tsSSL;
-			this.tsSSL.Size = new System.Drawing.Size(35, 20);
-			this.tsSSL.TabIndex = 17;
-			this.tsSSL.UncheckedState.BorderColor = System.Drawing.Color.Black;
-			this.tsSSL.UncheckedState.BorderThickness = 2;
-			this.tsSSL.UncheckedState.FillColor = System.Drawing.Color.White;
-			this.tsSSL.UncheckedState.InnerBorderColor = System.Drawing.Color.Black;
-			this.tsSSL.UncheckedState.InnerColor = System.Drawing.Color.Black;
-			this.tsSSL.UncheckedState.Parent = this.tsSSL;
-			// 
-			// label1
-			// 
-			this.label1.AutoSize = true;
-			this.label1.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.ForeColor = System.Drawing.Color.Black;
-			this.label1.Location = new System.Drawing.Point(155, 392);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(32, 18);
-			this.label1.TabIndex = 18;
-			this.label1.Text = "SSL";
-			// 
 			// FormContactAdmin
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -486,8 +481,6 @@
 		private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
 		private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
 		private System.Windows.Forms.Timer timer1;
-		private Guna.UI2.WinForms.Guna2TextBox txtServerPortNo;
-		private Guna.UI2.WinForms.Guna2TextBox txtSMPTServer;
 		private System.Windows.Forms.Label lbTime;
 		private System.Windows.Forms.Label lbDate;
 		private Guna.UI2.WinForms.Guna2TextBox txtBody;
@@ -497,5 +490,7 @@
 		private Guna.UI2.WinForms.Guna2TextBox txtRecipientEmail;
 		private System.Windows.Forms.Label label1;
 		private Guna.UI2.WinForms.Guna2ToggleSwitch tsSSL;
+		private Guna.UI2.WinForms.Guna2ComboBox cbServerPortNo;
+		private Guna.UI2.WinForms.Guna2ComboBox cbSMPTServer;
 	}
 }
