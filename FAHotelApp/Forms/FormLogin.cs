@@ -16,5 +16,21 @@ namespace FAHotelApp
 		{
 			InitializeComponent();
 		}
+
+		private void FormLogin_Load(object sender, EventArgs e)
+		{
+			timer1.Start();
+
+			lbDate.Text = DateTime.Now.ToString("dddd,\nMMM dd yyyy");
+
+			lbTime.Text = DateTime.Now.ToLongTimeString();
+		}
+
+		private void timer1_Tick(object sender, EventArgs e)
+		{
+			lbTime.Text = DateTime.Now.ToLongTimeString();
+
+			timer1.Start();
+		}
 	}
 }

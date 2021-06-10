@@ -52,15 +52,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormLogin.cs">
+    <Compile Include="Forms\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormLogin.Designer.cs">
+    <Compile Include="Forms\FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormLogin.resx">
+    <EmbeddedResource Include="Forms\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -87,9 +87,20 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\FAHotelTransparentLogo1.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\FAHotelTransparentLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAHotelTransparentLogoWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAHotelTransparentLogoBlack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01-BGFormLogin.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

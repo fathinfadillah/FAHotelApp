@@ -59,5 +59,35 @@ namespace FAHotelApp.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _01_BGFormLogin {
+            get {
+                object obj = ResourceManager.GetObject("_01_BGFormLogin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FAHotelTransparentLogoBlack {
+            get {
+                object obj = ResourceManager.GetObject("FAHotelTransparentLogoBlack", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FAHotelTransparentLogoWhite {
+            get {
+                object obj = ResourceManager.GetObject("FAHotelTransparentLogoWhite", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
