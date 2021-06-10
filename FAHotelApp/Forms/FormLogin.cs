@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using FAHotelApp.Forms;
+using System.Threading;
 
 namespace FAHotelApp
 {
@@ -16,7 +17,17 @@ namespace FAHotelApp
 	{
 		public FormLogin()
 		{
+			Thread trd = new Thread(new ThreadStart(formRun));
+			trd.SetApartmentState(ApartmentState.STA);
+			trd.Start();
+			Thread.Sleep(8000);
 			InitializeComponent();
+			trd.Abort();
+		}
+
+		private void formRun()
+		{
+			Application.Run(new FormWelcomeScreen());
 		}
 
 		private void FormLogin_Load(object sender, EventArgs e)
@@ -44,6 +55,9 @@ namespace FAHotelApp
 
 		private void btnLogin_Click(object sender, EventArgs e)
 		{
+			Properties.Settings.Default.UsernameView = txtUsername.Text;
+			Properties.Settings.Default.UserTypeView = cbUserType.Text;
+
 			if (tsRememberMe.Checked == true)
 			{
 				Properties.Settings.Default.Username = txtUsername.Text;
@@ -71,7 +85,7 @@ namespace FAHotelApp
 				{
 					if (dt.Rows[i]["usertype"].ToString() == cmbItemValue) //you can use 2 instead of usertype in that index because usertype column is in 2 index
 					{
-						MessageBox.Show("you are login as " + dt.Rows[i][5]);
+						MessageBox.Show("Kamu Login Sebagai " + dt.Rows[i][5]);
 						if (cbUserType.SelectedIndex == 0)
 						{
 							Form1 f = new Form1();
@@ -89,7 +103,7 @@ namespace FAHotelApp
 			}
 			else
 			{
-				MessageBox.Show("error");
+				MessageBox.Show("Username/Password Salah!");
 			}
 		}
 
@@ -115,6 +129,40 @@ namespace FAHotelApp
 			{
 				txtPassword.UseSystemPasswordChar = true;
 			}
+		}
+
+		private void txtUsername_Leave(object sender, EventArgs e)
+		{
+			if (txtUsername.Text == "")
+			{
+				epWarning.SetError(txtUsername, "TextBox Username tidak boleh kosong!");
+				epWrong.SetError(txtUsername, "");
+				epCorrect.SetError(txtUsername, "");
+			}
+			else
+			{
+				epWarning.SetError(txtUsername, "");
+				epWrong.SetError(txtUsername, "");
+				epCorrect.SetError(txtUsername, "Terisi!");
+			}
+			
+		}
+
+		private void txtPassword_Leave(object sender, EventArgs e)
+		{
+			if (txtPassword.Text == "")
+			{
+				epWarning.SetError(txtPassword, "TextBox Password tidak boleh kosong!");
+				epWrong.SetError(txtPassword, "");
+				epCorrect.SetError(txtPassword, "");
+			}
+			else
+			{
+				epWarning.SetError(txtPassword, "");
+				epWrong.SetError(txtPassword, "");
+				epCorrect.SetError(txtPassword, "Terisi!");
+			}
+			
 		}
 	}
 }

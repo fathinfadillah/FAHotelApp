@@ -33,6 +33,7 @@
 			this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
 			this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
 			this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+			this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
 			this.label2 = new System.Windows.Forms.Label();
 			this.tsShowPassword = new Guna.UI2.WinForms.Guna2ToggleSwitch();
 			this.cbSMPTServer = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -51,10 +52,15 @@
 			this.btnSend = new Guna.UI2.WinForms.Guna2Button();
 			this.txtSenderEmail = new Guna.UI2.WinForms.Guna2TextBox();
 			this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-			this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
 			this.timer1 = new System.Windows.Forms.Timer(this.components);
+			this.epWarning = new System.Windows.Forms.ErrorProvider(this.components);
+			this.epWrong = new System.Windows.Forms.ErrorProvider(this.components);
+			this.epCorrect = new System.Windows.Forms.ErrorProvider(this.components);
 			this.guna2Panel2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.epWarning)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.epWrong)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.epCorrect)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// guna2Elipse1
@@ -95,6 +101,19 @@
 			this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
 			this.guna2Panel2.Size = new System.Drawing.Size(1040, 666);
 			this.guna2Panel2.TabIndex = 5;
+			// 
+			// guna2ControlBox2
+			// 
+			this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
+			this.guna2ControlBox2.FillColor = System.Drawing.Color.Black;
+			this.guna2ControlBox2.HoverState.Parent = this.guna2ControlBox2;
+			this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
+			this.guna2ControlBox2.Location = new System.Drawing.Point(993, 12);
+			this.guna2ControlBox2.Name = "guna2ControlBox2";
+			this.guna2ControlBox2.ShadowDecoration.Parent = this.guna2ControlBox2;
+			this.guna2ControlBox2.Size = new System.Drawing.Size(35, 28);
+			this.guna2ControlBox2.TabIndex = 7;
 			// 
 			// label2
 			// 
@@ -439,6 +458,7 @@
 			this.txtSenderEmail.ShadowDecoration.Parent = this.txtSenderEmail;
 			this.txtSenderEmail.Size = new System.Drawing.Size(336, 36);
 			this.txtSenderEmail.TabIndex = 1;
+			this.txtSenderEmail.Leave += new System.EventHandler(this.txtSenderEmail_Leave);
 			// 
 			// guna2PictureBox1
 			// 
@@ -454,22 +474,24 @@
 			this.guna2PictureBox1.TabStop = false;
 			this.guna2PictureBox1.UseTransparentBackground = true;
 			// 
-			// guna2ControlBox2
-			// 
-			this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
-			this.guna2ControlBox2.FillColor = System.Drawing.Color.Black;
-			this.guna2ControlBox2.HoverState.Parent = this.guna2ControlBox2;
-			this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
-			this.guna2ControlBox2.Location = new System.Drawing.Point(993, 12);
-			this.guna2ControlBox2.Name = "guna2ControlBox2";
-			this.guna2ControlBox2.ShadowDecoration.Parent = this.guna2ControlBox2;
-			this.guna2ControlBox2.Size = new System.Drawing.Size(35, 28);
-			this.guna2ControlBox2.TabIndex = 7;
-			// 
 			// timer1
 			// 
 			this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+			// 
+			// epWarning
+			// 
+			this.epWarning.ContainerControl = this;
+			this.epWarning.Icon = ((System.Drawing.Icon)(resources.GetObject("epWarning.Icon")));
+			// 
+			// epWrong
+			// 
+			this.epWrong.ContainerControl = this;
+			this.epWrong.Icon = ((System.Drawing.Icon)(resources.GetObject("epWrong.Icon")));
+			// 
+			// epCorrect
+			// 
+			this.epCorrect.ContainerControl = this;
+			this.epCorrect.Icon = ((System.Drawing.Icon)(resources.GetObject("epCorrect.Icon")));
 			// 
 			// FormContactAdmin
 			// 
@@ -486,6 +508,9 @@
 			this.guna2Panel2.ResumeLayout(false);
 			this.guna2Panel2.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.epWarning)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.epWrong)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.epCorrect)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -515,5 +540,8 @@
 		private Guna.UI2.WinForms.Guna2ComboBox cbSMPTServer;
 		private System.Windows.Forms.Label label2;
 		private Guna.UI2.WinForms.Guna2ToggleSwitch tsShowPassword;
+		private System.Windows.Forms.ErrorProvider epWarning;
+		private System.Windows.Forms.ErrorProvider epWrong;
+		private System.Windows.Forms.ErrorProvider epCorrect;
 	}
 }

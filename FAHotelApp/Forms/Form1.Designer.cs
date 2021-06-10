@@ -33,6 +33,7 @@
 			this.lbUser = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.lbUserType = new System.Windows.Forms.Label();
+			this.btnLogOut = new Guna.UI2.WinForms.Guna2Button();
 			this.SuspendLayout();
 			// 
 			// guna2TextBox1
@@ -92,11 +93,34 @@
 			this.lbUserType.Size = new System.Drawing.Size(0, 13);
 			this.lbUserType.TabIndex = 4;
 			// 
+			// btnLogOut
+			// 
+			this.btnLogOut.Animated = true;
+			this.btnLogOut.BackColor = System.Drawing.Color.Transparent;
+			this.btnLogOut.BorderRadius = 10;
+			this.btnLogOut.CheckedState.Parent = this.btnLogOut;
+			this.btnLogOut.CustomImages.Parent = this.btnLogOut;
+			this.btnLogOut.DisabledState.Parent = this.btnLogOut;
+			this.btnLogOut.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(201)))), ((int)(((byte)(71)))));
+			this.btnLogOut.Font = new System.Drawing.Font("Montserrat", 8.999999F);
+			this.btnLogOut.ForeColor = System.Drawing.Color.White;
+			this.btnLogOut.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+			this.btnLogOut.HoverState.Parent = this.btnLogOut;
+			this.btnLogOut.Location = new System.Drawing.Point(577, 114);
+			this.btnLogOut.Name = "btnLogOut";
+			this.btnLogOut.ShadowDecoration.Parent = this.btnLogOut;
+			this.btnLogOut.Size = new System.Drawing.Size(181, 39);
+			this.btnLogOut.TabIndex = 12;
+			this.btnLogOut.Text = "LogOut";
+			this.btnLogOut.UseTransparentBackground = true;
+			this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.Controls.Add(this.btnLogOut);
 			this.Controls.Add(this.lbUserType);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.lbUser);
@@ -117,5 +141,6 @@
 		private System.Windows.Forms.Label lbUser;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Label lbUserType;
+		private Guna.UI2.WinForms.Guna2Button btnLogOut;
 	}
 }

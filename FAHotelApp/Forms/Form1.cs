@@ -19,8 +19,15 @@ namespace FAHotelApp.Forms
 
 		private void Form1_Load(object sender, EventArgs e)
 		{
-			lbUser.Text = Properties.Settings.Default.Username;
-			lbUserType.Text = Properties.Settings.Default.UserType;
+			lbUser.Text = Properties.Settings.Default.UsernameView;
+			lbUserType.Text = Properties.Settings.Default.UserTypeView;
+		}
+
+		private void btnLogOut_Click(object sender, EventArgs e)
+		{
+			FormLogin f = new FormLogin();
+			f.Show();
+			this.Hide();
 		}
 	}
 }

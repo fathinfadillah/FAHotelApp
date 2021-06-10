@@ -58,5 +58,29 @@ namespace FAHotelApp.Properties {
                 this["Password"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string UsernameView {
+            get {
+                return ((string)(this["UsernameView"]));
+            }
+            set {
+                this["UsernameView"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string UserTypeView {
+            get {
+                return ((string)(this["UserTypeView"]));
+            }
+            set {
+                this["UserTypeView"] = value;
+            }
+        }
     }
 }

@@ -11,6 +11,7 @@ using System.Data.SqlClient;
 using FAHotelApp.Forms;
 using System.Net;
 using System.Net.Mail;
+using System.Text.RegularExpressions;
 
 namespace FAHotelApp
 {
@@ -83,6 +84,31 @@ namespace FAHotelApp
 			if (tsShowPassword.Checked == false)
 			{
 				txtSenderPassword.UseSystemPasswordChar = true;
+			}
+		}
+
+		private void txtSenderEmail_Leave(object sender, EventArgs e)
+		{
+			if (txtSenderEmail.Text == "")
+			{
+				epWarning.SetError(txtSenderEmail, "TextBox Email tidak boleh kosong!");
+				epWrong.SetError(txtSenderEmail, "");
+				epCorrect.SetError(txtSenderEmail, "");
+			}
+			else
+			{
+				if (Regex.IsMatch(txtSenderEmail.Text, @"^^[^@\s]+@[^@\s]+(\.[^@\s]+)+$"))
+				{
+					epWarning.SetError(txtSenderEmail, "");
+					epWrong.SetError(txtSenderEmail, "");
+					epCorrect.SetError(txtSenderEmail, "Betul!");
+				}
+				else
+				{
+					epWarning.SetError(txtSenderEmail, "");
+					epWrong.SetError(txtSenderEmail, "Format email salah!\nContoh: a@b.c");
+					epCorrect.SetError(txtSenderEmail, "");
+				}
 			}
 		}
 	}

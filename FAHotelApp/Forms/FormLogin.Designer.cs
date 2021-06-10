@@ -53,9 +53,15 @@
 			this.timer1 = new System.Windows.Forms.Timer(this.components);
 			this.lbTime = new System.Windows.Forms.Label();
 			this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
+			this.epWarning = new System.Windows.Forms.ErrorProvider(this.components);
+			this.epWrong = new System.Windows.Forms.ErrorProvider(this.components);
+			this.epCorrect = new System.Windows.Forms.ErrorProvider(this.components);
 			this.guna2Panel2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.epWarning)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.epWrong)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.epCorrect)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// guna2Elipse1
@@ -301,6 +307,7 @@
 			this.txtPassword.Size = new System.Drawing.Size(336, 36);
 			this.txtPassword.TabIndex = 3;
 			this.txtPassword.UseSystemPasswordChar = true;
+			this.txtPassword.Leave += new System.EventHandler(this.txtPassword_Leave);
 			// 
 			// txtUsername
 			// 
@@ -328,6 +335,7 @@
 			this.txtUsername.ShadowDecoration.Parent = this.txtUsername;
 			this.txtUsername.Size = new System.Drawing.Size(336, 36);
 			this.txtUsername.TabIndex = 1;
+			this.txtUsername.Leave += new System.EventHandler(this.txtUsername_Leave);
 			// 
 			// guna2PictureBox1
 			// 
@@ -413,6 +421,21 @@
 			this.guna2PictureBox2.TabStop = false;
 			this.guna2PictureBox2.UseTransparentBackground = true;
 			// 
+			// epWarning
+			// 
+			this.epWarning.ContainerControl = this;
+			this.epWarning.Icon = ((System.Drawing.Icon)(resources.GetObject("epWarning.Icon")));
+			// 
+			// epWrong
+			// 
+			this.epWrong.ContainerControl = this;
+			this.epWrong.Icon = ((System.Drawing.Icon)(resources.GetObject("epWrong.Icon")));
+			// 
+			// epCorrect
+			// 
+			this.epCorrect.ContainerControl = this;
+			this.epCorrect.Icon = ((System.Drawing.Icon)(resources.GetObject("epCorrect.Icon")));
+			// 
 			// FormLogin
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -434,6 +457,9 @@
 			this.guna2Panel2.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.epWarning)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.epWrong)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.epCorrect)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -464,5 +490,8 @@
 		private Guna.UI2.WinForms.Guna2Button btnExit;
 		private System.Windows.Forms.Label label3;
 		private Guna.UI2.WinForms.Guna2ToggleSwitch tsShowPassword;
+		private System.Windows.Forms.ErrorProvider epWarning;
+		private System.Windows.Forms.ErrorProvider epWrong;
+		private System.Windows.Forms.ErrorProvider epCorrect;
 	}
 }
