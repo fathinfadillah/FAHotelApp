@@ -73,5 +73,17 @@ namespace FAHotelApp
 			f.Show();
 			this.Hide();
 		}
+
+		private void tsShowPassword_CheckedChanged(object sender, EventArgs e)
+		{
+			if (tsShowPassword.Checked == true)
+			{
+				txtSenderPassword.UseSystemPasswordChar = false;
+			}
+			if (tsShowPassword.Checked == false)
+			{
+				txtSenderPassword.UseSystemPasswordChar = true;
+			}
+		}
 	}
 }

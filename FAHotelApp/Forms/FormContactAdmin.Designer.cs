@@ -33,6 +33,8 @@
 			this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
 			this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
 			this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+			this.label2 = new System.Windows.Forms.Label();
+			this.tsShowPassword = new Guna.UI2.WinForms.Guna2ToggleSwitch();
 			this.cbSMPTServer = new Guna.UI2.WinForms.Guna2ComboBox();
 			this.cbServerPortNo = new Guna.UI2.WinForms.Guna2ComboBox();
 			this.label1 = new System.Windows.Forms.Label();
@@ -50,7 +52,6 @@
 			this.txtSenderEmail = new Guna.UI2.WinForms.Guna2TextBox();
 			this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
 			this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
-			this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
 			this.timer1 = new System.Windows.Forms.Timer(this.components);
 			this.guna2Panel2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -69,6 +70,9 @@
 			// guna2Panel2
 			// 
 			this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
+			this.guna2Panel2.Controls.Add(this.guna2ControlBox2);
+			this.guna2Panel2.Controls.Add(this.label2);
+			this.guna2Panel2.Controls.Add(this.tsShowPassword);
 			this.guna2Panel2.Controls.Add(this.cbSMPTServer);
 			this.guna2Panel2.Controls.Add(this.cbServerPortNo);
 			this.guna2Panel2.Controls.Add(this.label1);
@@ -92,6 +96,39 @@
 			this.guna2Panel2.Size = new System.Drawing.Size(1040, 666);
 			this.guna2Panel2.TabIndex = 5;
 			// 
+			// label2
+			// 
+			this.label2.AutoSize = true;
+			this.label2.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label2.ForeColor = System.Drawing.Color.Black;
+			this.label2.Location = new System.Drawing.Point(155, 304);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(93, 15);
+			this.label2.TabIndex = 20;
+			this.label2.Text = "Show Password";
+			// 
+			// tsShowPassword
+			// 
+			this.tsShowPassword.Animated = true;
+			this.tsShowPassword.BackColor = System.Drawing.Color.Transparent;
+			this.tsShowPassword.CheckedState.BorderColor = System.Drawing.Color.Black;
+			this.tsShowPassword.CheckedState.FillColor = System.Drawing.Color.Black;
+			this.tsShowPassword.CheckedState.InnerBorderColor = System.Drawing.Color.White;
+			this.tsShowPassword.CheckedState.InnerColor = System.Drawing.Color.White;
+			this.tsShowPassword.CheckedState.Parent = this.tsShowPassword;
+			this.tsShowPassword.Location = new System.Drawing.Point(114, 302);
+			this.tsShowPassword.Name = "tsShowPassword";
+			this.tsShowPassword.ShadowDecoration.Parent = this.tsShowPassword;
+			this.tsShowPassword.Size = new System.Drawing.Size(35, 20);
+			this.tsShowPassword.TabIndex = 3;
+			this.tsShowPassword.UncheckedState.BorderColor = System.Drawing.Color.Black;
+			this.tsShowPassword.UncheckedState.BorderThickness = 2;
+			this.tsShowPassword.UncheckedState.FillColor = System.Drawing.Color.White;
+			this.tsShowPassword.UncheckedState.InnerBorderColor = System.Drawing.Color.Black;
+			this.tsShowPassword.UncheckedState.InnerColor = System.Drawing.Color.Black;
+			this.tsShowPassword.UncheckedState.Parent = this.tsShowPassword;
+			this.tsShowPassword.CheckedChanged += new System.EventHandler(this.tsShowPassword_CheckedChanged);
+			// 
 			// cbSMPTServer
 			// 
 			this.cbSMPTServer.BackColor = System.Drawing.Color.Transparent;
@@ -109,12 +146,12 @@
 			this.cbSMPTServer.Items.AddRange(new object[] {
             "smtp.gmail.com"});
 			this.cbSMPTServer.ItemsAppearance.Parent = this.cbSMPTServer;
-			this.cbSMPTServer.Location = new System.Drawing.Point(114, 302);
+			this.cbSMPTServer.Location = new System.Drawing.Point(114, 335);
 			this.cbSMPTServer.Name = "cbSMPTServer";
 			this.cbSMPTServer.ShadowDecoration.Parent = this.cbSMPTServer;
 			this.cbSMPTServer.Size = new System.Drawing.Size(336, 36);
 			this.cbSMPTServer.StartIndex = 0;
-			this.cbSMPTServer.TabIndex = 3;
+			this.cbSMPTServer.TabIndex = 4;
 			// 
 			// cbServerPortNo
 			// 
@@ -133,21 +170,21 @@
 			this.cbServerPortNo.Items.AddRange(new object[] {
             "587"});
 			this.cbServerPortNo.ItemsAppearance.Parent = this.cbServerPortNo;
-			this.cbServerPortNo.Location = new System.Drawing.Point(114, 344);
+			this.cbServerPortNo.Location = new System.Drawing.Point(114, 377);
 			this.cbServerPortNo.Name = "cbServerPortNo";
 			this.cbServerPortNo.ShadowDecoration.Parent = this.cbServerPortNo;
 			this.cbServerPortNo.Size = new System.Drawing.Size(336, 36);
 			this.cbServerPortNo.StartIndex = 0;
-			this.cbServerPortNo.TabIndex = 4;
+			this.cbServerPortNo.TabIndex = 5;
 			// 
 			// label1
 			// 
 			this.label1.AutoSize = true;
-			this.label1.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label1.ForeColor = System.Drawing.Color.Black;
-			this.label1.Location = new System.Drawing.Point(155, 392);
+			this.label1.Location = new System.Drawing.Point(155, 422);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(32, 18);
+			this.label1.Size = new System.Drawing.Size(27, 15);
 			this.label1.TabIndex = 18;
 			this.label1.Text = "SSL";
 			// 
@@ -155,17 +192,16 @@
 			// 
 			this.tsSSL.Animated = true;
 			this.tsSSL.BackColor = System.Drawing.Color.Transparent;
-			this.tsSSL.Checked = true;
 			this.tsSSL.CheckedState.BorderColor = System.Drawing.Color.Black;
 			this.tsSSL.CheckedState.FillColor = System.Drawing.Color.Black;
 			this.tsSSL.CheckedState.InnerBorderColor = System.Drawing.Color.White;
 			this.tsSSL.CheckedState.InnerColor = System.Drawing.Color.White;
 			this.tsSSL.CheckedState.Parent = this.tsSSL;
-			this.tsSSL.Location = new System.Drawing.Point(114, 392);
+			this.tsSSL.Location = new System.Drawing.Point(114, 419);
 			this.tsSSL.Name = "tsSSL";
 			this.tsSSL.ShadowDecoration.Parent = this.tsSSL;
 			this.tsSSL.Size = new System.Drawing.Size(35, 20);
-			this.tsSSL.TabIndex = 5;
+			this.tsSSL.TabIndex = 6;
 			this.tsSSL.UncheckedState.BorderColor = System.Drawing.Color.Black;
 			this.tsSSL.UncheckedState.BorderThickness = 2;
 			this.tsSSL.UncheckedState.FillColor = System.Drawing.Color.White;
@@ -192,7 +228,7 @@
 			this.txtRecipientEmail.ForeColor = System.Drawing.Color.Black;
 			this.txtRecipientEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
 			this.txtRecipientEmail.HoverState.Parent = this.txtRecipientEmail;
-			this.txtRecipientEmail.Location = new System.Drawing.Point(114, 435);
+			this.txtRecipientEmail.Location = new System.Drawing.Point(114, 452);
 			this.txtRecipientEmail.Name = "txtRecipientEmail";
 			this.txtRecipientEmail.PasswordChar = '\0';
 			this.txtRecipientEmail.PlaceholderText = "Recipient Email";
@@ -200,7 +236,7 @@
 			this.txtRecipientEmail.SelectionStart = 28;
 			this.txtRecipientEmail.ShadowDecoration.Parent = this.txtRecipientEmail;
 			this.txtRecipientEmail.Size = new System.Drawing.Size(336, 36);
-			this.txtRecipientEmail.TabIndex = 6;
+			this.txtRecipientEmail.TabIndex = 7;
 			// 
 			// txtSubject
 			// 
@@ -220,14 +256,14 @@
 			this.txtSubject.ForeColor = System.Drawing.Color.Black;
 			this.txtSubject.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
 			this.txtSubject.HoverState.Parent = this.txtSubject;
-			this.txtSubject.Location = new System.Drawing.Point(114, 477);
+			this.txtSubject.Location = new System.Drawing.Point(114, 494);
 			this.txtSubject.Name = "txtSubject";
 			this.txtSubject.PasswordChar = '\0';
 			this.txtSubject.PlaceholderText = "Subject";
 			this.txtSubject.SelectedText = "";
 			this.txtSubject.ShadowDecoration.Parent = this.txtSubject;
 			this.txtSubject.Size = new System.Drawing.Size(336, 36);
-			this.txtSubject.TabIndex = 7;
+			this.txtSubject.TabIndex = 8;
 			// 
 			// btnBack
 			// 
@@ -246,7 +282,7 @@
 			this.btnBack.Name = "btnBack";
 			this.btnBack.ShadowDecoration.Parent = this.btnBack;
 			this.btnBack.Size = new System.Drawing.Size(336, 39);
-			this.btnBack.TabIndex = 10;
+			this.btnBack.TabIndex = 11;
 			this.btnBack.Text = "Back";
 			this.btnBack.UseTransparentBackground = true;
 			this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
@@ -298,13 +334,14 @@
 			this.txtBody.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
 			this.txtBody.HoverState.Parent = this.txtBody;
 			this.txtBody.Location = new System.Drawing.Point(584, 218);
+			this.txtBody.Multiline = true;
 			this.txtBody.Name = "txtBody";
 			this.txtBody.PasswordChar = '\0';
 			this.txtBody.PlaceholderText = "Body";
 			this.txtBody.SelectedText = "";
 			this.txtBody.ShadowDecoration.Parent = this.txtBody;
-			this.txtBody.Size = new System.Drawing.Size(336, 295);
-			this.txtBody.TabIndex = 8;
+			this.txtBody.Size = new System.Drawing.Size(336, 312);
+			this.txtBody.TabIndex = 9;
 			// 
 			// lbTime
 			// 
@@ -313,7 +350,7 @@
 			this.lbTime.Cursor = System.Windows.Forms.Cursors.Arrow;
 			this.lbTime.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lbTime.ForeColor = System.Drawing.Color.Black;
-			this.lbTime.Location = new System.Drawing.Point(878, 44);
+			this.lbTime.Location = new System.Drawing.Point(843, 44);
 			this.lbTime.Name = "lbTime";
 			this.lbTime.Size = new System.Drawing.Size(42, 18);
 			this.lbTime.TabIndex = 16;
@@ -326,7 +363,7 @@
 			this.lbDate.Cursor = System.Windows.Forms.Cursors.Arrow;
 			this.lbDate.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lbDate.ForeColor = System.Drawing.Color.Black;
-			this.lbDate.Location = new System.Drawing.Point(706, 44);
+			this.lbDate.Location = new System.Drawing.Point(677, 44);
 			this.lbDate.Name = "lbDate";
 			this.lbDate.Size = new System.Drawing.Size(41, 18);
 			this.lbDate.TabIndex = 15;
@@ -371,7 +408,7 @@
 			this.btnSend.Name = "btnSend";
 			this.btnSend.ShadowDecoration.Parent = this.btnSend;
 			this.btnSend.Size = new System.Drawing.Size(336, 39);
-			this.btnSend.TabIndex = 9;
+			this.btnSend.TabIndex = 10;
 			this.btnSend.Text = "Send";
 			this.btnSend.UseTransparentBackground = true;
 			this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
@@ -421,27 +458,14 @@
 			// 
 			this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
-			this.guna2ControlBox2.FillColor = System.Drawing.Color.White;
+			this.guna2ControlBox2.FillColor = System.Drawing.Color.Black;
 			this.guna2ControlBox2.HoverState.Parent = this.guna2ControlBox2;
-			this.guna2ControlBox2.IconColor = System.Drawing.Color.Black;
-			this.guna2ControlBox2.Location = new System.Drawing.Point(950, 12);
+			this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
+			this.guna2ControlBox2.Location = new System.Drawing.Point(993, 12);
 			this.guna2ControlBox2.Name = "guna2ControlBox2";
 			this.guna2ControlBox2.ShadowDecoration.Parent = this.guna2ControlBox2;
 			this.guna2ControlBox2.Size = new System.Drawing.Size(35, 28);
 			this.guna2ControlBox2.TabIndex = 7;
-			// 
-			// guna2ControlBox1
-			// 
-			this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.guna2ControlBox1.FillColor = System.Drawing.Color.White;
-			this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.Red;
-			this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
-			this.guna2ControlBox1.IconColor = System.Drawing.Color.Black;
-			this.guna2ControlBox1.Location = new System.Drawing.Point(993, 12);
-			this.guna2ControlBox1.Name = "guna2ControlBox1";
-			this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
-			this.guna2ControlBox1.Size = new System.Drawing.Size(35, 28);
-			this.guna2ControlBox1.TabIndex = 6;
 			// 
 			// timer1
 			// 
@@ -453,8 +477,6 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
 			this.ClientSize = new System.Drawing.Size(1040, 666);
-			this.Controls.Add(this.guna2ControlBox2);
-			this.Controls.Add(this.guna2ControlBox1);
 			this.Controls.Add(this.guna2Panel2);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Name = "FormContactAdmin";
@@ -479,7 +501,6 @@
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.Label label5;
 		private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
-		private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
 		private System.Windows.Forms.Timer timer1;
 		private System.Windows.Forms.Label lbTime;
 		private System.Windows.Forms.Label lbDate;
@@ -492,5 +513,7 @@
 		private Guna.UI2.WinForms.Guna2ToggleSwitch tsSSL;
 		private Guna.UI2.WinForms.Guna2ComboBox cbServerPortNo;
 		private Guna.UI2.WinForms.Guna2ComboBox cbSMPTServer;
+		private System.Windows.Forms.Label label2;
+		private Guna.UI2.WinForms.Guna2ToggleSwitch tsShowPassword;
 	}
 }

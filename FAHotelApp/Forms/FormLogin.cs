@@ -26,6 +26,13 @@ namespace FAHotelApp
 			lbDate.Text = DateTime.Now.ToString("dddd,\nMMM dd yyyy");
 
 			lbTime.Text = DateTime.Now.ToLongTimeString();
+
+			if (Properties.Settings.Default.Username != string.Empty)
+			{
+				txtUsername.Text = Properties.Settings.Default.Username;
+				cbUserType.Text = Properties.Settings.Default.UserType;
+				txtPassword.Text = Properties.Settings.Default.Password;
+			}
 		}
 
 		private void timer1_Tick(object sender, EventArgs e)
@@ -37,6 +44,21 @@ namespace FAHotelApp
 
 		private void btnLogin_Click(object sender, EventArgs e)
 		{
+			if (tsRememberMe.Checked == true)
+			{
+				Properties.Settings.Default.Username = txtUsername.Text;
+				Properties.Settings.Default.UserType = cbUserType.Text;
+				Properties.Settings.Default.Password = txtPassword.Text;
+				Properties.Settings.Default.Save();
+			}
+			if (tsRememberMe.Checked == false)
+			{
+				Properties.Settings.Default.Username = "";
+				Properties.Settings.Default.UserType = "";
+				Properties.Settings.Default.Password= "";
+				Properties.Settings.Default.Save();
+			}
+
 			SqlConnection con = new SqlConnection(@"Data Source = DESKTOP-LHKUU3D; Initial Catalog = FAHotel; Integrated Security = True");
 			SqlCommand cmd = new SqlCommand("select * from Tabel_User where username='" + txtUsername.Text + "' and password='" + txtPassword.Text + "'", con);
 			SqlDataAdapter sda = new SqlDataAdapter(cmd);
@@ -80,7 +102,19 @@ namespace FAHotelApp
 
 		private void btnExit_Click(object sender, EventArgs e)
 		{
-			this.Close();
+			System.Windows.Forms.Application.Exit();
+		}
+
+		private void tsShowPassword_CheckedChanged(object sender, EventArgs e)
+		{
+			if (tsShowPassword.Checked == true)
+			{
+				txtPassword.UseSystemPasswordChar = false;
+			}
+			if (tsShowPassword.Checked == false)
+			{
+				txtPassword.UseSystemPasswordChar = true;
+			}
 		}
 	}
 }

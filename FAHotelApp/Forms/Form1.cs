@@ -16,5 +16,11 @@ namespace FAHotelApp.Forms
 		{
 			InitializeComponent();
 		}
+
+		private void Form1_Load(object sender, EventArgs e)
+		{
+			lbUser.Text = Properties.Settings.Default.Username;
+			lbUserType.Text = Properties.Settings.Default.UserType;
+		}
 	}
 }

@@ -33,6 +33,9 @@
 			this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
 			this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
 			this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+			this.label3 = new System.Windows.Forms.Label();
+			this.tsShowPassword = new Guna.UI2.WinForms.Guna2ToggleSwitch();
+			this.btnExit = new Guna.UI2.WinForms.Guna2Button();
 			this.cbUserType = new Guna.UI2.WinForms.Guna2ComboBox();
 			this.label5 = new System.Windows.Forms.Label();
 			this.label4 = new System.Windows.Forms.Label();
@@ -40,7 +43,7 @@
 			this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
-			this.guna2ToggleSwitch1 = new Guna.UI2.WinForms.Guna2ToggleSwitch();
+			this.tsRememberMe = new Guna.UI2.WinForms.Guna2ToggleSwitch();
 			this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
 			this.txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
 			this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -50,7 +53,6 @@
 			this.timer1 = new System.Windows.Forms.Timer(this.components);
 			this.lbTime = new System.Windows.Forms.Label();
 			this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
-			this.btnExit = new Guna.UI2.WinForms.Guna2Button();
 			this.guna2Panel2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
@@ -58,6 +60,7 @@
 			// 
 			// guna2Elipse1
 			// 
+			this.guna2Elipse1.BorderRadius = 8;
 			this.guna2Elipse1.TargetControl = this;
 			// 
 			// guna2DragControl1
@@ -69,6 +72,8 @@
 			// guna2Panel2
 			// 
 			this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
+			this.guna2Panel2.Controls.Add(this.label3);
+			this.guna2Panel2.Controls.Add(this.tsShowPassword);
 			this.guna2Panel2.Controls.Add(this.btnExit);
 			this.guna2Panel2.Controls.Add(this.cbUserType);
 			this.guna2Panel2.Controls.Add(this.label5);
@@ -77,7 +82,7 @@
 			this.guna2Panel2.Controls.Add(this.btnLogin);
 			this.guna2Panel2.Controls.Add(this.label2);
 			this.guna2Panel2.Controls.Add(this.label1);
-			this.guna2Panel2.Controls.Add(this.guna2ToggleSwitch1);
+			this.guna2Panel2.Controls.Add(this.tsRememberMe);
 			this.guna2Panel2.Controls.Add(this.txtPassword);
 			this.guna2Panel2.Controls.Add(this.txtUsername);
 			this.guna2Panel2.Controls.Add(this.guna2PictureBox1);
@@ -87,6 +92,61 @@
 			this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
 			this.guna2Panel2.Size = new System.Drawing.Size(563, 666);
 			this.guna2Panel2.TabIndex = 5;
+			// 
+			// label3
+			// 
+			this.label3.AutoSize = true;
+			this.label3.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label3.ForeColor = System.Drawing.Color.Black;
+			this.label3.Location = new System.Drawing.Point(154, 417);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(93, 15);
+			this.label3.TabIndex = 13;
+			this.label3.Text = "Show Password";
+			// 
+			// tsShowPassword
+			// 
+			this.tsShowPassword.Animated = true;
+			this.tsShowPassword.BackColor = System.Drawing.Color.Transparent;
+			this.tsShowPassword.CheckedState.BorderColor = System.Drawing.Color.Black;
+			this.tsShowPassword.CheckedState.FillColor = System.Drawing.Color.Black;
+			this.tsShowPassword.CheckedState.InnerBorderColor = System.Drawing.Color.White;
+			this.tsShowPassword.CheckedState.InnerColor = System.Drawing.Color.White;
+			this.tsShowPassword.CheckedState.Parent = this.tsShowPassword;
+			this.tsShowPassword.Location = new System.Drawing.Point(114, 415);
+			this.tsShowPassword.Name = "tsShowPassword";
+			this.tsShowPassword.ShadowDecoration.Parent = this.tsShowPassword;
+			this.tsShowPassword.Size = new System.Drawing.Size(35, 20);
+			this.tsShowPassword.TabIndex = 12;
+			this.tsShowPassword.UncheckedState.BorderColor = System.Drawing.Color.Black;
+			this.tsShowPassword.UncheckedState.BorderThickness = 2;
+			this.tsShowPassword.UncheckedState.FillColor = System.Drawing.Color.White;
+			this.tsShowPassword.UncheckedState.InnerBorderColor = System.Drawing.Color.Black;
+			this.tsShowPassword.UncheckedState.InnerColor = System.Drawing.Color.Black;
+			this.tsShowPassword.UncheckedState.Parent = this.tsShowPassword;
+			this.tsShowPassword.CheckedChanged += new System.EventHandler(this.tsShowPassword_CheckedChanged);
+			// 
+			// btnExit
+			// 
+			this.btnExit.Animated = true;
+			this.btnExit.BackColor = System.Drawing.Color.Transparent;
+			this.btnExit.BorderRadius = 10;
+			this.btnExit.CheckedState.Parent = this.btnExit;
+			this.btnExit.CustomImages.Parent = this.btnExit;
+			this.btnExit.DisabledState.Parent = this.btnExit;
+			this.btnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(201)))), ((int)(((byte)(71)))));
+			this.btnExit.Font = new System.Drawing.Font("Montserrat", 8.999999F);
+			this.btnExit.ForeColor = System.Drawing.Color.White;
+			this.btnExit.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+			this.btnExit.HoverState.Parent = this.btnExit;
+			this.btnExit.Location = new System.Drawing.Point(114, 538);
+			this.btnExit.Name = "btnExit";
+			this.btnExit.ShadowDecoration.Parent = this.btnExit;
+			this.btnExit.Size = new System.Drawing.Size(336, 39);
+			this.btnExit.TabIndex = 11;
+			this.btnExit.Text = "Exit";
+			this.btnExit.UseTransparentBackground = true;
+			this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
 			// 
 			// cbUserType
 			// 
@@ -161,7 +221,7 @@
 			this.btnLogin.ForeColor = System.Drawing.Color.White;
 			this.btnLogin.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
 			this.btnLogin.HoverState.Parent = this.btnLogin;
-			this.btnLogin.Location = new System.Drawing.Point(114, 465);
+			this.btnLogin.Location = new System.Drawing.Point(114, 493);
 			this.btnLogin.Name = "btnLogin";
 			this.btnLogin.ShadowDecoration.Parent = this.btnLogin;
 			this.btnLogin.Size = new System.Drawing.Size(336, 39);
@@ -187,33 +247,32 @@
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label1.ForeColor = System.Drawing.Color.Black;
-			this.label1.Location = new System.Drawing.Point(154, 417);
+			this.label1.Location = new System.Drawing.Point(154, 447);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(93, 15);
 			this.label1.TabIndex = 5;
 			this.label1.Text = "Remember me";
 			// 
-			// guna2ToggleSwitch1
+			// tsRememberMe
 			// 
-			this.guna2ToggleSwitch1.Animated = true;
-			this.guna2ToggleSwitch1.BackColor = System.Drawing.Color.Transparent;
-			this.guna2ToggleSwitch1.Checked = true;
-			this.guna2ToggleSwitch1.CheckedState.BorderColor = System.Drawing.Color.Black;
-			this.guna2ToggleSwitch1.CheckedState.FillColor = System.Drawing.Color.Black;
-			this.guna2ToggleSwitch1.CheckedState.InnerBorderColor = System.Drawing.Color.White;
-			this.guna2ToggleSwitch1.CheckedState.InnerColor = System.Drawing.Color.White;
-			this.guna2ToggleSwitch1.CheckedState.Parent = this.guna2ToggleSwitch1;
-			this.guna2ToggleSwitch1.Location = new System.Drawing.Point(114, 415);
-			this.guna2ToggleSwitch1.Name = "guna2ToggleSwitch1";
-			this.guna2ToggleSwitch1.ShadowDecoration.Parent = this.guna2ToggleSwitch1;
-			this.guna2ToggleSwitch1.Size = new System.Drawing.Size(35, 20);
-			this.guna2ToggleSwitch1.TabIndex = 4;
-			this.guna2ToggleSwitch1.UncheckedState.BorderColor = System.Drawing.Color.Black;
-			this.guna2ToggleSwitch1.UncheckedState.BorderThickness = 2;
-			this.guna2ToggleSwitch1.UncheckedState.FillColor = System.Drawing.Color.White;
-			this.guna2ToggleSwitch1.UncheckedState.InnerBorderColor = System.Drawing.Color.Black;
-			this.guna2ToggleSwitch1.UncheckedState.InnerColor = System.Drawing.Color.Black;
-			this.guna2ToggleSwitch1.UncheckedState.Parent = this.guna2ToggleSwitch1;
+			this.tsRememberMe.Animated = true;
+			this.tsRememberMe.BackColor = System.Drawing.Color.Transparent;
+			this.tsRememberMe.CheckedState.BorderColor = System.Drawing.Color.Black;
+			this.tsRememberMe.CheckedState.FillColor = System.Drawing.Color.Black;
+			this.tsRememberMe.CheckedState.InnerBorderColor = System.Drawing.Color.White;
+			this.tsRememberMe.CheckedState.InnerColor = System.Drawing.Color.White;
+			this.tsRememberMe.CheckedState.Parent = this.tsRememberMe;
+			this.tsRememberMe.Location = new System.Drawing.Point(114, 445);
+			this.tsRememberMe.Name = "tsRememberMe";
+			this.tsRememberMe.ShadowDecoration.Parent = this.tsRememberMe;
+			this.tsRememberMe.Size = new System.Drawing.Size(35, 20);
+			this.tsRememberMe.TabIndex = 4;
+			this.tsRememberMe.UncheckedState.BorderColor = System.Drawing.Color.Black;
+			this.tsRememberMe.UncheckedState.BorderThickness = 2;
+			this.tsRememberMe.UncheckedState.FillColor = System.Drawing.Color.White;
+			this.tsRememberMe.UncheckedState.InnerBorderColor = System.Drawing.Color.Black;
+			this.tsRememberMe.UncheckedState.InnerColor = System.Drawing.Color.Black;
+			this.tsRememberMe.UncheckedState.Parent = this.tsRememberMe;
 			// 
 			// txtPassword
 			// 
@@ -354,28 +413,6 @@
 			this.guna2PictureBox2.TabStop = false;
 			this.guna2PictureBox2.UseTransparentBackground = true;
 			// 
-			// btnExit
-			// 
-			this.btnExit.Animated = true;
-			this.btnExit.BackColor = System.Drawing.Color.Transparent;
-			this.btnExit.BorderRadius = 10;
-			this.btnExit.CheckedState.Parent = this.btnExit;
-			this.btnExit.CustomImages.Parent = this.btnExit;
-			this.btnExit.DisabledState.Parent = this.btnExit;
-			this.btnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(201)))), ((int)(((byte)(71)))));
-			this.btnExit.Font = new System.Drawing.Font("Montserrat", 8.999999F);
-			this.btnExit.ForeColor = System.Drawing.Color.White;
-			this.btnExit.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-			this.btnExit.HoverState.Parent = this.btnExit;
-			this.btnExit.Location = new System.Drawing.Point(114, 510);
-			this.btnExit.Name = "btnExit";
-			this.btnExit.ShadowDecoration.Parent = this.btnExit;
-			this.btnExit.Size = new System.Drawing.Size(336, 39);
-			this.btnExit.TabIndex = 11;
-			this.btnExit.Text = "Exit";
-			this.btnExit.UseTransparentBackground = true;
-			this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-			// 
 			// FormLogin
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -410,7 +447,7 @@
 		private Guna.UI2.WinForms.Guna2Button btnLogin;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Label label1;
-		private Guna.UI2.WinForms.Guna2ToggleSwitch guna2ToggleSwitch1;
+		private Guna.UI2.WinForms.Guna2ToggleSwitch tsRememberMe;
 		private Guna.UI2.WinForms.Guna2TextBox txtPassword;
 		private Guna.UI2.WinForms.Guna2TextBox txtUsername;
 		private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
@@ -425,5 +462,7 @@
 		private System.Windows.Forms.Timer timer1;
 		private System.Windows.Forms.Label lbTime;
 		private Guna.UI2.WinForms.Guna2Button btnExit;
+		private System.Windows.Forms.Label label3;
+		private Guna.UI2.WinForms.Guna2ToggleSwitch tsShowPassword;
 	}
 }
