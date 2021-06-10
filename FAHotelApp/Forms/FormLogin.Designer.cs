@@ -85,7 +85,7 @@
 			this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
 			this.guna2Panel2.Name = "guna2Panel2";
 			this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-			this.guna2Panel2.Size = new System.Drawing.Size(560, 666);
+			this.guna2Panel2.Size = new System.Drawing.Size(563, 666);
 			this.guna2Panel2.TabIndex = 5;
 			// 
 			// label6
@@ -298,7 +298,7 @@
 			this.guna2ControlBox2.FillColor = System.Drawing.Color.White;
 			this.guna2ControlBox2.HoverState.Parent = this.guna2ControlBox2;
 			this.guna2ControlBox2.IconColor = System.Drawing.Color.Black;
-			this.guna2ControlBox2.Location = new System.Drawing.Point(952, 12);
+			this.guna2ControlBox2.Location = new System.Drawing.Point(950, 12);
 			this.guna2ControlBox2.Name = "guna2ControlBox2";
 			this.guna2ControlBox2.ShadowDecoration.Parent = this.guna2ControlBox2;
 			this.guna2ControlBox2.Size = new System.Drawing.Size(35, 28);
@@ -324,7 +324,7 @@
 			this.lbDate.Cursor = System.Windows.Forms.Cursors.Arrow;
 			this.lbDate.Font = new System.Drawing.Font("Montserrat", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lbDate.ForeColor = System.Drawing.Color.White;
-			this.lbDate.Location = new System.Drawing.Point(709, 95);
+			this.lbDate.Location = new System.Drawing.Point(709, 99);
 			this.lbDate.Name = "lbDate";
 			this.lbDate.Size = new System.Drawing.Size(104, 48);
 			this.lbDate.TabIndex = 12;
@@ -335,10 +335,10 @@
 			this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
 			this.guna2PictureBox2.Image = global::FAHotelApp.Properties.Resources._01_BGFormLogin;
 			this.guna2PictureBox2.ImageRotate = 0F;
-			this.guna2PictureBox2.Location = new System.Drawing.Point(-44, -4);
+			this.guna2PictureBox2.Location = new System.Drawing.Point(-44, -11);
 			this.guna2PictureBox2.Name = "guna2PictureBox2";
 			this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
-			this.guna2PictureBox2.Size = new System.Drawing.Size(1096, 670);
+			this.guna2PictureBox2.Size = new System.Drawing.Size(1096, 677);
 			this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.guna2PictureBox2.TabIndex = 13;
 			this.guna2PictureBox2.TabStop = false;
@@ -365,9 +365,10 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
 			this.ClientSize = new System.Drawing.Size(1040, 666);
-			this.Controls.Add(this.lbTime);
 			this.Controls.Add(this.guna2Panel2);
+			this.Controls.Add(this.lbTime);
 			this.Controls.Add(this.lbDate);
 			this.Controls.Add(this.guna2ControlBox2);
 			this.Controls.Add(this.guna2ControlBox1);
