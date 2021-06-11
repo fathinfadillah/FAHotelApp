@@ -300,7 +300,7 @@
 			this.btnBack.Location = new System.Drawing.Point(114, 559);
 			this.btnBack.Name = "btnBack";
 			this.btnBack.ShadowDecoration.Parent = this.btnBack;
-			this.btnBack.Size = new System.Drawing.Size(336, 39);
+			this.btnBack.Size = new System.Drawing.Size(168, 39);
 			this.btnBack.TabIndex = 11;
 			this.btnBack.Text = "Back";
 			this.btnBack.UseTransparentBackground = true;
@@ -369,7 +369,7 @@
 			this.lbTime.Cursor = System.Windows.Forms.Cursors.Arrow;
 			this.lbTime.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lbTime.ForeColor = System.Drawing.Color.Black;
-			this.lbTime.Location = new System.Drawing.Point(843, 44);
+			this.lbTime.Location = new System.Drawing.Point(843, 45);
 			this.lbTime.Name = "lbTime";
 			this.lbTime.Size = new System.Drawing.Size(42, 18);
 			this.lbTime.TabIndex = 16;
@@ -382,7 +382,7 @@
 			this.lbDate.Cursor = System.Windows.Forms.Cursors.Arrow;
 			this.lbDate.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lbDate.ForeColor = System.Drawing.Color.Black;
-			this.lbDate.Location = new System.Drawing.Point(677, 44);
+			this.lbDate.Location = new System.Drawing.Point(677, 45);
 			this.lbDate.Name = "lbDate";
 			this.lbDate.Size = new System.Drawing.Size(41, 18);
 			this.lbDate.TabIndex = 15;
@@ -426,7 +426,7 @@
 			this.btnSend.Location = new System.Drawing.Point(584, 559);
 			this.btnSend.Name = "btnSend";
 			this.btnSend.ShadowDecoration.Parent = this.btnSend;
-			this.btnSend.Size = new System.Drawing.Size(336, 39);
+			this.btnSend.Size = new System.Drawing.Size(168, 39);
 			this.btnSend.TabIndex = 10;
 			this.btnSend.Text = "Send";
 			this.btnSend.UseTransparentBackground = true;

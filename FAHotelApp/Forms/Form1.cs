@@ -25,7 +25,7 @@ namespace FAHotelApp.Forms
 
 		private void btnLogOut_Click(object sender, EventArgs e)
 		{
-			FormLogin f = new FormLogin();
+			FormLogin2 f = new FormLogin2();
 			f.Show();
 			this.Hide();
 		}

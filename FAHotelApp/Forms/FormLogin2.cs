@@ -13,21 +13,11 @@ using System.Threading;
 
 namespace FAHotelApp
 {
-	public partial class FormLogin : Form
+	public partial class FormLogin2 : Form
 	{
-		public FormLogin()
+		public FormLogin2()
 		{
-			Thread trd = new Thread(new ThreadStart(formRun));
-			trd.SetApartmentState(ApartmentState.STA);
-			trd.Start();
-			Thread.Sleep(8000);
 			InitializeComponent();
-			trd.Abort();
-		}
-
-		private void formRun()
-		{
-			Application.Run(new FormWelcomeScreen());
 		}
 
 		private void FormLogin_Load(object sender, EventArgs e)
@@ -117,7 +107,7 @@ namespace FAHotelApp
 			{
 				Properties.Settings.Default.Username = "";
 				Properties.Settings.Default.UserType = "";
-				Properties.Settings.Default.Password= "";
+				Properties.Settings.Default.Password = "";
 				Properties.Settings.Default.Save();
 			}
 		}
@@ -160,7 +150,7 @@ namespace FAHotelApp
 				epWrong.SetError(txtUsername, "");
 				epCorrect.SetError(txtUsername, "Terisi!");
 			}
-			
+
 		}
 
 		private void txtPassword_Leave(object sender, EventArgs e)
@@ -177,7 +167,7 @@ namespace FAHotelApp
 				epWrong.SetError(txtPassword, "");
 				epCorrect.SetError(txtPassword, "Terisi!");
 			}
-			
+
 		}
 
 		private void lbForgotPassword_Click(object sender, EventArgs e)
