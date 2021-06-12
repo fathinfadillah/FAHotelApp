@@ -140,7 +140,7 @@ namespace FAHotelApp
 		{
 			if (txtUsername.Text == "")
 			{
-				epWarning.SetError(txtUsername, "TextBox Username tidak boleh kosong!");
+				epWarning.SetError(txtUsername, "TextBox Username tidak boleh kosong !");
 				epWrong.SetError(txtUsername, "");
 				epCorrect.SetError(txtUsername, "");
 			}
@@ -148,7 +148,7 @@ namespace FAHotelApp
 			{
 				epWarning.SetError(txtUsername, "");
 				epWrong.SetError(txtUsername, "");
-				epCorrect.SetError(txtUsername, "Terisi!");
+				epCorrect.SetError(txtUsername, "Terisi !");
 			}
 
 		}
@@ -157,7 +157,7 @@ namespace FAHotelApp
 		{
 			if (txtPassword.Text == "")
 			{
-				epWarning.SetError(txtPassword, "TextBox Password tidak boleh kosong!");
+				epWarning.SetError(txtPassword, "TextBox Password tidak boleh kosong !");
 				epWrong.SetError(txtPassword, "");
 				epCorrect.SetError(txtPassword, "");
 			}
@@ -165,7 +165,7 @@ namespace FAHotelApp
 			{
 				epWarning.SetError(txtPassword, "");
 				epWrong.SetError(txtPassword, "");
-				epCorrect.SetError(txtPassword, "Terisi!");
+				epCorrect.SetError(txtPassword, "Terisi !");
 			}
 
 		}

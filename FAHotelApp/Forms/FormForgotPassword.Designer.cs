@@ -29,6 +29,7 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormForgotPassword));
 			this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
 			this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
 			this.btnGetPassword = new Guna.UI2.WinForms.Guna2Button();
@@ -38,6 +39,12 @@
 			this.txtEmployeeID = new Guna.UI2.WinForms.Guna2TextBox();
 			this.label2 = new System.Windows.Forms.Label();
 			this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
+			this.epWarning = new System.Windows.Forms.ErrorProvider(this.components);
+			this.epWrong = new System.Windows.Forms.ErrorProvider(this.components);
+			this.epCorrect = new System.Windows.Forms.ErrorProvider(this.components);
+			((System.ComponentModel.ISupportInitialize)(this.epWarning)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.epWrong)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.epCorrect)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// guna2Elipse1
@@ -99,6 +106,7 @@
 			this.txtUsername.ShadowDecoration.Parent = this.txtUsername;
 			this.txtUsername.Size = new System.Drawing.Size(281, 36);
 			this.txtUsername.TabIndex = 2;
+			this.txtUsername.Leave += new System.EventHandler(this.txtUsername_Leave);
 			// 
 			// label5
 			// 
@@ -148,6 +156,7 @@
 			this.txtEmployeeID.ShadowDecoration.Parent = this.txtEmployeeID;
 			this.txtEmployeeID.Size = new System.Drawing.Size(281, 36);
 			this.txtEmployeeID.TabIndex = 1;
+			this.txtEmployeeID.Leave += new System.EventHandler(this.txtEmployeeID_Leave);
 			// 
 			// label2
 			// 
@@ -172,6 +181,21 @@
 			this.guna2ControlBox2.Size = new System.Drawing.Size(35, 28);
 			this.guna2ControlBox2.TabIndex = 15;
 			// 
+			// epWarning
+			// 
+			this.epWarning.ContainerControl = this;
+			this.epWarning.Icon = ((System.Drawing.Icon)(resources.GetObject("epWarning.Icon")));
+			// 
+			// epWrong
+			// 
+			this.epWrong.ContainerControl = this;
+			this.epWrong.Icon = ((System.Drawing.Icon)(resources.GetObject("epWrong.Icon")));
+			// 
+			// epCorrect
+			// 
+			this.epCorrect.ContainerControl = this;
+			this.epCorrect.Icon = ((System.Drawing.Icon)(resources.GetObject("epCorrect.Icon")));
+			// 
 			// FormForgotPassword
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -189,6 +213,9 @@
 			this.Name = "FormForgotPassword";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "FormForgotPassword";
+			((System.ComponentModel.ISupportInitialize)(this.epWarning)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.epWrong)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.epCorrect)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -205,5 +232,8 @@
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label label2;
 		private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
+		private System.Windows.Forms.ErrorProvider epWarning;
+		private System.Windows.Forms.ErrorProvider epWrong;
+		private System.Windows.Forms.ErrorProvider epCorrect;
 	}
 }

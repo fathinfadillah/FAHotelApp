@@ -59,7 +59,7 @@ namespace FAHotelApp
 
 				clientDetails.Send(mailDetails);
 
-				MessageBox.Show("Email Sent!");
+				MessageBox.Show("Email Sent !");
 			}
 			catch (Exception ex)
 			{
@@ -91,7 +91,7 @@ namespace FAHotelApp
 		{
 			if (txtSenderEmail.Text == "")
 			{
-				epWarning.SetError(txtSenderEmail, "TextBox Email tidak boleh kosong!");
+				epWarning.SetError(txtSenderEmail, "TextBox Email tidak boleh kosong !");
 				epWrong.SetError(txtSenderEmail, "");
 				epCorrect.SetError(txtSenderEmail, "");
 			}
@@ -109,6 +109,22 @@ namespace FAHotelApp
 					epWrong.SetError(txtSenderEmail, "Format email salah!\nContoh: a@b.c");
 					epCorrect.SetError(txtSenderEmail, "");
 				}
+			}
+		}
+
+		private void txtSenderPassword_Leave(object sender, EventArgs e)
+		{
+			if (txtSenderPassword.Text == "")
+			{
+				epWarning.SetError(txtSenderPassword, "TextBox Password tidak boleh kosong !");
+				epWrong.SetError(txtSenderPassword, "");
+				epCorrect.SetError(txtSenderPassword, "");
+			}
+			else
+			{
+				epWarning.SetError(txtSenderPassword, "");
+				epWrong.SetError(txtSenderPassword, "");
+				epCorrect.SetError(txtSenderPassword, "Terisi !");
 			}
 		}
 	}
