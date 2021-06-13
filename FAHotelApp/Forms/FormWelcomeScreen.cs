@@ -24,8 +24,6 @@ namespace FAHotelApp
 			InitializeComponent();
 		}
 
-		string AbsoluteRef = null;
-
 		private void FormWelcomeScreen_Load(object sender, EventArgs e)
 		{
 			timer1.Start();
@@ -34,7 +32,20 @@ namespace FAHotelApp
 
 			lbTime.Text = DateTime.Now.ToLongTimeString();
 
-			axWindowsMediaPlayer1.settings.autoStart = true;
+			// temporary file path - your temp file = video.avi
+			var strTempFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "WelcomeScreen.mp4");
+
+			try
+			{
+				// ResourceName = the resource you want to play
+				File.WriteAllBytes(strTempFile, Properties.Resources.WelcomeScreen);
+				axWindowsMediaPlayer1.URL = strTempFile;
+				axWindowsMediaPlayer1.Ctlcontrols.play();
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show(ex.Message);
+			}
 
 		}
 
@@ -43,20 +54,6 @@ namespace FAHotelApp
 			lbTime.Text = DateTime.Now.ToLongTimeString();
 
 			timer1.Start();
-		}
-
-		private void axWindowsMediaPlayer1_Enter(object sender, EventArgs e)
-		{
-			if (System.Diagnostics.Debugger.IsAttached)
-			{
-				AbsoluteRef = Path.GetFullPath(Application.StartupPath + "\\..\\..\\..\\Resources\\");
-			}
-			else
-			{
-				AbsoluteRef = Application.StartupPath + "\\Resources\\";
-			}
-			string vlcVideo = AbsoluteRef + "WelcomeScreen.mp4";
-			axWindowsMediaPlayer1.URL = @"D:\Personal\Kuliah\OneDrive - polman.astra.ac.id\Semester 2\Pemrograman 2\Tugas\SI_PRG2_20202_PROYEKAKHIR\Source Code\FAHotelApp\FAHotelApp\Resources\WelcomeScreen.mp4";
 		}
 	}
 }

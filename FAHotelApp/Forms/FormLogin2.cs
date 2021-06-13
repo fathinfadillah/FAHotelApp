@@ -175,5 +175,11 @@ namespace FAHotelApp
 			FormForgotPassword f = new FormForgotPassword();
 			f.Show();
 		}
+
+		private void lbTermCon_Click(object sender, EventArgs e)
+		{
+			FormTC f = new FormTC();
+			f.Show();
+		}
 	}
 }

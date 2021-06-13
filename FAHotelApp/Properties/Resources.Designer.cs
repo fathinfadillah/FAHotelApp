@@ -89,5 +89,25 @@ namespace FAHotelApp.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] Terms_and_Conditions_FAHotel {
+            get {
+                object obj = ResourceManager.GetObject("Terms_and_Conditions_FAHotel", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] WelcomeScreen {
+            get {
+                object obj = ResourceManager.GetObject("WelcomeScreen", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
     }
 }

@@ -56,6 +56,8 @@
 			this.epWarning = new System.Windows.Forms.ErrorProvider(this.components);
 			this.epWrong = new System.Windows.Forms.ErrorProvider(this.components);
 			this.epCorrect = new System.Windows.Forms.ErrorProvider(this.components);
+			this.label6 = new System.Windows.Forms.Label();
+			this.lbTermCon = new System.Windows.Forms.Label();
 			this.guna2Panel2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
@@ -78,7 +80,9 @@
 			// guna2Panel2
 			// 
 			this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
+			this.guna2Panel2.Controls.Add(this.label6);
 			this.guna2Panel2.Controls.Add(this.label3);
+			this.guna2Panel2.Controls.Add(this.lbTermCon);
 			this.guna2Panel2.Controls.Add(this.tsShowPassword);
 			this.guna2Panel2.Controls.Add(this.btnExit);
 			this.guna2Panel2.Controls.Add(this.cbUserType);
@@ -437,6 +441,31 @@
 			this.epCorrect.ContainerControl = this;
 			this.epCorrect.Icon = ((System.Drawing.Icon)(resources.GetObject("epCorrect.Icon")));
 			// 
+			// label6
+			// 
+			this.label6.AutoSize = true;
+			this.label6.Cursor = System.Windows.Forms.Cursors.Arrow;
+			this.label6.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label6.ForeColor = System.Drawing.Color.Black;
+			this.label6.Location = new System.Drawing.Point(193, 601);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(174, 15);
+			this.label6.TabIndex = 17;
+			this.label6.Text = "By login in you agree with our ";
+			// 
+			// lbTermCon
+			// 
+			this.lbTermCon.AutoSize = true;
+			this.lbTermCon.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.lbTermCon.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbTermCon.ForeColor = System.Drawing.Color.Black;
+			this.lbTermCon.Location = new System.Drawing.Point(216, 616);
+			this.lbTermCon.Name = "lbTermCon";
+			this.lbTermCon.Size = new System.Drawing.Size(124, 15);
+			this.lbTermCon.TabIndex = 16;
+			this.lbTermCon.Text = "Terms and Conditions";
+			this.lbTermCon.Click += new System.EventHandler(this.lbTermCon_Click);
+			// 
 			// FormLogin2
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -494,5 +523,7 @@
 		private System.Windows.Forms.ErrorProvider epWarning;
 		private System.Windows.Forms.ErrorProvider epWrong;
 		private System.Windows.Forms.ErrorProvider epCorrect;
+		private System.Windows.Forms.Label label6;
+		private System.Windows.Forms.Label lbTermCon;
 	}
 }
