@@ -452,7 +452,7 @@
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Name = "FormLogin2";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "FormLogin";
+			this.Text = "Login";
 			this.Load += new System.EventHandler(this.FormLogin_Load);
 			this.guna2Panel2.ResumeLayout(false);
 			this.guna2Panel2.PerformLayout();

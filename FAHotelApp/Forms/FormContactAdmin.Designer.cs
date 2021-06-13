@@ -369,7 +369,7 @@
 			this.lbTime.Cursor = System.Windows.Forms.Cursors.Arrow;
 			this.lbTime.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lbTime.ForeColor = System.Drawing.Color.Black;
-			this.lbTime.Location = new System.Drawing.Point(843, 45);
+			this.lbTime.Location = new System.Drawing.Point(921, 47);
 			this.lbTime.Name = "lbTime";
 			this.lbTime.Size = new System.Drawing.Size(42, 18);
 			this.lbTime.TabIndex = 16;
@@ -382,7 +382,7 @@
 			this.lbDate.Cursor = System.Windows.Forms.Cursors.Arrow;
 			this.lbDate.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lbDate.ForeColor = System.Drawing.Color.Black;
-			this.lbDate.Location = new System.Drawing.Point(677, 45);
+			this.lbDate.Location = new System.Drawing.Point(755, 47);
 			this.lbDate.Name = "lbDate";
 			this.lbDate.Size = new System.Drawing.Size(41, 18);
 			this.lbDate.TabIndex = 15;
@@ -503,7 +503,7 @@
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Name = "FormContactAdmin";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "FormLogin";
+			this.Text = "Contact Admin";
 			this.Load += new System.EventHandler(this.FormContactAdmin_Load);
 			this.guna2Panel2.ResumeLayout(false);
 			this.guna2Panel2.PerformLayout();

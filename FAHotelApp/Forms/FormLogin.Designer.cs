@@ -33,6 +33,8 @@
 			this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
 			this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
 			this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+			this.label6 = new System.Windows.Forms.Label();
+			this.lbTermCon = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
 			this.tsShowPassword = new Guna.UI2.WinForms.Guna2ToggleSwitch();
 			this.btnExit = new Guna.UI2.WinForms.Guna2Button();
@@ -78,6 +80,8 @@
 			// guna2Panel2
 			// 
 			this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
+			this.guna2Panel2.Controls.Add(this.label6);
+			this.guna2Panel2.Controls.Add(this.lbTermCon);
 			this.guna2Panel2.Controls.Add(this.label3);
 			this.guna2Panel2.Controls.Add(this.tsShowPassword);
 			this.guna2Panel2.Controls.Add(this.btnExit);
@@ -98,6 +102,31 @@
 			this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
 			this.guna2Panel2.Size = new System.Drawing.Size(563, 666);
 			this.guna2Panel2.TabIndex = 5;
+			// 
+			// label6
+			// 
+			this.label6.AutoSize = true;
+			this.label6.Cursor = System.Windows.Forms.Cursors.Arrow;
+			this.label6.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label6.ForeColor = System.Drawing.Color.Black;
+			this.label6.Location = new System.Drawing.Point(193, 601);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(174, 15);
+			this.label6.TabIndex = 15;
+			this.label6.Text = "By login in you agree with our ";
+			// 
+			// lbTermCon
+			// 
+			this.lbTermCon.AutoSize = true;
+			this.lbTermCon.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.lbTermCon.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbTermCon.ForeColor = System.Drawing.Color.Black;
+			this.lbTermCon.Location = new System.Drawing.Point(216, 616);
+			this.lbTermCon.Name = "lbTermCon";
+			this.lbTermCon.Size = new System.Drawing.Size(124, 15);
+			this.lbTermCon.TabIndex = 14;
+			this.lbTermCon.Text = "Terms and Conditions";
+			this.lbTermCon.Click += new System.EventHandler(this.lbTermCon_Click);
 			// 
 			// label3
 			// 
@@ -452,7 +481,7 @@
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Name = "FormLogin";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "FormLogin";
+			this.Text = "Login";
 			this.Load += new System.EventHandler(this.FormLogin_Load);
 			this.guna2Panel2.ResumeLayout(false);
 			this.guna2Panel2.PerformLayout();
@@ -494,5 +523,7 @@
 		private System.Windows.Forms.ErrorProvider epWarning;
 		private System.Windows.Forms.ErrorProvider epWrong;
 		private System.Windows.Forms.ErrorProvider epCorrect;
+		private System.Windows.Forms.Label label6;
+		private System.Windows.Forms.Label lbTermCon;
 	}
 }
