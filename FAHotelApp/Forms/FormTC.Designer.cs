@@ -32,7 +32,6 @@
 			this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
 			this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
 			this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
-			this.pdfViewer1 = new PdfiumViewer.PdfViewer();
 			this.SuspendLayout();
 			// 
 			// guna2Elipse1
@@ -58,20 +57,12 @@
 			this.guna2ControlBox2.Size = new System.Drawing.Size(35, 28);
 			this.guna2ControlBox2.TabIndex = 16;
 			// 
-			// pdfViewer1
-			// 
-			this.pdfViewer1.Location = new System.Drawing.Point(62, 51);
-			this.pdfViewer1.Name = "pdfViewer1";
-			this.pdfViewer1.Size = new System.Drawing.Size(677, 470);
-			this.pdfViewer1.TabIndex = 17;
-			// 
 			// FormTC
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
 			this.ClientSize = new System.Drawing.Size(800, 555);
-			this.Controls.Add(this.pdfViewer1);
 			this.Controls.Add(this.guna2ControlBox2);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Name = "FormTC";
@@ -87,6 +78,5 @@
 		private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
 		private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
 		private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
-		private PdfiumViewer.PdfViewer pdfViewer1;
 	}
 }
