@@ -152,12 +152,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\FAHotelTransparentLogo1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\FAHotelTransparentLogo.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\FAHotelTransparentLogoWhite.png" />
   </ItemGroup>
   <ItemGroup>
@@ -221,6 +215,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\WelcomeScreen.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FAHotelTransparentLogoNavyBlue.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

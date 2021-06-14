@@ -33,7 +33,9 @@
 			this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
 			this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
 			this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+			this.label6 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
+			this.lbTermCon = new System.Windows.Forms.Label();
 			this.tsShowPassword = new Guna.UI2.WinForms.Guna2ToggleSwitch();
 			this.btnExit = new Guna.UI2.WinForms.Guna2Button();
 			this.cbUserType = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -56,8 +58,6 @@
 			this.epWarning = new System.Windows.Forms.ErrorProvider(this.components);
 			this.epWrong = new System.Windows.Forms.ErrorProvider(this.components);
 			this.epCorrect = new System.Windows.Forms.ErrorProvider(this.components);
-			this.label6 = new System.Windows.Forms.Label();
-			this.lbTermCon = new System.Windows.Forms.Label();
 			this.guna2Panel2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
@@ -103,6 +103,18 @@
 			this.guna2Panel2.Size = new System.Drawing.Size(563, 666);
 			this.guna2Panel2.TabIndex = 5;
 			// 
+			// label6
+			// 
+			this.label6.AutoSize = true;
+			this.label6.Cursor = System.Windows.Forms.Cursors.Arrow;
+			this.label6.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label6.ForeColor = System.Drawing.Color.Black;
+			this.label6.Location = new System.Drawing.Point(193, 601);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(174, 15);
+			this.label6.TabIndex = 17;
+			this.label6.Text = "By login in you agree with our ";
+			// 
 			// label3
 			// 
 			this.label3.AutoSize = true;
@@ -113,6 +125,19 @@
 			this.label3.Size = new System.Drawing.Size(93, 15);
 			this.label3.TabIndex = 13;
 			this.label3.Text = "Show Password";
+			// 
+			// lbTermCon
+			// 
+			this.lbTermCon.AutoSize = true;
+			this.lbTermCon.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.lbTermCon.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbTermCon.ForeColor = System.Drawing.Color.Black;
+			this.lbTermCon.Location = new System.Drawing.Point(216, 616);
+			this.lbTermCon.Name = "lbTermCon";
+			this.lbTermCon.Size = new System.Drawing.Size(124, 15);
+			this.lbTermCon.TabIndex = 16;
+			this.lbTermCon.Text = "Terms and Conditions";
+			this.lbTermCon.Click += new System.EventHandler(this.lbTermCon_Click);
 			// 
 			// tsShowPassword
 			// 
@@ -345,7 +370,7 @@
 			// guna2PictureBox1
 			// 
 			this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-			this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
+			this.guna2PictureBox1.Image = global::FAHotelApp.Properties.Resources.FAHotelTransparentLogoNavyBlue;
 			this.guna2PictureBox1.ImageRotate = 0F;
 			this.guna2PictureBox1.Location = new System.Drawing.Point(35, 29);
 			this.guna2PictureBox1.Name = "guna2PictureBox1";
@@ -440,31 +465,6 @@
 			// 
 			this.epCorrect.ContainerControl = this;
 			this.epCorrect.Icon = ((System.Drawing.Icon)(resources.GetObject("epCorrect.Icon")));
-			// 
-			// label6
-			// 
-			this.label6.AutoSize = true;
-			this.label6.Cursor = System.Windows.Forms.Cursors.Arrow;
-			this.label6.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label6.ForeColor = System.Drawing.Color.Black;
-			this.label6.Location = new System.Drawing.Point(193, 601);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(174, 15);
-			this.label6.TabIndex = 17;
-			this.label6.Text = "By login in you agree with our ";
-			// 
-			// lbTermCon
-			// 
-			this.lbTermCon.AutoSize = true;
-			this.lbTermCon.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.lbTermCon.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbTermCon.ForeColor = System.Drawing.Color.Black;
-			this.lbTermCon.Location = new System.Drawing.Point(216, 616);
-			this.lbTermCon.Name = "lbTermCon";
-			this.lbTermCon.Size = new System.Drawing.Size(124, 15);
-			this.lbTermCon.TabIndex = 16;
-			this.lbTermCon.Text = "Terms and Conditions";
-			this.lbTermCon.Click += new System.EventHandler(this.lbTermCon_Click);
 			// 
 			// FormLogin2
 			// 

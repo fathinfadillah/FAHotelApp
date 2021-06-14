@@ -35,14 +35,14 @@
 			this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
 			this.lbTime = new System.Windows.Forms.Label();
 			this.lbDate = new System.Windows.Forms.Label();
-			this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
 			this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
 			this.timer1 = new System.Windows.Forms.Timer(this.components);
+			this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
 			this.guna2Panel2.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// guna2Elipse1
@@ -97,20 +97,6 @@
 			this.lbDate.TabIndex = 15;
 			this.lbDate.Text = "Date";
 			// 
-			// guna2PictureBox1
-			// 
-			this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-			this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-			this.guna2PictureBox1.ImageRotate = 0F;
-			this.guna2PictureBox1.Location = new System.Drawing.Point(35, 29);
-			this.guna2PictureBox1.Name = "guna2PictureBox1";
-			this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-			this.guna2PictureBox1.Size = new System.Drawing.Size(128, 52);
-			this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.guna2PictureBox1.TabIndex = 0;
-			this.guna2PictureBox1.TabStop = false;
-			this.guna2PictureBox1.UseTransparentBackground = true;
-			// 
 			// guna2Panel1
 			// 
 			this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
@@ -141,6 +127,20 @@
 			// 
 			this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
 			// 
+			// guna2PictureBox1
+			// 
+			this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
+			this.guna2PictureBox1.Image = global::FAHotelApp.Properties.Resources.FAHotelTransparentLogoNavyBlue;
+			this.guna2PictureBox1.ImageRotate = 0F;
+			this.guna2PictureBox1.Location = new System.Drawing.Point(35, 29);
+			this.guna2PictureBox1.Name = "guna2PictureBox1";
+			this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
+			this.guna2PictureBox1.Size = new System.Drawing.Size(128, 52);
+			this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.guna2PictureBox1.TabIndex = 0;
+			this.guna2PictureBox1.TabStop = false;
+			this.guna2PictureBox1.UseTransparentBackground = true;
+			// 
 			// FormWelcomeScreen
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -155,8 +155,8 @@
 			this.Load += new System.EventHandler(this.FormWelcomeScreen_Load);
 			this.guna2Panel2.ResumeLayout(false);
 			this.guna2Panel2.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
 			this.ResumeLayout(false);
 
 		}

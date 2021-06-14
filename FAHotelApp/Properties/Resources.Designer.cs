@@ -83,6 +83,16 @@ namespace FAHotelApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap FAHotelTransparentLogoNavyBlue {
+            get {
+                object obj = ResourceManager.GetObject("FAHotelTransparentLogoNavyBlue", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap FAHotelTransparentLogoWhite {
             get {
                 object obj = ResourceManager.GetObject("FAHotelTransparentLogoWhite", resourceCulture);

@@ -463,7 +463,7 @@
 			// guna2PictureBox1
 			// 
 			this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-			this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
+			this.guna2PictureBox1.Image = global::FAHotelApp.Properties.Resources.FAHotelTransparentLogoNavyBlue;
 			this.guna2PictureBox1.ImageRotate = 0F;
 			this.guna2PictureBox1.Location = new System.Drawing.Point(35, 29);
 			this.guna2PictureBox1.Name = "guna2PictureBox1";
