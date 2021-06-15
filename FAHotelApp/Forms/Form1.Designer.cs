@@ -50,19 +50,19 @@
 			this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
 			this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
 			this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-			this.guna2TextBox1.Location = new System.Drawing.Point(165, 87);
+			this.guna2TextBox1.Location = new System.Drawing.Point(356, 28);
 			this.guna2TextBox1.Name = "guna2TextBox1";
 			this.guna2TextBox1.PasswordChar = '\0';
 			this.guna2TextBox1.PlaceholderText = "";
 			this.guna2TextBox1.SelectedText = "";
 			this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-			this.guna2TextBox1.Size = new System.Drawing.Size(200, 36);
+			this.guna2TextBox1.Size = new System.Drawing.Size(200, 35);
 			this.guna2TextBox1.TabIndex = 0;
 			// 
 			// label1
 			// 
 			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(574, 41);
+			this.label1.Location = new System.Drawing.Point(590, 28);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(52, 13);
 			this.label1.TabIndex = 1;
@@ -71,7 +71,7 @@
 			// lbUser
 			// 
 			this.lbUser.AutoSize = true;
-			this.lbUser.Location = new System.Drawing.Point(656, 41);
+			this.lbUser.Location = new System.Drawing.Point(672, 28);
 			this.lbUser.Name = "lbUser";
 			this.lbUser.Size = new System.Drawing.Size(0, 13);
 			this.lbUser.TabIndex = 2;
@@ -79,7 +79,7 @@
 			// label2
 			// 
 			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(574, 63);
+			this.label2.Location = new System.Drawing.Point(590, 50);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(56, 13);
 			this.label2.TabIndex = 3;
@@ -88,7 +88,7 @@
 			// lbUserType
 			// 
 			this.lbUserType.AutoSize = true;
-			this.lbUserType.Location = new System.Drawing.Point(656, 63);
+			this.lbUserType.Location = new System.Drawing.Point(672, 50);
 			this.lbUserType.Name = "lbUserType";
 			this.lbUserType.Size = new System.Drawing.Size(0, 13);
 			this.lbUserType.TabIndex = 4;
@@ -106,7 +106,7 @@
 			this.btnLogOut.ForeColor = System.Drawing.Color.White;
 			this.btnLogOut.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
 			this.btnLogOut.HoverState.Parent = this.btnLogOut;
-			this.btnLogOut.Location = new System.Drawing.Point(577, 114);
+			this.btnLogOut.Location = new System.Drawing.Point(593, 101);
 			this.btnLogOut.Name = "btnLogOut";
 			this.btnLogOut.ShadowDecoration.Parent = this.btnLogOut;
 			this.btnLogOut.Size = new System.Drawing.Size(181, 39);
@@ -119,7 +119,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.ClientSize = new System.Drawing.Size(785, 406);
 			this.Controls.Add(this.btnLogOut);
 			this.Controls.Add(this.lbUserType);
 			this.Controls.Add(this.label2);

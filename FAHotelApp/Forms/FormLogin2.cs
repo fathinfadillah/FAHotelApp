@@ -11,7 +11,7 @@ using System.Data.SqlClient;
 using FAHotelApp.Forms;
 using System.Threading;
 
-namespace FAHotelApp
+namespace FAHotelApp.Forms
 {
 	public partial class FormLogin2 : Form
 	{
@@ -79,7 +79,7 @@ namespace FAHotelApp
 							}
 							else if (cbUserType.SelectedIndex == 1)
 							{
-								Form2 ff = new Form2();
+								FormSplash ff = new FormSplash();
 								ff.Show();
 								this.Hide();
 							}

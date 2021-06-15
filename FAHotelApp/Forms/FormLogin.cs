@@ -11,7 +11,7 @@ using System.Data.SqlClient;
 using FAHotelApp.Forms;
 using System.Threading;
 
-namespace FAHotelApp
+namespace FAHotelApp.Forms
 {
 	public partial class FormLogin : Form
 	{
@@ -84,13 +84,16 @@ namespace FAHotelApp
 							MessageBox.Show("Anda Login Sebagai " + dt.Rows[i][7]);
 							if (cbUserType.SelectedIndex == 0)
 							{
+								this.Hide();
+								FormSplash splash = new FormSplash();
+								splash.ShowDialog();
 								Form1 f = new Form1();
 								f.Show();
-								this.Hide();
+								
 							}
 							else if (cbUserType.SelectedIndex == 1)
 							{
-								Form2 ff = new Form2();
+								FormSplash ff = new FormSplash();
 								ff.Show();
 								this.Hide();
 							}

@@ -1,4 +1,4 @@
-﻿namespace FAHotelApp
+﻿namespace FAHotelApp.Forms
 {
 	partial class FormWelcomeScreen
 	{
@@ -29,20 +29,19 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormWelcomeScreen));
 			this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
 			this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
 			this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
 			this.lbTime = new System.Windows.Forms.Label();
 			this.lbDate = new System.Windows.Forms.Label();
-			this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-			this.panel1 = new System.Windows.Forms.Panel();
-			this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
 			this.timer1 = new System.Windows.Forms.Timer(this.components);
 			this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+			this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
+			this.timer2 = new System.Windows.Forms.Timer(this.components);
+			this.timer3 = new System.Windows.Forms.Timer(this.components);
 			this.guna2Panel2.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// guna2Elipse1
@@ -51,7 +50,6 @@
 			// 
 			// guna2DragControl1
 			// 
-			this.guna2DragControl1.TargetControl = this.guna2Panel2;
 			this.guna2DragControl1.TransparentWhileDrag = true;
 			this.guna2DragControl1.UseTransparentDrag = true;
 			// 
@@ -61,9 +59,7 @@
 			this.guna2Panel2.Controls.Add(this.lbTime);
 			this.guna2Panel2.Controls.Add(this.lbDate);
 			this.guna2Panel2.Controls.Add(this.guna2PictureBox1);
-			this.guna2Panel2.Controls.Add(this.guna2Panel1);
-			this.guna2Panel2.Controls.Add(this.panel1);
-			this.guna2Panel2.Controls.Add(this.axWindowsMediaPlayer1);
+			this.guna2Panel2.Controls.Add(this.guna2PictureBox2);
 			this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Left;
 			this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
 			this.guna2Panel2.Name = "guna2Panel2";
@@ -97,32 +93,6 @@
 			this.lbDate.TabIndex = 15;
 			this.lbDate.Text = "Date";
 			// 
-			// guna2Panel1
-			// 
-			this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
-			this.guna2Panel1.Location = new System.Drawing.Point(24, 120);
-			this.guna2Panel1.Name = "guna2Panel1";
-			this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-			this.guna2Panel1.Size = new System.Drawing.Size(116, 564);
-			this.guna2Panel1.TabIndex = 19;
-			// 
-			// panel1
-			// 
-			this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
-			this.panel1.Location = new System.Drawing.Point(79, 0);
-			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(878, 161);
-			this.panel1.TabIndex = 18;
-			// 
-			// axWindowsMediaPlayer1
-			// 
-			this.axWindowsMediaPlayer1.Enabled = true;
-			this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(85, 79);
-			this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
-			this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
-			this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(870, 685);
-			this.axWindowsMediaPlayer1.TabIndex = 17;
-			// 
 			// timer1
 			// 
 			this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
@@ -141,6 +111,26 @@
 			this.guna2PictureBox1.TabStop = false;
 			this.guna2PictureBox1.UseTransparentBackground = true;
 			// 
+			// guna2PictureBox2
+			// 
+			this.guna2PictureBox2.Image = global::FAHotelApp.Properties.Resources.WelcomeScreen1;
+			this.guna2PictureBox2.ImageRotate = 0F;
+			this.guna2PictureBox2.Location = new System.Drawing.Point(28, 47);
+			this.guna2PictureBox2.Name = "guna2PictureBox2";
+			this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
+			this.guna2PictureBox2.Size = new System.Drawing.Size(985, 631);
+			this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.guna2PictureBox2.TabIndex = 17;
+			this.guna2PictureBox2.TabStop = false;
+			// 
+			// timer2
+			// 
+			this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+			// 
+			// timer3
+			// 
+			this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
+			// 
 			// FormWelcomeScreen
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -155,8 +145,8 @@
 			this.Load += new System.EventHandler(this.FormWelcomeScreen_Load);
 			this.guna2Panel2.ResumeLayout(false);
 			this.guna2Panel2.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -170,8 +160,8 @@
 		private System.Windows.Forms.Timer timer1;
 		private System.Windows.Forms.Label lbTime;
 		private System.Windows.Forms.Label lbDate;
-		private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
-		private System.Windows.Forms.Panel panel1;
-		private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+		private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
+		private System.Windows.Forms.Timer timer2;
+		private System.Windows.Forms.Timer timer3;
 	}
 }

@@ -1,4 +1,4 @@
-﻿namespace FAHotelApp
+﻿namespace FAHotelApp.Forms
 {
 	partial class FormLogin2
 	{
