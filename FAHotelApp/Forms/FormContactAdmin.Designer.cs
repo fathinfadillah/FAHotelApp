@@ -240,6 +240,7 @@
 			this.txtRecipientEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
 			this.txtRecipientEmail.DisabledState.Parent = this.txtRecipientEmail;
 			this.txtRecipientEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.txtRecipientEmail.Enabled = false;
 			this.txtRecipientEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
 			this.txtRecipientEmail.FocusedState.Parent = this.txtRecipientEmail;
 			this.txtRecipientEmail.Font = new System.Drawing.Font("Segoe UI", 9F);

@@ -42,7 +42,8 @@
 			// 
 			// guna2Elipse1
 			// 
-			this.guna2Elipse1.BorderRadius = 8;
+			this.guna2Elipse1.BorderRadius = 9;
+			this.guna2Elipse1.TargetControl = this;
 			// 
 			// lbUser
 			// 
@@ -59,7 +60,6 @@
 			// 
 			// guna2PictureBox2
 			// 
-			this.guna2PictureBox2.Image = global::FAHotelApp.Properties.Resources.Asset_1;
 			this.guna2PictureBox2.ImageRotate = 0F;
 			this.guna2PictureBox2.Location = new System.Drawing.Point(21, 115);
 			this.guna2PictureBox2.Name = "guna2PictureBox2";

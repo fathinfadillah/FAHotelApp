@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FAHotelApp.Forms
 {
-	public partial class Form1 : Form
+	public partial class FormDashboardtemp : Form
 	{
-		public Form1()
+		public FormDashboardtemp()
 		{
 			InitializeComponent();
 		}

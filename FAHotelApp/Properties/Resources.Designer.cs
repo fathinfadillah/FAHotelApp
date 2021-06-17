@@ -73,9 +73,69 @@ namespace FAHotelApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Asset_1 {
+        internal static System.Drawing.Bitmap align_top_120px {
             get {
-                object obj = ResourceManager.GetObject("Asset 1", resourceCulture);
+                object obj = ResourceManager.GetObject("align_top_120px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap align_top_120px2 {
+            get {
+                object obj = ResourceManager.GetObject("align_top_120px2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap align_top_120px3 {
+            get {
+                object obj = ResourceManager.GetObject("align_top_120px3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap align_top_120px31 {
+            get {
+                object obj = ResourceManager.GetObject("align_top_120px31", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap customer_120px {
+            get {
+                object obj = ResourceManager.GetObject("customer_120px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap customer_120px2 {
+            get {
+                object obj = ResourceManager.GetObject("customer_120px2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap empty_bed_120px {
+            get {
+                object obj = ResourceManager.GetObject("empty_bed_120px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -106,6 +166,66 @@ namespace FAHotelApp.Properties {
         internal static System.Drawing.Bitmap FAHotelTransparentLogoWhite {
             get {
                 object obj = ResourceManager.GetObject("FAHotelTransparentLogoWhite", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FAHotelTransparentLogoWhite1 {
+            get {
+                object obj = ResourceManager.GetObject("FAHotelTransparentLogoWhite1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap key_120px {
+            get {
+                object obj = ResourceManager.GetObject("key_120px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap search_120px {
+            get {
+                object obj = ResourceManager.GetObject("search_120px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap settings_120px {
+            get {
+                object obj = ResourceManager.GetObject("settings_120px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap settings_120px2 {
+            get {
+                object obj = ResourceManager.GetObject("settings_120px2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap settings_120px3 {
+            get {
+                object obj = ResourceManager.GetObject("settings_120px3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

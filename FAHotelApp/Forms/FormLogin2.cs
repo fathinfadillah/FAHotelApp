@@ -76,7 +76,7 @@ namespace FAHotelApp.Forms
 								this.Hide();
 								FormSplash splash = new FormSplash();
 								splash.ShowDialog();
-								Form1 f = new Form1();
+								FormDashboard f = new FormDashboard();
 								f.Show();
 							}
 							else if (cbUserType.SelectedIndex == 1)

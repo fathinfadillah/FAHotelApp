@@ -117,62 +117,65 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="align_top_120px2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\align_top_120px2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="bunifuPanel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAPQAAABVCAYAAAB+b8m1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH6SURBVHhe7dmhbhRRFMfhlZUrK1ci+wiVyJXISiSyso5H
+        QPIY+whIJBJZWYmaWc7OHLJpWBIce/98X3Jyk3vvyF8mk9kA/4nj8bitua95Msb88zm1eNt5/r166GGa
+        pu+1Alem2nyu5bFz/bO6tK3Lh+Up4KpVq19q2XW+vxMzjKWa/VrLTSd8Ns/z+/UKMJKK+mNnfFabL30O
+        jGfbKS/fzrt1DxjUfee8BL1f94AR1Sfzh855Cfr0jwsY11PnLGgIIGgIImgIImgIImgIImgIImgIImgI
+        ImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgI
+        ImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgI
+        ImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgI8iroh3UP
+        GNRj57wEfbfuAYPad86raZp+9AEwnttOeVVBf+oDYCDV7qEzPqv9mzr4tl4BRlDNPtfy+u38Sx3c9QXg
+        ylWrL/M8v+18L6t727r4eX0EuEbV6KGWy2/mS+ryrmZfc/pHbYy5gqk38rta33SmQK7N5ick7ZYXQhSV
+        iwAAAABJRU5ErkJggg==
+</value>
   </data>
-  <data name="key_120px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\key_120px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bunifuPanel2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAPQAAABVCAYAAAB+b8m1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH6SURBVHhe7dmhbhRRFMfhlZUrK1ci+wiVyJXISiSyso5H
+        QPIY+whIJBJZWYmaWc7OHLJpWBIce/98X3Jyk3vvyF8mk9kA/4nj8bitua95Msb88zm1eNt5/r166GGa
+        pu+1Alem2nyu5bFz/bO6tK3Lh+Up4KpVq19q2XW+vxMzjKWa/VrLTSd8Ns/z+/UKMJKK+mNnfFabL30O
+        jGfbKS/fzrt1DxjUfee8BL1f94AR1Sfzh855Cfr0jwsY11PnLGgIIGgIImgIImgIImgIImgIImgIImgI
+        ImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgI
+        ImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgI
+        ImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgI8iroh3UP
+        GNRj57wEfbfuAYPad86raZp+9AEwnttOeVVBf+oDYCDV7qEzPqv9mzr4tl4BRlDNPtfy+u38Sx3c9QXg
+        ylWrL/M8v+18L6t727r4eX0EuEbV6KGWy2/mS+ryrmZfc/pHbYy5gqk38rta33SmQK7N5ick7ZYXQhSV
+        iwAAAABJRU5ErkJggg==
+</value>
   </data>
-  <data name="search_120px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\search_120px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bunifuPanel3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAPQAAABVCAYAAAB+b8m1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH6SURBVHhe7dmhbhRRFMfhlZUrK1ci+wiVyJXISiSyso5H
+        QPIY+whIJBJZWYmaWc7OHLJpWBIce/98X3Jyk3vvyF8mk9kA/4nj8bitua95Msb88zm1eNt5/r166GGa
+        pu+1Alem2nyu5bFz/bO6tK3Lh+Up4KpVq19q2XW+vxMzjKWa/VrLTSd8Ns/z+/UKMJKK+mNnfFabL30O
+        jGfbKS/fzrt1DxjUfee8BL1f94AR1Sfzh855Cfr0jwsY11PnLGgIIGgIImgIImgIImgIImgIImgIImgI
+        ImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgI
+        ImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgI
+        ImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgI8iroh3UP
+        GNRj57wEfbfuAYPad86raZp+9AEwnttOeVVBf+oDYCDV7qEzPqv9mzr4tl4BRlDNPtfy+u38Sx3c9QXg
+        ylWrL/M8v+18L6t727r4eX0EuEbV6KGWy2/mS+ryrmZfc/pHbYy5gqk38rta33SmQK7N5ick7ZYXQhSV
+        iwAAAABJRU5ErkJggg==
+</value>
   </data>
-  <data name="settings_120px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\settings_120px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="FAHotelTransparentLogoWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FAHotelTransparentLogoWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="align_top_120px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\align_top_120px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="FAHotelTransparentLogoWhite1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FAHotelTransparentLogoWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="align_top_120px3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\align_top_120px3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Terms_and_Conditions_FAHotel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Terms-and-Conditions-FAHotel.pdf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="settings_120px3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\settings_120px3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_01_BGFormLogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\01-BGFormLogin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="customer_120px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\customer_120px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="align_top_120px31" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\align_top_120px3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="empty_bed_120px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\empty_bed_120px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="FAHotelTransparentLogoNavyBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FAHotelTransparentLogoNavyBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="settings_120px2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\settings_120px2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="FAHotelTransparentLogoBlack" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FAHotelTransparentLogoBlack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="WelcomeScreen1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\WelcomeScreen.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="customer_120px2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\customer_120px2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bunifuPanel4.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAPQAAABVCAYAAAB+b8m1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH6SURBVHhe7dmhbhRRFMfhlZUrK1ci+wiVyJXISiSyso5H
+        QPIY+whIJBJZWYmaWc7OHLJpWBIce/98X3Jyk3vvyF8mk9kA/4nj8bitua95Msb88zm1eNt5/r166GGa
+        pu+1Alem2nyu5bFz/bO6tK3Lh+Up4KpVq19q2XW+vxMzjKWa/VrLTSd8Ns/z+/UKMJKK+mNnfFabL30O
+        jGfbKS/fzrt1DxjUfee8BL1f94AR1Sfzh855Cfr0jwsY11PnLGgIIGgIImgIImgIImgIImgIImgIImgI
+        ImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgI
+        ImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgI
+        ImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgIImgI8iroh3UP
+        GNRj57wEfbfuAYPad86raZp+9AEwnttOeVVBf+oDYCDV7qEzPqv9mzr4tl4BRlDNPtfy+u38Sx3c9QXg
+        ylWrL/M8v+18L6t727r4eX0EuEbV6KGWy2/mS+ryrmZfc/pHbYy5gqk38rta33SmQK7N5ick7ZYXQhSV
+        iwAAAABJRU5ErkJggg==
+</value>
   </data>
 </root>

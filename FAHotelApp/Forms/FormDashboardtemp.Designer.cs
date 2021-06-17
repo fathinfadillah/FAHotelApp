@@ -1,6 +1,6 @@
 ﻿namespace FAHotelApp.Forms
 {
-	partial class Form1
+	partial class FormDashboardtemp
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -73,8 +73,9 @@
 			this.lbUser.AutoSize = true;
 			this.lbUser.Location = new System.Drawing.Point(672, 28);
 			this.lbUser.Name = "lbUser";
-			this.lbUser.Size = new System.Drawing.Size(0, 13);
+			this.lbUser.Size = new System.Drawing.Size(69, 13);
 			this.lbUser.TabIndex = 2;
+			this.lbUser.Text = "DisplayName";
 			// 
 			// label2
 			// 
@@ -90,8 +91,9 @@
 			this.lbUserType.AutoSize = true;
 			this.lbUserType.Location = new System.Drawing.Point(672, 50);
 			this.lbUserType.Name = "lbUserType";
-			this.lbUserType.Size = new System.Drawing.Size(0, 13);
+			this.lbUserType.Size = new System.Drawing.Size(53, 13);
 			this.lbUserType.TabIndex = 4;
+			this.lbUserType.Text = "UserType";
 			// 
 			// btnLogOut
 			// 
@@ -115,7 +117,7 @@
 			this.btnLogOut.UseTransparentBackground = true;
 			this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
 			// 
-			// Form1
+			// FormDashboardtemp
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -126,8 +128,8 @@
 			this.Controls.Add(this.lbUser);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.guna2TextBox1);
-			this.Name = "Form1";
-			this.Text = "Form1";
+			this.Name = "FormDashboardtemp";
+			this.Text = "Dashboard";
 			this.Load += new System.EventHandler(this.Form1_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();

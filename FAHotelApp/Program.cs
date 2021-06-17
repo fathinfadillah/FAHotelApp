@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -17,7 +18,8 @@ namespace FAHotelApp
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new FormLogin());
+			Application.Run(new FormDashboard());
 		}
+		public static bool IsInDesignMode() => (LicenseManager.UsageMode == LicenseUsageMode.Designtime);
 	}
 }
