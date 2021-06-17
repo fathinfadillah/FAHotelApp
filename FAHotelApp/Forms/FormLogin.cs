@@ -22,7 +22,7 @@ namespace FAHotelApp.Forms
 			trd.Start();
 			Thread.Sleep(8000);
 			InitializeComponent();
-			trd.Abort();
+			//trd.Abort();
 			TopMost = true;
 		}
 
@@ -89,7 +89,6 @@ namespace FAHotelApp.Forms
 								splash.ShowDialog();
 								Form1 f = new Form1();
 								f.Show();
-								
 							}
 							else if (cbUserType.SelectedIndex == 1)
 							{

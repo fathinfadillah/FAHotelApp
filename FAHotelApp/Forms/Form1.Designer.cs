@@ -119,7 +119,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(785, 406);
+			this.ClientSize = new System.Drawing.Size(1166, 752);
 			this.Controls.Add(this.btnLogOut);
 			this.Controls.Add(this.lbUserType);
 			this.Controls.Add(this.label2);
