@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using FAHotelApp.Forms;
 using System.Threading;
+using FAHotelApp.DAO;
 
 namespace FAHotelApp.Forms
 {
@@ -18,6 +19,11 @@ namespace FAHotelApp.Forms
 		public FormLogin2()
 		{
 			InitializeComponent();
+		}
+
+		public bool Login()
+		{
+			return AccountDAO.Instance.Login(txtUsername.Text, txtPassword.Text);
 		}
 
 		private void FormLogin_Load(object sender, EventArgs e)
@@ -31,7 +37,6 @@ namespace FAHotelApp.Forms
 			if (Properties.Settings.Default.Username != string.Empty)
 			{
 				txtUsername.Text = Properties.Settings.Default.Username;
-				cbUserType.Text = Properties.Settings.Default.UserType;
 				txtPassword.Text = Properties.Settings.Default.Password;
 			}
 		}
@@ -46,7 +51,6 @@ namespace FAHotelApp.Forms
 		private void btnLogin_Click(object sender, EventArgs e)
 		{
 			Properties.Settings.Default.UsernameView = txtUsername.Text;
-			Properties.Settings.Default.UserTypeView = cbUserType.Text;
 
 			if (txtUsername.Text == "" || txtPassword.Text == "")
 			{
@@ -54,54 +58,21 @@ namespace FAHotelApp.Forms
 			}
 			else
 			{
-				SqlConnection con = new SqlConnection(@"Data Source = DESKTOP-LHKUU3D; Initial Catalog = FAHotel; Integrated Security = True");
-				SqlCommand cmd = new SqlCommand("select * from Tabel_User where username='" + txtUsername.Text + "' and password='" + txtPassword.Text + "' COLLATE Latin1_General_CS_AS", con);
-				//SqlCommand cmd = new SqlCommand("select COUNT(*) from Tabel_User where (CAST(username as varbinary(50))=cast('" + txtUsername.Text + "' as varbinary)) and (CAST(password as varbinary(50))=cast('" + txtPassword.Text + "' as varbinary))",con);
-				//SqlCommand cmd = new SqlCommand("select  count (*) from Tabel_User where username='" + txtUsername.Text +
-				//"' and password='" + txtPassword.Text + "' COLLATE Latin1_General_CS_AS", con);
-
-				SqlDataAdapter sda = new SqlDataAdapter(cmd);
-				DataTable dt = new DataTable();
-				sda.Fill(dt);
-				string cmbItemValue = cbUserType.SelectedItem.ToString();
-				if (dt.Rows.Count > 0)
+				if (Login())
 				{
-					for (int i = 0; i < dt.Rows.Count; i++)
-					{
-						if (dt.Rows[i]["usertype"].ToString() == cmbItemValue) //you can use 2 instead of usertype in that index because usertype column is in 2 index
-						{
-							MessageBox.Show("Anda Login Sebagai " + dt.Rows[i][7]);
-							if (cbUserType.SelectedIndex == 0)
-							{
-								this.Hide();
-								FormSplash splash = new FormSplash();
-								splash.ShowDialog();
-								FormDashboard f = new FormDashboard();
-								f.Show();
-							}
-							else if (cbUserType.SelectedIndex == 1)
-							{
-								FormSplash ff = new FormSplash();
-								ff.Show();
-								this.Hide();
-							}
-						}
-						else
-						{
-							MessageBox.Show("Departement Salah !");
-						}
-					}
+					this.Hide();
+					FormMenu f = new FormMenu(txtUsername.Text);
+					f.ShowDialog();
 				}
 				else
 				{
-					MessageBox.Show("Username/Password Salah !");
+					MessageBox.Show("Username tidak ada atau Password salah.\nSilahkan masuk kembali !", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				}
 			}
 
 			if (tsRememberMe.Checked == true)
 			{
 				Properties.Settings.Default.Username = txtUsername.Text;
-				Properties.Settings.Default.UserType = cbUserType.Text;
 				Properties.Settings.Default.Password = txtPassword.Text;
 				Properties.Settings.Default.Save();
 			}

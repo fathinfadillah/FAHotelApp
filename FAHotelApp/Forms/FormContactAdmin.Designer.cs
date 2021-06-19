@@ -51,16 +51,16 @@
 			this.label4 = new System.Windows.Forms.Label();
 			this.btnSend = new Guna.UI2.WinForms.Guna2Button();
 			this.txtSenderEmail = new Guna.UI2.WinForms.Guna2TextBox();
-			this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
 			this.timer1 = new System.Windows.Forms.Timer(this.components);
 			this.epWarning = new System.Windows.Forms.ErrorProvider(this.components);
 			this.epWrong = new System.Windows.Forms.ErrorProvider(this.components);
 			this.epCorrect = new System.Windows.Forms.ErrorProvider(this.components);
+			this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
 			this.guna2Panel2.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.epWarning)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.epWrong)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.epCorrect)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// guna2Elipse1
@@ -152,7 +152,6 @@
 			// 
 			this.cbSMPTServer.BackColor = System.Drawing.Color.Transparent;
 			this.cbSMPTServer.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
-			this.cbSMPTServer.BorderRadius = 6;
 			this.cbSMPTServer.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
 			this.cbSMPTServer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.cbSMPTServer.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -176,7 +175,6 @@
 			// 
 			this.cbServerPortNo.BackColor = System.Drawing.Color.Transparent;
 			this.cbServerPortNo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
-			this.cbServerPortNo.BorderRadius = 6;
 			this.cbServerPortNo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
 			this.cbServerPortNo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.cbServerPortNo.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -232,7 +230,6 @@
 			// 
 			this.txtRecipientEmail.Animated = true;
 			this.txtRecipientEmail.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
-			this.txtRecipientEmail.BorderRadius = 6;
 			this.txtRecipientEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
 			this.txtRecipientEmail.DefaultText = "fahotel.management@gmail.com";
 			this.txtRecipientEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -261,7 +258,6 @@
 			// 
 			this.txtSubject.Animated = true;
 			this.txtSubject.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
-			this.txtSubject.BorderRadius = 6;
 			this.txtSubject.Cursor = System.Windows.Forms.Cursors.IBeam;
 			this.txtSubject.DefaultText = "";
 			this.txtSubject.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -310,7 +306,6 @@
 			// 
 			this.txtSenderPassword.Animated = true;
 			this.txtSenderPassword.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
-			this.txtSenderPassword.BorderRadius = 6;
 			this.txtSenderPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
 			this.txtSenderPassword.DefaultText = "";
 			this.txtSenderPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -339,7 +334,6 @@
 			// 
 			this.txtBody.Animated = true;
 			this.txtBody.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
-			this.txtBody.BorderRadius = 6;
 			this.txtBody.Cursor = System.Windows.Forms.Cursors.IBeam;
 			this.txtBody.DefaultText = "";
 			this.txtBody.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -437,7 +431,6 @@
 			// 
 			this.txtSenderEmail.Animated = true;
 			this.txtSenderEmail.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
-			this.txtSenderEmail.BorderRadius = 6;
 			this.txtSenderEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
 			this.txtSenderEmail.DefaultText = "";
 			this.txtSenderEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -461,20 +454,6 @@
 			this.txtSenderEmail.TabIndex = 1;
 			this.txtSenderEmail.Leave += new System.EventHandler(this.txtSenderEmail_Leave);
 			// 
-			// guna2PictureBox1
-			// 
-			this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-			this.guna2PictureBox1.Image = global::FAHotelApp.Properties.Resources.FAHotelTransparentLogoNavyBlue;
-			this.guna2PictureBox1.ImageRotate = 0F;
-			this.guna2PictureBox1.Location = new System.Drawing.Point(35, 29);
-			this.guna2PictureBox1.Name = "guna2PictureBox1";
-			this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-			this.guna2PictureBox1.Size = new System.Drawing.Size(128, 52);
-			this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.guna2PictureBox1.TabIndex = 0;
-			this.guna2PictureBox1.TabStop = false;
-			this.guna2PictureBox1.UseTransparentBackground = true;
-			// 
 			// timer1
 			// 
 			this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
@@ -494,6 +473,20 @@
 			this.epCorrect.ContainerControl = this;
 			this.epCorrect.Icon = ((System.Drawing.Icon)(resources.GetObject("epCorrect.Icon")));
 			// 
+			// guna2PictureBox1
+			// 
+			this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
+			this.guna2PictureBox1.Image = global::FAHotelApp.Properties.Resources.FAHotelTransparentLogoNavyBlue;
+			this.guna2PictureBox1.ImageRotate = 0F;
+			this.guna2PictureBox1.Location = new System.Drawing.Point(35, 29);
+			this.guna2PictureBox1.Name = "guna2PictureBox1";
+			this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
+			this.guna2PictureBox1.Size = new System.Drawing.Size(128, 52);
+			this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.guna2PictureBox1.TabIndex = 0;
+			this.guna2PictureBox1.TabStop = false;
+			this.guna2PictureBox1.UseTransparentBackground = true;
+			// 
 			// FormContactAdmin
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -508,10 +501,10 @@
 			this.Load += new System.EventHandler(this.FormContactAdmin_Load);
 			this.guna2Panel2.ResumeLayout(false);
 			this.guna2Panel2.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.epWarning)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.epWrong)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.epCorrect)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
 			this.ResumeLayout(false);
 
 		}

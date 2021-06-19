@@ -38,7 +38,6 @@
 			this.label3 = new System.Windows.Forms.Label();
 			this.tsShowPassword = new Guna.UI2.WinForms.Guna2ToggleSwitch();
 			this.btnExit = new Guna.UI2.WinForms.Guna2Button();
-			this.cbUserType = new Guna.UI2.WinForms.Guna2ComboBox();
 			this.label5 = new System.Windows.Forms.Label();
 			this.label4 = new System.Windows.Forms.Label();
 			this.lbContactAdmin = new System.Windows.Forms.Label();
@@ -85,7 +84,6 @@
 			this.guna2Panel2.Controls.Add(this.label3);
 			this.guna2Panel2.Controls.Add(this.tsShowPassword);
 			this.guna2Panel2.Controls.Add(this.btnExit);
-			this.guna2Panel2.Controls.Add(this.cbUserType);
 			this.guna2Panel2.Controls.Add(this.label5);
 			this.guna2Panel2.Controls.Add(this.label4);
 			this.guna2Panel2.Controls.Add(this.lbContactAdmin);
@@ -133,7 +131,7 @@
 			this.label3.AutoSize = true;
 			this.label3.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label3.ForeColor = System.Drawing.Color.Black;
-			this.label3.Location = new System.Drawing.Point(154, 417);
+			this.label3.Location = new System.Drawing.Point(154, 361);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(93, 15);
 			this.label3.TabIndex = 13;
@@ -148,7 +146,7 @@
 			this.tsShowPassword.CheckedState.InnerBorderColor = System.Drawing.Color.White;
 			this.tsShowPassword.CheckedState.InnerColor = System.Drawing.Color.White;
 			this.tsShowPassword.CheckedState.Parent = this.tsShowPassword;
-			this.tsShowPassword.Location = new System.Drawing.Point(114, 415);
+			this.tsShowPassword.Location = new System.Drawing.Point(114, 359);
 			this.tsShowPassword.Name = "tsShowPassword";
 			this.tsShowPassword.ShadowDecoration.Parent = this.tsShowPassword;
 			this.tsShowPassword.Size = new System.Drawing.Size(35, 20);
@@ -174,7 +172,7 @@
 			this.btnExit.ForeColor = System.Drawing.Color.White;
 			this.btnExit.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
 			this.btnExit.HoverState.Parent = this.btnExit;
-			this.btnExit.Location = new System.Drawing.Point(285, 493);
+			this.btnExit.Location = new System.Drawing.Point(285, 437);
 			this.btnExit.Name = "btnExit";
 			this.btnExit.ShadowDecoration.Parent = this.btnExit;
 			this.btnExit.Size = new System.Drawing.Size(165, 39);
@@ -183,37 +181,12 @@
 			this.btnExit.UseTransparentBackground = true;
 			this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
 			// 
-			// cbUserType
-			// 
-			this.cbUserType.BackColor = System.Drawing.Color.Transparent;
-			this.cbUserType.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
-			this.cbUserType.BorderRadius = 6;
-			this.cbUserType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-			this.cbUserType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.cbUserType.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.cbUserType.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.cbUserType.FocusedState.Parent = this.cbUserType;
-			this.cbUserType.Font = new System.Drawing.Font("Segoe UI", 10F);
-			this.cbUserType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
-			this.cbUserType.HoverState.Parent = this.cbUserType;
-			this.cbUserType.ItemHeight = 30;
-			this.cbUserType.Items.AddRange(new object[] {
-            "Receptionist",
-            "Manager"});
-			this.cbUserType.ItemsAppearance.Parent = this.cbUserType;
-			this.cbUserType.Location = new System.Drawing.Point(114, 306);
-			this.cbUserType.Name = "cbUserType";
-			this.cbUserType.ShadowDecoration.Parent = this.cbUserType;
-			this.cbUserType.Size = new System.Drawing.Size(336, 36);
-			this.cbUserType.StartIndex = 0;
-			this.cbUserType.TabIndex = 2;
-			// 
 			// label5
 			// 
 			this.label5.AutoSize = true;
 			this.label5.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label5.ForeColor = System.Drawing.Color.Black;
-			this.label5.Location = new System.Drawing.Point(111, 204);
+			this.label5.Location = new System.Drawing.Point(111, 215);
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(323, 18);
 			this.label5.TabIndex = 10;
@@ -224,7 +197,7 @@
 			this.label4.AutoSize = true;
 			this.label4.Font = new System.Drawing.Font("Montserrat", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label4.ForeColor = System.Drawing.Color.Black;
-			this.label4.Location = new System.Drawing.Point(107, 151);
+			this.label4.Location = new System.Drawing.Point(107, 162);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(103, 40);
 			this.label4.TabIndex = 9;
@@ -256,7 +229,7 @@
 			this.btnLogin.ForeColor = System.Drawing.Color.White;
 			this.btnLogin.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
 			this.btnLogin.HoverState.Parent = this.btnLogin;
-			this.btnLogin.Location = new System.Drawing.Point(114, 493);
+			this.btnLogin.Location = new System.Drawing.Point(114, 437);
 			this.btnLogin.Name = "btnLogin";
 			this.btnLogin.ShadowDecoration.Parent = this.btnLogin;
 			this.btnLogin.Size = new System.Drawing.Size(165, 39);
@@ -271,7 +244,7 @@
 			this.lbForgotPassword.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.lbForgotPassword.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lbForgotPassword.ForeColor = System.Drawing.Color.Black;
-			this.lbForgotPassword.Location = new System.Drawing.Point(345, 417);
+			this.lbForgotPassword.Location = new System.Drawing.Point(345, 361);
 			this.lbForgotPassword.Name = "lbForgotPassword";
 			this.lbForgotPassword.Size = new System.Drawing.Size(105, 15);
 			this.lbForgotPassword.TabIndex = 6;
@@ -283,7 +256,7 @@
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label1.ForeColor = System.Drawing.Color.Black;
-			this.label1.Location = new System.Drawing.Point(154, 447);
+			this.label1.Location = new System.Drawing.Point(154, 391);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(93, 15);
 			this.label1.TabIndex = 5;
@@ -298,7 +271,7 @@
 			this.tsRememberMe.CheckedState.InnerBorderColor = System.Drawing.Color.White;
 			this.tsRememberMe.CheckedState.InnerColor = System.Drawing.Color.White;
 			this.tsRememberMe.CheckedState.Parent = this.tsRememberMe;
-			this.tsRememberMe.Location = new System.Drawing.Point(114, 445);
+			this.tsRememberMe.Location = new System.Drawing.Point(114, 389);
 			this.tsRememberMe.Name = "tsRememberMe";
 			this.tsRememberMe.ShadowDecoration.Parent = this.tsRememberMe;
 			this.tsRememberMe.Size = new System.Drawing.Size(35, 20);
@@ -314,7 +287,6 @@
 			// 
 			this.txtPassword.Animated = true;
 			this.txtPassword.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
-			this.txtPassword.BorderRadius = 6;
 			this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
 			this.txtPassword.DefaultText = "";
 			this.txtPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -328,7 +300,7 @@
 			this.txtPassword.ForeColor = System.Drawing.Color.Black;
 			this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
 			this.txtPassword.HoverState.Parent = this.txtPassword;
-			this.txtPassword.Location = new System.Drawing.Point(114, 360);
+			this.txtPassword.Location = new System.Drawing.Point(114, 304);
 			this.txtPassword.Name = "txtPassword";
 			this.txtPassword.PasswordChar = '\0';
 			this.txtPassword.PlaceholderText = "Password";
@@ -343,7 +315,6 @@
 			// 
 			this.txtUsername.Animated = true;
 			this.txtUsername.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
-			this.txtUsername.BorderRadius = 6;
 			this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
 			this.txtUsername.DefaultText = "";
 			this.txtUsername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -357,7 +328,7 @@
 			this.txtUsername.ForeColor = System.Drawing.Color.Black;
 			this.txtUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
 			this.txtUsername.HoverState.Parent = this.txtUsername;
-			this.txtUsername.Location = new System.Drawing.Point(114, 251);
+			this.txtUsername.Location = new System.Drawing.Point(114, 262);
 			this.txtUsername.Name = "txtUsername";
 			this.txtUsername.PasswordChar = '\0';
 			this.txtUsername.PlaceholderText = "Username";
@@ -512,7 +483,6 @@
 		private System.Windows.Forms.Label label5;
 		private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
 		private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
-		private Guna.UI2.WinForms.Guna2ComboBox cbUserType;
 		private System.Windows.Forms.Label lbDate;
 		private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
 		private System.Windows.Forms.Timer timer1;

@@ -18,7 +18,7 @@ namespace FAHotelApp
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new FormDashboard());
+			Application.Run(new FormLogin());
 		}
 		public static bool IsInDesignMode() => (LicenseManager.UsageMode == LicenseUsageMode.Designtime);
 	}

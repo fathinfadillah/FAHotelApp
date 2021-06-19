@@ -176,17 +176,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\FormDashboard.cs">
+    <Compile Include="DAO\AccessDAO.cs" />
+    <Compile Include="DAO\AccountDAO.cs" />
+    <Compile Include="DAO\BookRoomDAO.cs" />
+    <Compile Include="DAO\CustomerDAO.cs" />
+    <Compile Include="DAO\CustomerTypeDAO.cs" />
+    <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\RoomTypeDAO.cs" />
+    <Compile Include="DTO\Account.cs" />
+    <Compile Include="DTO\Customer.cs" />
+    <Compile Include="DTO\CustomerType.cs" />
+    <Compile Include="DTO\RoomType.cs" />
+    <Compile Include="Forms\FormMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormDashboard.Designer.cs">
-      <DependentUpon>FormDashboard.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FormDashboardtemp.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FormDashboardtemp.Designer.cs">
-      <DependentUpon>FormDashboardtemp.cs</DependentUpon>
+    <Compile Include="Forms\FormMenu.Designer.cs">
+      <DependentUpon>FormMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FormSplash.cs">
       <SubType>Form</SubType>
@@ -232,17 +237,32 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UC\UC_ReceiveRoom..cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UC_ReceiveRoom..Designer.cs">
+      <DependentUpon>UC_ReceiveRoom..cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UC_BookingRoom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UC_BookingRoom.Designer.cs">
+      <DependentUpon>UC_BookingRoom.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC\UC_Dashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UC\UC_Dashboard.Designer.cs">
       <DependentUpon>UC_Dashboard.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Forms\FormDashboard.resx">
-      <DependentUpon>FormDashboard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormDashboardtemp.resx">
-      <DependentUpon>FormDashboardtemp.cs</DependentUpon>
+    <Compile Include="UC\UC_Settings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UC_Settings.Designer.cs">
+      <DependentUpon>UC_Settings.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\FormMenu.resx">
+      <DependentUpon>FormMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormSplash.resx">
       <DependentUpon>FormSplash.cs</DependentUpon>
@@ -271,8 +291,17 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="UC\UC_ReceiveRoom..resx">
+      <DependentUpon>UC_ReceiveRoom..cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UC_BookingRoom.resx">
+      <DependentUpon>UC_BookingRoom.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UC\UC_Dashboard.resx">
       <DependentUpon>UC_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UC_Settings.resx">
+      <DependentUpon>UC_Settings.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -378,6 +407,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\customer_120px2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paycheque_120px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\schedule_120px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employee_120px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill_120px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food_service_120px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book_120px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

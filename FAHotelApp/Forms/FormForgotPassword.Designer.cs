@@ -84,7 +84,6 @@
 			// 
 			this.txtUsername.Animated = true;
 			this.txtUsername.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
-			this.txtUsername.BorderRadius = 6;
 			this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
 			this.txtUsername.DefaultText = "";
 			this.txtUsername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -134,7 +133,6 @@
 			// 
 			this.txtEmployeeID.Animated = true;
 			this.txtEmployeeID.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
-			this.txtEmployeeID.BorderRadius = 6;
 			this.txtEmployeeID.Cursor = System.Windows.Forms.Cursors.IBeam;
 			this.txtEmployeeID.DefaultText = "";
 			this.txtEmployeeID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
