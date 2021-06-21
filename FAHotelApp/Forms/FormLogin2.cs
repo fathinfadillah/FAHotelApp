@@ -147,6 +147,7 @@ namespace FAHotelApp.Forms
 		{
 			FormForgotPassword f = new FormForgotPassword();
 			f.Show();
+			this.Hide();
 		}
 
 		private void lbTermCon_Click(object sender, EventArgs e)

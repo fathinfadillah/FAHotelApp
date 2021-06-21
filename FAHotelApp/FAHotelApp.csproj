@@ -151,8 +151,8 @@
     <Reference Include="FontAwesome.Sharp, Version=5.15.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\FontAwesome.Sharp.5.15.3\lib\net472\FontAwesome.Sharp.dll</HintPath>
     </Reference>
-    <Reference Include="Guna.UI2, Version=1.0.1.7, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Guna.UI2.WinForms.2.0.1.7\lib\net40\Guna.UI2.dll</HintPath>
+    <Reference Include="Guna.UI2, Version=2.0.1.8, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.1.8\lib\net40\Guna.UI2.dll</HintPath>
     </Reference>
     <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
@@ -162,6 +162,11 @@
     </Reference>
     <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\dll\Microsoft.Office.Interop.Excel.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -178,15 +183,85 @@
   <ItemGroup>
     <Compile Include="DAO\AccessDAO.cs" />
     <Compile Include="DAO\AccountDAO.cs" />
+    <Compile Include="DAO\AccountTypeDAO.cs" />
     <Compile Include="DAO\BookRoomDAO.cs" />
     <Compile Include="DAO\CustomerDAO.cs" />
     <Compile Include="DAO\CustomerTypeDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\ExportToExcel.cs" />
+    <Compile Include="DAO\ReceiveRoomDAO.cs" />
+    <Compile Include="DAO\ReceiveRoomDetailsDAO.cs" />
+    <Compile Include="DAO\RoomDAO.cs" />
     <Compile Include="DAO\RoomTypeDAO.cs" />
+    <Compile Include="DAO\StatusRoomDAO.cs" />
     <Compile Include="DTO\Account.cs" />
+    <Compile Include="DTO\AccountType.cs" />
     <Compile Include="DTO\Customer.cs" />
     <Compile Include="DTO\CustomerType.cs" />
+    <Compile Include="DTO\ReceiveRoom.cs" />
+    <Compile Include="DTO\Room.cs" />
     <Compile Include="DTO\RoomType.cs" />
+    <Compile Include="DTO\StatusRoom.cs" />
+    <Compile Include="Forms\FormAccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAccess.Designer.cs">
+      <DependentUpon>FormAccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormAddStaffType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAddStaffType.Designer.cs">
+      <DependentUpon>FormAddStaffType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormAddStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAddStaff.Designer.cs">
+      <DependentUpon>FormAddStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormAddCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAddCustomer.Designer.cs">
+      <DependentUpon>FormAddCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormRoomType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormRoomType.Designer.cs">
+      <DependentUpon>FormRoomType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormAddRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAddRoom.Designer.cs">
+      <DependentUpon>FormAddRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormChangeRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormChangeRoom.Designer.cs">
+      <DependentUpon>FormChangeRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormUpdateCustomerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormUpdateCustomerInfo.Designer.cs">
+      <DependentUpon>FormUpdateCustomerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormReceiveRoomDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormReceiveRoomDetails.Designer.cs">
+      <DependentUpon>FormReceiveRoomDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormAddCustomerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAddCustomerInfo.Designer.cs">
+      <DependentUpon>FormAddCustomerInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -237,6 +312,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UC\UC_Staff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UC_Staff.Designer.cs">
+      <DependentUpon>UC_Staff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UC_Customer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UC_Customer.Designer.cs">
+      <DependentUpon>UC_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UC_Room.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UC_Room.Designer.cs">
+      <DependentUpon>UC_Room.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC\UC_ReceiveRoom..cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -261,6 +354,36 @@
     <Compile Include="UC\UC_Settings.Designer.cs">
       <DependentUpon>UC_Settings.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\FormAccess.resx">
+      <DependentUpon>FormAccess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormAddStaffType.resx">
+      <DependentUpon>FormAddStaffType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormAddStaff.resx">
+      <DependentUpon>FormAddStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormAddCustomer.resx">
+      <DependentUpon>FormAddCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormRoomType.resx">
+      <DependentUpon>FormRoomType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormAddRoom.resx">
+      <DependentUpon>FormAddRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormChangeRoom.resx">
+      <DependentUpon>FormChangeRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormUpdateCustomerInfo.resx">
+      <DependentUpon>FormUpdateCustomerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormReceiveRoomDetails.resx">
+      <DependentUpon>FormReceiveRoomDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormAddCustomerInfo.resx">
+      <DependentUpon>FormAddCustomerInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormMenu.resx">
       <DependentUpon>FormMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -290,6 +413,15 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UC_Staff.resx">
+      <DependentUpon>UC_Staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UC_Customer.resx">
+      <DependentUpon>UC_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UC_Room.resx">
+      <DependentUpon>UC_Room.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC\UC_ReceiveRoom..resx">
       <DependentUpon>UC_ReceiveRoom..cs</DependentUpon>
@@ -425,6 +557,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\book_120px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar_120px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

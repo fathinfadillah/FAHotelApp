@@ -141,7 +141,7 @@ namespace FAHotelApp.UC
 				if (IsIdCardExists(txtIDCardSearch.Text))
 					GetInfoByIdCard(txtIDCardSearch.Text);
 				else
-					MessageBox.Show("KTP Tidak ada.\nMasukkan Kembali.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+					MessageBox.Show("KTP Tidak Ada.\nMasukkan Kembali.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
 		}
 		public void ClearData()
@@ -151,7 +151,7 @@ namespace FAHotelApp.UC
 		}
 		private void btnBookRoom_Click(object sender, EventArgs e)
 		{
-			if (MessageBox.Show("Apakah anda ingin membuat reservasi?", "Notifikasi", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+			if (MessageBox.Show("Apakah Anda Ingin Membuat Reservasi?", "Pemberitahuan", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
 			{
 				if (txtIDCard.Text != String.Empty && txtFullName.Text != String.Empty && txtAddress.Text != String.Empty && txtPhoneNumber.Text != String.Empty && cbNationality.Text != String.Empty)
 				{
@@ -170,7 +170,7 @@ namespace FAHotelApp.UC
 					}
 				}
 				else
-					MessageBox.Show("Silahkan masukkan informasi yang lengkap!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+					MessageBox.Show("Silahkan Masukkan Informasi Yang Lengkap!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 			}
 		}
 

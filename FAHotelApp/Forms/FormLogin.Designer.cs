@@ -36,7 +36,6 @@
 			this.label6 = new System.Windows.Forms.Label();
 			this.lbTermCon = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
-			this.tsShowPassword = new Guna.UI2.WinForms.Guna2ToggleSwitch();
 			this.btnExit = new Guna.UI2.WinForms.Guna2Button();
 			this.label5 = new System.Windows.Forms.Label();
 			this.label4 = new System.Windows.Forms.Label();
@@ -57,6 +56,7 @@
 			this.epWarning = new System.Windows.Forms.ErrorProvider(this.components);
 			this.epWrong = new System.Windows.Forms.ErrorProvider(this.components);
 			this.epCorrect = new System.Windows.Forms.ErrorProvider(this.components);
+			this.tsShowPassword = new Guna.UI2.WinForms.Guna2ToggleSwitch();
 			this.guna2Panel2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
@@ -79,10 +79,10 @@
 			// guna2Panel2
 			// 
 			this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
+			this.guna2Panel2.Controls.Add(this.tsShowPassword);
 			this.guna2Panel2.Controls.Add(this.label6);
 			this.guna2Panel2.Controls.Add(this.lbTermCon);
 			this.guna2Panel2.Controls.Add(this.label3);
-			this.guna2Panel2.Controls.Add(this.tsShowPassword);
 			this.guna2Panel2.Controls.Add(this.btnExit);
 			this.guna2Panel2.Controls.Add(this.label5);
 			this.guna2Panel2.Controls.Add(this.label4);
@@ -136,28 +136,6 @@
 			this.label3.Size = new System.Drawing.Size(93, 15);
 			this.label3.TabIndex = 13;
 			this.label3.Text = "Show Password";
-			// 
-			// tsShowPassword
-			// 
-			this.tsShowPassword.Animated = true;
-			this.tsShowPassword.BackColor = System.Drawing.Color.Transparent;
-			this.tsShowPassword.CheckedState.BorderColor = System.Drawing.Color.Black;
-			this.tsShowPassword.CheckedState.FillColor = System.Drawing.Color.Black;
-			this.tsShowPassword.CheckedState.InnerBorderColor = System.Drawing.Color.White;
-			this.tsShowPassword.CheckedState.InnerColor = System.Drawing.Color.White;
-			this.tsShowPassword.CheckedState.Parent = this.tsShowPassword;
-			this.tsShowPassword.Location = new System.Drawing.Point(114, 359);
-			this.tsShowPassword.Name = "tsShowPassword";
-			this.tsShowPassword.ShadowDecoration.Parent = this.tsShowPassword;
-			this.tsShowPassword.Size = new System.Drawing.Size(35, 20);
-			this.tsShowPassword.TabIndex = 12;
-			this.tsShowPassword.UncheckedState.BorderColor = System.Drawing.Color.Black;
-			this.tsShowPassword.UncheckedState.BorderThickness = 2;
-			this.tsShowPassword.UncheckedState.FillColor = System.Drawing.Color.White;
-			this.tsShowPassword.UncheckedState.InnerBorderColor = System.Drawing.Color.Black;
-			this.tsShowPassword.UncheckedState.InnerColor = System.Drawing.Color.Black;
-			this.tsShowPassword.UncheckedState.Parent = this.tsShowPassword;
-			this.tsShowPassword.CheckedChanged += new System.EventHandler(this.tsShowPassword_CheckedChanged);
 			// 
 			// btnExit
 			// 
@@ -437,6 +415,28 @@
 			this.epCorrect.ContainerControl = this;
 			this.epCorrect.Icon = ((System.Drawing.Icon)(resources.GetObject("epCorrect.Icon")));
 			// 
+			// tsShowPassword
+			// 
+			this.tsShowPassword.Animated = true;
+			this.tsShowPassword.BackColor = System.Drawing.Color.Transparent;
+			this.tsShowPassword.CheckedState.BorderColor = System.Drawing.Color.Black;
+			this.tsShowPassword.CheckedState.FillColor = System.Drawing.Color.Black;
+			this.tsShowPassword.CheckedState.InnerBorderColor = System.Drawing.Color.White;
+			this.tsShowPassword.CheckedState.InnerColor = System.Drawing.Color.White;
+			this.tsShowPassword.CheckedState.Parent = this.tsShowPassword;
+			this.tsShowPassword.Location = new System.Drawing.Point(114, 359);
+			this.tsShowPassword.Name = "tsShowPassword";
+			this.tsShowPassword.ShadowDecoration.Parent = this.tsShowPassword;
+			this.tsShowPassword.Size = new System.Drawing.Size(35, 20);
+			this.tsShowPassword.TabIndex = 16;
+			this.tsShowPassword.UncheckedState.BorderColor = System.Drawing.Color.Black;
+			this.tsShowPassword.UncheckedState.BorderThickness = 2;
+			this.tsShowPassword.UncheckedState.FillColor = System.Drawing.Color.White;
+			this.tsShowPassword.UncheckedState.InnerBorderColor = System.Drawing.Color.Black;
+			this.tsShowPassword.UncheckedState.InnerColor = System.Drawing.Color.Black;
+			this.tsShowPassword.UncheckedState.Parent = this.tsShowPassword;
+			this.tsShowPassword.CheckedChanged += new System.EventHandler(this.tsShowPassword_CheckedChanged);
+			// 
 			// FormLogin
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -489,11 +489,11 @@
 		private System.Windows.Forms.Label lbTime;
 		private Guna.UI2.WinForms.Guna2Button btnExit;
 		private System.Windows.Forms.Label label3;
-		private Guna.UI2.WinForms.Guna2ToggleSwitch tsShowPassword;
 		private System.Windows.Forms.ErrorProvider epWarning;
 		private System.Windows.Forms.ErrorProvider epWrong;
 		private System.Windows.Forms.ErrorProvider epCorrect;
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.Label lbTermCon;
+		private Guna.UI2.WinForms.Guna2ToggleSwitch tsShowPassword;
 	}
 }

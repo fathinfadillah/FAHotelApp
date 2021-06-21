@@ -28,18 +28,17 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_ReceiveRoom));
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_ReceiveRoom));
 			this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
 			this.btnSearch = new Guna.UI2.WinForms.Guna2Button();
 			this.txtIDBookRoom = new Guna.UI2.WinForms.Guna2TextBox();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
-			this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
 			this.guna2GroupBox5 = new Guna.UI2.WinForms.Guna2GroupBox();
 			this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
 			this.btnCancel = new Guna.UI2.WinForms.Guna2Button();
@@ -69,6 +68,7 @@
 			this.label8 = new System.Windows.Forms.Label();
 			this.label10 = new System.Windows.Forms.Label();
 			this.txtIDCard = new Guna.UI2.WinForms.Guna2TextBox();
+			this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
 			this.guna2GroupBox1.SuspendLayout();
 			this.guna2GroupBox5.SuspendLayout();
 			this.guna2GroupBox6.SuspendLayout();
@@ -85,7 +85,7 @@
 			this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
 			this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.guna2GroupBox1.ForeColor = System.Drawing.Color.White;
-			this.guna2GroupBox1.Location = new System.Drawing.Point(144, 67);
+			this.guna2GroupBox1.Location = new System.Drawing.Point(145, 67);
 			this.guna2GroupBox1.Name = "guna2GroupBox1";
 			this.guna2GroupBox1.ShadowDecoration.Parent = this.guna2GroupBox1;
 			this.guna2GroupBox1.Size = new System.Drawing.Size(231, 237);
@@ -158,26 +158,11 @@
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.label1.Location = new System.Drawing.Point(137, 6);
+			this.label1.Location = new System.Drawing.Point(138, 6);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(121, 37);
 			this.label1.TabIndex = 1;
 			this.label1.Text = "Check-In";
-			// 
-			// bunifuSeparator1
-			// 
-			this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
-			this.bunifuSeparator1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuSeparator1.BackgroundImage")));
-			this.bunifuSeparator1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-			this.bunifuSeparator1.DashCap = Bunifu.UI.WinForms.BunifuSeparator.CapStyles.Flat;
-			this.bunifuSeparator1.LineColor = System.Drawing.Color.Silver;
-			this.bunifuSeparator1.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
-			this.bunifuSeparator1.LineThickness = 1;
-			this.bunifuSeparator1.Location = new System.Drawing.Point(144, 46);
-			this.bunifuSeparator1.Name = "bunifuSeparator1";
-			this.bunifuSeparator1.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
-			this.bunifuSeparator1.Size = new System.Drawing.Size(1349, 15);
-			this.bunifuSeparator1.TabIndex = 2;
 			// 
 			// guna2GroupBox5
 			// 
@@ -187,7 +172,7 @@
 			this.guna2GroupBox5.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
 			this.guna2GroupBox5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.guna2GroupBox5.ForeColor = System.Drawing.Color.White;
-			this.guna2GroupBox5.Location = new System.Drawing.Point(144, 739);
+			this.guna2GroupBox5.Location = new System.Drawing.Point(145, 739);
 			this.guna2GroupBox5.Name = "guna2GroupBox5";
 			this.guna2GroupBox5.ShadowDecoration.Parent = this.guna2GroupBox5;
 			this.guna2GroupBox5.Size = new System.Drawing.Size(472, 200);
@@ -216,6 +201,7 @@
 			this.guna2Button2.Size = new System.Drawing.Size(200, 36);
 			this.guna2Button2.TabIndex = 11;
 			this.guna2Button2.Text = "Check-In";
+			this.guna2Button2.Click += new System.EventHandler(this.btnReceiveRoom_Click);
 			// 
 			// btnCancel
 			// 
@@ -239,6 +225,7 @@
 			this.btnCancel.Size = new System.Drawing.Size(200, 36);
 			this.btnCancel.TabIndex = 10;
 			this.btnCancel.Text = "Batal";
+			this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
 			// 
 			// btnBookRoom
 			// 
@@ -262,6 +249,7 @@
 			this.btnBookRoom.Size = new System.Drawing.Size(200, 36);
 			this.btnBookRoom.TabIndex = 9;
 			this.btnBookRoom.Text = "Tambah Customer";
+			this.btnBookRoom.Click += new System.EventHandler(this.btnAddCustomer_Click);
 			// 
 			// guna2GroupBox6
 			// 
@@ -270,7 +258,7 @@
 			this.guna2GroupBox6.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
 			this.guna2GroupBox6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.guna2GroupBox6.ForeColor = System.Drawing.Color.White;
-			this.guna2GroupBox6.Location = new System.Drawing.Point(627, 67);
+			this.guna2GroupBox6.Location = new System.Drawing.Point(628, 67);
 			this.guna2GroupBox6.Name = "guna2GroupBox6";
 			this.guna2GroupBox6.ShadowDecoration.Parent = this.guna2GroupBox6;
 			this.guna2GroupBox6.Size = new System.Drawing.Size(866, 872);
@@ -299,6 +287,7 @@
 			this.btnDetails.Size = new System.Drawing.Size(200, 36);
 			this.btnDetails.TabIndex = 13;
 			this.btnDetails.Text = "Lihat Detail";
+			this.btnDetails.Click += new System.EventHandler(this.btnDetails_Click);
 			// 
 			// dataGridViewReceiveRoom
 			// 
@@ -367,7 +356,7 @@
 			this.guna2GroupBox7.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
 			this.guna2GroupBox7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.guna2GroupBox7.ForeColor = System.Drawing.Color.White;
-			this.guna2GroupBox7.Location = new System.Drawing.Point(385, 67);
+			this.guna2GroupBox7.Location = new System.Drawing.Point(386, 67);
 			this.guna2GroupBox7.Name = "guna2GroupBox7";
 			this.guna2GroupBox7.ShadowDecoration.Parent = this.guna2GroupBox7;
 			this.guna2GroupBox7.Size = new System.Drawing.Size(231, 237);
@@ -393,6 +382,7 @@
 			this.cbRoom.ShadowDecoration.Parent = this.cbRoom;
 			this.cbRoom.Size = new System.Drawing.Size(200, 36);
 			this.cbRoom.TabIndex = 21;
+			this.cbRoom.SelectedIndexChanged += new System.EventHandler(this.cbRoom_SelectedIndexChanged);
 			// 
 			// label4
 			// 
@@ -425,6 +415,7 @@
 			this.cbRoomType.ShadowDecoration.Parent = this.cbRoomType;
 			this.cbRoomType.Size = new System.Drawing.Size(200, 36);
 			this.cbRoomType.TabIndex = 19;
+			this.cbRoomType.SelectedIndexChanged += new System.EventHandler(this.cbRoomType_SelectedIndexChanged);
 			// 
 			// label3
 			// 
@@ -459,7 +450,7 @@
 			this.guna2GroupBox3.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
 			this.guna2GroupBox3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.guna2GroupBox3.ForeColor = System.Drawing.Color.White;
-			this.guna2GroupBox3.Location = new System.Drawing.Point(144, 319);
+			this.guna2GroupBox3.Location = new System.Drawing.Point(145, 319);
 			this.guna2GroupBox3.Name = "guna2GroupBox3";
 			this.guna2GroupBox3.ShadowDecoration.Parent = this.guna2GroupBox3;
 			this.guna2GroupBox3.Size = new System.Drawing.Size(472, 405);
@@ -762,6 +753,21 @@
 			this.txtIDCard.Size = new System.Drawing.Size(200, 36);
 			this.txtIDCard.TabIndex = 3;
 			// 
+			// bunifuSeparator1
+			// 
+			this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
+			this.bunifuSeparator1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuSeparator1.BackgroundImage")));
+			this.bunifuSeparator1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.bunifuSeparator1.DashCap = Bunifu.UI.WinForms.BunifuSeparator.CapStyles.Flat;
+			this.bunifuSeparator1.LineColor = System.Drawing.Color.Silver;
+			this.bunifuSeparator1.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
+			this.bunifuSeparator1.LineThickness = 1;
+			this.bunifuSeparator1.Location = new System.Drawing.Point(145, 46);
+			this.bunifuSeparator1.Name = "bunifuSeparator1";
+			this.bunifuSeparator1.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
+			this.bunifuSeparator1.Size = new System.Drawing.Size(1349, 15);
+			this.bunifuSeparator1.TabIndex = 2;
+			// 
 			// UC_ReceiveRoom
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -775,7 +781,7 @@
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.guna2GroupBox1);
 			this.Name = "UC_ReceiveRoom";
-			this.Size = new System.Drawing.Size(1265, 690);
+			this.Size = new System.Drawing.Size(1231, 656);
 			this.guna2GroupBox1.ResumeLayout(false);
 			this.guna2GroupBox1.PerformLayout();
 			this.guna2GroupBox5.ResumeLayout(false);
