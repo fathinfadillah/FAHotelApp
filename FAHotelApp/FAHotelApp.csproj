@@ -214,6 +214,18 @@
     <Compile Include="Forms\FormAccess.Designer.cs">
       <DependentUpon>FormAccess.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormAddService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAddService.Designer.cs">
+      <DependentUpon>FormAddService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormAddServiceType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAddServiceType.Designer.cs">
+      <DependentUpon>FormAddServiceType.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormAddStaffType.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -261,6 +273,12 @@
     </Compile>
     <Compile Include="Forms\FormChangeRoom.Designer.cs">
       <DependentUpon>FormChangeRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormServiceType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormServiceType.Designer.cs">
+      <DependentUpon>FormServiceType.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FormUpdateCustomerInfo.cs">
       <SubType>Form</SubType>
@@ -387,6 +405,12 @@
     <EmbeddedResource Include="Forms\FormAccess.resx">
       <DependentUpon>FormAccess.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormAddService.resx">
+      <DependentUpon>FormAddService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormAddServiceType.resx">
+      <DependentUpon>FormAddServiceType.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormAddStaffType.resx">
       <DependentUpon>FormAddStaffType.cs</DependentUpon>
     </EmbeddedResource>
@@ -410,6 +434,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormChangeRoom.resx">
       <DependentUpon>FormChangeRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormServiceType.resx">
+      <DependentUpon>FormServiceType.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormUpdateCustomerInfo.resx">
       <DependentUpon>FormUpdateCustomerInfo.cs</DependentUpon>

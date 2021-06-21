@@ -26,10 +26,10 @@ namespace FAHotelApp.Forms
 		public void ShowReceiveRoom(int idReceiveRoom)
 		{
 			DataRow data = ReceiveRoomDAO.Instance.ShowReceiveRoom(idReceiveRoom).Rows[0];
-			txtIDReceiveRoom.Text = ((int)data["Kode Check-In"]).ToString();
-			txtRoomName.Text = data["Nama Kamar"].ToString();
-			txtDateCheckIn.Text = ((DateTime)data["Tanggal Check-In"]).ToString().Split(' ')[0];
-			txtDateCheckOut.Text = ((DateTime)data["Tanggal Check-Out"]).ToString().Split(' ')[0];
+			txtIDReceiveRoom.Text = ((int)data["KodeCheckIn"]).ToString();
+			txtRoomName.Text = data["RoomName"].ToString();
+			txtDateCheckIn.Text = ((DateTime)data["CheckIn"]).ToString().Split(' ')[0];
+			txtDateCheckOut.Text = ((DateTime)data["CheckOut"]).ToString().Split(' ')[0];
 		}
 		public void ShowCustomers(int idReceiveRoom)
 		{

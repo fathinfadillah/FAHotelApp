@@ -29,9 +29,9 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Service));
 			this.SaveCustomer = new System.Windows.Forms.SaveFileDialog();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -51,27 +51,28 @@
 			this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
 			this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
 			this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-			this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
 			this.label1 = new System.Windows.Forms.Label();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
+			this.btnServiceType = new Bunifu.Framework.UI.BunifuThinButton2();
+			this.btnInsert = new Bunifu.Framework.UI.BunifuThinButton2();
+			this.btnUpdate = new Bunifu.Framework.UI.BunifuThinButton2();
 			this.groupService = new System.Windows.Forms.GroupBox();
+			this.cbID = new MetroFramework.Controls.MetroComboBox();
+			this.cbServiceType = new MetroFramework.Controls.MetroComboBox();
+			this.txtName = new Bunifu.Framework.UI.BunifuMetroTextbox();
+			this.txtPrice = new Bunifu.Framework.UI.BunifuMetroTextbox();
+			this.label16 = new System.Windows.Forms.Label();
+			this.label15 = new System.Windows.Forms.Label();
+			this.label13 = new System.Windows.Forms.Label();
+			this.label20 = new System.Windows.Forms.Label();
 			this.groupBox4 = new System.Windows.Forms.GroupBox();
 			this.txtSearch = new Bunifu.Framework.UI.BunifuMetroTextbox();
 			this.label5 = new System.Windows.Forms.Label();
 			this.btnSearch = new Bunifu.Framework.UI.BunifuThinButton2();
 			this.btnCancel = new Bunifu.Framework.UI.BunifuThinButton2();
-			this.comboboxID = new MetroFramework.Controls.MetroComboBox();
-			this.comboBoxServiceType = new MetroFramework.Controls.MetroComboBox();
-			this.txbName = new Bunifu.Framework.UI.BunifuMetroTextbox();
-			this.txbPrice = new Bunifu.Framework.UI.BunifuMetroTextbox();
-			this.label16 = new System.Windows.Forms.Label();
-			this.label15 = new System.Windows.Forms.Label();
-			this.label13 = new System.Windows.Forms.Label();
-			this.label20 = new System.Windows.Forms.Label();
-			this.btnServiceType = new Bunifu.Framework.UI.BunifuThinButton2();
-			this.btnInsert = new Bunifu.Framework.UI.BunifuThinButton2();
-			this.btnCLose1 = new Bunifu.Framework.UI.BunifuThinButton2();
-			this.btnUpdate = new Bunifu.Framework.UI.BunifuThinButton2();
+			this.saveService = new System.Windows.Forms.SaveFileDialog();
+			this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
+			this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
 			this.groupBox1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridViewService)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.bindingService)).BeginInit();
@@ -107,14 +108,14 @@
 			this.dataGridViewService.AllowUserToResizeRows = false;
 			this.dataGridViewService.BackgroundColor = System.Drawing.Color.White;
 			this.dataGridViewService.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F);
-			dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dataGridViewService.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+			dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 12F);
+			dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dataGridViewService.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
 			this.dataGridViewService.ColumnHeadersHeight = 29;
 			this.dataGridViewService.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
 			this.dataGridViewService.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -124,27 +125,27 @@
             this.col,
             this.colNameServiceType,
             this.colIdServiceType});
-			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-			dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F);
-			dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SeaGreen;
-			dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.dataGridViewService.DefaultCellStyle = dataGridViewCellStyle2;
+			dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+			dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 12F);
+			dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.SeaGreen;
+			dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.dataGridViewService.DefaultCellStyle = dataGridViewCellStyle5;
 			this.dataGridViewService.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.dataGridViewService.GridColor = System.Drawing.Color.White;
 			this.dataGridViewService.Location = new System.Drawing.Point(3, 68);
 			this.dataGridViewService.Name = "dataGridViewService";
 			this.dataGridViewService.ReadOnly = true;
-			dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F);
-			dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dataGridViewService.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+			dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 12F);
+			dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dataGridViewService.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
 			this.dataGridViewService.RowHeadersVisible = false;
 			this.dataGridViewService.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
 			this.dataGridViewService.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F);
@@ -227,7 +228,8 @@
             this.bindingNavigatorCountItem,
             this.bindingNavigatorSeparator1,
             this.bindingNavigatorMoveNextItem,
-            this.bindingNavigatorMoveLastItem});
+            this.bindingNavigatorMoveLastItem,
+            this.toolStripLabel1});
 			this.bindingService.Location = new System.Drawing.Point(3, 25);
 			this.bindingService.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
 			this.bindingService.MoveLastItem = this.bindingNavigatorMoveLastItem;
@@ -309,22 +311,6 @@
 			this.bindingNavigatorMoveLastItem.Text = "Move last";
 			this.bindingNavigatorMoveLastItem.ToolTipText = "Khách hàng cuối cùng";
 			// 
-			// bunifuSeparator1
-			// 
-			this.bunifuSeparator1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-			this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
-			this.bunifuSeparator1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuSeparator1.BackgroundImage")));
-			this.bunifuSeparator1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-			this.bunifuSeparator1.DashCap = Bunifu.UI.WinForms.BunifuSeparator.CapStyles.Flat;
-			this.bunifuSeparator1.LineColor = System.Drawing.Color.Silver;
-			this.bunifuSeparator1.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
-			this.bunifuSeparator1.LineThickness = 1;
-			this.bunifuSeparator1.Location = new System.Drawing.Point(21, 46);
-			this.bunifuSeparator1.Name = "bunifuSeparator1";
-			this.bunifuSeparator1.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
-			this.bunifuSeparator1.Size = new System.Drawing.Size(1201, 15);
-			this.bunifuSeparator1.TabIndex = 54;
-			// 
 			// label1
 			// 
 			this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -342,7 +328,6 @@
 			this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.groupBox2.Controls.Add(this.btnServiceType);
 			this.groupBox2.Controls.Add(this.btnInsert);
-			this.groupBox2.Controls.Add(this.btnCLose1);
 			this.groupBox2.Controls.Add(this.btnUpdate);
 			this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 12F);
@@ -354,13 +339,94 @@
 			this.groupBox2.TabStop = false;
 			this.groupBox2.Text = "Menu";
 			// 
+			// btnServiceType
+			// 
+			this.btnServiceType.ActiveBorderThickness = 1;
+			this.btnServiceType.ActiveCornerRadius = 20;
+			this.btnServiceType.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnServiceType.ActiveForecolor = System.Drawing.Color.White;
+			this.btnServiceType.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnServiceType.BackColor = System.Drawing.Color.White;
+			this.btnServiceType.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnServiceType.BackgroundImage")));
+			this.btnServiceType.ButtonText = "Hapus";
+			this.btnServiceType.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnServiceType.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnServiceType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnServiceType.IdleBorderThickness = 1;
+			this.btnServiceType.IdleCornerRadius = 20;
+			this.btnServiceType.IdleFillColor = System.Drawing.Color.White;
+			this.btnServiceType.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnServiceType.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnServiceType.Location = new System.Drawing.Point(23, 247);
+			this.btnServiceType.Margin = new System.Windows.Forms.Padding(4);
+			this.btnServiceType.Name = "btnServiceType";
+			this.btnServiceType.Size = new System.Drawing.Size(175, 40);
+			this.btnServiceType.TabIndex = 54;
+			this.btnServiceType.TabStop = false;
+			this.btnServiceType.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.btnServiceType.Click += new System.EventHandler(this.BtnServiceType_Click);
+			// 
+			// btnInsert
+			// 
+			this.btnInsert.ActiveBorderThickness = 1;
+			this.btnInsert.ActiveCornerRadius = 20;
+			this.btnInsert.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnInsert.ActiveForecolor = System.Drawing.Color.White;
+			this.btnInsert.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnInsert.BackColor = System.Drawing.Color.White;
+			this.btnInsert.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnInsert.BackgroundImage")));
+			this.btnInsert.ButtonText = "Tambah";
+			this.btnInsert.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnInsert.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnInsert.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnInsert.IdleBorderThickness = 1;
+			this.btnInsert.IdleCornerRadius = 20;
+			this.btnInsert.IdleFillColor = System.Drawing.Color.White;
+			this.btnInsert.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnInsert.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnInsert.Location = new System.Drawing.Point(23, 118);
+			this.btnInsert.Margin = new System.Windows.Forms.Padding(4);
+			this.btnInsert.Name = "btnInsert";
+			this.btnInsert.Size = new System.Drawing.Size(175, 40);
+			this.btnInsert.TabIndex = 53;
+			this.btnInsert.TabStop = false;
+			this.btnInsert.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.btnInsert.Click += new System.EventHandler(this.BtnInsertService_Click);
+			// 
+			// btnUpdate
+			// 
+			this.btnUpdate.ActiveBorderThickness = 1;
+			this.btnUpdate.ActiveCornerRadius = 20;
+			this.btnUpdate.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnUpdate.ActiveForecolor = System.Drawing.Color.White;
+			this.btnUpdate.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnUpdate.BackColor = System.Drawing.Color.White;
+			this.btnUpdate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUpdate.BackgroundImage")));
+			this.btnUpdate.ButtonText = "Update";
+			this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnUpdate.IdleBorderThickness = 1;
+			this.btnUpdate.IdleCornerRadius = 20;
+			this.btnUpdate.IdleFillColor = System.Drawing.Color.White;
+			this.btnUpdate.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnUpdate.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnUpdate.Location = new System.Drawing.Point(23, 183);
+			this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
+			this.btnUpdate.Name = "btnUpdate";
+			this.btnUpdate.Size = new System.Drawing.Size(175, 40);
+			this.btnUpdate.TabIndex = 55;
+			this.btnUpdate.TabStop = false;
+			this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.btnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
+			// 
 			// groupService
 			// 
 			this.groupService.Anchor = System.Windows.Forms.AnchorStyles.Top;
-			this.groupService.Controls.Add(this.comboboxID);
-			this.groupService.Controls.Add(this.comboBoxServiceType);
-			this.groupService.Controls.Add(this.txbName);
-			this.groupService.Controls.Add(this.txbPrice);
+			this.groupService.Controls.Add(this.cbID);
+			this.groupService.Controls.Add(this.cbServiceType);
+			this.groupService.Controls.Add(this.txtName);
+			this.groupService.Controls.Add(this.txtPrice);
 			this.groupService.Controls.Add(this.label16);
 			this.groupService.Controls.Add(this.label15);
 			this.groupService.Controls.Add(this.label13);
@@ -375,167 +441,73 @@
 			this.groupService.TabStop = false;
 			this.groupService.Text = "Informasi Pelayanan";
 			// 
-			// groupBox4
+			// cbID
 			// 
-			this.groupBox4.Controls.Add(this.txtSearch);
-			this.groupBox4.Controls.Add(this.label5);
-			this.groupBox4.Controls.Add(this.btnSearch);
-			this.groupBox4.Controls.Add(this.btnCancel);
-			this.groupBox4.Font = new System.Drawing.Font("Segoe UI", 12F);
-			this.groupBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.groupBox4.Location = new System.Drawing.Point(21, 67);
-			this.groupBox4.Name = "groupBox4";
-			this.groupBox4.Size = new System.Drawing.Size(444, 115);
-			this.groupBox4.TabIndex = 83;
-			this.groupBox4.TabStop = false;
-			this.groupBox4.Text = "Cari";
+			this.cbID.FormattingEnabled = true;
+			this.cbID.ItemHeight = 23;
+			this.cbID.Location = new System.Drawing.Point(23, 64);
+			this.cbID.Name = "cbID";
+			this.cbID.Size = new System.Drawing.Size(175, 29);
+			this.cbID.Style = MetroFramework.MetroColorStyle.Yellow;
+			this.cbID.TabIndex = 68;
+			this.cbID.UseSelectable = true;
 			// 
-			// txtSearch
+			// cbServiceType
 			// 
-			this.txtSearch.BorderColorFocused = System.Drawing.Color.SeaGreen;
-			this.txtSearch.BorderColorIdle = System.Drawing.Color.SeaGreen;
-			this.txtSearch.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
-			this.txtSearch.BorderThickness = 1;
-			this.txtSearch.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-			this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.txtSearch.isPassword = false;
-			this.txtSearch.Location = new System.Drawing.Point(19, 58);
-			this.txtSearch.Margin = new System.Windows.Forms.Padding(0);
-			this.txtSearch.MaxLength = 32767;
-			this.txtSearch.Name = "txtSearch";
-			this.txtSearch.Size = new System.Drawing.Size(175, 29);
-			this.txtSearch.TabIndex = 27;
-			this.txtSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.cbServiceType.BackColor = System.Drawing.Color.White;
+			this.cbServiceType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.cbServiceType.ForeColor = System.Drawing.Color.SeaGreen;
+			this.cbServiceType.FormattingEnabled = true;
+			this.cbServiceType.ItemHeight = 23;
+			this.cbServiceType.Location = new System.Drawing.Point(23, 228);
+			this.cbServiceType.Name = "cbServiceType";
+			this.cbServiceType.Size = new System.Drawing.Size(175, 29);
+			this.cbServiceType.Style = MetroFramework.MetroColorStyle.Yellow;
+			this.cbServiceType.TabIndex = 64;
+			this.cbServiceType.UseCustomBackColor = true;
+			this.cbServiceType.UseCustomForeColor = true;
+			this.cbServiceType.UseSelectable = true;
+			this.cbServiceType.UseStyleColors = true;
 			// 
-			// label5
+			// txtName
 			// 
-			this.label5.AutoSize = true;
-			this.label5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.label5.Location = new System.Drawing.Point(15, 35);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(167, 20);
-			this.label5.TabIndex = 28;
-			this.label5.Text = "Kode/ Nama Pelayanan:";
+			this.txtName.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.txtName.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.txtName.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.txtName.BorderThickness = 1;
+			this.txtName.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtName.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.txtName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.txtName.isPassword = false;
+			this.txtName.Location = new System.Drawing.Point(23, 140);
+			this.txtName.Margin = new System.Windows.Forms.Padding(0);
+			this.txtName.MaxLength = 32767;
+			this.txtName.Name = "txtName";
+			this.txtName.Size = new System.Drawing.Size(175, 29);
+			this.txtName.TabIndex = 61;
+			this.txtName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtName.Enter += new System.EventHandler(this.TxbName_Enter);
+			this.txtName.Leave += new System.EventHandler(this.TxbName_Leave);
 			// 
-			// btnSearch
+			// txtPrice
 			// 
-			this.btnSearch.ActiveBorderThickness = 1;
-			this.btnSearch.ActiveCornerRadius = 20;
-			this.btnSearch.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSearch.ActiveForecolor = System.Drawing.Color.White;
-			this.btnSearch.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSearch.BackColor = System.Drawing.Color.White;
-			this.btnSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearch.BackgroundImage")));
-			this.btnSearch.ButtonText = "Cari";
-			this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSearch.IdleBorderThickness = 1;
-			this.btnSearch.IdleCornerRadius = 20;
-			this.btnSearch.IdleFillColor = System.Drawing.Color.White;
-			this.btnSearch.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSearch.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSearch.Location = new System.Drawing.Point(247, 47);
-			this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-			this.btnSearch.Name = "btnSearch";
-			this.btnSearch.Size = new System.Drawing.Size(175, 40);
-			this.btnSearch.TabIndex = 46;
-			this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// btnCancel
-			// 
-			this.btnCancel.ActiveBorderThickness = 1;
-			this.btnCancel.ActiveCornerRadius = 20;
-			this.btnCancel.ActiveFillColor = System.Drawing.Color.Red;
-			this.btnCancel.ActiveForecolor = System.Drawing.Color.White;
-			this.btnCancel.ActiveLineColor = System.Drawing.Color.Red;
-			this.btnCancel.BackColor = System.Drawing.Color.White;
-			this.btnCancel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCancel.BackgroundImage")));
-			this.btnCancel.ButtonText = "Batalkan Pencarian";
-			this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnCancel.ForeColor = System.Drawing.Color.SeaGreen;
-			this.btnCancel.IdleBorderThickness = 1;
-			this.btnCancel.IdleCornerRadius = 20;
-			this.btnCancel.IdleFillColor = System.Drawing.Color.White;
-			this.btnCancel.IdleForecolor = System.Drawing.Color.Red;
-			this.btnCancel.IdleLineColor = System.Drawing.Color.Red;
-			this.btnCancel.Location = new System.Drawing.Point(247, 47);
-			this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-			this.btnCancel.Name = "btnCancel";
-			this.btnCancel.Size = new System.Drawing.Size(175, 40);
-			this.btnCancel.TabIndex = 47;
-			this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.btnCancel.Visible = false;
-			// 
-			// comboboxID
-			// 
-			this.comboboxID.FormattingEnabled = true;
-			this.comboboxID.ItemHeight = 23;
-			this.comboboxID.Location = new System.Drawing.Point(23, 64);
-			this.comboboxID.Name = "comboboxID";
-			this.comboboxID.Size = new System.Drawing.Size(175, 29);
-			this.comboboxID.Style = MetroFramework.MetroColorStyle.Yellow;
-			this.comboboxID.TabIndex = 68;
-			this.comboboxID.UseSelectable = true;
-			// 
-			// comboBoxServiceType
-			// 
-			this.comboBoxServiceType.BackColor = System.Drawing.Color.White;
-			this.comboBoxServiceType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.comboBoxServiceType.ForeColor = System.Drawing.Color.SeaGreen;
-			this.comboBoxServiceType.FormattingEnabled = true;
-			this.comboBoxServiceType.ItemHeight = 23;
-			this.comboBoxServiceType.Location = new System.Drawing.Point(23, 228);
-			this.comboBoxServiceType.Name = "comboBoxServiceType";
-			this.comboBoxServiceType.Size = new System.Drawing.Size(175, 29);
-			this.comboBoxServiceType.Style = MetroFramework.MetroColorStyle.Yellow;
-			this.comboBoxServiceType.TabIndex = 64;
-			this.comboBoxServiceType.UseCustomBackColor = true;
-			this.comboBoxServiceType.UseCustomForeColor = true;
-			this.comboBoxServiceType.UseSelectable = true;
-			this.comboBoxServiceType.UseStyleColors = true;
-			// 
-			// txbName
-			// 
-			this.txbName.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.txbName.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.txbName.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.txbName.BorderThickness = 1;
-			this.txbName.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-			this.txbName.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.txbName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txbName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.txbName.isPassword = false;
-			this.txbName.Location = new System.Drawing.Point(23, 140);
-			this.txbName.Margin = new System.Windows.Forms.Padding(0);
-			this.txbName.MaxLength = 32767;
-			this.txbName.Name = "txbName";
-			this.txbName.Size = new System.Drawing.Size(175, 29);
-			this.txbName.TabIndex = 61;
-			this.txbName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-			// 
-			// txbPrice
-			// 
-			this.txbPrice.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.txbPrice.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.txbPrice.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.txbPrice.BorderThickness = 1;
-			this.txbPrice.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-			this.txbPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.txbPrice.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txbPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.txbPrice.isPassword = false;
-			this.txbPrice.Location = new System.Drawing.Point(23, 320);
-			this.txbPrice.Margin = new System.Windows.Forms.Padding(0);
-			this.txbPrice.MaxLength = 32767;
-			this.txbPrice.Name = "txbPrice";
-			this.txbPrice.Size = new System.Drawing.Size(175, 29);
-			this.txbPrice.TabIndex = 67;
-			this.txbPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtPrice.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.txtPrice.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.txtPrice.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.txtPrice.BorderThickness = 1;
+			this.txtPrice.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.txtPrice.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.txtPrice.isPassword = false;
+			this.txtPrice.Location = new System.Drawing.Point(23, 320);
+			this.txtPrice.Margin = new System.Windows.Forms.Padding(0);
+			this.txtPrice.MaxLength = 32767;
+			this.txtPrice.Name = "txtPrice";
+			this.txtPrice.Size = new System.Drawing.Size(175, 29);
+			this.txtPrice.TabIndex = 67;
+			this.txtPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
 			// 
 			// label16
 			// 
@@ -581,109 +553,132 @@
 			this.label20.TabIndex = 66;
 			this.label20.Text = "Jenis Layanan:";
 			// 
-			// btnServiceType
+			// groupBox4
 			// 
-			this.btnServiceType.ActiveBorderThickness = 1;
-			this.btnServiceType.ActiveCornerRadius = 20;
-			this.btnServiceType.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnServiceType.ActiveForecolor = System.Drawing.Color.White;
-			this.btnServiceType.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnServiceType.BackColor = System.Drawing.Color.White;
-			this.btnServiceType.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnServiceType.BackgroundImage")));
-			this.btnServiceType.ButtonText = "Hapus";
-			this.btnServiceType.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnServiceType.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnServiceType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnServiceType.IdleBorderThickness = 1;
-			this.btnServiceType.IdleCornerRadius = 20;
-			this.btnServiceType.IdleFillColor = System.Drawing.Color.White;
-			this.btnServiceType.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnServiceType.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnServiceType.Location = new System.Drawing.Point(23, 210);
-			this.btnServiceType.Margin = new System.Windows.Forms.Padding(4);
-			this.btnServiceType.Name = "btnServiceType";
-			this.btnServiceType.Size = new System.Drawing.Size(175, 40);
-			this.btnServiceType.TabIndex = 54;
-			this.btnServiceType.TabStop = false;
-			this.btnServiceType.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.groupBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+			this.groupBox4.Controls.Add(this.txtSearch);
+			this.groupBox4.Controls.Add(this.label5);
+			this.groupBox4.Controls.Add(this.btnSearch);
+			this.groupBox4.Controls.Add(this.btnCancel);
+			this.groupBox4.Font = new System.Drawing.Font("Segoe UI", 12F);
+			this.groupBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.groupBox4.Location = new System.Drawing.Point(21, 67);
+			this.groupBox4.Name = "groupBox4";
+			this.groupBox4.Size = new System.Drawing.Size(444, 115);
+			this.groupBox4.TabIndex = 83;
+			this.groupBox4.TabStop = false;
+			this.groupBox4.Text = "Cari";
 			// 
-			// btnInsert
+			// txtSearch
 			// 
-			this.btnInsert.ActiveBorderThickness = 1;
-			this.btnInsert.ActiveCornerRadius = 20;
-			this.btnInsert.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnInsert.ActiveForecolor = System.Drawing.Color.White;
-			this.btnInsert.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnInsert.BackColor = System.Drawing.Color.White;
-			this.btnInsert.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnInsert.BackgroundImage")));
-			this.btnInsert.ButtonText = "Tambah";
-			this.btnInsert.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnInsert.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnInsert.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnInsert.IdleBorderThickness = 1;
-			this.btnInsert.IdleCornerRadius = 20;
-			this.btnInsert.IdleFillColor = System.Drawing.Color.White;
-			this.btnInsert.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnInsert.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnInsert.Location = new System.Drawing.Point(23, 81);
-			this.btnInsert.Margin = new System.Windows.Forms.Padding(4);
-			this.btnInsert.Name = "btnInsert";
-			this.btnInsert.Size = new System.Drawing.Size(175, 40);
-			this.btnInsert.TabIndex = 53;
-			this.btnInsert.TabStop = false;
-			this.btnInsert.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.txtSearch.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.txtSearch.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.txtSearch.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.txtSearch.BorderThickness = 1;
+			this.txtSearch.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.txtSearch.isPassword = false;
+			this.txtSearch.Location = new System.Drawing.Point(19, 58);
+			this.txtSearch.Margin = new System.Windows.Forms.Padding(0);
+			this.txtSearch.MaxLength = 32767;
+			this.txtSearch.Name = "txtSearch";
+			this.txtSearch.Size = new System.Drawing.Size(175, 29);
+			this.txtSearch.TabIndex = 27;
+			this.txtSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
 			// 
-			// btnCLose1
+			// label5
 			// 
-			this.btnCLose1.ActiveBorderThickness = 1;
-			this.btnCLose1.ActiveCornerRadius = 20;
-			this.btnCLose1.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnCLose1.ActiveForecolor = System.Drawing.Color.White;
-			this.btnCLose1.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnCLose1.BackColor = System.Drawing.Color.White;
-			this.btnCLose1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCLose1.BackgroundImage")));
-			this.btnCLose1.ButtonText = "Kembali";
-			this.btnCLose1.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnCLose1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnCLose1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnCLose1.IdleBorderThickness = 1;
-			this.btnCLose1.IdleCornerRadius = 20;
-			this.btnCLose1.IdleFillColor = System.Drawing.Color.White;
-			this.btnCLose1.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnCLose1.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnCLose1.Location = new System.Drawing.Point(23, 272);
-			this.btnCLose1.Margin = new System.Windows.Forms.Padding(4);
-			this.btnCLose1.Name = "btnCLose1";
-			this.btnCLose1.Size = new System.Drawing.Size(175, 40);
-			this.btnCLose1.TabIndex = 56;
-			this.btnCLose1.TabStop = false;
-			this.btnCLose1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.label5.AutoSize = true;
+			this.label5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.label5.Location = new System.Drawing.Point(15, 35);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(167, 20);
+			this.label5.TabIndex = 28;
+			this.label5.Text = "Kode/ Nama Pelayanan:";
 			// 
-			// btnUpdate
+			// btnSearch
 			// 
-			this.btnUpdate.ActiveBorderThickness = 1;
-			this.btnUpdate.ActiveCornerRadius = 20;
-			this.btnUpdate.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnUpdate.ActiveForecolor = System.Drawing.Color.White;
-			this.btnUpdate.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnUpdate.BackColor = System.Drawing.Color.White;
-			this.btnUpdate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUpdate.BackgroundImage")));
-			this.btnUpdate.ButtonText = "Update";
-			this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnUpdate.IdleBorderThickness = 1;
-			this.btnUpdate.IdleCornerRadius = 20;
-			this.btnUpdate.IdleFillColor = System.Drawing.Color.White;
-			this.btnUpdate.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnUpdate.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnUpdate.Location = new System.Drawing.Point(23, 146);
-			this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
-			this.btnUpdate.Name = "btnUpdate";
-			this.btnUpdate.Size = new System.Drawing.Size(175, 40);
-			this.btnUpdate.TabIndex = 55;
-			this.btnUpdate.TabStop = false;
-			this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.btnSearch.ActiveBorderThickness = 1;
+			this.btnSearch.ActiveCornerRadius = 20;
+			this.btnSearch.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSearch.ActiveForecolor = System.Drawing.Color.White;
+			this.btnSearch.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSearch.BackColor = System.Drawing.Color.White;
+			this.btnSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearch.BackgroundImage")));
+			this.btnSearch.ButtonText = "Cari";
+			this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSearch.IdleBorderThickness = 1;
+			this.btnSearch.IdleCornerRadius = 20;
+			this.btnSearch.IdleFillColor = System.Drawing.Color.White;
+			this.btnSearch.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSearch.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSearch.Location = new System.Drawing.Point(247, 50);
+			this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.btnSearch.Name = "btnSearch";
+			this.btnSearch.Size = new System.Drawing.Size(175, 40);
+			this.btnSearch.TabIndex = 46;
+			this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.btnSearch.Click += new System.EventHandler(this.BtnSearch_Click);
+			// 
+			// btnCancel
+			// 
+			this.btnCancel.ActiveBorderThickness = 1;
+			this.btnCancel.ActiveCornerRadius = 20;
+			this.btnCancel.ActiveFillColor = System.Drawing.Color.Red;
+			this.btnCancel.ActiveForecolor = System.Drawing.Color.White;
+			this.btnCancel.ActiveLineColor = System.Drawing.Color.Red;
+			this.btnCancel.BackColor = System.Drawing.Color.White;
+			this.btnCancel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCancel.BackgroundImage")));
+			this.btnCancel.ButtonText = "Batalkan Pencarian";
+			this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnCancel.ForeColor = System.Drawing.Color.SeaGreen;
+			this.btnCancel.IdleBorderThickness = 1;
+			this.btnCancel.IdleCornerRadius = 20;
+			this.btnCancel.IdleFillColor = System.Drawing.Color.White;
+			this.btnCancel.IdleForecolor = System.Drawing.Color.Red;
+			this.btnCancel.IdleLineColor = System.Drawing.Color.Red;
+			this.btnCancel.Location = new System.Drawing.Point(247, 50);
+			this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.btnCancel.Name = "btnCancel";
+			this.btnCancel.Size = new System.Drawing.Size(175, 40);
+			this.btnCancel.TabIndex = 47;
+			this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.btnCancel.Visible = false;
+			this.btnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
+			// 
+			// saveService
+			// 
+			this.saveService.FileName = "Danh sách dịch vụ";
+			this.saveService.Filter = "Excel File(*.xls)|*.xls|Excel File (*.xlsx) |.xlsx|PDF File(*.pdf)|*.pdf";
+			// 
+			// bunifuSeparator1
+			// 
+			this.bunifuSeparator1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+			this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
+			this.bunifuSeparator1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuSeparator1.BackgroundImage")));
+			this.bunifuSeparator1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.bunifuSeparator1.DashCap = Bunifu.UI.WinForms.BunifuSeparator.CapStyles.Flat;
+			this.bunifuSeparator1.LineColor = System.Drawing.Color.Silver;
+			this.bunifuSeparator1.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
+			this.bunifuSeparator1.LineThickness = 1;
+			this.bunifuSeparator1.Location = new System.Drawing.Point(21, 46);
+			this.bunifuSeparator1.Name = "bunifuSeparator1";
+			this.bunifuSeparator1.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
+			this.bunifuSeparator1.Size = new System.Drawing.Size(1201, 15);
+			this.bunifuSeparator1.TabIndex = 54;
+			// 
+			// toolStripLabel1
+			// 
+			this.toolStripLabel1.Name = "toolStripLabel1";
+			this.toolStripLabel1.Size = new System.Drawing.Size(48, 40);
+			this.toolStripLabel1.Text = "Ekspor";
+			this.toolStripLabel1.Click += new System.EventHandler(this.ToolStripLabel1_Click);
 			// 
 			// UC_Service
 			// 
@@ -741,17 +736,18 @@
 		private System.Windows.Forms.Label label5;
 		private Bunifu.Framework.UI.BunifuThinButton2 btnSearch;
 		private Bunifu.Framework.UI.BunifuThinButton2 btnCancel;
-		private MetroFramework.Controls.MetroComboBox comboboxID;
-		private MetroFramework.Controls.MetroComboBox comboBoxServiceType;
-		private Bunifu.Framework.UI.BunifuMetroTextbox txbName;
-		private Bunifu.Framework.UI.BunifuMetroTextbox txbPrice;
+		private MetroFramework.Controls.MetroComboBox cbID;
+		private MetroFramework.Controls.MetroComboBox cbServiceType;
+		private Bunifu.Framework.UI.BunifuMetroTextbox txtName;
+		private Bunifu.Framework.UI.BunifuMetroTextbox txtPrice;
 		private System.Windows.Forms.Label label16;
 		private System.Windows.Forms.Label label15;
 		private System.Windows.Forms.Label label13;
 		private System.Windows.Forms.Label label20;
 		private Bunifu.Framework.UI.BunifuThinButton2 btnServiceType;
 		private Bunifu.Framework.UI.BunifuThinButton2 btnInsert;
-		private Bunifu.Framework.UI.BunifuThinButton2 btnCLose1;
 		private Bunifu.Framework.UI.BunifuThinButton2 btnUpdate;
+		private System.Windows.Forms.SaveFileDialog saveService;
+		private System.Windows.Forms.ToolStripLabel toolStripLabel1;
 	}
 }

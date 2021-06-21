@@ -67,8 +67,8 @@ namespace FAHotelApp.UC
 			table.Columns.Add("finalprice_New", typeof(string));
 			for (int i = 0; i < table.Rows.Count; i++)
 			{
-				table.Rows[i]["finalprice_New"] = ((int)table.Rows[i]["finalprice"]).ToString("C0", CultureInfo.CreateSpecificCulture("vi-VN"));
-				table.Rows[i]["totalPrice_New"] = ((int)table.Rows[i]["totalPrice"]).ToString("C0", CultureInfo.CreateSpecificCulture("vi-VN"));
+				table.Rows[i]["finalprice_New"] = ((int)table.Rows[i]["finalprice"]).ToString("Rp.", CultureInfo.CreateSpecificCulture("id-ID"));
+				table.Rows[i]["totalPrice_New"] = ((int)table.Rows[i]["totalPrice"]).ToString("Rp.", CultureInfo.CreateSpecificCulture("id-ID"));
 			}
 			table.Columns.Remove("finalprice");
 			table.Columns.Remove("totalPrice");
@@ -86,7 +86,7 @@ namespace FAHotelApp.UC
 					fPrintBill.ShowDialog();
 				}
 				else
-					MessageBox.Show("Hoá đơn chưa thanh toán\nBạn không có quyền truy cập", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+					MessageBox.Show("Invoice Belum Dibayar\nAnda Tidak Memiliki Akses", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 			}
 		}
 		#endregion

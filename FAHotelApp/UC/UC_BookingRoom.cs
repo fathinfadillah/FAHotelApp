@@ -40,7 +40,7 @@ namespace FAHotelApp.UC
 			txtRoomTypeID.Text = roomType.Id.ToString();
 			txtRoomTypeName.Text = roomType.Name;
 			CultureInfo cultureInfo = new CultureInfo("id-ID");
-			txtPrice.Text = roomType.Price.ToString("Rp.", cultureInfo);
+			txtPrice.Text = roomType.Price.ToString("c", cultureInfo);
 			txtAmountPeople.Text = roomType.LimitPerson.ToString();
 		}
 		public void LoadDate()

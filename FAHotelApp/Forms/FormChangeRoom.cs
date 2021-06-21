@@ -43,10 +43,15 @@ namespace FAHotelApp.Forms
 			CultureInfo cultureInfo = new CultureInfo("id-ID");
 			RoomType roomType = RoomTypeDAO.Instance.GetRoomTypeByIdRoom(idRoom);
 			txtLimitPerson.Text = roomType.LimitPerson.ToString();
-			txtPrice.Text = roomType.Price.ToString("Rp.", cultureInfo);
+			txtPrice.Text = roomType.Price.ToString("c", cultureInfo);
 			txtRoomTypeName.Text = roomType.Name;
 		}
 		private void btnClose_Click(object sender, EventArgs e)
+		{
+			Close();
+		}
+
+		private void btnClose__Click(object sender, EventArgs e)
 		{
 			Close();
 		}
@@ -55,12 +60,19 @@ namespace FAHotelApp.Forms
 		{
 			txtRoomTypeName.Text = (cbRoomType.SelectedItem as RoomType).Name;
 			LoadEmptyRoom((cbRoomType.SelectedItem as RoomType).Id);
-			LoadRoomTypeInfo((cbRoom.SelectedItem as Room).Id);
+			try
+			{
+				LoadRoomTypeInfo((cbRoom.SelectedItem as Room).Id);
+			} catch (Exception a)
+			{
+				MessageBox.Show(a.Message);
+			}
+			
 		}
 
 		private void cbRoom_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			txbRoomName.Text = (cbRoom.SelectedItem as Room).Name;
+			txtRoomName.Text = (cbRoom.SelectedItem as Room).Name;
 		}
 
 		private void btnAddCustomer_Click(object sender, EventArgs e)

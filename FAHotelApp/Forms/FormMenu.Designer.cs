@@ -70,27 +70,27 @@
 			this.lbUser = new System.Windows.Forms.Label();
 			this.bunifuPages1 = new Bunifu.UI.WinForms.BunifuPages();
 			this.Dashboard = new System.Windows.Forms.TabPage();
+			this.uC_Dashboard1 = new FAHotelApp.UC.UC_Dashboard();
 			this.BookingKamar = new System.Windows.Forms.TabPage();
+			this.uC_BookingRoom1 = new FAHotelApp.UC.UC_BookingRoom();
 			this.CheckInKamar = new System.Windows.Forms.TabPage();
+			this.uC_ReceiveRoom1 = new FAHotelApp.UC.UC_ReceiveRoom();
 			this.tabPage4 = new System.Windows.Forms.TabPage();
 			this.ManajerKamar = new System.Windows.Forms.TabPage();
+			this.uC_Room1 = new FAHotelApp.UC.UC_Room();
 			this.ManajerKaryawan = new System.Windows.Forms.TabPage();
+			this.uC_Staff1 = new FAHotelApp.UC.UC_Staff();
 			this.ManajerPelanggan = new System.Windows.Forms.TabPage();
+			this.uC_Customer1 = new FAHotelApp.UC.UC_Customer();
 			this.ManajerTagihan = new System.Windows.Forms.TabPage();
+			this.uC_Bill1 = new FAHotelApp.UC.UC_Bill();
 			this.ManajerPelayanan = new System.Windows.Forms.TabPage();
+			this.uC_Service1 = new FAHotelApp.UC.UC_Service();
 			this.PeraturanHotel = new System.Windows.Forms.TabPage();
 			this.tabPage1 = new System.Windows.Forms.TabPage();
 			this.TambahKamar = new System.Windows.Forms.TabPage();
 			this.TambahPelanggan = new System.Windows.Forms.TabPage();
 			this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
-			this.uC_Dashboard1 = new FAHotelApp.UC.UC_Dashboard();
-			this.uC_BookingRoom1 = new FAHotelApp.UC.UC_BookingRoom();
-			this.uC_ReceiveRoom1 = new FAHotelApp.UC.UC_ReceiveRoom();
-			this.uC_Room1 = new FAHotelApp.UC.UC_Room();
-			this.uC_Staff1 = new FAHotelApp.UC.UC_Staff();
-			this.uC_Customer1 = new FAHotelApp.UC.UC_Customer();
-			this.uC_Bill1 = new FAHotelApp.UC.UC_Bill();
-			this.uC_Service1 = new FAHotelApp.UC.UC_Service();
 			this.panel1.SuspendLayout();
 			this.panelMenu.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -393,6 +393,7 @@
 			this.bunifuButton8.TextMarginLeft = 0;
 			this.bunifuButton8.TextPadding = new System.Windows.Forms.Padding(50, 0, 0, 0);
 			this.bunifuButton8.UseDefaultRadiusAndThickness = true;
+			this.bunifuButton8.Click += new System.EventHandler(this.bunifuButton8_Click);
 			// 
 			// bunifuButton7
 			// 
@@ -1382,6 +1383,14 @@
 			this.Dashboard.TabIndex = 0;
 			this.Dashboard.Text = "Dashboard";
 			// 
+			// uC_Dashboard1
+			// 
+			this.uC_Dashboard1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.uC_Dashboard1.Location = new System.Drawing.Point(3, 3);
+			this.uC_Dashboard1.Name = "uC_Dashboard1";
+			this.uC_Dashboard1.Size = new System.Drawing.Size(1217, 669);
+			this.uC_Dashboard1.TabIndex = 0;
+			// 
 			// BookingKamar
 			// 
 			this.BookingKamar.BackColor = System.Drawing.SystemColors.Control;
@@ -1393,6 +1402,15 @@
 			this.BookingKamar.TabIndex = 1;
 			this.BookingKamar.Text = "Booking Kamar";
 			// 
+			// uC_BookingRoom1
+			// 
+			this.uC_BookingRoom1.BackColor = System.Drawing.Color.White;
+			this.uC_BookingRoom1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.uC_BookingRoom1.Location = new System.Drawing.Point(3, 3);
+			this.uC_BookingRoom1.Name = "uC_BookingRoom1";
+			this.uC_BookingRoom1.Size = new System.Drawing.Size(1217, 669);
+			this.uC_BookingRoom1.TabIndex = 0;
+			// 
 			// CheckInKamar
 			// 
 			this.CheckInKamar.BackColor = System.Drawing.SystemColors.Control;
@@ -1403,6 +1421,15 @@
 			this.CheckInKamar.Size = new System.Drawing.Size(1223, 675);
 			this.CheckInKamar.TabIndex = 2;
 			this.CheckInKamar.Text = "Check-In Kamar";
+			// 
+			// uC_ReceiveRoom1
+			// 
+			this.uC_ReceiveRoom1.BackColor = System.Drawing.Color.White;
+			this.uC_ReceiveRoom1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.uC_ReceiveRoom1.Location = new System.Drawing.Point(3, 3);
+			this.uC_ReceiveRoom1.Name = "uC_ReceiveRoom1";
+			this.uC_ReceiveRoom1.Size = new System.Drawing.Size(1217, 669);
+			this.uC_ReceiveRoom1.TabIndex = 0;
 			// 
 			// tabPage4
 			// 
@@ -1425,6 +1452,15 @@
 			this.ManajerKamar.TabIndex = 4;
 			this.ManajerKamar.Text = "Manajer Kamar";
 			// 
+			// uC_Room1
+			// 
+			this.uC_Room1.BackColor = System.Drawing.Color.White;
+			this.uC_Room1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.uC_Room1.Location = new System.Drawing.Point(3, 3);
+			this.uC_Room1.Name = "uC_Room1";
+			this.uC_Room1.Size = new System.Drawing.Size(1217, 669);
+			this.uC_Room1.TabIndex = 0;
+			// 
 			// ManajerKaryawan
 			// 
 			this.ManajerKaryawan.BackColor = System.Drawing.SystemColors.Control;
@@ -1435,6 +1471,15 @@
 			this.ManajerKaryawan.Size = new System.Drawing.Size(1223, 675);
 			this.ManajerKaryawan.TabIndex = 5;
 			this.ManajerKaryawan.Text = "Manajer Karyawan";
+			// 
+			// uC_Staff1
+			// 
+			this.uC_Staff1.BackColor = System.Drawing.Color.White;
+			this.uC_Staff1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.uC_Staff1.Location = new System.Drawing.Point(3, 3);
+			this.uC_Staff1.Name = "uC_Staff1";
+			this.uC_Staff1.Size = new System.Drawing.Size(1217, 669);
+			this.uC_Staff1.TabIndex = 0;
 			// 
 			// ManajerPelanggan
 			// 
@@ -1447,6 +1492,15 @@
 			this.ManajerPelanggan.TabIndex = 6;
 			this.ManajerPelanggan.Text = "Manajer Pelanggan";
 			// 
+			// uC_Customer1
+			// 
+			this.uC_Customer1.BackColor = System.Drawing.Color.White;
+			this.uC_Customer1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.uC_Customer1.Location = new System.Drawing.Point(3, 3);
+			this.uC_Customer1.Name = "uC_Customer1";
+			this.uC_Customer1.Size = new System.Drawing.Size(1217, 669);
+			this.uC_Customer1.TabIndex = 0;
+			// 
 			// ManajerTagihan
 			// 
 			this.ManajerTagihan.BackColor = System.Drawing.SystemColors.Control;
@@ -1458,6 +1512,15 @@
 			this.ManajerTagihan.TabIndex = 7;
 			this.ManajerTagihan.Text = "Manajer Tagihan";
 			// 
+			// uC_Bill1
+			// 
+			this.uC_Bill1.BackColor = System.Drawing.Color.White;
+			this.uC_Bill1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.uC_Bill1.Location = new System.Drawing.Point(3, 3);
+			this.uC_Bill1.Name = "uC_Bill1";
+			this.uC_Bill1.Size = new System.Drawing.Size(1217, 669);
+			this.uC_Bill1.TabIndex = 0;
+			// 
 			// ManajerPelayanan
 			// 
 			this.ManajerPelayanan.BackColor = System.Drawing.SystemColors.Control;
@@ -1468,6 +1531,15 @@
 			this.ManajerPelayanan.Size = new System.Drawing.Size(1223, 675);
 			this.ManajerPelayanan.TabIndex = 8;
 			this.ManajerPelayanan.Text = "Manajer Pelayanan";
+			// 
+			// uC_Service1
+			// 
+			this.uC_Service1.BackColor = System.Drawing.Color.White;
+			this.uC_Service1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.uC_Service1.Location = new System.Drawing.Point(3, 3);
+			this.uC_Service1.Name = "uC_Service1";
+			this.uC_Service1.Size = new System.Drawing.Size(1217, 669);
+			this.uC_Service1.TabIndex = 0;
 			// 
 			// PeraturanHotel
 			// 
@@ -1548,77 +1620,6 @@
 			this.bunifuFormDock1.TitleBarOptions.DoubleClickToExpandWindow = true;
 			this.bunifuFormDock1.TitleBarOptions.TitleBarControl = null;
 			this.bunifuFormDock1.TitleBarOptions.UseBackColorOnDockingIndicators = false;
-			// 
-			// uC_Dashboard1
-			// 
-			this.uC_Dashboard1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.uC_Dashboard1.Location = new System.Drawing.Point(3, 3);
-			this.uC_Dashboard1.Name = "uC_Dashboard1";
-			this.uC_Dashboard1.Size = new System.Drawing.Size(1217, 669);
-			this.uC_Dashboard1.TabIndex = 0;
-			// 
-			// uC_BookingRoom1
-			// 
-			this.uC_BookingRoom1.BackColor = System.Drawing.Color.White;
-			this.uC_BookingRoom1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.uC_BookingRoom1.Location = new System.Drawing.Point(3, 3);
-			this.uC_BookingRoom1.Name = "uC_BookingRoom1";
-			this.uC_BookingRoom1.Size = new System.Drawing.Size(1217, 669);
-			this.uC_BookingRoom1.TabIndex = 0;
-			// 
-			// uC_ReceiveRoom1
-			// 
-			this.uC_ReceiveRoom1.BackColor = System.Drawing.Color.White;
-			this.uC_ReceiveRoom1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.uC_ReceiveRoom1.Location = new System.Drawing.Point(3, 3);
-			this.uC_ReceiveRoom1.Name = "uC_ReceiveRoom1";
-			this.uC_ReceiveRoom1.Size = new System.Drawing.Size(1217, 669);
-			this.uC_ReceiveRoom1.TabIndex = 0;
-			// 
-			// uC_Room1
-			// 
-			this.uC_Room1.BackColor = System.Drawing.Color.White;
-			this.uC_Room1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.uC_Room1.Location = new System.Drawing.Point(3, 3);
-			this.uC_Room1.Name = "uC_Room1";
-			this.uC_Room1.Size = new System.Drawing.Size(1217, 669);
-			this.uC_Room1.TabIndex = 0;
-			// 
-			// uC_Staff1
-			// 
-			this.uC_Staff1.BackColor = System.Drawing.Color.White;
-			this.uC_Staff1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.uC_Staff1.Location = new System.Drawing.Point(3, 3);
-			this.uC_Staff1.Name = "uC_Staff1";
-			this.uC_Staff1.Size = new System.Drawing.Size(1217, 669);
-			this.uC_Staff1.TabIndex = 0;
-			// 
-			// uC_Customer1
-			// 
-			this.uC_Customer1.BackColor = System.Drawing.Color.White;
-			this.uC_Customer1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.uC_Customer1.Location = new System.Drawing.Point(3, 3);
-			this.uC_Customer1.Name = "uC_Customer1";
-			this.uC_Customer1.Size = new System.Drawing.Size(1217, 669);
-			this.uC_Customer1.TabIndex = 0;
-			// 
-			// uC_Bill1
-			// 
-			this.uC_Bill1.BackColor = System.Drawing.Color.White;
-			this.uC_Bill1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.uC_Bill1.Location = new System.Drawing.Point(3, 3);
-			this.uC_Bill1.Name = "uC_Bill1";
-			this.uC_Bill1.Size = new System.Drawing.Size(1217, 669);
-			this.uC_Bill1.TabIndex = 0;
-			// 
-			// uC_Service1
-			// 
-			this.uC_Service1.BackColor = System.Drawing.Color.White;
-			this.uC_Service1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.uC_Service1.Location = new System.Drawing.Point(3, 3);
-			this.uC_Service1.Name = "uC_Service1";
-			this.uC_Service1.Size = new System.Drawing.Size(1217, 669);
-			this.uC_Service1.TabIndex = 0;
 			// 
 			// FormMenu
 			// 

@@ -1,24 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using FAHotelApp.DAO;
+﻿using FAHotelApp.DAO;
 using FAHotelApp.DTO;
-using FAHotelApp.UC;
-using System.Globalization;
 using FAHotelApp.Forms;
+using System;
+using System.Data;
+using System.Globalization;
+using System.Text;
+using System.Windows.Forms;
 
 namespace FAHotelApp.UC
 {
 	public partial class UC_Service : UserControl
 	{
 		#region Properties
-		//FormServiceType _FormServiceType;
+		FormServiceType _FormServiceType;
 		#endregion
 
 		#region Constructor
@@ -28,7 +22,7 @@ namespace FAHotelApp.UC
 			InitializeComponent();
 			LoadFullServiceType();
 			LoadFullService(GetFullService());
-			comboboxID.DisplayMember = "id";
+			cbID.DisplayMember = "id";
 			txtSearch.KeyPress += TxbSearch_KeyPress;
 			btnCancel.Click += BtnCancel_Click;
 			//KeyPreview = true;
@@ -47,24 +41,24 @@ namespace FAHotelApp.UC
 			source.DataSource = table;
 			dataGridViewService.DataSource = source;
 			bindingService.BindingSource = source;
-			comboboxID.DataSource = source;
+			cbID.DataSource = source;
 		}
 		private void LoadFullServiceType()
 		{
 			DataTable table = GetFullServiceType();
-			comboBoxServiceType.DataSource = table;
-			comboBoxServiceType.DisplayMember = "name";
+			cbServiceType.DataSource = table;
+			cbServiceType.DisplayMember = "name";
 			;
 			if (table.Rows.Count > 0)
-				comboBoxServiceType.SelectedIndex = 0;
-			//_FormServiceType = new FormServiceType(table);
+				cbServiceType.SelectedIndex = 0;
+			_FormServiceType = new FormServiceType(table);
 		}
 		#endregion
 
 		#region Click
 		private void BtnInsertService_Click(object sender, EventArgs e)
 		{
-			//new FormAddService().ShowDialog();
+			new FormAddService().ShowDialog();
 			if (btnCancel.Visible == false)
 				LoadFullService(GetFullService());
 			else
@@ -72,63 +66,63 @@ namespace FAHotelApp.UC
 		}
 		private void BtnUpdate_Click(object sender, EventArgs e)
 		{
-			DialogResult result = MessageBox.Show("Bạn có muốn cập nhật lại dịch vụ?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
+			DialogResult result = MessageBox.Show("Apakah Anda Ingin Memperbarui Layanan Lagi?", "Pemberitahuan", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
 			if (result == DialogResult.OK)
 				UpdateService();
-			comboboxID.Focus();
+			cbID.Focus();
 		}
-		//private void BtnServiceType_Click(object sender, EventArgs e)
-		//{
-		//	this.Hide();
-		//	//_FormServiceType.ShowDialog();
-		//	this.LoadFullService(GetFullService());
-		//	comboBoxServiceType.DataSource = _FormServiceType.TableSerViceType;
-		//	this.Show();
-		//}
+		private void BtnServiceType_Click(object sender, EventArgs e)
+		{
+			this.Hide();
+			_FormServiceType.ShowDialog();
+			this.LoadFullService(GetFullService());
+			cbServiceType.DataSource = _FormServiceType.TableSerViceType;
+			this.Show();
+		}
 		private void BindingNavigatorAddNewItem_Click(object sender, EventArgs e)
 		{
-			txbName.Text = string.Empty;
-			txbPrice.Text = string.Empty;
+			txtName.Text = string.Empty;
+			txtPrice.Text = string.Empty;
 		}
-		//private void ToolStripLabel1_Click(object sender, EventArgs e)
-		//{
-		//	if (saveService.ShowDialog() == DialogResult.Cancel)
-		//		return;
-		//	else
-		//	{
-		//		bool check;
-		//		try
-		//		{
-		//			switch (saveService.FilterIndex)
-		//			{
-		//				case 2:
-		//					check = ExportToExcel.Instance.Export(dataGridViewService, saveService.FileName, ModeExportToExcel.XLSX);
-		//					break;
-		//				case 3:
-		//					check = ExportToExcel.Instance.Export(dataGridViewService, saveService.FileName, ModeExportToExcel.PDF);
-		//					break;
-		//				default:
-		//					check = ExportToExcel.Instance.Export(dataGridViewService, saveService.FileName, ModeExportToExcel.XLS);
-		//					break;
-		//			}
-		//			if (check)
-		//				MessageBox.Show("Xuất thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-		//			else
-		//				MessageBox.Show("Lỗi xuất thất bại", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-		//		}
-		//		catch
-		//		{
-		//			MessageBox.Show("Lỗi (Cần cài đặt Office)", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-		//		}
-		//	}
-		//}
+		private void ToolStripLabel1_Click(object sender, EventArgs e)
+		{
+			if (saveService.ShowDialog() == DialogResult.Cancel)
+				return;
+			else
+			{
+				bool check;
+				try
+				{
+					switch (saveService.FilterIndex)
+					{
+						case 2:
+							check = ExportToExcel.Instance.Export(dataGridViewService, saveService.FileName, ModeExportToExcel.XLSX);
+							break;
+						case 3:
+							check = ExportToExcel.Instance.Export(dataGridViewService, saveService.FileName, ModeExportToExcel.PDF);
+							break;
+						default:
+							check = ExportToExcel.Instance.Export(dataGridViewService, saveService.FileName, ModeExportToExcel.XLS);
+							break;
+					}
+					if (check)
+						MessageBox.Show("Export Berhasil", "Pemberitahuan", MessageBoxButtons.OK, MessageBoxIcon.Information);
+					else
+						MessageBox.Show("Export Gagal", "Pemberitahuan", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				}
+				catch
+				{
+					MessageBox.Show("Error (Perlu Menginstal Office)", "Pemberitahuan", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				}
+			}
+		}
 		private void BtnSearch_Click(object sender, EventArgs e)
 		{
 			txtSearch.Text = txtSearch.Text.Trim();
 			if (txtSearch.Text != string.Empty)
 			{
-				txbName.Text = string.Empty;
-				txbPrice.Text = string.Empty;
+				txtName.Text = string.Empty;
+				txtPrice.Text = string.Empty;
 				btnSearch.Visible = false;
 				btnCancel.Visible = true;
 				Search();
@@ -149,14 +143,14 @@ namespace FAHotelApp.UC
 			{
 				bindingNavigatorMoveFirstItem.Enabled = false;
 				bindingNavigatorMovePreviousItem.Enabled = false;
-				txbName.Text = string.Empty;
-				txbPrice.Text = string.Empty;
+				txtName.Text = string.Empty;
+				txtPrice.Text = string.Empty;
 			}
 			else
 			{
-				txbName.Text = row.Cells["colName"].Value.ToString();
-				comboBoxServiceType.SelectedIndex = (int)row.Cells["colIdServiceType"].Value - 1;
-				txbPrice.Text = ((int)row.Cells[col.Name].Value).ToString("c0", CultureInfo.CreateSpecificCulture("vi-vn"));
+				txtName.Text = row.Cells["colName"].Value.ToString();
+				cbServiceType.SelectedIndex = (int)row.Cells["colIdServiceType"].Value - 1;
+				txtPrice.Text = ((int)row.Cells[col.Name].Value).ToString("Rp.", CultureInfo.CreateSpecificCulture("id-ID"));
 				Service room = new Service(((DataRowView)row.DataBoundItem).Row);
 				groupService.Tag = room;
 				bindingNavigatorMoveFirstItem.Enabled = true;
@@ -166,12 +160,12 @@ namespace FAHotelApp.UC
 
 		private void UpdateService()
 		{
-			if (comboboxID.Text == string.Empty)
-				MessageBox.Show("Dịch vụ không tồn tại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+			if (cbID.Text == string.Empty)
+				MessageBox.Show("Layanan Tidak Ada", "Error", MessageBoxButtons.OK, MessageBoxIcon.Stop);
 			else
-			if (!UC_Customer.CheckFillInText(new Control[] { txbName, comboBoxServiceType, txbPrice }))
+			if (!UC_Customer.CheckFillInText(new Control[] { txtName, cbServiceType, txtPrice }))
 			{
-				MessageBox.Show("Không được để trống", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				MessageBox.Show("Tidak Boleh Kosong", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				return;
 			}
 			else
@@ -182,31 +176,31 @@ namespace FAHotelApp.UC
 					Service serviceNow = GetServiceNow();
 					if (serviceNow.Equals(servicePre))
 					{
-						MessageBox.Show("Bạn chưa thay đổi dữ liệu", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+						MessageBox.Show("Anda Belum Mengubah Data", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 					}
 					else
 					{
 						bool check = ServiceDAO.Instance.UpdateService(serviceNow, servicePre);
 						if (check)
 						{
-							MessageBox.Show("Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+							MessageBox.Show("Update Layanan Berhasil", "Pemberitahuan", MessageBoxButtons.OK, MessageBoxIcon.Information);
 							groupService.Tag = serviceNow;
 							if (btnCancel.Visible == false)
 							{
 								int index = dataGridViewService.SelectedRows[0].Index;
 								LoadFullService(GetFullService());
-								comboboxID.SelectedIndex = index;
+								cbID.SelectedIndex = index;
 							}
 							else
 								BtnCancel_Click(null, null);
 						}
 						else
-							MessageBox.Show("Dịch vụ không tồn tại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+							MessageBox.Show("Layanan Tidak Ada", "Error", MessageBoxButtons.OK, MessageBoxIcon.Stop);
 					}
 				}
 				catch
 				{
-					MessageBox.Show("Lỗi", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+					MessageBox.Show("Error", "Pemberitahuan", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				}
 			}
 		}
@@ -228,15 +222,15 @@ namespace FAHotelApp.UC
 		private Service GetServiceNow()
 		{
 			Service service = new Service();
-			if (comboboxID.Text == string.Empty)
+			if (cbID.Text == string.Empty)
 				service.Id = 0;
 			else
-				service.Id = int.Parse(comboboxID.Text);
-			txbName.Text = txbName.Text.Trim();
-			service.Name = txbName.Text;
-			service.Price = int.Parse(StringToInt(txbPrice.Text));
-			int index = comboBoxServiceType.SelectedIndex;
-			service.IdServiceType = (int)((DataTable)comboBoxServiceType.DataSource).Rows[index]["id"];
+				service.Id = int.Parse(cbID.Text);
+			txtName.Text = txtName.Text.Trim();
+			service.Name = txtName.Text;
+			service.Price = int.Parse(StringToInt(txtPrice.Text));
+			int index = cbServiceType.SelectedIndex;
+			service.IdServiceType = (int)((DataTable)cbServiceType.DataSource).Rows[index]["id"];
 			return service;
 		}
 		private DataTable GetSearchService()
@@ -262,7 +256,7 @@ namespace FAHotelApp.UC
 			table.Columns.Add("price_New", typeof(string));
 			for (int i = 0; i < table.Rows.Count; i++)
 			{
-				table.Rows[i]["price_New"] = ((int)table.Rows[i]["price"]).ToString("C0", CultureInfo.CreateSpecificCulture("vi-VN"));
+				table.Rows[i]["price_New"] = ((int)table.Rows[i]["price"]).ToString("Rp.", CultureInfo.CreateSpecificCulture("id-ID"));
 			}
 		}
 		private string StringToInt(string text)
@@ -282,11 +276,11 @@ namespace FAHotelApp.UC
 		private string IntToString(string text)
 		{
 			if (text == string.Empty)
-				return 0.ToString("C0", CultureInfo.CreateSpecificCulture("vi-VN"));
+				return 0.ToString("Rp.", CultureInfo.CreateSpecificCulture("id-ID"));
 			if (text.Contains(".") || text.Contains(" "))
 				return text;
 			else
-				return (int.Parse(text).ToString("C0", CultureInfo.CreateSpecificCulture("vi-VN")));
+				return (int.Parse(text).ToString("Rp.", CultureInfo.CreateSpecificCulture("id-ID")));
 		}
 		#endregion
 
@@ -316,12 +310,12 @@ namespace FAHotelApp.UC
 		#region Enter
 		private void TxbPrice_Enter(object sender, EventArgs e)
 		{
-			txbPrice.Tag = txbPrice.Text;
-			txbPrice.Text = StringToInt(txbPrice.Text);
+			txtPrice.Tag = txtPrice.Text;
+			txtPrice.Text = StringToInt(txtPrice.Text);
 		}
 		private void TxbName_Enter(object sender, EventArgs e)
 		{
-			txbName.Tag = txbName.Text;
+			txtName.Tag = txtName.Text;
 		}
 
 		#endregion
@@ -329,15 +323,15 @@ namespace FAHotelApp.UC
 		#region Leave
 		private void TxbPrice_Leave(object sender, EventArgs e)
 		{
-			if (txbPrice.Text == string.Empty)
-				txbPrice.Text = txbPrice.Tag as string;
+			if (txtPrice.Text == string.Empty)
+				txtPrice.Text = txtPrice.Tag as string;
 			else
-				txbPrice.Text = IntToString(txbPrice.Text);
+				txtPrice.Text = IntToString(txtPrice.Text);
 		}
 		private void TxbName_Leave(object sender, EventArgs e)
 		{
-			if (txbName.Text == string.Empty)
-				txbName.Text = txbName.Tag as string;
+			if (txtName.Text == string.Empty)
+				txtName.Text = txtName.Tag as string;
 		}
 		#endregion
 
@@ -347,5 +341,6 @@ namespace FAHotelApp.UC
 			BtnCancel_Click(sender, null);
 		}
 		#endregion
+
 	}
 }

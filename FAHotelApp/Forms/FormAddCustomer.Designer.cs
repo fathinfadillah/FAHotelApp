@@ -119,7 +119,7 @@
 			this.groupBox1.Size = new System.Drawing.Size(472, 122);
 			this.groupBox1.TabIndex = 53;
 			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "Fungsi";
+			this.groupBox1.Text = "Menu";
 			// 
 			// btnClose
 			// 

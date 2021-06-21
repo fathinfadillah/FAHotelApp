@@ -245,7 +245,7 @@ namespace FAHotelApp.UC
 			table.Columns.Add("price_New", typeof(string));
 			for (int i = 0; i < table.Rows.Count; i++)
 			{
-				table.Rows[i]["price_New"] = ((int)table.Rows[i]["price"]).ToString("Rp.", CultureInfo.CreateSpecificCulture("id-ID"));
+				table.Rows[i]["price_New"] = ((int)table.Rows[i]["price"]).ToString("c", CultureInfo.CreateSpecificCulture("id-ID"));
 			}
 			table.Columns.Remove("price");
 		}
@@ -255,7 +255,7 @@ namespace FAHotelApp.UC
 
 			if (((DataTable)cbRoomType.DataSource).Rows[index]["Price"].ToString().Contains("."))
 				return;
-			txtPrice.Text = ((int)((DataTable)cbRoomType.DataSource).Rows[index]["Price"]).ToString("Rp.", CultureInfo.CreateSpecificCulture("id-ID"));
+			txtPrice.Text = ((int)((DataTable)cbRoomType.DataSource).Rows[index]["Price"]).ToString("c", CultureInfo.CreateSpecificCulture("id-ID"));
 		}
 		#endregion
 

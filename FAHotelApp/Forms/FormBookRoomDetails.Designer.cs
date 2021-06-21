@@ -672,6 +672,7 @@
 			// guna2Elipse1
 			// 
 			this.guna2Elipse1.BorderRadius = 8;
+			this.guna2Elipse1.TargetControl = this;
 			// 
 			// guna2DragControl1
 			// 

@@ -415,7 +415,7 @@
 			this.groupBox1.Size = new System.Drawing.Size(472, 160);
 			this.groupBox1.TabIndex = 60;
 			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "Fungsi";
+			this.groupBox1.Text = "Menu";
 			// 
 			// btnCancel
 			// 
