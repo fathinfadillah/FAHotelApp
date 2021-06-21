@@ -20,6 +20,7 @@ namespace FAHotelApp.DAO
 		{
 			string query = "USP_InsertRoomType @name , @price , @limitPerson";
 			return DataProvider.Instance.ExecuteNoneQuery(query, new object[] { name, price, limitPerson }) > 0;
+
 		}
 		internal bool InsertRoomType(RoomType roomTypeNow)
 		{
@@ -81,5 +82,6 @@ namespace FAHotelApp.DAO
 			return roomType;
 		}
 		#endregion
+
 	}
 }

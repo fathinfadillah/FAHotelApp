@@ -184,6 +184,7 @@
     <Compile Include="DAO\AccessDAO.cs" />
     <Compile Include="DAO\AccountDAO.cs" />
     <Compile Include="DAO\AccountTypeDAO.cs" />
+    <Compile Include="DAO\BillDAO.cs" />
     <Compile Include="DAO\BookRoomDAO.cs" />
     <Compile Include="DAO\CustomerDAO.cs" />
     <Compile Include="DAO\CustomerTypeDAO.cs" />
@@ -193,14 +194,19 @@
     <Compile Include="DAO\ReceiveRoomDetailsDAO.cs" />
     <Compile Include="DAO\RoomDAO.cs" />
     <Compile Include="DAO\RoomTypeDAO.cs" />
+    <Compile Include="DAO\ServiceDAO.cs" />
+    <Compile Include="DAO\ServiceTypeDAO.cs" />
     <Compile Include="DAO\StatusRoomDAO.cs" />
     <Compile Include="DTO\Account.cs" />
     <Compile Include="DTO\AccountType.cs" />
+    <Compile Include="DTO\Bill.cs" />
     <Compile Include="DTO\Customer.cs" />
     <Compile Include="DTO\CustomerType.cs" />
     <Compile Include="DTO\ReceiveRoom.cs" />
     <Compile Include="DTO\Room.cs" />
     <Compile Include="DTO\RoomType.cs" />
+    <Compile Include="DTO\Service.cs" />
+    <Compile Include="DTO\ServiceType.cs" />
     <Compile Include="DTO\StatusRoom.cs" />
     <Compile Include="Forms\FormAccess.cs">
       <SubType>Form</SubType>
@@ -225,6 +231,18 @@
     </Compile>
     <Compile Include="Forms\FormAddCustomer.Designer.cs">
       <DependentUpon>FormAddCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormBookRoomDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormBookRoomDetails.Designer.cs">
+      <DependentUpon>FormBookRoomDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormPrintBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormPrintBill.Designer.cs">
+      <DependentUpon>FormPrintBill.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FormRoomType.cs">
       <SubType>Form</SubType>
@@ -312,6 +330,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UC\UC_Service.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UC_Service.Designer.cs">
+      <DependentUpon>UC_Service.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UC_Bill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UC_Bill.Designer.cs">
+      <DependentUpon>UC_Bill.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC\UC_Staff.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -366,6 +396,12 @@
     <EmbeddedResource Include="Forms\FormAddCustomer.resx">
       <DependentUpon>FormAddCustomer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormBookRoomDetails.resx">
+      <DependentUpon>FormBookRoomDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormPrintBill.resx">
+      <DependentUpon>FormPrintBill.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormRoomType.resx">
       <DependentUpon>FormRoomType.cs</DependentUpon>
     </EmbeddedResource>
@@ -413,6 +449,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UC_Service.resx">
+      <DependentUpon>UC_Service.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UC_Bill.resx">
+      <DependentUpon>UC_Bill.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC\UC_Staff.resx">
       <DependentUpon>UC_Staff.cs</DependentUpon>

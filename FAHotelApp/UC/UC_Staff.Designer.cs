@@ -53,16 +53,6 @@
 			this.txtIDcard = new Bunifu.Framework.UI.BunifuMetroTextbox();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
 			this.dataGridStaff = new System.Windows.Forms.DataGridView();
-			this.colUserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.colname = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.colNameStaffType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.colIDCard = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.colDateOfBirth = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.colSex = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.colPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.colStartDay = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.colAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.colIDStaffType = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.bindingStaff = new System.Windows.Forms.BindingNavigator(this.components);
 			this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
 			this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -89,6 +79,16 @@
 			this.label13 = new System.Windows.Forms.Label();
 			this.label15 = new System.Windows.Forms.Label();
 			this.label12 = new System.Windows.Forms.Label();
+			this.colUserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.colname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.colNameStaffType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.colIDCard = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.colDateOfBirth = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.colSex = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.colPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.colStartDay = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.colAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.colIDStaffType = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.groupBox4.SuspendLayout();
 			this.groupStaff.SuspendLayout();
 			this.groupBox1.SuspendLayout();
@@ -515,97 +515,6 @@
 			this.dataGridStaff.TabIndex = 28;
 			this.dataGridStaff.SelectionChanged += new System.EventHandler(this.DataGridStaffType_SelectionChanged);
 			// 
-			// colUserName
-			// 
-			this.colUserName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-			this.colUserName.DataPropertyName = "userName";
-			this.colUserName.HeaderText = "Nama Pengguna";
-			this.colUserName.Name = "colUserName";
-			this.colUserName.ReadOnly = true;
-			this.colUserName.Width = 150;
-			// 
-			// colname
-			// 
-			this.colname.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-			this.colname.DataPropertyName = "displayName";
-			this.colname.HeaderText = "Nama";
-			this.colname.Name = "colname";
-			this.colname.ReadOnly = true;
-			this.colname.Width = 77;
-			// 
-			// colNameStaffType
-			// 
-			this.colNameStaffType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-			this.colNameStaffType.DataPropertyName = "name";
-			this.colNameStaffType.HeaderText = "Tipe";
-			this.colNameStaffType.Name = "colNameStaffType";
-			this.colNameStaffType.ReadOnly = true;
-			this.colNameStaffType.Width = 64;
-			// 
-			// colIDCard
-			// 
-			this.colIDCard.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-			this.colIDCard.DataPropertyName = "idCard";
-			this.colIDCard.HeaderText = "KTP";
-			this.colIDCard.Name = "colIDCard";
-			this.colIDCard.ReadOnly = true;
-			this.colIDCard.Width = 61;
-			// 
-			// colDateOfBirth
-			// 
-			this.colDateOfBirth.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-			this.colDateOfBirth.DataPropertyName = "dateOfBirth";
-			this.colDateOfBirth.HeaderText = "Tanggal Lahir";
-			this.colDateOfBirth.Name = "colDateOfBirth";
-			this.colDateOfBirth.ReadOnly = true;
-			this.colDateOfBirth.Visible = false;
-			this.colDateOfBirth.Width = 127;
-			// 
-			// colSex
-			// 
-			this.colSex.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-			this.colSex.DataPropertyName = "sex";
-			this.colSex.HeaderText = "Jenis Kelamin";
-			this.colSex.Name = "colSex";
-			this.colSex.ReadOnly = true;
-			this.colSex.Visible = false;
-			this.colSex.Width = 129;
-			// 
-			// colPhone
-			// 
-			this.colPhone.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-			this.colPhone.DataPropertyName = "phoneNumber";
-			this.colPhone.HeaderText = "Nomor Telepon";
-			this.colPhone.Name = "colPhone";
-			this.colPhone.ReadOnly = true;
-			this.colPhone.Width = 142;
-			// 
-			// colStartDay
-			// 
-			this.colStartDay.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-			this.colStartDay.DataPropertyName = "startDay";
-			this.colStartDay.HeaderText = "Mulai Kerja";
-			this.colStartDay.Name = "colStartDay";
-			this.colStartDay.ReadOnly = true;
-			this.colStartDay.Visible = false;
-			this.colStartDay.Width = 113;
-			// 
-			// colAddress
-			// 
-			this.colAddress.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-			this.colAddress.DataPropertyName = "address";
-			this.colAddress.HeaderText = "Alamat";
-			this.colAddress.Name = "colAddress";
-			this.colAddress.ReadOnly = true;
-			// 
-			// colIDStaffType
-			// 
-			this.colIDStaffType.DataPropertyName = "IDStaffType";
-			this.colIDStaffType.HeaderText = "";
-			this.colIDStaffType.Name = "colIDStaffType";
-			this.colIDStaffType.ReadOnly = true;
-			this.colIDStaffType.Visible = false;
-			// 
 			// bindingStaff
 			// 
 			this.bindingStaff.AddNewItem = null;
@@ -949,6 +858,96 @@
 			this.label12.TabIndex = 43;
 			this.label12.Text = "Tanggal Lahir:";
 			// 
+			// colUserName
+			// 
+			this.colUserName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+			this.colUserName.DataPropertyName = "userName";
+			this.colUserName.HeaderText = "Nama Pengguna";
+			this.colUserName.Name = "colUserName";
+			this.colUserName.ReadOnly = true;
+			this.colUserName.Width = 150;
+			// 
+			// colname
+			// 
+			this.colname.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+			this.colname.DataPropertyName = "displayName";
+			this.colname.HeaderText = "Nama";
+			this.colname.Name = "colname";
+			this.colname.ReadOnly = true;
+			this.colname.Width = 77;
+			// 
+			// colNameStaffType
+			// 
+			this.colNameStaffType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+			this.colNameStaffType.DataPropertyName = "name";
+			this.colNameStaffType.HeaderText = "Tipe";
+			this.colNameStaffType.Name = "colNameStaffType";
+			this.colNameStaffType.ReadOnly = true;
+			this.colNameStaffType.Width = 64;
+			// 
+			// colIDCard
+			// 
+			this.colIDCard.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+			this.colIDCard.DataPropertyName = "idCard";
+			this.colIDCard.HeaderText = "KTP";
+			this.colIDCard.Name = "colIDCard";
+			this.colIDCard.ReadOnly = true;
+			this.colIDCard.Width = 61;
+			// 
+			// colDateOfBirth
+			// 
+			this.colDateOfBirth.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+			this.colDateOfBirth.DataPropertyName = "dateOfBirth";
+			this.colDateOfBirth.HeaderText = "Tanggal Lahir";
+			this.colDateOfBirth.Name = "colDateOfBirth";
+			this.colDateOfBirth.ReadOnly = true;
+			this.colDateOfBirth.Width = 127;
+			// 
+			// colSex
+			// 
+			this.colSex.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+			this.colSex.DataPropertyName = "sex";
+			this.colSex.HeaderText = "Jenis Kelamin";
+			this.colSex.Name = "colSex";
+			this.colSex.ReadOnly = true;
+			this.colSex.Visible = false;
+			this.colSex.Width = 129;
+			// 
+			// colPhone
+			// 
+			this.colPhone.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+			this.colPhone.DataPropertyName = "phoneNumber";
+			this.colPhone.HeaderText = "Nomor Telepon";
+			this.colPhone.Name = "colPhone";
+			this.colPhone.ReadOnly = true;
+			this.colPhone.Width = 142;
+			// 
+			// colStartDay
+			// 
+			this.colStartDay.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+			this.colStartDay.DataPropertyName = "startDay";
+			this.colStartDay.HeaderText = "Mulai Kerja";
+			this.colStartDay.Name = "colStartDay";
+			this.colStartDay.ReadOnly = true;
+			this.colStartDay.Visible = false;
+			this.colStartDay.Width = 113;
+			// 
+			// colAddress
+			// 
+			this.colAddress.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.colAddress.DataPropertyName = "address";
+			this.colAddress.HeaderText = "Alamat";
+			this.colAddress.Name = "colAddress";
+			this.colAddress.ReadOnly = true;
+			// 
+			// colIDStaffType
+			// 
+			this.colIDStaffType.DataPropertyName = "IDStaffType";
+			this.colIDStaffType.HeaderText = "";
+			this.colIDStaffType.Name = "colIDStaffType";
+			this.colIDStaffType.ReadOnly = true;
+			this.colIDStaffType.Visible = false;
+			// 
 			// UC_Staff
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1002,16 +1001,6 @@
 		private Bunifu.Framework.UI.BunifuMetroTextbox txtIDcard;
 		private System.Windows.Forms.GroupBox groupBox1;
 		private System.Windows.Forms.DataGridView dataGridStaff;
-		private System.Windows.Forms.DataGridViewTextBoxColumn colUserName;
-		private System.Windows.Forms.DataGridViewTextBoxColumn colname;
-		private System.Windows.Forms.DataGridViewTextBoxColumn colNameStaffType;
-		private System.Windows.Forms.DataGridViewTextBoxColumn colIDCard;
-		private System.Windows.Forms.DataGridViewTextBoxColumn colDateOfBirth;
-		private System.Windows.Forms.DataGridViewTextBoxColumn colSex;
-		private System.Windows.Forms.DataGridViewTextBoxColumn colPhone;
-		private System.Windows.Forms.DataGridViewTextBoxColumn colStartDay;
-		private System.Windows.Forms.DataGridViewTextBoxColumn colAddress;
-		private System.Windows.Forms.DataGridViewTextBoxColumn colIDStaffType;
 		private System.Windows.Forms.BindingNavigator bindingStaff;
 		private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
 		private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
@@ -1039,5 +1028,15 @@
 		private System.Windows.Forms.Label label15;
 		private System.Windows.Forms.Label label12;
 		private Bunifu.Framework.UI.BunifuDatepicker dtpDateOfBirth;
+		private System.Windows.Forms.DataGridViewTextBoxColumn colUserName;
+		private System.Windows.Forms.DataGridViewTextBoxColumn colname;
+		private System.Windows.Forms.DataGridViewTextBoxColumn colNameStaffType;
+		private System.Windows.Forms.DataGridViewTextBoxColumn colIDCard;
+		private System.Windows.Forms.DataGridViewTextBoxColumn colDateOfBirth;
+		private System.Windows.Forms.DataGridViewTextBoxColumn colSex;
+		private System.Windows.Forms.DataGridViewTextBoxColumn colPhone;
+		private System.Windows.Forms.DataGridViewTextBoxColumn colStartDay;
+		private System.Windows.Forms.DataGridViewTextBoxColumn colAddress;
+		private System.Windows.Forms.DataGridViewTextBoxColumn colIDStaffType;
 	}
 }

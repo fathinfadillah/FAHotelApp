@@ -99,7 +99,19 @@ namespace FAHotelApp.UC
 		}
 		private void BtnSearch_Click(object sender, EventArgs e)
 		{
+			txtSearch.Text = txtSearch.Text.Trim();
+			if (txtSearch.Text != string.Empty)
+			{
+				txtUserName.Text = string.Empty;
+				txtName.Text = string.Empty;
+				txtIDcard.Text = string.Empty;
+				txtPhoneNumber.Text = string.Empty;
+				txtAddress.Text = string.Empty;
 
+				btnSearch.Visible = false;
+				btnCancel.Visible = true;
+				Search();
+			}
 		}
 		private void BtnCancel_Click(object sender, EventArgs e)
 		{
@@ -201,8 +213,8 @@ namespace FAHotelApp.UC
 				txtName.Text = row.Cells[colname.Name].Value as string;
 				txtPhoneNumber.Text = row.Cells[colPhone.Name].Value.ToString();
 				txtIDcard.Text = row.Cells[colIDCard.Name].Value as string;
-				dtpDateOfBirth.Text = row.Cells[colDateOfBirth.Name].Value as string;
-				dtpStartDay.Text = row.Cells[colStartDay.Name].Value as string;
+				dtpDateOfBirth.Value = (DateTime)row.Cells["colDateOfBirth"].Value;
+				dtpStartDay.Value = (DateTime)row.Cells["colStartDay"].Value;
 				cbSex.Text = row.Cells[colSex.Name].Value as string;
 				cbStaffType.SelectedIndex = (int)row.Cells[colIDStaffType.Name].Value - 1;
 
@@ -291,7 +303,8 @@ namespace FAHotelApp.UC
 		#region Check isDigit
 		private void TxbPhoneNumber_KeyPress(object sender, KeyPressEventArgs e)
 		{
-
+			if (!Char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+				e.Handled = true;
 		}
 		private bool CheckTrueDate(DateTime date1, DateTime date2)
 		{

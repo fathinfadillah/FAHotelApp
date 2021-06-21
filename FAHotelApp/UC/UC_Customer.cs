@@ -72,9 +72,9 @@ namespace FAHotelApp.UC
 					break;
 			}
 			if (check)
-				MessageBox.Show("Xuất file thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+				MessageBox.Show("Ekspor Berhasil", "Pemberitahuan", MessageBoxButtons.OK, MessageBoxIcon.Information);
 			else
-				MessageBox.Show("Lỗi (Cần cài đặt Office)", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				MessageBox.Show("Error (Harus Menginstall Office)", "Pemberitahuan", MessageBoxButtons.OK, MessageBoxIcon.Error);
 		}
 		private void BtnAddCustomer_Click(object sender, EventArgs e)
 		{
@@ -94,7 +94,7 @@ namespace FAHotelApp.UC
 		}
 		private void BtnUpdate_Click(object sender, EventArgs e)
 		{
-			DialogResult result = MessageBox.Show("Bạn có muốn cập nhật khách hàng này không?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
+			DialogResult result = MessageBox.Show("Apakah Anda Ingin Memperbarui Customer Ini?", "Pemberitahuan", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
 			if (result == DialogResult.OK)
 				if (CheckDate())
 				{
@@ -102,8 +102,7 @@ namespace FAHotelApp.UC
 					cbID.Focus();
 				}
 				else
-					MessageBox.Show("Ngày sinh phải nhỏ hơn ngày hiện tại", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
+					MessageBox.Show("Tanggal Lahir Harus Kurang Dari Tanggal Sekarangs", "Pemberitahuan", MessageBoxButtons.OK, MessageBoxIcon.Error);
 		}
 		private void BtnSearch_Click(object sender, EventArgs e)
 		{
@@ -143,7 +142,7 @@ namespace FAHotelApp.UC
 		{
 			if (!CheckFillInText(new Control[] { txtPhoneNumber, txtFullName, txtIDCard, cbNationality, txtAddress, cbCustomerType }))
 			{
-				MessageBox.Show("Không được để trống", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				MessageBox.Show("Tidak Boleh Kosong", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				return;
 			}
 			try
@@ -151,7 +150,7 @@ namespace FAHotelApp.UC
 				Customer customer = GetCustomerNow();
 				if (CustomerDAO.Instance.InsertCustomer(customer))
 				{
-					MessageBox.Show("Thêm thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+					MessageBox.Show("Menambah Customer Sukses", "Pemberitahuan", MessageBoxButtons.OK, MessageBoxIcon.Information);
 					if (btnCancel.Visible == false)
 						LoadFullCustomer(GetFullCustomer());
 					else
@@ -159,23 +158,23 @@ namespace FAHotelApp.UC
 					cbID.SelectedIndex = dataGridViewCustomer.RowCount - 1;
 				}
 				else
-					MessageBox.Show("Khách Hàng đã tồn tại\nTrùng số chứng minh nhân dân", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+					MessageBox.Show("Customer Sudah Ada\nNIK Duplikat", "Error", MessageBoxButtons.OK, MessageBoxIcon.Stop);
 			}
 			catch
 			{
-				MessageBox.Show("Lỗi thêm khách hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				MessageBox.Show("Kesalahan Menambahkan Pelanggan", "Pemberitahuan", MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
 		}
 		private void UpdateCustomer()
 		{
 			if (cbID.Text == string.Empty)
 			{
-				MessageBox.Show("Khách hàng này chưa tồn tại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+				MessageBox.Show("Customer Ini Belum Ada", "Error", MessageBoxButtons.OK, MessageBoxIcon.Stop);
 			}
 			else
 			if (!CheckFillInText(new Control[] { txtPhoneNumber, txtFullName, txtIDCard, cbNationality, txtAddress, cbCustomerType }))
 			{
-				MessageBox.Show("Không được để trống", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				MessageBox.Show("Tidak Boleh Kosong", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				return;
 			}
 			else
@@ -185,25 +184,25 @@ namespace FAHotelApp.UC
 				{
 					Customer customerNow = GetCustomerNow();
 					if (customerNow.Equals(customerPre))
-						MessageBox.Show("Bạn chưa thay đổi dữ liệu", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+						MessageBox.Show("Anda Belum Mengubah Data", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 					else
 					{
 						bool check = CustomerDAO.Instance.UpdateCustomer(customerNow, customerPre);
 						if (check)
 						{
-							MessageBox.Show("Cập nhật thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+							MessageBox.Show("Berhasil Memperbarui Customer", "Pemberitahuan", MessageBoxButtons.OK, MessageBoxIcon.Information);
 							groupCustomer.Tag = customerNow;
 							int index = dataGridViewCustomer.SelectedRows[0].Index;
 							LoadFullCustomer(GetFullCustomer());
 							cbID.SelectedIndex = index;
 						}
 						else
-							MessageBox.Show("Khách hàng này đã tồn tại(Trùng số chứng minh nhân dân)", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+							MessageBox.Show("Customer Sudah Ada(NIK Ganda)", "Error", MessageBoxButtons.OK, MessageBoxIcon.Stop);
 					}
 				}
 				catch
 				{
-					MessageBox.Show("Lỗi câp nhật", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+					MessageBox.Show("Kesalahan Tidak Diketahui", "Pemberitahuan", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				}
 			}
 		}
@@ -292,7 +291,11 @@ namespace FAHotelApp.UC
 		#region Seclection Change
 		private void DataGridViewCustomer_SelectionChanged(object sender, EventArgs e)
 		{
-
+			if (dataGridViewCustomer.SelectedRows.Count > 0)
+			{
+				DataGridViewRow row = dataGridViewCustomer.SelectedRows[0];
+				ChangeText(row);
+			}
 		}
 		#endregion
 
@@ -351,5 +354,6 @@ namespace FAHotelApp.UC
 			LoadFullCustomer(GetFullCustomer());
 		}
 		#endregion
+
 	}
 }

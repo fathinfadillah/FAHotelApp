@@ -59,9 +59,9 @@ namespace FAHotelApp.Forms
 
 		private void bunifuButton2_Click(object sender, EventArgs e)
 		{
-			if (CheckAccess("TerimaKamar"))
+			if (CheckAccess("CheckInKamar"))
 			{
-				bunifuPages1.SetPage(TerimaKamar);
+				bunifuPages1.SetPage(CheckInKamar);
 			}
 			else MessageBox.Show("Anda tidak memiliki izin untuk mengakses.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 		}
@@ -94,6 +94,15 @@ namespace FAHotelApp.Forms
 			if (CheckAccess("ManajerPelanggan"))
 			{
 				bunifuPages1.SetPage(ManajerPelanggan);
+			}
+			else MessageBox.Show("Anda tidak memiliki izin untuk mengakses.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+		}
+
+		private void bunifuButton7_Click(object sender, EventArgs e)
+		{
+			if (CheckAccess("ManajerTagihan"))
+			{
+				bunifuPages1.SetPage(ManajerTagihan);
 			}
 			else MessageBox.Show("Anda tidak memiliki izin untuk mengakses.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 		}

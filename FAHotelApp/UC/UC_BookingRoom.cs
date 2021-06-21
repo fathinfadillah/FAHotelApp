@@ -164,9 +164,11 @@ namespace FAHotelApp.UC
 					MessageBox.Show("Pemesanan Berhasil!", "Pemberitahuan", MessageBoxButtons.OK, MessageBoxIcon.Information);
 					ClearData();
 					LoadListBookRoom();
-					if (guna2CheckBox1.Checked)
+					if (bunifuCheckbox1.Checked)
 					{
-						//bunifuPages1.SetPage(TerimaKamar);
+						//this.Hide();
+						//fReceiveRoom fReceiveRoom = new fReceiveRoom(GetCurrentIDBookRoom(DateTime.Now.Date));
+						//fReceiveRoom.ShowDialog();
 					}
 				}
 				else
@@ -183,7 +185,9 @@ namespace FAHotelApp.UC
 		{
 			int idBookRoom = (int)dataGridViewBookRoom.SelectedRows[0].Cells[0].Value;
 			string idCard = dataGridViewBookRoom.SelectedRows[0].Cells[2].Value.ToString();
-			
+			FormBookRoomDetails f = new FormBookRoomDetails(idBookRoom, idCard);
+			f.ShowDialog();
+			Show();
 			LoadListBookRoom();
 		}
 

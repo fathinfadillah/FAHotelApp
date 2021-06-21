@@ -113,7 +113,9 @@ namespace FAHotelApp.Forms
 		}
 		private void TxbPhoneNumber_KeyPress(object sender, KeyPressEventArgs e)
 		{
-
+			if (!Char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+				e.Handled = true;
 		}
+
 	}
 }
