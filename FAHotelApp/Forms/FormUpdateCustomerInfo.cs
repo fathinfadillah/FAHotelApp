@@ -74,7 +74,7 @@ namespace FAHotelApp.Forms
 				e.Handled = true;
 		}
 
-		private void btnAddCustomer_Click(object sender, EventArgs e)
+		private void btnUpdateCustomer_Click(object sender, EventArgs e)
 		{
 			if (txtFullName.Text != string.Empty && txtIDCard.Text != string.Empty && txtAddress.Text != string.Empty && cbNationality.Text != string.Empty && txtPhoneNumber.Text != string.Empty)
 			{

@@ -267,7 +267,7 @@
 			this.btnUpdate.Size = new System.Drawing.Size(203, 40);
 			this.btnUpdate.TabIndex = 51;
 			this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.btnUpdate.Click += new System.EventHandler(this.dtpDateCheckOut_onValueChanged);
+			this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
 			// 
 			// dtpDateOfBirth
 			// 

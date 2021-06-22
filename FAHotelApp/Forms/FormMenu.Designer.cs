@@ -87,6 +87,7 @@
 			this.ManajerPelayanan = new System.Windows.Forms.TabPage();
 			this.uC_Service1 = new FAHotelApp.UC.UC_Service();
 			this.PeraturanHotel = new System.Windows.Forms.TabPage();
+			this.uC_Parameter1 = new FAHotelApp.UC.UC_Parameter();
 			this.tabPage1 = new System.Windows.Forms.TabPage();
 			this.TambahKamar = new System.Windows.Forms.TabPage();
 			this.TambahPelanggan = new System.Windows.Forms.TabPage();
@@ -105,6 +106,7 @@
 			this.ManajerPelanggan.SuspendLayout();
 			this.ManajerTagihan.SuspendLayout();
 			this.ManajerPelayanan.SuspendLayout();
+			this.PeraturanHotel.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// panel1
@@ -303,6 +305,7 @@
 			this.bunifuButton9.TextMarginLeft = 0;
 			this.bunifuButton9.TextPadding = new System.Windows.Forms.Padding(50, 0, 0, 0);
 			this.bunifuButton9.UseDefaultRadiusAndThickness = true;
+			this.bunifuButton9.Click += new System.EventHandler(this.bunifuButton9_Click);
 			// 
 			// bunifuButton8
 			// 
@@ -1347,10 +1350,10 @@
 			this.bunifuPages1.Location = new System.Drawing.Point(280, 101);
 			this.bunifuPages1.Multiline = true;
 			this.bunifuPages1.Name = "bunifuPages1";
-			this.bunifuPages1.Page = this.ManajerPelayanan;
-			this.bunifuPages1.PageIndex = 8;
-			this.bunifuPages1.PageName = "ManajerPelayanan";
-			this.bunifuPages1.PageTitle = "Manajer Pelayanan";
+			this.bunifuPages1.Page = this.PeraturanHotel;
+			this.bunifuPages1.PageIndex = 9;
+			this.bunifuPages1.PageName = "PeraturanHotel";
+			this.bunifuPages1.PageTitle = "Peraturan Hotel";
 			this.bunifuPages1.SelectedIndex = 0;
 			this.bunifuPages1.Size = new System.Drawing.Size(1231, 701);
 			this.bunifuPages1.TabIndex = 3;
@@ -1544,12 +1547,22 @@
 			// PeraturanHotel
 			// 
 			this.PeraturanHotel.BackColor = System.Drawing.SystemColors.Control;
+			this.PeraturanHotel.Controls.Add(this.uC_Parameter1);
 			this.PeraturanHotel.Location = new System.Drawing.Point(4, 4);
 			this.PeraturanHotel.Name = "PeraturanHotel";
 			this.PeraturanHotel.Padding = new System.Windows.Forms.Padding(3);
 			this.PeraturanHotel.Size = new System.Drawing.Size(1223, 675);
 			this.PeraturanHotel.TabIndex = 9;
 			this.PeraturanHotel.Text = "Peraturan Hotel";
+			// 
+			// uC_Parameter1
+			// 
+			this.uC_Parameter1.BackColor = System.Drawing.Color.White;
+			this.uC_Parameter1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.uC_Parameter1.Location = new System.Drawing.Point(3, 3);
+			this.uC_Parameter1.Name = "uC_Parameter1";
+			this.uC_Parameter1.Size = new System.Drawing.Size(1217, 669);
+			this.uC_Parameter1.TabIndex = 0;
 			// 
 			// tabPage1
 			// 
@@ -1650,6 +1663,7 @@
 			this.ManajerPelanggan.ResumeLayout(false);
 			this.ManajerTagihan.ResumeLayout(false);
 			this.ManajerPelayanan.ResumeLayout(false);
+			this.PeraturanHotel.ResumeLayout(false);
 			this.ResumeLayout(false);
 
 		}
@@ -1702,5 +1716,6 @@
 		private UC.UC_Customer uC_Customer1;
 		private UC.UC_Bill uC_Bill1;
 		private UC.UC_Service uC_Service1;
+		private UC.UC_Parameter uC_Parameter1;
 	}
 }

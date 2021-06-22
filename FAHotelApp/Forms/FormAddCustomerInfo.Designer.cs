@@ -467,6 +467,7 @@
 			this.btnAddCustomer.Size = new System.Drawing.Size(203, 40);
 			this.btnAddCustomer.TabIndex = 48;
 			this.btnAddCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.btnAddCustomer.Click += new System.EventHandler(this.btnAddCustomer_Click);
 			// 
 			// groupBox3
 			// 
