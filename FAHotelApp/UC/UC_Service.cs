@@ -342,5 +342,13 @@ namespace FAHotelApp.UC
 		}
 		#endregion
 
+		private void bunifuThinButton21_Click(object sender, EventArgs e)
+		{
+			new FormAddServiceType().ShowDialog();
+			if (btnCancel.Visible == false)
+				LoadFullService(GetFullService());
+			else
+				BtnCancel_Click(null, null);
+		}
 	}
 }

@@ -17,6 +17,9 @@ namespace FAHotelApp.Forms
 {
 	public partial class FormContactAdmin : Form
 	{
+		OpenFileDialog ofdAttachment;
+		String fileName = "";
+
 		public FormContactAdmin()
 		{
 			InitializeComponent();
@@ -29,6 +32,8 @@ namespace FAHotelApp.Forms
 			lbDate.Text = DateTime.Now.ToString("dddd, MMM dd yyyy");
 
 			lbTime.Text = DateTime.Now.ToLongTimeString();
+
+			txtSubject.Enabled = false;
 		}
 
 		private void timer1_Tick(object sender, EventArgs e)
@@ -40,32 +45,96 @@ namespace FAHotelApp.Forms
 
 		private void btnSend_Click(object sender, EventArgs e)
 		{
+			if (tsSubjectManual.Checked == true)
+			{
+				try
+				{
+					SmtpClient clientDetails = new SmtpClient();
+					clientDetails.Port = 587;
+					clientDetails.Host = "smtp.gmail.com";
+					clientDetails.EnableSsl = true;
+					clientDetails.DeliveryMethod = SmtpDeliveryMethod.Network;
+					clientDetails.UseDefaultCredentials = false;
+					clientDetails.Credentials = new NetworkCredential(txtSenderEmail.Text.Trim(), txtSenderPassword.Text.Trim());
+
+					MailMessage mailDetails = new MailMessage();
+					mailDetails.From = new MailAddress(txtSenderEmail.Text.Trim());
+					mailDetails.To.Add("fahotel.management@gmail.com");
+					mailDetails.Subject = txtSubject.Text.Trim();
+					mailDetails.IsBodyHtml = true;
+					mailDetails.Body = txtBody.Text.Trim();
+
+					if (fileName.Length > 0)
+					{
+						Attachment attachment = new Attachment(fileName);
+						mailDetails.Attachments.Add(attachment);
+					}
+
+					clientDetails.Send(mailDetails);
+
+					MessageBox.Show("Email Sent!");
+
+					fileName = "";
+				}
+				catch (Exception ex)
+				{
+					MessageBox.Show(ex.Message);
+				}
+			}
+			if (tsSubjectManual.Checked == false)
+			{
+				try
+				{
+					SmtpClient clientDetails = new SmtpClient();
+					clientDetails.Port = 587;
+					clientDetails.Host = "smtp.gmail.com";
+					clientDetails.EnableSsl = true;
+					clientDetails.DeliveryMethod = SmtpDeliveryMethod.Network;
+					clientDetails.UseDefaultCredentials = false;
+					clientDetails.Credentials = new NetworkCredential(txtSenderEmail.Text.Trim(), txtSenderPassword.Text.Trim());
+
+					MailMessage mailDetails = new MailMessage();
+					mailDetails.From = new MailAddress(txtSenderEmail.Text.Trim());
+					mailDetails.To.Add("fahotel.management@gmail.com");
+					mailDetails.Subject = cbSubject.Text.Trim();
+					mailDetails.IsBodyHtml = true;
+					mailDetails.Body = txtBody.Text.Trim();
+
+					if (fileName.Length > 0)
+					{
+						Attachment attachment = new Attachment(fileName);
+						mailDetails.Attachments.Add(attachment);
+					}
+
+					clientDetails.Send(mailDetails);
+
+					MessageBox.Show("Email Sent!");
+
+					fileName = "";
+				}
+				catch (Exception ex)
+				{
+					MessageBox.Show(ex.Message);
+				}
+			}
+			
+		}
+
+		private void btnBrowse_Click(object sender, EventArgs e)
+		{
 			try
 			{
-				SmtpClient clientDetails = new SmtpClient();
-				clientDetails.Port = Convert.ToInt32(cbServerPortNo.Text.Trim());
-				clientDetails.Host = cbSMPTServer.Text.Trim();
-				clientDetails.EnableSsl = tsSSL.Checked;
-				clientDetails.DeliveryMethod = SmtpDeliveryMethod.Network;
-				clientDetails.UseDefaultCredentials = false;
-				clientDetails.Credentials = new NetworkCredential(txtSenderEmail.Text.Trim(), txtSenderPassword.Text.Trim());
-
-				MailMessage mailDetails = new MailMessage();
-				mailDetails.From = new MailAddress(txtSenderEmail.Text.Trim());
-				mailDetails.To.Add(txtRecipientEmail.Text.Trim());
-				mailDetails.Subject = txtSubject.Text.Trim();
-				mailDetails.IsBodyHtml = tsSSL.Checked;
-				mailDetails.Body = txtBody.Text.Trim();
-
-				clientDetails.Send(mailDetails);
-
-				MessageBox.Show("Email Sent !");
+				ofdAttachment = new OpenFileDialog();
+				ofdAttachment.Filter = "Images(.jpg,.png)|*.png;*.jpg;|Pdf Files|*.pdf";
+				if (ofdAttachment.ShowDialog() == DialogResult.OK)
+				{
+					fileName = ofdAttachment.FileName;
+				}
 			}
 			catch (Exception ex)
 			{
 				MessageBox.Show(ex.Message);
 			}
-			
 		}
 
 		private void btnBack_Click(object sender, EventArgs e)
@@ -91,7 +160,7 @@ namespace FAHotelApp.Forms
 		{
 			if (txtSenderEmail.Text == "")
 			{
-				epWarning.SetError(txtSenderEmail, "TextBox Email tidak boleh kosong !");
+				epWarning.SetError(txtSenderEmail, "TextBox Email tidak boleh kosong!");
 				epWrong.SetError(txtSenderEmail, "");
 				epCorrect.SetError(txtSenderEmail, "");
 			}
@@ -116,7 +185,7 @@ namespace FAHotelApp.Forms
 		{
 			if (txtSenderPassword.Text == "")
 			{
-				epWarning.SetError(txtSenderPassword, "TextBox Password tidak boleh kosong !");
+				epWarning.SetError(txtSenderPassword, "TextBox Password tidak boleh kosong!");
 				epWrong.SetError(txtSenderPassword, "");
 				epCorrect.SetError(txtSenderPassword, "");
 			}
@@ -124,7 +193,21 @@ namespace FAHotelApp.Forms
 			{
 				epWarning.SetError(txtSenderPassword, "");
 				epWrong.SetError(txtSenderPassword, "");
-				epCorrect.SetError(txtSenderPassword, "Terisi !");
+				epCorrect.SetError(txtSenderPassword, "Terisi!");
+			}
+		}
+
+		private void tsSubjectManual_CheckedChanged(object sender, EventArgs e)
+		{
+			if (tsSubjectManual.Checked == true)
+			{
+				cbSubject.Enabled = false;
+				txtSubject.Enabled = true;
+			}
+			if (tsSubjectManual.Checked == false)
+			{
+				cbSubject.Enabled = true;
+				txtSubject.Enabled = false;
 			}
 		}
 	}

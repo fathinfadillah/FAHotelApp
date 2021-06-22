@@ -29,23 +29,33 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Bill));
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Bill));
 			this.SaveCustomer = new System.Windows.Forms.SaveFileDialog();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
+			this.dataGridViewBill = new System.Windows.Forms.DataGridView();
+			this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.colIdReciveRoom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.colCustomerName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.colStaffsetUp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.coldDateOfCreate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.colStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.colPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.bindingBill = new System.Windows.Forms.BindingNavigator(this.components);
 			this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+			this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
+			this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
 			this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
 			this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
 			this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-			this.label1 = new System.Windows.Forms.Label();
-			this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
-			this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-			this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
 			this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
 			this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
+			this.label1 = new System.Windows.Forms.Label();
+			this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
 			this.btnCancel = new Bunifu.Framework.UI.BunifuThinButton2();
 			this.label5 = new System.Windows.Forms.Label();
 			this.btnSearch = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -63,31 +73,21 @@
 			this.label6 = new System.Windows.Forms.Label();
 			this.txbDateCreate = new Bunifu.Framework.UI.BunifuMetroTextbox();
 			this.groupCustomer = new System.Windows.Forms.GroupBox();
-			this.label13 = new System.Windows.Forms.Label();
-			this.txbPrice = new Bunifu.Framework.UI.BunifuMetroTextbox();
-			this.label4 = new System.Windows.Forms.Label();
-			this.txbStatusRoom = new Bunifu.Framework.UI.BunifuMetroTextbox();
-			this.label2 = new System.Windows.Forms.Label();
-			this.txbDiscount = new Bunifu.Framework.UI.BunifuMetroTextbox();
-			this.label3 = new System.Windows.Forms.Label();
 			this.txbFinalPrice = new Bunifu.Framework.UI.BunifuMetroTextbox();
-			this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.colPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.colStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.coldDateOfCreate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.colStaffsetUp = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.colCustomerName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.colIdReciveRoom = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.dataGridViewBill = new System.Windows.Forms.DataGridView();
+			this.label3 = new System.Windows.Forms.Label();
+			this.txbDiscount = new Bunifu.Framework.UI.BunifuMetroTextbox();
+			this.label2 = new System.Windows.Forms.Label();
+			this.txbStatusRoom = new Bunifu.Framework.UI.BunifuMetroTextbox();
+			this.label4 = new System.Windows.Forms.Label();
+			this.txbPrice = new Bunifu.Framework.UI.BunifuMetroTextbox();
+			this.label13 = new System.Windows.Forms.Label();
 			this.groupBox1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.dataGridViewBill)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.bindingBill)).BeginInit();
 			this.bindingBill.SuspendLayout();
 			this.groupBox5.SuspendLayout();
 			this.groupBox4.SuspendLayout();
 			this.groupCustomer.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridViewBill)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// SaveCustomer
@@ -108,6 +108,145 @@
 			this.groupBox1.TabIndex = 39;
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Daftar Pelanggan";
+			// 
+			// dataGridViewBill
+			// 
+			this.dataGridViewBill.AllowUserToAddRows = false;
+			this.dataGridViewBill.AllowUserToDeleteRows = false;
+			this.dataGridViewBill.AllowUserToResizeRows = false;
+			this.dataGridViewBill.BackgroundColor = System.Drawing.Color.White;
+			this.dataGridViewBill.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F);
+			dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dataGridViewBill.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+			this.dataGridViewBill.ColumnHeadersHeight = 29;
+			this.dataGridViewBill.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+			this.dataGridViewBill.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colID,
+            this.colIdReciveRoom,
+            this.colCustomerName,
+            this.colStaffsetUp,
+            this.coldDateOfCreate,
+            this.colStatus,
+            this.colPrice,
+            this.Column1,
+            this.Column2});
+			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+			dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F);
+			dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SeaGreen;
+			dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.dataGridViewBill.DefaultCellStyle = dataGridViewCellStyle2;
+			this.dataGridViewBill.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.dataGridViewBill.GridColor = System.Drawing.Color.White;
+			this.dataGridViewBill.Location = new System.Drawing.Point(3, 68);
+			this.dataGridViewBill.Name = "dataGridViewBill";
+			this.dataGridViewBill.ReadOnly = true;
+			dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F);
+			dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dataGridViewBill.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+			this.dataGridViewBill.RowHeadersVisible = false;
+			this.dataGridViewBill.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.dataGridViewBill.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+			this.dataGridViewBill.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.dataGridViewBill.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+			this.dataGridViewBill.Size = new System.Drawing.Size(725, 590);
+			this.dataGridViewBill.TabIndex = 30;
+			// 
+			// colID
+			// 
+			this.colID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+			this.colID.DataPropertyName = "id";
+			this.colID.FillWeight = 30F;
+			this.colID.HeaderText = "Kode Tagihan";
+			this.colID.Name = "colID";
+			this.colID.ReadOnly = true;
+			this.colID.Width = 127;
+			// 
+			// colIdReciveRoom
+			// 
+			this.colIdReciveRoom.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+			this.colIdReciveRoom.DataPropertyName = "roomName";
+			this.colIdReciveRoom.FillWeight = 30F;
+			this.colIdReciveRoom.HeaderText = "Nama Kamar";
+			this.colIdReciveRoom.Name = "colIdReciveRoom";
+			this.colIdReciveRoom.ReadOnly = true;
+			this.colIdReciveRoom.Width = 126;
+			// 
+			// colCustomerName
+			// 
+			this.colCustomerName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+			this.colCustomerName.DataPropertyName = "customername";
+			this.colCustomerName.HeaderText = "Nama Customer";
+			this.colCustomerName.Name = "colCustomerName";
+			this.colCustomerName.ReadOnly = true;
+			this.colCustomerName.Width = 149;
+			// 
+			// colStaffsetUp
+			// 
+			this.colStaffsetUp.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+			this.colStaffsetUp.DataPropertyName = "StaffSetUp";
+			this.colStaffsetUp.FillWeight = 30F;
+			this.colStaffsetUp.HeaderText = "Tanggal Dibuat";
+			this.colStaffsetUp.Name = "colStaffsetUp";
+			this.colStaffsetUp.ReadOnly = true;
+			this.colStaffsetUp.Visible = false;
+			this.colStaffsetUp.Width = 138;
+			// 
+			// coldDateOfCreate
+			// 
+			this.coldDateOfCreate.DataPropertyName = "DateOfCreate";
+			this.coldDateOfCreate.FillWeight = 30F;
+			this.coldDateOfCreate.HeaderText = "Status";
+			this.coldDateOfCreate.Name = "coldDateOfCreate";
+			this.coldDateOfCreate.ReadOnly = true;
+			// 
+			// colStatus
+			// 
+			this.colStatus.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+			this.colStatus.DataPropertyName = "name";
+			this.colStatus.HeaderText = "Status";
+			this.colStatus.Name = "colStatus";
+			this.colStatus.ReadOnly = true;
+			this.colStatus.Width = 77;
+			// 
+			// colPrice
+			// 
+			this.colPrice.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+			this.colPrice.DataPropertyName = "TotalPrice";
+			this.colPrice.FillWeight = 30F;
+			this.colPrice.HeaderText = "Harga Awal";
+			this.colPrice.Name = "colPrice";
+			this.colPrice.ReadOnly = true;
+			this.colPrice.Width = 115;
+			// 
+			// Column1
+			// 
+			this.Column1.DataPropertyName = "discount";
+			this.Column1.HeaderText = "Diskon";
+			this.Column1.Name = "Column1";
+			this.Column1.ReadOnly = true;
+			this.Column1.Width = 50;
+			// 
+			// Column2
+			// 
+			this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.Column2.DataPropertyName = "finalPrice";
+			this.Column2.HeaderText = "Harga Akhir";
+			this.Column2.Name = "Column2";
+			this.Column2.ReadOnly = true;
 			// 
 			// bindingBill
 			// 
@@ -146,6 +285,28 @@
 			this.bindingNavigatorCountItem.Text = "Dari {0}";
 			this.bindingNavigatorCountItem.ToolTipText = "Tổng số khách hàng";
 			// 
+			// bindingNavigatorMoveFirstItem
+			// 
+			this.bindingNavigatorMoveFirstItem.AutoSize = false;
+			this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
+			this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
+			this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
+			this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(50, 22);
+			this.bindingNavigatorMoveFirstItem.Text = "Move first";
+			this.bindingNavigatorMoveFirstItem.ToolTipText = "Khách hàng đầu tiên";
+			// 
+			// bindingNavigatorMovePreviousItem
+			// 
+			this.bindingNavigatorMovePreviousItem.AutoSize = false;
+			this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
+			this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
+			this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+			this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(50, 22);
+			this.bindingNavigatorMovePreviousItem.Text = "Move previous";
+			this.bindingNavigatorMovePreviousItem.ToolTipText = "Khách hàng trước đó";
+			// 
 			// bindingNavigatorSeparator
 			// 
 			this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
@@ -164,6 +325,28 @@
 			// 
 			this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
 			this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 43);
+			// 
+			// bindingNavigatorMoveNextItem
+			// 
+			this.bindingNavigatorMoveNextItem.AutoSize = false;
+			this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
+			this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
+			this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
+			this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(50, 22);
+			this.bindingNavigatorMoveNextItem.Text = "Move next";
+			this.bindingNavigatorMoveNextItem.ToolTipText = "Khách hàng kế tiếp";
+			// 
+			// bindingNavigatorMoveLastItem
+			// 
+			this.bindingNavigatorMoveLastItem.AutoSize = false;
+			this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
+			this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
+			this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
+			this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(50, 22);
+			this.bindingNavigatorMoveLastItem.Text = "Move last";
+			this.bindingNavigatorMoveLastItem.ToolTipText = "Khách hàng cuối cùng";
 			// 
 			// label1
 			// 
@@ -192,50 +375,6 @@
 			this.bunifuSeparator1.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
 			this.bunifuSeparator1.Size = new System.Drawing.Size(1201, 15);
 			this.bunifuSeparator1.TabIndex = 54;
-			// 
-			// bindingNavigatorMoveFirstItem
-			// 
-			this.bindingNavigatorMoveFirstItem.AutoSize = false;
-			this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-			this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-			this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-			this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(50, 22);
-			this.bindingNavigatorMoveFirstItem.Text = "Move first";
-			this.bindingNavigatorMoveFirstItem.ToolTipText = "Khách hàng đầu tiên";
-			// 
-			// bindingNavigatorMovePreviousItem
-			// 
-			this.bindingNavigatorMovePreviousItem.AutoSize = false;
-			this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-			this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-			this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-			this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(50, 22);
-			this.bindingNavigatorMovePreviousItem.Text = "Move previous";
-			this.bindingNavigatorMovePreviousItem.ToolTipText = "Khách hàng trước đó";
-			// 
-			// bindingNavigatorMoveNextItem
-			// 
-			this.bindingNavigatorMoveNextItem.AutoSize = false;
-			this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-			this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-			this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-			this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(50, 22);
-			this.bindingNavigatorMoveNextItem.Text = "Move next";
-			this.bindingNavigatorMoveNextItem.ToolTipText = "Khách hàng kế tiếp";
-			// 
-			// bindingNavigatorMoveLastItem
-			// 
-			this.bindingNavigatorMoveLastItem.AutoSize = false;
-			this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-			this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-			this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-			this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(50, 22);
-			this.bindingNavigatorMoveLastItem.Text = "Move last";
-			this.bindingNavigatorMoveLastItem.ToolTipText = "Khách hàng cuối cùng";
 			// 
 			// btnCancel
 			// 
@@ -543,78 +682,36 @@
 			this.groupCustomer.TabStop = false;
 			this.groupCustomer.Text = "Informasi Tagihan";
 			// 
-			// label13
+			// txbFinalPrice
 			// 
-			this.label13.AutoSize = true;
-			this.label13.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.label13.Location = new System.Drawing.Point(230, 117);
-			this.label13.Name = "label13";
-			this.label13.Size = new System.Drawing.Size(90, 20);
-			this.label13.TabIndex = 74;
-			this.label13.Text = "Harga Awal:";
+			this.txbFinalPrice.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.txbFinalPrice.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.txbFinalPrice.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.txbFinalPrice.BorderThickness = 1;
+			this.txbFinalPrice.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txbFinalPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.txbFinalPrice.Enabled = false;
+			this.txbFinalPrice.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txbFinalPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.txbFinalPrice.isPassword = false;
+			this.txbFinalPrice.Location = new System.Drawing.Point(230, 320);
+			this.txbFinalPrice.Margin = new System.Windows.Forms.Padding(0);
+			this.txbFinalPrice.MaxLength = 32767;
+			this.txbFinalPrice.Name = "txbFinalPrice";
+			this.txbFinalPrice.Size = new System.Drawing.Size(175, 29);
+			this.txbFinalPrice.TabIndex = 86;
+			this.txbFinalPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
 			// 
-			// txbPrice
+			// label3
 			// 
-			this.txbPrice.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.txbPrice.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.txbPrice.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.txbPrice.BorderThickness = 1;
-			this.txbPrice.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-			this.txbPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.txbPrice.Enabled = false;
-			this.txbPrice.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txbPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.txbPrice.isPassword = false;
-			this.txbPrice.Location = new System.Drawing.Point(230, 140);
-			this.txbPrice.Margin = new System.Windows.Forms.Padding(0);
-			this.txbPrice.MaxLength = 32767;
-			this.txbPrice.Name = "txbPrice";
-			this.txbPrice.Size = new System.Drawing.Size(175, 29);
-			this.txbPrice.TabIndex = 76;
-			this.txbPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-			// 
-			// label4
-			// 
-			this.label4.AutoSize = true;
-			this.label4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.label4.Location = new System.Drawing.Point(230, 41);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(52, 20);
-			this.label4.TabIndex = 81;
-			this.label4.Text = "Status:";
-			// 
-			// txbStatusRoom
-			// 
-			this.txbStatusRoom.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.txbStatusRoom.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.txbStatusRoom.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.txbStatusRoom.BorderThickness = 1;
-			this.txbStatusRoom.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-			this.txbStatusRoom.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.txbStatusRoom.Enabled = false;
-			this.txbStatusRoom.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txbStatusRoom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.txbStatusRoom.isPassword = false;
-			this.txbStatusRoom.Location = new System.Drawing.Point(230, 61);
-			this.txbStatusRoom.Margin = new System.Windows.Forms.Padding(0);
-			this.txbStatusRoom.MaxLength = 32767;
-			this.txbStatusRoom.Name = "txbStatusRoom";
-			this.txbStatusRoom.Size = new System.Drawing.Size(175, 29);
-			this.txbStatusRoom.TabIndex = 82;
-			this.txbStatusRoom.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-			// 
-			// label2
-			// 
-			this.label2.AutoSize = true;
-			this.label2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.label2.Location = new System.Drawing.Point(230, 206);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(57, 20);
-			this.label2.TabIndex = 83;
-			this.label2.Text = "Diskon:";
+			this.label3.AutoSize = true;
+			this.label3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.label3.Location = new System.Drawing.Point(230, 297);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(91, 20);
+			this.label3.TabIndex = 85;
+			this.label3.Text = "Harga Akhir:";
 			// 
 			// txbDiscount
 			// 
@@ -636,180 +733,84 @@
 			this.txbDiscount.TabIndex = 84;
 			this.txbDiscount.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
 			// 
-			// label3
+			// label2
 			// 
-			this.label3.AutoSize = true;
-			this.label3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.label3.Location = new System.Drawing.Point(230, 297);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(91, 20);
-			this.label3.TabIndex = 85;
-			this.label3.Text = "Harga Akhir:";
+			this.label2.AutoSize = true;
+			this.label2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.label2.Location = new System.Drawing.Point(230, 206);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(57, 20);
+			this.label2.TabIndex = 83;
+			this.label2.Text = "Diskon:";
 			// 
-			// txbFinalPrice
+			// txbStatusRoom
 			// 
-			this.txbFinalPrice.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.txbFinalPrice.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.txbFinalPrice.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.txbFinalPrice.BorderThickness = 1;
-			this.txbFinalPrice.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-			this.txbFinalPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.txbFinalPrice.Enabled = false;
-			this.txbFinalPrice.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txbFinalPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.txbFinalPrice.isPassword = false;
-			this.txbFinalPrice.Location = new System.Drawing.Point(230, 320);
-			this.txbFinalPrice.Margin = new System.Windows.Forms.Padding(0);
-			this.txbFinalPrice.MaxLength = 32767;
-			this.txbFinalPrice.Name = "txbFinalPrice";
-			this.txbFinalPrice.Size = new System.Drawing.Size(175, 29);
-			this.txbFinalPrice.TabIndex = 86;
-			this.txbFinalPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txbStatusRoom.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.txbStatusRoom.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.txbStatusRoom.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.txbStatusRoom.BorderThickness = 1;
+			this.txbStatusRoom.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txbStatusRoom.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.txbStatusRoom.Enabled = false;
+			this.txbStatusRoom.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txbStatusRoom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.txbStatusRoom.isPassword = false;
+			this.txbStatusRoom.Location = new System.Drawing.Point(230, 61);
+			this.txbStatusRoom.Margin = new System.Windows.Forms.Padding(0);
+			this.txbStatusRoom.MaxLength = 32767;
+			this.txbStatusRoom.Name = "txbStatusRoom";
+			this.txbStatusRoom.Size = new System.Drawing.Size(175, 29);
+			this.txbStatusRoom.TabIndex = 82;
+			this.txbStatusRoom.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
 			// 
-			// Column2
+			// label4
 			// 
-			this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-			this.Column2.DataPropertyName = "finalPrice";
-			this.Column2.HeaderText = "Harga Akhir";
-			this.Column2.Name = "Column2";
-			this.Column2.ReadOnly = true;
+			this.label4.AutoSize = true;
+			this.label4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.label4.Location = new System.Drawing.Point(230, 41);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(52, 20);
+			this.label4.TabIndex = 81;
+			this.label4.Text = "Status:";
 			// 
-			// Column1
+			// txbPrice
 			// 
-			this.Column1.DataPropertyName = "discount";
-			this.Column1.HeaderText = "Diskon";
-			this.Column1.Name = "Column1";
-			this.Column1.ReadOnly = true;
-			this.Column1.Width = 50;
+			this.txbPrice.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.txbPrice.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.txbPrice.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.txbPrice.BorderThickness = 1;
+			this.txbPrice.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txbPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.txbPrice.Enabled = false;
+			this.txbPrice.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txbPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.txbPrice.isPassword = false;
+			this.txbPrice.Location = new System.Drawing.Point(230, 140);
+			this.txbPrice.Margin = new System.Windows.Forms.Padding(0);
+			this.txbPrice.MaxLength = 32767;
+			this.txbPrice.Name = "txbPrice";
+			this.txbPrice.Size = new System.Drawing.Size(175, 29);
+			this.txbPrice.TabIndex = 76;
+			this.txbPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
 			// 
-			// colPrice
+			// label13
 			// 
-			this.colPrice.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-			this.colPrice.DataPropertyName = "TotalPrice";
-			this.colPrice.FillWeight = 30F;
-			this.colPrice.HeaderText = "Harga Awal";
-			this.colPrice.Name = "colPrice";
-			this.colPrice.ReadOnly = true;
-			this.colPrice.Width = 115;
-			// 
-			// colStatus
-			// 
-			this.colStatus.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-			this.colStatus.DataPropertyName = "name";
-			this.colStatus.HeaderText = "Status";
-			this.colStatus.Name = "colStatus";
-			this.colStatus.ReadOnly = true;
-			this.colStatus.Width = 77;
-			// 
-			// coldDateOfCreate
-			// 
-			this.coldDateOfCreate.DataPropertyName = "DateOfCreate";
-			this.coldDateOfCreate.FillWeight = 30F;
-			this.coldDateOfCreate.HeaderText = "Status";
-			this.coldDateOfCreate.Name = "coldDateOfCreate";
-			this.coldDateOfCreate.ReadOnly = true;
-			// 
-			// colStaffsetUp
-			// 
-			this.colStaffsetUp.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-			this.colStaffsetUp.DataPropertyName = "StaffSetUp";
-			this.colStaffsetUp.FillWeight = 30F;
-			this.colStaffsetUp.HeaderText = "Tanggal Dibuat";
-			this.colStaffsetUp.Name = "colStaffsetUp";
-			this.colStaffsetUp.ReadOnly = true;
-			this.colStaffsetUp.Visible = false;
-			this.colStaffsetUp.Width = 138;
-			// 
-			// colCustomerName
-			// 
-			this.colCustomerName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-			this.colCustomerName.DataPropertyName = "customername";
-			this.colCustomerName.HeaderText = "Nama Customer";
-			this.colCustomerName.Name = "colCustomerName";
-			this.colCustomerName.ReadOnly = true;
-			this.colCustomerName.Width = 149;
-			// 
-			// colIdReciveRoom
-			// 
-			this.colIdReciveRoom.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-			this.colIdReciveRoom.DataPropertyName = "roomName";
-			this.colIdReciveRoom.FillWeight = 30F;
-			this.colIdReciveRoom.HeaderText = "Nama Kamar";
-			this.colIdReciveRoom.Name = "colIdReciveRoom";
-			this.colIdReciveRoom.ReadOnly = true;
-			this.colIdReciveRoom.Width = 126;
-			// 
-			// colID
-			// 
-			this.colID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-			this.colID.DataPropertyName = "id";
-			this.colID.FillWeight = 30F;
-			this.colID.HeaderText = "Kode Tagihan";
-			this.colID.Name = "colID";
-			this.colID.ReadOnly = true;
-			this.colID.Width = 127;
-			// 
-			// dataGridViewBill
-			// 
-			this.dataGridViewBill.AllowUserToAddRows = false;
-			this.dataGridViewBill.AllowUserToDeleteRows = false;
-			this.dataGridViewBill.AllowUserToResizeRows = false;
-			this.dataGridViewBill.BackgroundColor = System.Drawing.Color.White;
-			this.dataGridViewBill.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F);
-			dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dataGridViewBill.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-			this.dataGridViewBill.ColumnHeadersHeight = 29;
-			this.dataGridViewBill.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-			this.dataGridViewBill.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.colID,
-            this.colIdReciveRoom,
-            this.colCustomerName,
-            this.colStaffsetUp,
-            this.coldDateOfCreate,
-            this.colStatus,
-            this.colPrice,
-            this.Column1,
-            this.Column2});
-			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-			dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F);
-			dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SeaGreen;
-			dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.dataGridViewBill.DefaultCellStyle = dataGridViewCellStyle2;
-			this.dataGridViewBill.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.dataGridViewBill.GridColor = System.Drawing.Color.White;
-			this.dataGridViewBill.Location = new System.Drawing.Point(3, 68);
-			this.dataGridViewBill.Name = "dataGridViewBill";
-			this.dataGridViewBill.ReadOnly = true;
-			dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F);
-			dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dataGridViewBill.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-			this.dataGridViewBill.RowHeadersVisible = false;
-			this.dataGridViewBill.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.dataGridViewBill.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-			this.dataGridViewBill.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.dataGridViewBill.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-			this.dataGridViewBill.Size = new System.Drawing.Size(725, 590);
-			this.dataGridViewBill.TabIndex = 30;
+			this.label13.AutoSize = true;
+			this.label13.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.label13.Location = new System.Drawing.Point(230, 117);
+			this.label13.Name = "label13";
+			this.label13.Size = new System.Drawing.Size(90, 20);
+			this.label13.TabIndex = 74;
+			this.label13.Text = "Harga Awal:";
 			// 
 			// UC_Bill
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.AutoScroll = true;
 			this.BackColor = System.Drawing.Color.White;
 			this.Controls.Add(this.groupBox4);
 			this.Controls.Add(this.groupBox5);
@@ -821,6 +822,7 @@
 			this.Size = new System.Drawing.Size(1242, 745);
 			this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FBill_KeyPress);
 			this.groupBox1.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.dataGridViewBill)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.bindingBill)).EndInit();
 			this.bindingBill.ResumeLayout(false);
 			this.bindingBill.PerformLayout();
@@ -828,7 +830,6 @@
 			this.groupBox4.ResumeLayout(false);
 			this.groupCustomer.ResumeLayout(false);
 			this.groupCustomer.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridViewBill)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

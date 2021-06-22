@@ -229,10 +229,10 @@ namespace FAHotelApp.Forms
 							MessageBox.Show("Tipe Kamar Ini Belum Ada", "Error", MessageBoxButtons.OK, MessageBoxIcon.Stop);
 					}
 				}
-				catch
+				catch (Exception e)
 				{
-
-					MessageBox.Show("Kesalahan Memasukkan Data", "Pemberitahuan", MessageBoxButtons.OK, MessageBoxIcon.Error);
+					MessageBox.Show(e.Message);
+					//MessageBox.Show("Kesalahan Memasukkan Data", "Pemberitahuan", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				}
 			}
 		}

@@ -22,6 +22,7 @@ namespace FAHotelApp.Forms
 			bunifuFormDock1.SubscribeControlToDragEvents(panelHeader);
 			lbUser.Text = Properties.Settings.Default.UsernameView;
 			lbUserType.Text = Properties.Settings.Default.UserTypeView;
+			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 		}
 
 		private void txtSearch_TextChanged(object sender, EventArgs e)
@@ -123,6 +124,11 @@ namespace FAHotelApp.Forms
 				bunifuPages1.SetPage(PeraturanHotel);
 			}
 			else MessageBox.Show("Anda tidak memiliki izin untuk mengakses.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+		}
+
+		private void guna2ControlBox1_Click(object sender, EventArgs e)
+		{
+			System.Windows.Forms.Application.Exit();
 		}
 	}
 }

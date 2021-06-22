@@ -73,6 +73,7 @@
 			this.btnCancel = new Bunifu.Framework.UI.BunifuThinButton2();
 			this.saveService = new System.Windows.Forms.SaveFileDialog();
 			this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
+			this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
 			this.groupBox1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridViewService)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.bindingService)).BeginInit();
@@ -129,7 +130,7 @@
 			dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
 			dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F);
 			dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SeaGreen;
+			dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
 			dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
 			dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
 			this.dataGridViewService.DefaultCellStyle = dataGridViewCellStyle2;
@@ -309,7 +310,7 @@
 			this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
 			this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(50, 22);
 			this.bindingNavigatorMoveLastItem.Text = "Move last";
-			this.bindingNavigatorMoveLastItem.ToolTipText = "Khách hàng cuối cùng";
+			this.bindingNavigatorMoveLastItem.ToolTipText = "Daftar Layanan";
 			// 
 			// toolStripLabel1
 			// 
@@ -333,6 +334,7 @@
 			// groupBox2
 			// 
 			this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+			this.groupBox2.Controls.Add(this.bunifuThinButton21);
 			this.groupBox2.Controls.Add(this.btnServiceType);
 			this.groupBox2.Controls.Add(this.btnInsert);
 			this.groupBox2.Controls.Add(this.btnUpdate);
@@ -364,7 +366,7 @@
 			this.btnServiceType.IdleFillColor = System.Drawing.Color.White;
 			this.btnServiceType.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
 			this.btnServiceType.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnServiceType.Location = new System.Drawing.Point(23, 247);
+			this.btnServiceType.Location = new System.Drawing.Point(23, 280);
 			this.btnServiceType.Margin = new System.Windows.Forms.Padding(4);
 			this.btnServiceType.Name = "btnServiceType";
 			this.btnServiceType.Size = new System.Drawing.Size(175, 40);
@@ -391,7 +393,7 @@
 			this.btnInsert.IdleFillColor = System.Drawing.Color.White;
 			this.btnInsert.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
 			this.btnInsert.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnInsert.Location = new System.Drawing.Point(23, 118);
+			this.btnInsert.Location = new System.Drawing.Point(23, 151);
 			this.btnInsert.Margin = new System.Windows.Forms.Padding(4);
 			this.btnInsert.Name = "btnInsert";
 			this.btnInsert.Size = new System.Drawing.Size(175, 40);
@@ -418,7 +420,7 @@
 			this.btnUpdate.IdleFillColor = System.Drawing.Color.White;
 			this.btnUpdate.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
 			this.btnUpdate.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnUpdate.Location = new System.Drawing.Point(23, 183);
+			this.btnUpdate.Location = new System.Drawing.Point(23, 216);
 			this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
 			this.btnUpdate.Name = "btnUpdate";
 			this.btnUpdate.Size = new System.Drawing.Size(175, 40);
@@ -463,7 +465,7 @@
 			// 
 			this.cbServiceType.BackColor = System.Drawing.Color.White;
 			this.cbServiceType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.cbServiceType.ForeColor = System.Drawing.Color.SeaGreen;
+			this.cbServiceType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
 			this.cbServiceType.FormattingEnabled = true;
 			this.cbServiceType.ItemHeight = 23;
 			this.cbServiceType.Location = new System.Drawing.Point(23, 228);
@@ -680,10 +682,38 @@
 			this.bunifuSeparator1.Size = new System.Drawing.Size(1201, 15);
 			this.bunifuSeparator1.TabIndex = 54;
 			// 
+			// bunifuThinButton21
+			// 
+			this.bunifuThinButton21.ActiveBorderThickness = 1;
+			this.bunifuThinButton21.ActiveCornerRadius = 20;
+			this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
+			this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.bunifuThinButton21.BackColor = System.Drawing.Color.White;
+			this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
+			this.bunifuThinButton21.ButtonText = "Tambah Jenis Layanan";
+			this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.bunifuThinButton21.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.bunifuThinButton21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.bunifuThinButton21.IdleBorderThickness = 1;
+			this.bunifuThinButton21.IdleCornerRadius = 20;
+			this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
+			this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.bunifuThinButton21.Location = new System.Drawing.Point(23, 86);
+			this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(4);
+			this.bunifuThinButton21.Name = "bunifuThinButton21";
+			this.bunifuThinButton21.Size = new System.Drawing.Size(175, 40);
+			this.bunifuThinButton21.TabIndex = 56;
+			this.bunifuThinButton21.TabStop = false;
+			this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
+			// 
 			// UC_Service
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.AutoScroll = true;
 			this.BackColor = System.Drawing.Color.White;
 			this.Controls.Add(this.groupBox4);
 			this.Controls.Add(this.groupService);
@@ -749,5 +779,6 @@
 		private Bunifu.Framework.UI.BunifuThinButton2 btnUpdate;
 		private System.Windows.Forms.SaveFileDialog saveService;
 		private System.Windows.Forms.ToolStripLabel toolStripLabel1;
+		private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
 	}
 }

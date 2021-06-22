@@ -115,6 +115,7 @@
 			this.groupRoom.TabIndex = 55;
 			this.groupRoom.TabStop = false;
 			this.groupRoom.Text = "Informasi Layanan";
+			this.groupRoom.Enter += new System.EventHandler(this.groupRoom_Enter);
 			// 
 			// label20
 			// 
@@ -170,14 +171,13 @@
 			// 
 			// txtPrice
 			// 
-			this.txtPrice.BackColor = System.Drawing.Color.WhiteSmoke;
+			this.txtPrice.BackColor = System.Drawing.Color.White;
 			this.txtPrice.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
 			this.txtPrice.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
 			this.txtPrice.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
 			this.txtPrice.BorderThickness = 1;
 			this.txtPrice.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
 			this.txtPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.txtPrice.Enabled = false;
 			this.txtPrice.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.txtPrice.isPassword = false;
@@ -196,7 +196,7 @@
 			// 
 			this.cbServiceType.BackColor = System.Drawing.Color.White;
 			this.cbServiceType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.cbServiceType.ForeColor = System.Drawing.Color.SeaGreen;
+			this.cbServiceType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
 			this.cbServiceType.FormattingEnabled = true;
 			this.cbServiceType.ItemHeight = 23;
 			this.cbServiceType.Location = new System.Drawing.Point(36, 149);

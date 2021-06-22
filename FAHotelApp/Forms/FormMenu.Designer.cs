@@ -60,10 +60,6 @@
 			this.btnBooking = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
 			this.btnDashboard = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
 			this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-			this.panelHeader = new System.Windows.Forms.Panel();
-			this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
-			this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
-			this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
 			this.panel2 = new System.Windows.Forms.Panel();
 			this.label1 = new System.Windows.Forms.Label();
 			this.lbUserType = new System.Windows.Forms.Label();
@@ -92,10 +88,13 @@
 			this.TambahKamar = new System.Windows.Forms.TabPage();
 			this.TambahPelanggan = new System.Windows.Forms.TabPage();
 			this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
+			this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+			this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
+			this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
+			this.panelHeader = new System.Windows.Forms.Panel();
 			this.panel1.SuspendLayout();
 			this.panelMenu.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
-			this.panelHeader.SuspendLayout();
 			this.panel2.SuspendLayout();
 			this.bunifuPages1.SuspendLayout();
 			this.Dashboard.SuspendLayout();
@@ -107,6 +106,7 @@
 			this.ManajerTagihan.SuspendLayout();
 			this.ManajerPelayanan.SuspendLayout();
 			this.PeraturanHotel.SuspendLayout();
+			this.panelHeader.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// panel1
@@ -118,7 +118,7 @@
 			this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
 			this.panel1.Location = new System.Drawing.Point(0, 0);
 			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(280, 814);
+			this.panel1.Size = new System.Drawing.Size(306, 720);
 			this.panel1.TabIndex = 0;
 			// 
 			// txtSearch
@@ -148,7 +148,7 @@
 			this.txtSearch.IconRight = global::FAHotelApp.Properties.Resources.search_120px;
 			this.txtSearch.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
 			this.txtSearch.Lines = new string[0];
-			this.txtSearch.Location = new System.Drawing.Point(15, 172);
+			this.txtSearch.Location = new System.Drawing.Point(16, 172);
 			this.txtSearch.MaxLength = 32767;
 			this.txtSearch.MinimumSize = new System.Drawing.Size(1, 1);
 			this.txtSearch.Modified = false;
@@ -184,7 +184,7 @@
 			this.txtSearch.SelectionLength = 0;
 			this.txtSearch.SelectionStart = 0;
 			this.txtSearch.ShortcutsEnabled = true;
-			this.txtSearch.Size = new System.Drawing.Size(250, 35);
+			this.txtSearch.Size = new System.Drawing.Size(274, 35);
 			this.txtSearch.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
 			this.txtSearch.TabIndex = 2;
 			this.txtSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -200,6 +200,7 @@
 			// 
 			this.panelMenu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
+			this.panelMenu.AutoScroll = true;
 			this.panelMenu.Controls.Add(this.bunifuButton9);
 			this.panelMenu.Controls.Add(this.bunifuButton8);
 			this.panelMenu.Controls.Add(this.bunifuButton7);
@@ -211,9 +212,9 @@
 			this.panelMenu.Controls.Add(this.bunifuButton2);
 			this.panelMenu.Controls.Add(this.btnBooking);
 			this.panelMenu.Controls.Add(this.btnDashboard);
-			this.panelMenu.Location = new System.Drawing.Point(15, 230);
+			this.panelMenu.Location = new System.Drawing.Point(16, 230);
 			this.panelMenu.Name = "panelMenu";
-			this.panelMenu.Size = new System.Drawing.Size(250, 572);
+			this.panelMenu.Size = new System.Drawing.Size(274, 478);
 			this.panelMenu.TabIndex = 1;
 			// 
 			// bunifuButton9
@@ -298,7 +299,7 @@
 			this.bunifuButton9.OnPressedState.ForeColor = System.Drawing.Color.White;
 			this.bunifuButton9.OnPressedState.IconLeftImage = null;
 			this.bunifuButton9.OnPressedState.IconRightImage = null;
-			this.bunifuButton9.Size = new System.Drawing.Size(250, 50);
+			this.bunifuButton9.Size = new System.Drawing.Size(257, 50);
 			this.bunifuButton9.TabIndex = 10;
 			this.bunifuButton9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.bunifuButton9.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -389,7 +390,7 @@
 			this.bunifuButton8.OnPressedState.ForeColor = System.Drawing.Color.White;
 			this.bunifuButton8.OnPressedState.IconLeftImage = null;
 			this.bunifuButton8.OnPressedState.IconRightImage = null;
-			this.bunifuButton8.Size = new System.Drawing.Size(250, 50);
+			this.bunifuButton8.Size = new System.Drawing.Size(257, 50);
 			this.bunifuButton8.TabIndex = 9;
 			this.bunifuButton8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.bunifuButton8.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -480,7 +481,7 @@
 			this.bunifuButton7.OnPressedState.ForeColor = System.Drawing.Color.White;
 			this.bunifuButton7.OnPressedState.IconLeftImage = null;
 			this.bunifuButton7.OnPressedState.IconRightImage = null;
-			this.bunifuButton7.Size = new System.Drawing.Size(250, 50);
+			this.bunifuButton7.Size = new System.Drawing.Size(257, 50);
 			this.bunifuButton7.TabIndex = 8;
 			this.bunifuButton7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.bunifuButton7.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -571,7 +572,7 @@
 			this.bunifuButton6.OnPressedState.ForeColor = System.Drawing.Color.White;
 			this.bunifuButton6.OnPressedState.IconLeftImage = null;
 			this.bunifuButton6.OnPressedState.IconRightImage = null;
-			this.bunifuButton6.Size = new System.Drawing.Size(250, 50);
+			this.bunifuButton6.Size = new System.Drawing.Size(257, 50);
 			this.bunifuButton6.TabIndex = 7;
 			this.bunifuButton6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.bunifuButton6.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -662,7 +663,7 @@
 			this.bunifuButton5.OnPressedState.ForeColor = System.Drawing.Color.White;
 			this.bunifuButton5.OnPressedState.IconLeftImage = null;
 			this.bunifuButton5.OnPressedState.IconRightImage = null;
-			this.bunifuButton5.Size = new System.Drawing.Size(250, 50);
+			this.bunifuButton5.Size = new System.Drawing.Size(257, 50);
 			this.bunifuButton5.TabIndex = 6;
 			this.bunifuButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.bunifuButton5.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -753,7 +754,7 @@
 			this.bunifuButton1.OnPressedState.ForeColor = System.Drawing.Color.White;
 			this.bunifuButton1.OnPressedState.IconLeftImage = null;
 			this.bunifuButton1.OnPressedState.IconRightImage = null;
-			this.bunifuButton1.Size = new System.Drawing.Size(250, 50);
+			this.bunifuButton1.Size = new System.Drawing.Size(257, 50);
 			this.bunifuButton1.TabIndex = 5;
 			this.bunifuButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.bunifuButton1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -933,7 +934,7 @@
 			this.bunifuButton3.OnPressedState.ForeColor = System.Drawing.Color.White;
 			this.bunifuButton3.OnPressedState.IconLeftImage = null;
 			this.bunifuButton3.OnPressedState.IconRightImage = null;
-			this.bunifuButton3.Size = new System.Drawing.Size(250, 50);
+			this.bunifuButton3.Size = new System.Drawing.Size(257, 50);
 			this.bunifuButton3.TabIndex = 3;
 			this.bunifuButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.bunifuButton3.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1024,7 +1025,7 @@
 			this.bunifuButton2.OnPressedState.ForeColor = System.Drawing.Color.White;
 			this.bunifuButton2.OnPressedState.IconLeftImage = null;
 			this.bunifuButton2.OnPressedState.IconRightImage = null;
-			this.bunifuButton2.Size = new System.Drawing.Size(250, 50);
+			this.bunifuButton2.Size = new System.Drawing.Size(257, 50);
 			this.bunifuButton2.TabIndex = 2;
 			this.bunifuButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.bunifuButton2.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1115,7 +1116,7 @@
 			this.btnBooking.OnPressedState.ForeColor = System.Drawing.Color.White;
 			this.btnBooking.OnPressedState.IconLeftImage = null;
 			this.btnBooking.OnPressedState.IconRightImage = null;
-			this.btnBooking.Size = new System.Drawing.Size(250, 50);
+			this.btnBooking.Size = new System.Drawing.Size(257, 50);
 			this.btnBooking.TabIndex = 1;
 			this.btnBooking.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.btnBooking.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1206,7 +1207,7 @@
 			this.btnDashboard.OnPressedState.ForeColor = System.Drawing.Color.White;
 			this.btnDashboard.OnPressedState.IconLeftImage = null;
 			this.btnDashboard.OnPressedState.IconRightImage = null;
-			this.btnDashboard.Size = new System.Drawing.Size(250, 50);
+			this.btnDashboard.Size = new System.Drawing.Size(257, 50);
 			this.btnDashboard.TabIndex = 0;
 			this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.btnDashboard.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1219,67 +1220,13 @@
 			// 
 			this.guna2PictureBox1.Image = global::FAHotelApp.Properties.Resources.FAHotelTransparentLogoWhite1;
 			this.guna2PictureBox1.ImageRotate = 0F;
-			this.guna2PictureBox1.Location = new System.Drawing.Point(62, 42);
+			this.guna2PictureBox1.Location = new System.Drawing.Point(71, 42);
 			this.guna2PictureBox1.Name = "guna2PictureBox1";
 			this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-			this.guna2PictureBox1.Size = new System.Drawing.Size(145, 61);
+			this.guna2PictureBox1.Size = new System.Drawing.Size(164, 77);
 			this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.guna2PictureBox1.TabIndex = 0;
 			this.guna2PictureBox1.TabStop = false;
-			// 
-			// panelHeader
-			// 
-			this.panelHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
-			this.panelHeader.Controls.Add(this.guna2ControlBox3);
-			this.panelHeader.Controls.Add(this.guna2ControlBox2);
-			this.panelHeader.Controls.Add(this.guna2ControlBox1);
-			this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
-			this.panelHeader.Location = new System.Drawing.Point(280, 0);
-			this.panelHeader.Name = "panelHeader";
-			this.panelHeader.Size = new System.Drawing.Size(1238, 36);
-			this.panelHeader.TabIndex = 1;
-			// 
-			// guna2ControlBox3
-			// 
-			this.guna2ControlBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.guna2ControlBox3.BackColor = System.Drawing.Color.White;
-			this.guna2ControlBox3.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
-			this.guna2ControlBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
-			this.guna2ControlBox3.HoverState.FillColor = System.Drawing.Color.Red;
-			this.guna2ControlBox3.HoverState.Parent = this.guna2ControlBox3;
-			this.guna2ControlBox3.IconColor = System.Drawing.Color.White;
-			this.guna2ControlBox3.Location = new System.Drawing.Point(1114, 4);
-			this.guna2ControlBox3.Name = "guna2ControlBox3";
-			this.guna2ControlBox3.ShadowDecoration.Parent = this.guna2ControlBox3;
-			this.guna2ControlBox3.Size = new System.Drawing.Size(35, 28);
-			this.guna2ControlBox3.TabIndex = 9;
-			// 
-			// guna2ControlBox2
-			// 
-			this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox;
-			this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
-			this.guna2ControlBox2.HoverState.FillColor = System.Drawing.Color.Red;
-			this.guna2ControlBox2.HoverState.Parent = this.guna2ControlBox2;
-			this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
-			this.guna2ControlBox2.Location = new System.Drawing.Point(1155, 4);
-			this.guna2ControlBox2.Name = "guna2ControlBox2";
-			this.guna2ControlBox2.ShadowDecoration.Parent = this.guna2ControlBox2;
-			this.guna2ControlBox2.Size = new System.Drawing.Size(35, 28);
-			this.guna2ControlBox2.TabIndex = 8;
-			// 
-			// guna2ControlBox1
-			// 
-			this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
-			this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.Red;
-			this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
-			this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-			this.guna2ControlBox1.Location = new System.Drawing.Point(1196, 4);
-			this.guna2ControlBox1.Name = "guna2ControlBox1";
-			this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
-			this.guna2ControlBox1.Size = new System.Drawing.Size(35, 28);
-			this.guna2ControlBox1.TabIndex = 7;
 			// 
 			// panel2
 			// 
@@ -1288,9 +1235,9 @@
 			this.panel2.Controls.Add(this.lbUserType);
 			this.panel2.Controls.Add(this.lbUser);
 			this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-			this.panel2.Location = new System.Drawing.Point(280, 36);
+			this.panel2.Location = new System.Drawing.Point(306, 36);
 			this.panel2.Name = "panel2";
-			this.panel2.Size = new System.Drawing.Size(1238, 67);
+			this.panel2.Size = new System.Drawing.Size(1278, 67);
 			this.panel2.TabIndex = 2;
 			// 
 			// label1
@@ -1310,7 +1257,7 @@
 			this.lbUserType.AutoSize = true;
 			this.lbUserType.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lbUserType.ForeColor = System.Drawing.Color.White;
-			this.lbUserType.Location = new System.Drawing.Point(1079, 24);
+			this.lbUserType.Location = new System.Drawing.Point(1119, 24);
 			this.lbUserType.Name = "lbUserType";
 			this.lbUserType.Size = new System.Drawing.Size(72, 20);
 			this.lbUserType.TabIndex = 6;
@@ -1331,9 +1278,6 @@
 			// 
 			this.bunifuPages1.Alignment = System.Windows.Forms.TabAlignment.Bottom;
 			this.bunifuPages1.AllowTransitions = true;
-			this.bunifuPages1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
 			this.bunifuPages1.Controls.Add(this.Dashboard);
 			this.bunifuPages1.Controls.Add(this.BookingKamar);
 			this.bunifuPages1.Controls.Add(this.CheckInKamar);
@@ -1347,15 +1291,16 @@
 			this.bunifuPages1.Controls.Add(this.tabPage1);
 			this.bunifuPages1.Controls.Add(this.TambahKamar);
 			this.bunifuPages1.Controls.Add(this.TambahPelanggan);
-			this.bunifuPages1.Location = new System.Drawing.Point(280, 101);
+			this.bunifuPages1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.bunifuPages1.Location = new System.Drawing.Point(306, 103);
 			this.bunifuPages1.Multiline = true;
 			this.bunifuPages1.Name = "bunifuPages1";
-			this.bunifuPages1.Page = this.PeraturanHotel;
-			this.bunifuPages1.PageIndex = 9;
-			this.bunifuPages1.PageName = "PeraturanHotel";
-			this.bunifuPages1.PageTitle = "Peraturan Hotel";
+			this.bunifuPages1.Page = this.ManajerKamar;
+			this.bunifuPages1.PageIndex = 4;
+			this.bunifuPages1.PageName = "ManajerKamar";
+			this.bunifuPages1.PageTitle = "Manajer Kamar";
 			this.bunifuPages1.SelectedIndex = 0;
-			this.bunifuPages1.Size = new System.Drawing.Size(1231, 701);
+			this.bunifuPages1.Size = new System.Drawing.Size(1278, 617);
 			this.bunifuPages1.TabIndex = 3;
 			animation1.AnimateOnlyDifferences = false;
 			animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
@@ -1382,7 +1327,7 @@
 			this.Dashboard.Location = new System.Drawing.Point(4, 4);
 			this.Dashboard.Name = "Dashboard";
 			this.Dashboard.Padding = new System.Windows.Forms.Padding(3);
-			this.Dashboard.Size = new System.Drawing.Size(1223, 675);
+			this.Dashboard.Size = new System.Drawing.Size(966, 573);
 			this.Dashboard.TabIndex = 0;
 			this.Dashboard.Text = "Dashboard";
 			// 
@@ -1391,7 +1336,7 @@
 			this.uC_Dashboard1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.uC_Dashboard1.Location = new System.Drawing.Point(3, 3);
 			this.uC_Dashboard1.Name = "uC_Dashboard1";
-			this.uC_Dashboard1.Size = new System.Drawing.Size(1217, 669);
+			this.uC_Dashboard1.Size = new System.Drawing.Size(960, 567);
 			this.uC_Dashboard1.TabIndex = 0;
 			// 
 			// BookingKamar
@@ -1401,17 +1346,18 @@
 			this.BookingKamar.Location = new System.Drawing.Point(4, 4);
 			this.BookingKamar.Name = "BookingKamar";
 			this.BookingKamar.Padding = new System.Windows.Forms.Padding(3);
-			this.BookingKamar.Size = new System.Drawing.Size(1223, 675);
+			this.BookingKamar.Size = new System.Drawing.Size(1270, 591);
 			this.BookingKamar.TabIndex = 1;
 			this.BookingKamar.Text = "Booking Kamar";
 			// 
 			// uC_BookingRoom1
 			// 
+			this.uC_BookingRoom1.AutoScroll = true;
 			this.uC_BookingRoom1.BackColor = System.Drawing.Color.White;
 			this.uC_BookingRoom1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.uC_BookingRoom1.Location = new System.Drawing.Point(3, 3);
 			this.uC_BookingRoom1.Name = "uC_BookingRoom1";
-			this.uC_BookingRoom1.Size = new System.Drawing.Size(1217, 669);
+			this.uC_BookingRoom1.Size = new System.Drawing.Size(1264, 585);
 			this.uC_BookingRoom1.TabIndex = 0;
 			// 
 			// CheckInKamar
@@ -1421,7 +1367,7 @@
 			this.CheckInKamar.Location = new System.Drawing.Point(4, 4);
 			this.CheckInKamar.Name = "CheckInKamar";
 			this.CheckInKamar.Padding = new System.Windows.Forms.Padding(3);
-			this.CheckInKamar.Size = new System.Drawing.Size(1223, 675);
+			this.CheckInKamar.Size = new System.Drawing.Size(966, 591);
 			this.CheckInKamar.TabIndex = 2;
 			this.CheckInKamar.Text = "Check-In Kamar";
 			// 
@@ -1431,7 +1377,7 @@
 			this.uC_ReceiveRoom1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.uC_ReceiveRoom1.Location = new System.Drawing.Point(3, 3);
 			this.uC_ReceiveRoom1.Name = "uC_ReceiveRoom1";
-			this.uC_ReceiveRoom1.Size = new System.Drawing.Size(1217, 669);
+			this.uC_ReceiveRoom1.Size = new System.Drawing.Size(960, 585);
 			this.uC_ReceiveRoom1.TabIndex = 0;
 			// 
 			// tabPage4
@@ -1440,7 +1386,7 @@
 			this.tabPage4.Location = new System.Drawing.Point(4, 4);
 			this.tabPage4.Name = "tabPage4";
 			this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-			this.tabPage4.Size = new System.Drawing.Size(1223, 675);
+			this.tabPage4.Size = new System.Drawing.Size(1270, 591);
 			this.tabPage4.TabIndex = 3;
 			this.tabPage4.Text = "Layanan dan Pembayaran";
 			// 
@@ -1451,7 +1397,7 @@
 			this.ManajerKamar.Location = new System.Drawing.Point(4, 4);
 			this.ManajerKamar.Name = "ManajerKamar";
 			this.ManajerKamar.Padding = new System.Windows.Forms.Padding(3);
-			this.ManajerKamar.Size = new System.Drawing.Size(1223, 675);
+			this.ManajerKamar.Size = new System.Drawing.Size(1270, 591);
 			this.ManajerKamar.TabIndex = 4;
 			this.ManajerKamar.Text = "Manajer Kamar";
 			// 
@@ -1461,7 +1407,7 @@
 			this.uC_Room1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.uC_Room1.Location = new System.Drawing.Point(3, 3);
 			this.uC_Room1.Name = "uC_Room1";
-			this.uC_Room1.Size = new System.Drawing.Size(1217, 669);
+			this.uC_Room1.Size = new System.Drawing.Size(1264, 585);
 			this.uC_Room1.TabIndex = 0;
 			// 
 			// ManajerKaryawan
@@ -1471,7 +1417,7 @@
 			this.ManajerKaryawan.Location = new System.Drawing.Point(4, 4);
 			this.ManajerKaryawan.Name = "ManajerKaryawan";
 			this.ManajerKaryawan.Padding = new System.Windows.Forms.Padding(3);
-			this.ManajerKaryawan.Size = new System.Drawing.Size(1223, 675);
+			this.ManajerKaryawan.Size = new System.Drawing.Size(966, 591);
 			this.ManajerKaryawan.TabIndex = 5;
 			this.ManajerKaryawan.Text = "Manajer Karyawan";
 			// 
@@ -1481,7 +1427,7 @@
 			this.uC_Staff1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.uC_Staff1.Location = new System.Drawing.Point(3, 3);
 			this.uC_Staff1.Name = "uC_Staff1";
-			this.uC_Staff1.Size = new System.Drawing.Size(1217, 669);
+			this.uC_Staff1.Size = new System.Drawing.Size(960, 585);
 			this.uC_Staff1.TabIndex = 0;
 			// 
 			// ManajerPelanggan
@@ -1491,7 +1437,7 @@
 			this.ManajerPelanggan.Location = new System.Drawing.Point(4, 4);
 			this.ManajerPelanggan.Name = "ManajerPelanggan";
 			this.ManajerPelanggan.Padding = new System.Windows.Forms.Padding(3);
-			this.ManajerPelanggan.Size = new System.Drawing.Size(1223, 675);
+			this.ManajerPelanggan.Size = new System.Drawing.Size(966, 591);
 			this.ManajerPelanggan.TabIndex = 6;
 			this.ManajerPelanggan.Text = "Manajer Pelanggan";
 			// 
@@ -1501,7 +1447,7 @@
 			this.uC_Customer1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.uC_Customer1.Location = new System.Drawing.Point(3, 3);
 			this.uC_Customer1.Name = "uC_Customer1";
-			this.uC_Customer1.Size = new System.Drawing.Size(1217, 669);
+			this.uC_Customer1.Size = new System.Drawing.Size(960, 585);
 			this.uC_Customer1.TabIndex = 0;
 			// 
 			// ManajerTagihan
@@ -1511,7 +1457,7 @@
 			this.ManajerTagihan.Location = new System.Drawing.Point(4, 4);
 			this.ManajerTagihan.Name = "ManajerTagihan";
 			this.ManajerTagihan.Padding = new System.Windows.Forms.Padding(3);
-			this.ManajerTagihan.Size = new System.Drawing.Size(1223, 675);
+			this.ManajerTagihan.Size = new System.Drawing.Size(966, 591);
 			this.ManajerTagihan.TabIndex = 7;
 			this.ManajerTagihan.Text = "Manajer Tagihan";
 			// 
@@ -1521,7 +1467,7 @@
 			this.uC_Bill1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.uC_Bill1.Location = new System.Drawing.Point(3, 3);
 			this.uC_Bill1.Name = "uC_Bill1";
-			this.uC_Bill1.Size = new System.Drawing.Size(1217, 669);
+			this.uC_Bill1.Size = new System.Drawing.Size(960, 585);
 			this.uC_Bill1.TabIndex = 0;
 			// 
 			// ManajerPelayanan
@@ -1531,7 +1477,7 @@
 			this.ManajerPelayanan.Location = new System.Drawing.Point(4, 4);
 			this.ManajerPelayanan.Name = "ManajerPelayanan";
 			this.ManajerPelayanan.Padding = new System.Windows.Forms.Padding(3);
-			this.ManajerPelayanan.Size = new System.Drawing.Size(1223, 675);
+			this.ManajerPelayanan.Size = new System.Drawing.Size(966, 591);
 			this.ManajerPelayanan.TabIndex = 8;
 			this.ManajerPelayanan.Text = "Manajer Pelayanan";
 			// 
@@ -1541,7 +1487,7 @@
 			this.uC_Service1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.uC_Service1.Location = new System.Drawing.Point(3, 3);
 			this.uC_Service1.Name = "uC_Service1";
-			this.uC_Service1.Size = new System.Drawing.Size(1217, 669);
+			this.uC_Service1.Size = new System.Drawing.Size(960, 585);
 			this.uC_Service1.TabIndex = 0;
 			// 
 			// PeraturanHotel
@@ -1551,7 +1497,7 @@
 			this.PeraturanHotel.Location = new System.Drawing.Point(4, 4);
 			this.PeraturanHotel.Name = "PeraturanHotel";
 			this.PeraturanHotel.Padding = new System.Windows.Forms.Padding(3);
-			this.PeraturanHotel.Size = new System.Drawing.Size(1223, 675);
+			this.PeraturanHotel.Size = new System.Drawing.Size(966, 591);
 			this.PeraturanHotel.TabIndex = 9;
 			this.PeraturanHotel.Text = "Peraturan Hotel";
 			// 
@@ -1561,7 +1507,7 @@
 			this.uC_Parameter1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.uC_Parameter1.Location = new System.Drawing.Point(3, 3);
 			this.uC_Parameter1.Name = "uC_Parameter1";
-			this.uC_Parameter1.Size = new System.Drawing.Size(1217, 669);
+			this.uC_Parameter1.Size = new System.Drawing.Size(960, 585);
 			this.uC_Parameter1.TabIndex = 0;
 			// 
 			// tabPage1
@@ -1569,7 +1515,7 @@
 			this.tabPage1.Location = new System.Drawing.Point(4, 4);
 			this.tabPage1.Name = "tabPage1";
 			this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-			this.tabPage1.Size = new System.Drawing.Size(1223, 675);
+			this.tabPage1.Size = new System.Drawing.Size(966, 573);
 			this.tabPage1.TabIndex = 10;
 			this.tabPage1.Text = "tabPage1";
 			this.tabPage1.UseVisualStyleBackColor = true;
@@ -1580,7 +1526,7 @@
 			this.TambahKamar.Location = new System.Drawing.Point(4, 4);
 			this.TambahKamar.Name = "TambahKamar";
 			this.TambahKamar.Padding = new System.Windows.Forms.Padding(3);
-			this.TambahKamar.Size = new System.Drawing.Size(1223, 675);
+			this.TambahKamar.Size = new System.Drawing.Size(966, 573);
 			this.TambahKamar.TabIndex = 11;
 			this.TambahKamar.Text = "Tambah Kamar";
 			// 
@@ -1590,7 +1536,7 @@
 			this.TambahPelanggan.Location = new System.Drawing.Point(4, 4);
 			this.TambahPelanggan.Name = "TambahPelanggan";
 			this.TambahPelanggan.Padding = new System.Windows.Forms.Padding(3);
-			this.TambahPelanggan.Size = new System.Drawing.Size(1223, 675);
+			this.TambahPelanggan.Size = new System.Drawing.Size(966, 573);
 			this.TambahPelanggan.TabIndex = 12;
 			this.TambahPelanggan.Text = "Tambah Pelanggan";
 			// 
@@ -1634,24 +1580,78 @@
 			this.bunifuFormDock1.TitleBarOptions.TitleBarControl = null;
 			this.bunifuFormDock1.TitleBarOptions.UseBackColorOnDockingIndicators = false;
 			// 
+			// guna2ControlBox1
+			// 
+			this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
+			this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.Red;
+			this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
+			this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
+			this.guna2ControlBox1.Location = new System.Drawing.Point(1236, 4);
+			this.guna2ControlBox1.Name = "guna2ControlBox1";
+			this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
+			this.guna2ControlBox1.Size = new System.Drawing.Size(35, 28);
+			this.guna2ControlBox1.TabIndex = 7;
+			this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
+			// 
+			// guna2ControlBox2
+			// 
+			this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox;
+			this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
+			this.guna2ControlBox2.HoverState.FillColor = System.Drawing.Color.Red;
+			this.guna2ControlBox2.HoverState.Parent = this.guna2ControlBox2;
+			this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
+			this.guna2ControlBox2.Location = new System.Drawing.Point(1195, 4);
+			this.guna2ControlBox2.Name = "guna2ControlBox2";
+			this.guna2ControlBox2.ShadowDecoration.Parent = this.guna2ControlBox2;
+			this.guna2ControlBox2.Size = new System.Drawing.Size(35, 28);
+			this.guna2ControlBox2.TabIndex = 8;
+			// 
+			// guna2ControlBox3
+			// 
+			this.guna2ControlBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.guna2ControlBox3.BackColor = System.Drawing.Color.White;
+			this.guna2ControlBox3.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
+			this.guna2ControlBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
+			this.guna2ControlBox3.HoverState.FillColor = System.Drawing.Color.Red;
+			this.guna2ControlBox3.HoverState.Parent = this.guna2ControlBox3;
+			this.guna2ControlBox3.IconColor = System.Drawing.Color.White;
+			this.guna2ControlBox3.Location = new System.Drawing.Point(1154, 4);
+			this.guna2ControlBox3.Name = "guna2ControlBox3";
+			this.guna2ControlBox3.ShadowDecoration.Parent = this.guna2ControlBox3;
+			this.guna2ControlBox3.Size = new System.Drawing.Size(35, 28);
+			this.guna2ControlBox3.TabIndex = 9;
+			// 
+			// panelHeader
+			// 
+			this.panelHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
+			this.panelHeader.Controls.Add(this.guna2ControlBox3);
+			this.panelHeader.Controls.Add(this.guna2ControlBox2);
+			this.panelHeader.Controls.Add(this.guna2ControlBox1);
+			this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
+			this.panelHeader.Location = new System.Drawing.Point(306, 0);
+			this.panelHeader.Name = "panelHeader";
+			this.panelHeader.Size = new System.Drawing.Size(1278, 36);
+			this.panelHeader.TabIndex = 1;
+			// 
 			// FormMenu
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1518, 814);
+			this.BackColor = System.Drawing.SystemColors.Control;
+			this.ClientSize = new System.Drawing.Size(1584, 720);
+			this.ControlBox = false;
+			this.Controls.Add(this.bunifuPages1);
 			this.Controls.Add(this.panel2);
 			this.Controls.Add(this.panelHeader);
-			this.Controls.Add(this.bunifuPages1);
 			this.Controls.Add(this.panel1);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-			this.MinimumSize = new System.Drawing.Size(1518, 814);
+			this.MinimumSize = new System.Drawing.Size(1600, 720);
 			this.Name = "FormMenu";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "Menu";
 			this.panel1.ResumeLayout(false);
 			this.panelMenu.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
-			this.panelHeader.ResumeLayout(false);
 			this.panel2.ResumeLayout(false);
 			this.panel2.PerformLayout();
 			this.bunifuPages1.ResumeLayout(false);
@@ -1664,6 +1664,7 @@
 			this.ManajerTagihan.ResumeLayout(false);
 			this.ManajerPelayanan.ResumeLayout(false);
 			this.PeraturanHotel.ResumeLayout(false);
+			this.panelHeader.ResumeLayout(false);
 			this.ResumeLayout(false);
 
 		}
@@ -1674,11 +1675,7 @@
 		private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
 		private Bunifu.UI.WinForms.BunifuTextBox txtSearch;
 		private System.Windows.Forms.Panel panelMenu;
-		private System.Windows.Forms.Panel panelHeader;
 		private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnDashboard;
-		private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox3;
-		private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
-		private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
 		private System.Windows.Forms.Panel panel2;
 		private System.Windows.Forms.Label lbUserType;
 		private System.Windows.Forms.Label lbUser;
@@ -1717,5 +1714,9 @@
 		private UC.UC_Bill uC_Bill1;
 		private UC.UC_Service uC_Service1;
 		private UC.UC_Parameter uC_Parameter1;
+		private System.Windows.Forms.Panel panelHeader;
+		private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox3;
+		private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
+		private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
 	}
 }

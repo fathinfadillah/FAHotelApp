@@ -118,9 +118,10 @@ namespace FAHotelApp.Forms
 				else
 					MessageBox.Show("Layanan Sudah Ada", "Error", MessageBoxButtons.OK, MessageBoxIcon.Stop);
 			}
-			catch
+			catch (Exception e)
 			{
-				MessageBox.Show("Error", "Pemberitahuan", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				MessageBox.Show(e.Message);
+				//MessageBox.Show("Error", "Pemberitahuan", MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
 		}
 		private void btnAddService_Click(object sender, EventArgs e)
@@ -134,6 +135,11 @@ namespace FAHotelApp.Forms
 		private void btnBack_Click(object sender, EventArgs e)
 		{
 			Close();
+		}
+
+		private void groupRoom_Enter(object sender, EventArgs e)
+		{
+
 		}
 	}
 }

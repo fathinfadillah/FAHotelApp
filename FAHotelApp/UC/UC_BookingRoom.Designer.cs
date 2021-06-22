@@ -98,7 +98,6 @@
 			// 
 			// bunifuSeparator1
 			// 
-			this.bunifuSeparator1.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
 			this.bunifuSeparator1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuSeparator1.BackgroundImage")));
 			this.bunifuSeparator1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -114,7 +113,6 @@
 			// 
 			// label1
 			// 
-			this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
@@ -126,7 +124,6 @@
 			// 
 			// groupBox3
 			// 
-			this.groupBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.groupBox3.Controls.Add(this.btnSearch);
 			this.groupBox3.Controls.Add(this.txtIDCardSearch);
 			this.groupBox3.Controls.Add(this.label9);
@@ -198,7 +195,6 @@
 			// 
 			// groupBox5
 			// 
-			this.groupBox5.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.groupBox5.Controls.Add(this.bunifuCheckbox1);
 			this.groupBox5.Controls.Add(this.label2);
 			this.groupBox5.Controls.Add(this.btnCancel);
@@ -290,7 +286,6 @@
 			// 
 			// groupBox6
 			// 
-			this.groupBox6.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.groupBox6.Controls.Add(this.cbRoomType);
 			this.groupBox6.Controls.Add(this.dtpDateCheckOut);
 			this.groupBox6.Controls.Add(this.label17);
@@ -401,7 +396,7 @@
 			this.dtpDateCheckIn.ForeColor = System.Drawing.Color.White;
 			this.dtpDateCheckIn.Format = System.Windows.Forms.DateTimePickerFormat.Short;
 			this.dtpDateCheckIn.FormatCustom = null;
-			this.dtpDateCheckIn.Location = new System.Drawing.Point(242, 46);
+			this.dtpDateCheckIn.Location = new System.Drawing.Point(242, 45);
 			this.dtpDateCheckIn.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
 			this.dtpDateCheckIn.Name = "dtpDateCheckIn";
 			this.dtpDateCheckIn.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -423,7 +418,6 @@
 			// 
 			// groupBox1
 			// 
-			this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.groupBox1.Controls.Add(this.checkBoxReceiveRoom);
 			this.groupBox1.Controls.Add(this.txtPrice);
 			this.groupBox1.Controls.Add(this.label10);
@@ -582,7 +576,6 @@
 			// 
 			// groupBox2
 			// 
-			this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.groupBox2.Controls.Add(this.cbNationality);
 			this.groupBox2.Controls.Add(this.dtpDateOfBirth);
 			this.groupBox2.Controls.Add(this.label6);
@@ -871,11 +864,10 @@
 			// 
 			// groupBox4
 			// 
-			this.groupBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.groupBox4.Controls.Add(this.panel2);
 			this.groupBox4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.groupBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.groupBox4.Location = new System.Drawing.Point(769, 67);
+			this.groupBox4.Location = new System.Drawing.Point(750, 67);
 			this.groupBox4.Name = "groupBox4";
 			this.groupBox4.Size = new System.Drawing.Size(453, 577);
 			this.groupBox4.TabIndex = 49;
@@ -981,10 +973,11 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.AutoScroll = true;
 			this.BackColor = System.Drawing.Color.White;
+			this.Controls.Add(this.groupBox6);
 			this.Controls.Add(this.groupBox3);
 			this.Controls.Add(this.groupBox5);
-			this.Controls.Add(this.groupBox6);
 			this.Controls.Add(this.groupBox1);
 			this.Controls.Add(this.groupBox2);
 			this.Controls.Add(this.groupBox4);
@@ -992,7 +985,6 @@
 			this.Controls.Add(this.label1);
 			this.Name = "UC_BookingRoom";
 			this.Size = new System.Drawing.Size(1242, 670);
-			this.Click += new System.EventHandler(this.btnBookRoom_Click);
 			this.groupBox3.ResumeLayout(false);
 			this.groupBox3.PerformLayout();
 			this.groupBox5.ResumeLayout(false);

@@ -539,7 +539,7 @@
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Name = "FormAccess";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "Forgot Password";
+			this.Text = "Hak Akses";
 			this.TopMost = true;
 			this.groupBox3.ResumeLayout(false);
 			this.groupBox3.PerformLayout();
