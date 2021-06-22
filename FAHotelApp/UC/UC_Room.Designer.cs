@@ -102,7 +102,7 @@
 			// 
 			// saveRoom
 			// 
-			this.saveRoom.FileName = "Danh sách Phòng";
+			this.saveRoom.FileName = "Daftar Kamar";
 			this.saveRoom.Filter = "Excel File(*.xls)|*.xls|Excel File (*.xlsx) |.xlsx|PDF File(*.pdf)|*.pdf";
 			// 
 			// bunifuSeparator1
