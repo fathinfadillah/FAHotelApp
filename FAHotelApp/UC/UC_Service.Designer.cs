@@ -54,6 +54,7 @@
 			this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
 			this.label1 = new System.Windows.Forms.Label();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
+			this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
 			this.btnServiceType = new Bunifu.Framework.UI.BunifuThinButton2();
 			this.btnInsert = new Bunifu.Framework.UI.BunifuThinButton2();
 			this.btnUpdate = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -73,7 +74,6 @@
 			this.btnCancel = new Bunifu.Framework.UI.BunifuThinButton2();
 			this.saveService = new System.Windows.Forms.SaveFileDialog();
 			this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
-			this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
 			this.groupBox1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridViewService)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.bindingService)).BeginInit();
@@ -90,14 +90,13 @@
 			// 
 			// groupBox1
 			// 
-			this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.groupBox1.Controls.Add(this.dataGridViewService);
 			this.groupBox1.Controls.Add(this.bindingService);
 			this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F);
 			this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.groupBox1.Location = new System.Drawing.Point(491, 67);
+			this.groupBox1.Location = new System.Drawing.Point(471, 67);
 			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(731, 531);
+			this.groupBox1.Size = new System.Drawing.Size(731, 521);
 			this.groupBox1.TabIndex = 39;
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Daftar Pelayanan";
@@ -152,7 +151,7 @@
 			this.dataGridViewService.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F);
 			this.dataGridViewService.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.dataGridViewService.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-			this.dataGridViewService.Size = new System.Drawing.Size(725, 460);
+			this.dataGridViewService.Size = new System.Drawing.Size(725, 450);
 			this.dataGridViewService.TabIndex = 30;
 			// 
 			// colID
@@ -321,7 +320,6 @@
 			// 
 			// label1
 			// 
-			this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
@@ -333,7 +331,6 @@
 			// 
 			// groupBox2
 			// 
-			this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.groupBox2.Controls.Add(this.bunifuThinButton21);
 			this.groupBox2.Controls.Add(this.btnServiceType);
 			this.groupBox2.Controls.Add(this.btnInsert);
@@ -341,12 +338,39 @@
 			this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 12F);
 			this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.groupBox2.Location = new System.Drawing.Point(245, 198);
+			this.groupBox2.Location = new System.Drawing.Point(245, 188);
 			this.groupBox2.Name = "groupBox2";
 			this.groupBox2.Size = new System.Drawing.Size(220, 400);
 			this.groupBox2.TabIndex = 81;
 			this.groupBox2.TabStop = false;
 			this.groupBox2.Text = "Menu";
+			// 
+			// bunifuThinButton21
+			// 
+			this.bunifuThinButton21.ActiveBorderThickness = 1;
+			this.bunifuThinButton21.ActiveCornerRadius = 20;
+			this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
+			this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.bunifuThinButton21.BackColor = System.Drawing.Color.White;
+			this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
+			this.bunifuThinButton21.ButtonText = "Tambah Jenis Layanan";
+			this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.bunifuThinButton21.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.bunifuThinButton21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.bunifuThinButton21.IdleBorderThickness = 1;
+			this.bunifuThinButton21.IdleCornerRadius = 20;
+			this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
+			this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.bunifuThinButton21.Location = new System.Drawing.Point(23, 86);
+			this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(4);
+			this.bunifuThinButton21.Name = "bunifuThinButton21";
+			this.bunifuThinButton21.Size = new System.Drawing.Size(175, 40);
+			this.bunifuThinButton21.TabIndex = 56;
+			this.bunifuThinButton21.TabStop = false;
+			this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
 			// 
 			// btnServiceType
 			// 
@@ -431,7 +455,6 @@
 			// 
 			// groupService
 			// 
-			this.groupService.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.groupService.Controls.Add(this.cbID);
 			this.groupService.Controls.Add(this.cbServiceType);
 			this.groupService.Controls.Add(this.txtName);
@@ -443,7 +466,7 @@
 			this.groupService.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.groupService.Font = new System.Drawing.Font("Segoe UI", 12F);
 			this.groupService.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.groupService.Location = new System.Drawing.Point(21, 198);
+			this.groupService.Location = new System.Drawing.Point(21, 188);
 			this.groupService.Name = "groupService";
 			this.groupService.Size = new System.Drawing.Size(220, 400);
 			this.groupService.TabIndex = 82;
@@ -564,7 +587,6 @@
 			// 
 			// groupBox4
 			// 
-			this.groupBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.groupBox4.Controls.Add(this.txtSearch);
 			this.groupBox4.Controls.Add(this.label5);
 			this.groupBox4.Controls.Add(this.btnSearch);
@@ -668,7 +690,6 @@
 			// 
 			// bunifuSeparator1
 			// 
-			this.bunifuSeparator1.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
 			this.bunifuSeparator1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuSeparator1.BackgroundImage")));
 			this.bunifuSeparator1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -679,35 +700,8 @@
 			this.bunifuSeparator1.Location = new System.Drawing.Point(21, 46);
 			this.bunifuSeparator1.Name = "bunifuSeparator1";
 			this.bunifuSeparator1.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
-			this.bunifuSeparator1.Size = new System.Drawing.Size(1201, 15);
+			this.bunifuSeparator1.Size = new System.Drawing.Size(1181, 15);
 			this.bunifuSeparator1.TabIndex = 54;
-			// 
-			// bunifuThinButton21
-			// 
-			this.bunifuThinButton21.ActiveBorderThickness = 1;
-			this.bunifuThinButton21.ActiveCornerRadius = 20;
-			this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
-			this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.bunifuThinButton21.BackColor = System.Drawing.Color.White;
-			this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
-			this.bunifuThinButton21.ButtonText = "Tambah Jenis Layanan";
-			this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.bunifuThinButton21.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.bunifuThinButton21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.bunifuThinButton21.IdleBorderThickness = 1;
-			this.bunifuThinButton21.IdleCornerRadius = 20;
-			this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
-			this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.bunifuThinButton21.Location = new System.Drawing.Point(23, 86);
-			this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(4);
-			this.bunifuThinButton21.Name = "bunifuThinButton21";
-			this.bunifuThinButton21.Size = new System.Drawing.Size(175, 40);
-			this.bunifuThinButton21.TabIndex = 56;
-			this.bunifuThinButton21.TabStop = false;
-			this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
 			// 
 			// UC_Service
 			// 
@@ -722,7 +716,7 @@
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.groupBox1);
 			this.Name = "UC_Service";
-			this.Size = new System.Drawing.Size(1242, 624);
+			this.Size = new System.Drawing.Size(1227, 612);
 			this.groupBox1.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.dataGridViewService)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.bindingService)).EndInit();

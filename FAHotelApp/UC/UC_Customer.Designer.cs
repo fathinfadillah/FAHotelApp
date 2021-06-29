@@ -29,10 +29,10 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Customer));
 			this.SaveCustomer = new System.Windows.Forms.SaveFileDialog();
 			this.cbCustomerSearch = new MetroFramework.Controls.MetroComboBox();
@@ -153,14 +153,13 @@
 			// 
 			// groupBox1
 			// 
-			this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.groupBox1.Controls.Add(this.dataGridViewCustomer);
 			this.groupBox1.Controls.Add(this.bindingCustomer);
 			this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F);
 			this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.groupBox1.Location = new System.Drawing.Point(491, 67);
+			this.groupBox1.Location = new System.Drawing.Point(471, 67);
 			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(731, 768);
+			this.groupBox1.Size = new System.Drawing.Size(731, 745);
 			this.groupBox1.TabIndex = 39;
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Daftar Pelanggan";
@@ -170,20 +169,20 @@
 			this.dataGridViewCustomer.AllowUserToAddRows = false;
 			this.dataGridViewCustomer.AllowUserToDeleteRows = false;
 			this.dataGridViewCustomer.AllowUserToResizeRows = false;
-			dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.dataGridViewCustomer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+			dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.dataGridViewCustomer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
 			this.dataGridViewCustomer.BackgroundColor = System.Drawing.Color.White;
 			this.dataGridViewCustomer.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F);
-			dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dataGridViewCustomer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+			dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 12F);
+			dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dataGridViewCustomer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
 			this.dataGridViewCustomer.ColumnHeadersHeight = 25;
 			this.dataGridViewCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
 			this.dataGridViewCustomer.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -197,32 +196,32 @@
             this.colAddress,
             this.colNationality,
             this.colIdCustomerType});
-			dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-			dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F);
-			dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.dataGridViewCustomer.DefaultCellStyle = dataGridViewCellStyle3;
+			dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
+			dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 12F);
+			dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.dataGridViewCustomer.DefaultCellStyle = dataGridViewCellStyle7;
 			this.dataGridViewCustomer.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.dataGridViewCustomer.GridColor = System.Drawing.Color.White;
 			this.dataGridViewCustomer.Location = new System.Drawing.Point(3, 68);
 			this.dataGridViewCustomer.Name = "dataGridViewCustomer";
 			this.dataGridViewCustomer.ReadOnly = true;
-			dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 12F);
-			dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dataGridViewCustomer.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+			dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 12F);
+			dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dataGridViewCustomer.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
 			this.dataGridViewCustomer.RowHeadersVisible = false;
 			this.dataGridViewCustomer.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
 			this.dataGridViewCustomer.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F);
 			this.dataGridViewCustomer.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.dataGridViewCustomer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-			this.dataGridViewCustomer.Size = new System.Drawing.Size(725, 697);
+			this.dataGridViewCustomer.Size = new System.Drawing.Size(725, 674);
 			this.dataGridViewCustomer.TabIndex = 3;
 			this.dataGridViewCustomer.SelectionChanged += new System.EventHandler(this.DataGridViewCustomer_SelectionChanged);
 			// 
@@ -425,7 +424,6 @@
 			// 
 			// groupCustomer
 			// 
-			this.groupCustomer.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.groupCustomer.Controls.Add(this.dtpDateOfBirth);
 			this.groupCustomer.Controls.Add(this.cbNationality);
 			this.groupCustomer.Controls.Add(this.label14);
@@ -447,7 +445,7 @@
 			this.groupCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.groupCustomer.Font = new System.Drawing.Font("Segoe UI", 12F);
 			this.groupCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.groupCustomer.Location = new System.Drawing.Point(21, 192);
+			this.groupCustomer.Location = new System.Drawing.Point(21, 186);
 			this.groupCustomer.Name = "groupCustomer";
 			this.groupCustomer.Size = new System.Drawing.Size(444, 497);
 			this.groupCustomer.TabIndex = 38;
@@ -729,7 +727,6 @@
 			// 
 			// label1
 			// 
-			this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
@@ -741,7 +738,6 @@
 			// 
 			// groupBox5
 			// 
-			this.groupBox5.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.groupBox5.Controls.Add(this.cbCustomerSearch);
 			this.groupBox5.Controls.Add(this.txtSearch);
 			this.groupBox5.Controls.Add(this.btnSearch);
@@ -811,13 +807,12 @@
 			// 
 			// groupBox4
 			// 
-			this.groupBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.groupBox4.Controls.Add(this.btnAddCustomer);
 			this.groupBox4.Controls.Add(this.btnUpdate);
 			this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.groupBox4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.groupBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.groupBox4.Location = new System.Drawing.Point(21, 712);
+			this.groupBox4.Location = new System.Drawing.Point(21, 689);
 			this.groupBox4.Name = "groupBox4";
 			this.groupBox4.Size = new System.Drawing.Size(444, 123);
 			this.groupBox4.TabIndex = 62;
@@ -880,7 +875,6 @@
 			// 
 			// bunifuSeparator1
 			// 
-			this.bunifuSeparator1.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
 			this.bunifuSeparator1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuSeparator1.BackgroundImage")));
 			this.bunifuSeparator1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -891,7 +885,7 @@
 			this.bunifuSeparator1.Location = new System.Drawing.Point(21, 46);
 			this.bunifuSeparator1.Name = "bunifuSeparator1";
 			this.bunifuSeparator1.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
-			this.bunifuSeparator1.Size = new System.Drawing.Size(1201, 15);
+			this.bunifuSeparator1.Size = new System.Drawing.Size(1181, 15);
 			this.bunifuSeparator1.TabIndex = 54;
 			// 
 			// UC_Customer
@@ -907,7 +901,7 @@
 			this.Controls.Add(this.groupBox1);
 			this.Controls.Add(this.groupCustomer);
 			this.Name = "UC_Customer";
-			this.Size = new System.Drawing.Size(1242, 859);
+			this.Size = new System.Drawing.Size(1224, 839);
 			this.groupBox1.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.dataGridViewCustomer)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.bindingCustomer)).EndInit();

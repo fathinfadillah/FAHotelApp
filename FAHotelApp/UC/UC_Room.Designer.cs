@@ -90,7 +90,6 @@
 			// 
 			// label1
 			// 
-			this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
@@ -107,7 +106,6 @@
 			// 
 			// bunifuSeparator1
 			// 
-			this.bunifuSeparator1.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
 			this.bunifuSeparator1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuSeparator1.BackgroundImage")));
 			this.bunifuSeparator1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -118,19 +116,18 @@
 			this.bunifuSeparator1.Location = new System.Drawing.Point(21, 46);
 			this.bunifuSeparator1.Name = "bunifuSeparator1";
 			this.bunifuSeparator1.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
-			this.bunifuSeparator1.Size = new System.Drawing.Size(1201, 15);
+			this.bunifuSeparator1.Size = new System.Drawing.Size(1178, 15);
 			this.bunifuSeparator1.TabIndex = 2;
 			// 
 			// groupBox4
 			// 
-			this.groupBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.groupBox4.Controls.Add(this.btnAddRoom);
 			this.groupBox4.Controls.Add(this.btnRoomType);
 			this.groupBox4.Controls.Add(this.btnUpdate);
 			this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.groupBox4.Font = new System.Drawing.Font("Segoe UI", 12F);
 			this.groupBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.groupBox4.Location = new System.Drawing.Point(21, 489);
+			this.groupBox4.Location = new System.Drawing.Point(21, 471);
 			this.groupBox4.Name = "groupBox4";
 			this.groupBox4.Size = new System.Drawing.Size(444, 149);
 			this.groupBox4.TabIndex = 62;
@@ -220,14 +217,13 @@
 			// 
 			// groupBox1
 			// 
-			this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.groupBox1.Controls.Add(this.dataGridViewRoom);
 			this.groupBox1.Controls.Add(this.bindingRoom);
 			this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F);
 			this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.groupBox1.Location = new System.Drawing.Point(494, 67);
+			this.groupBox1.Location = new System.Drawing.Point(471, 67);
 			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(728, 574);
+			this.groupBox1.Size = new System.Drawing.Size(728, 553);
 			this.groupBox1.TabIndex = 61;
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Daftar Kamar";
@@ -284,7 +280,7 @@
 			this.dataGridViewRoom.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.dataGridViewRoom.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.dataGridViewRoom.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-			this.dataGridViewRoom.Size = new System.Drawing.Size(722, 503);
+			this.dataGridViewRoom.Size = new System.Drawing.Size(722, 482);
 			this.dataGridViewRoom.TabIndex = 28;
 			// 
 			// colIDRoom
@@ -467,7 +463,6 @@
 			// 
 			// groupRoom
 			// 
-			this.groupRoom.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.groupRoom.Controls.Add(this.cbID);
 			this.groupRoom.Controls.Add(this.label2);
 			this.groupRoom.Controls.Add(this.label16);
@@ -483,7 +478,7 @@
 			this.groupRoom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.groupRoom.Font = new System.Drawing.Font("Segoe UI", 12F);
 			this.groupRoom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.groupRoom.Location = new System.Drawing.Point(21, 200);
+			this.groupRoom.Location = new System.Drawing.Point(21, 192);
 			this.groupRoom.Name = "groupRoom";
 			this.groupRoom.Size = new System.Drawing.Size(444, 273);
 			this.groupRoom.TabIndex = 60;
@@ -667,7 +662,6 @@
 			// 
 			// groupBox3
 			// 
-			this.groupBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.groupBox3.Controls.Add(this.btnSearch);
 			this.groupBox3.Controls.Add(this.label5);
 			this.groupBox3.Controls.Add(this.txtSearch);
@@ -779,7 +773,7 @@
 			this.Controls.Add(this.bunifuSeparator1);
 			this.Controls.Add(this.label1);
 			this.Name = "UC_Room";
-			this.Size = new System.Drawing.Size(1242, 670);
+			this.Size = new System.Drawing.Size(1225, 644);
 			this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FRoom_KeyPress);
 			this.groupBox4.ResumeLayout(false);
 			this.groupBox1.ResumeLayout(false);

@@ -185,6 +185,7 @@
     <Compile Include="DAO\AccountDAO.cs" />
     <Compile Include="DAO\AccountTypeDAO.cs" />
     <Compile Include="DAO\BillDAO.cs" />
+    <Compile Include="DAO\BillDetailsDAO.cs" />
     <Compile Include="DAO\BookRoomDAO.cs" />
     <Compile Include="DAO\CustomerDAO.cs" />
     <Compile Include="DAO\CustomerTypeDAO.cs" />
@@ -193,6 +194,7 @@
     <Compile Include="DAO\ParameterDAO.cs" />
     <Compile Include="DAO\ReceiveRoomDAO.cs" />
     <Compile Include="DAO\ReceiveRoomDetailsDAO.cs" />
+    <Compile Include="DAO\ReportDAO.cs" />
     <Compile Include="DAO\RoomDAO.cs" />
     <Compile Include="DAO\RoomTypeDAO.cs" />
     <Compile Include="DAO\ServiceDAO.cs" />
@@ -336,6 +338,12 @@
     <Compile Include="Forms\FormTC.Designer.cs">
       <DependentUpon>FormTC.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormUseService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormUseService.Designer.cs">
+      <DependentUpon>FormUseService.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormWelcomeScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -355,6 +363,12 @@
     </Compile>
     <Compile Include="UC\UC_Parameter.Designer.cs">
       <DependentUpon>UC_Parameter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UC_UseService.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UC_UseService.Designer.cs">
+      <DependentUpon>UC_UseService.cs</DependentUpon>
     </Compile>
     <Compile Include="UC\UC_Service.cs">
       <SubType>UserControl</SubType>
@@ -473,6 +487,9 @@
     <EmbeddedResource Include="Forms\FormTC.resx">
       <DependentUpon>FormTC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormUseService.resx">
+      <DependentUpon>FormUseService.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormWelcomeScreen.resx">
       <DependentUpon>FormWelcomeScreen.cs</DependentUpon>
     </EmbeddedResource>
@@ -487,6 +504,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC\UC_Parameter.resx">
       <DependentUpon>UC_Parameter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UC_UseService.resx">
+      <DependentUpon>UC_UseService.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC\UC_Service.resx">
       <DependentUpon>UC_Service.cs</DependentUpon>
@@ -640,6 +660,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\calendar_120px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Room.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

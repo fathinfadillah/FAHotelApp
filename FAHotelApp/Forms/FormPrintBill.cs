@@ -49,12 +49,12 @@ namespace FAHotelApp.Forms
 				id++;
 
 				ListViewItem.ListViewSubItem subItem1 = new ListViewItem.ListViewSubItem(listViewItem, item["Nama Layanan"].ToString());
-				ListViewItem.ListViewSubItem subItem2 = new ListViewItem.ListViewSubItem(listViewItem, ((int)item["Harga"]).ToString("Rp.", cultureInfo));
+				ListViewItem.ListViewSubItem subItem2 = new ListViewItem.ListViewSubItem(listViewItem, ((int)item["Harga"]).ToString("c", cultureInfo));
 				ListViewItem.ListViewSubItem subItem3 = new ListViewItem.ListViewSubItem(listViewItem, ((int)item["Jumlah"]).ToString());
-				ListViewItem.ListViewSubItem subItem4 = new ListViewItem.ListViewSubItem(listViewItem, ((int)item["Total"]).ToString("Rp.", cultureInfo));
+				ListViewItem.ListViewSubItem subItem4 = new ListViewItem.ListViewSubItem(listViewItem, ((int)item["Total Harga"]).ToString("c", cultureInfo));
 
 
-				_totalPrice += (int)item["Total"];
+				_totalPrice += (int)item["Total Harga"];
 
 				listViewItem.SubItems.Add(subItem1);
 				listViewItem.SubItems.Add(subItem2);
@@ -65,7 +65,7 @@ namespace FAHotelApp.Forms
 			}
 
 			ListViewItem listViewItemTotalPrice = new ListViewItem();
-			ListViewItem.ListViewSubItem subItemTotalPrice = new ListViewItem.ListViewSubItem(listViewItemTotalPrice, _totalPrice.ToString("Rp.", cultureInfo));
+			ListViewItem.ListViewSubItem subItemTotalPrice = new ListViewItem.ListViewSubItem(listViewItemTotalPrice, _totalPrice.ToString("c", cultureInfo));
 			ListViewItem.ListViewSubItem _subItem1 = new ListViewItem.ListViewSubItem(listViewItemTotalPrice, "");
 			ListViewItem.ListViewSubItem _subItem2 = new ListViewItem.ListViewSubItem(listViewItemTotalPrice, "");
 			ListViewItem.ListViewSubItem _subItem3 = new ListViewItem.ListViewSubItem(listViewItemTotalPrice, "");
@@ -126,9 +126,9 @@ namespace FAHotelApp.Forms
 		private void btnPrint_Click(object sender, EventArgs e)
 		{
 			Graphics graphics = this.CreateGraphics();
-			bitmap = new Bitmap(708, 647, graphics);
+			bitmap = new Bitmap(705, 655, graphics);
 			Graphics _graphics = Graphics.FromImage(bitmap);
-			_graphics.CopyFromScreen(this.Location.X, this.Location.Y + 28, 0, 0, new Size(708, 647));
+			_graphics.CopyFromScreen(this.Location.X, this.Location.Y + 60, 0, 0, new Size(708, 655));
 			bitmap.Save(Application.StartupPath + @"\Bill.Png", ImageFormat.Png);
 			bitmap = new Bitmap(Application.StartupPath + @"\Bill.Png");
 			if (printDialog1.ShowDialog() == DialogResult.OK)

@@ -86,8 +86,7 @@ namespace FAHotelApp.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-LHKUU3D;Initial Catalog=HotelManagement;Persist Security Info" +
-            "=True;User ID=sa;Password=123456")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=localhost;Initial Catalog=FAHotel;Integrated Security=True")]
         public string FAHotelConnectionString {
             get {
                 return ((string)(this["FAHotelConnectionString"]));

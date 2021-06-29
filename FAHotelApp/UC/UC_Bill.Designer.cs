@@ -97,12 +97,11 @@
 			// 
 			// groupBox1
 			// 
-			this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.groupBox1.Controls.Add(this.dataGridViewBill);
 			this.groupBox1.Controls.Add(this.bindingBill);
 			this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F);
 			this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.groupBox1.Location = new System.Drawing.Point(491, 67);
+			this.groupBox1.Location = new System.Drawing.Point(471, 67);
 			this.groupBox1.Name = "groupBox1";
 			this.groupBox1.Size = new System.Drawing.Size(731, 661);
 			this.groupBox1.TabIndex = 39;
@@ -350,7 +349,6 @@
 			// 
 			// label1
 			// 
-			this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
@@ -362,7 +360,6 @@
 			// 
 			// bunifuSeparator1
 			// 
-			this.bunifuSeparator1.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
 			this.bunifuSeparator1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuSeparator1.BackgroundImage")));
 			this.bunifuSeparator1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -373,7 +370,7 @@
 			this.bunifuSeparator1.Location = new System.Drawing.Point(21, 46);
 			this.bunifuSeparator1.Name = "bunifuSeparator1";
 			this.bunifuSeparator1.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
-			this.bunifuSeparator1.Size = new System.Drawing.Size(1201, 15);
+			this.bunifuSeparator1.Size = new System.Drawing.Size(1181, 15);
 			this.bunifuSeparator1.TabIndex = 54;
 			// 
 			// btnCancel
@@ -482,7 +479,6 @@
 			// 
 			// groupBox5
 			// 
-			this.groupBox5.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.groupBox5.Controls.Add(this.cbBillSearch);
 			this.groupBox5.Controls.Add(this.txtSearch);
 			this.groupBox5.Controls.Add(this.btnSearch);
@@ -526,12 +522,11 @@
 			// 
 			// groupBox4
 			// 
-			this.groupBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.groupBox4.Controls.Add(this.btnSeenBill);
 			this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.groupBox4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.groupBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.groupBox4.Location = new System.Drawing.Point(21, 605);
+			this.groupBox4.Location = new System.Drawing.Point(21, 598);
 			this.groupBox4.Name = "groupBox4";
 			this.groupBox4.Size = new System.Drawing.Size(444, 123);
 			this.groupBox4.TabIndex = 62;
@@ -655,7 +650,6 @@
 			// 
 			// groupCustomer
 			// 
-			this.groupCustomer.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.groupCustomer.Controls.Add(this.txbFinalPrice);
 			this.groupCustomer.Controls.Add(this.label3);
 			this.groupCustomer.Controls.Add(this.txbDiscount);
@@ -819,7 +813,7 @@
 			this.Controls.Add(this.groupBox1);
 			this.Controls.Add(this.groupCustomer);
 			this.Name = "UC_Bill";
-			this.Size = new System.Drawing.Size(1242, 745);
+			this.Size = new System.Drawing.Size(1220, 745);
 			this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FBill_KeyPress);
 			this.groupBox1.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.dataGridViewBill)).EndInit();

@@ -29,22 +29,17 @@
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_BookingRoom));
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
 			this.label1 = new System.Windows.Forms.Label();
 			this.groupBox3 = new System.Windows.Forms.GroupBox();
 			this.btnSearch = new Bunifu.Framework.UI.BunifuThinButton2();
 			this.txtIDCardSearch = new Bunifu.Framework.UI.BunifuMetroTextbox();
 			this.label9 = new System.Windows.Forms.Label();
-			this.groupBox5 = new System.Windows.Forms.GroupBox();
-			this.bunifuCheckbox1 = new Bunifu.Framework.UI.BunifuCheckbox();
-			this.label2 = new System.Windows.Forms.Label();
-			this.btnCancel = new Bunifu.Framework.UI.BunifuThinButton2();
-			this.btnBookRoom = new Bunifu.Framework.UI.BunifuThinButton2();
 			this.groupBox6 = new System.Windows.Forms.GroupBox();
 			this.cbRoomType = new MetroFramework.Controls.MetroComboBox();
 			this.dtpDateCheckOut = new Bunifu.Framework.UI.BunifuDatepicker();
@@ -64,6 +59,10 @@
 			this.label4 = new System.Windows.Forms.Label();
 			this.txtRoomTypeID = new Bunifu.Framework.UI.BunifuMetroTextbox();
 			this.label3 = new System.Windows.Forms.Label();
+			this.groupBox4 = new System.Windows.Forms.GroupBox();
+			this.panel2 = new System.Windows.Forms.Panel();
+			this.btnDetails = new Bunifu.Framework.UI.BunifuThinButton2();
+			this.dataGridViewBookRoom = new System.Windows.Forms.DataGridView();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
 			this.cbNationality = new MetroFramework.Controls.MetroComboBox();
 			this.dtpDateOfBirth = new Bunifu.Framework.UI.BunifuDatepicker();
@@ -82,18 +81,19 @@
 			this.label15 = new System.Windows.Forms.Label();
 			this.txtFullName = new Bunifu.Framework.UI.BunifuMetroTextbox();
 			this.label16 = new System.Windows.Forms.Label();
-			this.groupBox4 = new System.Windows.Forms.GroupBox();
-			this.panel2 = new System.Windows.Forms.Panel();
-			this.btnDetails = new Bunifu.Framework.UI.BunifuThinButton2();
-			this.dataGridViewBookRoom = new System.Windows.Forms.DataGridView();
+			this.groupBox5 = new System.Windows.Forms.GroupBox();
+			this.bunifuCheckbox1 = new Bunifu.Framework.UI.BunifuCheckbox();
+			this.label2 = new System.Windows.Forms.Label();
+			this.btnCancel = new Bunifu.Framework.UI.BunifuThinButton2();
+			this.btnBookRoom = new Bunifu.Framework.UI.BunifuThinButton2();
 			this.groupBox3.SuspendLayout();
-			this.groupBox5.SuspendLayout();
 			this.groupBox6.SuspendLayout();
 			this.groupBox1.SuspendLayout();
-			this.groupBox2.SuspendLayout();
 			this.groupBox4.SuspendLayout();
 			this.panel2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridViewBookRoom)).BeginInit();
+			this.groupBox2.SuspendLayout();
+			this.groupBox5.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// bunifuSeparator1
@@ -105,10 +105,10 @@
 			this.bunifuSeparator1.LineColor = System.Drawing.Color.Silver;
 			this.bunifuSeparator1.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
 			this.bunifuSeparator1.LineThickness = 1;
-			this.bunifuSeparator1.Location = new System.Drawing.Point(21, 46);
+			this.bunifuSeparator1.Location = new System.Drawing.Point(22, 46);
 			this.bunifuSeparator1.Name = "bunifuSeparator1";
 			this.bunifuSeparator1.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
-			this.bunifuSeparator1.Size = new System.Drawing.Size(1201, 15);
+			this.bunifuSeparator1.Size = new System.Drawing.Size(1190, 15);
 			this.bunifuSeparator1.TabIndex = 4;
 			// 
 			// label1
@@ -116,7 +116,7 @@
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.label1.Location = new System.Drawing.Point(20, 6);
+			this.label1.Location = new System.Drawing.Point(25, 6);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(198, 37);
 			this.label1.TabIndex = 3;
@@ -129,9 +129,9 @@
 			this.groupBox3.Controls.Add(this.label9);
 			this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 12F);
 			this.groupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.groupBox3.Location = new System.Drawing.Point(20, 243);
+			this.groupBox3.Location = new System.Drawing.Point(22, 221);
 			this.groupBox3.Name = "groupBox3";
-			this.groupBox3.Size = new System.Drawing.Size(454, 106);
+			this.groupBox3.Size = new System.Drawing.Size(458, 93);
 			this.groupBox3.TabIndex = 52;
 			this.groupBox3.TabStop = false;
 			this.groupBox3.Text = "Cari Pelanggan:";
@@ -193,97 +193,6 @@
 			this.label9.TabIndex = 28;
 			this.label9.Text = "KTP/Kartu Tanda Penduduk:";
 			// 
-			// groupBox5
-			// 
-			this.groupBox5.Controls.Add(this.bunifuCheckbox1);
-			this.groupBox5.Controls.Add(this.label2);
-			this.groupBox5.Controls.Add(this.btnCancel);
-			this.groupBox5.Controls.Add(this.btnBookRoom);
-			this.groupBox5.Font = new System.Drawing.Font("Segoe UI", 12F);
-			this.groupBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.groupBox5.Location = new System.Drawing.Point(492, 376);
-			this.groupBox5.Name = "groupBox5";
-			this.groupBox5.Size = new System.Drawing.Size(252, 265);
-			this.groupBox5.TabIndex = 51;
-			this.groupBox5.TabStop = false;
-			this.groupBox5.Text = "Menu";
-			// 
-			// bunifuCheckbox1
-			// 
-			this.bunifuCheckbox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-			this.bunifuCheckbox1.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-			this.bunifuCheckbox1.Checked = false;
-			this.bunifuCheckbox1.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.bunifuCheckbox1.ForeColor = System.Drawing.Color.White;
-			this.bunifuCheckbox1.Location = new System.Drawing.Point(22, 63);
-			this.bunifuCheckbox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-			this.bunifuCheckbox1.Name = "bunifuCheckbox1";
-			this.bunifuCheckbox1.Size = new System.Drawing.Size(20, 20);
-			this.bunifuCheckbox1.TabIndex = 48;
-			// 
-			// label2
-			// 
-			this.label2.AutoSize = true;
-			this.label2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.label2.Location = new System.Drawing.Point(49, 65);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(145, 20);
-			this.label2.TabIndex = 47;
-			this.label2.Text = "Pergi Untuk Check-In";
-			// 
-			// btnCancel
-			// 
-			this.btnCancel.ActiveBorderThickness = 1;
-			this.btnCancel.ActiveCornerRadius = 20;
-			this.btnCancel.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnCancel.ActiveForecolor = System.Drawing.Color.White;
-			this.btnCancel.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnCancel.BackColor = System.Drawing.Color.White;
-			this.btnCancel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCancel.BackgroundImage")));
-			this.btnCancel.ButtonText = "Batal";
-			this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnCancel.IdleBorderThickness = 1;
-			this.btnCancel.IdleCornerRadius = 20;
-			this.btnCancel.IdleFillColor = System.Drawing.Color.White;
-			this.btnCancel.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnCancel.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnCancel.Location = new System.Drawing.Point(21, 179);
-			this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-			this.btnCancel.Name = "btnCancel";
-			this.btnCancel.Size = new System.Drawing.Size(203, 40);
-			this.btnCancel.TabIndex = 46;
-			this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-			// 
-			// btnBookRoom
-			// 
-			this.btnBookRoom.ActiveBorderThickness = 1;
-			this.btnBookRoom.ActiveCornerRadius = 20;
-			this.btnBookRoom.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnBookRoom.ActiveForecolor = System.Drawing.Color.White;
-			this.btnBookRoom.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnBookRoom.BackColor = System.Drawing.Color.White;
-			this.btnBookRoom.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBookRoom.BackgroundImage")));
-			this.btnBookRoom.ButtonText = "Booking Kamar";
-			this.btnBookRoom.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnBookRoom.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnBookRoom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnBookRoom.IdleBorderThickness = 1;
-			this.btnBookRoom.IdleCornerRadius = 20;
-			this.btnBookRoom.IdleFillColor = System.Drawing.Color.White;
-			this.btnBookRoom.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnBookRoom.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnBookRoom.Location = new System.Drawing.Point(21, 116);
-			this.btnBookRoom.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-			this.btnBookRoom.Name = "btnBookRoom";
-			this.btnBookRoom.Size = new System.Drawing.Size(203, 40);
-			this.btnBookRoom.TabIndex = 45;
-			this.btnBookRoom.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.btnBookRoom.Click += new System.EventHandler(this.btnBookRoom_Click);
-			// 
 			// groupBox6
 			// 
 			this.groupBox6.Controls.Add(this.cbRoomType);
@@ -296,9 +205,9 @@
 			this.groupBox6.Controls.Add(this.label21);
 			this.groupBox6.Font = new System.Drawing.Font("Segoe UI", 12F);
 			this.groupBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.groupBox6.Location = new System.Drawing.Point(21, 67);
+			this.groupBox6.Location = new System.Drawing.Point(22, 67);
 			this.groupBox6.Name = "groupBox6";
-			this.groupBox6.Size = new System.Drawing.Size(453, 150);
+			this.groupBox6.Size = new System.Drawing.Size(458, 148);
 			this.groupBox6.TabIndex = 50;
 			this.groupBox6.TabStop = false;
 			this.groupBox6.Text = "Informasi Pendaftaran";
@@ -430,9 +339,9 @@
 			this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F);
 			this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.groupBox1.Location = new System.Drawing.Point(492, 67);
+			this.groupBox1.Location = new System.Drawing.Point(486, 62);
 			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(252, 282);
+			this.groupBox1.Size = new System.Drawing.Size(251, 252);
 			this.groupBox1.TabIndex = 47;
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Informasi Tipe Kamar";
@@ -574,6 +483,113 @@
 			this.label3.TabIndex = 22;
 			this.label3.Text = "Kode Kamar:";
 			// 
+			// groupBox4
+			// 
+			this.groupBox4.Controls.Add(this.panel2);
+			this.groupBox4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.groupBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.groupBox4.Location = new System.Drawing.Point(743, 67);
+			this.groupBox4.Name = "groupBox4";
+			this.groupBox4.Size = new System.Drawing.Size(469, 510);
+			this.groupBox4.TabIndex = 49;
+			this.groupBox4.TabStop = false;
+			this.groupBox4.Text = "Daftar Pemesan Untuk Hari Ini";
+			// 
+			// panel2
+			// 
+			this.panel2.Controls.Add(this.btnDetails);
+			this.panel2.Controls.Add(this.dataGridViewBookRoom);
+			this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.panel2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.panel2.Location = new System.Drawing.Point(3, 25);
+			this.panel2.Name = "panel2";
+			this.panel2.Size = new System.Drawing.Size(463, 482);
+			this.panel2.TabIndex = 39;
+			// 
+			// btnDetails
+			// 
+			this.btnDetails.ActiveBorderThickness = 1;
+			this.btnDetails.ActiveCornerRadius = 20;
+			this.btnDetails.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnDetails.ActiveForecolor = System.Drawing.Color.White;
+			this.btnDetails.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnDetails.BackColor = System.Drawing.Color.White;
+			this.btnDetails.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDetails.BackgroundImage")));
+			this.btnDetails.ButtonText = "Lihat Detail";
+			this.btnDetails.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnDetails.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnDetails.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnDetails.IdleBorderThickness = 1;
+			this.btnDetails.IdleCornerRadius = 20;
+			this.btnDetails.IdleFillColor = System.Drawing.Color.White;
+			this.btnDetails.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnDetails.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnDetails.Location = new System.Drawing.Point(235, 410);
+			this.btnDetails.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.btnDetails.Name = "btnDetails";
+			this.btnDetails.Size = new System.Drawing.Size(203, 40);
+			this.btnDetails.TabIndex = 49;
+			this.btnDetails.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.btnDetails.Click += new System.EventHandler(this.btnDetails_Click);
+			// 
+			// dataGridViewBookRoom
+			// 
+			this.dataGridViewBookRoom.AllowDrop = true;
+			this.dataGridViewBookRoom.AllowUserToAddRows = false;
+			this.dataGridViewBookRoom.AllowUserToDeleteRows = false;
+			dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.dataGridViewBookRoom.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+			this.dataGridViewBookRoom.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+			this.dataGridViewBookRoom.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
+			this.dataGridViewBookRoom.BackgroundColor = System.Drawing.Color.White;
+			this.dataGridViewBookRoom.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dataGridViewBookRoom.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+			this.dataGridViewBookRoom.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
+			dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.dataGridViewBookRoom.DefaultCellStyle = dataGridViewCellStyle8;
+			this.dataGridViewBookRoom.GridColor = System.Drawing.Color.White;
+			this.dataGridViewBookRoom.Location = new System.Drawing.Point(0, 0);
+			this.dataGridViewBookRoom.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+			this.dataGridViewBookRoom.Name = "dataGridViewBookRoom";
+			this.dataGridViewBookRoom.ReadOnly = true;
+			dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dataGridViewBookRoom.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+			this.dataGridViewBookRoom.RowHeadersVisible = false;
+			dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dataGridViewBookRoom.RowsDefaultCellStyle = dataGridViewCellStyle10;
+			this.dataGridViewBookRoom.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.dataGridViewBookRoom.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.dataGridViewBookRoom.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.White;
+			this.dataGridViewBookRoom.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+			this.dataGridViewBookRoom.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+			this.dataGridViewBookRoom.Size = new System.Drawing.Size(460, 379);
+			this.dataGridViewBookRoom.StandardTab = true;
+			this.dataGridViewBookRoom.TabIndex = 7;
+			// 
 			// groupBox2
 			// 
 			this.groupBox2.Controls.Add(this.cbNationality);
@@ -596,9 +612,9 @@
 			this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 12F);
 			this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.groupBox2.Location = new System.Drawing.Point(20, 376);
+			this.groupBox2.Location = new System.Drawing.Point(22, 320);
 			this.groupBox2.Name = "groupBox2";
-			this.groupBox2.Size = new System.Drawing.Size(453, 265);
+			this.groupBox2.Size = new System.Drawing.Size(458, 257);
 			this.groupBox2.TabIndex = 48;
 			this.groupBox2.TabStop = false;
 			this.groupBox2.Text = "Informasi Pengguna";
@@ -640,11 +656,11 @@
 			this.dtpDateOfBirth.ForeColor = System.Drawing.Color.White;
 			this.dtpDateOfBirth.Format = System.Windows.Forms.DateTimePickerFormat.Short;
 			this.dtpDateOfBirth.FormatCustom = null;
-			this.dtpDateOfBirth.Location = new System.Drawing.Point(240, 46);
+			this.dtpDateOfBirth.Location = new System.Drawing.Point(240, 45);
 			this.dtpDateOfBirth.Margin = new System.Windows.Forms.Padding(14, 21, 14, 21);
 			this.dtpDateOfBirth.Name = "dtpDateOfBirth";
 			this.dtpDateOfBirth.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.dtpDateOfBirth.Size = new System.Drawing.Size(203, 29);
+			this.dtpDateOfBirth.Size = new System.Drawing.Size(202, 29);
 			this.dtpDateOfBirth.TabIndex = 47;
 			this.dtpDateOfBirth.Value = new System.DateTime(2018, 2, 23, 23, 29, 57, 962);
 			// 
@@ -862,112 +878,96 @@
 			this.label16.TabIndex = 22;
 			this.label16.Text = "Nama Lengkap:";
 			// 
-			// groupBox4
+			// groupBox5
 			// 
-			this.groupBox4.Controls.Add(this.panel2);
-			this.groupBox4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.groupBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.groupBox4.Location = new System.Drawing.Point(750, 67);
-			this.groupBox4.Name = "groupBox4";
-			this.groupBox4.Size = new System.Drawing.Size(453, 577);
-			this.groupBox4.TabIndex = 49;
-			this.groupBox4.TabStop = false;
-			this.groupBox4.Text = "Daftar Pemesan Untuk Hari Ini";
+			this.groupBox5.Controls.Add(this.bunifuCheckbox1);
+			this.groupBox5.Controls.Add(this.label2);
+			this.groupBox5.Controls.Add(this.btnCancel);
+			this.groupBox5.Controls.Add(this.btnBookRoom);
+			this.groupBox5.Font = new System.Drawing.Font("Segoe UI", 12F);
+			this.groupBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.groupBox5.Location = new System.Drawing.Point(486, 320);
+			this.groupBox5.Name = "groupBox5";
+			this.groupBox5.Size = new System.Drawing.Size(251, 257);
+			this.groupBox5.TabIndex = 51;
+			this.groupBox5.TabStop = false;
+			this.groupBox5.Text = "Menu";
 			// 
-			// panel2
+			// bunifuCheckbox1
 			// 
-			this.panel2.Controls.Add(this.btnDetails);
-			this.panel2.Controls.Add(this.dataGridViewBookRoom);
-			this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.panel2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.panel2.Location = new System.Drawing.Point(3, 25);
-			this.panel2.Name = "panel2";
-			this.panel2.Size = new System.Drawing.Size(447, 549);
-			this.panel2.TabIndex = 39;
+			this.bunifuCheckbox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+			this.bunifuCheckbox1.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+			this.bunifuCheckbox1.Checked = false;
+			this.bunifuCheckbox1.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.bunifuCheckbox1.ForeColor = System.Drawing.Color.White;
+			this.bunifuCheckbox1.Location = new System.Drawing.Point(22, 63);
+			this.bunifuCheckbox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.bunifuCheckbox1.Name = "bunifuCheckbox1";
+			this.bunifuCheckbox1.Size = new System.Drawing.Size(20, 20);
+			this.bunifuCheckbox1.TabIndex = 48;
 			// 
-			// btnDetails
+			// label2
 			// 
-			this.btnDetails.ActiveBorderThickness = 1;
-			this.btnDetails.ActiveCornerRadius = 20;
-			this.btnDetails.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnDetails.ActiveForecolor = System.Drawing.Color.White;
-			this.btnDetails.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnDetails.BackColor = System.Drawing.Color.White;
-			this.btnDetails.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDetails.BackgroundImage")));
-			this.btnDetails.ButtonText = "Lihat Detail";
-			this.btnDetails.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnDetails.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnDetails.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnDetails.IdleBorderThickness = 1;
-			this.btnDetails.IdleCornerRadius = 20;
-			this.btnDetails.IdleFillColor = System.Drawing.Color.White;
-			this.btnDetails.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnDetails.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnDetails.Location = new System.Drawing.Point(230, 494);
-			this.btnDetails.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-			this.btnDetails.Name = "btnDetails";
-			this.btnDetails.Size = new System.Drawing.Size(203, 40);
-			this.btnDetails.TabIndex = 49;
-			this.btnDetails.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.btnDetails.Click += new System.EventHandler(this.btnDetails_Click);
+			this.label2.AutoSize = true;
+			this.label2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.label2.Location = new System.Drawing.Point(49, 65);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(145, 20);
+			this.label2.TabIndex = 47;
+			this.label2.Text = "Pergi Untuk Check-In";
 			// 
-			// dataGridViewBookRoom
+			// btnCancel
 			// 
-			this.dataGridViewBookRoom.AllowDrop = true;
-			this.dataGridViewBookRoom.AllowUserToAddRows = false;
-			this.dataGridViewBookRoom.AllowUserToDeleteRows = false;
-			dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-			dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.dataGridViewBookRoom.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-			this.dataGridViewBookRoom.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-			this.dataGridViewBookRoom.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
-			this.dataGridViewBookRoom.BackgroundColor = System.Drawing.Color.White;
-			this.dataGridViewBookRoom.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dataGridViewBookRoom.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-			this.dataGridViewBookRoom.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-			dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.dataGridViewBookRoom.DefaultCellStyle = dataGridViewCellStyle3;
-			this.dataGridViewBookRoom.GridColor = System.Drawing.Color.White;
-			this.dataGridViewBookRoom.Location = new System.Drawing.Point(0, 0);
-			this.dataGridViewBookRoom.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-			this.dataGridViewBookRoom.Name = "dataGridViewBookRoom";
-			this.dataGridViewBookRoom.ReadOnly = true;
-			dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-			dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dataGridViewBookRoom.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-			this.dataGridViewBookRoom.RowHeadersVisible = false;
-			dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dataGridViewBookRoom.RowsDefaultCellStyle = dataGridViewCellStyle5;
-			this.dataGridViewBookRoom.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.dataGridViewBookRoom.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.dataGridViewBookRoom.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.White;
-			this.dataGridViewBookRoom.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-			this.dataGridViewBookRoom.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-			this.dataGridViewBookRoom.Size = new System.Drawing.Size(447, 485);
-			this.dataGridViewBookRoom.StandardTab = true;
-			this.dataGridViewBookRoom.TabIndex = 7;
+			this.btnCancel.ActiveBorderThickness = 1;
+			this.btnCancel.ActiveCornerRadius = 20;
+			this.btnCancel.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnCancel.ActiveForecolor = System.Drawing.Color.White;
+			this.btnCancel.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnCancel.BackColor = System.Drawing.Color.White;
+			this.btnCancel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCancel.BackgroundImage")));
+			this.btnCancel.ButtonText = "Batal";
+			this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnCancel.IdleBorderThickness = 1;
+			this.btnCancel.IdleCornerRadius = 20;
+			this.btnCancel.IdleFillColor = System.Drawing.Color.White;
+			this.btnCancel.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnCancel.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnCancel.Location = new System.Drawing.Point(21, 179);
+			this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.btnCancel.Name = "btnCancel";
+			this.btnCancel.Size = new System.Drawing.Size(203, 40);
+			this.btnCancel.TabIndex = 46;
+			this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+			// 
+			// btnBookRoom
+			// 
+			this.btnBookRoom.ActiveBorderThickness = 1;
+			this.btnBookRoom.ActiveCornerRadius = 20;
+			this.btnBookRoom.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnBookRoom.ActiveForecolor = System.Drawing.Color.White;
+			this.btnBookRoom.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnBookRoom.BackColor = System.Drawing.Color.White;
+			this.btnBookRoom.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBookRoom.BackgroundImage")));
+			this.btnBookRoom.ButtonText = "Booking Kamar";
+			this.btnBookRoom.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnBookRoom.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnBookRoom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnBookRoom.IdleBorderThickness = 1;
+			this.btnBookRoom.IdleCornerRadius = 20;
+			this.btnBookRoom.IdleFillColor = System.Drawing.Color.White;
+			this.btnBookRoom.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnBookRoom.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnBookRoom.Location = new System.Drawing.Point(21, 116);
+			this.btnBookRoom.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.btnBookRoom.Name = "btnBookRoom";
+			this.btnBookRoom.Size = new System.Drawing.Size(203, 40);
+			this.btnBookRoom.TabIndex = 45;
+			this.btnBookRoom.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.btnBookRoom.Click += new System.EventHandler(this.btnBookRoom_Click);
 			// 
 			// UC_BookingRoom
 			// 
@@ -977,27 +977,27 @@
 			this.BackColor = System.Drawing.Color.White;
 			this.Controls.Add(this.groupBox6);
 			this.Controls.Add(this.groupBox3);
-			this.Controls.Add(this.groupBox5);
-			this.Controls.Add(this.groupBox1);
 			this.Controls.Add(this.groupBox2);
 			this.Controls.Add(this.groupBox4);
+			this.Controls.Add(this.groupBox5);
+			this.Controls.Add(this.groupBox1);
 			this.Controls.Add(this.bunifuSeparator1);
 			this.Controls.Add(this.label1);
 			this.Name = "UC_BookingRoom";
-			this.Size = new System.Drawing.Size(1242, 670);
+			this.Size = new System.Drawing.Size(1229, 598);
 			this.groupBox3.ResumeLayout(false);
 			this.groupBox3.PerformLayout();
-			this.groupBox5.ResumeLayout(false);
-			this.groupBox5.PerformLayout();
 			this.groupBox6.ResumeLayout(false);
 			this.groupBox6.PerformLayout();
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
-			this.groupBox2.ResumeLayout(false);
-			this.groupBox2.PerformLayout();
 			this.groupBox4.ResumeLayout(false);
 			this.panel2.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.dataGridViewBookRoom)).EndInit();
+			this.groupBox2.ResumeLayout(false);
+			this.groupBox2.PerformLayout();
+			this.groupBox5.ResumeLayout(false);
+			this.groupBox5.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -1011,11 +1011,6 @@
 		private Bunifu.Framework.UI.BunifuThinButton2 btnSearch;
 		private Bunifu.Framework.UI.BunifuMetroTextbox txtIDCardSearch;
 		private System.Windows.Forms.Label label9;
-		private System.Windows.Forms.GroupBox groupBox5;
-		private Bunifu.Framework.UI.BunifuCheckbox bunifuCheckbox1;
-		private System.Windows.Forms.Label label2;
-		private Bunifu.Framework.UI.BunifuThinButton2 btnCancel;
-		private Bunifu.Framework.UI.BunifuThinButton2 btnBookRoom;
 		private System.Windows.Forms.GroupBox groupBox6;
 		private MetroFramework.Controls.MetroComboBox cbRoomType;
 		private Bunifu.Framework.UI.BunifuDatepicker dtpDateCheckOut;
@@ -1035,7 +1030,12 @@
 		private System.Windows.Forms.Label label4;
 		private Bunifu.Framework.UI.BunifuMetroTextbox txtRoomTypeID;
 		private System.Windows.Forms.Label label3;
+		private System.Windows.Forms.GroupBox groupBox4;
+		private System.Windows.Forms.Panel panel2;
+		private Bunifu.Framework.UI.BunifuThinButton2 btnDetails;
+		private System.Windows.Forms.DataGridView dataGridViewBookRoom;
 		private System.Windows.Forms.GroupBox groupBox2;
+		private MetroFramework.Controls.MetroComboBox cbNationality;
 		private Bunifu.Framework.UI.BunifuDatepicker dtpDateOfBirth;
 		private System.Windows.Forms.Label label6;
 		private MetroFramework.Controls.MetroComboBox cbCustomerType;
@@ -1052,10 +1052,10 @@
 		private System.Windows.Forms.Label label15;
 		private Bunifu.Framework.UI.BunifuMetroTextbox txtFullName;
 		private System.Windows.Forms.Label label16;
-		private System.Windows.Forms.GroupBox groupBox4;
-		private System.Windows.Forms.Panel panel2;
-		private Bunifu.Framework.UI.BunifuThinButton2 btnDetails;
-		private System.Windows.Forms.DataGridView dataGridViewBookRoom;
-		private MetroFramework.Controls.MetroComboBox cbNationality;
+		private System.Windows.Forms.GroupBox groupBox5;
+		private Bunifu.Framework.UI.BunifuCheckbox bunifuCheckbox1;
+		private System.Windows.Forms.Label label2;
+		private Bunifu.Framework.UI.BunifuThinButton2 btnCancel;
+		private Bunifu.Framework.UI.BunifuThinButton2 btnBookRoom;
 	}
 }

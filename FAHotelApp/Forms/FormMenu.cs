@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FAHotelApp.DAO;
 using FAHotelApp.DTO;
+using FAHotelApp.UC;
 
 namespace FAHotelApp.Forms
 {
@@ -69,7 +70,15 @@ namespace FAHotelApp.Forms
 
 		private void bunifuButton3_Click(object sender, EventArgs e)
 		{
-
+			if (CheckAccess("LayanandanPembayaran"))
+			{
+				//bunifuPages1.SetPage(LayanandanPembayaran);
+				this.Hide();
+				FormUseService f = new FormUseService(userName);
+				f.ShowDialog();
+				this.Show();
+			}
+			else MessageBox.Show("Anda tidak memiliki izin untuk mengakses.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 		}
 
 		private void bunifuButton1_Click(object sender, EventArgs e)

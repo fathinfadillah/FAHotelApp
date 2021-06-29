@@ -30,9 +30,9 @@
 		{
 			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Staff));
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.saveStaff = new System.Windows.Forms.SaveFileDialog();
 			this.groupBox4 = new System.Windows.Forms.GroupBox();
 			this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -106,7 +106,6 @@
 			// 
 			// groupBox4
 			// 
-			this.groupBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.groupBox4.Controls.Add(this.bunifuThinButton21);
 			this.groupBox4.Controls.Add(this.btnInsert);
 			this.groupBox4.Controls.Add(this.btnReset);
@@ -114,7 +113,7 @@
 			this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.groupBox4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.groupBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.groupBox4.Location = new System.Drawing.Point(21, 711);
+			this.groupBox4.Location = new System.Drawing.Point(21, 678);
 			this.groupBox4.Name = "groupBox4";
 			this.groupBox4.Size = new System.Drawing.Size(444, 165);
 			this.groupBox4.TabIndex = 49;
@@ -231,7 +230,6 @@
 			// 
 			// groupStaff
 			// 
-			this.groupStaff.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.groupStaff.Controls.Add(this.dtpStartDay);
 			this.groupStaff.Controls.Add(this.label16);
 			this.groupStaff.Controls.Add(this.label7);
@@ -241,7 +239,7 @@
 			this.groupStaff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.groupStaff.Font = new System.Drawing.Font("Segoe UI", 12F);
 			this.groupStaff.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.groupStaff.Location = new System.Drawing.Point(21, 494);
+			this.groupStaff.Location = new System.Drawing.Point(21, 471);
 			this.groupStaff.Name = "groupStaff";
 			this.groupStaff.Size = new System.Drawing.Size(444, 201);
 			this.groupStaff.TabIndex = 47;
@@ -444,14 +442,13 @@
 			// 
 			// groupBox1
 			// 
-			this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.groupBox1.Controls.Add(this.dataGridStaff);
 			this.groupBox1.Controls.Add(this.bindingStaff);
 			this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F);
 			this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.groupBox1.Location = new System.Drawing.Point(490, 67);
+			this.groupBox1.Location = new System.Drawing.Point(471, 67);
 			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(732, 809);
+			this.groupBox1.Size = new System.Drawing.Size(732, 776);
 			this.groupBox1.TabIndex = 50;
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Daftar Karyawan";
@@ -463,14 +460,14 @@
 			this.dataGridStaff.AllowUserToResizeRows = false;
 			this.dataGridStaff.BackgroundColor = System.Drawing.Color.White;
 			this.dataGridStaff.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-			dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F);
-			dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dataGridStaff.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+			dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.ActiveCaption;
+			dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 12F);
+			dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dataGridStaff.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
 			this.dataGridStaff.ColumnHeadersHeight = 29;
 			this.dataGridStaff.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
 			this.dataGridStaff.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -484,34 +481,34 @@
             this.colStartDay,
             this.colAddress,
             this.colIDStaffType});
-			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-			dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F);
-			dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.dataGridStaff.DefaultCellStyle = dataGridViewCellStyle2;
+			dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+			dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 12F);
+			dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.dataGridStaff.DefaultCellStyle = dataGridViewCellStyle5;
 			this.dataGridStaff.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.dataGridStaff.GridColor = System.Drawing.Color.White;
 			this.dataGridStaff.Location = new System.Drawing.Point(3, 68);
 			this.dataGridStaff.Name = "dataGridStaff";
 			this.dataGridStaff.ReadOnly = true;
-			dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F);
-			dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dataGridStaff.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+			dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 12F);
+			dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dataGridStaff.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
 			this.dataGridStaff.RowHeadersVisible = false;
 			this.dataGridStaff.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
 			this.dataGridStaff.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
 			this.dataGridStaff.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.dataGridStaff.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.dataGridStaff.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-			this.dataGridStaff.Size = new System.Drawing.Size(726, 738);
+			this.dataGridStaff.Size = new System.Drawing.Size(726, 705);
 			this.dataGridStaff.TabIndex = 28;
 			this.dataGridStaff.SelectionChanged += new System.EventHandler(this.DataGridStaffType_SelectionChanged);
 			// 
@@ -716,7 +713,6 @@
 			// 
 			// bunifuSeparator1
 			// 
-			this.bunifuSeparator1.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
 			this.bunifuSeparator1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuSeparator1.BackgroundImage")));
 			this.bunifuSeparator1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -727,12 +723,11 @@
 			this.bunifuSeparator1.Location = new System.Drawing.Point(21, 46);
 			this.bunifuSeparator1.Name = "bunifuSeparator1";
 			this.bunifuSeparator1.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
-			this.bunifuSeparator1.Size = new System.Drawing.Size(1201, 15);
+			this.bunifuSeparator1.Size = new System.Drawing.Size(1182, 15);
 			this.bunifuSeparator1.TabIndex = 52;
 			// 
 			// label1
 			// 
-			this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
@@ -744,7 +739,6 @@
 			// 
 			// groupBox5
 			// 
-			this.groupBox5.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.groupBox5.Controls.Add(this.btnSearch);
 			this.groupBox5.Controls.Add(this.label8);
 			this.groupBox5.Controls.Add(this.txtSearch);
@@ -844,7 +838,6 @@
 			// 
 			// groupRoom
 			// 
-			this.groupRoom.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.groupRoom.Controls.Add(this.dtpDateOfBirth);
 			this.groupRoom.Controls.Add(this.txtAddress);
 			this.groupRoom.Controls.Add(this.txtPhoneNumber);
@@ -860,7 +853,7 @@
 			this.groupRoom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.groupRoom.Font = new System.Drawing.Font("Segoe UI", 12F);
 			this.groupRoom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.groupRoom.Location = new System.Drawing.Point(21, 200);
+			this.groupRoom.Location = new System.Drawing.Point(21, 192);
 			this.groupRoom.Name = "groupRoom";
 			this.groupRoom.Size = new System.Drawing.Size(444, 273);
 			this.groupRoom.TabIndex = 61;
@@ -962,7 +955,7 @@
 			this.Controls.Add(this.groupRoom);
 			this.Controls.Add(this.groupBox4);
 			this.Name = "UC_Staff";
-			this.Size = new System.Drawing.Size(1242, 902);
+			this.Size = new System.Drawing.Size(1224, 867);
 			this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FStaff_KeyPress);
 			this.groupBox4.ResumeLayout(false);
 			this.groupStaff.ResumeLayout(false);

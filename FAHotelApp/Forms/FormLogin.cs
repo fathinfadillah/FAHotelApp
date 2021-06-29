@@ -71,6 +71,7 @@ namespace FAHotelApp.Forms
 			{
 				if (Login())
 				{
+					MessageBox.Show("Login Berhasil\nSelamat Datang "+txtUsername.Text, "Pemberitahuan", MessageBoxButtons.OK, MessageBoxIcon.Information);
 					this.Hide();
 					FormMenu f = new FormMenu(txtUsername.Text);
 					f.ShowDialog();

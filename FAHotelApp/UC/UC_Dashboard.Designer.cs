@@ -61,7 +61,6 @@
 			// 
 			// bunifuPanel4
 			// 
-			this.bunifuPanel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.bunifuPanel4.BackgroundColor = System.Drawing.Color.White;
 			this.bunifuPanel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel4.BackgroundImage")));
 			this.bunifuPanel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -130,7 +129,6 @@
 			// 
 			// bunifuPanel3
 			// 
-			this.bunifuPanel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.bunifuPanel3.BackgroundColor = System.Drawing.Color.White;
 			this.bunifuPanel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel3.BackgroundImage")));
 			this.bunifuPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -199,7 +197,6 @@
 			// 
 			// bunifuPanel2
 			// 
-			this.bunifuPanel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.bunifuPanel2.BackgroundColor = System.Drawing.Color.White;
 			this.bunifuPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel2.BackgroundImage")));
 			this.bunifuPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -268,7 +265,6 @@
 			// 
 			// bunifuPanel1
 			// 
-			this.bunifuPanel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.bunifuPanel1.BackgroundColor = System.Drawing.Color.White;
 			this.bunifuPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel1.BackgroundImage")));
 			this.bunifuPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;

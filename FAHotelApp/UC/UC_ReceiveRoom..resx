@@ -120,10 +120,10 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="bunifuSeparator1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAABLEAAAAPCAYAAAAbMF1CAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABuSURBVHhe7dgxDQBADMPA8EcVZv3lKVTqcCeZhAMAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMvajiRJkiRJknS5v7IAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAGBH8gDjZTtx6yU29wAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAABIwAAAAPCAYAAACGPVTKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABrSURBVHhe7dhBEQAgDAPB+FcVZ/ChDuhvd+ZMXAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgUdsjSZIkSZIkTW8bAQAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAMB/yQW5h8NHvso/xgAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="btnAddCustomer.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

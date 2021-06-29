@@ -81,7 +81,6 @@
 			// 
 			// bunifuSeparator1
 			// 
-			this.bunifuSeparator1.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
 			this.bunifuSeparator1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuSeparator1.BackgroundImage")));
 			this.bunifuSeparator1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -89,19 +88,18 @@
 			this.bunifuSeparator1.LineColor = System.Drawing.Color.Silver;
 			this.bunifuSeparator1.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
 			this.bunifuSeparator1.LineThickness = 1;
-			this.bunifuSeparator1.Location = new System.Drawing.Point(21, 46);
+			this.bunifuSeparator1.Location = new System.Drawing.Point(24, 46);
 			this.bunifuSeparator1.Name = "bunifuSeparator1";
 			this.bunifuSeparator1.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
-			this.bunifuSeparator1.Size = new System.Drawing.Size(1201, 15);
+			this.bunifuSeparator1.Size = new System.Drawing.Size(1164, 15);
 			this.bunifuSeparator1.TabIndex = 6;
 			// 
 			// label1
 			// 
-			this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.label1.Location = new System.Drawing.Point(20, 6);
+			this.label1.Location = new System.Drawing.Point(17, 6);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(121, 37);
 			this.label1.TabIndex = 5;
@@ -109,14 +107,13 @@
 			// 
 			// groupBox2
 			// 
-			this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.groupBox2.Controls.Add(this.cbRoom);
 			this.groupBox2.Controls.Add(this.label2);
 			this.groupBox2.Controls.Add(this.cbRoomType);
 			this.groupBox2.Controls.Add(this.label3);
 			this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 12F);
 			this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.groupBox2.Location = new System.Drawing.Point(285, 67);
+			this.groupBox2.Location = new System.Drawing.Point(282, 67);
 			this.groupBox2.Name = "groupBox2";
 			this.groupBox2.Size = new System.Drawing.Size(275, 150);
 			this.groupBox2.TabIndex = 51;
@@ -181,13 +178,12 @@
 			// 
 			// groupBox5
 			// 
-			this.groupBox5.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.groupBox5.Controls.Add(this.btnAddCustomer);
 			this.groupBox5.Controls.Add(this.btnCancel);
 			this.groupBox5.Controls.Add(this.btnReceiveRoom);
 			this.groupBox5.Font = new System.Drawing.Font("Segoe UI", 12F);
 			this.groupBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.groupBox5.Location = new System.Drawing.Point(25, 495);
+			this.groupBox5.Location = new System.Drawing.Point(22, 495);
 			this.groupBox5.Name = "groupBox5";
 			this.groupBox5.Size = new System.Drawing.Size(535, 141);
 			this.groupBox5.TabIndex = 50;
@@ -274,7 +270,6 @@
 			// 
 			// groupBox6
 			// 
-			this.groupBox6.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.groupBox6.Controls.Add(this.txtRoomName);
 			this.groupBox6.Controls.Add(this.label6);
 			this.groupBox6.Controls.Add(this.txtIDCard);
@@ -293,7 +288,7 @@
 			this.groupBox6.Controls.Add(this.label21);
 			this.groupBox6.Font = new System.Drawing.Font("Segoe UI", 12F);
 			this.groupBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.groupBox6.Location = new System.Drawing.Point(27, 220);
+			this.groupBox6.Location = new System.Drawing.Point(24, 220);
 			this.groupBox6.Name = "groupBox6";
 			this.groupBox6.Size = new System.Drawing.Size(533, 272);
 			this.groupBox6.TabIndex = 49;
@@ -405,7 +400,7 @@
 			this.txtPrice.Font = new System.Drawing.Font("Century Gothic", 9.75F);
 			this.txtPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.txtPrice.isPassword = false;
-			this.txtPrice.Location = new System.Drawing.Point(274, 216);
+			this.txtPrice.Location = new System.Drawing.Point(285, 216);
 			this.txtPrice.Margin = new System.Windows.Forms.Padding(4);
 			this.txtPrice.MaxLength = 32767;
 			this.txtPrice.Name = "txtPrice";
@@ -418,7 +413,7 @@
 			this.label10.AutoSize = true;
 			this.label10.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.label10.Location = new System.Drawing.Point(270, 195);
+			this.label10.Location = new System.Drawing.Point(281, 195);
 			this.label10.Name = "label10";
 			this.label10.Size = new System.Drawing.Size(53, 20);
 			this.label10.TabIndex = 48;
@@ -436,7 +431,7 @@
 			this.txtAmountPeople.Font = new System.Drawing.Font("Century Gothic", 9.75F);
 			this.txtAmountPeople.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.txtAmountPeople.isPassword = false;
-			this.txtAmountPeople.Location = new System.Drawing.Point(274, 162);
+			this.txtAmountPeople.Location = new System.Drawing.Point(285, 162);
 			this.txtAmountPeople.Margin = new System.Windows.Forms.Padding(4);
 			this.txtAmountPeople.MaxLength = 32767;
 			this.txtAmountPeople.Name = "txtAmountPeople";
@@ -449,7 +444,7 @@
 			this.label8.AutoSize = true;
 			this.label8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.label8.Location = new System.Drawing.Point(270, 141);
+			this.label8.Location = new System.Drawing.Point(281, 141);
 			this.label8.Name = "label8";
 			this.label8.Size = new System.Drawing.Size(179, 20);
 			this.label8.TabIndex = 46;
@@ -498,7 +493,7 @@
 			this.txtDateCheckOut.Font = new System.Drawing.Font("Century Gothic", 9.75F);
 			this.txtDateCheckOut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.txtDateCheckOut.isPassword = false;
-			this.txtDateCheckOut.Location = new System.Drawing.Point(274, 108);
+			this.txtDateCheckOut.Location = new System.Drawing.Point(285, 108);
 			this.txtDateCheckOut.Margin = new System.Windows.Forms.Padding(4);
 			this.txtDateCheckOut.MaxLength = 32767;
 			this.txtDateCheckOut.Name = "txtDateCheckOut";
@@ -518,7 +513,7 @@
 			this.txtDateCheckIn.Font = new System.Drawing.Font("Century Gothic", 9.75F);
 			this.txtDateCheckIn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.txtDateCheckIn.isPassword = false;
-			this.txtDateCheckIn.Location = new System.Drawing.Point(274, 54);
+			this.txtDateCheckIn.Location = new System.Drawing.Point(285, 54);
 			this.txtDateCheckIn.Margin = new System.Windows.Forms.Padding(4);
 			this.txtDateCheckIn.MaxLength = 32767;
 			this.txtDateCheckIn.Name = "txtDateCheckIn";
@@ -531,7 +526,7 @@
 			this.label19.AutoSize = true;
 			this.label19.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.label19.Location = new System.Drawing.Point(270, 84);
+			this.label19.Location = new System.Drawing.Point(281, 84);
 			this.label19.Name = "label19";
 			this.label19.Size = new System.Drawing.Size(149, 20);
 			this.label19.TabIndex = 34;
@@ -542,7 +537,7 @@
 			this.label21.AutoSize = true;
 			this.label21.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.label21.Location = new System.Drawing.Point(270, 30);
+			this.label21.Location = new System.Drawing.Point(281, 30);
 			this.label21.Name = "label21";
 			this.label21.Size = new System.Drawing.Size(126, 20);
 			this.label21.TabIndex = 32;
@@ -550,11 +545,10 @@
 			// 
 			// groupBox4
 			// 
-			this.groupBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.groupBox4.Controls.Add(this.panel2);
 			this.groupBox4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.groupBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.groupBox4.Location = new System.Drawing.Point(597, 67);
+			this.groupBox4.Location = new System.Drawing.Point(563, 67);
 			this.groupBox4.Name = "groupBox4";
 			this.groupBox4.Size = new System.Drawing.Size(625, 569);
 			this.groupBox4.TabIndex = 48;
@@ -658,13 +652,12 @@
 			// 
 			// groupBox3
 			// 
-			this.groupBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.groupBox3.Controls.Add(this.btnSearch);
 			this.groupBox3.Controls.Add(this.txtIDBookRoom);
 			this.groupBox3.Controls.Add(this.label5);
 			this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 12F);
 			this.groupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.groupBox3.Location = new System.Drawing.Point(27, 67);
+			this.groupBox3.Location = new System.Drawing.Point(24, 67);
 			this.groupBox3.Name = "groupBox3";
 			this.groupBox3.Size = new System.Drawing.Size(252, 150);
 			this.groupBox3.TabIndex = 47;
@@ -742,7 +735,7 @@
 			this.Controls.Add(this.bunifuSeparator1);
 			this.Controls.Add(this.label1);
 			this.Name = "UC_ReceiveRoom";
-			this.Size = new System.Drawing.Size(1242, 670);
+			this.Size = new System.Drawing.Size(1209, 658);
 			this.groupBox2.ResumeLayout(false);
 			this.groupBox2.PerformLayout();
 			this.groupBox5.ResumeLayout(false);
