@@ -100,7 +100,7 @@ namespace FAHotelApp.Forms
 			customer.IdCustomerType = (int)((DataTable)cbCustomerType.DataSource).Rows[id]["id"];
 			customer.Name = txtFullName.Text;
 			customer.Sex = cbSex.Text;
-			customer.PhoneNumber = int.Parse(txtPhoneNumber.Text);
+			customer.PhoneNumber = txtPhoneNumber.Text;
 			customer.DateOfBirth = dtpDateOfBirth.Value;
 			customer.Nationality = cbNationality.Text;
 			customer.Address = txtAddress.Text;

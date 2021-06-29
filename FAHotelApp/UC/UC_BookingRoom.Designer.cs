@@ -72,7 +72,6 @@
 			this.DatepickerDateOfReceive = new Bunifu.Framework.UI.BunifuDatepicker();
 			this.txtAddress = new Bunifu.Framework.UI.BunifuMetroTextbox();
 			this.label11 = new System.Windows.Forms.Label();
-			this.cbSex = new MetroFramework.Controls.MetroComboBox();
 			this.label12 = new System.Windows.Forms.Label();
 			this.label13 = new System.Windows.Forms.Label();
 			this.txtPhoneNumber = new Bunifu.Framework.UI.BunifuMetroTextbox();
@@ -82,10 +81,9 @@
 			this.txtFullName = new Bunifu.Framework.UI.BunifuMetroTextbox();
 			this.label16 = new System.Windows.Forms.Label();
 			this.groupBox5 = new System.Windows.Forms.GroupBox();
-			this.bunifuCheckbox1 = new Bunifu.Framework.UI.BunifuCheckbox();
-			this.label2 = new System.Windows.Forms.Label();
 			this.btnCancel = new Bunifu.Framework.UI.BunifuThinButton2();
 			this.btnBookRoom = new Bunifu.Framework.UI.BunifuThinButton2();
+			this.cbSex = new Bunifu.Framework.UI.BunifuMetroTextbox();
 			this.groupBox3.SuspendLayout();
 			this.groupBox6.SuspendLayout();
 			this.groupBox1.SuspendLayout();
@@ -175,7 +173,7 @@
 			this.txtIDCardSearch.isPassword = false;
 			this.txtIDCardSearch.Location = new System.Drawing.Point(9, 49);
 			this.txtIDCardSearch.Margin = new System.Windows.Forms.Padding(4);
-			this.txtIDCardSearch.MaxLength = 32767;
+			this.txtIDCardSearch.MaxLength = 16;
 			this.txtIDCardSearch.Name = "txtIDCardSearch";
 			this.txtIDCardSearch.Size = new System.Drawing.Size(203, 29);
 			this.txtIDCardSearch.TabIndex = 27;
@@ -592,6 +590,7 @@
 			// 
 			// groupBox2
 			// 
+			this.groupBox2.Controls.Add(this.cbSex);
 			this.groupBox2.Controls.Add(this.cbNationality);
 			this.groupBox2.Controls.Add(this.dtpDateOfBirth);
 			this.groupBox2.Controls.Add(this.label6);
@@ -600,7 +599,6 @@
 			this.groupBox2.Controls.Add(this.DatepickerDateOfReceive);
 			this.groupBox2.Controls.Add(this.txtAddress);
 			this.groupBox2.Controls.Add(this.label11);
-			this.groupBox2.Controls.Add(this.cbSex);
 			this.groupBox2.Controls.Add(this.label12);
 			this.groupBox2.Controls.Add(this.label13);
 			this.groupBox2.Controls.Add(this.txtPhoneNumber);
@@ -622,6 +620,7 @@
 			// cbNationality
 			// 
 			this.cbNationality.BackColor = System.Drawing.Color.White;
+			this.cbNationality.Enabled = false;
 			this.cbNationality.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.cbNationality.FormattingEnabled = true;
 			this.cbNationality.ItemHeight = 23;
@@ -678,6 +677,7 @@
 			// cbCustomerType
 			// 
 			this.cbCustomerType.BackColor = System.Drawing.Color.White;
+			this.cbCustomerType.Enabled = false;
 			this.cbCustomerType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.cbCustomerType.FormattingEnabled = true;
 			this.cbCustomerType.ItemHeight = 23;
@@ -724,6 +724,7 @@
 			this.txtAddress.BorderThickness = 1;
 			this.txtAddress.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
 			this.txtAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.txtAddress.Enabled = false;
 			this.txtAddress.Font = new System.Drawing.Font("Century Gothic", 9.75F);
 			this.txtAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.txtAddress.isPassword = false;
@@ -745,25 +746,6 @@
 			this.label11.Size = new System.Drawing.Size(60, 20);
 			this.label11.TabIndex = 35;
 			this.label11.Text = "Alamat:";
-			// 
-			// cbSex
-			// 
-			this.cbSex.BackColor = System.Drawing.Color.White;
-			this.cbSex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.cbSex.FormattingEnabled = true;
-			this.cbSex.ItemHeight = 23;
-			this.cbSex.Items.AddRange(new object[] {
-            "Laki -Laki",
-            "Perempuan"});
-			this.cbSex.Location = new System.Drawing.Point(240, 152);
-			this.cbSex.Name = "cbSex";
-			this.cbSex.Size = new System.Drawing.Size(203, 29);
-			this.cbSex.Style = MetroFramework.MetroColorStyle.Yellow;
-			this.cbSex.TabIndex = 26;
-			this.cbSex.UseCustomBackColor = true;
-			this.cbSex.UseCustomForeColor = true;
-			this.cbSex.UseSelectable = true;
-			this.cbSex.UseStyleColors = true;
 			// 
 			// label12
 			// 
@@ -795,6 +777,7 @@
 			this.txtPhoneNumber.BorderThickness = 1;
 			this.txtPhoneNumber.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
 			this.txtPhoneNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.txtPhoneNumber.Enabled = false;
 			this.txtPhoneNumber.Font = new System.Drawing.Font("Century Gothic", 9.75F);
 			this.txtPhoneNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.txtPhoneNumber.isPassword = false;
@@ -825,6 +808,7 @@
 			this.txtIDCard.BorderThickness = 1;
 			this.txtIDCard.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
 			this.txtIDCard.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.txtIDCard.Enabled = false;
 			this.txtIDCard.Font = new System.Drawing.Font("Century Gothic", 9.75F);
 			this.txtIDCard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.txtIDCard.isPassword = false;
@@ -856,6 +840,7 @@
 			this.txtFullName.BorderThickness = 1;
 			this.txtFullName.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
 			this.txtFullName.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.txtFullName.Enabled = false;
 			this.txtFullName.Font = new System.Drawing.Font("Century Gothic", 9.75F);
 			this.txtFullName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.txtFullName.isPassword = false;
@@ -880,8 +865,6 @@
 			// 
 			// groupBox5
 			// 
-			this.groupBox5.Controls.Add(this.bunifuCheckbox1);
-			this.groupBox5.Controls.Add(this.label2);
 			this.groupBox5.Controls.Add(this.btnCancel);
 			this.groupBox5.Controls.Add(this.btnBookRoom);
 			this.groupBox5.Font = new System.Drawing.Font("Segoe UI", 12F);
@@ -892,30 +875,6 @@
 			this.groupBox5.TabIndex = 51;
 			this.groupBox5.TabStop = false;
 			this.groupBox5.Text = "Menu";
-			// 
-			// bunifuCheckbox1
-			// 
-			this.bunifuCheckbox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-			this.bunifuCheckbox1.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-			this.bunifuCheckbox1.Checked = false;
-			this.bunifuCheckbox1.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.bunifuCheckbox1.ForeColor = System.Drawing.Color.White;
-			this.bunifuCheckbox1.Location = new System.Drawing.Point(22, 63);
-			this.bunifuCheckbox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-			this.bunifuCheckbox1.Name = "bunifuCheckbox1";
-			this.bunifuCheckbox1.Size = new System.Drawing.Size(20, 20);
-			this.bunifuCheckbox1.TabIndex = 48;
-			// 
-			// label2
-			// 
-			this.label2.AutoSize = true;
-			this.label2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.label2.Location = new System.Drawing.Point(49, 65);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(145, 20);
-			this.label2.TabIndex = 47;
-			this.label2.Text = "Pergi Untuk Check-In";
 			// 
 			// btnCancel
 			// 
@@ -935,7 +894,7 @@
 			this.btnCancel.IdleFillColor = System.Drawing.Color.White;
 			this.btnCancel.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
 			this.btnCancel.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnCancel.Location = new System.Drawing.Point(21, 179);
+			this.btnCancel.Location = new System.Drawing.Point(21, 155);
 			this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 			this.btnCancel.Name = "btnCancel";
 			this.btnCancel.Size = new System.Drawing.Size(203, 40);
@@ -961,13 +920,33 @@
 			this.btnBookRoom.IdleFillColor = System.Drawing.Color.White;
 			this.btnBookRoom.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
 			this.btnBookRoom.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnBookRoom.Location = new System.Drawing.Point(21, 116);
+			this.btnBookRoom.Location = new System.Drawing.Point(21, 92);
 			this.btnBookRoom.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 			this.btnBookRoom.Name = "btnBookRoom";
 			this.btnBookRoom.Size = new System.Drawing.Size(203, 40);
 			this.btnBookRoom.TabIndex = 45;
 			this.btnBookRoom.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			this.btnBookRoom.Click += new System.EventHandler(this.btnBookRoom_Click);
+			// 
+			// cbSex
+			// 
+			this.cbSex.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.cbSex.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.cbSex.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.cbSex.BorderThickness = 1;
+			this.cbSex.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.cbSex.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.cbSex.Enabled = false;
+			this.cbSex.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+			this.cbSex.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.cbSex.isPassword = false;
+			this.cbSex.Location = new System.Drawing.Point(241, 155);
+			this.cbSex.Margin = new System.Windows.Forms.Padding(4);
+			this.cbSex.MaxLength = 32767;
+			this.cbSex.Name = "cbSex";
+			this.cbSex.Size = new System.Drawing.Size(203, 29);
+			this.cbSex.TabIndex = 60;
+			this.cbSex.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
 			// 
 			// UC_BookingRoom
 			// 
@@ -997,7 +976,6 @@
 			this.groupBox2.ResumeLayout(false);
 			this.groupBox2.PerformLayout();
 			this.groupBox5.ResumeLayout(false);
-			this.groupBox5.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -1043,7 +1021,6 @@
 		private Bunifu.Framework.UI.BunifuDatepicker DatepickerDateOfReceive;
 		private Bunifu.Framework.UI.BunifuMetroTextbox txtAddress;
 		private System.Windows.Forms.Label label11;
-		private MetroFramework.Controls.MetroComboBox cbSex;
 		private System.Windows.Forms.Label label12;
 		private System.Windows.Forms.Label label13;
 		private Bunifu.Framework.UI.BunifuMetroTextbox txtPhoneNumber;
@@ -1053,9 +1030,8 @@
 		private Bunifu.Framework.UI.BunifuMetroTextbox txtFullName;
 		private System.Windows.Forms.Label label16;
 		private System.Windows.Forms.GroupBox groupBox5;
-		private Bunifu.Framework.UI.BunifuCheckbox bunifuCheckbox1;
-		private System.Windows.Forms.Label label2;
 		private Bunifu.Framework.UI.BunifuThinButton2 btnCancel;
 		private Bunifu.Framework.UI.BunifuThinButton2 btnBookRoom;
+		private Bunifu.Framework.UI.BunifuMetroTextbox cbSex;
 	}
 }

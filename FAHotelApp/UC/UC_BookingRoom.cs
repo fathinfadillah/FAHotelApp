@@ -164,12 +164,6 @@ namespace FAHotelApp.UC
 					MessageBox.Show("Pemesanan Berhasil!", "Pemberitahuan", MessageBoxButtons.OK, MessageBoxIcon.Information);
 					ClearData();
 					LoadListBookRoom();
-					if (bunifuCheckbox1.Checked)
-					{
-						//this.Hide();
-						//fReceiveRoom fReceiveRoom = new fReceiveRoom(GetCurrentIDBookRoom(DateTime.Now.Date));
-						//fReceiveRoom.ShowDialog();
-					}
 				}
 				else
 					MessageBox.Show("Silahkan Masukkan Informasi Yang Lengkap!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);

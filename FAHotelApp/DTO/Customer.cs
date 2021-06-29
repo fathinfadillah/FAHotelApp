@@ -15,14 +15,14 @@ namespace FAHotelApp.DTO
 		private int idCustomerType;
 		private DateTime dateOfBirth;
 		private string address;
-		private int phoneNumber;
+		private string phoneNumber;
 		private string sex;
 		private string nationality;
 		public Customer()
 		{
 
 		}
-		public Customer(int id, string idCard, string name, int idcustomerType, string address, int phoneNumber, string sex, string nationality, DateTime dateOfBirth)
+		public Customer(int id, string idCard, string name, int idcustomerType, string address, string phoneNumber, string sex, string nationality, DateTime dateOfBirth)
 		{
 			this.Id = id;
 			this.IdCard = idCard;
@@ -42,8 +42,8 @@ namespace FAHotelApp.DTO
 			this.IdCustomerType = (int)row["idcustomerType"];
 			this.DateOfBirth = (DateTime)row["DateOfBirth"];
 			this.Address = row["address"].ToString();
-			this.PhoneNumber = (int)row["phoneNumber"];
-			this.Sex = row["sex"].ToString();
+			this.PhoneNumber = row["phoneNumber"].ToString();
+			this.Sex = row["Sex"].ToString();
 			this.Nationality = row["Nationality"].ToString();
 		}
 		public override bool Equals(object obj)
@@ -70,7 +70,7 @@ namespace FAHotelApp.DTO
 		}
 
 		public string Address { get => address; set => address = value; }
-		public int PhoneNumber { get => phoneNumber; set => phoneNumber = value; }
+		public string PhoneNumber { get => phoneNumber; set => phoneNumber = value; }
 		public string Sex { get => sex; set => sex = value; }
 		public string Nationality { get => nationality; set => nationality = value; }
 		public DateTime DateOfBirth { get => dateOfBirth; set => dateOfBirth = value; }
