@@ -211,7 +211,7 @@ namespace FAHotelApp.UC
 				txtUserName.Text = row.Cells[colUserName.Name].Value as string;
 				txtAddress.Text = row.Cells[colAddress.Name].Value as string;
 				txtName.Text = row.Cells[colname.Name].Value as string;
-				txtPhoneNumber.Text = row.Cells[colPhone.Name].Value.ToString();
+				txtPhoneNumber.Text = row.Cells[colPhone.Name].Value as string;
 				txtIDcard.Text = row.Cells[colIDCard.Name].Value as string;
 				dtpDateOfBirth.Value = (DateTime)row.Cells["colDateOfBirth"].Value;
 				dtpStartDay.Value = (DateTime)row.Cells["colStartDay"].Value;
@@ -223,7 +223,7 @@ namespace FAHotelApp.UC
 				staff.UserName = txtUserName.Text;
 				staff.Address = txtAddress.Text;
 				staff.DisplayName = txtName.Text;
-				staff.PhoneNumber = int.Parse(txtPhoneNumber.Text);
+				staff.PhoneNumber = txtPhoneNumber.Text;
 				staff.IdCard = txtIDcard.Text;
 				staff.DateOfBirth = dtpDateOfBirth.Value;
 				staff.StartDay = dtpStartDay.Value;
@@ -286,7 +286,7 @@ namespace FAHotelApp.UC
 			account.IdCard = txtIDcard.Text;
 			account.Sex = cbSex.Text;
 			account.DateOfBirth = dtpDateOfBirth.Value;
-			account.PhoneNumber = int.Parse(txtPhoneNumber.Text);
+			account.PhoneNumber = txtPhoneNumber.Text;
 			account.Address = txtAddress.Text;
 			account.StartDay = dtpStartDay.Value;
 			return account;

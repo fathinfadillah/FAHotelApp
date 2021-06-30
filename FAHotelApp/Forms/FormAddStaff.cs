@@ -108,7 +108,7 @@ namespace FAHotelApp.Forms
 			account.IdCard = txtIDcard.Text;
 			account.Sex = cbSex.Text;
 			account.DateOfBirth = dtpDateOfBirth.Value;
-			account.PhoneNumber = int.Parse(txtPhoneNumber.Text);
+			account.PhoneNumber = txtPhoneNumber.Text;
 			account.Address = txtAddress.Text;
 			account.StartDay = stpStartDay.Value;
 			return account;

@@ -18,7 +18,7 @@ namespace FAHotelApp.DTO
 		private DateTime dateOfBirth;
 		private string sex;
 		private string address;
-		private int phoneNumber;
+		private string phoneNumber;
 		private DateTime startDay;
 
 		public string UserName { get => userName; set => userName = value; }
@@ -28,14 +28,14 @@ namespace FAHotelApp.DTO
 		public DateTime DateOfBirth { get => dateOfBirth; set => dateOfBirth = value; }
 		public string Sex { get => sex; set => sex = value; }
 		public string Address { get => address; set => address = value; }
-		public int PhoneNumber { get => phoneNumber; set => phoneNumber = value; }
+		public string PhoneNumber { get => phoneNumber; set => phoneNumber = value; }
 		public DateTime StartDay { get => startDay; set => startDay = value; }
 		public string IdCard { get => idCard; set => idCard = value; }
 		#endregion
 
 		#region Constructor
 		public Account() { }
-		public Account(string userName, string displayName, string passWord, int staffType, string idCard, DateTime dateOfBirth, string sex, string address, int phoneNumber, DateTime startDay)
+		public Account(string userName, string displayName, string passWord, int staffType, string idCard, DateTime dateOfBirth, string sex, string address, string phoneNumber, DateTime startDay)
 		{
 			this.UserName = userName;
 			this.DisplayName = displayName;
@@ -56,7 +56,7 @@ namespace FAHotelApp.DTO
 			this.DateOfBirth = (DateTime)row["DateOfBirth"];
 			this.Sex = row["Sex"].ToString();
 			this.Address = row["Address"].ToString();
-			this.PhoneNumber = (int)row["PhoneNumber"];
+			this.PhoneNumber = row["PhoneNumber"].ToString();
 			this.StartDay = (DateTime)row["StartDay"];
 			this.IdCard = (string)row["idCard"];
 			this.PassWord = row["PassWord"].ToString();
