@@ -64,7 +64,11 @@ namespace FAHotelApp.UC
 			dateCheckIn = (DateTime)dataRow["DateCheckIn"];
 			txtDateCheckOut.Text = dataRow["DateCheckOut"].ToString().Split(' ')[0];
 			txtAmountPeople.Text = dataRow["LimitPerson"].ToString();
-			txtPrice.Text = dataRow["Price"].ToString();
+			CultureInfo cultureInfo = new CultureInfo("id-ID");
+			//txtPrice.Text = dataRow["Price"].ToString().ToString("c", cultureInfo);
+			decimal money = decimal.Parse(txtPrice.Text = dataRow["Price"].ToString());
+
+			txtPrice.Text = money.ToString("c");
 		}
 		public bool InsertReceiveRoom(int idBookRoom, int idRoom)
 		{

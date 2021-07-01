@@ -150,7 +150,7 @@ namespace FAHotelApp.UC
 			{
 				txtName.Text = row.Cells["colName"].Value.ToString();
 				cbServiceType.SelectedIndex = (int)row.Cells["colIdServiceType"].Value - 1;
-				txtPrice.Text = ((int)row.Cells[col.Name].Value).ToString("Rp.", CultureInfo.CreateSpecificCulture("id-ID"));
+				txtPrice.Text = ((int)row.Cells[col.Name].Value).ToString("c", CultureInfo.CreateSpecificCulture("id-ID"));
 				Service room = new Service(((DataRowView)row.DataBoundItem).Row);
 				groupService.Tag = room;
 				bindingNavigatorMoveFirstItem.Enabled = true;
@@ -256,7 +256,7 @@ namespace FAHotelApp.UC
 			table.Columns.Add("price_New", typeof(string));
 			for (int i = 0; i < table.Rows.Count; i++)
 			{
-				table.Rows[i]["price_New"] = ((int)table.Rows[i]["price"]).ToString("Rp.", CultureInfo.CreateSpecificCulture("id-ID"));
+				table.Rows[i]["price_New"] = ((int)table.Rows[i]["price"]).ToString("c", CultureInfo.CreateSpecificCulture("id-ID"));
 			}
 		}
 		private string StringToInt(string text)
@@ -276,11 +276,11 @@ namespace FAHotelApp.UC
 		private string IntToString(string text)
 		{
 			if (text == string.Empty)
-				return 0.ToString("Rp.", CultureInfo.CreateSpecificCulture("id-ID"));
+				return 0.ToString("c", CultureInfo.CreateSpecificCulture("id-ID"));
 			if (text.Contains(".") || text.Contains(" "))
 				return text;
 			else
-				return (int.Parse(text).ToString("Rp.", CultureInfo.CreateSpecificCulture("id-ID")));
+				return (int.Parse(text).ToString("c", CultureInfo.CreateSpecificCulture("id-ID")));
 		}
 		#endregion
 

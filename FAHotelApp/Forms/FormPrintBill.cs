@@ -88,24 +88,24 @@ namespace FAHotelApp.Forms
 			CultureInfo cultureInfo = new CultureInfo("id-ID");
 			lblCustomerName.Text = data["Nama"].ToString();
 			lblIDCard.Text = data["NIK/KTP"].ToString();
-			lblPhoneNumber.Text = ((int)data["No"]).ToString();
+			lblPhoneNumber.Text = data["No"].ToString();
 			lblCustomerTypeName.Text = data["CType"].ToString();
 			lblAddress.Text = data["Alamat"].ToString();
 			lblNationality.Text = data["Kebangsaan"].ToString();
 			lblRoomName.Text = data["RName"].ToString();
 			lblRoomTypeName.Text = data["RType"].ToString();
-			lblRoomPrice_.Text = ((int)data["RPrice"]).ToString("c0", cultureInfo);
+			lblRoomPrice_.Text = ((int)data["RPrice"]).ToString("c", cultureInfo);
 			lblDateCheckIn.Text = ((DateTime)data["CheckIn"]).ToString().Split(' ')[0];
 			DateTime dateCheckIn = (DateTime)data["CheckIn"];
 			DateTime dateCheckOut = (DateTime)data["CheckOut"];
 			int days = dateCheckOut.Subtract(dateCheckIn).Days;
 			lblDays.Text = days.ToString();
 			lblPeoples.Text = RoomDAO.Instance.GetPeoples(idBill).ToString();
-			lblSurcharge.Text = ((int)data["SubC"]).ToString("Rp.", cultureInfo);
-			lblServicePrice.Text = ((int)data["SPrice"]).ToString("Rp.", cultureInfo);
-			lblRoomPrice.Text = ((int)data["RPrice"]).ToString("Rp.", cultureInfo);
-			lblTotalPrice.Text = ((int)data["TPrice"]).ToString("Rp.", cultureInfo);
-			lblFinalPrice.Text = ((int)data["TPrice"] * ((100 - (int)data["Diskon"]) / 100.0)).ToString("Rp.", cultureInfo);
+			lblSurcharge.Text = ((int)data["SubC"]).ToString("c", cultureInfo);
+			lblServicePrice.Text = ((int)data["SPrice"]).ToString("c", cultureInfo);
+			lblRoomPrice.Text = ((int)data["RPrice"]).ToString("c", cultureInfo);
+			lblTotalPrice.Text = ((int)data["TPrice"]).ToString("c", cultureInfo);
+			lblFinalPrice.Text = ((int)data["TPrice"] * ((100 - (int)data["Diskon"]) / 100.0)).ToString("c", cultureInfo);
 			lblDiscount.Text = ((int)data["Diskon"]).ToString() + " %";
 		}
 		private void btnClose_Click(object sender, EventArgs e)

@@ -67,8 +67,8 @@ namespace FAHotelApp.UC
 			table.Columns.Add("finalprice_New", typeof(string));
 			for (int i = 0; i < table.Rows.Count; i++)
 			{
-				table.Rows[i]["finalprice_New"] = ((int)table.Rows[i]["finalprice"]).ToString("Rp.", CultureInfo.CreateSpecificCulture("id-ID"));
-				table.Rows[i]["totalPrice_New"] = ((int)table.Rows[i]["totalPrice"]).ToString("Rp.", CultureInfo.CreateSpecificCulture("id-ID"));
+				table.Rows[i]["finalprice_New"] = ((int)table.Rows[i]["finalprice"]).ToString("c", CultureInfo.CreateSpecificCulture("id-ID"));
+				table.Rows[i]["totalPrice_New"] = ((int)table.Rows[i]["totalPrice"]).ToString("c", CultureInfo.CreateSpecificCulture("id-ID"));
 			}
 			table.Columns.Remove("finalprice");
 			table.Columns.Remove("totalPrice");

@@ -668,7 +668,7 @@
             this.btnCancel.ButtonText = "Batalkan Pencarian";
             this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
             this.btnCancel.IdleBorderThickness = 1;
             this.btnCancel.IdleCornerRadius = 20;
             this.btnCancel.IdleFillColor = System.Drawing.Color.White;
