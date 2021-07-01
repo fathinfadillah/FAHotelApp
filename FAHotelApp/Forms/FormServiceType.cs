@@ -72,7 +72,7 @@ namespace FAHotelApp.Forms
 		}
 		private void BtnInsert_Click(object sender, EventArgs e)
 		{
-			new FormServiceType().ShowDialog();
+			new FormAddServiceType().ShowDialog();
 			if (btnCancel.Visible == false)
 				LoadFullServiceType(GetFullServiceType());
 			else

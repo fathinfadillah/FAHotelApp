@@ -324,20 +324,20 @@
             // 
             this.btnCLose1.ActiveBorderThickness = 1;
             this.btnCLose1.ActiveCornerRadius = 20;
-            this.btnCLose1.ActiveFillColor = System.Drawing.Color.Red;
+            this.btnCLose1.ActiveFillColor = System.Drawing.Color.DarkOrange;
             this.btnCLose1.ActiveForecolor = System.Drawing.Color.White;
-            this.btnCLose1.ActiveLineColor = System.Drawing.Color.Red;
+            this.btnCLose1.ActiveLineColor = System.Drawing.Color.DarkOrange;
             this.btnCLose1.BackColor = System.Drawing.Color.White;
             this.btnCLose1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCLose1.BackgroundImage")));
             this.btnCLose1.ButtonText = "Kembali";
             this.btnCLose1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCLose1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCLose1.ForeColor = System.Drawing.Color.Red;
+            this.btnCLose1.ForeColor = System.Drawing.Color.DarkOrange;
             this.btnCLose1.IdleBorderThickness = 1;
             this.btnCLose1.IdleCornerRadius = 20;
             this.btnCLose1.IdleFillColor = System.Drawing.Color.White;
-            this.btnCLose1.IdleForecolor = System.Drawing.Color.Red;
-            this.btnCLose1.IdleLineColor = System.Drawing.Color.Red;
+            this.btnCLose1.IdleForecolor = System.Drawing.Color.DarkOrange;
+            this.btnCLose1.IdleLineColor = System.Drawing.Color.DarkOrange;
             this.btnCLose1.Location = new System.Drawing.Point(23, 160);
             this.btnCLose1.Margin = new System.Windows.Forms.Padding(4);
             this.btnCLose1.Name = "btnCLose1";

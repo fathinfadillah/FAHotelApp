@@ -190,7 +190,7 @@
             // 
             this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuSeparator1.LineThickness = 16;
+            this.bunifuSeparator1.LineThickness = 26;
             this.bunifuSeparator1.Location = new System.Drawing.Point(15, 166);
             this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
@@ -342,7 +342,7 @@
             this.bunifuSeparator3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.bunifuSeparator3.BackColor = System.Drawing.Color.Transparent;
             this.bunifuSeparator3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuSeparator3.LineThickness = 13;
+            this.bunifuSeparator3.LineThickness = 21;
             this.bunifuSeparator3.Location = new System.Drawing.Point(15, 572);
             this.bunifuSeparator3.Margin = new System.Windows.Forms.Padding(9, 13, 9, 13);
             this.bunifuSeparator3.Name = "bunifuSeparator3";
@@ -401,7 +401,7 @@
             // 
             this.bunifuSeparator2.BackColor = System.Drawing.Color.Transparent;
             this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuSeparator2.LineThickness = 13;
+            this.bunifuSeparator2.LineThickness = 21;
             this.bunifuSeparator2.Location = new System.Drawing.Point(15, 355);
             this.bunifuSeparator2.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.bunifuSeparator2.Name = "bunifuSeparator2";
@@ -828,21 +828,21 @@
             // 
             this.btnClose_.ActiveBorderThickness = 1;
             this.btnClose_.ActiveCornerRadius = 20;
-            this.btnClose_.ActiveFillColor = System.Drawing.Color.Red;
+            this.btnClose_.ActiveFillColor = System.Drawing.Color.DarkOrange;
             this.btnClose_.ActiveForecolor = System.Drawing.Color.White;
-            this.btnClose_.ActiveLineColor = System.Drawing.Color.Red;
+            this.btnClose_.ActiveLineColor = System.Drawing.Color.DarkOrange;
             this.btnClose_.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnClose_.BackColor = System.Drawing.Color.White;
             this.btnClose_.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnClose_.BackgroundImage")));
             this.btnClose_.ButtonText = "Tutup";
             this.btnClose_.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClose_.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose_.ForeColor = System.Drawing.Color.Red;
+            this.btnClose_.ForeColor = System.Drawing.Color.DarkOrange;
             this.btnClose_.IdleBorderThickness = 1;
             this.btnClose_.IdleCornerRadius = 20;
             this.btnClose_.IdleFillColor = System.Drawing.Color.White;
-            this.btnClose_.IdleForecolor = System.Drawing.Color.Red;
-            this.btnClose_.IdleLineColor = System.Drawing.Color.Red;
+            this.btnClose_.IdleForecolor = System.Drawing.Color.DarkOrange;
+            this.btnClose_.IdleLineColor = System.Drawing.Color.DarkOrange;
             this.btnClose_.Location = new System.Drawing.Point(402, 713);
             this.btnClose_.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnClose_.Name = "btnClose_";

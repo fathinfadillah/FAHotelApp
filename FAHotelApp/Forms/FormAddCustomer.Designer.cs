@@ -125,20 +125,20 @@
             // 
             this.btnClose.ActiveBorderThickness = 1;
             this.btnClose.ActiveCornerRadius = 20;
-            this.btnClose.ActiveFillColor = System.Drawing.Color.Red;
+            this.btnClose.ActiveFillColor = System.Drawing.Color.DarkOrange;
             this.btnClose.ActiveForecolor = System.Drawing.Color.White;
-            this.btnClose.ActiveLineColor = System.Drawing.Color.Red;
+            this.btnClose.ActiveLineColor = System.Drawing.Color.DarkOrange;
             this.btnClose.BackColor = System.Drawing.Color.White;
             this.btnClose.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnClose.BackgroundImage")));
             this.btnClose.ButtonText = "Kembali";
             this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClose.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.ForeColor = System.Drawing.Color.Red;
+            this.btnClose.ForeColor = System.Drawing.Color.DarkOrange;
             this.btnClose.IdleBorderThickness = 1;
             this.btnClose.IdleCornerRadius = 20;
             this.btnClose.IdleFillColor = System.Drawing.Color.White;
-            this.btnClose.IdleForecolor = System.Drawing.Color.Red;
-            this.btnClose.IdleLineColor = System.Drawing.Color.Red;
+            this.btnClose.IdleForecolor = System.Drawing.Color.DarkOrange;
+            this.btnClose.IdleLineColor = System.Drawing.Color.DarkOrange;
             this.btnClose.Location = new System.Drawing.Point(247, 47);
             this.btnClose.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnClose.Name = "btnClose";
@@ -239,11 +239,11 @@
             this.dtpDateOfBirth.ForeColor = System.Drawing.Color.White;
             this.dtpDateOfBirth.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpDateOfBirth.FormatCustom = null;
-            this.dtpDateOfBirth.Location = new System.Drawing.Point(251, 57);
+            this.dtpDateOfBirth.Location = new System.Drawing.Point(250, 57);
             this.dtpDateOfBirth.Margin = new System.Windows.Forms.Padding(14, 21, 14, 21);
             this.dtpDateOfBirth.Name = "dtpDateOfBirth";
             this.dtpDateOfBirth.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.dtpDateOfBirth.Size = new System.Drawing.Size(203, 29);
+            this.dtpDateOfBirth.Size = new System.Drawing.Size(202, 29);
             this.dtpDateOfBirth.TabIndex = 47;
             this.dtpDateOfBirth.Value = new System.DateTime(1998, 4, 6, 0, 0, 0, 0);
             // 

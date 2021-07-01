@@ -376,20 +376,20 @@
             // 
             this.btnBack.ActiveBorderThickness = 1;
             this.btnBack.ActiveCornerRadius = 20;
-            this.btnBack.ActiveFillColor = System.Drawing.Color.Red;
+            this.btnBack.ActiveFillColor = System.Drawing.Color.DarkOrange;
             this.btnBack.ActiveForecolor = System.Drawing.Color.White;
-            this.btnBack.ActiveLineColor = System.Drawing.Color.Red;
+            this.btnBack.ActiveLineColor = System.Drawing.Color.DarkOrange;
             this.btnBack.BackColor = System.Drawing.Color.White;
             this.btnBack.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBack.BackgroundImage")));
             this.btnBack.ButtonText = "Kembali";
             this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBack.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.btnBack.ForeColor = System.Drawing.Color.Red;
+            this.btnBack.ForeColor = System.Drawing.Color.DarkOrange;
             this.btnBack.IdleBorderThickness = 1;
             this.btnBack.IdleCornerRadius = 20;
             this.btnBack.IdleFillColor = System.Drawing.Color.White;
-            this.btnBack.IdleForecolor = System.Drawing.Color.Red;
-            this.btnBack.IdleLineColor = System.Drawing.Color.Red;
+            this.btnBack.IdleForecolor = System.Drawing.Color.DarkOrange;
+            this.btnBack.IdleLineColor = System.Drawing.Color.DarkOrange;
             this.btnBack.Location = new System.Drawing.Point(32, 98);
             this.btnBack.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.btnBack.Name = "btnBack";
