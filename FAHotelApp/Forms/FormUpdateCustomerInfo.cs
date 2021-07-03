@@ -43,7 +43,7 @@ namespace FAHotelApp.Forms
 		public void UpdateCustomer()
 		{
 			int idCustomerType = (cbCustomerType.SelectedItem as CustomerType).Id;
-			CustomerDAO.Instance.UpdateCustomer(CustomerDAO.Instance.GetInfoByIdCard(idCard).Id, txtFullName.Text, txtIDCard.Text, idCustomerType, int.Parse(txtPhoneNumber.Text), dtpDateOfBirth.Value, txtAddress.Text, cbSex.Text, cbNationality.Text);
+			CustomerDAO.Instance.UpdateCustomer(CustomerDAO.Instance.GetInfoByIdCard(idCard).Id, txtFullName.Text, txtIDCard.Text, idCustomerType, txtPhoneNumber.Text, dtpDateOfBirth.Value, txtAddress.Text, cbSex.Text, cbNationality.Text);
 		}
 		public void ClearData()
 		{

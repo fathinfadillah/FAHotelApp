@@ -55,7 +55,7 @@ namespace FAHotelApp.DAO
 									customerNow.Sex, customerNow.Nationality, customerPre.IdCard};
 			return DataProvider.Instance.ExecuteNoneQuery(query, parameter) > 0;
 		}
-		public bool UpdateCustomer(int id, string name, string idCard, int idCustomerType, int phoneNumber, DateTime dateOfBirth, string address, string sex, string nationality)
+		public bool UpdateCustomer(int id, string name, string idCard, int idCustomerType, string phoneNumber, DateTime dateOfBirth, string address, string sex, string nationality)
 		{
 			string query = "USP_UpdateCustomer_ @id , @name , @idCard , @idCustomerType , @phoneNumber , @dateOfBirth , @address , @sex , @nationality";
 			return DataProvider.Instance.ExecuteNoneQuery(query, new object[] { id, name, idCard, idCustomerType, phoneNumber, dateOfBirth, address, sex, nationality }) > 0;

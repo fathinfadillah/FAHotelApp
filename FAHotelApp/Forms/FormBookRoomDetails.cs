@@ -50,7 +50,7 @@ namespace FAHotelApp.Forms
 			txtAddress.Text = customer.Address;
 			dtpDateOfBirth.Value = customer.DateOfBirth;
 			cbSex.Text = customer.Sex;
-			txtPhoneNumber.Text = customer.PhoneNumber.ToString();
+			txtPhoneNumber.Text = customer.PhoneNumber;
 			cbNationality.Text = customer.Nationality;
 			cbCustomerType.Text = CustomerTypeDAO.Instance.GetNameByIdCard(idCard);
 		}
@@ -70,7 +70,7 @@ namespace FAHotelApp.Forms
 		public void UpdateCustomer()
 		{
 			int idCustomerType = (cbCustomerType.SelectedItem as CustomerType).Id;
-			CustomerDAO.Instance.UpdateCustomer(CustomerDAO.Instance.GetInfoByIdCard(idCard).Id, txtFullName.Text, txtIDCard.Text, idCustomerType, int.Parse(txtPhoneNumber.Text), dtpDateOfBirth.Value, txtAddress.Text, cbSex.Text, cbNationality.Text);
+			CustomerDAO.Instance.UpdateCustomer(CustomerDAO.Instance.GetInfoByIdCard(idCard).Id, txtFullName.Text, txtIDCard.Text, idCustomerType, txtPhoneNumber.Text, dtpDateOfBirth.Value, txtAddress.Text, cbSex.Text, cbNationality.Text);
 		}
 
 		private void btnBack_Click(object sender, EventArgs e)
