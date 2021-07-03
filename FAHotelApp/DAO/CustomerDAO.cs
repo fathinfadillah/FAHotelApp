@@ -19,7 +19,7 @@ namespace FAHotelApp.DAO
 			int count = DataProvider.Instance.ExecuteQuery(query, new object[] { idCard }).Rows.Count;
 			return count > 0;
 		}
-		public bool InsertCustomer(string idCard, string name, int idCustomerType, DateTime dateofBirth, string address, int phonenumber, string sex, string nationality)
+		public bool InsertCustomer(string idCard, string name, int idCustomerType, DateTime dateofBirth, string address, string phonenumber, string sex, string nationality)
 		{
 			string query = "USP_InsertCustomer_ @idCard , @name , @idCustomerType , @dateOfBirth , @address , @phoneNumber , @sex , @nationality";
 			return DataProvider.Instance.ExecuteNoneQuery(query, new object[] { idCard, name, idCustomerType, dateofBirth, address, phonenumber, sex, nationality }) > 0;

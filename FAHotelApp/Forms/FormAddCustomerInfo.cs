@@ -34,7 +34,7 @@ namespace FAHotelApp.Forms
 		{
 			return CustomerDAO.Instance.IsIdCardExists(idCard);
 		}
-		public void InsertCustomer(string idCard, string name, int idCustomerType, DateTime dateofBirth, string address, int phonenumber, string sex, string nationality)
+		public void InsertCustomer(string idCard, string name, int idCustomerType, DateTime dateofBirth, string address, string phonenumber, string sex, string nationality)
 		{
 			CustomerDAO.Instance.InsertCustomer(idCard, name, idCustomerType, dateofBirth, address, phonenumber, sex, nationality);
 		}
@@ -46,7 +46,7 @@ namespace FAHotelApp.Forms
 			txtAddress.Text = customer.Address;
 			dtpDateOfBirth.Value = customer.DateOfBirth;
 			cbSex.Text = customer.Sex;
-			txtPhoneNumber.Text = customer.PhoneNumber.ToString();
+			txtPhoneNumber.Text = customer.PhoneNumber;
 			cbNationality.Text = customer.Nationality;
 			cbCustomerType.Text = CustomerTypeDAO.Instance.GetNameByIdCard(idCard);
 		}
@@ -79,7 +79,7 @@ namespace FAHotelApp.Forms
 				if (!IsIdCardExists(txtIDCard.Text))
 				{
 					int idCustomerType = (cbCustomerType.SelectedItem as CustomerType).Id;
-					InsertCustomer(txtIDCard.Text, txtFullName.Text, idCustomerType, dtpDateOfBirth.Value, txtAddress.Text, int.Parse(txtPhoneNumber.Text), cbSex.Text, cbNationality.Text);
+					InsertCustomer(txtIDCard.Text, txtFullName.Text, idCustomerType, dtpDateOfBirth.Value, txtAddress.Text, txtPhoneNumber.Text, cbSex.Text, cbNationality.Text);
 				}
 				MessageBox.Show("Berhasil Menambahkan Pelanggan.", "Pemberitahuan", MessageBoxButtons.OK, MessageBoxIcon.Information);
 				AddIdCustomer(CustomerDAO.Instance.GetInfoByIdCard(txtIDCard.Text).Id);

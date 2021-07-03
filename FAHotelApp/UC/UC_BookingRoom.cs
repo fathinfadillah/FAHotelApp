@@ -66,7 +66,7 @@ namespace FAHotelApp.UC
 		{
 			return CustomerDAO.Instance.IsIdCardExists(idCard);
 		}
-		public void InsertCustomer(string idCard, string name, int idCustomerType, DateTime dateofBirth, string address, int phonenumber, string sex, string nationality)
+		public void InsertCustomer(string idCard, string name, int idCustomerType, DateTime dateofBirth, string address, string phonenumber, string sex, string nationality)
 		{
 			CustomerDAO.Instance.InsertCustomer(idCard, name, idCustomerType, dateofBirth, address, phonenumber, sex, nationality);
 		}
@@ -158,7 +158,7 @@ namespace FAHotelApp.UC
 					if (!IsIdCardExists(txtIDCard.Text))
 					{
 						int idCustomerType = (cbCustomerType.SelectedItem as CustomerType).Id;
-						InsertCustomer(txtIDCard.Text, txtFullName.Text, idCustomerType, dtpDateOfBirth.Value, txtAddress.Text, int.Parse(txtPhoneNumber.Text), cbSex.Text, cbNationality.Text);
+						InsertCustomer(txtIDCard.Text, txtFullName.Text, idCustomerType, dtpDateOfBirth.Value, txtAddress.Text, txtPhoneNumber.Text, cbSex.Text, cbNationality.Text);
 					}
 					InsertBookRoom(CustomerDAO.Instance.GetInfoByIdCard(txtIDCard.Text).Id, (cbRoomType.SelectedItem as RoomType).Id, dtpDateCheckIn.Value, dtpDateCheckOut.Value, DateTime.Now);
 					MessageBox.Show("Pemesanan Berhasil!", "Pemberitahuan", MessageBoxButtons.OK, MessageBoxIcon.Information);
