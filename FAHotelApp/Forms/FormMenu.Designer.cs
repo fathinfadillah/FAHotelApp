@@ -33,7 +33,6 @@
 			Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
 			Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
 			Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-			Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
 			Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
 			Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
 			Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
@@ -45,6 +44,7 @@
 			Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
 			Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
 			Utilities.BunifuPages.BunifuAnimatorNS.Animation animation1 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
+			Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.txtSearch = new Bunifu.UI.WinForms.BunifuTextBox();
 			this.panelMenu = new System.Windows.Forms.Panel();
@@ -54,7 +54,6 @@
 			this.bunifuButton6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
 			this.bunifuButton5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
 			this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-			this.bunifuButton4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
 			this.bunifuButton3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
 			this.bunifuButton2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
 			this.btnBooking = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -66,31 +65,32 @@
 			this.lbUser = new System.Windows.Forms.Label();
 			this.bunifuPages1 = new Bunifu.UI.WinForms.BunifuPages();
 			this.Dashboard = new System.Windows.Forms.TabPage();
-			this.uC_Dashboard1 = new FAHotelApp.UC.UC_Dashboard();
 			this.BookingKamar = new System.Windows.Forms.TabPage();
-			this.uC_BookingRoom1 = new FAHotelApp.UC.UC_BookingRoom();
 			this.CheckInKamar = new System.Windows.Forms.TabPage();
-			this.uC_ReceiveRoom1 = new FAHotelApp.UC.UC_ReceiveRoom();
 			this.LayanandanPembayaran = new System.Windows.Forms.TabPage();
-			this.uC_UseService1 = new FAHotelApp.UC.UC_UseService();
 			this.ManajerKamar = new System.Windows.Forms.TabPage();
-			this.uC_Room1 = new FAHotelApp.UC.UC_Room();
 			this.ManajerKaryawan = new System.Windows.Forms.TabPage();
-			this.uC_Staff1 = new FAHotelApp.UC.UC_Staff();
 			this.ManajerPelanggan = new System.Windows.Forms.TabPage();
-			this.uC_Customer1 = new FAHotelApp.UC.UC_Customer();
 			this.ManajerTagihan = new System.Windows.Forms.TabPage();
-			this.uC_Bill1 = new FAHotelApp.UC.UC_Bill();
 			this.ManajerPelayanan = new System.Windows.Forms.TabPage();
-			this.uC_Service1 = new FAHotelApp.UC.UC_Service();
 			this.PeraturanHotel = new System.Windows.Forms.TabPage();
-			this.uC_Parameter1 = new FAHotelApp.UC.UC_Parameter();
 			this.Peraturan = new System.Windows.Forms.TabPage();
 			this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
 			this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
 			this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
 			this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
 			this.panelHeader = new System.Windows.Forms.Panel();
+			this.uC_Dashboard1 = new FAHotelApp.UC.UC_Dashboard();
+			this.uC_BookingRoom1 = new FAHotelApp.UC.UC_BookingRoom();
+			this.uC_ReceiveRoom1 = new FAHotelApp.UC.UC_ReceiveRoom();
+			this.uC_UseService1 = new FAHotelApp.UC.UC_UseService();
+			this.uC_Room1 = new FAHotelApp.UC.UC_Room();
+			this.uC_Staff1 = new FAHotelApp.UC.UC_Staff();
+			this.uC_Customer1 = new FAHotelApp.UC.UC_Customer();
+			this.uC_Bill1 = new FAHotelApp.UC.UC_Bill();
+			this.uC_Service1 = new FAHotelApp.UC.UC_Service();
+			this.uC_Parameter1 = new FAHotelApp.UC.UC_Parameter();
+			this.bunifuButton10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
 			this.panel1.SuspendLayout();
 			this.panelMenu.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -201,13 +201,13 @@
 			this.panelMenu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
 			this.panelMenu.AutoScroll = true;
+			this.panelMenu.Controls.Add(this.bunifuButton10);
 			this.panelMenu.Controls.Add(this.bunifuButton9);
 			this.panelMenu.Controls.Add(this.bunifuButton8);
 			this.panelMenu.Controls.Add(this.bunifuButton7);
 			this.panelMenu.Controls.Add(this.bunifuButton6);
 			this.panelMenu.Controls.Add(this.bunifuButton5);
 			this.panelMenu.Controls.Add(this.bunifuButton1);
-			this.panelMenu.Controls.Add(this.bunifuButton4);
 			this.panelMenu.Controls.Add(this.bunifuButton3);
 			this.panelMenu.Controls.Add(this.bunifuButton2);
 			this.panelMenu.Controls.Add(this.btnBooking);
@@ -236,11 +236,11 @@
 			this.bunifuButton9.ColorContrastOnClick = 45;
 			this.bunifuButton9.ColorContrastOnHover = 45;
 			this.bunifuButton9.Cursor = System.Windows.Forms.Cursors.Default;
-			borderEdges1.BottomLeft = true;
-			borderEdges1.BottomRight = true;
-			borderEdges1.TopLeft = true;
-			borderEdges1.TopRight = true;
-			this.bunifuButton9.CustomizableEdges = borderEdges1;
+			borderEdges2.BottomLeft = true;
+			borderEdges2.BottomRight = true;
+			borderEdges2.TopLeft = true;
+			borderEdges2.TopRight = true;
+			this.bunifuButton9.CustomizableEdges = borderEdges2;
 			this.bunifuButton9.DialogResult = System.Windows.Forms.DialogResult.None;
 			this.bunifuButton9.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
 			this.bunifuButton9.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -327,11 +327,11 @@
 			this.bunifuButton8.ColorContrastOnClick = 45;
 			this.bunifuButton8.ColorContrastOnHover = 45;
 			this.bunifuButton8.Cursor = System.Windows.Forms.Cursors.Default;
-			borderEdges2.BottomLeft = true;
-			borderEdges2.BottomRight = true;
-			borderEdges2.TopLeft = true;
-			borderEdges2.TopRight = true;
-			this.bunifuButton8.CustomizableEdges = borderEdges2;
+			borderEdges3.BottomLeft = true;
+			borderEdges3.BottomRight = true;
+			borderEdges3.TopLeft = true;
+			borderEdges3.TopRight = true;
+			this.bunifuButton8.CustomizableEdges = borderEdges3;
 			this.bunifuButton8.DialogResult = System.Windows.Forms.DialogResult.None;
 			this.bunifuButton8.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
 			this.bunifuButton8.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -418,11 +418,11 @@
 			this.bunifuButton7.ColorContrastOnClick = 45;
 			this.bunifuButton7.ColorContrastOnHover = 45;
 			this.bunifuButton7.Cursor = System.Windows.Forms.Cursors.Default;
-			borderEdges3.BottomLeft = true;
-			borderEdges3.BottomRight = true;
-			borderEdges3.TopLeft = true;
-			borderEdges3.TopRight = true;
-			this.bunifuButton7.CustomizableEdges = borderEdges3;
+			borderEdges4.BottomLeft = true;
+			borderEdges4.BottomRight = true;
+			borderEdges4.TopLeft = true;
+			borderEdges4.TopRight = true;
+			this.bunifuButton7.CustomizableEdges = borderEdges4;
 			this.bunifuButton7.DialogResult = System.Windows.Forms.DialogResult.None;
 			this.bunifuButton7.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
 			this.bunifuButton7.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -509,11 +509,11 @@
 			this.bunifuButton6.ColorContrastOnClick = 45;
 			this.bunifuButton6.ColorContrastOnHover = 45;
 			this.bunifuButton6.Cursor = System.Windows.Forms.Cursors.Default;
-			borderEdges4.BottomLeft = true;
-			borderEdges4.BottomRight = true;
-			borderEdges4.TopLeft = true;
-			borderEdges4.TopRight = true;
-			this.bunifuButton6.CustomizableEdges = borderEdges4;
+			borderEdges5.BottomLeft = true;
+			borderEdges5.BottomRight = true;
+			borderEdges5.TopLeft = true;
+			borderEdges5.TopRight = true;
+			this.bunifuButton6.CustomizableEdges = borderEdges5;
 			this.bunifuButton6.DialogResult = System.Windows.Forms.DialogResult.None;
 			this.bunifuButton6.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
 			this.bunifuButton6.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -600,11 +600,11 @@
 			this.bunifuButton5.ColorContrastOnClick = 45;
 			this.bunifuButton5.ColorContrastOnHover = 45;
 			this.bunifuButton5.Cursor = System.Windows.Forms.Cursors.Default;
-			borderEdges5.BottomLeft = true;
-			borderEdges5.BottomRight = true;
-			borderEdges5.TopLeft = true;
-			borderEdges5.TopRight = true;
-			this.bunifuButton5.CustomizableEdges = borderEdges5;
+			borderEdges6.BottomLeft = true;
+			borderEdges6.BottomRight = true;
+			borderEdges6.TopLeft = true;
+			borderEdges6.TopRight = true;
+			this.bunifuButton5.CustomizableEdges = borderEdges6;
 			this.bunifuButton5.DialogResult = System.Windows.Forms.DialogResult.None;
 			this.bunifuButton5.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
 			this.bunifuButton5.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -691,11 +691,11 @@
 			this.bunifuButton1.ColorContrastOnClick = 45;
 			this.bunifuButton1.ColorContrastOnHover = 45;
 			this.bunifuButton1.Cursor = System.Windows.Forms.Cursors.Default;
-			borderEdges6.BottomLeft = true;
-			borderEdges6.BottomRight = true;
-			borderEdges6.TopLeft = true;
-			borderEdges6.TopRight = true;
-			this.bunifuButton1.CustomizableEdges = borderEdges6;
+			borderEdges7.BottomLeft = true;
+			borderEdges7.BottomRight = true;
+			borderEdges7.TopLeft = true;
+			borderEdges7.TopRight = true;
+			this.bunifuButton1.CustomizableEdges = borderEdges7;
 			this.bunifuButton1.DialogResult = System.Windows.Forms.DialogResult.None;
 			this.bunifuButton1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
 			this.bunifuButton1.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -762,95 +762,6 @@
 			this.bunifuButton1.TextPadding = new System.Windows.Forms.Padding(50, 0, 0, 0);
 			this.bunifuButton1.UseDefaultRadiusAndThickness = true;
 			this.bunifuButton1.Click += new System.EventHandler(this.bunifuButton1_Click);
-			// 
-			// bunifuButton4
-			// 
-			this.bunifuButton4.AllowAnimations = true;
-			this.bunifuButton4.AllowMouseEffects = true;
-			this.bunifuButton4.AllowToggling = true;
-			this.bunifuButton4.AnimationSpeed = 200;
-			this.bunifuButton4.AutoGenerateColors = false;
-			this.bunifuButton4.AutoRoundBorders = false;
-			this.bunifuButton4.AutoSizeLeftIcon = true;
-			this.bunifuButton4.AutoSizeRightIcon = true;
-			this.bunifuButton4.BackColor = System.Drawing.Color.Transparent;
-			this.bunifuButton4.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
-			this.bunifuButton4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton4.BackgroundImage")));
-			this.bunifuButton4.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-			this.bunifuButton4.ButtonText = "Settings";
-			this.bunifuButton4.ButtonTextMarginLeft = 0;
-			this.bunifuButton4.ColorContrastOnClick = 45;
-			this.bunifuButton4.ColorContrastOnHover = 45;
-			this.bunifuButton4.Cursor = System.Windows.Forms.Cursors.Default;
-			borderEdges7.BottomLeft = true;
-			borderEdges7.BottomRight = true;
-			borderEdges7.TopLeft = true;
-			borderEdges7.TopRight = true;
-			this.bunifuButton4.CustomizableEdges = borderEdges7;
-			this.bunifuButton4.DialogResult = System.Windows.Forms.DialogResult.None;
-			this.bunifuButton4.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-			this.bunifuButton4.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-			this.bunifuButton4.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-			this.bunifuButton4.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-			this.bunifuButton4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.bunifuButton4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-			this.bunifuButton4.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.bunifuButton4.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-			this.bunifuButton4.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-			this.bunifuButton4.IconMarginLeft = 11;
-			this.bunifuButton4.IconPadding = 10;
-			this.bunifuButton4.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.bunifuButton4.IconRightCursor = System.Windows.Forms.Cursors.Default;
-			this.bunifuButton4.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-			this.bunifuButton4.IconSize = 25;
-			this.bunifuButton4.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
-			this.bunifuButton4.IdleBorderRadius = 10;
-			this.bunifuButton4.IdleBorderThickness = 1;
-			this.bunifuButton4.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
-			this.bunifuButton4.IdleIconLeftImage = global::FAHotelApp.Properties.Resources.settings_120px3;
-			this.bunifuButton4.IdleIconRightImage = null;
-			this.bunifuButton4.IndicateFocus = true;
-			this.bunifuButton4.Location = new System.Drawing.Point(0, 506);
-			this.bunifuButton4.Name = "bunifuButton4";
-			this.bunifuButton4.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-			this.bunifuButton4.OnDisabledState.BorderRadius = 10;
-			this.bunifuButton4.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-			this.bunifuButton4.OnDisabledState.BorderThickness = 1;
-			this.bunifuButton4.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-			this.bunifuButton4.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-			this.bunifuButton4.OnDisabledState.IconLeftImage = null;
-			this.bunifuButton4.OnDisabledState.IconRightImage = null;
-			this.bunifuButton4.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.bunifuButton4.onHoverState.BorderRadius = 10;
-			this.bunifuButton4.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-			this.bunifuButton4.onHoverState.BorderThickness = 1;
-			this.bunifuButton4.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.bunifuButton4.onHoverState.ForeColor = System.Drawing.Color.White;
-			this.bunifuButton4.onHoverState.IconLeftImage = null;
-			this.bunifuButton4.onHoverState.IconRightImage = null;
-			this.bunifuButton4.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
-			this.bunifuButton4.OnIdleState.BorderRadius = 10;
-			this.bunifuButton4.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-			this.bunifuButton4.OnIdleState.BorderThickness = 1;
-			this.bunifuButton4.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
-			this.bunifuButton4.OnIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-			this.bunifuButton4.OnIdleState.IconLeftImage = global::FAHotelApp.Properties.Resources.settings_120px3;
-			this.bunifuButton4.OnIdleState.IconRightImage = null;
-			this.bunifuButton4.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(201)))), ((int)(((byte)(71)))));
-			this.bunifuButton4.OnPressedState.BorderRadius = 10;
-			this.bunifuButton4.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-			this.bunifuButton4.OnPressedState.BorderThickness = 1;
-			this.bunifuButton4.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(201)))), ((int)(((byte)(71)))));
-			this.bunifuButton4.OnPressedState.ForeColor = System.Drawing.Color.White;
-			this.bunifuButton4.OnPressedState.IconLeftImage = null;
-			this.bunifuButton4.OnPressedState.IconRightImage = null;
-			this.bunifuButton4.Size = new System.Drawing.Size(250, 50);
-			this.bunifuButton4.TabIndex = 4;
-			this.bunifuButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.bunifuButton4.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-			this.bunifuButton4.TextMarginLeft = 0;
-			this.bunifuButton4.TextPadding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-			this.bunifuButton4.UseDefaultRadiusAndThickness = true;
 			// 
 			// bunifuButton3
 			// 
@@ -1329,14 +1240,6 @@
 			this.Dashboard.TabIndex = 0;
 			this.Dashboard.Text = "Dashboard";
 			// 
-			// uC_Dashboard1
-			// 
-			this.uC_Dashboard1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.uC_Dashboard1.Location = new System.Drawing.Point(3, 3);
-			this.uC_Dashboard1.Name = "uC_Dashboard1";
-			this.uC_Dashboard1.Size = new System.Drawing.Size(944, 551);
-			this.uC_Dashboard1.TabIndex = 0;
-			// 
 			// BookingKamar
 			// 
 			this.BookingKamar.BackColor = System.Drawing.SystemColors.Control;
@@ -1347,16 +1250,6 @@
 			this.BookingKamar.Size = new System.Drawing.Size(950, 557);
 			this.BookingKamar.TabIndex = 1;
 			this.BookingKamar.Text = "Booking Kamar";
-			// 
-			// uC_BookingRoom1
-			// 
-			this.uC_BookingRoom1.AutoScroll = true;
-			this.uC_BookingRoom1.BackColor = System.Drawing.Color.White;
-			this.uC_BookingRoom1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.uC_BookingRoom1.Location = new System.Drawing.Point(3, 3);
-			this.uC_BookingRoom1.Name = "uC_BookingRoom1";
-			this.uC_BookingRoom1.Size = new System.Drawing.Size(944, 551);
-			this.uC_BookingRoom1.TabIndex = 0;
 			// 
 			// CheckInKamar
 			// 
@@ -1369,16 +1262,6 @@
 			this.CheckInKamar.TabIndex = 2;
 			this.CheckInKamar.Text = "Check-In Kamar";
 			// 
-			// uC_ReceiveRoom1
-			// 
-			this.uC_ReceiveRoom1.AutoScroll = true;
-			this.uC_ReceiveRoom1.BackColor = System.Drawing.Color.White;
-			this.uC_ReceiveRoom1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.uC_ReceiveRoom1.Location = new System.Drawing.Point(3, 3);
-			this.uC_ReceiveRoom1.Name = "uC_ReceiveRoom1";
-			this.uC_ReceiveRoom1.Size = new System.Drawing.Size(944, 551);
-			this.uC_ReceiveRoom1.TabIndex = 0;
-			// 
 			// LayanandanPembayaran
 			// 
 			this.LayanandanPembayaran.BackColor = System.Drawing.SystemColors.Control;
@@ -1389,16 +1272,6 @@
 			this.LayanandanPembayaran.Size = new System.Drawing.Size(950, 557);
 			this.LayanandanPembayaran.TabIndex = 3;
 			this.LayanandanPembayaran.Text = "Layanan dan Pembayaran";
-			// 
-			// uC_UseService1
-			// 
-			this.uC_UseService1.AutoScroll = true;
-			this.uC_UseService1.BackColor = System.Drawing.Color.White;
-			this.uC_UseService1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.uC_UseService1.Location = new System.Drawing.Point(3, 3);
-			this.uC_UseService1.Name = "uC_UseService1";
-			this.uC_UseService1.Size = new System.Drawing.Size(944, 551);
-			this.uC_UseService1.TabIndex = 0;
 			// 
 			// ManajerKamar
 			// 
@@ -1411,16 +1284,6 @@
 			this.ManajerKamar.TabIndex = 4;
 			this.ManajerKamar.Text = "Manajer Kamar";
 			// 
-			// uC_Room1
-			// 
-			this.uC_Room1.AutoScroll = true;
-			this.uC_Room1.BackColor = System.Drawing.Color.White;
-			this.uC_Room1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.uC_Room1.Location = new System.Drawing.Point(3, 3);
-			this.uC_Room1.Name = "uC_Room1";
-			this.uC_Room1.Size = new System.Drawing.Size(944, 551);
-			this.uC_Room1.TabIndex = 0;
-			// 
 			// ManajerKaryawan
 			// 
 			this.ManajerKaryawan.BackColor = System.Drawing.SystemColors.Control;
@@ -1431,16 +1294,6 @@
 			this.ManajerKaryawan.Size = new System.Drawing.Size(950, 557);
 			this.ManajerKaryawan.TabIndex = 5;
 			this.ManajerKaryawan.Text = "Manajer Karyawan";
-			// 
-			// uC_Staff1
-			// 
-			this.uC_Staff1.AutoScroll = true;
-			this.uC_Staff1.BackColor = System.Drawing.Color.White;
-			this.uC_Staff1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.uC_Staff1.Location = new System.Drawing.Point(3, 3);
-			this.uC_Staff1.Name = "uC_Staff1";
-			this.uC_Staff1.Size = new System.Drawing.Size(944, 551);
-			this.uC_Staff1.TabIndex = 0;
 			// 
 			// ManajerPelanggan
 			// 
@@ -1453,16 +1306,6 @@
 			this.ManajerPelanggan.TabIndex = 6;
 			this.ManajerPelanggan.Text = "Manajer Pelanggan";
 			// 
-			// uC_Customer1
-			// 
-			this.uC_Customer1.AutoScroll = true;
-			this.uC_Customer1.BackColor = System.Drawing.Color.White;
-			this.uC_Customer1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.uC_Customer1.Location = new System.Drawing.Point(3, 3);
-			this.uC_Customer1.Name = "uC_Customer1";
-			this.uC_Customer1.Size = new System.Drawing.Size(944, 551);
-			this.uC_Customer1.TabIndex = 0;
-			// 
 			// ManajerTagihan
 			// 
 			this.ManajerTagihan.BackColor = System.Drawing.SystemColors.Control;
@@ -1473,16 +1316,6 @@
 			this.ManajerTagihan.Size = new System.Drawing.Size(950, 557);
 			this.ManajerTagihan.TabIndex = 7;
 			this.ManajerTagihan.Text = "Manajer Tagihan";
-			// 
-			// uC_Bill1
-			// 
-			this.uC_Bill1.AutoScroll = true;
-			this.uC_Bill1.BackColor = System.Drawing.Color.White;
-			this.uC_Bill1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.uC_Bill1.Location = new System.Drawing.Point(3, 3);
-			this.uC_Bill1.Name = "uC_Bill1";
-			this.uC_Bill1.Size = new System.Drawing.Size(944, 551);
-			this.uC_Bill1.TabIndex = 0;
 			// 
 			// ManajerPelayanan
 			// 
@@ -1495,16 +1328,6 @@
 			this.ManajerPelayanan.TabIndex = 8;
 			this.ManajerPelayanan.Text = "Manajer Pelayanan";
 			// 
-			// uC_Service1
-			// 
-			this.uC_Service1.AutoScroll = true;
-			this.uC_Service1.BackColor = System.Drawing.Color.White;
-			this.uC_Service1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.uC_Service1.Location = new System.Drawing.Point(3, 3);
-			this.uC_Service1.Name = "uC_Service1";
-			this.uC_Service1.Size = new System.Drawing.Size(944, 551);
-			this.uC_Service1.TabIndex = 0;
-			// 
 			// PeraturanHotel
 			// 
 			this.PeraturanHotel.BackColor = System.Drawing.SystemColors.Control;
@@ -1516,22 +1339,12 @@
 			this.PeraturanHotel.TabIndex = 9;
 			this.PeraturanHotel.Text = "Peraturan Hotel";
 			// 
-			// uC_Parameter1
-			// 
-			this.uC_Parameter1.AutoScroll = true;
-			this.uC_Parameter1.BackColor = System.Drawing.Color.White;
-			this.uC_Parameter1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.uC_Parameter1.Location = new System.Drawing.Point(3, 3);
-			this.uC_Parameter1.Name = "uC_Parameter1";
-			this.uC_Parameter1.Size = new System.Drawing.Size(944, 551);
-			this.uC_Parameter1.TabIndex = 0;
-			// 
 			// Peraturan
 			// 
 			this.Peraturan.Location = new System.Drawing.Point(4, 4);
 			this.Peraturan.Name = "Peraturan";
 			this.Peraturan.Padding = new System.Windows.Forms.Padding(3);
-			this.Peraturan.Size = new System.Drawing.Size(1270, 591);
+			this.Peraturan.Size = new System.Drawing.Size(950, 557);
 			this.Peraturan.TabIndex = 10;
 			this.Peraturan.Text = "Peraturan";
 			this.Peraturan.UseVisualStyleBackColor = true;
@@ -1631,6 +1444,194 @@
 			this.panelHeader.Size = new System.Drawing.Size(958, 36);
 			this.panelHeader.TabIndex = 1;
 			// 
+			// uC_Dashboard1
+			// 
+			this.uC_Dashboard1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.uC_Dashboard1.Location = new System.Drawing.Point(3, 3);
+			this.uC_Dashboard1.Name = "uC_Dashboard1";
+			this.uC_Dashboard1.Size = new System.Drawing.Size(944, 551);
+			this.uC_Dashboard1.TabIndex = 0;
+			// 
+			// uC_BookingRoom1
+			// 
+			this.uC_BookingRoom1.AutoScroll = true;
+			this.uC_BookingRoom1.BackColor = System.Drawing.Color.White;
+			this.uC_BookingRoom1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.uC_BookingRoom1.Location = new System.Drawing.Point(3, 3);
+			this.uC_BookingRoom1.Name = "uC_BookingRoom1";
+			this.uC_BookingRoom1.Size = new System.Drawing.Size(944, 551);
+			this.uC_BookingRoom1.TabIndex = 0;
+			// 
+			// uC_ReceiveRoom1
+			// 
+			this.uC_ReceiveRoom1.AutoScroll = true;
+			this.uC_ReceiveRoom1.BackColor = System.Drawing.Color.White;
+			this.uC_ReceiveRoom1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.uC_ReceiveRoom1.Location = new System.Drawing.Point(3, 3);
+			this.uC_ReceiveRoom1.Name = "uC_ReceiveRoom1";
+			this.uC_ReceiveRoom1.Size = new System.Drawing.Size(944, 551);
+			this.uC_ReceiveRoom1.TabIndex = 0;
+			// 
+			// uC_UseService1
+			// 
+			this.uC_UseService1.AutoScroll = true;
+			this.uC_UseService1.BackColor = System.Drawing.Color.White;
+			this.uC_UseService1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.uC_UseService1.Location = new System.Drawing.Point(3, 3);
+			this.uC_UseService1.Name = "uC_UseService1";
+			this.uC_UseService1.Size = new System.Drawing.Size(944, 551);
+			this.uC_UseService1.TabIndex = 0;
+			// 
+			// uC_Room1
+			// 
+			this.uC_Room1.AutoScroll = true;
+			this.uC_Room1.BackColor = System.Drawing.Color.White;
+			this.uC_Room1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.uC_Room1.Location = new System.Drawing.Point(3, 3);
+			this.uC_Room1.Name = "uC_Room1";
+			this.uC_Room1.Size = new System.Drawing.Size(944, 551);
+			this.uC_Room1.TabIndex = 0;
+			// 
+			// uC_Staff1
+			// 
+			this.uC_Staff1.AutoScroll = true;
+			this.uC_Staff1.BackColor = System.Drawing.Color.White;
+			this.uC_Staff1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.uC_Staff1.Location = new System.Drawing.Point(3, 3);
+			this.uC_Staff1.Name = "uC_Staff1";
+			this.uC_Staff1.Size = new System.Drawing.Size(944, 551);
+			this.uC_Staff1.TabIndex = 0;
+			// 
+			// uC_Customer1
+			// 
+			this.uC_Customer1.AutoScroll = true;
+			this.uC_Customer1.BackColor = System.Drawing.Color.White;
+			this.uC_Customer1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.uC_Customer1.Location = new System.Drawing.Point(3, 3);
+			this.uC_Customer1.Name = "uC_Customer1";
+			this.uC_Customer1.Size = new System.Drawing.Size(944, 551);
+			this.uC_Customer1.TabIndex = 0;
+			// 
+			// uC_Bill1
+			// 
+			this.uC_Bill1.AutoScroll = true;
+			this.uC_Bill1.BackColor = System.Drawing.Color.White;
+			this.uC_Bill1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.uC_Bill1.Location = new System.Drawing.Point(3, 3);
+			this.uC_Bill1.Name = "uC_Bill1";
+			this.uC_Bill1.Size = new System.Drawing.Size(944, 551);
+			this.uC_Bill1.TabIndex = 0;
+			// 
+			// uC_Service1
+			// 
+			this.uC_Service1.AutoScroll = true;
+			this.uC_Service1.BackColor = System.Drawing.Color.White;
+			this.uC_Service1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.uC_Service1.Location = new System.Drawing.Point(3, 3);
+			this.uC_Service1.Name = "uC_Service1";
+			this.uC_Service1.Size = new System.Drawing.Size(944, 551);
+			this.uC_Service1.TabIndex = 0;
+			// 
+			// uC_Parameter1
+			// 
+			this.uC_Parameter1.AutoScroll = true;
+			this.uC_Parameter1.BackColor = System.Drawing.Color.White;
+			this.uC_Parameter1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.uC_Parameter1.Location = new System.Drawing.Point(3, 3);
+			this.uC_Parameter1.Name = "uC_Parameter1";
+			this.uC_Parameter1.Size = new System.Drawing.Size(944, 551);
+			this.uC_Parameter1.TabIndex = 0;
+			// 
+			// bunifuButton10
+			// 
+			this.bunifuButton10.AllowAnimations = true;
+			this.bunifuButton10.AllowMouseEffects = true;
+			this.bunifuButton10.AllowToggling = true;
+			this.bunifuButton10.AnimationSpeed = 200;
+			this.bunifuButton10.AutoGenerateColors = false;
+			this.bunifuButton10.AutoRoundBorders = false;
+			this.bunifuButton10.AutoSizeLeftIcon = true;
+			this.bunifuButton10.AutoSizeRightIcon = true;
+			this.bunifuButton10.BackColor = System.Drawing.Color.Transparent;
+			this.bunifuButton10.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
+			this.bunifuButton10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton10.BackgroundImage")));
+			this.bunifuButton10.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+			this.bunifuButton10.ButtonText = "Setting";
+			this.bunifuButton10.ButtonTextMarginLeft = 0;
+			this.bunifuButton10.ColorContrastOnClick = 45;
+			this.bunifuButton10.ColorContrastOnHover = 45;
+			this.bunifuButton10.Cursor = System.Windows.Forms.Cursors.Default;
+			borderEdges1.BottomLeft = true;
+			borderEdges1.BottomRight = true;
+			borderEdges1.TopLeft = true;
+			borderEdges1.TopRight = true;
+			this.bunifuButton10.CustomizableEdges = borderEdges1;
+			this.bunifuButton10.DialogResult = System.Windows.Forms.DialogResult.None;
+			this.bunifuButton10.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+			this.bunifuButton10.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+			this.bunifuButton10.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+			this.bunifuButton10.Dock = System.Windows.Forms.DockStyle.Top;
+			this.bunifuButton10.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+			this.bunifuButton10.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.bunifuButton10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			this.bunifuButton10.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.bunifuButton10.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+			this.bunifuButton10.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+			this.bunifuButton10.IconMarginLeft = 11;
+			this.bunifuButton10.IconPadding = 10;
+			this.bunifuButton10.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.bunifuButton10.IconRightCursor = System.Windows.Forms.Cursors.Default;
+			this.bunifuButton10.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+			this.bunifuButton10.IconSize = 25;
+			this.bunifuButton10.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
+			this.bunifuButton10.IdleBorderRadius = 10;
+			this.bunifuButton10.IdleBorderThickness = 1;
+			this.bunifuButton10.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
+			this.bunifuButton10.IdleIconLeftImage = global::FAHotelApp.Properties.Resources.settings_120px3;
+			this.bunifuButton10.IdleIconRightImage = null;
+			this.bunifuButton10.IndicateFocus = true;
+			this.bunifuButton10.Location = new System.Drawing.Point(0, 500);
+			this.bunifuButton10.Name = "bunifuButton10";
+			this.bunifuButton10.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+			this.bunifuButton10.OnDisabledState.BorderRadius = 10;
+			this.bunifuButton10.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+			this.bunifuButton10.OnDisabledState.BorderThickness = 1;
+			this.bunifuButton10.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+			this.bunifuButton10.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+			this.bunifuButton10.OnDisabledState.IconLeftImage = null;
+			this.bunifuButton10.OnDisabledState.IconRightImage = null;
+			this.bunifuButton10.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.bunifuButton10.onHoverState.BorderRadius = 10;
+			this.bunifuButton10.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+			this.bunifuButton10.onHoverState.BorderThickness = 1;
+			this.bunifuButton10.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.bunifuButton10.onHoverState.ForeColor = System.Drawing.Color.White;
+			this.bunifuButton10.onHoverState.IconLeftImage = null;
+			this.bunifuButton10.onHoverState.IconRightImage = null;
+			this.bunifuButton10.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
+			this.bunifuButton10.OnIdleState.BorderRadius = 10;
+			this.bunifuButton10.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+			this.bunifuButton10.OnIdleState.BorderThickness = 1;
+			this.bunifuButton10.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
+			this.bunifuButton10.OnIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			this.bunifuButton10.OnIdleState.IconLeftImage = global::FAHotelApp.Properties.Resources.settings_120px3;
+			this.bunifuButton10.OnIdleState.IconRightImage = null;
+			this.bunifuButton10.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(201)))), ((int)(((byte)(71)))));
+			this.bunifuButton10.OnPressedState.BorderRadius = 10;
+			this.bunifuButton10.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+			this.bunifuButton10.OnPressedState.BorderThickness = 1;
+			this.bunifuButton10.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(201)))), ((int)(((byte)(71)))));
+			this.bunifuButton10.OnPressedState.ForeColor = System.Drawing.Color.White;
+			this.bunifuButton10.OnPressedState.IconLeftImage = null;
+			this.bunifuButton10.OnPressedState.IconRightImage = null;
+			this.bunifuButton10.Size = new System.Drawing.Size(257, 50);
+			this.bunifuButton10.TabIndex = 12;
+			this.bunifuButton10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.bunifuButton10.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+			this.bunifuButton10.TextMarginLeft = 0;
+			this.bunifuButton10.TextPadding = new System.Windows.Forms.Padding(50, 0, 0, 0);
+			this.bunifuButton10.UseDefaultRadiusAndThickness = true;
+			// 
 			// FormMenu
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1680,7 +1681,6 @@
 		private Bunifu.UI.WinForms.BunifuPages bunifuPages1;
 		private System.Windows.Forms.TabPage Dashboard;
 		private System.Windows.Forms.TabPage BookingKamar;
-		private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton4;
 		private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton3;
 		private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton2;
 		private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnBooking;
@@ -1714,5 +1714,6 @@
 		private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
 		private System.Windows.Forms.TabPage Peraturan;
 		private UC.UC_UseService uC_UseService1;
+		private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton10;
 	}
 }

@@ -34,9 +34,9 @@
 			this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
 			this.lbTime = new System.Windows.Forms.Label();
 			this.lbDate = new System.Windows.Forms.Label();
-			this.timer1 = new System.Windows.Forms.Timer(this.components);
 			this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
 			this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
+			this.timer1 = new System.Windows.Forms.Timer(this.components);
 			this.timer2 = new System.Windows.Forms.Timer(this.components);
 			this.timer3 = new System.Windows.Forms.Timer(this.components);
 			this.guna2Panel2.SuspendLayout();
@@ -93,10 +93,6 @@
 			this.lbDate.TabIndex = 15;
 			this.lbDate.Text = "Date";
 			// 
-			// timer1
-			// 
-			this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-			// 
 			// guna2PictureBox1
 			// 
 			this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
@@ -122,6 +118,10 @@
 			this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.guna2PictureBox2.TabIndex = 17;
 			this.guna2PictureBox2.TabStop = false;
+			// 
+			// timer1
+			// 
+			this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
 			// 
 			// timer2
 			// 

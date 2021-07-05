@@ -11,6 +11,7 @@ using System.Data.SqlClient;
 using FAHotelApp.Forms;
 using System.Threading;
 using FAHotelApp.DAO;
+using System.Globalization;
 
 namespace FAHotelApp.Forms
 {
@@ -23,14 +24,18 @@ namespace FAHotelApp.Forms
 
 		public bool Login()
 		{
-			return AccountDAO.Instance.Login(txtUsername.Text, txtPassword.Text);
+			return AccountDAO.Instance.Login(txtUsername.Text, txtPassword.Text, cbDepartement.SelectedIndex);
 		}
 
 		private void FormLogin_Load(object sender, EventArgs e)
 		{
+			cbDepartement.DataSource = AccountDAO.Instance.LoadListStaffType();
+			cbDepartement.DisplayMember = "Name";
+
 			timer1.Start();
 
-			lbDate.Text = DateTime.Now.ToString("dddd,\nMMM dd yyyy");
+			CultureInfo culture = new CultureInfo("id-ID");
+			lbDate.Text = DateTime.Now.ToString("dddd,\ndd MMMM yyyy", culture);
 
 			lbTime.Text = DateTime.Now.ToLongTimeString();
 
@@ -51,6 +56,7 @@ namespace FAHotelApp.Forms
 		private void btnLogin_Click(object sender, EventArgs e)
 		{
 			Properties.Settings.Default.UsernameView = txtUsername.Text;
+			Properties.Settings.Default.UserTypeView = cbDepartement.Text;
 
 			if (txtUsername.Text == "" || txtPassword.Text == "")
 			{
@@ -154,6 +160,22 @@ namespace FAHotelApp.Forms
 		{
 			FormTC f = new FormTC();
 			f.Show();
+		}
+
+		private void cbDepartement_Leave(object sender, EventArgs e)
+		{
+			if (cbDepartement.SelectedIndex == 0)
+			{
+				epWarning.SetError(cbDepartement, "Pilih Departement terlebih dahulu");
+				epWrong.SetError(cbDepartement, "");
+				epCorrect.SetError(cbDepartement, "");
+			}
+			else
+			{
+				epWarning.SetError(cbDepartement, "");
+				epWrong.SetError(cbDepartement, "");
+				epCorrect.SetError(cbDepartement, "Terisi!");
+			}
 		}
 	}
 }

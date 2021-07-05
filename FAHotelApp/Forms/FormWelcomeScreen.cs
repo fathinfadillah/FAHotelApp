@@ -14,6 +14,7 @@ using System.Net.Mail;
 using System.Text.RegularExpressions;
 using System.Reflection;
 using System.IO;
+using System.Globalization;
 
 namespace FAHotelApp.Forms
 {
@@ -42,7 +43,8 @@ namespace FAHotelApp.Forms
 		{
 			timer1.Start();
 
-			lbDate.Text = DateTime.Now.ToString("dddd, MMM dd yyyy");
+			CultureInfo culture = new CultureInfo("id-ID");
+			lbDate.Text = DateTime.Now.ToString("dddd, dd MMMM yyyy", culture);
 
 			lbTime.Text = DateTime.Now.ToLongTimeString();
 

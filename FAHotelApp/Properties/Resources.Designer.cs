@@ -243,6 +243,16 @@ namespace FAHotelApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap indonesia_120px {
+            get {
+                object obj = ResourceManager.GetObject("indonesia_120px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap key_120px {
             get {
                 object obj = ResourceManager.GetObject("key_120px", resourceCulture);
@@ -327,6 +337,16 @@ namespace FAHotelApp.Properties {
             get {
                 object obj = ResourceManager.GetObject("Terms_and_Conditions_FAHotel", resourceCulture);
                 return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap usa_120px {
+            get {
+                object obj = ResourceManager.GetObject("usa_120px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

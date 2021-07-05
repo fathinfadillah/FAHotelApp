@@ -211,6 +211,7 @@
     <Compile Include="DTO\RoomType.cs" />
     <Compile Include="DTO\Service.cs" />
     <Compile Include="DTO\ServiceType.cs" />
+    <Compile Include="DTO\StaffType.cs" />
     <Compile Include="DTO\StatusRoom.cs" />
     <Compile Include="Forms\FormAccess.cs">
       <SubType>Form</SubType>
@@ -253,6 +254,12 @@
     </Compile>
     <Compile Include="Forms\FormBookRoomDetails.Designer.cs">
       <DependentUpon>FormBookRoomDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormWelcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormWelcome.Designer.cs">
+      <DependentUpon>FormWelcome.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FormPrintBill.cs">
       <SubType>Form</SubType>
@@ -444,6 +451,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormBookRoomDetails.resx">
       <DependentUpon>FormBookRoomDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormWelcome.en.resx">
+      <DependentUpon>FormWelcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormWelcome.id-ID.resx">
+      <DependentUpon>FormWelcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormWelcome.id.resx">
+      <DependentUpon>FormWelcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormWelcome.resx">
+      <DependentUpon>FormWelcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormLogin.en.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormLogin.id-ID.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormLogin.id.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormPrintBill.resx">
       <DependentUpon>FormPrintBill.cs</DependentUpon>
@@ -663,6 +691,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Room.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indonesia_120px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usa_120px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

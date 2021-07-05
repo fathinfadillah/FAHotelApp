@@ -62,11 +62,11 @@
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("Montserrat", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label1.ForeColor = System.Drawing.Color.Black;
-			this.label1.Location = new System.Drawing.Point(102, 141);
+			this.label1.Location = new System.Drawing.Point(108, 118);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(291, 40);
+			this.label1.Size = new System.Drawing.Size(283, 40);
 			this.label1.TabIndex = 11;
-			this.label1.Text = "Forgot Password?";
+			this.label1.Text = "Lupa Kata Sandi?";
 			// 
 			// guna2ControlBox2
 			// 
@@ -100,22 +100,22 @@
 			this.label5.AutoSize = true;
 			this.label5.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label5.ForeColor = System.Drawing.Color.Black;
-			this.label5.Location = new System.Drawing.Point(106, 194);
+			this.label5.Location = new System.Drawing.Point(112, 171);
 			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(290, 18);
+			this.label5.Size = new System.Drawing.Size(268, 18);
 			this.label5.TabIndex = 12;
-			this.label5.Text = "Please contact to admin. Click button below";
+			this.label5.Text = "Silahkan hubungi ke admin. Klik tombol";
 			// 
 			// label2
 			// 
 			this.label2.AutoSize = true;
 			this.label2.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label2.ForeColor = System.Drawing.Color.Black;
-			this.label2.Location = new System.Drawing.Point(106, 216);
+			this.label2.Location = new System.Drawing.Point(112, 193);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(111, 18);
+			this.label2.Size = new System.Drawing.Size(272, 18);
 			this.label2.TabIndex = 14;
-			this.label2.Text = "to get password";
+			this.label2.Text = "di bawah ini untuk mendapat kata sandi";
 			// 
 			// btnContactAdmin
 			// 
@@ -125,17 +125,17 @@
 			this.btnContactAdmin.CheckedState.Parent = this.btnContactAdmin;
 			this.btnContactAdmin.CustomImages.Parent = this.btnContactAdmin;
 			this.btnContactAdmin.DisabledState.Parent = this.btnContactAdmin;
-			this.btnContactAdmin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(201)))), ((int)(((byte)(71)))));
-			this.btnContactAdmin.Font = new System.Drawing.Font("Montserrat", 8.999999F);
+			this.btnContactAdmin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnContactAdmin.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnContactAdmin.ForeColor = System.Drawing.Color.White;
 			this.btnContactAdmin.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
 			this.btnContactAdmin.HoverState.Parent = this.btnContactAdmin;
-			this.btnContactAdmin.Location = new System.Drawing.Point(109, 249);
+			this.btnContactAdmin.Location = new System.Drawing.Point(115, 234);
 			this.btnContactAdmin.Name = "btnContactAdmin";
 			this.btnContactAdmin.ShadowDecoration.Parent = this.btnContactAdmin;
-			this.btnContactAdmin.Size = new System.Drawing.Size(165, 39);
+			this.btnContactAdmin.Size = new System.Drawing.Size(265, 39);
 			this.btnContactAdmin.TabIndex = 16;
-			this.btnContactAdmin.Text = "Contact Admin";
+			this.btnContactAdmin.Text = "Kontak Administrator";
 			this.btnContactAdmin.UseTransparentBackground = true;
 			this.btnContactAdmin.Click += new System.EventHandler(this.btnContactAdmin_Click);
 			// 
@@ -147,17 +147,17 @@
 			this.btnBack.CheckedState.Parent = this.btnBack;
 			this.btnBack.CustomImages.Parent = this.btnBack;
 			this.btnBack.DisabledState.Parent = this.btnBack;
-			this.btnBack.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(201)))), ((int)(((byte)(71)))));
-			this.btnBack.Font = new System.Drawing.Font("Montserrat", 8.999999F);
+			this.btnBack.FillColor = System.Drawing.Color.Red;
+			this.btnBack.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnBack.ForeColor = System.Drawing.Color.White;
 			this.btnBack.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
 			this.btnBack.HoverState.Parent = this.btnBack;
-			this.btnBack.Location = new System.Drawing.Point(109, 294);
+			this.btnBack.Location = new System.Drawing.Point(115, 279);
 			this.btnBack.Name = "btnBack";
 			this.btnBack.ShadowDecoration.Parent = this.btnBack;
-			this.btnBack.Size = new System.Drawing.Size(165, 39);
+			this.btnBack.Size = new System.Drawing.Size(265, 39);
 			this.btnBack.TabIndex = 17;
-			this.btnBack.Text = "Back";
+			this.btnBack.Text = "Kembali";
 			this.btnBack.UseTransparentBackground = true;
 			this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
 			// 

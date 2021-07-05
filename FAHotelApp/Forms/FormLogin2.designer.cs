@@ -33,20 +33,21 @@
 			this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
 			this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
 			this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-			this.label6 = new System.Windows.Forms.Label();
-			this.label3 = new System.Windows.Forms.Label();
-			this.lbTermCon = new System.Windows.Forms.Label();
+			this.cbDepartement = new Guna.UI2.WinForms.Guna2ComboBox();
 			this.tsShowPassword = new Guna.UI2.WinForms.Guna2ToggleSwitch();
+			this.label3 = new System.Windows.Forms.Label();
 			this.btnExit = new Guna.UI2.WinForms.Guna2Button();
 			this.label5 = new System.Windows.Forms.Label();
 			this.label4 = new System.Windows.Forms.Label();
-			this.lbContactAdmin = new System.Windows.Forms.Label();
 			this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
 			this.lbForgotPassword = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
 			this.tsRememberMe = new Guna.UI2.WinForms.Guna2ToggleSwitch();
 			this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
 			this.txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
+			this.label6 = new System.Windows.Forms.Label();
+			this.lbTermCon = new System.Windows.Forms.Label();
+			this.lbContactAdmin = new System.Windows.Forms.Label();
 			this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
 			this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
 			this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
@@ -79,20 +80,21 @@
 			// guna2Panel2
 			// 
 			this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
-			this.guna2Panel2.Controls.Add(this.label6);
-			this.guna2Panel2.Controls.Add(this.label3);
-			this.guna2Panel2.Controls.Add(this.lbTermCon);
+			this.guna2Panel2.Controls.Add(this.cbDepartement);
 			this.guna2Panel2.Controls.Add(this.tsShowPassword);
+			this.guna2Panel2.Controls.Add(this.label3);
 			this.guna2Panel2.Controls.Add(this.btnExit);
 			this.guna2Panel2.Controls.Add(this.label5);
 			this.guna2Panel2.Controls.Add(this.label4);
-			this.guna2Panel2.Controls.Add(this.lbContactAdmin);
 			this.guna2Panel2.Controls.Add(this.btnLogin);
 			this.guna2Panel2.Controls.Add(this.lbForgotPassword);
 			this.guna2Panel2.Controls.Add(this.label1);
 			this.guna2Panel2.Controls.Add(this.tsRememberMe);
 			this.guna2Panel2.Controls.Add(this.txtPassword);
 			this.guna2Panel2.Controls.Add(this.txtUsername);
+			this.guna2Panel2.Controls.Add(this.label6);
+			this.guna2Panel2.Controls.Add(this.lbTermCon);
+			this.guna2Panel2.Controls.Add(this.lbContactAdmin);
 			this.guna2Panel2.Controls.Add(this.guna2PictureBox1);
 			this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Left;
 			this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
@@ -101,41 +103,27 @@
 			this.guna2Panel2.Size = new System.Drawing.Size(563, 666);
 			this.guna2Panel2.TabIndex = 5;
 			// 
-			// label6
+			// cbDepartement
 			// 
-			this.label6.AutoSize = true;
-			this.label6.Cursor = System.Windows.Forms.Cursors.Arrow;
-			this.label6.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label6.ForeColor = System.Drawing.Color.Black;
-			this.label6.Location = new System.Drawing.Point(193, 601);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(174, 15);
-			this.label6.TabIndex = 17;
-			this.label6.Text = "By login in you agree with our ";
-			// 
-			// label3
-			// 
-			this.label3.AutoSize = true;
-			this.label3.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.ForeColor = System.Drawing.Color.Black;
-			this.label3.Location = new System.Drawing.Point(154, 361);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(93, 15);
-			this.label3.TabIndex = 13;
-			this.label3.Text = "Show Password";
-			// 
-			// lbTermCon
-			// 
-			this.lbTermCon.AutoSize = true;
-			this.lbTermCon.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.lbTermCon.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbTermCon.ForeColor = System.Drawing.Color.Black;
-			this.lbTermCon.Location = new System.Drawing.Point(216, 616);
-			this.lbTermCon.Name = "lbTermCon";
-			this.lbTermCon.Size = new System.Drawing.Size(124, 15);
-			this.lbTermCon.TabIndex = 16;
-			this.lbTermCon.Text = "Terms and Conditions";
-			this.lbTermCon.Click += new System.EventHandler(this.lbTermCon_Click);
+			this.cbDepartement.BackColor = System.Drawing.Color.Transparent;
+			this.cbDepartement.BorderColor = System.Drawing.Color.Black;
+			this.cbDepartement.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+			this.cbDepartement.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.cbDepartement.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.cbDepartement.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.cbDepartement.FocusedState.Parent = this.cbDepartement;
+			this.cbDepartement.Font = new System.Drawing.Font("Segoe UI", 10F);
+			this.cbDepartement.ForeColor = System.Drawing.Color.Black;
+			this.cbDepartement.HoverState.Parent = this.cbDepartement;
+			this.cbDepartement.ItemHeight = 30;
+			this.cbDepartement.ItemsAppearance.Parent = this.cbDepartement;
+			this.cbDepartement.Location = new System.Drawing.Point(114, 320);
+			this.cbDepartement.Name = "cbDepartement";
+			this.cbDepartement.ShadowDecoration.Parent = this.cbDepartement;
+			this.cbDepartement.Size = new System.Drawing.Size(336, 36);
+			this.cbDepartement.StartIndex = 0;
+			this.cbDepartement.TabIndex = 29;
+			this.cbDepartement.Leave += new System.EventHandler(this.cbDepartement_Leave);
 			// 
 			// tsShowPassword
 			// 
@@ -146,11 +134,11 @@
 			this.tsShowPassword.CheckedState.InnerBorderColor = System.Drawing.Color.White;
 			this.tsShowPassword.CheckedState.InnerColor = System.Drawing.Color.White;
 			this.tsShowPassword.CheckedState.Parent = this.tsShowPassword;
-			this.tsShowPassword.Location = new System.Drawing.Point(114, 359);
+			this.tsShowPassword.Location = new System.Drawing.Point(114, 369);
 			this.tsShowPassword.Name = "tsShowPassword";
 			this.tsShowPassword.ShadowDecoration.Parent = this.tsShowPassword;
 			this.tsShowPassword.Size = new System.Drawing.Size(35, 20);
-			this.tsShowPassword.TabIndex = 12;
+			this.tsShowPassword.TabIndex = 28;
 			this.tsShowPassword.UncheckedState.BorderColor = System.Drawing.Color.Black;
 			this.tsShowPassword.UncheckedState.BorderThickness = 2;
 			this.tsShowPassword.UncheckedState.FillColor = System.Drawing.Color.White;
@@ -158,6 +146,18 @@
 			this.tsShowPassword.UncheckedState.InnerColor = System.Drawing.Color.Black;
 			this.tsShowPassword.UncheckedState.Parent = this.tsShowPassword;
 			this.tsShowPassword.CheckedChanged += new System.EventHandler(this.tsShowPassword_CheckedChanged);
+			// 
+			// label3
+			// 
+			this.label3.AutoSize = true;
+			this.label3.Font = new System.Drawing.Font("Montserrat", 8.249999F);
+			this.label3.ForeColor = System.Drawing.Color.Black;
+			this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+			this.label3.Location = new System.Drawing.Point(154, 371);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(93, 15);
+			this.label3.TabIndex = 27;
+			this.label3.Text = "Lihat Kata Sandi";
 			// 
 			// btnExit
 			// 
@@ -167,54 +167,43 @@
 			this.btnExit.CheckedState.Parent = this.btnExit;
 			this.btnExit.CustomImages.Parent = this.btnExit;
 			this.btnExit.DisabledState.Parent = this.btnExit;
-			this.btnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(201)))), ((int)(((byte)(71)))));
-			this.btnExit.Font = new System.Drawing.Font("Montserrat", 8.999999F);
+			this.btnExit.FillColor = System.Drawing.Color.Red;
+			this.btnExit.Font = new System.Drawing.Font("Montserrat", 9.749999F);
 			this.btnExit.ForeColor = System.Drawing.Color.White;
 			this.btnExit.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
 			this.btnExit.HoverState.Parent = this.btnExit;
-			this.btnExit.Location = new System.Drawing.Point(285, 437);
+			this.btnExit.Location = new System.Drawing.Point(114, 492);
 			this.btnExit.Name = "btnExit";
 			this.btnExit.ShadowDecoration.Parent = this.btnExit;
-			this.btnExit.Size = new System.Drawing.Size(165, 39);
-			this.btnExit.TabIndex = 11;
-			this.btnExit.Text = "Exit";
+			this.btnExit.Size = new System.Drawing.Size(336, 39);
+			this.btnExit.TabIndex = 26;
+			this.btnExit.Text = "Keluar";
 			this.btnExit.UseTransparentBackground = true;
 			this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
 			// 
 			// label5
 			// 
 			this.label5.AutoSize = true;
-			this.label5.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label5.Font = new System.Drawing.Font("Montserrat", 9.749999F);
 			this.label5.ForeColor = System.Drawing.Color.Black;
-			this.label5.Location = new System.Drawing.Point(111, 215);
+			this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+			this.label5.Location = new System.Drawing.Point(111, 189);
 			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(323, 18);
-			this.label5.TabIndex = 10;
-			this.label5.Text = "Please use your username and password to login";
+			this.label5.Size = new System.Drawing.Size(359, 18);
+			this.label5.TabIndex = 25;
+			this.label5.Text = "Tolong pakai nama akun dan kata sandi untuk masuk";
 			// 
 			// label4
 			// 
 			this.label4.AutoSize = true;
-			this.label4.Font = new System.Drawing.Font("Montserrat", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label4.Font = new System.Drawing.Font("Montserrat", 21.75F, System.Drawing.FontStyle.Bold);
 			this.label4.ForeColor = System.Drawing.Color.Black;
-			this.label4.Location = new System.Drawing.Point(107, 162);
+			this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+			this.label4.Location = new System.Drawing.Point(107, 136);
 			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(103, 40);
-			this.label4.TabIndex = 9;
-			this.label4.Text = "Login";
-			// 
-			// lbContactAdmin
-			// 
-			this.lbContactAdmin.AutoSize = true;
-			this.lbContactAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.lbContactAdmin.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbContactAdmin.ForeColor = System.Drawing.Color.Black;
-			this.lbContactAdmin.Location = new System.Drawing.Point(422, 46);
-			this.lbContactAdmin.Name = "lbContactAdmin";
-			this.lbContactAdmin.Size = new System.Drawing.Size(114, 18);
-			this.lbContactAdmin.TabIndex = 8;
-			this.lbContactAdmin.Text = "Contact Admin";
-			this.lbContactAdmin.Click += new System.EventHandler(this.lbContactAdmin_Click);
+			this.label4.Size = new System.Drawing.Size(117, 40);
+			this.label4.TabIndex = 24;
+			this.label4.Text = "Masuk";
 			// 
 			// btnLogin
 			// 
@@ -224,17 +213,17 @@
 			this.btnLogin.CheckedState.Parent = this.btnLogin;
 			this.btnLogin.CustomImages.Parent = this.btnLogin;
 			this.btnLogin.DisabledState.Parent = this.btnLogin;
-			this.btnLogin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(201)))), ((int)(((byte)(71)))));
-			this.btnLogin.Font = new System.Drawing.Font("Montserrat", 8.999999F);
+			this.btnLogin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnLogin.Font = new System.Drawing.Font("Montserrat", 9.749999F);
 			this.btnLogin.ForeColor = System.Drawing.Color.White;
 			this.btnLogin.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
 			this.btnLogin.HoverState.Parent = this.btnLogin;
-			this.btnLogin.Location = new System.Drawing.Point(114, 437);
+			this.btnLogin.Location = new System.Drawing.Point(114, 447);
 			this.btnLogin.Name = "btnLogin";
 			this.btnLogin.ShadowDecoration.Parent = this.btnLogin;
-			this.btnLogin.Size = new System.Drawing.Size(165, 39);
-			this.btnLogin.TabIndex = 7;
-			this.btnLogin.Text = "Login";
+			this.btnLogin.Size = new System.Drawing.Size(336, 39);
+			this.btnLogin.TabIndex = 23;
+			this.btnLogin.Text = "Masuk";
 			this.btnLogin.UseTransparentBackground = true;
 			this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
 			// 
@@ -242,25 +231,27 @@
 			// 
 			this.lbForgotPassword.AutoSize = true;
 			this.lbForgotPassword.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.lbForgotPassword.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbForgotPassword.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Underline);
 			this.lbForgotPassword.ForeColor = System.Drawing.Color.Black;
-			this.lbForgotPassword.Location = new System.Drawing.Point(345, 361);
+			this.lbForgotPassword.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+			this.lbForgotPassword.Location = new System.Drawing.Point(351, 371);
 			this.lbForgotPassword.Name = "lbForgotPassword";
-			this.lbForgotPassword.Size = new System.Drawing.Size(105, 15);
-			this.lbForgotPassword.TabIndex = 6;
-			this.lbForgotPassword.Text = "Forgot Password?";
+			this.lbForgotPassword.Size = new System.Drawing.Size(99, 15);
+			this.lbForgotPassword.TabIndex = 22;
+			this.lbForgotPassword.Text = "Lupa Kata Sandi?";
 			this.lbForgotPassword.Click += new System.EventHandler(this.lbForgotPassword_Click);
 			// 
 			// label1
 			// 
 			this.label1.AutoSize = true;
-			this.label1.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.Font = new System.Drawing.Font("Montserrat", 8.249999F);
 			this.label1.ForeColor = System.Drawing.Color.Black;
-			this.label1.Location = new System.Drawing.Point(154, 391);
+			this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+			this.label1.Location = new System.Drawing.Point(154, 401);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(93, 15);
-			this.label1.TabIndex = 5;
-			this.label1.Text = "Remember me";
+			this.label1.Size = new System.Drawing.Size(63, 15);
+			this.label1.TabIndex = 21;
+			this.label1.Text = "Ingat Saya";
 			// 
 			// tsRememberMe
 			// 
@@ -271,11 +262,11 @@
 			this.tsRememberMe.CheckedState.InnerBorderColor = System.Drawing.Color.White;
 			this.tsRememberMe.CheckedState.InnerColor = System.Drawing.Color.White;
 			this.tsRememberMe.CheckedState.Parent = this.tsRememberMe;
-			this.tsRememberMe.Location = new System.Drawing.Point(114, 389);
+			this.tsRememberMe.Location = new System.Drawing.Point(114, 399);
 			this.tsRememberMe.Name = "tsRememberMe";
 			this.tsRememberMe.ShadowDecoration.Parent = this.tsRememberMe;
 			this.tsRememberMe.Size = new System.Drawing.Size(35, 20);
-			this.tsRememberMe.TabIndex = 4;
+			this.tsRememberMe.TabIndex = 20;
 			this.tsRememberMe.UncheckedState.BorderColor = System.Drawing.Color.Black;
 			this.tsRememberMe.UncheckedState.BorderThickness = 2;
 			this.tsRememberMe.UncheckedState.FillColor = System.Drawing.Color.White;
@@ -300,14 +291,14 @@
 			this.txtPassword.ForeColor = System.Drawing.Color.Black;
 			this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
 			this.txtPassword.HoverState.Parent = this.txtPassword;
-			this.txtPassword.Location = new System.Drawing.Point(114, 304);
+			this.txtPassword.Location = new System.Drawing.Point(114, 278);
 			this.txtPassword.Name = "txtPassword";
 			this.txtPassword.PasswordChar = '\0';
 			this.txtPassword.PlaceholderText = "Password";
 			this.txtPassword.SelectedText = "";
 			this.txtPassword.ShadowDecoration.Parent = this.txtPassword;
 			this.txtPassword.Size = new System.Drawing.Size(336, 36);
-			this.txtPassword.TabIndex = 3;
+			this.txtPassword.TabIndex = 19;
 			this.txtPassword.UseSystemPasswordChar = true;
 			this.txtPassword.Leave += new System.EventHandler(this.txtPassword_Leave);
 			// 
@@ -328,15 +319,53 @@
 			this.txtUsername.ForeColor = System.Drawing.Color.Black;
 			this.txtUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
 			this.txtUsername.HoverState.Parent = this.txtUsername;
-			this.txtUsername.Location = new System.Drawing.Point(114, 262);
+			this.txtUsername.Location = new System.Drawing.Point(114, 236);
 			this.txtUsername.Name = "txtUsername";
 			this.txtUsername.PasswordChar = '\0';
 			this.txtUsername.PlaceholderText = "Username";
 			this.txtUsername.SelectedText = "";
 			this.txtUsername.ShadowDecoration.Parent = this.txtUsername;
 			this.txtUsername.Size = new System.Drawing.Size(336, 36);
-			this.txtUsername.TabIndex = 1;
+			this.txtUsername.TabIndex = 18;
 			this.txtUsername.Leave += new System.EventHandler(this.txtUsername_Leave);
+			// 
+			// label6
+			// 
+			this.label6.AutoSize = true;
+			this.label6.Cursor = System.Windows.Forms.Cursors.Arrow;
+			this.label6.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label6.ForeColor = System.Drawing.Color.Black;
+			this.label6.Location = new System.Drawing.Point(163, 601);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(236, 15);
+			this.label6.TabIndex = 17;
+			this.label6.Text = "Dengan masuk, Anda setuju dengan kami";
+			// 
+			// lbTermCon
+			// 
+			this.lbTermCon.AutoSize = true;
+			this.lbTermCon.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.lbTermCon.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbTermCon.ForeColor = System.Drawing.Color.Black;
+			this.lbTermCon.Location = new System.Drawing.Point(220, 616);
+			this.lbTermCon.Name = "lbTermCon";
+			this.lbTermCon.Size = new System.Drawing.Size(123, 15);
+			this.lbTermCon.TabIndex = 16;
+			this.lbTermCon.Text = "Syarat dan Ketentuan";
+			this.lbTermCon.Click += new System.EventHandler(this.lbTermCon_Click);
+			// 
+			// lbContactAdmin
+			// 
+			this.lbContactAdmin.AutoSize = true;
+			this.lbContactAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.lbContactAdmin.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbContactAdmin.ForeColor = System.Drawing.Color.Black;
+			this.lbContactAdmin.Location = new System.Drawing.Point(422, 46);
+			this.lbContactAdmin.Name = "lbContactAdmin";
+			this.lbContactAdmin.Size = new System.Drawing.Size(109, 18);
+			this.lbContactAdmin.TabIndex = 8;
+			this.lbContactAdmin.Text = "Kontak Admin";
+			this.lbContactAdmin.Click += new System.EventHandler(this.lbContactAdmin_Click);
 			// 
 			// guna2PictureBox1
 			// 
@@ -471,29 +500,30 @@
 		private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
 		private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
 		private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-		private Guna.UI2.WinForms.Guna2Button btnLogin;
-		private System.Windows.Forms.Label lbForgotPassword;
-		private System.Windows.Forms.Label label1;
-		private Guna.UI2.WinForms.Guna2ToggleSwitch tsRememberMe;
-		private Guna.UI2.WinForms.Guna2TextBox txtPassword;
-		private Guna.UI2.WinForms.Guna2TextBox txtUsername;
 		private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.Label lbContactAdmin;
-		private System.Windows.Forms.Label label5;
 		private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
 		private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
 		private System.Windows.Forms.Label lbDate;
 		private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
 		private System.Windows.Forms.Timer timer1;
 		private System.Windows.Forms.Label lbTime;
-		private Guna.UI2.WinForms.Guna2Button btnExit;
-		private System.Windows.Forms.Label label3;
-		private Guna.UI2.WinForms.Guna2ToggleSwitch tsShowPassword;
 		private System.Windows.Forms.ErrorProvider epWarning;
 		private System.Windows.Forms.ErrorProvider epWrong;
 		private System.Windows.Forms.ErrorProvider epCorrect;
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.Label lbTermCon;
+		private Guna.UI2.WinForms.Guna2ComboBox cbDepartement;
+		private Guna.UI2.WinForms.Guna2ToggleSwitch tsShowPassword;
+		private System.Windows.Forms.Label label3;
+		private Guna.UI2.WinForms.Guna2Button btnExit;
+		private System.Windows.Forms.Label label5;
+		private System.Windows.Forms.Label label4;
+		private Guna.UI2.WinForms.Guna2Button btnLogin;
+		private System.Windows.Forms.Label lbForgotPassword;
+		private System.Windows.Forms.Label label1;
+		private Guna.UI2.WinForms.Guna2ToggleSwitch tsRememberMe;
+		private Guna.UI2.WinForms.Guna2TextBox txtPassword;
+		private Guna.UI2.WinForms.Guna2TextBox txtUsername;
 	}
 }

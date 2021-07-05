@@ -11,6 +11,7 @@ using System.Data.SqlClient;
 using FAHotelApp.Forms;
 using System.Threading;
 using FAHotelApp.DAO;
+using System.Globalization;
 
 namespace FAHotelApp.Forms
 {
@@ -29,7 +30,7 @@ namespace FAHotelApp.Forms
 
 		public bool Login()
 		{
-			return AccountDAO.Instance.Login(txtUsername.Text, txtPassword.Text);
+			return AccountDAO.Instance.Login(txtUsername.Text, txtPassword.Text, cbDepartement.SelectedIndex);
 		}
 
 		private void formRun()
@@ -39,9 +40,13 @@ namespace FAHotelApp.Forms
 
 		private void FormLogin_Load(object sender, EventArgs e)
 		{
+			cbDepartement.DataSource = AccountDAO.Instance.LoadListStaffType();
+			cbDepartement.DisplayMember = "Name";
+
 			timer1.Start();
 
-			lbDate.Text = DateTime.Now.ToString("dddd,\nMMM dd yyyy");
+			CultureInfo culture = new CultureInfo("id-ID");
+			lbDate.Text = DateTime.Now.ToString("dddd,\ndd MMMM yyyy", culture);
 
 			lbTime.Text = DateTime.Now.ToLongTimeString();
 
@@ -62,23 +67,24 @@ namespace FAHotelApp.Forms
 		private void btnLogin_Click(object sender, EventArgs e)
 		{
 			Properties.Settings.Default.UsernameView = txtUsername.Text;
+			Properties.Settings.Default.UserTypeView = cbDepartement.Text;
 
 			if (txtUsername.Text == "" || txtPassword.Text == "")
 			{
-				MessageBox.Show("Mohon masukkan username dan password anda terlebih dahulu !");
+				MessageBox.Show("Silakan masukkan nama pengguna, kata sandi, dan departement Anda terlebih dahulu!");
 			}
 			else
 			{
 				if (Login())
 				{
-					MessageBox.Show("Login Berhasil\nSelamat Datang "+txtUsername.Text, "Pemberitahuan", MessageBoxButtons.OK, MessageBoxIcon.Information);
+					MessageBox.Show("Login Berhasil\nSelamat Datang " + txtUsername.Text, "Pemberitahuan", MessageBoxButtons.OK, MessageBoxIcon.Information);
 					this.Hide();
 					FormMenu f = new FormMenu(txtUsername.Text);
 					f.ShowDialog();
 				}
 				else
 				{
-					MessageBox.Show("Username tidak ada atau Password salah.\nSilahkan masuk kembali !", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+					MessageBox.Show("Nama pengguna tidak ada, Kata Sandi salah atau Departement salah.\nSilahkan login kembali!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				}
 			}
 
@@ -92,7 +98,7 @@ namespace FAHotelApp.Forms
 			{
 				Properties.Settings.Default.Username = "";
 				Properties.Settings.Default.UserType = "";
-				Properties.Settings.Default.Password= "";
+				Properties.Settings.Default.Password = "";
 				Properties.Settings.Default.Save();
 			}
 		}
@@ -125,7 +131,7 @@ namespace FAHotelApp.Forms
 		{
 			if (txtUsername.Text == "")
 			{
-				epWarning.SetError(txtUsername, "TextBox Username tidak boleh kosong !");
+				epWarning.SetError(txtUsername, "TextBox Nama Pengguna tidak boleh kosong!");
 				epWrong.SetError(txtUsername, "");
 				epCorrect.SetError(txtUsername, "");
 			}
@@ -133,16 +139,16 @@ namespace FAHotelApp.Forms
 			{
 				epWarning.SetError(txtUsername, "");
 				epWrong.SetError(txtUsername, "");
-				epCorrect.SetError(txtUsername, "Terisi !");
+				epCorrect.SetError(txtUsername, "Terisi!");
 			}
-			
+
 		}
 
 		private void txtPassword_Leave(object sender, EventArgs e)
 		{
 			if (txtPassword.Text == "")
 			{
-				epWarning.SetError(txtPassword, "TextBox Password tidak boleh kosong !");
+				epWarning.SetError(txtPassword, "TextBox Kata Sandi tidak boleh kosong");
 				epWrong.SetError(txtPassword, "");
 				epCorrect.SetError(txtPassword, "");
 			}
@@ -150,9 +156,9 @@ namespace FAHotelApp.Forms
 			{
 				epWarning.SetError(txtPassword, "");
 				epWrong.SetError(txtPassword, "");
-				epCorrect.SetError(txtPassword, "Terisi !");
+				epCorrect.SetError(txtPassword, "Terisi!");
 			}
-			
+
 		}
 
 		private void lbForgotPassword_Click(object sender, EventArgs e)
@@ -167,6 +173,22 @@ namespace FAHotelApp.Forms
 			FormTC f = new FormTC();
 			f.Show();
 			this.Hide();
+		}
+
+		private void cbDepartement_Leave(object sender, EventArgs e)
+		{
+			if (cbDepartement.SelectedIndex == 0)
+			{
+				epWarning.SetError(cbDepartement, "Pilih Departement terlebih dahulu");
+				epWrong.SetError(cbDepartement, "");
+				epCorrect.SetError(cbDepartement, "");
+			}
+			else
+			{
+				epWarning.SetError(cbDepartement, "");
+				epWrong.SetError(cbDepartement, "");
+				epCorrect.SetError(cbDepartement, "Terisi!");
+			}
 		}
 	}
 }

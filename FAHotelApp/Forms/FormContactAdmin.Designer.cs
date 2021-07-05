@@ -33,12 +33,17 @@
 			this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
 			this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
 			this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+			this.btnBrowse = new Guna.UI2.WinForms.Guna2Button();
+			this.label3 = new System.Windows.Forms.Label();
+			this.txtSubject = new Guna.UI2.WinForms.Guna2TextBox();
+			this.label1 = new System.Windows.Forms.Label();
+			this.tsSubjectManual = new Guna.UI2.WinForms.Guna2ToggleSwitch();
 			this.cbSubject = new Guna.UI2.WinForms.Guna2ComboBox();
-			this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
 			this.label2 = new System.Windows.Forms.Label();
 			this.tsShowPassword = new Guna.UI2.WinForms.Guna2ToggleSwitch();
 			this.btnBack = new Guna.UI2.WinForms.Guna2Button();
 			this.txtSenderPassword = new Guna.UI2.WinForms.Guna2TextBox();
+			this.txtBody = new Guna.UI2.WinForms.Guna2TextBox();
 			this.lbTime = new System.Windows.Forms.Label();
 			this.lbDate = new System.Windows.Forms.Label();
 			this.label5 = new System.Windows.Forms.Label();
@@ -50,12 +55,6 @@
 			this.epWarning = new System.Windows.Forms.ErrorProvider(this.components);
 			this.epWrong = new System.Windows.Forms.ErrorProvider(this.components);
 			this.epCorrect = new System.Windows.Forms.ErrorProvider(this.components);
-			this.label1 = new System.Windows.Forms.Label();
-			this.tsSubjectManual = new Guna.UI2.WinForms.Guna2ToggleSwitch();
-			this.txtSubject = new Guna.UI2.WinForms.Guna2TextBox();
-			this.txtBody = new Guna.UI2.WinForms.Guna2TextBox();
-			this.label3 = new System.Windows.Forms.Label();
-			this.btnBrowse = new Guna.UI2.WinForms.Guna2Button();
 			this.guna2Panel2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.epWarning)).BeginInit();
@@ -82,7 +81,6 @@
 			this.guna2Panel2.Controls.Add(this.label1);
 			this.guna2Panel2.Controls.Add(this.tsSubjectManual);
 			this.guna2Panel2.Controls.Add(this.cbSubject);
-			this.guna2Panel2.Controls.Add(this.guna2ControlBox2);
 			this.guna2Panel2.Controls.Add(this.label2);
 			this.guna2Panel2.Controls.Add(this.tsShowPassword);
 			this.guna2Panel2.Controls.Add(this.btnBack);
@@ -101,6 +99,98 @@
 			this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
 			this.guna2Panel2.Size = new System.Drawing.Size(1040, 666);
 			this.guna2Panel2.TabIndex = 5;
+			// 
+			// btnBrowse
+			// 
+			this.btnBrowse.Animated = true;
+			this.btnBrowse.BackColor = System.Drawing.Color.Transparent;
+			this.btnBrowse.BorderRadius = 10;
+			this.btnBrowse.CheckedState.Parent = this.btnBrowse;
+			this.btnBrowse.CustomImages.Parent = this.btnBrowse;
+			this.btnBrowse.DisabledState.Parent = this.btnBrowse;
+			this.btnBrowse.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnBrowse.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnBrowse.ForeColor = System.Drawing.Color.White;
+			this.btnBrowse.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+			this.btnBrowse.HoverState.Parent = this.btnBrowse;
+			this.btnBrowse.Location = new System.Drawing.Point(239, 461);
+			this.btnBrowse.Name = "btnBrowse";
+			this.btnBrowse.ShadowDecoration.Parent = this.btnBrowse;
+			this.btnBrowse.Size = new System.Drawing.Size(108, 39);
+			this.btnBrowse.TabIndex = 29;
+			this.btnBrowse.Text = "Cari";
+			this.btnBrowse.UseTransparentBackground = true;
+			this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
+			// 
+			// label3
+			// 
+			this.label3.AutoSize = true;
+			this.label3.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label3.ForeColor = System.Drawing.Color.Black;
+			this.label3.Location = new System.Drawing.Point(118, 471);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(108, 18);
+			this.label3.TabIndex = 28;
+			this.label3.Text = "Lampirkan File:";
+			// 
+			// txtSubject
+			// 
+			this.txtSubject.Animated = true;
+			this.txtSubject.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
+			this.txtSubject.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.txtSubject.DefaultText = "";
+			this.txtSubject.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+			this.txtSubject.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+			this.txtSubject.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.txtSubject.DisabledState.Parent = this.txtSubject;
+			this.txtSubject.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.txtSubject.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.txtSubject.FocusedState.Parent = this.txtSubject;
+			this.txtSubject.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.txtSubject.ForeColor = System.Drawing.Color.Black;
+			this.txtSubject.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(201)))), ((int)(((byte)(71)))));
+			this.txtSubject.HoverState.Parent = this.txtSubject;
+			this.txtSubject.Location = new System.Drawing.Point(121, 390);
+			this.txtSubject.Name = "txtSubject";
+			this.txtSubject.PasswordChar = '\0';
+			this.txtSubject.PlaceholderText = "Subjek";
+			this.txtSubject.SelectedText = "";
+			this.txtSubject.ShadowDecoration.Parent = this.txtSubject;
+			this.txtSubject.Size = new System.Drawing.Size(336, 36);
+			this.txtSubject.TabIndex = 25;
+			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.ForeColor = System.Drawing.Color.Black;
+			this.label1.Location = new System.Drawing.Point(162, 434);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(122, 15);
+			this.label1.TabIndex = 24;
+			this.label1.Text = "Input Subject Manual";
+			// 
+			// tsSubjectManual
+			// 
+			this.tsSubjectManual.Animated = true;
+			this.tsSubjectManual.BackColor = System.Drawing.Color.Transparent;
+			this.tsSubjectManual.CheckedState.BorderColor = System.Drawing.Color.Black;
+			this.tsSubjectManual.CheckedState.FillColor = System.Drawing.Color.Black;
+			this.tsSubjectManual.CheckedState.InnerBorderColor = System.Drawing.Color.White;
+			this.tsSubjectManual.CheckedState.InnerColor = System.Drawing.Color.White;
+			this.tsSubjectManual.CheckedState.Parent = this.tsSubjectManual;
+			this.tsSubjectManual.Location = new System.Drawing.Point(121, 432);
+			this.tsSubjectManual.Name = "tsSubjectManual";
+			this.tsSubjectManual.ShadowDecoration.Parent = this.tsSubjectManual;
+			this.tsSubjectManual.Size = new System.Drawing.Size(35, 20);
+			this.tsSubjectManual.TabIndex = 23;
+			this.tsSubjectManual.UncheckedState.BorderColor = System.Drawing.Color.Black;
+			this.tsSubjectManual.UncheckedState.BorderThickness = 2;
+			this.tsSubjectManual.UncheckedState.FillColor = System.Drawing.Color.White;
+			this.tsSubjectManual.UncheckedState.InnerBorderColor = System.Drawing.Color.Black;
+			this.tsSubjectManual.UncheckedState.InnerColor = System.Drawing.Color.Black;
+			this.tsSubjectManual.UncheckedState.Parent = this.tsSubjectManual;
+			this.tsSubjectManual.CheckedChanged += new System.EventHandler(this.tsSubjectManual_CheckedChanged);
 			// 
 			// cbSubject
 			// 
@@ -127,19 +217,6 @@
 			this.cbSubject.Size = new System.Drawing.Size(336, 36);
 			this.cbSubject.StartIndex = 0;
 			this.cbSubject.TabIndex = 21;
-			// 
-			// guna2ControlBox2
-			// 
-			this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
-			this.guna2ControlBox2.FillColor = System.Drawing.Color.Black;
-			this.guna2ControlBox2.HoverState.Parent = this.guna2ControlBox2;
-			this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
-			this.guna2ControlBox2.Location = new System.Drawing.Point(993, 12);
-			this.guna2ControlBox2.Name = "guna2ControlBox2";
-			this.guna2ControlBox2.ShadowDecoration.Parent = this.guna2ControlBox2;
-			this.guna2ControlBox2.Size = new System.Drawing.Size(35, 28);
-			this.guna2ControlBox2.TabIndex = 7;
 			// 
 			// label2
 			// 
@@ -182,17 +259,17 @@
 			this.btnBack.CheckedState.Parent = this.btnBack;
 			this.btnBack.CustomImages.Parent = this.btnBack;
 			this.btnBack.DisabledState.Parent = this.btnBack;
-			this.btnBack.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(201)))), ((int)(((byte)(71)))));
-			this.btnBack.Font = new System.Drawing.Font("Montserrat", 8.999999F);
+			this.btnBack.FillColor = System.Drawing.Color.Red;
+			this.btnBack.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnBack.ForeColor = System.Drawing.Color.White;
 			this.btnBack.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
 			this.btnBack.HoverState.Parent = this.btnBack;
 			this.btnBack.Location = new System.Drawing.Point(121, 533);
 			this.btnBack.Name = "btnBack";
 			this.btnBack.ShadowDecoration.Parent = this.btnBack;
-			this.btnBack.Size = new System.Drawing.Size(226, 39);
+			this.btnBack.Size = new System.Drawing.Size(336, 39);
 			this.btnBack.TabIndex = 11;
-			this.btnBack.Text = "Back";
+			this.btnBack.Text = "Kembali";
 			this.btnBack.UseTransparentBackground = true;
 			this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
 			// 
@@ -216,13 +293,40 @@
 			this.txtSenderPassword.Location = new System.Drawing.Point(121, 280);
 			this.txtSenderPassword.Name = "txtSenderPassword";
 			this.txtSenderPassword.PasswordChar = '\0';
-			this.txtSenderPassword.PlaceholderText = "Sender Password";
+			this.txtSenderPassword.PlaceholderText = "Kata Sandi Pengirim";
 			this.txtSenderPassword.SelectedText = "";
 			this.txtSenderPassword.ShadowDecoration.Parent = this.txtSenderPassword;
 			this.txtSenderPassword.Size = new System.Drawing.Size(336, 36);
 			this.txtSenderPassword.TabIndex = 2;
 			this.txtSenderPassword.UseSystemPasswordChar = true;
 			this.txtSenderPassword.Leave += new System.EventHandler(this.txtSenderPassword_Leave);
+			// 
+			// txtBody
+			// 
+			this.txtBody.Animated = true;
+			this.txtBody.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
+			this.txtBody.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.txtBody.DefaultText = "";
+			this.txtBody.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+			this.txtBody.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+			this.txtBody.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.txtBody.DisabledState.Parent = this.txtBody;
+			this.txtBody.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.txtBody.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.txtBody.FocusedState.Parent = this.txtBody;
+			this.txtBody.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.txtBody.ForeColor = System.Drawing.Color.Black;
+			this.txtBody.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(201)))), ((int)(((byte)(71)))));
+			this.txtBody.HoverState.Parent = this.txtBody;
+			this.txtBody.Location = new System.Drawing.Point(591, 238);
+			this.txtBody.Multiline = true;
+			this.txtBody.Name = "txtBody";
+			this.txtBody.PasswordChar = '\0';
+			this.txtBody.PlaceholderText = "Isi";
+			this.txtBody.SelectedText = "";
+			this.txtBody.ShadowDecoration.Parent = this.txtBody;
+			this.txtBody.Size = new System.Drawing.Size(336, 262);
+			this.txtBody.TabIndex = 9;
 			// 
 			// lbTime
 			// 
@@ -257,9 +361,9 @@
 			this.label5.ForeColor = System.Drawing.Color.Black;
 			this.label5.Location = new System.Drawing.Point(118, 191);
 			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(411, 18);
+			this.label5.Size = new System.Drawing.Size(524, 18);
 			this.label5.TabIndex = 10;
-			this.label5.Text = "Please use your email (gmail.com) and password to send email";
+			this.label5.Text = "Silakan gunakan email Anda (gmail.com) dan kata sandi untuk mengirim email";
 			// 
 			// label4
 			// 
@@ -268,9 +372,9 @@
 			this.label4.ForeColor = System.Drawing.Color.Black;
 			this.label4.Location = new System.Drawing.Point(114, 138);
 			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(336, 40);
+			this.label4.Size = new System.Drawing.Size(344, 40);
 			this.label4.TabIndex = 9;
-			this.label4.Text = "Send Email to Admin";
+			this.label4.Text = "Kirim Email ke Admin\r\n";
 			// 
 			// btnSend
 			// 
@@ -281,16 +385,16 @@
 			this.btnSend.CustomImages.Parent = this.btnSend;
 			this.btnSend.DisabledState.Parent = this.btnSend;
 			this.btnSend.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSend.Font = new System.Drawing.Font("Montserrat", 8.999999F);
+			this.btnSend.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnSend.ForeColor = System.Drawing.Color.White;
 			this.btnSend.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
 			this.btnSend.HoverState.Parent = this.btnSend;
 			this.btnSend.Location = new System.Drawing.Point(591, 533);
 			this.btnSend.Name = "btnSend";
 			this.btnSend.ShadowDecoration.Parent = this.btnSend;
-			this.btnSend.Size = new System.Drawing.Size(226, 39);
+			this.btnSend.Size = new System.Drawing.Size(336, 39);
 			this.btnSend.TabIndex = 10;
-			this.btnSend.Text = "Send";
+			this.btnSend.Text = "Kirim";
 			this.btnSend.UseTransparentBackground = true;
 			this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
 			// 
@@ -314,7 +418,7 @@
 			this.txtSenderEmail.Location = new System.Drawing.Point(121, 238);
 			this.txtSenderEmail.Name = "txtSenderEmail";
 			this.txtSenderEmail.PasswordChar = '\0';
-			this.txtSenderEmail.PlaceholderText = "Sender Email";
+			this.txtSenderEmail.PlaceholderText = "Email Pengirim";
 			this.txtSenderEmail.SelectedText = "";
 			this.txtSenderEmail.ShadowDecoration.Parent = this.txtSenderEmail;
 			this.txtSenderEmail.Size = new System.Drawing.Size(336, 36);
@@ -354,125 +458,6 @@
 			this.epCorrect.ContainerControl = this;
 			this.epCorrect.Icon = ((System.Drawing.Icon)(resources.GetObject("epCorrect.Icon")));
 			// 
-			// label1
-			// 
-			this.label1.AutoSize = true;
-			this.label1.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.ForeColor = System.Drawing.Color.Black;
-			this.label1.Location = new System.Drawing.Point(162, 434);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(122, 15);
-			this.label1.TabIndex = 24;
-			this.label1.Text = "Input Subject Manual";
-			// 
-			// tsSubjectManual
-			// 
-			this.tsSubjectManual.Animated = true;
-			this.tsSubjectManual.BackColor = System.Drawing.Color.Transparent;
-			this.tsSubjectManual.CheckedState.BorderColor = System.Drawing.Color.Black;
-			this.tsSubjectManual.CheckedState.FillColor = System.Drawing.Color.Black;
-			this.tsSubjectManual.CheckedState.InnerBorderColor = System.Drawing.Color.White;
-			this.tsSubjectManual.CheckedState.InnerColor = System.Drawing.Color.White;
-			this.tsSubjectManual.CheckedState.Parent = this.tsSubjectManual;
-			this.tsSubjectManual.Location = new System.Drawing.Point(121, 432);
-			this.tsSubjectManual.Name = "tsSubjectManual";
-			this.tsSubjectManual.ShadowDecoration.Parent = this.tsSubjectManual;
-			this.tsSubjectManual.Size = new System.Drawing.Size(35, 20);
-			this.tsSubjectManual.TabIndex = 23;
-			this.tsSubjectManual.UncheckedState.BorderColor = System.Drawing.Color.Black;
-			this.tsSubjectManual.UncheckedState.BorderThickness = 2;
-			this.tsSubjectManual.UncheckedState.FillColor = System.Drawing.Color.White;
-			this.tsSubjectManual.UncheckedState.InnerBorderColor = System.Drawing.Color.Black;
-			this.tsSubjectManual.UncheckedState.InnerColor = System.Drawing.Color.Black;
-			this.tsSubjectManual.UncheckedState.Parent = this.tsSubjectManual;
-			this.tsSubjectManual.CheckedChanged += new System.EventHandler(this.tsSubjectManual_CheckedChanged);
-			// 
-			// txtSubject
-			// 
-			this.txtSubject.Animated = true;
-			this.txtSubject.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
-			this.txtSubject.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.txtSubject.DefaultText = "";
-			this.txtSubject.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-			this.txtSubject.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-			this.txtSubject.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-			this.txtSubject.DisabledState.Parent = this.txtSubject;
-			this.txtSubject.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-			this.txtSubject.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.txtSubject.FocusedState.Parent = this.txtSubject;
-			this.txtSubject.Font = new System.Drawing.Font("Segoe UI", 9F);
-			this.txtSubject.ForeColor = System.Drawing.Color.Black;
-			this.txtSubject.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(201)))), ((int)(((byte)(71)))));
-			this.txtSubject.HoverState.Parent = this.txtSubject;
-			this.txtSubject.Location = new System.Drawing.Point(121, 390);
-			this.txtSubject.Name = "txtSubject";
-			this.txtSubject.PasswordChar = '\0';
-			this.txtSubject.PlaceholderText = "Subject";
-			this.txtSubject.SelectedText = "";
-			this.txtSubject.ShadowDecoration.Parent = this.txtSubject;
-			this.txtSubject.Size = new System.Drawing.Size(336, 36);
-			this.txtSubject.TabIndex = 25;
-			// 
-			// txtBody
-			// 
-			this.txtBody.Animated = true;
-			this.txtBody.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
-			this.txtBody.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.txtBody.DefaultText = "";
-			this.txtBody.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-			this.txtBody.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-			this.txtBody.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-			this.txtBody.DisabledState.Parent = this.txtBody;
-			this.txtBody.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-			this.txtBody.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.txtBody.FocusedState.Parent = this.txtBody;
-			this.txtBody.Font = new System.Drawing.Font("Segoe UI", 9F);
-			this.txtBody.ForeColor = System.Drawing.Color.Black;
-			this.txtBody.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(201)))), ((int)(((byte)(71)))));
-			this.txtBody.HoverState.Parent = this.txtBody;
-			this.txtBody.Location = new System.Drawing.Point(591, 238);
-			this.txtBody.Multiline = true;
-			this.txtBody.Name = "txtBody";
-			this.txtBody.PasswordChar = '\0';
-			this.txtBody.PlaceholderText = "Body";
-			this.txtBody.SelectedText = "";
-			this.txtBody.ShadowDecoration.Parent = this.txtBody;
-			this.txtBody.Size = new System.Drawing.Size(336, 262);
-			this.txtBody.TabIndex = 9;
-			// 
-			// label3
-			// 
-			this.label3.AutoSize = true;
-			this.label3.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.ForeColor = System.Drawing.Color.Black;
-			this.label3.Location = new System.Drawing.Point(118, 471);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(115, 18);
-			this.label3.TabIndex = 28;
-			this.label3.Text = "File Attachment:";
-			// 
-			// btnBrowse
-			// 
-			this.btnBrowse.Animated = true;
-			this.btnBrowse.BackColor = System.Drawing.Color.Transparent;
-			this.btnBrowse.BorderRadius = 10;
-			this.btnBrowse.CheckedState.Parent = this.btnBrowse;
-			this.btnBrowse.CustomImages.Parent = this.btnBrowse;
-			this.btnBrowse.DisabledState.Parent = this.btnBrowse;
-			this.btnBrowse.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnBrowse.Font = new System.Drawing.Font("Montserrat", 8.999999F);
-			this.btnBrowse.ForeColor = System.Drawing.Color.White;
-			this.btnBrowse.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-			this.btnBrowse.HoverState.Parent = this.btnBrowse;
-			this.btnBrowse.Location = new System.Drawing.Point(239, 461);
-			this.btnBrowse.Name = "btnBrowse";
-			this.btnBrowse.ShadowDecoration.Parent = this.btnBrowse;
-			this.btnBrowse.Size = new System.Drawing.Size(108, 39);
-			this.btnBrowse.TabIndex = 29;
-			this.btnBrowse.Text = "Browse";
-			this.btnBrowse.UseTransparentBackground = true;
-			this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
-			// 
 			// FormContactAdmin
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -505,7 +490,6 @@
 		private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.Label label5;
-		private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
 		private System.Windows.Forms.Timer timer1;
 		private System.Windows.Forms.Label lbTime;
 		private System.Windows.Forms.Label lbDate;

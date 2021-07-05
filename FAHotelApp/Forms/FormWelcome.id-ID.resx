@@ -117,708 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="guna2Elipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1040, 666</value>
-  </data>
-  <data name="cbDepartement.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10pt</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="cbDepartement.ItemHeight" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="cbDepartement.Items" xml:space="preserve">
-    <value>Departement</value>
-  </data>
-  <data name="cbDepartement.Location" type="System.Drawing.Point, System.Drawing">
-    <value>114, 320</value>
-  </data>
-  <data name="cbDepartement.Size" type="System.Drawing.Size, System.Drawing">
-    <value>336, 36</value>
-  </data>
-  <data name="cbDepartement.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;cbDepartement.Name" xml:space="preserve">
-    <value>cbDepartement</value>
-  </data>
-  <data name="&gt;&gt;cbDepartement.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2ComboBox, Guna.UI2, Version=2.0.1.8, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4</value>
-  </data>
-  <data name="&gt;&gt;cbDepartement.Parent" xml:space="preserve">
-    <value>guna2Panel2</value>
-  </data>
-  <data name="&gt;&gt;cbDepartement.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tsShowPassword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>114, 369</value>
-  </data>
-  <data name="tsShowPassword.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 20</value>
-  </data>
-  <data name="tsShowPassword.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;tsShowPassword.Name" xml:space="preserve">
-    <value>tsShowPassword</value>
-  </data>
-  <data name="&gt;&gt;tsShowPassword.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2ToggleSwitch, Guna.UI2, Version=2.0.1.8, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4</value>
-  </data>
-  <data name="&gt;&gt;tsShowPassword.Parent" xml:space="preserve">
-    <value>guna2Panel2</value>
-  </data>
-  <data name="&gt;&gt;tsShowPassword.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Montserrat, 8.249999pt</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>163, 601</value>
-  </data>
-  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>236, 15</value>
-  </data>
-  <data name="label6.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>Dengan masuk, Anda setuju dengan kami</value>
-  </data>
-  <data name="&gt;&gt;label6.Name" xml:space="preserve">
-    <value>label6</value>
-  </data>
-  <data name="&gt;&gt;label6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
-    <value>guna2Panel2</value>
-  </data>
-  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="lbTermCon.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lbTermCon.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Montserrat, 8.249999pt, style=Underline</value>
-  </data>
-  <data name="lbTermCon.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lbTermCon.Location" type="System.Drawing.Point, System.Drawing">
-    <value>220, 616</value>
-  </data>
-  <data name="lbTermCon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 15</value>
-  </data>
-  <data name="lbTermCon.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="lbTermCon.Text" xml:space="preserve">
-    <value>Syarat dan Ketentuan</value>
-  </data>
-  <data name="&gt;&gt;lbTermCon.Name" xml:space="preserve">
-    <value>lbTermCon</value>
-  </data>
-  <data name="&gt;&gt;lbTermCon.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbTermCon.Parent" xml:space="preserve">
-    <value>guna2Panel2</value>
-  </data>
-  <data name="&gt;&gt;lbTermCon.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Montserrat, 8.249999pt</value>
-  </data>
-  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>154, 371</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 15</value>
-  </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Lihat Kata Sandi</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>guna2Panel2</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="btnExit.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Montserrat, 9.749999pt</value>
-  </data>
-  <data name="btnExit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>114, 492</value>
-  </data>
-  <data name="btnExit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>336, 39</value>
-  </data>
-  <data name="btnExit.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="btnExit.Text" xml:space="preserve">
-    <value>Keluar</value>
-  </data>
-  <data name="&gt;&gt;btnExit.Name" xml:space="preserve">
-    <value>btnExit</value>
-  </data>
-  <data name="&gt;&gt;btnExit.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.1.8, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4</value>
-  </data>
-  <data name="&gt;&gt;btnExit.Parent" xml:space="preserve">
-    <value>guna2Panel2</value>
-  </data>
-  <data name="&gt;&gt;btnExit.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Montserrat, 9.749999pt</value>
-  </data>
-  <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 189</value>
-  </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>359, 18</value>
-  </data>
-  <data name="label5.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>Tolong pakai nama akun dan kata sandi untuk masuk</value>
-  </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
-  </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
-    <value>guna2Panel2</value>
-  </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Montserrat, 21.75pt, style=Bold</value>
-  </data>
-  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>107, 136</value>
-  </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 40</value>
-  </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>Masuk</value>
-  </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
-  </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>guna2Panel2</value>
-  </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="lbContactAdmin.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lbContactAdmin.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Montserrat, 9.749999pt, style=Bold</value>
-  </data>
-  <data name="lbContactAdmin.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lbContactAdmin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>422, 46</value>
-  </data>
-  <data name="lbContactAdmin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 18</value>
-  </data>
-  <data name="lbContactAdmin.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="lbContactAdmin.Text" xml:space="preserve">
-    <value>Kontak Admin</value>
-  </data>
-  <data name="&gt;&gt;lbContactAdmin.Name" xml:space="preserve">
-    <value>lbContactAdmin</value>
-  </data>
-  <data name="&gt;&gt;lbContactAdmin.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbContactAdmin.Parent" xml:space="preserve">
-    <value>guna2Panel2</value>
-  </data>
-  <data name="&gt;&gt;lbContactAdmin.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="btnLogin.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Montserrat, 9.749999pt</value>
-  </data>
-  <data name="btnLogin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>114, 447</value>
-  </data>
-  <data name="btnLogin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>336, 39</value>
-  </data>
-  <data name="btnLogin.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="btnLogin.Text" xml:space="preserve">
-    <value>Masuk</value>
-  </data>
-  <data name="&gt;&gt;btnLogin.Name" xml:space="preserve">
-    <value>btnLogin</value>
-  </data>
-  <data name="&gt;&gt;btnLogin.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.1.8, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4</value>
-  </data>
-  <data name="&gt;&gt;btnLogin.Parent" xml:space="preserve">
-    <value>guna2Panel2</value>
-  </data>
-  <data name="&gt;&gt;btnLogin.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="lbForgotPassword.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lbForgotPassword.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Montserrat, 8.249999pt, style=Underline</value>
-  </data>
-  <data name="lbForgotPassword.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lbForgotPassword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>351, 371</value>
-  </data>
-  <data name="lbForgotPassword.Size" type="System.Drawing.Size, System.Drawing">
-    <value>99, 15</value>
-  </data>
-  <data name="lbForgotPassword.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="lbForgotPassword.Text" xml:space="preserve">
-    <value>Lupa Kata Sandi?</value>
-  </data>
-  <data name="&gt;&gt;lbForgotPassword.Name" xml:space="preserve">
-    <value>lbForgotPassword</value>
-  </data>
-  <data name="&gt;&gt;lbForgotPassword.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbForgotPassword.Parent" xml:space="preserve">
-    <value>guna2Panel2</value>
-  </data>
-  <data name="&gt;&gt;lbForgotPassword.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Montserrat, 8.249999pt</value>
-  </data>
-  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>154, 401</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 15</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Ingat Saya</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>guna2Panel2</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="tsRememberMe.Location" type="System.Drawing.Point, System.Drawing">
-    <value>114, 399</value>
-  </data>
-  <data name="tsRememberMe.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 20</value>
-  </data>
-  <data name="tsRememberMe.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;tsRememberMe.Name" xml:space="preserve">
-    <value>tsRememberMe</value>
-  </data>
-  <data name="&gt;&gt;tsRememberMe.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2ToggleSwitch, Guna.UI2, Version=2.0.1.8, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4</value>
-  </data>
-  <data name="&gt;&gt;tsRememberMe.Parent" xml:space="preserve">
-    <value>guna2Panel2</value>
-  </data>
-  <data name="&gt;&gt;tsRememberMe.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="txtPassword.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="txtPassword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>114, 278</value>
-  </data>
-  <data name="txtPassword.Size" type="System.Drawing.Size, System.Drawing">
-    <value>336, 36</value>
-  </data>
-  <data name="txtPassword.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;txtPassword.Name" xml:space="preserve">
-    <value>txtPassword</value>
-  </data>
-  <data name="&gt;&gt;txtPassword.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.1.8, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4</value>
-  </data>
-  <data name="&gt;&gt;txtPassword.Parent" xml:space="preserve">
-    <value>guna2Panel2</value>
-  </data>
-  <data name="&gt;&gt;txtPassword.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="txtUsername.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="txtUsername.Location" type="System.Drawing.Point, System.Drawing">
-    <value>114, 236</value>
-  </data>
-  <data name="txtUsername.Size" type="System.Drawing.Size, System.Drawing">
-    <value>336, 36</value>
-  </data>
-  <data name="txtUsername.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;txtUsername.Name" xml:space="preserve">
-    <value>txtUsername</value>
-  </data>
-  <data name="&gt;&gt;txtUsername.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.1.8, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4</value>
-  </data>
-  <data name="&gt;&gt;txtUsername.Parent" xml:space="preserve">
-    <value>guna2Panel2</value>
-  </data>
-  <data name="&gt;&gt;txtUsername.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="guna2PictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="guna2PictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>35, 29</value>
-  </data>
-  <data name="guna2PictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 52</value>
-  </data>
-  <data name="guna2PictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="guna2PictureBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;guna2PictureBox1.Name" xml:space="preserve">
-    <value>guna2PictureBox1</value>
-  </data>
-  <data name="&gt;&gt;guna2PictureBox1.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2PictureBox, Guna.UI2, Version=2.0.1.8, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4</value>
-  </data>
-  <data name="&gt;&gt;guna2PictureBox1.Parent" xml:space="preserve">
-    <value>guna2Panel2</value>
-  </data>
-  <data name="&gt;&gt;guna2PictureBox1.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="guna2Panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="guna2Panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="guna2Panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>563, 666</value>
-  </data>
-  <data name="guna2Panel2.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;guna2Panel2.Name" xml:space="preserve">
-    <value>guna2Panel2</value>
-  </data>
-  <data name="&gt;&gt;guna2Panel2.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.1.8, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4</value>
-  </data>
-  <data name="&gt;&gt;guna2Panel2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;guna2Panel2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="lbTime.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lbTime.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Montserrat, 20.25pt</value>
-  </data>
-  <data name="lbTime.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lbTime.Location" type="System.Drawing.Point, System.Drawing">
-    <value>710, 210</value>
-  </data>
-  <data name="lbTime.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 37</value>
-  </data>
-  <data name="lbTime.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="lbTime.Text" xml:space="preserve">
-    <value>Time</value>
-  </data>
-  <data name="&gt;&gt;lbTime.Name" xml:space="preserve">
-    <value>lbTime</value>
-  </data>
-  <data name="&gt;&gt;lbTime.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbTime.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lbTime.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="lbDate.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lbDate.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Montserrat, 26.25pt</value>
-  </data>
-  <data name="lbDate.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lbDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>709, 99</value>
-  </data>
-  <data name="lbDate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 48</value>
-  </data>
-  <data name="lbDate.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="lbDate.Text" xml:space="preserve">
-    <value>Date</value>
-  </data>
-  <data name="&gt;&gt;lbDate.Name" xml:space="preserve">
-    <value>lbDate</value>
-  </data>
-  <data name="&gt;&gt;lbDate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbDate.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lbDate.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="guna2ControlBox2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="guna2ControlBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>950, 12</value>
-  </data>
-  <data name="guna2ControlBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 28</value>
-  </data>
-  <data name="guna2ControlBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;guna2ControlBox2.Name" xml:space="preserve">
-    <value>guna2ControlBox2</value>
-  </data>
-  <data name="&gt;&gt;guna2ControlBox2.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2ControlBox, Guna.UI2, Version=2.0.1.8, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4</value>
-  </data>
-  <data name="&gt;&gt;guna2ControlBox2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;guna2ControlBox2.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="guna2ControlBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="guna2ControlBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>993, 12</value>
-  </data>
-  <data name="guna2ControlBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 28</value>
-  </data>
-  <data name="guna2ControlBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;guna2ControlBox1.Name" xml:space="preserve">
-    <value>guna2ControlBox1</value>
-  </data>
-  <data name="&gt;&gt;guna2ControlBox1.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2ControlBox, Guna.UI2, Version=2.0.1.8, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4</value>
-  </data>
-  <data name="&gt;&gt;guna2ControlBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;guna2ControlBox1.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="guna2PictureBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="guna2PictureBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-44, -11</value>
-  </data>
-  <data name="guna2PictureBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1096, 677</value>
-  </data>
-  <data name="guna2PictureBox2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="guna2PictureBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;guna2PictureBox2.Name" xml:space="preserve">
-    <value>guna2PictureBox2</value>
-  </data>
-  <data name="&gt;&gt;guna2PictureBox2.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2PictureBox, Guna.UI2, Version=2.0.1.8, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4</value>
-  </data>
-  <data name="&gt;&gt;guna2PictureBox2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;guna2PictureBox2.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Masuk</value>
-  </data>
-  <data name="&gt;&gt;guna2Elipse1.Name" xml:space="preserve">
-    <value>guna2Elipse1</value>
-  </data>
-  <data name="&gt;&gt;guna2Elipse1.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Elipse, Guna.UI2, Version=2.0.1.8, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4</value>
-  </data>
-  <data name="&gt;&gt;guna2DragControl1.Name" xml:space="preserve">
-    <value>guna2DragControl1</value>
-  </data>
-  <data name="&gt;&gt;guna2DragControl1.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2DragControl, Guna.UI2, Version=2.0.1.8, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4</value>
-  </data>
-  <data name="&gt;&gt;timer1.Name" xml:space="preserve">
-    <value>timer1</value>
-  </data>
-  <data name="&gt;&gt;timer1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;epWarning.Name" xml:space="preserve">
-    <value>epWarning</value>
-  </data>
-  <data name="&gt;&gt;epWarning.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ErrorProvider, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;epWrong.Name" xml:space="preserve">
-    <value>epWrong</value>
-  </data>
-  <data name="&gt;&gt;epWrong.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ErrorProvider, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;epCorrect.Name" xml:space="preserve">
-    <value>epCorrect</value>
-  </data>
-  <data name="&gt;&gt;epCorrect.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ErrorProvider, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>FormLogin</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <metadata name="guna2DragControl1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>141, 17</value>
-  </metadata>
-  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>301, 17</value>
-  </metadata>
-  <metadata name="epWarning.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>388, 17</value>
-  </metadata>
   <data name="epWarning.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAQAEBAAAAEAIABoBAAARgAAAICAAAABACAAKAgBAK4EAAAgIAAAAQAgAKgQAADWDAEAFhYAAAEA
@@ -2076,9 +1375,9 @@
         HADAABwA4AA8APAAPAD4APwA/gH8AP///AD///wA
 </value>
   </data>
-  <metadata name="epWrong.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>500, 17</value>
-  </metadata>
+  <data name="tsShowPassword.Error" xml:space="preserve">
+    <value />
+  </data>
   <data name="epWrong.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAQAEBAAAAEAIABoBAAARgAAACAgAAABACAAqBAAAK4EAACAgAAAAQAgACgIAQBWFQAAFhYAAAEA
@@ -3336,9 +2635,9 @@
         DADgABwA4AAcAPAAPAD4AHwA/gH8AP///AD///wA
 </value>
   </data>
-  <metadata name="epCorrect.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>603, 17</value>
-  </metadata>
+  <data name="tsShowPassword.Error1" xml:space="preserve">
+    <value />
+  </data>
   <data name="epCorrect.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAIAICAAAAEAIACoEAAAJgAAABAQAAABACAAaAQAAM4QAAAoAAAAIAAAAEAAAAABACAAAAAAAAAQ
@@ -3433,5 +2732,568 @@
         /wD///8A////AP///wD///8A////AP///wDwDwAA4AcAAMADAACAAQAAgAEAAIABAACAAQAAgAEAAIAB
         AACAAQAAgAEAAIABAADAAwAA4AcAAPAPAAD//wAA
 </value>
+  </data>
+  <data name="tsShowPassword.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tsShowPassword.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="tsShowPassword.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="tsShowPassword.IconAlignment2" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tsShowPassword.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tsShowPassword.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tsShowPassword.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label6.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label6.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label6.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label6.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label6.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label6.IconAlignment2" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label6.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label6.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label6.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lbTermCon.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbTermCon.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbTermCon.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbTermCon.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="lbTermCon.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="lbTermCon.IconAlignment2" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="lbTermCon.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lbTermCon.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lbTermCon.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label3.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label3.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label3.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label3.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label3.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label3.IconAlignment2" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label3.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label3.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label3.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnExit.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnExit.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnExit.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnExit.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="btnExit.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="btnExit.IconAlignment2" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="btnExit.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnExit.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnExit.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label5.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label5.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label5.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label5.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label5.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label5.IconAlignment2" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label5.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label5.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label5.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label4.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label4.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label4.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label4.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label4.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label4.IconAlignment2" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label4.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label4.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label4.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lbContactAdmin.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbContactAdmin.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbContactAdmin.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbContactAdmin.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="lbContactAdmin.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="lbContactAdmin.IconAlignment2" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="lbContactAdmin.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lbContactAdmin.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lbContactAdmin.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnLogin.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnLogin.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnLogin.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnLogin.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="btnLogin.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="btnLogin.IconAlignment2" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="btnLogin.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnLogin.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnLogin.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lbForgotPassword.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbForgotPassword.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbForgotPassword.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbForgotPassword.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="lbForgotPassword.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="lbForgotPassword.IconAlignment2" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="lbForgotPassword.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lbForgotPassword.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lbForgotPassword.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label1.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label1.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label1.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label1.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label1.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label1.IconAlignment2" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label1.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label1.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label1.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tsRememberMe.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tsRememberMe.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tsRememberMe.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tsRememberMe.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="tsRememberMe.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="tsRememberMe.IconAlignment2" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="tsRememberMe.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tsRememberMe.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tsRememberMe.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtPassword.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPassword.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPassword.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPassword.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="txtPassword.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="txtPassword.IconAlignment2" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="txtPassword.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtPassword.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtPassword.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtUsername.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtUsername.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtUsername.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtUsername.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="txtUsername.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="txtUsername.IconAlignment2" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="txtUsername.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtUsername.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtUsername.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="guna2PictureBox1.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="guna2PictureBox1.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="guna2PictureBox1.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="guna2PictureBox1.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="guna2PictureBox1.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="guna2PictureBox1.IconAlignment2" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="guna2PictureBox1.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="guna2PictureBox1.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="guna2PictureBox1.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="guna2Panel2.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="guna2Panel2.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="guna2Panel2.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="guna2Panel2.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="guna2Panel2.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="guna2Panel2.IconAlignment2" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="guna2Panel2.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="guna2Panel2.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="guna2Panel2.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lbTime.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbTime.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbTime.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbTime.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="lbTime.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="lbTime.IconAlignment2" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="lbTime.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lbTime.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lbTime.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lbDate.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbDate.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbDate.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbDate.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="lbDate.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="lbDate.IconAlignment2" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="lbDate.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lbDate.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lbDate.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="guna2ControlBox2.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="guna2ControlBox2.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="guna2ControlBox2.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="guna2ControlBox2.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="guna2ControlBox2.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="guna2ControlBox2.IconAlignment2" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="guna2ControlBox2.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="guna2ControlBox2.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="guna2ControlBox2.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="guna2ControlBox1.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="guna2ControlBox1.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="guna2ControlBox1.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="guna2ControlBox1.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="guna2ControlBox1.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="guna2ControlBox1.IconAlignment2" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="guna2ControlBox1.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="guna2ControlBox1.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="guna2ControlBox1.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="guna2PictureBox2.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="guna2PictureBox2.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="guna2PictureBox2.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="guna2PictureBox2.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="guna2PictureBox2.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="guna2PictureBox2.IconAlignment2" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="guna2PictureBox2.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="guna2PictureBox2.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="guna2PictureBox2.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
 </root>
