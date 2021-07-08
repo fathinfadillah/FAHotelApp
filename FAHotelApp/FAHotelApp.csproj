@@ -219,6 +219,18 @@
     <Compile Include="Forms\FormAccess.Designer.cs">
       <DependentUpon>FormAccess.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormSendEmailCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSendEmailCustomer.designer.cs">
+      <DependentUpon>FormSendEmailCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSetting.Designer.cs">
+      <DependentUpon>FormSetting.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormAddService.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -433,6 +445,12 @@
     </Compile>
     <EmbeddedResource Include="Forms\FormAccess.resx">
       <DependentUpon>FormAccess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSendEmailCustomer.resx">
+      <DependentUpon>FormSendEmailCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSetting.resx">
+      <DependentUpon>FormSetting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormAddService.resx">
       <DependentUpon>FormAddService.cs</DependentUpon>
@@ -697,6 +715,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\usa_120px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit_120px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

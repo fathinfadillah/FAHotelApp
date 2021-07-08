@@ -114,6 +114,13 @@ namespace FAHotelApp.UC
 			btnCancel.Visible = false;
 			btnSearch.Visible = true;
 		}
+		private void btnSendEmail_Click(object sender, EventArgs e)
+		{
+			FormSendEmailCustomer f = new FormSendEmailCustomer();
+			f.ShowDialog();
+			this.Show();
+
+		}
 		#endregion
 
 		#region Method
@@ -154,5 +161,6 @@ namespace FAHotelApp.UC
 		}
 		#endregion
 
+		
 	}
 }

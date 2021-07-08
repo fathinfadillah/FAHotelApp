@@ -34,6 +34,8 @@
 			this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
 			this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
 			this.groupBox6 = new System.Windows.Forms.GroupBox();
+			this.bunifuSeparator3 = new Bunifu.Framework.UI.BunifuSeparator();
+			this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
 			this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
 			this.lblFinalPrice = new System.Windows.Forms.Label();
 			this.label24 = new System.Windows.Forms.Label();
@@ -88,15 +90,13 @@
 			this.label3 = new System.Windows.Forms.Label();
 			this.label13 = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
-			this.pictureBox2 = new System.Windows.Forms.PictureBox();
-			this.bunifuSeparator4 = new Bunifu.UI.WinForms.BunifuSeparator();
 			this.label2 = new System.Windows.Forms.Label();
 			this.printDocument1 = new System.Drawing.Printing.PrintDocument();
 			this.printDialog1 = new System.Windows.Forms.PrintDialog();
 			this.btnClose_ = new Bunifu.Framework.UI.BunifuThinButton2();
 			this.btnPrint = new Bunifu.Framework.UI.BunifuThinButton2();
-			this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
-			this.bunifuSeparator3 = new Bunifu.Framework.UI.BunifuSeparator();
+			this.bunifuSeparator4 = new Bunifu.UI.WinForms.BunifuSeparator();
+			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.groupBox6.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
 			this.SuspendLayout();
@@ -186,15 +186,41 @@
 			this.groupBox6.TabIndex = 37;
 			this.groupBox6.TabStop = false;
 			// 
+			// bunifuSeparator3
+			// 
+			this.bunifuSeparator3.BackColor = System.Drawing.Color.Transparent;
+			this.bunifuSeparator3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.bunifuSeparator3.LineThickness = 11;
+			this.bunifuSeparator3.Location = new System.Drawing.Point(13, 578);
+			this.bunifuSeparator3.Margin = new System.Windows.Forms.Padding(9, 13, 9, 13);
+			this.bunifuSeparator3.Name = "bunifuSeparator3";
+			this.bunifuSeparator3.Size = new System.Drawing.Size(658, 10);
+			this.bunifuSeparator3.TabIndex = 116;
+			this.bunifuSeparator3.Transparency = 255;
+			this.bunifuSeparator3.Vertical = false;
+			// 
+			// bunifuSeparator2
+			// 
+			this.bunifuSeparator2.BackColor = System.Drawing.Color.Transparent;
+			this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.bunifuSeparator2.LineThickness = 15;
+			this.bunifuSeparator2.Location = new System.Drawing.Point(15, 361);
+			this.bunifuSeparator2.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+			this.bunifuSeparator2.Name = "bunifuSeparator2";
+			this.bunifuSeparator2.Size = new System.Drawing.Size(658, 11);
+			this.bunifuSeparator2.TabIndex = 115;
+			this.bunifuSeparator2.Transparency = 255;
+			this.bunifuSeparator2.Vertical = false;
+			// 
 			// bunifuSeparator1
 			// 
 			this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
 			this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.bunifuSeparator1.LineThickness = 20;
+			this.bunifuSeparator1.LineThickness = 32;
 			this.bunifuSeparator1.Location = new System.Drawing.Point(13, 175);
 			this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 			this.bunifuSeparator1.Name = "bunifuSeparator1";
-			this.bunifuSeparator1.Size = new System.Drawing.Size(658, 16);
+			this.bunifuSeparator1.Size = new System.Drawing.Size(658, 10);
 			this.bunifuSeparator1.TabIndex = 114;
 			this.bunifuSeparator1.Transparency = 255;
 			this.bunifuSeparator1.Vertical = false;
@@ -751,32 +777,6 @@
 			this.label1.TabIndex = 34;
 			this.label1.Text = "FA Hotel";
 			// 
-			// pictureBox2
-			// 
-			this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-			this.pictureBox2.Image = global::FAHotelApp.Properties.Resources.FAHotelTransparentLogoNavyBlue;
-			this.pictureBox2.Location = new System.Drawing.Point(17, 18);
-			this.pictureBox2.Name = "pictureBox2";
-			this.pictureBox2.Size = new System.Drawing.Size(162, 106);
-			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox2.TabIndex = 15;
-			this.pictureBox2.TabStop = false;
-			// 
-			// bunifuSeparator4
-			// 
-			this.bunifuSeparator4.BackColor = System.Drawing.Color.Transparent;
-			this.bunifuSeparator4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuSeparator4.BackgroundImage")));
-			this.bunifuSeparator4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-			this.bunifuSeparator4.DashCap = Bunifu.UI.WinForms.BunifuSeparator.CapStyles.Flat;
-			this.bunifuSeparator4.LineColor = System.Drawing.Color.Silver;
-			this.bunifuSeparator4.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
-			this.bunifuSeparator4.LineThickness = 1;
-			this.bunifuSeparator4.Location = new System.Drawing.Point(11, 52);
-			this.bunifuSeparator4.Name = "bunifuSeparator4";
-			this.bunifuSeparator4.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
-			this.bunifuSeparator4.Size = new System.Drawing.Size(685, 15);
-			this.bunifuSeparator4.TabIndex = 39;
-			// 
 			// label2
 			// 
 			this.label2.AutoSize = true;
@@ -805,7 +805,7 @@
 			this.btnClose_.ActiveForecolor = System.Drawing.Color.White;
 			this.btnClose_.ActiveLineColor = System.Drawing.Color.DarkOrange;
 			this.btnClose_.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-			this.btnClose_.BackColor = System.Drawing.Color.White;
+			this.btnClose_.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
 			this.btnClose_.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnClose_.BackgroundImage")));
 			this.btnClose_.ButtonText = "Tutup";
 			this.btnClose_.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -832,7 +832,7 @@
 			this.btnPrint.ActiveForecolor = System.Drawing.Color.White;
 			this.btnPrint.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
 			this.btnPrint.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-			this.btnPrint.BackColor = System.Drawing.Color.White;
+			this.btnPrint.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
 			this.btnPrint.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPrint.BackgroundImage")));
 			this.btnPrint.ButtonText = "Print";
 			this.btnPrint.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -851,37 +851,37 @@
 			this.btnPrint.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
 			// 
-			// bunifuSeparator2
+			// bunifuSeparator4
 			// 
-			this.bunifuSeparator2.BackColor = System.Drawing.Color.Transparent;
-			this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.bunifuSeparator2.LineThickness = 9;
-			this.bunifuSeparator2.Location = new System.Drawing.Point(13, 363);
-			this.bunifuSeparator2.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-			this.bunifuSeparator2.Name = "bunifuSeparator2";
-			this.bunifuSeparator2.Size = new System.Drawing.Size(658, 16);
-			this.bunifuSeparator2.TabIndex = 115;
-			this.bunifuSeparator2.Transparency = 255;
-			this.bunifuSeparator2.Vertical = false;
+			this.bunifuSeparator4.BackColor = System.Drawing.Color.Transparent;
+			this.bunifuSeparator4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuSeparator4.BackgroundImage")));
+			this.bunifuSeparator4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.bunifuSeparator4.DashCap = Bunifu.UI.WinForms.BunifuSeparator.CapStyles.Flat;
+			this.bunifuSeparator4.LineColor = System.Drawing.Color.Silver;
+			this.bunifuSeparator4.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
+			this.bunifuSeparator4.LineThickness = 1;
+			this.bunifuSeparator4.Location = new System.Drawing.Point(11, 52);
+			this.bunifuSeparator4.Name = "bunifuSeparator4";
+			this.bunifuSeparator4.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
+			this.bunifuSeparator4.Size = new System.Drawing.Size(685, 15);
+			this.bunifuSeparator4.TabIndex = 39;
 			// 
-			// bunifuSeparator3
+			// pictureBox2
 			// 
-			this.bunifuSeparator3.BackColor = System.Drawing.Color.Transparent;
-			this.bunifuSeparator3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.bunifuSeparator3.LineThickness = 7;
-			this.bunifuSeparator3.Location = new System.Drawing.Point(13, 578);
-			this.bunifuSeparator3.Margin = new System.Windows.Forms.Padding(9, 13, 9, 13);
-			this.bunifuSeparator3.Name = "bunifuSeparator3";
-			this.bunifuSeparator3.Size = new System.Drawing.Size(658, 16);
-			this.bunifuSeparator3.TabIndex = 116;
-			this.bunifuSeparator3.Transparency = 255;
-			this.bunifuSeparator3.Vertical = false;
+			this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+			this.pictureBox2.Image = global::FAHotelApp.Properties.Resources.FAHotelTransparentLogoNavyBlue;
+			this.pictureBox2.Location = new System.Drawing.Point(17, 18);
+			this.pictureBox2.Name = "pictureBox2";
+			this.pictureBox2.Size = new System.Drawing.Size(162, 106);
+			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox2.TabIndex = 15;
+			this.pictureBox2.TabStop = false;
 			// 
 			// FormPrintBill
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackColor = System.Drawing.Color.White;
+			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
 			this.ClientSize = new System.Drawing.Size(708, 767);
 			this.Controls.Add(this.btnClose_);
 			this.Controls.Add(this.btnPrint);

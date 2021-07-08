@@ -1,20 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
 using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using FAHotelApp.DTO;
+using System.Data.SqlClient;
 using FAHotelApp.DAO;
+using FAHotelApp.DTO;
+using System.Globalization;
+using FAHotelApp.UC;
 
-namespace FAHotelApp.UC
+namespace FAHotelApp.Forms
 {
-	public partial class UC_Settings : UserControl
+	public partial class FormSetting : Form
 	{
-		public UC_Settings(string userName)
+		public FormSetting(string userName)
 		{
 			InitializeComponent();
 			LoadProfile(userName);
@@ -48,7 +51,7 @@ namespace FAHotelApp.UC
 		}
 		private void btnClose_Click(object sender, EventArgs e)
 		{
-			//this.Close();
+			this.Close();
 		}
 
 		private void btnBookRoom_Click(object sender, EventArgs e)
@@ -63,7 +66,7 @@ namespace FAHotelApp.UC
 				MessageBox.Show("Nama tampilan tidak valis.\nSilahkan masukkan kembali.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 		}
 
-		private void bunifuThinButton22_Click(object sender, EventArgs e)
+		private void btnSecurity_Click(object sender, EventArgs e)
 		{
 			if (AccountDAO.Instance.HashPass(txbPass.Text) == Password && txbNewPass.Text != String.Empty && txbReNewPass.Text != String.Empty)
 			{
@@ -87,7 +90,7 @@ namespace FAHotelApp.UC
 			}
 		}
 
-		private void bunifuThinButton21_Click(object sender, EventArgs e)
+		private void btnInformation_Click(object sender, EventArgs e)
 		{
 			if (txbAddress.Text != String.Empty && txbPhoneNumber.Text != String.Empty && cbSex.Text != string.Empty && dpkDateOfBirth.Value < DateTime.Now.Date)
 			{
@@ -110,9 +113,11 @@ namespace FAHotelApp.UC
 				e.Handled = true;
 		}
 
-		private void btnClose__Click(object sender, EventArgs e)
+		private void btnLogout_Click(object sender, EventArgs e)
 		{
-			//Close();
+			FormLogin2 f = new FormLogin2();
+			f.Show();
+			this.Hide();
 		}
 	}
 }

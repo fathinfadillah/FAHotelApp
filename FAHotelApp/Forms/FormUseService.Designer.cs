@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.components = new System.ComponentModel.Container();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -59,7 +60,6 @@
 			this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
 			this.dataGridViewBookRoom = new System.Windows.Forms.DataGridView();
 			this.groupBox5 = new System.Windows.Forms.GroupBox();
-			this.btnAddCustomer = new Bunifu.Framework.UI.BunifuThinButton2();
 			this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
 			this.label2 = new System.Windows.Forms.Label();
 			this.txbTotalPrice = new Bunifu.Framework.UI.BunifuMetroTextbox();
@@ -70,25 +70,29 @@
 			this.numericUpDownCount = new System.Windows.Forms.NumericUpDown();
 			this.label6 = new System.Windows.Forms.Label();
 			this.cbService = new MetroFramework.Controls.MetroComboBox();
-			this.btnAdd = new Bunifu.Framework.UI.BunifuThinButton2();
 			this.label3 = new System.Windows.Forms.Label();
 			this.cbServiceType = new MetroFramework.Controls.MetroComboBox();
 			this.label4 = new System.Windows.Forms.Label();
 			this.groupBox3 = new System.Windows.Forms.GroupBox();
 			this.label13 = new System.Windows.Forms.Label();
-			this.pictureBox6 = new System.Windows.Forms.PictureBox();
 			this.lblRoomType5 = new System.Windows.Forms.Label();
-			this.color5 = new System.Windows.Forms.PictureBox();
 			this.lblRoomType3 = new System.Windows.Forms.Label();
-			this.color3 = new System.Windows.Forms.PictureBox();
 			this.lblRoomType2 = new System.Windows.Forms.Label();
-			this.color2 = new System.Windows.Forms.PictureBox();
 			this.lblRoomType1 = new System.Windows.Forms.Label();
 			this.lblRoomType4 = new System.Windows.Forms.Label();
-			this.color1 = new System.Windows.Forms.PictureBox();
-			this.color4 = new System.Windows.Forms.PictureBox();
 			this.flowLayoutRooms = new System.Windows.Forms.FlowLayoutPanel();
 			this.label1 = new System.Windows.Forms.Label();
+			this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
+			this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+			this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+			this.btnAddCustomer = new Bunifu.Framework.UI.BunifuThinButton2();
+			this.btnAdd = new Bunifu.Framework.UI.BunifuThinButton2();
+			this.pictureBox6 = new System.Windows.Forms.PictureBox();
+			this.color5 = new System.Windows.Forms.PictureBox();
+			this.color3 = new System.Windows.Forms.PictureBox();
+			this.color2 = new System.Windows.Forms.PictureBox();
+			this.color1 = new System.Windows.Forms.PictureBox();
+			this.color4 = new System.Windows.Forms.PictureBox();
 			this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
 			this.groupBox2.SuspendLayout();
 			this.groupBillRoom.SuspendLayout();
@@ -110,11 +114,10 @@
 			// 
 			// groupBox2
 			// 
-			this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.groupBox2.Controls.Add(this.listViewSurcharge);
 			this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.groupBox2.Location = new System.Drawing.Point(641, 143);
+			this.groupBox2.Location = new System.Drawing.Point(618, 146);
 			this.groupBox2.Name = "groupBox2";
 			this.groupBox2.Size = new System.Drawing.Size(638, 135);
 			this.groupBox2.TabIndex = 68;
@@ -145,8 +148,8 @@
 			// 
 			// columnHeader16
 			// 
-			this.columnHeader16.Text = "STT";
-			this.columnHeader16.Width = 40;
+			this.columnHeader16.Text = "KODE";
+			this.columnHeader16.Width = 42;
 			// 
 			// columnHeader11
 			// 
@@ -165,11 +168,10 @@
 			// 
 			// groupBillRoom
 			// 
-			this.groupBillRoom.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.groupBillRoom.Controls.Add(this.listViewBillRoom);
 			this.groupBillRoom.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.groupBillRoom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.groupBillRoom.Location = new System.Drawing.Point(641, 70);
+			this.groupBillRoom.Location = new System.Drawing.Point(618, 73);
 			this.groupBillRoom.Name = "groupBillRoom";
 			this.groupBillRoom.Size = new System.Drawing.Size(638, 70);
 			this.groupBillRoom.TabIndex = 67;
@@ -244,11 +246,10 @@
 			// 
 			// groupBoxBill
 			// 
-			this.groupBoxBill.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.groupBoxBill.Controls.Add(this.panel2);
 			this.groupBoxBill.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.groupBoxBill.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.groupBoxBill.Location = new System.Drawing.Point(642, 281);
+			this.groupBoxBill.Location = new System.Drawing.Point(619, 284);
 			this.groupBoxBill.Name = "groupBoxBill";
 			this.groupBoxBill.Size = new System.Drawing.Size(637, 348);
 			this.groupBoxBill.TabIndex = 66;
@@ -290,8 +291,8 @@
 			// 
 			// columnHeader1
 			// 
-			this.columnHeader1.Text = "STT";
-			this.columnHeader1.Width = 40;
+			this.columnHeader1.Text = "KODE";
+			this.columnHeader1.Width = 44;
 			// 
 			// columnHeader2
 			// 
@@ -368,7 +369,6 @@
 			// 
 			// groupBox5
 			// 
-			this.groupBox5.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.groupBox5.Controls.Add(this.btnAddCustomer);
 			this.groupBox5.Controls.Add(this.numericUpDown1);
 			this.groupBox5.Controls.Add(this.label2);
@@ -376,38 +376,12 @@
 			this.groupBox5.Controls.Add(this.label7);
 			this.groupBox5.Font = new System.Drawing.Font("Segoe UI", 12F);
 			this.groupBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.groupBox5.Location = new System.Drawing.Point(400, 364);
+			this.groupBox5.Location = new System.Drawing.Point(377, 367);
 			this.groupBox5.Name = "groupBox5";
 			this.groupBox5.Size = new System.Drawing.Size(236, 265);
 			this.groupBox5.TabIndex = 65;
 			this.groupBox5.TabStop = false;
 			this.groupBox5.Text = "Fungsi";
-			// 
-			// btnAddCustomer
-			// 
-			this.btnAddCustomer.ActiveBorderThickness = 1;
-			this.btnAddCustomer.ActiveCornerRadius = 20;
-			this.btnAddCustomer.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnAddCustomer.ActiveForecolor = System.Drawing.Color.White;
-			this.btnAddCustomer.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnAddCustomer.BackColor = System.Drawing.SystemColors.Control;
-			this.btnAddCustomer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddCustomer.BackgroundImage")));
-			this.btnAddCustomer.ButtonText = "Bayar";
-			this.btnAddCustomer.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnAddCustomer.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnAddCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnAddCustomer.IdleBorderThickness = 1;
-			this.btnAddCustomer.IdleCornerRadius = 20;
-			this.btnAddCustomer.IdleFillColor = System.Drawing.Color.White;
-			this.btnAddCustomer.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnAddCustomer.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnAddCustomer.Location = new System.Drawing.Point(17, 147);
-			this.btnAddCustomer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-			this.btnAddCustomer.Name = "btnAddCustomer";
-			this.btnAddCustomer.Size = new System.Drawing.Size(203, 40);
-			this.btnAddCustomer.TabIndex = 64;
-			this.btnAddCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.btnAddCustomer.Click += new System.EventHandler(this.btnCheckout_Click);
 			// 
 			// numericUpDown1
 			// 
@@ -432,6 +406,7 @@
 			// 
 			// txbTotalPrice
 			// 
+			this.txbTotalPrice.BackColor = System.Drawing.Color.White;
 			this.txbTotalPrice.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
 			this.txbTotalPrice.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
 			this.txbTotalPrice.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
@@ -463,7 +438,6 @@
 			// 
 			// groupBox1
 			// 
-			this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.groupBox1.Controls.Add(this.txbPrice);
 			this.groupBox1.Controls.Add(this.label8);
 			this.groupBox1.Controls.Add(this.numericUpDownCount);
@@ -475,7 +449,7 @@
 			this.groupBox1.Controls.Add(this.label4);
 			this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F);
 			this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.groupBox1.Location = new System.Drawing.Point(400, 70);
+			this.groupBox1.Location = new System.Drawing.Point(377, 73);
 			this.groupBox1.Name = "groupBox1";
 			this.groupBox1.Size = new System.Drawing.Size(236, 291);
 			this.groupBox1.TabIndex = 64;
@@ -484,6 +458,7 @@
 			// 
 			// txbPrice
 			// 
+			this.txbPrice.BackColor = System.Drawing.Color.White;
 			this.txbPrice.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
 			this.txbPrice.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
 			this.txbPrice.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
@@ -562,32 +537,6 @@
 			this.cbService.UseStyleColors = true;
 			this.cbService.SelectedIndexChanged += new System.EventHandler(this.cbService_SelectedIndexChanged);
 			// 
-			// btnAdd
-			// 
-			this.btnAdd.ActiveBorderThickness = 1;
-			this.btnAdd.ActiveCornerRadius = 20;
-			this.btnAdd.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnAdd.ActiveForecolor = System.Drawing.Color.White;
-			this.btnAdd.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnAdd.BackColor = System.Drawing.SystemColors.Control;
-			this.btnAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdd.BackgroundImage")));
-			this.btnAdd.ButtonText = "Tambah";
-			this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnAdd.IdleBorderThickness = 1;
-			this.btnAdd.IdleCornerRadius = 20;
-			this.btnAdd.IdleFillColor = System.Drawing.Color.White;
-			this.btnAdd.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnAdd.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnAdd.Location = new System.Drawing.Point(17, 239);
-			this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-			this.btnAdd.Name = "btnAdd";
-			this.btnAdd.Size = new System.Drawing.Size(203, 40);
-			this.btnAdd.TabIndex = 49;
-			this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-			// 
 			// label3
 			// 
 			this.label3.AutoSize = true;
@@ -629,7 +578,6 @@
 			// 
 			// groupBox3
 			// 
-			this.groupBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.groupBox3.Controls.Add(this.label13);
 			this.groupBox3.Controls.Add(this.pictureBox6);
 			this.groupBox3.Controls.Add(this.lblRoomType5);
@@ -645,7 +593,7 @@
 			this.groupBox3.Controls.Add(this.flowLayoutRooms);
 			this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 12F);
 			this.groupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.groupBox3.Location = new System.Drawing.Point(36, 70);
+			this.groupBox3.Location = new System.Drawing.Point(13, 73);
 			this.groupBox3.Name = "groupBox3";
 			this.groupBox3.Size = new System.Drawing.Size(360, 559);
 			this.groupBox3.TabIndex = 63;
@@ -663,15 +611,6 @@
 			this.label13.Text = "Kamar Yang Dipilih";
 			this.label13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
-			// pictureBox6
-			// 
-			this.pictureBox6.BackColor = System.Drawing.Color.SeaGreen;
-			this.pictureBox6.Location = new System.Drawing.Point(14, 30);
-			this.pictureBox6.Name = "pictureBox6";
-			this.pictureBox6.Size = new System.Drawing.Size(97, 15);
-			this.pictureBox6.TabIndex = 62;
-			this.pictureBox6.TabStop = false;
-			// 
 			// lblRoomType5
 			// 
 			this.lblRoomType5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -682,15 +621,6 @@
 			this.lblRoomType5.TabIndex = 61;
 			this.lblRoomType5.Text = "Kamar Lain";
 			this.lblRoomType5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-			// 
-			// color5
-			// 
-			this.color5.BackColor = System.Drawing.Color.Gray;
-			this.color5.Location = new System.Drawing.Point(246, 94);
-			this.color5.Name = "color5";
-			this.color5.Size = new System.Drawing.Size(97, 15);
-			this.color5.TabIndex = 60;
-			this.color5.TabStop = false;
 			// 
 			// lblRoomType3
 			// 
@@ -703,15 +633,6 @@
 			this.lblRoomType3.Text = "Kamar Standard (STD)";
 			this.lblRoomType3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
-			// color3
-			// 
-			this.color3.BackColor = System.Drawing.Color.DeepSkyBlue;
-			this.color3.Location = new System.Drawing.Point(15, 94);
-			this.color3.Name = "color3";
-			this.color3.Size = new System.Drawing.Size(97, 15);
-			this.color3.TabIndex = 58;
-			this.color3.TabStop = false;
-			// 
 			// lblRoomType2
 			// 
 			this.lblRoomType2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -722,15 +643,6 @@
 			this.lblRoomType2.TabIndex = 57;
 			this.lblRoomType2.Text = "Kamar Superior (SUP)";
 			this.lblRoomType2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-			// 
-			// color2
-			// 
-			this.color2.BackColor = System.Drawing.Color.Violet;
-			this.color2.Location = new System.Drawing.Point(246, 30);
-			this.color2.Name = "color2";
-			this.color2.Size = new System.Drawing.Size(97, 15);
-			this.color2.TabIndex = 56;
-			this.color2.TabStop = false;
 			// 
 			// lblRoomType1
 			// 
@@ -754,6 +666,137 @@
 			this.lblRoomType4.Text = "Kamar Suite (SUT)";
 			this.lblRoomType4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
+			// flowLayoutRooms
+			// 
+			this.flowLayoutRooms.AutoScroll = true;
+			this.flowLayoutRooms.Dock = System.Windows.Forms.DockStyle.Bottom;
+			this.flowLayoutRooms.Location = new System.Drawing.Point(3, 155);
+			this.flowLayoutRooms.Name = "flowLayoutRooms";
+			this.flowLayoutRooms.Size = new System.Drawing.Size(354, 401);
+			this.flowLayoutRooms.TabIndex = 51;
+			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.label1.Location = new System.Drawing.Point(12, 12);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(320, 37);
+			this.label1.TabIndex = 61;
+			this.label1.Text = "Layanan dan Pembayaran";
+			// 
+			// guna2ControlBox2
+			// 
+			this.guna2ControlBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+			this.guna2ControlBox2.FillColor = System.Drawing.Color.Black;
+			this.guna2ControlBox2.HoverState.Parent = this.guna2ControlBox2;
+			this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
+			this.guna2ControlBox2.Location = new System.Drawing.Point(1223, 12);
+			this.guna2ControlBox2.Name = "guna2ControlBox2";
+			this.guna2ControlBox2.ShadowDecoration.Parent = this.guna2ControlBox2;
+			this.guna2ControlBox2.Size = new System.Drawing.Size(35, 28);
+			this.guna2ControlBox2.TabIndex = 69;
+			// 
+			// guna2Elipse1
+			// 
+			this.guna2Elipse1.BorderRadius = 8;
+			this.guna2Elipse1.TargetControl = this;
+			// 
+			// guna2DragControl1
+			// 
+			this.guna2DragControl1.TargetControl = this;
+			this.guna2DragControl1.TransparentWhileDrag = true;
+			this.guna2DragControl1.UseTransparentDrag = true;
+			// 
+			// btnAddCustomer
+			// 
+			this.btnAddCustomer.ActiveBorderThickness = 1;
+			this.btnAddCustomer.ActiveCornerRadius = 20;
+			this.btnAddCustomer.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnAddCustomer.ActiveForecolor = System.Drawing.Color.White;
+			this.btnAddCustomer.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnAddCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
+			this.btnAddCustomer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddCustomer.BackgroundImage")));
+			this.btnAddCustomer.ButtonText = "Bayar";
+			this.btnAddCustomer.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnAddCustomer.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnAddCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnAddCustomer.IdleBorderThickness = 1;
+			this.btnAddCustomer.IdleCornerRadius = 20;
+			this.btnAddCustomer.IdleFillColor = System.Drawing.Color.White;
+			this.btnAddCustomer.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnAddCustomer.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnAddCustomer.Location = new System.Drawing.Point(17, 147);
+			this.btnAddCustomer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.btnAddCustomer.Name = "btnAddCustomer";
+			this.btnAddCustomer.Size = new System.Drawing.Size(203, 40);
+			this.btnAddCustomer.TabIndex = 64;
+			this.btnAddCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.btnAddCustomer.Click += new System.EventHandler(this.btnCheckout_Click);
+			// 
+			// btnAdd
+			// 
+			this.btnAdd.ActiveBorderThickness = 1;
+			this.btnAdd.ActiveCornerRadius = 20;
+			this.btnAdd.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnAdd.ActiveForecolor = System.Drawing.Color.White;
+			this.btnAdd.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
+			this.btnAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdd.BackgroundImage")));
+			this.btnAdd.ButtonText = "Tambah";
+			this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnAdd.IdleBorderThickness = 1;
+			this.btnAdd.IdleCornerRadius = 20;
+			this.btnAdd.IdleFillColor = System.Drawing.Color.White;
+			this.btnAdd.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnAdd.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnAdd.Location = new System.Drawing.Point(17, 239);
+			this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.btnAdd.Name = "btnAdd";
+			this.btnAdd.Size = new System.Drawing.Size(203, 40);
+			this.btnAdd.TabIndex = 49;
+			this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+			// 
+			// pictureBox6
+			// 
+			this.pictureBox6.BackColor = System.Drawing.Color.SeaGreen;
+			this.pictureBox6.Location = new System.Drawing.Point(14, 30);
+			this.pictureBox6.Name = "pictureBox6";
+			this.pictureBox6.Size = new System.Drawing.Size(97, 15);
+			this.pictureBox6.TabIndex = 62;
+			this.pictureBox6.TabStop = false;
+			// 
+			// color5
+			// 
+			this.color5.BackColor = System.Drawing.Color.Gray;
+			this.color5.Location = new System.Drawing.Point(246, 94);
+			this.color5.Name = "color5";
+			this.color5.Size = new System.Drawing.Size(97, 15);
+			this.color5.TabIndex = 60;
+			this.color5.TabStop = false;
+			// 
+			// color3
+			// 
+			this.color3.BackColor = System.Drawing.Color.DeepSkyBlue;
+			this.color3.Location = new System.Drawing.Point(15, 94);
+			this.color3.Name = "color3";
+			this.color3.Size = new System.Drawing.Size(97, 15);
+			this.color3.TabIndex = 58;
+			this.color3.TabStop = false;
+			// 
+			// color2
+			// 
+			this.color2.BackColor = System.Drawing.Color.Violet;
+			this.color2.Location = new System.Drawing.Point(246, 30);
+			this.color2.Name = "color2";
+			this.color2.Size = new System.Drawing.Size(97, 15);
+			this.color2.TabIndex = 56;
+			this.color2.TabStop = false;
+			// 
 			// color1
 			// 
 			this.color1.BackColor = System.Drawing.Color.Tomato;
@@ -772,30 +815,8 @@
 			this.color4.TabIndex = 52;
 			this.color4.TabStop = false;
 			// 
-			// flowLayoutRooms
-			// 
-			this.flowLayoutRooms.AutoScroll = true;
-			this.flowLayoutRooms.Dock = System.Windows.Forms.DockStyle.Bottom;
-			this.flowLayoutRooms.Location = new System.Drawing.Point(3, 155);
-			this.flowLayoutRooms.Name = "flowLayoutRooms";
-			this.flowLayoutRooms.Size = new System.Drawing.Size(354, 401);
-			this.flowLayoutRooms.TabIndex = 51;
-			// 
-			// label1
-			// 
-			this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-			this.label1.AutoSize = true;
-			this.label1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.label1.Location = new System.Drawing.Point(35, 9);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(320, 37);
-			this.label1.TabIndex = 61;
-			this.label1.Text = "Layanan dan Pembayaran";
-			// 
 			// bunifuSeparator1
 			// 
-			this.bunifuSeparator1.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
 			this.bunifuSeparator1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuSeparator1.BackgroundImage")));
 			this.bunifuSeparator1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -803,7 +824,7 @@
 			this.bunifuSeparator1.LineColor = System.Drawing.Color.Silver;
 			this.bunifuSeparator1.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
 			this.bunifuSeparator1.LineThickness = 1;
-			this.bunifuSeparator1.Location = new System.Drawing.Point(36, 49);
+			this.bunifuSeparator1.Location = new System.Drawing.Point(13, 52);
 			this.bunifuSeparator1.Name = "bunifuSeparator1";
 			this.bunifuSeparator1.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
 			this.bunifuSeparator1.Size = new System.Drawing.Size(1243, 15);
@@ -813,7 +834,10 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1349, 674);
+			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
+			this.ClientSize = new System.Drawing.Size(1270, 650);
+			this.ControlBox = false;
+			this.Controls.Add(this.guna2ControlBox2);
 			this.Controls.Add(this.groupBox2);
 			this.Controls.Add(this.groupBillRoom);
 			this.Controls.Add(this.groupBoxBill);
@@ -822,6 +846,7 @@
 			this.Controls.Add(this.groupBox3);
 			this.Controls.Add(this.bunifuSeparator1);
 			this.Controls.Add(this.label1);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Name = "FormUseService";
 			this.groupBox2.ResumeLayout(false);
 			this.groupBillRoom.ResumeLayout(false);
@@ -904,5 +929,8 @@
 		private System.Windows.Forms.FlowLayoutPanel flowLayoutRooms;
 		private Bunifu.UI.WinForms.BunifuSeparator bunifuSeparator1;
 		private System.Windows.Forms.Label label1;
+		private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
+		private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+		private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
 	}
 }

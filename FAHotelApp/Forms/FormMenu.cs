@@ -73,7 +73,7 @@ namespace FAHotelApp.Forms
 			if (CheckAccess("LayanandanPembayaran"))
 			{
 				//bunifuPages1.SetPage(LayanandanPembayaran);
-				this.Hide();
+				//this.Hide();
 				FormUseService f = new FormUseService(userName);
 				f.ShowDialog();
 				this.Show();
@@ -138,6 +138,20 @@ namespace FAHotelApp.Forms
 		private void guna2ControlBox1_Click(object sender, EventArgs e)
 		{
 			System.Windows.Forms.Application.Exit();
+		}
+
+		private void bunifuButton10_Click(object sender, EventArgs e)
+		{
+			FormSetting f = new FormSetting(userName);
+			f.ShowDialog();
+			this.Show();
+		}
+
+		private void bunifuButton11_Click(object sender, EventArgs e)
+		{
+			FormLogin2 f = new FormLogin2();
+			f.Show();
+			this.Hide();
 		}
 	}
 }

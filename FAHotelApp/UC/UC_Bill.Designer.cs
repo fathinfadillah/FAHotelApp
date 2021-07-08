@@ -29,9 +29,9 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Bill));
 			this.SaveCustomer = new System.Windows.Forms.SaveFileDialog();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -47,22 +47,14 @@
 			this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.bindingBill = new System.Windows.Forms.BindingNavigator(this.components);
 			this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-			this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-			this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
 			this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
 			this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
 			this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-			this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-			this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
 			this.label1 = new System.Windows.Forms.Label();
-			this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
-			this.btnCancel = new Bunifu.Framework.UI.BunifuThinButton2();
 			this.label5 = new System.Windows.Forms.Label();
-			this.btnSearch = new Bunifu.Framework.UI.BunifuThinButton2();
 			this.txtSearch = new Bunifu.Framework.UI.BunifuMetroTextbox();
 			this.cbBillSearch = new MetroFramework.Controls.MetroComboBox();
 			this.groupBox5 = new System.Windows.Forms.GroupBox();
-			this.btnSeenBill = new Bunifu.Framework.UI.BunifuThinButton2();
 			this.groupBox4 = new System.Windows.Forms.GroupBox();
 			this.label20 = new System.Windows.Forms.Label();
 			this.label15 = new System.Windows.Forms.Label();
@@ -81,6 +73,15 @@
 			this.label4 = new System.Windows.Forms.Label();
 			this.txbPrice = new Bunifu.Framework.UI.BunifuMetroTextbox();
 			this.label13 = new System.Windows.Forms.Label();
+			this.btnSeenBill = new Bunifu.Framework.UI.BunifuThinButton2();
+			this.btnSearch = new Bunifu.Framework.UI.BunifuThinButton2();
+			this.btnCancel = new Bunifu.Framework.UI.BunifuThinButton2();
+			this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
+			this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
+			this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
+			this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
+			this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
+			this.btnSendEmail = new Bunifu.Framework.UI.BunifuThinButton2();
 			this.groupBox1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridViewBill)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.bindingBill)).BeginInit();
@@ -115,14 +116,14 @@
 			this.dataGridViewBill.AllowUserToResizeRows = false;
 			this.dataGridViewBill.BackgroundColor = System.Drawing.Color.White;
 			this.dataGridViewBill.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F);
-			dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dataGridViewBill.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+			dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 12F);
+			dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dataGridViewBill.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
 			this.dataGridViewBill.ColumnHeadersHeight = 29;
 			this.dataGridViewBill.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
 			this.dataGridViewBill.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -135,27 +136,27 @@
             this.colPrice,
             this.Column1,
             this.Column2});
-			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-			dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F);
-			dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.dataGridViewBill.DefaultCellStyle = dataGridViewCellStyle2;
+			dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+			dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 12F);
+			dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.dataGridViewBill.DefaultCellStyle = dataGridViewCellStyle5;
 			this.dataGridViewBill.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.dataGridViewBill.GridColor = System.Drawing.Color.White;
 			this.dataGridViewBill.Location = new System.Drawing.Point(3, 68);
 			this.dataGridViewBill.Name = "dataGridViewBill";
 			this.dataGridViewBill.ReadOnly = true;
-			dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F);
-			dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dataGridViewBill.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+			dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 12F);
+			dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dataGridViewBill.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
 			this.dataGridViewBill.RowHeadersVisible = false;
 			this.dataGridViewBill.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
 			this.dataGridViewBill.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F);
@@ -284,28 +285,6 @@
 			this.bindingNavigatorCountItem.Text = "Dari {0}";
 			this.bindingNavigatorCountItem.ToolTipText = "Tổng số khách hàng";
 			// 
-			// bindingNavigatorMoveFirstItem
-			// 
-			this.bindingNavigatorMoveFirstItem.AutoSize = false;
-			this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-			this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-			this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-			this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(50, 22);
-			this.bindingNavigatorMoveFirstItem.Text = "Move first";
-			this.bindingNavigatorMoveFirstItem.ToolTipText = "Khách hàng đầu tiên";
-			// 
-			// bindingNavigatorMovePreviousItem
-			// 
-			this.bindingNavigatorMovePreviousItem.AutoSize = false;
-			this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-			this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-			this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-			this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(50, 22);
-			this.bindingNavigatorMovePreviousItem.Text = "Move previous";
-			this.bindingNavigatorMovePreviousItem.ToolTipText = "Khách hàng trước đó";
-			// 
 			// bindingNavigatorSeparator
 			// 
 			this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
@@ -325,28 +304,6 @@
 			this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
 			this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 43);
 			// 
-			// bindingNavigatorMoveNextItem
-			// 
-			this.bindingNavigatorMoveNextItem.AutoSize = false;
-			this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-			this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-			this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-			this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(50, 22);
-			this.bindingNavigatorMoveNextItem.Text = "Move next";
-			this.bindingNavigatorMoveNextItem.ToolTipText = "Khách hàng kế tiếp";
-			// 
-			// bindingNavigatorMoveLastItem
-			// 
-			this.bindingNavigatorMoveLastItem.AutoSize = false;
-			this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-			this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-			this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-			this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(50, 22);
-			this.bindingNavigatorMoveLastItem.Text = "Move last";
-			this.bindingNavigatorMoveLastItem.ToolTipText = "Khách hàng cuối cùng";
-			// 
 			// label1
 			// 
 			this.label1.AutoSize = true;
@@ -358,48 +315,6 @@
 			this.label1.TabIndex = 53;
 			this.label1.Text = "Kelola Tagihan";
 			// 
-			// bunifuSeparator1
-			// 
-			this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
-			this.bunifuSeparator1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuSeparator1.BackgroundImage")));
-			this.bunifuSeparator1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-			this.bunifuSeparator1.DashCap = Bunifu.UI.WinForms.BunifuSeparator.CapStyles.Flat;
-			this.bunifuSeparator1.LineColor = System.Drawing.Color.Silver;
-			this.bunifuSeparator1.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
-			this.bunifuSeparator1.LineThickness = 1;
-			this.bunifuSeparator1.Location = new System.Drawing.Point(21, 46);
-			this.bunifuSeparator1.Name = "bunifuSeparator1";
-			this.bunifuSeparator1.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
-			this.bunifuSeparator1.Size = new System.Drawing.Size(1181, 15);
-			this.bunifuSeparator1.TabIndex = 54;
-			// 
-			// btnCancel
-			// 
-			this.btnCancel.ActiveBorderThickness = 1;
-			this.btnCancel.ActiveCornerRadius = 20;
-			this.btnCancel.ActiveFillColor = System.Drawing.Color.Red;
-			this.btnCancel.ActiveForecolor = System.Drawing.Color.White;
-			this.btnCancel.ActiveLineColor = System.Drawing.Color.Red;
-			this.btnCancel.BackColor = System.Drawing.Color.White;
-			this.btnCancel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCancel.BackgroundImage")));
-			this.btnCancel.ButtonText = "Batalkan Pencarian";
-			this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnCancel.IdleBorderThickness = 1;
-			this.btnCancel.IdleCornerRadius = 20;
-			this.btnCancel.IdleFillColor = System.Drawing.Color.White;
-			this.btnCancel.IdleForecolor = System.Drawing.Color.Red;
-			this.btnCancel.IdleLineColor = System.Drawing.Color.Red;
-			this.btnCancel.Location = new System.Drawing.Point(235, 67);
-			this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-			this.btnCancel.Name = "btnCancel";
-			this.btnCancel.Size = new System.Drawing.Size(175, 40);
-			this.btnCancel.TabIndex = 49;
-			this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.btnCancel.Visible = false;
-			this.btnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
-			// 
 			// label5
 			// 
 			this.label5.Font = new System.Drawing.Font("Segoe UI", 11.25F);
@@ -409,32 +324,6 @@
 			this.label5.Size = new System.Drawing.Size(132, 26);
 			this.label5.TabIndex = 28;
 			this.label5.Text = "Cari Menurut:";
-			// 
-			// btnSearch
-			// 
-			this.btnSearch.ActiveBorderThickness = 1;
-			this.btnSearch.ActiveCornerRadius = 20;
-			this.btnSearch.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSearch.ActiveForecolor = System.Drawing.Color.White;
-			this.btnSearch.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSearch.BackColor = System.Drawing.Color.White;
-			this.btnSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearch.BackgroundImage")));
-			this.btnSearch.ButtonText = "Cari";
-			this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSearch.IdleBorderThickness = 1;
-			this.btnSearch.IdleCornerRadius = 20;
-			this.btnSearch.IdleFillColor = System.Drawing.Color.White;
-			this.btnSearch.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSearch.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSearch.Location = new System.Drawing.Point(235, 71);
-			this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-			this.btnSearch.Name = "btnSearch";
-			this.btnSearch.Size = new System.Drawing.Size(175, 40);
-			this.btnSearch.TabIndex = 46;
-			this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.btnSearch.Click += new System.EventHandler(this.BtnSearch_Click);
 			// 
 			// txtSearch
 			// 
@@ -493,35 +382,9 @@
 			this.groupBox5.TabStop = false;
 			this.groupBox5.Text = "Cari";
 			// 
-			// btnSeenBill
-			// 
-			this.btnSeenBill.ActiveBorderThickness = 1;
-			this.btnSeenBill.ActiveCornerRadius = 20;
-			this.btnSeenBill.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSeenBill.ActiveForecolor = System.Drawing.Color.White;
-			this.btnSeenBill.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSeenBill.BackColor = System.Drawing.Color.White;
-			this.btnSeenBill.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSeenBill.BackgroundImage")));
-			this.btnSeenBill.ButtonText = "Detail Tagihan";
-			this.btnSeenBill.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnSeenBill.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnSeenBill.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSeenBill.IdleBorderThickness = 1;
-			this.btnSeenBill.IdleCornerRadius = 20;
-			this.btnSeenBill.IdleFillColor = System.Drawing.Color.White;
-			this.btnSeenBill.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSeenBill.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSeenBill.Location = new System.Drawing.Point(34, 48);
-			this.btnSeenBill.Margin = new System.Windows.Forms.Padding(4);
-			this.btnSeenBill.Name = "btnSeenBill";
-			this.btnSeenBill.Size = new System.Drawing.Size(175, 40);
-			this.btnSeenBill.TabIndex = 51;
-			this.btnSeenBill.TabStop = false;
-			this.btnSeenBill.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.btnSeenBill.Click += new System.EventHandler(this.BtnSeenBill_Click);
-			// 
 			// groupBox4
 			// 
+			this.groupBox4.Controls.Add(this.btnSendEmail);
 			this.groupBox4.Controls.Add(this.btnSeenBill);
 			this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.groupBox4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -800,6 +663,172 @@
 			this.label13.TabIndex = 74;
 			this.label13.Text = "Harga Awal:";
 			// 
+			// btnSeenBill
+			// 
+			this.btnSeenBill.ActiveBorderThickness = 1;
+			this.btnSeenBill.ActiveCornerRadius = 20;
+			this.btnSeenBill.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSeenBill.ActiveForecolor = System.Drawing.Color.White;
+			this.btnSeenBill.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSeenBill.BackColor = System.Drawing.Color.White;
+			this.btnSeenBill.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSeenBill.BackgroundImage")));
+			this.btnSeenBill.ButtonText = "Detail Tagihan";
+			this.btnSeenBill.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnSeenBill.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnSeenBill.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSeenBill.IdleBorderThickness = 1;
+			this.btnSeenBill.IdleCornerRadius = 20;
+			this.btnSeenBill.IdleFillColor = System.Drawing.Color.White;
+			this.btnSeenBill.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSeenBill.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSeenBill.Location = new System.Drawing.Point(34, 48);
+			this.btnSeenBill.Margin = new System.Windows.Forms.Padding(4);
+			this.btnSeenBill.Name = "btnSeenBill";
+			this.btnSeenBill.Size = new System.Drawing.Size(175, 40);
+			this.btnSeenBill.TabIndex = 51;
+			this.btnSeenBill.TabStop = false;
+			this.btnSeenBill.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.btnSeenBill.Click += new System.EventHandler(this.BtnSeenBill_Click);
+			// 
+			// btnSearch
+			// 
+			this.btnSearch.ActiveBorderThickness = 1;
+			this.btnSearch.ActiveCornerRadius = 20;
+			this.btnSearch.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSearch.ActiveForecolor = System.Drawing.Color.White;
+			this.btnSearch.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSearch.BackColor = System.Drawing.Color.White;
+			this.btnSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearch.BackgroundImage")));
+			this.btnSearch.ButtonText = "Cari";
+			this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSearch.IdleBorderThickness = 1;
+			this.btnSearch.IdleCornerRadius = 20;
+			this.btnSearch.IdleFillColor = System.Drawing.Color.White;
+			this.btnSearch.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSearch.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSearch.Location = new System.Drawing.Point(235, 71);
+			this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.btnSearch.Name = "btnSearch";
+			this.btnSearch.Size = new System.Drawing.Size(175, 40);
+			this.btnSearch.TabIndex = 46;
+			this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.btnSearch.Click += new System.EventHandler(this.BtnSearch_Click);
+			// 
+			// btnCancel
+			// 
+			this.btnCancel.ActiveBorderThickness = 1;
+			this.btnCancel.ActiveCornerRadius = 20;
+			this.btnCancel.ActiveFillColor = System.Drawing.Color.Red;
+			this.btnCancel.ActiveForecolor = System.Drawing.Color.White;
+			this.btnCancel.ActiveLineColor = System.Drawing.Color.Red;
+			this.btnCancel.BackColor = System.Drawing.Color.White;
+			this.btnCancel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCancel.BackgroundImage")));
+			this.btnCancel.ButtonText = "Batalkan Pencarian";
+			this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnCancel.IdleBorderThickness = 1;
+			this.btnCancel.IdleCornerRadius = 20;
+			this.btnCancel.IdleFillColor = System.Drawing.Color.White;
+			this.btnCancel.IdleForecolor = System.Drawing.Color.Red;
+			this.btnCancel.IdleLineColor = System.Drawing.Color.Red;
+			this.btnCancel.Location = new System.Drawing.Point(235, 67);
+			this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.btnCancel.Name = "btnCancel";
+			this.btnCancel.Size = new System.Drawing.Size(175, 40);
+			this.btnCancel.TabIndex = 49;
+			this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.btnCancel.Visible = false;
+			this.btnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
+			// 
+			// bunifuSeparator1
+			// 
+			this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
+			this.bunifuSeparator1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuSeparator1.BackgroundImage")));
+			this.bunifuSeparator1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.bunifuSeparator1.DashCap = Bunifu.UI.WinForms.BunifuSeparator.CapStyles.Flat;
+			this.bunifuSeparator1.LineColor = System.Drawing.Color.Silver;
+			this.bunifuSeparator1.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
+			this.bunifuSeparator1.LineThickness = 1;
+			this.bunifuSeparator1.Location = new System.Drawing.Point(21, 46);
+			this.bunifuSeparator1.Name = "bunifuSeparator1";
+			this.bunifuSeparator1.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
+			this.bunifuSeparator1.Size = new System.Drawing.Size(1181, 15);
+			this.bunifuSeparator1.TabIndex = 54;
+			// 
+			// bindingNavigatorMoveFirstItem
+			// 
+			this.bindingNavigatorMoveFirstItem.AutoSize = false;
+			this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
+			this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
+			this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
+			this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(50, 22);
+			this.bindingNavigatorMoveFirstItem.Text = "Move first";
+			this.bindingNavigatorMoveFirstItem.ToolTipText = "Khách hàng đầu tiên";
+			// 
+			// bindingNavigatorMovePreviousItem
+			// 
+			this.bindingNavigatorMovePreviousItem.AutoSize = false;
+			this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
+			this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
+			this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+			this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(50, 22);
+			this.bindingNavigatorMovePreviousItem.Text = "Move previous";
+			this.bindingNavigatorMovePreviousItem.ToolTipText = "Khách hàng trước đó";
+			// 
+			// bindingNavigatorMoveNextItem
+			// 
+			this.bindingNavigatorMoveNextItem.AutoSize = false;
+			this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
+			this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
+			this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
+			this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(50, 22);
+			this.bindingNavigatorMoveNextItem.Text = "Move next";
+			this.bindingNavigatorMoveNextItem.ToolTipText = "Khách hàng kế tiếp";
+			// 
+			// bindingNavigatorMoveLastItem
+			// 
+			this.bindingNavigatorMoveLastItem.AutoSize = false;
+			this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
+			this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
+			this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
+			this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(50, 22);
+			this.bindingNavigatorMoveLastItem.Text = "Move last";
+			this.bindingNavigatorMoveLastItem.ToolTipText = "Khách hàng cuối cùng";
+			// 
+			// btnSendEmail
+			// 
+			this.btnSendEmail.ActiveBorderThickness = 1;
+			this.btnSendEmail.ActiveCornerRadius = 20;
+			this.btnSendEmail.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSendEmail.ActiveForecolor = System.Drawing.Color.White;
+			this.btnSendEmail.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSendEmail.BackColor = System.Drawing.Color.White;
+			this.btnSendEmail.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSendEmail.BackgroundImage")));
+			this.btnSendEmail.ButtonText = "Kirim Email Customer";
+			this.btnSendEmail.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnSendEmail.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnSendEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSendEmail.IdleBorderThickness = 1;
+			this.btnSendEmail.IdleCornerRadius = 20;
+			this.btnSendEmail.IdleFillColor = System.Drawing.Color.White;
+			this.btnSendEmail.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSendEmail.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSendEmail.Location = new System.Drawing.Point(230, 48);
+			this.btnSendEmail.Margin = new System.Windows.Forms.Padding(4);
+			this.btnSendEmail.Name = "btnSendEmail";
+			this.btnSendEmail.Size = new System.Drawing.Size(175, 40);
+			this.btnSendEmail.TabIndex = 52;
+			this.btnSendEmail.TabStop = false;
+			this.btnSendEmail.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.btnSendEmail.Click += new System.EventHandler(this.btnSendEmail_Click);
+			// 
 			// UC_Bill
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -878,5 +907,6 @@
 		private System.Windows.Forms.DataGridViewTextBoxColumn colPrice;
 		private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
 		private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+		private Bunifu.Framework.UI.BunifuThinButton2 btnSendEmail;
 	}
 }
