@@ -96,9 +96,12 @@
 			this.guna2Panel2.Controls.Add(this.txtPassword);
 			this.guna2Panel2.Controls.Add(this.txtUsername);
 			this.guna2Panel2.Controls.Add(this.guna2PictureBox1);
-			resources.ApplyResources(this.guna2Panel2, "guna2Panel2");
+			this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Left;
+			this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
 			this.guna2Panel2.Name = "guna2Panel2";
 			this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
+			this.guna2Panel2.Size = new System.Drawing.Size(563, 666);
+			this.guna2Panel2.TabIndex = 5;
 			// 
 			// cbDepartement
 			// 
@@ -109,15 +112,19 @@
 			this.cbDepartement.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
 			this.cbDepartement.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
 			this.cbDepartement.FocusedState.Parent = this.cbDepartement;
-			resources.ApplyResources(this.cbDepartement, "cbDepartement");
+			this.cbDepartement.Font = new System.Drawing.Font("Segoe UI", 10F);
 			this.cbDepartement.ForeColor = System.Drawing.Color.Black;
 			this.cbDepartement.HoverState.Parent = this.cbDepartement;
+			this.cbDepartement.ItemHeight = 30;
 			this.cbDepartement.Items.AddRange(new object[] {
-            resources.GetString("cbDepartement.Items")});
+            "Departement"});
 			this.cbDepartement.ItemsAppearance.Parent = this.cbDepartement;
+			this.cbDepartement.Location = new System.Drawing.Point(114, 320);
 			this.cbDepartement.Name = "cbDepartement";
 			this.cbDepartement.ShadowDecoration.Parent = this.cbDepartement;
+			this.cbDepartement.Size = new System.Drawing.Size(336, 36);
 			this.cbDepartement.StartIndex = 0;
+			this.cbDepartement.TabIndex = 17;
 			this.cbDepartement.Leave += new System.EventHandler(this.cbDepartement_Leave);
 			// 
 			// tsShowPassword
@@ -129,9 +136,11 @@
 			this.tsShowPassword.CheckedState.InnerBorderColor = System.Drawing.Color.White;
 			this.tsShowPassword.CheckedState.InnerColor = System.Drawing.Color.White;
 			this.tsShowPassword.CheckedState.Parent = this.tsShowPassword;
-			resources.ApplyResources(this.tsShowPassword, "tsShowPassword");
+			this.tsShowPassword.Location = new System.Drawing.Point(114, 369);
 			this.tsShowPassword.Name = "tsShowPassword";
 			this.tsShowPassword.ShadowDecoration.Parent = this.tsShowPassword;
+			this.tsShowPassword.Size = new System.Drawing.Size(35, 20);
+			this.tsShowPassword.TabIndex = 16;
 			this.tsShowPassword.UncheckedState.BorderColor = System.Drawing.Color.Black;
 			this.tsShowPassword.UncheckedState.BorderThickness = 2;
 			this.tsShowPassword.UncheckedState.FillColor = System.Drawing.Color.White;
@@ -142,24 +151,42 @@
 			// 
 			// label6
 			// 
-			resources.ApplyResources(this.label6, "label6");
+			this.label6.AutoSize = true;
 			this.label6.Cursor = System.Windows.Forms.Cursors.Arrow;
+			this.label6.Font = new System.Drawing.Font("Montserrat", 8.249999F);
 			this.label6.ForeColor = System.Drawing.Color.Black;
+			this.label6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+			this.label6.Location = new System.Drawing.Point(163, 601);
 			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(236, 15);
+			this.label6.TabIndex = 15;
+			this.label6.Text = "Dengan masuk, Anda setuju dengan kami";
 			// 
 			// lbTermCon
 			// 
-			resources.ApplyResources(this.lbTermCon, "lbTermCon");
+			this.lbTermCon.AutoSize = true;
 			this.lbTermCon.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.lbTermCon.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Underline);
 			this.lbTermCon.ForeColor = System.Drawing.Color.Black;
+			this.lbTermCon.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+			this.lbTermCon.Location = new System.Drawing.Point(220, 616);
 			this.lbTermCon.Name = "lbTermCon";
+			this.lbTermCon.Size = new System.Drawing.Size(123, 15);
+			this.lbTermCon.TabIndex = 14;
+			this.lbTermCon.Text = "Syarat dan Ketentuan";
 			this.lbTermCon.Click += new System.EventHandler(this.lbTermCon_Click);
 			// 
 			// label3
 			// 
-			resources.ApplyResources(this.label3, "label3");
+			this.label3.AutoSize = true;
+			this.label3.Font = new System.Drawing.Font("Montserrat", 8.249999F);
 			this.label3.ForeColor = System.Drawing.Color.Black;
+			this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+			this.label3.Location = new System.Drawing.Point(154, 371);
 			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(93, 15);
+			this.label3.TabIndex = 13;
+			this.label3.Text = "Lihat Kata Sandi";
 			// 
 			// btnExit
 			// 
@@ -170,33 +197,55 @@
 			this.btnExit.CustomImages.Parent = this.btnExit;
 			this.btnExit.DisabledState.Parent = this.btnExit;
 			this.btnExit.FillColor = System.Drawing.Color.Red;
-			resources.ApplyResources(this.btnExit, "btnExit");
+			this.btnExit.Font = new System.Drawing.Font("Montserrat", 9.749999F);
 			this.btnExit.ForeColor = System.Drawing.Color.White;
 			this.btnExit.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
 			this.btnExit.HoverState.Parent = this.btnExit;
+			this.btnExit.Location = new System.Drawing.Point(114, 492);
 			this.btnExit.Name = "btnExit";
 			this.btnExit.ShadowDecoration.Parent = this.btnExit;
+			this.btnExit.Size = new System.Drawing.Size(336, 39);
+			this.btnExit.TabIndex = 11;
+			this.btnExit.Text = "Keluar";
 			this.btnExit.UseTransparentBackground = true;
 			this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
 			// 
 			// label5
 			// 
-			resources.ApplyResources(this.label5, "label5");
+			this.label5.AutoSize = true;
+			this.label5.Font = new System.Drawing.Font("Montserrat", 9.749999F);
 			this.label5.ForeColor = System.Drawing.Color.Black;
+			this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+			this.label5.Location = new System.Drawing.Point(111, 189);
 			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(359, 18);
+			this.label5.TabIndex = 10;
+			this.label5.Text = "Tolong pakai nama akun dan kata sandi untuk masuk";
 			// 
 			// label4
 			// 
-			resources.ApplyResources(this.label4, "label4");
+			this.label4.AutoSize = true;
+			this.label4.Font = new System.Drawing.Font("Montserrat", 21.75F, System.Drawing.FontStyle.Bold);
 			this.label4.ForeColor = System.Drawing.Color.Black;
+			this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+			this.label4.Location = new System.Drawing.Point(107, 136);
 			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(117, 40);
+			this.label4.TabIndex = 9;
+			this.label4.Text = "Masuk";
 			// 
 			// lbContactAdmin
 			// 
-			resources.ApplyResources(this.lbContactAdmin, "lbContactAdmin");
+			this.lbContactAdmin.AutoSize = true;
 			this.lbContactAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.lbContactAdmin.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold);
 			this.lbContactAdmin.ForeColor = System.Drawing.Color.Black;
+			this.lbContactAdmin.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+			this.lbContactAdmin.Location = new System.Drawing.Point(422, 46);
 			this.lbContactAdmin.Name = "lbContactAdmin";
+			this.lbContactAdmin.Size = new System.Drawing.Size(109, 18);
+			this.lbContactAdmin.TabIndex = 8;
+			this.lbContactAdmin.Text = "Kontak Admin";
 			this.lbContactAdmin.Click += new System.EventHandler(this.lbContactAdmin_Click);
 			// 
 			// btnLogin
@@ -208,28 +257,44 @@
 			this.btnLogin.CustomImages.Parent = this.btnLogin;
 			this.btnLogin.DisabledState.Parent = this.btnLogin;
 			this.btnLogin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			resources.ApplyResources(this.btnLogin, "btnLogin");
+			this.btnLogin.Font = new System.Drawing.Font("Montserrat", 9.749999F);
 			this.btnLogin.ForeColor = System.Drawing.Color.White;
 			this.btnLogin.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
 			this.btnLogin.HoverState.Parent = this.btnLogin;
+			this.btnLogin.Location = new System.Drawing.Point(114, 447);
 			this.btnLogin.Name = "btnLogin";
 			this.btnLogin.ShadowDecoration.Parent = this.btnLogin;
+			this.btnLogin.Size = new System.Drawing.Size(336, 39);
+			this.btnLogin.TabIndex = 7;
+			this.btnLogin.Text = "Masuk";
 			this.btnLogin.UseTransparentBackground = true;
 			this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
 			// 
 			// lbForgotPassword
 			// 
-			resources.ApplyResources(this.lbForgotPassword, "lbForgotPassword");
+			this.lbForgotPassword.AutoSize = true;
 			this.lbForgotPassword.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.lbForgotPassword.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Underline);
 			this.lbForgotPassword.ForeColor = System.Drawing.Color.Black;
+			this.lbForgotPassword.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+			this.lbForgotPassword.Location = new System.Drawing.Point(351, 371);
 			this.lbForgotPassword.Name = "lbForgotPassword";
+			this.lbForgotPassword.Size = new System.Drawing.Size(99, 15);
+			this.lbForgotPassword.TabIndex = 6;
+			this.lbForgotPassword.Text = "Lupa Kata Sandi?";
 			this.lbForgotPassword.Click += new System.EventHandler(this.lbForgotPassword_Click);
 			// 
 			// label1
 			// 
-			resources.ApplyResources(this.label1, "label1");
+			this.label1.AutoSize = true;
+			this.label1.Font = new System.Drawing.Font("Montserrat", 8.249999F);
 			this.label1.ForeColor = System.Drawing.Color.Black;
+			this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+			this.label1.Location = new System.Drawing.Point(154, 401);
 			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(63, 15);
+			this.label1.TabIndex = 5;
+			this.label1.Text = "Ingat Saya";
 			// 
 			// tsRememberMe
 			// 
@@ -240,9 +305,11 @@
 			this.tsRememberMe.CheckedState.InnerBorderColor = System.Drawing.Color.White;
 			this.tsRememberMe.CheckedState.InnerColor = System.Drawing.Color.White;
 			this.tsRememberMe.CheckedState.Parent = this.tsRememberMe;
-			resources.ApplyResources(this.tsRememberMe, "tsRememberMe");
+			this.tsRememberMe.Location = new System.Drawing.Point(114, 399);
 			this.tsRememberMe.Name = "tsRememberMe";
 			this.tsRememberMe.ShadowDecoration.Parent = this.tsRememberMe;
+			this.tsRememberMe.Size = new System.Drawing.Size(35, 20);
+			this.tsRememberMe.TabIndex = 4;
 			this.tsRememberMe.UncheckedState.BorderColor = System.Drawing.Color.Black;
 			this.tsRememberMe.UncheckedState.BorderThickness = 2;
 			this.tsRememberMe.UncheckedState.FillColor = System.Drawing.Color.White;
@@ -263,15 +330,18 @@
 			this.txtPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
 			this.txtPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
 			this.txtPassword.FocusedState.Parent = this.txtPassword;
-			resources.ApplyResources(this.txtPassword, "txtPassword");
+			this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
 			this.txtPassword.ForeColor = System.Drawing.Color.Black;
 			this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
 			this.txtPassword.HoverState.Parent = this.txtPassword;
+			this.txtPassword.Location = new System.Drawing.Point(114, 278);
 			this.txtPassword.Name = "txtPassword";
 			this.txtPassword.PasswordChar = '\0';
 			this.txtPassword.PlaceholderText = "Password";
 			this.txtPassword.SelectedText = "";
 			this.txtPassword.ShadowDecoration.Parent = this.txtPassword;
+			this.txtPassword.Size = new System.Drawing.Size(336, 36);
+			this.txtPassword.TabIndex = 3;
 			this.txtPassword.UseSystemPasswordChar = true;
 			this.txtPassword.Leave += new System.EventHandler(this.txtPassword_Leave);
 			// 
@@ -288,15 +358,18 @@
 			this.txtUsername.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
 			this.txtUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
 			this.txtUsername.FocusedState.Parent = this.txtUsername;
-			resources.ApplyResources(this.txtUsername, "txtUsername");
+			this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 9F);
 			this.txtUsername.ForeColor = System.Drawing.Color.Black;
 			this.txtUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
 			this.txtUsername.HoverState.Parent = this.txtUsername;
+			this.txtUsername.Location = new System.Drawing.Point(114, 236);
 			this.txtUsername.Name = "txtUsername";
 			this.txtUsername.PasswordChar = '\0';
 			this.txtUsername.PlaceholderText = "Username";
 			this.txtUsername.SelectedText = "";
 			this.txtUsername.ShadowDecoration.Parent = this.txtUsername;
+			this.txtUsername.Size = new System.Drawing.Size(336, 36);
+			this.txtUsername.TabIndex = 1;
 			this.txtUsername.Leave += new System.EventHandler(this.txtUsername_Leave);
 			// 
 			// guna2PictureBox1
@@ -304,39 +377,55 @@
 			this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
 			this.guna2PictureBox1.Image = global::FAHotelApp.Properties.Resources.FAHotelTransparentLogoNavyBlue;
 			this.guna2PictureBox1.ImageRotate = 0F;
-			resources.ApplyResources(this.guna2PictureBox1, "guna2PictureBox1");
+			this.guna2PictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+			this.guna2PictureBox1.Location = new System.Drawing.Point(35, 29);
 			this.guna2PictureBox1.Name = "guna2PictureBox1";
 			this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
+			this.guna2PictureBox1.Size = new System.Drawing.Size(128, 52);
+			this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.guna2PictureBox1.TabIndex = 0;
 			this.guna2PictureBox1.TabStop = false;
 			this.guna2PictureBox1.UseTransparentBackground = true;
 			// 
 			// guna2ControlBox2
 			// 
-			resources.ApplyResources(this.guna2ControlBox2, "guna2ControlBox2");
+			this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
 			this.guna2ControlBox2.FillColor = System.Drawing.Color.White;
 			this.guna2ControlBox2.HoverState.Parent = this.guna2ControlBox2;
 			this.guna2ControlBox2.IconColor = System.Drawing.Color.Black;
+			this.guna2ControlBox2.Location = new System.Drawing.Point(950, 12);
 			this.guna2ControlBox2.Name = "guna2ControlBox2";
 			this.guna2ControlBox2.ShadowDecoration.Parent = this.guna2ControlBox2;
+			this.guna2ControlBox2.Size = new System.Drawing.Size(35, 28);
+			this.guna2ControlBox2.TabIndex = 7;
 			// 
 			// guna2ControlBox1
 			// 
-			resources.ApplyResources(this.guna2ControlBox1, "guna2ControlBox1");
+			this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.guna2ControlBox1.FillColor = System.Drawing.Color.White;
 			this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.Red;
 			this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
 			this.guna2ControlBox1.IconColor = System.Drawing.Color.Black;
+			this.guna2ControlBox1.Location = new System.Drawing.Point(993, 12);
 			this.guna2ControlBox1.Name = "guna2ControlBox1";
 			this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
+			this.guna2ControlBox1.Size = new System.Drawing.Size(35, 28);
+			this.guna2ControlBox1.TabIndex = 6;
 			// 
 			// lbDate
 			// 
-			resources.ApplyResources(this.lbDate, "lbDate");
+			this.lbDate.AutoSize = true;
 			this.lbDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
 			this.lbDate.Cursor = System.Windows.Forms.Cursors.Arrow;
+			this.lbDate.Font = new System.Drawing.Font("Montserrat", 26.25F);
 			this.lbDate.ForeColor = System.Drawing.Color.White;
+			this.lbDate.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+			this.lbDate.Location = new System.Drawing.Point(709, 99);
 			this.lbDate.Name = "lbDate";
+			this.lbDate.Size = new System.Drawing.Size(104, 48);
+			this.lbDate.TabIndex = 12;
+			this.lbDate.Text = "Date";
 			// 
 			// timer1
 			// 
@@ -344,43 +433,54 @@
 			// 
 			// lbTime
 			// 
-			resources.ApplyResources(this.lbTime, "lbTime");
+			this.lbTime.AutoSize = true;
 			this.lbTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
 			this.lbTime.Cursor = System.Windows.Forms.Cursors.Arrow;
+			this.lbTime.Font = new System.Drawing.Font("Montserrat", 20.25F);
 			this.lbTime.ForeColor = System.Drawing.Color.White;
+			this.lbTime.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+			this.lbTime.Location = new System.Drawing.Point(710, 210);
 			this.lbTime.Name = "lbTime";
+			this.lbTime.Size = new System.Drawing.Size(84, 37);
+			this.lbTime.TabIndex = 14;
+			this.lbTime.Text = "Time";
 			// 
 			// epWarning
 			// 
 			this.epWarning.ContainerControl = this;
-			resources.ApplyResources(this.epWarning, "epWarning");
+			this.epWarning.Icon = ((System.Drawing.Icon)(resources.GetObject("epWarning.Icon")));
 			// 
 			// guna2PictureBox2
 			// 
 			this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
 			this.guna2PictureBox2.Image = global::FAHotelApp.Properties.Resources._01_BGFormLogin;
 			this.guna2PictureBox2.ImageRotate = 0F;
-			resources.ApplyResources(this.guna2PictureBox2, "guna2PictureBox2");
+			this.guna2PictureBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+			this.guna2PictureBox2.Location = new System.Drawing.Point(-44, -11);
 			this.guna2PictureBox2.Name = "guna2PictureBox2";
 			this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
+			this.guna2PictureBox2.Size = new System.Drawing.Size(1096, 677);
+			this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.guna2PictureBox2.TabIndex = 13;
 			this.guna2PictureBox2.TabStop = false;
 			this.guna2PictureBox2.UseTransparentBackground = true;
 			// 
 			// epWrong
 			// 
 			this.epWrong.ContainerControl = this;
-			resources.ApplyResources(this.epWrong, "epWrong");
+			this.epWrong.Icon = ((System.Drawing.Icon)(resources.GetObject("epWrong.Icon")));
 			// 
 			// epCorrect
 			// 
 			this.epCorrect.ContainerControl = this;
-			resources.ApplyResources(this.epCorrect, "epCorrect");
+			this.epCorrect.Icon = ((System.Drawing.Icon)(resources.GetObject("epCorrect.Icon")));
 			// 
 			// FormLogin
 			// 
-			resources.ApplyResources(this, "$this");
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
+			this.ClientSize = new System.Drawing.Size(1040, 666);
 			this.Controls.Add(this.guna2Panel2);
 			this.Controls.Add(this.lbTime);
 			this.Controls.Add(this.lbDate);
@@ -389,6 +489,8 @@
 			this.Controls.Add(this.guna2PictureBox2);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Name = "FormLogin";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+			this.Text = "Masuk";
 			this.TopMost = true;
 			this.Load += new System.EventHandler(this.FormLogin_Load);
 			this.guna2Panel2.ResumeLayout(false);

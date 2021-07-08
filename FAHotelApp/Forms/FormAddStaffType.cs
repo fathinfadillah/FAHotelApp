@@ -21,17 +21,13 @@ namespace FAHotelApp.Forms
 		public FormAddStaffType()
 		{
 			InitializeComponent();
-			//btnAddTypeStaff.ButtonText = "Tambah baru";
-			label1.Text = "Tambahkan Jenis Karyawan";
 		}
 
 		public FormAddStaffType(int idStaffType, string name)
 		{
 			InitializeComponent();
 			this.idStaffType = idStaffType;
-			//btnAddTypeStaff.ButtonText = "Update";
 			txtName.Text = name;
-			label1.Text = "Update Jenis Karyawan";
 		}
 
 		private void bunifuThinButton25_Click(object sender, EventArgs e)

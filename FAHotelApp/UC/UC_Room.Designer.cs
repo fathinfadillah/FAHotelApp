@@ -30,9 +30,9 @@
 		{
 			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Room));
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.label1 = new System.Windows.Forms.Label();
 			this.saveRoom = new System.Windows.Forms.SaveFileDialog();
 			this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
@@ -72,13 +72,13 @@
 			this.label3 = new System.Windows.Forms.Label();
 			this.cbStatusRoom = new MetroFramework.Controls.MetroComboBox();
 			this.txtNameRoom = new Bunifu.Framework.UI.BunifuMetroTextbox();
-			this.txtPrice = new Bunifu.Framework.UI.BunifuMetroTextbox();
 			this.cbRoomType = new MetroFramework.Controls.MetroComboBox();
 			this.groupBox3 = new System.Windows.Forms.GroupBox();
 			this.btnSearch = new Bunifu.Framework.UI.BunifuThinButton2();
 			this.label5 = new System.Windows.Forms.Label();
 			this.txtSearch = new Bunifu.Framework.UI.BunifuMetroTextbox();
 			this.btnCancel = new Bunifu.Framework.UI.BunifuThinButton2();
+			this.txtPrice = new Bunifu.Framework.UI.BunifuMetroTextbox();
 			this.groupBox4.SuspendLayout();
 			this.groupBox1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridViewRoom)).BeginInit();
@@ -235,14 +235,14 @@
 			this.dataGridViewRoom.AllowUserToResizeRows = false;
 			this.dataGridViewRoom.BackgroundColor = System.Drawing.Color.White;
 			this.dataGridViewRoom.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F);
-			dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dataGridViewRoom.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+			dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 12F);
+			dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dataGridViewRoom.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
 			this.dataGridViewRoom.ColumnHeadersHeight = 29;
 			this.dataGridViewRoom.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
 			this.dataGridViewRoom.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -254,27 +254,27 @@
             this.colStatus,
             this.colIdRoomType,
             this.colIdStatus});
-			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-			dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F);
-			dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.dataGridViewRoom.DefaultCellStyle = dataGridViewCellStyle2;
+			dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+			dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 12F);
+			dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.dataGridViewRoom.DefaultCellStyle = dataGridViewCellStyle5;
 			this.dataGridViewRoom.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.dataGridViewRoom.GridColor = System.Drawing.Color.White;
 			this.dataGridViewRoom.Location = new System.Drawing.Point(3, 68);
 			this.dataGridViewRoom.Name = "dataGridViewRoom";
 			this.dataGridViewRoom.ReadOnly = true;
-			dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F);
-			dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dataGridViewRoom.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+			dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 12F);
+			dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dataGridViewRoom.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
 			this.dataGridViewRoom.RowHeadersVisible = false;
 			this.dataGridViewRoom.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
 			this.dataGridViewRoom.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -621,27 +621,6 @@
 			this.txtNameRoom.Enter += new System.EventHandler(this.txtNameRoom_Enter);
 			this.txtNameRoom.Leave += new System.EventHandler(this.txtNameRoom_Leave);
 			// 
-			// txtPrice
-			// 
-			this.txtPrice.BackColor = System.Drawing.Color.WhiteSmoke;
-			this.txtPrice.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.txtPrice.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.txtPrice.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.txtPrice.BorderThickness = 1;
-			this.txtPrice.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-			this.txtPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.txtPrice.Enabled = false;
-			this.txtPrice.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.txtPrice.isPassword = false;
-			this.txtPrice.Location = new System.Drawing.Point(247, 134);
-			this.txtPrice.Margin = new System.Windows.Forms.Padding(0);
-			this.txtPrice.MaxLength = 32767;
-			this.txtPrice.Name = "txtPrice";
-			this.txtPrice.Size = new System.Drawing.Size(175, 29);
-			this.txtPrice.TabIndex = 42;
-			this.txtPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-			// 
 			// cbRoomType
 			// 
 			this.cbRoomType.BackColor = System.Drawing.Color.White;
@@ -760,6 +739,27 @@
 			this.btnCancel.Visible = false;
 			this.btnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
 			// 
+			// txtPrice
+			// 
+			this.txtPrice.BackColor = System.Drawing.Color.WhiteSmoke;
+			this.txtPrice.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.txtPrice.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.txtPrice.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.txtPrice.BorderThickness = 1;
+			this.txtPrice.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.txtPrice.Enabled = false;
+			this.txtPrice.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.txtPrice.isPassword = false;
+			this.txtPrice.Location = new System.Drawing.Point(247, 134);
+			this.txtPrice.Margin = new System.Windows.Forms.Padding(0);
+			this.txtPrice.MaxLength = 32767;
+			this.txtPrice.Name = "txtPrice";
+			this.txtPrice.Size = new System.Drawing.Size(175, 29);
+			this.txtPrice.TabIndex = 42;
+			this.txtPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			// 
 			// UC_Room
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -820,7 +820,6 @@
 		private System.Windows.Forms.Label label3;
 		private MetroFramework.Controls.MetroComboBox cbStatusRoom;
 		private Bunifu.Framework.UI.BunifuMetroTextbox txtNameRoom;
-		private Bunifu.Framework.UI.BunifuMetroTextbox txtPrice;
 		private MetroFramework.Controls.MetroComboBox cbRoomType;
 		private System.Windows.Forms.GroupBox groupBox3;
 		private Bunifu.Framework.UI.BunifuThinButton2 btnSearch;
@@ -838,5 +837,6 @@
 		private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
 		private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
 		private System.Windows.Forms.ToolStripLabel toolStripLabel1;
+		private Bunifu.Framework.UI.BunifuMetroTextbox txtPrice;
 	}
 }

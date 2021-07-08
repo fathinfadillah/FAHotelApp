@@ -54,6 +54,7 @@ namespace FAHotelApp.Forms
 			{
 				txtUsername.Text = Properties.Settings.Default.Username;
 				txtPassword.Text = Properties.Settings.Default.Password;
+				cbDepartement.Text = Properties.Settings.Default.UserType;
 			}
 		}
 
@@ -92,6 +93,7 @@ namespace FAHotelApp.Forms
 			{
 				Properties.Settings.Default.Username = txtUsername.Text;
 				Properties.Settings.Default.Password = txtPassword.Text;
+				Properties.Settings.Default.UserType = cbDepartement.Text;
 				Properties.Settings.Default.Save();
 			}
 			if (tsRememberMe.Checked == false)

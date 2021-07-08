@@ -274,7 +274,7 @@ namespace FAHotelApp.Forms
 			table.Columns.Add("price_New", typeof(string));
 			for (int i = 0; i < table.Rows.Count; i++)
 			{
-				table.Rows[i]["price_New"] = ((int)table.Rows[i]["price"]).ToString("Rp.", CultureInfo.CreateSpecificCulture("id-ID"));
+				table.Rows[i]["price_New"] = ((int)table.Rows[i]["price"]).ToString("c", CultureInfo.CreateSpecificCulture("id-ID"));
 			}
 		}
 		private string StringToInt(string text)
@@ -339,7 +339,11 @@ namespace FAHotelApp.Forms
 		}
 		private void TxtPrice_Leave(object sender, EventArgs e)
 		{
-
+			Double value;
+			if (Double.TryParse(txtPrice.Text, out value))
+				txtPrice.Text = string.Format("{0:n0}", int.Parse(txtPrice.Text));
+			else
+				txtPrice.Text = String.Empty;
 		}
 		private void TxtLimitPerson_Leave(object sender, EventArgs e)
 		{
