@@ -116,17 +116,17 @@ namespace FAHotelApp.UC
 			}
 		}
 
-		private void btnAddCustomer_Click(object sender, EventArgs e)
-		{
-			if (txtRoomName.Text != string.Empty && txtRoomTypeName.Text != string.Empty && txtFullName.Text != string.Empty && txtIDCard.Text != string.Empty && txtDateCheckIn.Text != string.Empty && txtDateCheckOut.Text != string.Empty && txtAmountPeople.Text != string.Empty && txtPrice.Text != string.Empty)
-			{
-				FormAddCustomerInfo fAddCustomerInfo = new FormAddCustomerInfo();
-				fAddCustomerInfo.ShowDialog();
-				this.Show();
-			}
-			else
-				MessageBox.Show("Harap Masukkan Kembali Semua Informasi.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-		}
+		//private void btnAddCustomer_Click(object sender, EventArgs e)
+		//{
+		//	if (txtRoomName.Text != string.Empty && txtRoomTypeName.Text != string.Empty && txtFullName.Text != string.Empty && txtIDCard.Text != string.Empty && txtDateCheckIn.Text != string.Empty && txtDateCheckOut.Text != string.Empty && txtAmountPeople.Text != string.Empty && txtPrice.Text != string.Empty)
+		//	{
+		//		FormAddCustomerInfo fAddCustomerInfo = new FormAddCustomerInfo();
+		//		fAddCustomerInfo.ShowDialog();
+		//		this.Show();
+		//	}
+		//	else
+		//		MessageBox.Show("Harap Masukkan Kembali Semua Informasi.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+		//}
 
 		private void btnReceiveRoom_Click(object sender, EventArgs e)
 		{

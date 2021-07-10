@@ -53,13 +53,13 @@
 			this.txtFullName = new Bunifu.Framework.UI.BunifuMetroTextbox();
 			this.label16 = new System.Windows.Forms.Label();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
+			this.btnCancel = new Bunifu.Framework.UI.BunifuThinButton2();
+			this.btnAddCustomer = new Bunifu.Framework.UI.BunifuThinButton2();
 			this.groupBox3 = new System.Windows.Forms.GroupBox();
+			this.btnSearch = new Bunifu.Framework.UI.BunifuThinButton2();
 			this.txtIDCardSearch = new Bunifu.Framework.UI.BunifuMetroTextbox();
 			this.label9 = new System.Windows.Forms.Label();
 			this.btnBack = new Bunifu.Framework.UI.BunifuThinButton2();
-			this.btnSearch = new Bunifu.Framework.UI.BunifuThinButton2();
-			this.btnCancel = new Bunifu.Framework.UI.BunifuThinButton2();
-			this.btnAddCustomer = new Bunifu.Framework.UI.BunifuThinButton2();
 			this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
 			this.groupBox2.SuspendLayout();
 			this.groupBox1.SuspendLayout();
@@ -406,6 +406,58 @@
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Menu";
 			// 
+			// btnCancel
+			// 
+			this.btnCancel.ActiveBorderThickness = 1;
+			this.btnCancel.ActiveCornerRadius = 20;
+			this.btnCancel.ActiveFillColor = System.Drawing.Color.Red;
+			this.btnCancel.ActiveForecolor = System.Drawing.Color.White;
+			this.btnCancel.ActiveLineColor = System.Drawing.Color.Red;
+			this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
+			this.btnCancel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCancel.BackgroundImage")));
+			this.btnCancel.ButtonText = "Batal";
+			this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnCancel.ForeColor = System.Drawing.Color.Red;
+			this.btnCancel.IdleBorderThickness = 1;
+			this.btnCancel.IdleCornerRadius = 20;
+			this.btnCancel.IdleFillColor = System.Drawing.Color.White;
+			this.btnCancel.IdleForecolor = System.Drawing.Color.Red;
+			this.btnCancel.IdleLineColor = System.Drawing.Color.Red;
+			this.btnCancel.Location = new System.Drawing.Point(247, 47);
+			this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.btnCancel.Name = "btnCancel";
+			this.btnCancel.Size = new System.Drawing.Size(203, 40);
+			this.btnCancel.TabIndex = 51;
+			this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.btnCancel.Click += new System.EventHandler(this.btnClear_Click);
+			// 
+			// btnAddCustomer
+			// 
+			this.btnAddCustomer.ActiveBorderThickness = 1;
+			this.btnAddCustomer.ActiveCornerRadius = 20;
+			this.btnAddCustomer.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnAddCustomer.ActiveForecolor = System.Drawing.Color.White;
+			this.btnAddCustomer.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnAddCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
+			this.btnAddCustomer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddCustomer.BackgroundImage")));
+			this.btnAddCustomer.ButtonText = "Tambah Customer";
+			this.btnAddCustomer.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnAddCustomer.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnAddCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnAddCustomer.IdleBorderThickness = 1;
+			this.btnAddCustomer.IdleCornerRadius = 20;
+			this.btnAddCustomer.IdleFillColor = System.Drawing.Color.White;
+			this.btnAddCustomer.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnAddCustomer.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnAddCustomer.Location = new System.Drawing.Point(19, 47);
+			this.btnAddCustomer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.btnAddCustomer.Name = "btnAddCustomer";
+			this.btnAddCustomer.Size = new System.Drawing.Size(203, 40);
+			this.btnAddCustomer.TabIndex = 48;
+			this.btnAddCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.btnAddCustomer.Click += new System.EventHandler(this.btnAddCustomer_Click);
+			// 
 			// groupBox3
 			// 
 			this.groupBox3.Controls.Add(this.btnSearch);
@@ -419,6 +471,32 @@
 			this.groupBox3.TabIndex = 61;
 			this.groupBox3.TabStop = false;
 			this.groupBox3.Text = "Cari Customer";
+			// 
+			// btnSearch
+			// 
+			this.btnSearch.ActiveBorderThickness = 1;
+			this.btnSearch.ActiveCornerRadius = 20;
+			this.btnSearch.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSearch.ActiveForecolor = System.Drawing.Color.White;
+			this.btnSearch.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
+			this.btnSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearch.BackgroundImage")));
+			this.btnSearch.ButtonText = "Cari";
+			this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSearch.IdleBorderThickness = 1;
+			this.btnSearch.IdleCornerRadius = 20;
+			this.btnSearch.IdleFillColor = System.Drawing.Color.White;
+			this.btnSearch.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSearch.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSearch.Location = new System.Drawing.Point(248, 67);
+			this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.btnSearch.Name = "btnSearch";
+			this.btnSearch.Size = new System.Drawing.Size(203, 40);
+			this.btnSearch.TabIndex = 46;
+			this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
 			// 
 			// txtIDCardSearch
 			// 
@@ -478,84 +556,6 @@
 			this.btnBack.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
 			// 
-			// btnSearch
-			// 
-			this.btnSearch.ActiveBorderThickness = 1;
-			this.btnSearch.ActiveCornerRadius = 20;
-			this.btnSearch.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSearch.ActiveForecolor = System.Drawing.Color.White;
-			this.btnSearch.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
-			this.btnSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearch.BackgroundImage")));
-			this.btnSearch.ButtonText = "Cari";
-			this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSearch.IdleBorderThickness = 1;
-			this.btnSearch.IdleCornerRadius = 20;
-			this.btnSearch.IdleFillColor = System.Drawing.Color.White;
-			this.btnSearch.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSearch.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSearch.Location = new System.Drawing.Point(248, 67);
-			this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-			this.btnSearch.Name = "btnSearch";
-			this.btnSearch.Size = new System.Drawing.Size(203, 40);
-			this.btnSearch.TabIndex = 46;
-			this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-			// 
-			// btnCancel
-			// 
-			this.btnCancel.ActiveBorderThickness = 1;
-			this.btnCancel.ActiveCornerRadius = 20;
-			this.btnCancel.ActiveFillColor = System.Drawing.Color.Red;
-			this.btnCancel.ActiveForecolor = System.Drawing.Color.White;
-			this.btnCancel.ActiveLineColor = System.Drawing.Color.Red;
-			this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
-			this.btnCancel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCancel.BackgroundImage")));
-			this.btnCancel.ButtonText = "Batal";
-			this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnCancel.ForeColor = System.Drawing.Color.Red;
-			this.btnCancel.IdleBorderThickness = 1;
-			this.btnCancel.IdleCornerRadius = 20;
-			this.btnCancel.IdleFillColor = System.Drawing.Color.White;
-			this.btnCancel.IdleForecolor = System.Drawing.Color.Red;
-			this.btnCancel.IdleLineColor = System.Drawing.Color.Red;
-			this.btnCancel.Location = new System.Drawing.Point(247, 47);
-			this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-			this.btnCancel.Name = "btnCancel";
-			this.btnCancel.Size = new System.Drawing.Size(203, 40);
-			this.btnCancel.TabIndex = 51;
-			this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.btnCancel.Click += new System.EventHandler(this.btnClear_Click);
-			// 
-			// btnAddCustomer
-			// 
-			this.btnAddCustomer.ActiveBorderThickness = 1;
-			this.btnAddCustomer.ActiveCornerRadius = 20;
-			this.btnAddCustomer.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnAddCustomer.ActiveForecolor = System.Drawing.Color.White;
-			this.btnAddCustomer.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnAddCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
-			this.btnAddCustomer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddCustomer.BackgroundImage")));
-			this.btnAddCustomer.ButtonText = "Tambah Customer";
-			this.btnAddCustomer.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnAddCustomer.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnAddCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnAddCustomer.IdleBorderThickness = 1;
-			this.btnAddCustomer.IdleCornerRadius = 20;
-			this.btnAddCustomer.IdleFillColor = System.Drawing.Color.White;
-			this.btnAddCustomer.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnAddCustomer.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnAddCustomer.Location = new System.Drawing.Point(19, 47);
-			this.btnAddCustomer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-			this.btnAddCustomer.Name = "btnAddCustomer";
-			this.btnAddCustomer.Size = new System.Drawing.Size(203, 40);
-			this.btnAddCustomer.TabIndex = 48;
-			this.btnAddCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.btnAddCustomer.Click += new System.EventHandler(this.btnAddCustomer_Click);
-			// 
 			// bunifuSeparator1
 			// 
 			this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
@@ -576,7 +576,7 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
-			this.ClientSize = new System.Drawing.Size(503, 788);
+			this.ClientSize = new System.Drawing.Size(503, 824);
 			this.Controls.Add(this.btnBack);
 			this.Controls.Add(this.groupBox3);
 			this.Controls.Add(this.groupBox1);
