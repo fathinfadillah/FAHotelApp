@@ -37,6 +37,7 @@
 			this.lblDisplayName = new System.Windows.Forms.Label();
 			this.lblUserName = new System.Windows.Forms.Label();
 			this.groupBox3 = new System.Windows.Forms.GroupBox();
+			this.btnSecurity = new Bunifu.Framework.UI.BunifuThinButton2();
 			this.txbReNewPass = new Bunifu.Framework.UI.BunifuMetroTextbox();
 			this.label14 = new System.Windows.Forms.Label();
 			this.txbNewPass = new Bunifu.Framework.UI.BunifuMetroTextbox();
@@ -45,9 +46,11 @@
 			this.label17 = new System.Windows.Forms.Label();
 			this.bunifuCheckbox2 = new Bunifu.Framework.UI.BunifuCheckbox();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
+			this.cbSex = new MetroFramework.Controls.MetroComboBox();
 			this.dpkDateOfBirth = new Bunifu.Framework.UI.BunifuDatepicker();
 			this.txbIDCard = new Bunifu.Framework.UI.BunifuMetroTextbox();
 			this.label10 = new System.Windows.Forms.Label();
+			this.btnInformation = new Bunifu.Framework.UI.BunifuThinButton2();
 			this.txbStartDay = new Bunifu.Framework.UI.BunifuMetroTextbox();
 			this.label4 = new System.Windows.Forms.Label();
 			this.label13 = new System.Windows.Forms.Label();
@@ -60,22 +63,23 @@
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
 			this.txbStaffType = new Bunifu.Framework.UI.BunifuMetroTextbox();
 			this.label11 = new System.Windows.Forms.Label();
+			this.btnInformationAccount = new Bunifu.Framework.UI.BunifuThinButton2();
 			this.txbDisplayName = new Bunifu.Framework.UI.BunifuMetroTextbox();
 			this.label2 = new System.Windows.Forms.Label();
 			this.txbUserName = new Bunifu.Framework.UI.BunifuMetroTextbox();
 			this.label16 = new System.Windows.Forms.Label();
 			this.checkBoxReceiveRoom = new Bunifu.Framework.UI.BunifuCheckbox();
-			this.cbSex = new MetroFramework.Controls.MetroComboBox();
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
+			this.pictureBox = new System.Windows.Forms.PictureBox();
 			this.btnClose = new Bunifu.Framework.UI.BunifuThinButton2();
-			this.btnSecurity = new Bunifu.Framework.UI.BunifuThinButton2();
-			this.btnInformation = new Bunifu.Framework.UI.BunifuThinButton2();
-			this.btnInformationAccount = new Bunifu.Framework.UI.BunifuThinButton2();
 			this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
+			this.btnBrowseImage = new Bunifu.Framework.UI.BunifuThinButton2();
+			this.btnSaveImage = new Bunifu.Framework.UI.BunifuThinButton2();
+			this.txtFileName = new Bunifu.Framework.UI.BunifuMetroTextbox();
+			this.label7 = new System.Windows.Forms.Label();
 			this.groupBox3.SuspendLayout();
 			this.groupBox2.SuspendLayout();
 			this.groupBox1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// guna2Elipse1
@@ -116,7 +120,7 @@
 			// 
 			this.lblDisplayName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblDisplayName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.lblDisplayName.Location = new System.Drawing.Point(40, 269);
+			this.lblDisplayName.Location = new System.Drawing.Point(53, 269);
 			this.lblDisplayName.Name = "lblDisplayName";
 			this.lblDisplayName.Size = new System.Drawing.Size(195, 20);
 			this.lblDisplayName.TabIndex = 71;
@@ -127,7 +131,7 @@
 			// 
 			this.lblUserName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.lblUserName.Location = new System.Drawing.Point(72, 243);
+			this.lblUserName.Location = new System.Drawing.Point(86, 243);
 			this.lblUserName.Name = "lblUserName";
 			this.lblUserName.Size = new System.Drawing.Size(128, 20);
 			this.lblUserName.TabIndex = 70;
@@ -149,10 +153,36 @@
 			this.groupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
 			this.groupBox3.Location = new System.Drawing.Point(522, 73);
 			this.groupBox3.Name = "groupBox3";
-			this.groupBox3.Size = new System.Drawing.Size(252, 269);
+			this.groupBox3.Size = new System.Drawing.Size(252, 302);
 			this.groupBox3.TabIndex = 68;
 			this.groupBox3.TabStop = false;
 			this.groupBox3.Text = "Keamanan";
+			// 
+			// btnSecurity
+			// 
+			this.btnSecurity.ActiveBorderThickness = 1;
+			this.btnSecurity.ActiveCornerRadius = 20;
+			this.btnSecurity.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSecurity.ActiveForecolor = System.Drawing.Color.White;
+			this.btnSecurity.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSecurity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
+			this.btnSecurity.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSecurity.BackgroundImage")));
+			this.btnSecurity.ButtonText = "Simpan Perubahan";
+			this.btnSecurity.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnSecurity.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnSecurity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSecurity.IdleBorderThickness = 1;
+			this.btnSecurity.IdleCornerRadius = 20;
+			this.btnSecurity.IdleFillColor = System.Drawing.Color.White;
+			this.btnSecurity.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSecurity.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSecurity.Location = new System.Drawing.Point(27, 231);
+			this.btnSecurity.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.btnSecurity.Name = "btnSecurity";
+			this.btnSecurity.Size = new System.Drawing.Size(203, 40);
+			this.btnSecurity.TabIndex = 68;
+			this.btnSecurity.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.btnSecurity.Click += new System.EventHandler(this.btnSecurity_Click);
 			// 
 			// txbReNewPass
 			// 
@@ -249,7 +279,7 @@
 			// 
 			// bunifuCheckbox2
 			// 
-			this.bunifuCheckbox2.BackColor = System.Drawing.Color.SeaGreen;
+			this.bunifuCheckbox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
 			this.bunifuCheckbox2.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
 			this.bunifuCheckbox2.Checked = false;
 			this.bunifuCheckbox2.CheckedOnColor = System.Drawing.Color.SeaGreen;
@@ -279,12 +309,31 @@
 			this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 12F);
 			this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.groupBox2.Location = new System.Drawing.Point(52, 342);
+			this.groupBox2.Location = new System.Drawing.Point(51, 389);
 			this.groupBox2.Name = "groupBox2";
-			this.groupBox2.Size = new System.Drawing.Size(723, 204);
+			this.groupBox2.Size = new System.Drawing.Size(724, 231);
 			this.groupBox2.TabIndex = 67;
 			this.groupBox2.TabStop = false;
 			this.groupBox2.Text = "Informasi Dasar";
+			// 
+			// cbSex
+			// 
+			this.cbSex.BackColor = System.Drawing.Color.White;
+			this.cbSex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.cbSex.FormattingEnabled = true;
+			this.cbSex.ItemHeight = 23;
+			this.cbSex.Items.AddRange(new object[] {
+            "Laki - Laki",
+            "Perempuan"});
+			this.cbSex.Location = new System.Drawing.Point(494, 52);
+			this.cbSex.Name = "cbSex";
+			this.cbSex.Size = new System.Drawing.Size(203, 29);
+			this.cbSex.Style = MetroFramework.MetroColorStyle.Yellow;
+			this.cbSex.TabIndex = 75;
+			this.cbSex.UseCustomBackColor = true;
+			this.cbSex.UseCustomForeColor = true;
+			this.cbSex.UseSelectable = true;
+			this.cbSex.UseStyleColors = true;
 			// 
 			// dpkDateOfBirth
 			// 
@@ -331,6 +380,32 @@
 			this.label10.Size = new System.Drawing.Size(189, 20);
 			this.label10.TabIndex = 71;
 			this.label10.Text = "KTP/Kartu Tanda Penduduk:";
+			// 
+			// btnInformation
+			// 
+			this.btnInformation.ActiveBorderThickness = 1;
+			this.btnInformation.ActiveCornerRadius = 20;
+			this.btnInformation.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnInformation.ActiveForecolor = System.Drawing.Color.White;
+			this.btnInformation.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnInformation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
+			this.btnInformation.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnInformation.BackgroundImage")));
+			this.btnInformation.ButtonText = "Simpan Perubahan";
+			this.btnInformation.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnInformation.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnInformation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnInformation.IdleBorderThickness = 1;
+			this.btnInformation.IdleCornerRadius = 20;
+			this.btnInformation.IdleFillColor = System.Drawing.Color.White;
+			this.btnInformation.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnInformation.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnInformation.Location = new System.Drawing.Point(495, 164);
+			this.btnInformation.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.btnInformation.Name = "btnInformation";
+			this.btnInformation.Size = new System.Drawing.Size(203, 40);
+			this.btnInformation.TabIndex = 69;
+			this.btnInformation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.btnInformation.Click += new System.EventHandler(this.btnInformation_Click);
 			// 
 			// txbStartDay
 			// 
@@ -450,7 +525,7 @@
 			// 
 			// bunifuCheckbox1
 			// 
-			this.bunifuCheckbox1.BackColor = System.Drawing.Color.SeaGreen;
+			this.bunifuCheckbox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
 			this.bunifuCheckbox1.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
 			this.bunifuCheckbox1.Checked = false;
 			this.bunifuCheckbox1.CheckedOnColor = System.Drawing.Color.SeaGreen;
@@ -476,7 +551,7 @@
 			this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
 			this.groupBox1.Location = new System.Drawing.Point(257, 73);
 			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(252, 269);
+			this.groupBox1.Size = new System.Drawing.Size(252, 302);
 			this.groupBox1.TabIndex = 66;
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Informasi Akun";
@@ -512,6 +587,32 @@
 			this.label11.Size = new System.Drawing.Size(80, 20);
 			this.label11.TabIndex = 70;
 			this.label11.Text = "Jenis Akun:";
+			// 
+			// btnInformationAccount
+			// 
+			this.btnInformationAccount.ActiveBorderThickness = 1;
+			this.btnInformationAccount.ActiveCornerRadius = 20;
+			this.btnInformationAccount.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnInformationAccount.ActiveForecolor = System.Drawing.Color.White;
+			this.btnInformationAccount.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnInformationAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
+			this.btnInformationAccount.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnInformationAccount.BackgroundImage")));
+			this.btnInformationAccount.ButtonText = "Simpan Perubahan";
+			this.btnInformationAccount.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnInformationAccount.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnInformationAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnInformationAccount.IdleBorderThickness = 1;
+			this.btnInformationAccount.IdleCornerRadius = 20;
+			this.btnInformationAccount.IdleFillColor = System.Drawing.Color.White;
+			this.btnInformationAccount.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnInformationAccount.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnInformationAccount.Location = new System.Drawing.Point(25, 231);
+			this.btnInformationAccount.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.btnInformationAccount.Name = "btnInformationAccount";
+			this.btnInformationAccount.Size = new System.Drawing.Size(203, 40);
+			this.btnInformationAccount.TabIndex = 68;
+			this.btnInformationAccount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.btnInformationAccount.Click += new System.EventHandler(this.btnBookRoom_Click);
 			// 
 			// txbDisplayName
 			// 
@@ -578,7 +679,7 @@
 			// 
 			// checkBoxReceiveRoom
 			// 
-			this.checkBoxReceiveRoom.BackColor = System.Drawing.Color.SeaGreen;
+			this.checkBoxReceiveRoom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
 			this.checkBoxReceiveRoom.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
 			this.checkBoxReceiveRoom.Checked = false;
 			this.checkBoxReceiveRoom.CheckedOnColor = System.Drawing.Color.SeaGreen;
@@ -589,34 +690,15 @@
 			this.checkBoxReceiveRoom.Size = new System.Drawing.Size(20, 20);
 			this.checkBoxReceiveRoom.TabIndex = 38;
 			// 
-			// cbSex
+			// pictureBox
 			// 
-			this.cbSex.BackColor = System.Drawing.Color.White;
-			this.cbSex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.cbSex.FormattingEnabled = true;
-			this.cbSex.ItemHeight = 23;
-			this.cbSex.Items.AddRange(new object[] {
-            "Laki - Laki",
-            "Perempuan"});
-			this.cbSex.Location = new System.Drawing.Point(494, 52);
-			this.cbSex.Name = "cbSex";
-			this.cbSex.Size = new System.Drawing.Size(203, 29);
-			this.cbSex.Style = MetroFramework.MetroColorStyle.Yellow;
-			this.cbSex.TabIndex = 75;
-			this.cbSex.UseCustomBackColor = true;
-			this.cbSex.UseCustomForeColor = true;
-			this.cbSex.UseSelectable = true;
-			this.cbSex.UseStyleColors = true;
-			// 
-			// pictureBox1
-			// 
-			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-			this.pictureBox1.Location = new System.Drawing.Point(72, 94);
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(128, 128);
-			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.pictureBox1.TabIndex = 72;
-			this.pictureBox1.TabStop = false;
+			this.pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox.Image")));
+			this.pictureBox.Location = new System.Drawing.Point(85, 94);
+			this.pictureBox.Name = "pictureBox";
+			this.pictureBox.Size = new System.Drawing.Size(128, 128);
+			this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.pictureBox.TabIndex = 72;
+			this.pictureBox.TabStop = false;
 			// 
 			// btnClose
 			// 
@@ -636,91 +718,13 @@
 			this.btnClose.IdleFillColor = System.Drawing.Color.White;
 			this.btnClose.IdleForecolor = System.Drawing.Color.DarkOrange;
 			this.btnClose.IdleLineColor = System.Drawing.Color.DarkOrange;
-			this.btnClose.Location = new System.Drawing.Point(546, 563);
+			this.btnClose.Location = new System.Drawing.Point(546, 648);
 			this.btnClose.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 			this.btnClose.Name = "btnClose";
 			this.btnClose.Size = new System.Drawing.Size(203, 40);
 			this.btnClose.TabIndex = 69;
 			this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-			// 
-			// btnSecurity
-			// 
-			this.btnSecurity.ActiveBorderThickness = 1;
-			this.btnSecurity.ActiveCornerRadius = 20;
-			this.btnSecurity.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSecurity.ActiveForecolor = System.Drawing.Color.White;
-			this.btnSecurity.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSecurity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
-			this.btnSecurity.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSecurity.BackgroundImage")));
-			this.btnSecurity.ButtonText = "Simpan Perubahan";
-			this.btnSecurity.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnSecurity.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnSecurity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSecurity.IdleBorderThickness = 1;
-			this.btnSecurity.IdleCornerRadius = 20;
-			this.btnSecurity.IdleFillColor = System.Drawing.Color.White;
-			this.btnSecurity.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSecurity.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSecurity.Location = new System.Drawing.Point(27, 218);
-			this.btnSecurity.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-			this.btnSecurity.Name = "btnSecurity";
-			this.btnSecurity.Size = new System.Drawing.Size(203, 40);
-			this.btnSecurity.TabIndex = 68;
-			this.btnSecurity.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.btnSecurity.Click += new System.EventHandler(this.btnSecurity_Click);
-			// 
-			// btnInformation
-			// 
-			this.btnInformation.ActiveBorderThickness = 1;
-			this.btnInformation.ActiveCornerRadius = 20;
-			this.btnInformation.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnInformation.ActiveForecolor = System.Drawing.Color.White;
-			this.btnInformation.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnInformation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
-			this.btnInformation.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnInformation.BackgroundImage")));
-			this.btnInformation.ButtonText = "Simpan Perubahan";
-			this.btnInformation.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnInformation.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnInformation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnInformation.IdleBorderThickness = 1;
-			this.btnInformation.IdleCornerRadius = 20;
-			this.btnInformation.IdleFillColor = System.Drawing.Color.White;
-			this.btnInformation.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnInformation.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnInformation.Location = new System.Drawing.Point(495, 153);
-			this.btnInformation.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-			this.btnInformation.Name = "btnInformation";
-			this.btnInformation.Size = new System.Drawing.Size(203, 40);
-			this.btnInformation.TabIndex = 69;
-			this.btnInformation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.btnInformation.Click += new System.EventHandler(this.btnInformation_Click);
-			// 
-			// btnInformationAccount
-			// 
-			this.btnInformationAccount.ActiveBorderThickness = 1;
-			this.btnInformationAccount.ActiveCornerRadius = 20;
-			this.btnInformationAccount.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnInformationAccount.ActiveForecolor = System.Drawing.Color.White;
-			this.btnInformationAccount.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnInformationAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
-			this.btnInformationAccount.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnInformationAccount.BackgroundImage")));
-			this.btnInformationAccount.ButtonText = "Simpan Perubahan";
-			this.btnInformationAccount.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnInformationAccount.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnInformationAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnInformationAccount.IdleBorderThickness = 1;
-			this.btnInformationAccount.IdleCornerRadius = 20;
-			this.btnInformationAccount.IdleFillColor = System.Drawing.Color.White;
-			this.btnInformationAccount.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnInformationAccount.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnInformationAccount.Location = new System.Drawing.Point(25, 218);
-			this.btnInformationAccount.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-			this.btnInformationAccount.Name = "btnInformationAccount";
-			this.btnInformationAccount.Size = new System.Drawing.Size(203, 40);
-			this.btnInformationAccount.TabIndex = 68;
-			this.btnInformationAccount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.btnInformationAccount.Click += new System.EventHandler(this.btnBookRoom_Click);
 			// 
 			// bunifuSeparator1
 			// 
@@ -737,13 +741,101 @@
 			this.bunifuSeparator1.Size = new System.Drawing.Size(792, 15);
 			this.bunifuSeparator1.TabIndex = 18;
 			// 
+			// btnBrowseImage
+			// 
+			this.btnBrowseImage.ActiveBorderThickness = 1;
+			this.btnBrowseImage.ActiveCornerRadius = 20;
+			this.btnBrowseImage.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnBrowseImage.ActiveForecolor = System.Drawing.Color.White;
+			this.btnBrowseImage.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnBrowseImage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
+			this.btnBrowseImage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBrowseImage.BackgroundImage")));
+			this.btnBrowseImage.ButtonText = "Browse";
+			this.btnBrowseImage.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnBrowseImage.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnBrowseImage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnBrowseImage.IdleBorderThickness = 1;
+			this.btnBrowseImage.IdleCornerRadius = 20;
+			this.btnBrowseImage.IdleFillColor = System.Drawing.Color.White;
+			this.btnBrowseImage.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnBrowseImage.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnBrowseImage.Location = new System.Drawing.Point(59, 335);
+			this.btnBrowseImage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.btnBrowseImage.Name = "btnBrowseImage";
+			this.btnBrowseImage.Size = new System.Drawing.Size(88, 40);
+			this.btnBrowseImage.TabIndex = 71;
+			this.btnBrowseImage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.btnBrowseImage.Click += new System.EventHandler(this.btnBrowseImage_Click);
+			// 
+			// btnSaveImage
+			// 
+			this.btnSaveImage.ActiveBorderThickness = 1;
+			this.btnSaveImage.ActiveCornerRadius = 20;
+			this.btnSaveImage.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSaveImage.ActiveForecolor = System.Drawing.Color.White;
+			this.btnSaveImage.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSaveImage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
+			this.btnSaveImage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSaveImage.BackgroundImage")));
+			this.btnSaveImage.ButtonText = "Simpan";
+			this.btnSaveImage.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnSaveImage.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnSaveImage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSaveImage.IdleBorderThickness = 1;
+			this.btnSaveImage.IdleCornerRadius = 20;
+			this.btnSaveImage.IdleFillColor = System.Drawing.Color.White;
+			this.btnSaveImage.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSaveImage.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSaveImage.Location = new System.Drawing.Point(155, 335);
+			this.btnSaveImage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.btnSaveImage.Name = "btnSaveImage";
+			this.btnSaveImage.Size = new System.Drawing.Size(88, 40);
+			this.btnSaveImage.TabIndex = 73;
+			this.btnSaveImage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.btnSaveImage.Click += new System.EventHandler(this.btnSaveImage_Click);
+			// 
+			// txtFileName
+			// 
+			this.txtFileName.BackColor = System.Drawing.Color.White;
+			this.txtFileName.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.txtFileName.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.txtFileName.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.txtFileName.BorderThickness = 1;
+			this.txtFileName.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtFileName.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.txtFileName.Enabled = false;
+			this.txtFileName.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+			this.txtFileName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.txtFileName.isPassword = false;
+			this.txtFileName.Location = new System.Drawing.Point(139, 301);
+			this.txtFileName.Margin = new System.Windows.Forms.Padding(4);
+			this.txtFileName.MaxLength = 32767;
+			this.txtFileName.Name = "txtFileName";
+			this.txtFileName.Size = new System.Drawing.Size(104, 29);
+			this.txtFileName.TabIndex = 74;
+			this.txtFileName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			// 
+			// label7
+			// 
+			this.label7.AutoSize = true;
+			this.label7.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.label7.Location = new System.Drawing.Point(63, 306);
+			this.label7.Name = "label7";
+			this.label7.Size = new System.Drawing.Size(76, 20);
+			this.label7.TabIndex = 75;
+			this.label7.Text = "File name:";
+			// 
 			// FormSetting
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
-			this.ClientSize = new System.Drawing.Size(819, 638);
-			this.Controls.Add(this.pictureBox1);
+			this.ClientSize = new System.Drawing.Size(819, 717);
+			this.Controls.Add(this.label7);
+			this.Controls.Add(this.txtFileName);
+			this.Controls.Add(this.btnSaveImage);
+			this.Controls.Add(this.btnBrowseImage);
+			this.Controls.Add(this.pictureBox);
 			this.Controls.Add(this.lblDisplayName);
 			this.Controls.Add(this.lblUserName);
 			this.Controls.Add(this.btnClose);
@@ -764,7 +856,7 @@
 			this.groupBox2.PerformLayout();
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -813,6 +905,10 @@
 		private System.Windows.Forms.Label label16;
 		private Bunifu.Framework.UI.BunifuCheckbox checkBoxReceiveRoom;
 		private MetroFramework.Controls.MetroComboBox cbSex;
-		private System.Windows.Forms.PictureBox pictureBox1;
+		private System.Windows.Forms.PictureBox pictureBox;
+		private Bunifu.Framework.UI.BunifuThinButton2 btnSaveImage;
+		private Bunifu.Framework.UI.BunifuThinButton2 btnBrowseImage;
+		private Bunifu.Framework.UI.BunifuMetroTextbox txtFileName;
+		private System.Windows.Forms.Label label7;
 	}
 }

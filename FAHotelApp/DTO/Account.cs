@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FAHotelApp.Forms;
 
 namespace FAHotelApp.DTO
 {
@@ -20,6 +23,7 @@ namespace FAHotelApp.DTO
 		private string address;
 		private string phoneNumber;
 		private DateTime startDay;
+		private string imageUrl;
 
 		public string UserName { get => userName; set => userName = value; }
 		public string DisplayName { get => displayName; set => displayName = value; }
@@ -31,11 +35,12 @@ namespace FAHotelApp.DTO
 		public string PhoneNumber { get => phoneNumber; set => phoneNumber = value; }
 		public DateTime StartDay { get => startDay; set => startDay = value; }
 		public string IdCard { get => idCard; set => idCard = value; }
+		public string ImageUrl { get => imageUrl; set => imageUrl = value; }
 		#endregion
 
 		#region Constructor
 		public Account() { }
-		public Account(string userName, string displayName, string passWord, int staffType, string idCard, DateTime dateOfBirth, string sex, string address, string phoneNumber, DateTime startDay)
+		public Account(string userName, string displayName, string passWord, int staffType, string idCard, DateTime dateOfBirth, string sex, string address, string phoneNumber, DateTime startDay, string ImageUrl, byte[] image)
 		{
 			this.UserName = userName;
 			this.DisplayName = displayName;
@@ -47,6 +52,7 @@ namespace FAHotelApp.DTO
 			this.PhoneNumber = phoneNumber;
 			this.StartDay = startDay;
 			this.IdCard = idCard;
+			this.ImageUrl = imageUrl;
 		}
 		public Account(DataRow row)
 		{
@@ -60,7 +66,7 @@ namespace FAHotelApp.DTO
 			this.StartDay = (DateTime)row["StartDay"];
 			this.IdCard = (string)row["idCard"];
 			this.PassWord = row["PassWord"].ToString();
-
+			this.ImageUrl = row["ImageUrl"].ToString();
 		}
 		#endregion
 

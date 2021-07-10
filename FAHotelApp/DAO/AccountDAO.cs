@@ -70,6 +70,11 @@ namespace FAHotelApp.DAO
 			string query = "USP_UpdatePassword @username , @password";
 			return DataProvider.Instance.ExecuteNoneQuery(query, new object[] { username, HashPass(password) }) > 0;
 		}
+		internal bool UpdatePhotoProfile(string username, string imageurl)
+		{
+			string query = "USP_UpdatePhotoProfile @username , @imageurl";
+			return DataProvider.Instance.ExecuteNoneQuery(query, new object[] { username, imageurl }) > 0;
+		}
 		internal bool UpdateInfo(string username, string address, string phonenumber, string idCard, DateTime dateOfBirth, string sex)
 		{
 			string query = "USP_UpdateInfo @username , @address , @phonenumber , @idcard , @dateOfBirth , @sex";

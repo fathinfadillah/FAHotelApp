@@ -12,6 +12,7 @@ using FAHotelApp.DAO;
 using FAHotelApp.DTO;
 using System.Globalization;
 using FAHotelApp.UC;
+using System.IO;
 
 namespace FAHotelApp.Forms
 {
@@ -23,6 +24,7 @@ namespace FAHotelApp.Forms
 			LoadProfile(userName);
 		}
 		string Password;
+		String fileName = "";
 		public void LoadProfile(string username)
 		{
 			Account staff = AccountDAO.Instance.LoadStaffInforByUserName(username);
@@ -36,6 +38,18 @@ namespace FAHotelApp.Forms
 			cbSex.Text = staff.Sex;
 			txbStartDay.Text = staff.StartDay.ToShortDateString();
 			Password = staff.PassWord;
+			if (staff != null)
+			{
+				if (!string.IsNullOrEmpty(staff.ImageUrl))
+					pictureBox.Image = Image.FromFile(staff.ImageUrl);
+			}
+
+			System.Drawing.Drawing2D.GraphicsPath gp = new System.Drawing.Drawing2D.GraphicsPath();
+			gp.AddEllipse(0, 0, pictureBox.Width - 3, pictureBox.Height - 3);
+			Region rg = new Region(gp);
+			pictureBox.Region = rg;
+
+			txtFileName.Text = staff.ImageUrl;
 		}
 		public void UpdateDisplayName(string username, string displayname)
 		{
@@ -49,21 +63,41 @@ namespace FAHotelApp.Forms
 		{
 			AccountDAO.Instance.UpdateInfo(username, address, phonenumber, idCard, dateOfBirth, sex);
 		}
+		public void UpdatePhotoProfile(string username, string imageurl)
+		{
+			AccountDAO.Instance.UpdatePhotoProfile(username, imageurl);
+		}
 		private void btnClose_Click(object sender, EventArgs e)
 		{
 			this.Close();
 		}
-
+		//byte[] ConvertImageToBytes(Image img)
+		//{
+		//	using(MemoryStream ms= new MemoryStream())
+		//	{
+		//		img.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
+		//		return ms.ToArray();
+		//	}
+		//}
+		//public Image ConvertByteArrayToImage(byte [] data)
+		//{
+		//	using(MemoryStream ms=new MemoryStream())
+		//	{
+		//		return Image.FromStream(ms);
+		//	}
+		//}
+	
 		private void btnBookRoom_Click(object sender, EventArgs e)
 		{
 			if (txbDisplayName.Text != String.Empty)
 			{
 				UpdateDisplayName(txbUserName.Text, txbDisplayName.Text);
 				MessageBox.Show("Pembaruan informasi akun berhasil.", "Pemberitahuan", MessageBoxButtons.OK, MessageBoxIcon.Information);
+				MessageBox.Show("Jika ingin memperbarui informasi nama ditampilan menu\nPengguna diharapkan melakukan login ulang.", "Pemberitahuan", MessageBoxButtons.OK, MessageBoxIcon.Information);
 				LoadProfile(txbUserName.Text);
 			}
 			else
-				MessageBox.Show("Nama tampilan tidak valis.\nSilahkan masukkan kembali.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+				MessageBox.Show("Nama tampilan tidak valid.\nSilahkan masukkan kembali.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 		}
 
 		private void btnSecurity_Click(object sender, EventArgs e)
@@ -118,6 +152,50 @@ namespace FAHotelApp.Forms
 			FormLogin2 f = new FormLogin2();
 			f.Show();
 			this.Hide();
+		}
+
+		private void btnBrowseImage_Click(object sender, EventArgs e)
+		{
+			using (OpenFileDialog ofd = new OpenFileDialog() { Filter = "JPEG|*.jpg;*.jpeg|PNG|*.png", ValidateNames = true, Multiselect = false })
+			{
+				try
+				{
+					if (ofd.ShowDialog() == DialogResult.OK)
+					{
+						//tampilin gambar ke picturebox
+						pictureBox.Image = Image.FromFile(ofd.FileName);
+						//set path
+						txtFileName.Text = ofd.FileName;
+						//masukan nama file ke public nama file
+						fileName = ofd.FileName;
+						//LoadProfile(txbUserName.Text);
+					}
+				}
+				catch (Exception ex)
+				{
+					MessageBox.Show(ex.Message);
+				}
+			}
+		}
+
+		private void btnSaveImage_Click(object sender, EventArgs e)
+		{
+			if (pictureBox.Image != null)
+			{
+				if (fileName != "")
+				{
+					pictureBox.Image = Image.FromFile(fileName);
+					UpdatePhotoProfile(txbUserName.Text, fileName);
+					MessageBox.Show("Pembaruan foto profil akun berhasil.", "Pemberitahuan", MessageBoxButtons.OK, MessageBoxIcon.Information);
+					MessageBox.Show("Jika ingin memperbarui informasi foto profil ditampilan menu\nPengguna diharapkan melakukan login ulang.", "Pemberitahuan", MessageBoxButtons.OK, MessageBoxIcon.Information);
+					LoadProfile(txbUserName.Text);
+				}
+				else
+					MessageBox.Show("Tambah foto profil terlebih dahulu.\nSilahkan tambahkan.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+			}
+			else
+				MessageBox.Show("Foto profil tidak valid.\nSilahkan masukkan kembali.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 		}
 	}
 }

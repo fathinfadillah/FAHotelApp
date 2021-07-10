@@ -124,7 +124,7 @@
 			this.cbDepartement.ShadowDecoration.Parent = this.cbDepartement;
 			this.cbDepartement.Size = new System.Drawing.Size(336, 36);
 			this.cbDepartement.StartIndex = 0;
-			this.cbDepartement.TabIndex = 17;
+			this.cbDepartement.TabIndex = 3;
 			this.cbDepartement.Leave += new System.EventHandler(this.cbDepartement_Leave);
 			// 
 			// tsShowPassword
@@ -140,7 +140,7 @@
 			this.tsShowPassword.Name = "tsShowPassword";
 			this.tsShowPassword.ShadowDecoration.Parent = this.tsShowPassword;
 			this.tsShowPassword.Size = new System.Drawing.Size(35, 20);
-			this.tsShowPassword.TabIndex = 16;
+			this.tsShowPassword.TabIndex = 4;
 			this.tsShowPassword.UncheckedState.BorderColor = System.Drawing.Color.Black;
 			this.tsShowPassword.UncheckedState.BorderThickness = 2;
 			this.tsShowPassword.UncheckedState.FillColor = System.Drawing.Color.White;
@@ -172,7 +172,7 @@
 			this.lbTermCon.Location = new System.Drawing.Point(220, 616);
 			this.lbTermCon.Name = "lbTermCon";
 			this.lbTermCon.Size = new System.Drawing.Size(123, 15);
-			this.lbTermCon.TabIndex = 14;
+			this.lbTermCon.TabIndex = 9;
 			this.lbTermCon.Text = "Syarat dan Ketentuan";
 			this.lbTermCon.Click += new System.EventHandler(this.lbTermCon_Click);
 			// 
@@ -205,7 +205,7 @@
 			this.btnExit.Name = "btnExit";
 			this.btnExit.ShadowDecoration.Parent = this.btnExit;
 			this.btnExit.Size = new System.Drawing.Size(336, 39);
-			this.btnExit.TabIndex = 11;
+			this.btnExit.TabIndex = 8;
 			this.btnExit.Text = "Keluar";
 			this.btnExit.UseTransparentBackground = true;
 			this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
@@ -244,7 +244,7 @@
 			this.lbContactAdmin.Location = new System.Drawing.Point(422, 46);
 			this.lbContactAdmin.Name = "lbContactAdmin";
 			this.lbContactAdmin.Size = new System.Drawing.Size(109, 18);
-			this.lbContactAdmin.TabIndex = 8;
+			this.lbContactAdmin.TabIndex = 10;
 			this.lbContactAdmin.Text = "Kontak Admin";
 			this.lbContactAdmin.Click += new System.EventHandler(this.lbContactAdmin_Click);
 			// 
@@ -280,7 +280,7 @@
 			this.lbForgotPassword.Location = new System.Drawing.Point(351, 371);
 			this.lbForgotPassword.Name = "lbForgotPassword";
 			this.lbForgotPassword.Size = new System.Drawing.Size(99, 15);
-			this.lbForgotPassword.TabIndex = 6;
+			this.lbForgotPassword.TabIndex = 5;
 			this.lbForgotPassword.Text = "Lupa Kata Sandi?";
 			this.lbForgotPassword.Click += new System.EventHandler(this.lbForgotPassword_Click);
 			// 
@@ -309,7 +309,7 @@
 			this.tsRememberMe.Name = "tsRememberMe";
 			this.tsRememberMe.ShadowDecoration.Parent = this.tsRememberMe;
 			this.tsRememberMe.Size = new System.Drawing.Size(35, 20);
-			this.tsRememberMe.TabIndex = 4;
+			this.tsRememberMe.TabIndex = 6;
 			this.tsRememberMe.UncheckedState.BorderColor = System.Drawing.Color.Black;
 			this.tsRememberMe.UncheckedState.BorderThickness = 2;
 			this.tsRememberMe.UncheckedState.FillColor = System.Drawing.Color.White;
@@ -341,7 +341,7 @@
 			this.txtPassword.SelectedText = "";
 			this.txtPassword.ShadowDecoration.Parent = this.txtPassword;
 			this.txtPassword.Size = new System.Drawing.Size(336, 36);
-			this.txtPassword.TabIndex = 3;
+			this.txtPassword.TabIndex = 2;
 			this.txtPassword.UseSystemPasswordChar = true;
 			this.txtPassword.Leave += new System.EventHandler(this.txtPassword_Leave);
 			// 

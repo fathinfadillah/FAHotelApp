@@ -49,6 +49,8 @@
 			this.lbCustomer = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
 			this.bunifuShapes1 = new Bunifu.UI.WinForms.BunifuShapes();
+			this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
+			this.label8 = new System.Windows.Forms.Label();
 			this.bunifuPanel4.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
 			this.bunifuPanel3.SuspendLayout();
@@ -61,7 +63,8 @@
 			// 
 			// bunifuPanel4
 			// 
-			this.bunifuPanel4.BackgroundColor = System.Drawing.Color.White;
+			this.bunifuPanel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+			this.bunifuPanel4.BackgroundColor = System.Drawing.SystemColors.Control;
 			this.bunifuPanel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel4.BackgroundImage")));
 			this.bunifuPanel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.bunifuPanel4.BorderColor = System.Drawing.Color.Transparent;
@@ -71,7 +74,7 @@
 			this.bunifuPanel4.Controls.Add(this.label6);
 			this.bunifuPanel4.Controls.Add(this.label7);
 			this.bunifuPanel4.Controls.Add(this.bunifuShapes4);
-			this.bunifuPanel4.Location = new System.Drawing.Point(762, 14);
+			this.bunifuPanel4.Location = new System.Drawing.Point(858, 85);
 			this.bunifuPanel4.Name = "bunifuPanel4";
 			this.bunifuPanel4.ShowBorders = true;
 			this.bunifuPanel4.Size = new System.Drawing.Size(244, 85);
@@ -107,9 +110,9 @@
 			this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.label7.Location = new System.Drawing.Point(106, 43);
 			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(72, 20);
+			this.label7.Size = new System.Drawing.Size(90, 20);
 			this.label7.TabIndex = 1;
-			this.label7.Text = "Customer";
+			this.label7.Text = "Kamar Terisi";
 			// 
 			// bunifuShapes4
 			// 
@@ -129,7 +132,8 @@
 			// 
 			// bunifuPanel3
 			// 
-			this.bunifuPanel3.BackgroundColor = System.Drawing.Color.White;
+			this.bunifuPanel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+			this.bunifuPanel3.BackgroundColor = System.Drawing.SystemColors.Control;
 			this.bunifuPanel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel3.BackgroundImage")));
 			this.bunifuPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.bunifuPanel3.BorderColor = System.Drawing.Color.Transparent;
@@ -139,7 +143,7 @@
 			this.bunifuPanel3.Controls.Add(this.label4);
 			this.bunifuPanel3.Controls.Add(this.label5);
 			this.bunifuPanel3.Controls.Add(this.bunifuShapes3);
-			this.bunifuPanel3.Location = new System.Drawing.Point(512, 14);
+			this.bunifuPanel3.Location = new System.Drawing.Point(608, 85);
 			this.bunifuPanel3.Name = "bunifuPanel3";
 			this.bunifuPanel3.ShowBorders = true;
 			this.bunifuPanel3.Size = new System.Drawing.Size(244, 85);
@@ -175,9 +179,9 @@
 			this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.label5.Location = new System.Drawing.Point(106, 43);
 			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(72, 20);
+			this.label5.Size = new System.Drawing.Size(111, 20);
 			this.label5.TabIndex = 1;
-			this.label5.Text = "Customer";
+			this.label5.Text = "Kamar Tersedia";
 			// 
 			// bunifuShapes3
 			// 
@@ -197,7 +201,8 @@
 			// 
 			// bunifuPanel2
 			// 
-			this.bunifuPanel2.BackgroundColor = System.Drawing.Color.White;
+			this.bunifuPanel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+			this.bunifuPanel2.BackgroundColor = System.Drawing.SystemColors.Control;
 			this.bunifuPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel2.BackgroundImage")));
 			this.bunifuPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.bunifuPanel2.BorderColor = System.Drawing.Color.Transparent;
@@ -207,7 +212,7 @@
 			this.bunifuPanel2.Controls.Add(this.label2);
 			this.bunifuPanel2.Controls.Add(this.label3);
 			this.bunifuPanel2.Controls.Add(this.bunifuShapes2);
-			this.bunifuPanel2.Location = new System.Drawing.Point(262, 14);
+			this.bunifuPanel2.Location = new System.Drawing.Point(358, 85);
 			this.bunifuPanel2.Name = "bunifuPanel2";
 			this.bunifuPanel2.ShowBorders = true;
 			this.bunifuPanel2.Size = new System.Drawing.Size(244, 85);
@@ -243,9 +248,9 @@
 			this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.label3.Location = new System.Drawing.Point(106, 43);
 			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(72, 20);
+			this.label3.Size = new System.Drawing.Size(73, 20);
 			this.label3.TabIndex = 1;
-			this.label3.Text = "Customer";
+			this.label3.Text = "Karyawan";
 			// 
 			// bunifuShapes2
 			// 
@@ -265,7 +270,8 @@
 			// 
 			// bunifuPanel1
 			// 
-			this.bunifuPanel1.BackgroundColor = System.Drawing.Color.White;
+			this.bunifuPanel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+			this.bunifuPanel1.BackgroundColor = System.Drawing.SystemColors.Control;
 			this.bunifuPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel1.BackgroundImage")));
 			this.bunifuPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.bunifuPanel1.BorderColor = System.Drawing.Color.Transparent;
@@ -275,7 +281,7 @@
 			this.bunifuPanel1.Controls.Add(this.lbCustomer);
 			this.bunifuPanel1.Controls.Add(this.label1);
 			this.bunifuPanel1.Controls.Add(this.bunifuShapes1);
-			this.bunifuPanel1.Location = new System.Drawing.Point(12, 14);
+			this.bunifuPanel1.Location = new System.Drawing.Point(108, 85);
 			this.bunifuPanel1.Name = "bunifuPanel1";
 			this.bunifuPanel1.ShowBorders = true;
 			this.bunifuPanel1.Size = new System.Drawing.Size(244, 85);
@@ -331,19 +337,49 @@
 			this.bunifuShapes1.TabIndex = 0;
 			this.bunifuShapes1.Text = "bunifuShapes1";
 			// 
+			// bunifuSeparator1
+			// 
+			this.bunifuSeparator1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+			this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
+			this.bunifuSeparator1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuSeparator1.BackgroundImage")));
+			this.bunifuSeparator1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.bunifuSeparator1.DashCap = Bunifu.UI.WinForms.BunifuSeparator.CapStyles.Flat;
+			this.bunifuSeparator1.LineColor = System.Drawing.Color.Silver;
+			this.bunifuSeparator1.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
+			this.bunifuSeparator1.LineThickness = 1;
+			this.bunifuSeparator1.Location = new System.Drawing.Point(27, 52);
+			this.bunifuSeparator1.Name = "bunifuSeparator1";
+			this.bunifuSeparator1.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
+			this.bunifuSeparator1.Size = new System.Drawing.Size(1164, 15);
+			this.bunifuSeparator1.TabIndex = 8;
+			// 
+			// label8
+			// 
+			this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
+			this.label8.AutoSize = true;
+			this.label8.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.label8.Location = new System.Drawing.Point(20, 12);
+			this.label8.Name = "label8";
+			this.label8.Size = new System.Drawing.Size(147, 37);
+			this.label8.TabIndex = 7;
+			this.label8.Text = "Dashboard";
+			// 
 			// UC_Dashboard
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.AutoScroll = true;
-			this.BackColor = System.Drawing.SystemColors.Control;
+			this.BackColor = System.Drawing.Color.White;
+			this.Controls.Add(this.bunifuSeparator1);
+			this.Controls.Add(this.label8);
 			this.Controls.Add(this.bunifuPanel4);
 			this.Controls.Add(this.bunifuPanel3);
 			this.Controls.Add(this.bunifuPanel2);
 			this.Controls.Add(this.bunifuPanel1);
 			this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.Name = "UC_Dashboard";
-			this.Size = new System.Drawing.Size(1019, 697);
+			this.Size = new System.Drawing.Size(1210, 697);
 			this.bunifuPanel4.ResumeLayout(false);
 			this.bunifuPanel4.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -357,6 +393,7 @@
 			this.bunifuPanel1.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.ResumeLayout(false);
+			this.PerformLayout();
 
 		}
 
@@ -382,5 +419,7 @@
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.Label label7;
 		private Bunifu.UI.WinForms.BunifuShapes bunifuShapes4;
+		private Bunifu.UI.WinForms.BunifuSeparator bunifuSeparator1;
+		private System.Windows.Forms.Label label8;
 	}
 }

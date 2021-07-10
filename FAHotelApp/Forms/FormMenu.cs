@@ -18,14 +18,25 @@ namespace FAHotelApp.Forms
 		private string userName;
 		public FormMenu(string userName)
 		{
+			Account staff = AccountDAO.Instance.LoadStaffInforByUserName(userName);
 			this.userName = userName;
 			InitializeComponent();
 			bunifuFormDock1.SubscribeControlToDragEvents(panelHeader);
-			lbUser.Text = Properties.Settings.Default.UsernameView;
+			lbUser.Text = staff.DisplayName;
 			lbUserType.Text = Properties.Settings.Default.UserTypeView;
+			if (staff != null)
+			{
+				if (!string.IsNullOrEmpty(staff.ImageUrl))
+					pictureBox.Image = Image.FromFile(staff.ImageUrl);
+			}
+
+			System.Drawing.Drawing2D.GraphicsPath gp = new System.Drawing.Drawing2D.GraphicsPath();
+			gp.AddEllipse(0, 0, pictureBox.Width - 3, pictureBox.Height - 3);
+			Region rg = new Region(gp);
+			pictureBox.Region = rg;
+
 			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 		}
-
 		private void txtSearch_TextChanged(object sender, EventArgs e)
 		{
 			foreach (var btn in panelMenu.Controls)
