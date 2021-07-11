@@ -40,7 +40,7 @@ namespace FAHotelApp.DTO
 
 		#region Constructor
 		public Account() { }
-		public Account(string userName, string displayName, string passWord, int staffType, string idCard, DateTime dateOfBirth, string sex, string address, string phoneNumber, DateTime startDay, string ImageUrl, byte[] image)
+		public Account(string userName, string displayName, string passWord, int staffType, string idCard, DateTime dateOfBirth, string sex, string address, string phoneNumber, DateTime startDay, string ImageUrl)
 		{
 			this.UserName = userName;
 			this.DisplayName = displayName;

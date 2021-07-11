@@ -29,17 +29,13 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Room));
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.label1 = new System.Windows.Forms.Label();
 			this.saveRoom = new System.Windows.Forms.SaveFileDialog();
-			this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
 			this.groupBox4 = new System.Windows.Forms.GroupBox();
-			this.btnAddRoom = new Bunifu.Framework.UI.BunifuThinButton2();
-			this.btnRoomType = new Bunifu.Framework.UI.BunifuThinButton2();
-			this.btnUpdate = new Bunifu.Framework.UI.BunifuThinButton2();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
 			this.dataGridViewRoom = new System.Windows.Forms.DataGridView();
 			this.colIDRoom = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -52,13 +48,9 @@
 			this.colIdStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.bindingRoom = new System.Windows.Forms.BindingNavigator(this.components);
 			this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-			this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-			this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
 			this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
 			this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
 			this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-			this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-			this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
 			this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
 			this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
 			this.groupRoom = new System.Windows.Forms.GroupBox();
@@ -72,13 +64,21 @@
 			this.label3 = new System.Windows.Forms.Label();
 			this.cbStatusRoom = new MetroFramework.Controls.MetroComboBox();
 			this.txtNameRoom = new Bunifu.Framework.UI.BunifuMetroTextbox();
+			this.txtPrice = new Bunifu.Framework.UI.BunifuMetroTextbox();
 			this.cbRoomType = new MetroFramework.Controls.MetroComboBox();
 			this.groupBox3 = new System.Windows.Forms.GroupBox();
-			this.btnSearch = new Bunifu.Framework.UI.BunifuThinButton2();
 			this.label5 = new System.Windows.Forms.Label();
 			this.txtSearch = new Bunifu.Framework.UI.BunifuMetroTextbox();
+			this.btnAddRoom = new Bunifu.Framework.UI.BunifuThinButton2();
+			this.btnRoomType = new Bunifu.Framework.UI.BunifuThinButton2();
+			this.btnUpdate = new Bunifu.Framework.UI.BunifuThinButton2();
+			this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
+			this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
+			this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
+			this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
+			this.btnSearch = new Bunifu.Framework.UI.BunifuThinButton2();
 			this.btnCancel = new Bunifu.Framework.UI.BunifuThinButton2();
-			this.txtPrice = new Bunifu.Framework.UI.BunifuMetroTextbox();
+			this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
 			this.groupBox4.SuspendLayout();
 			this.groupBox1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridViewRoom)).BeginInit();
@@ -104,21 +104,6 @@
 			this.saveRoom.FileName = "Daftar Kamar";
 			this.saveRoom.Filter = "Excel File(*.xls)|*.xls|Excel File (*.xlsx) |.xlsx|PDF File(*.pdf)|*.pdf";
 			// 
-			// bunifuSeparator1
-			// 
-			this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
-			this.bunifuSeparator1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuSeparator1.BackgroundImage")));
-			this.bunifuSeparator1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-			this.bunifuSeparator1.DashCap = Bunifu.UI.WinForms.BunifuSeparator.CapStyles.Flat;
-			this.bunifuSeparator1.LineColor = System.Drawing.Color.Silver;
-			this.bunifuSeparator1.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
-			this.bunifuSeparator1.LineThickness = 1;
-			this.bunifuSeparator1.Location = new System.Drawing.Point(21, 46);
-			this.bunifuSeparator1.Name = "bunifuSeparator1";
-			this.bunifuSeparator1.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
-			this.bunifuSeparator1.Size = new System.Drawing.Size(1178, 15);
-			this.bunifuSeparator1.TabIndex = 2;
-			// 
 			// groupBox4
 			// 
 			this.groupBox4.Controls.Add(this.btnAddRoom);
@@ -133,87 +118,6 @@
 			this.groupBox4.TabIndex = 62;
 			this.groupBox4.TabStop = false;
 			this.groupBox4.Text = "Fungsi";
-			// 
-			// btnAddRoom
-			// 
-			this.btnAddRoom.ActiveBorderThickness = 1;
-			this.btnAddRoom.ActiveCornerRadius = 20;
-			this.btnAddRoom.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnAddRoom.ActiveForecolor = System.Drawing.Color.White;
-			this.btnAddRoom.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnAddRoom.BackColor = System.Drawing.Color.White;
-			this.btnAddRoom.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddRoom.BackgroundImage")));
-			this.btnAddRoom.ButtonText = "Tambah Kamar";
-			this.btnAddRoom.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnAddRoom.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnAddRoom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnAddRoom.IdleBorderThickness = 1;
-			this.btnAddRoom.IdleCornerRadius = 15;
-			this.btnAddRoom.IdleFillColor = System.Drawing.Color.White;
-			this.btnAddRoom.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnAddRoom.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnAddRoom.Location = new System.Drawing.Point(22, 35);
-			this.btnAddRoom.Margin = new System.Windows.Forms.Padding(4);
-			this.btnAddRoom.Name = "btnAddRoom";
-			this.btnAddRoom.Size = new System.Drawing.Size(175, 40);
-			this.btnAddRoom.TabIndex = 8;
-			this.btnAddRoom.TabStop = false;
-			this.btnAddRoom.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.btnAddRoom.Click += new System.EventHandler(this.BtnAddRoom_Click);
-			// 
-			// btnRoomType
-			// 
-			this.btnRoomType.ActiveBorderThickness = 1;
-			this.btnRoomType.ActiveCornerRadius = 20;
-			this.btnRoomType.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnRoomType.ActiveForecolor = System.Drawing.Color.White;
-			this.btnRoomType.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnRoomType.BackColor = System.Drawing.Color.White;
-			this.btnRoomType.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRoomType.BackgroundImage")));
-			this.btnRoomType.ButtonText = "Tipe Kamar";
-			this.btnRoomType.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnRoomType.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnRoomType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnRoomType.IdleBorderThickness = 1;
-			this.btnRoomType.IdleCornerRadius = 15;
-			this.btnRoomType.IdleFillColor = System.Drawing.Color.White;
-			this.btnRoomType.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnRoomType.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnRoomType.Location = new System.Drawing.Point(247, 35);
-			this.btnRoomType.Margin = new System.Windows.Forms.Padding(4);
-			this.btnRoomType.Name = "btnRoomType";
-			this.btnRoomType.Size = new System.Drawing.Size(175, 40);
-			this.btnRoomType.TabIndex = 50;
-			this.btnRoomType.TabStop = false;
-			this.btnRoomType.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.btnRoomType.Click += new System.EventHandler(this.BtnRoomType_Click);
-			// 
-			// btnUpdate
-			// 
-			this.btnUpdate.ActiveBorderThickness = 1;
-			this.btnUpdate.ActiveCornerRadius = 20;
-			this.btnUpdate.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnUpdate.ActiveForecolor = System.Drawing.Color.White;
-			this.btnUpdate.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnUpdate.BackColor = System.Drawing.Color.White;
-			this.btnUpdate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUpdate.BackgroundImage")));
-			this.btnUpdate.ButtonText = "Update Kamar";
-			this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnUpdate.IdleBorderThickness = 1;
-			this.btnUpdate.IdleCornerRadius = 15;
-			this.btnUpdate.IdleFillColor = System.Drawing.Color.White;
-			this.btnUpdate.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnUpdate.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnUpdate.Location = new System.Drawing.Point(22, 91);
-			this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
-			this.btnUpdate.Name = "btnUpdate";
-			this.btnUpdate.Size = new System.Drawing.Size(175, 40);
-			this.btnUpdate.TabIndex = 52;
-			this.btnUpdate.TabStop = false;
-			this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.btnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
 			// 
 			// groupBox1
 			// 
@@ -235,14 +139,14 @@
 			this.dataGridViewRoom.AllowUserToResizeRows = false;
 			this.dataGridViewRoom.BackgroundColor = System.Drawing.Color.White;
 			this.dataGridViewRoom.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 12F);
-			dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dataGridViewRoom.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+			dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F);
+			dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dataGridViewRoom.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
 			this.dataGridViewRoom.ColumnHeadersHeight = 29;
 			this.dataGridViewRoom.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
 			this.dataGridViewRoom.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -254,27 +158,27 @@
             this.colStatus,
             this.colIdRoomType,
             this.colIdStatus});
-			dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-			dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 12F);
-			dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.dataGridViewRoom.DefaultCellStyle = dataGridViewCellStyle5;
+			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+			dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F);
+			dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.dataGridViewRoom.DefaultCellStyle = dataGridViewCellStyle2;
 			this.dataGridViewRoom.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.dataGridViewRoom.GridColor = System.Drawing.Color.White;
 			this.dataGridViewRoom.Location = new System.Drawing.Point(3, 68);
 			this.dataGridViewRoom.Name = "dataGridViewRoom";
 			this.dataGridViewRoom.ReadOnly = true;
-			dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 12F);
-			dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dataGridViewRoom.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+			dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F);
+			dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dataGridViewRoom.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
 			this.dataGridViewRoom.RowHeadersVisible = false;
 			this.dataGridViewRoom.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
 			this.dataGridViewRoom.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -356,6 +260,7 @@
 			// bindingRoom
 			// 
 			this.bindingRoom.AddNewItem = null;
+			this.bindingRoom.BackColor = System.Drawing.Color.White;
 			this.bindingRoom.CountItem = this.bindingNavigatorCountItem;
 			this.bindingRoom.CountItemFormat = "dari {0}";
 			this.bindingRoom.DeleteItem = null;
@@ -391,26 +296,6 @@
 			this.bindingNavigatorCountItem.Text = "dari {0}";
 			this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
 			// 
-			// bindingNavigatorMoveFirstItem
-			// 
-			this.bindingNavigatorMoveFirstItem.AutoSize = false;
-			this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-			this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-			this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-			this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(40, 40);
-			this.bindingNavigatorMoveFirstItem.Text = "Move first";
-			// 
-			// bindingNavigatorMovePreviousItem
-			// 
-			this.bindingNavigatorMovePreviousItem.AutoSize = false;
-			this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-			this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-			this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-			this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(40, 40);
-			this.bindingNavigatorMovePreviousItem.Text = "Move previous";
-			// 
 			// bindingNavigatorSeparator
 			// 
 			this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
@@ -430,26 +315,6 @@
 			this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
 			this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 43);
 			// 
-			// bindingNavigatorMoveNextItem
-			// 
-			this.bindingNavigatorMoveNextItem.AutoSize = false;
-			this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-			this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-			this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-			this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(40, 40);
-			this.bindingNavigatorMoveNextItem.Text = "Move next";
-			// 
-			// bindingNavigatorMoveLastItem
-			// 
-			this.bindingNavigatorMoveLastItem.AutoSize = false;
-			this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-			this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-			this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-			this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(40, 40);
-			this.bindingNavigatorMoveLastItem.Text = "Move last";
-			// 
 			// bindingNavigatorSeparator2
 			// 
 			this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
@@ -460,6 +325,7 @@
 			this.toolStripLabel1.Name = "toolStripLabel1";
 			this.toolStripLabel1.Size = new System.Drawing.Size(42, 40);
 			this.toolStripLabel1.Text = "Ekspor";
+			this.toolStripLabel1.Click += new System.EventHandler(this.ToolStripLabel1_Click);
 			// 
 			// groupRoom
 			// 
@@ -621,6 +487,27 @@
 			this.txtNameRoom.Enter += new System.EventHandler(this.txtNameRoom_Enter);
 			this.txtNameRoom.Leave += new System.EventHandler(this.txtNameRoom_Leave);
 			// 
+			// txtPrice
+			// 
+			this.txtPrice.BackColor = System.Drawing.Color.WhiteSmoke;
+			this.txtPrice.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.txtPrice.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.txtPrice.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.txtPrice.BorderThickness = 1;
+			this.txtPrice.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.txtPrice.Enabled = false;
+			this.txtPrice.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.txtPrice.isPassword = false;
+			this.txtPrice.Location = new System.Drawing.Point(247, 134);
+			this.txtPrice.Margin = new System.Windows.Forms.Padding(0);
+			this.txtPrice.MaxLength = 32767;
+			this.txtPrice.Name = "txtPrice";
+			this.txtPrice.Size = new System.Drawing.Size(175, 29);
+			this.txtPrice.TabIndex = 42;
+			this.txtPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			// 
 			// cbRoomType
 			// 
 			this.cbRoomType.BackColor = System.Drawing.Color.White;
@@ -654,32 +541,6 @@
 			this.groupBox3.TabStop = false;
 			this.groupBox3.Text = "Cari";
 			// 
-			// btnSearch
-			// 
-			this.btnSearch.ActiveBorderThickness = 1;
-			this.btnSearch.ActiveCornerRadius = 20;
-			this.btnSearch.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSearch.ActiveForecolor = System.Drawing.Color.White;
-			this.btnSearch.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSearch.BackColor = System.Drawing.Color.White;
-			this.btnSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearch.BackgroundImage")));
-			this.btnSearch.ButtonText = "Cari";
-			this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSearch.IdleBorderThickness = 1;
-			this.btnSearch.IdleCornerRadius = 20;
-			this.btnSearch.IdleFillColor = System.Drawing.Color.White;
-			this.btnSearch.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSearch.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSearch.Location = new System.Drawing.Point(247, 48);
-			this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-			this.btnSearch.Name = "btnSearch";
-			this.btnSearch.Size = new System.Drawing.Size(175, 40);
-			this.btnSearch.TabIndex = 46;
-			this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.btnSearch.Click += new System.EventHandler(this.BtnSearch_Click);
-			// 
 			// label5
 			// 
 			this.label5.AutoSize = true;
@@ -712,6 +573,153 @@
 			this.txtSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
 			this.txtSearch.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSearch_KeyPress);
 			// 
+			// btnAddRoom
+			// 
+			this.btnAddRoom.ActiveBorderThickness = 1;
+			this.btnAddRoom.ActiveCornerRadius = 20;
+			this.btnAddRoom.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnAddRoom.ActiveForecolor = System.Drawing.Color.White;
+			this.btnAddRoom.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnAddRoom.BackColor = System.Drawing.Color.White;
+			this.btnAddRoom.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddRoom.BackgroundImage")));
+			this.btnAddRoom.ButtonText = "Tambah Kamar";
+			this.btnAddRoom.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnAddRoom.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnAddRoom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnAddRoom.IdleBorderThickness = 1;
+			this.btnAddRoom.IdleCornerRadius = 15;
+			this.btnAddRoom.IdleFillColor = System.Drawing.Color.White;
+			this.btnAddRoom.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnAddRoom.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnAddRoom.Location = new System.Drawing.Point(22, 35);
+			this.btnAddRoom.Margin = new System.Windows.Forms.Padding(4);
+			this.btnAddRoom.Name = "btnAddRoom";
+			this.btnAddRoom.Size = new System.Drawing.Size(175, 40);
+			this.btnAddRoom.TabIndex = 8;
+			this.btnAddRoom.TabStop = false;
+			this.btnAddRoom.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.btnAddRoom.Click += new System.EventHandler(this.BtnAddRoom_Click);
+			// 
+			// btnRoomType
+			// 
+			this.btnRoomType.ActiveBorderThickness = 1;
+			this.btnRoomType.ActiveCornerRadius = 20;
+			this.btnRoomType.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnRoomType.ActiveForecolor = System.Drawing.Color.White;
+			this.btnRoomType.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnRoomType.BackColor = System.Drawing.Color.White;
+			this.btnRoomType.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRoomType.BackgroundImage")));
+			this.btnRoomType.ButtonText = "Tipe Kamar";
+			this.btnRoomType.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnRoomType.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnRoomType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnRoomType.IdleBorderThickness = 1;
+			this.btnRoomType.IdleCornerRadius = 15;
+			this.btnRoomType.IdleFillColor = System.Drawing.Color.White;
+			this.btnRoomType.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnRoomType.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnRoomType.Location = new System.Drawing.Point(247, 35);
+			this.btnRoomType.Margin = new System.Windows.Forms.Padding(4);
+			this.btnRoomType.Name = "btnRoomType";
+			this.btnRoomType.Size = new System.Drawing.Size(175, 40);
+			this.btnRoomType.TabIndex = 50;
+			this.btnRoomType.TabStop = false;
+			this.btnRoomType.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.btnRoomType.Click += new System.EventHandler(this.BtnRoomType_Click);
+			// 
+			// btnUpdate
+			// 
+			this.btnUpdate.ActiveBorderThickness = 1;
+			this.btnUpdate.ActiveCornerRadius = 20;
+			this.btnUpdate.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnUpdate.ActiveForecolor = System.Drawing.Color.White;
+			this.btnUpdate.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnUpdate.BackColor = System.Drawing.Color.White;
+			this.btnUpdate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUpdate.BackgroundImage")));
+			this.btnUpdate.ButtonText = "Update Kamar";
+			this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnUpdate.IdleBorderThickness = 1;
+			this.btnUpdate.IdleCornerRadius = 15;
+			this.btnUpdate.IdleFillColor = System.Drawing.Color.White;
+			this.btnUpdate.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnUpdate.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnUpdate.Location = new System.Drawing.Point(22, 91);
+			this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
+			this.btnUpdate.Name = "btnUpdate";
+			this.btnUpdate.Size = new System.Drawing.Size(175, 40);
+			this.btnUpdate.TabIndex = 52;
+			this.btnUpdate.TabStop = false;
+			this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.btnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
+			// 
+			// bindingNavigatorMoveFirstItem
+			// 
+			this.bindingNavigatorMoveFirstItem.AutoSize = false;
+			this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
+			this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
+			this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
+			this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(40, 40);
+			this.bindingNavigatorMoveFirstItem.Text = "Move first";
+			// 
+			// bindingNavigatorMovePreviousItem
+			// 
+			this.bindingNavigatorMovePreviousItem.AutoSize = false;
+			this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
+			this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
+			this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+			this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(40, 40);
+			this.bindingNavigatorMovePreviousItem.Text = "Move previous";
+			// 
+			// bindingNavigatorMoveNextItem
+			// 
+			this.bindingNavigatorMoveNextItem.AutoSize = false;
+			this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
+			this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
+			this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
+			this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(40, 40);
+			this.bindingNavigatorMoveNextItem.Text = "Move next";
+			// 
+			// bindingNavigatorMoveLastItem
+			// 
+			this.bindingNavigatorMoveLastItem.AutoSize = false;
+			this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
+			this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
+			this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
+			this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(40, 40);
+			this.bindingNavigatorMoveLastItem.Text = "Move last";
+			// 
+			// btnSearch
+			// 
+			this.btnSearch.ActiveBorderThickness = 1;
+			this.btnSearch.ActiveCornerRadius = 20;
+			this.btnSearch.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSearch.ActiveForecolor = System.Drawing.Color.White;
+			this.btnSearch.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSearch.BackColor = System.Drawing.Color.White;
+			this.btnSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearch.BackgroundImage")));
+			this.btnSearch.ButtonText = "Cari";
+			this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSearch.IdleBorderThickness = 1;
+			this.btnSearch.IdleCornerRadius = 20;
+			this.btnSearch.IdleFillColor = System.Drawing.Color.White;
+			this.btnSearch.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSearch.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSearch.Location = new System.Drawing.Point(247, 48);
+			this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.btnSearch.Name = "btnSearch";
+			this.btnSearch.Size = new System.Drawing.Size(175, 40);
+			this.btnSearch.TabIndex = 46;
+			this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.btnSearch.Click += new System.EventHandler(this.BtnSearch_Click);
+			// 
 			// btnCancel
 			// 
 			this.btnCancel.ActiveBorderThickness = 1;
@@ -739,26 +747,20 @@
 			this.btnCancel.Visible = false;
 			this.btnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
 			// 
-			// txtPrice
+			// bunifuSeparator1
 			// 
-			this.txtPrice.BackColor = System.Drawing.Color.WhiteSmoke;
-			this.txtPrice.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.txtPrice.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.txtPrice.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.txtPrice.BorderThickness = 1;
-			this.txtPrice.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-			this.txtPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.txtPrice.Enabled = false;
-			this.txtPrice.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.txtPrice.isPassword = false;
-			this.txtPrice.Location = new System.Drawing.Point(247, 134);
-			this.txtPrice.Margin = new System.Windows.Forms.Padding(0);
-			this.txtPrice.MaxLength = 32767;
-			this.txtPrice.Name = "txtPrice";
-			this.txtPrice.Size = new System.Drawing.Size(175, 29);
-			this.txtPrice.TabIndex = 42;
-			this.txtPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
+			this.bunifuSeparator1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuSeparator1.BackgroundImage")));
+			this.bunifuSeparator1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.bunifuSeparator1.DashCap = Bunifu.UI.WinForms.BunifuSeparator.CapStyles.Flat;
+			this.bunifuSeparator1.LineColor = System.Drawing.Color.Silver;
+			this.bunifuSeparator1.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
+			this.bunifuSeparator1.LineThickness = 1;
+			this.bunifuSeparator1.Location = new System.Drawing.Point(21, 46);
+			this.bunifuSeparator1.Name = "bunifuSeparator1";
+			this.bunifuSeparator1.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
+			this.bunifuSeparator1.Size = new System.Drawing.Size(1178, 15);
+			this.bunifuSeparator1.TabIndex = 2;
 			// 
 			// UC_Room
 			// 

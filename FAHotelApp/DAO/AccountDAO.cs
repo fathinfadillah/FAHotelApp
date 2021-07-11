@@ -46,6 +46,25 @@ namespace FAHotelApp.DAO
 			}
 			return listStaffType;
 		}
+		//internal ViewCustomer LoadViewStaff()
+		//{
+		//	string query = "select * from ViewCustomer";
+		//	DataTable dataTable = DataProvider.Instance.ExecuteQuery(query);
+		//	ViewCustomer viewstaff = new ViewCustomer(dataTable.Rows[0]);
+		//	return viewstaff;
+		//}
+		public List<ViewCustomer> LoadViewCustomer()
+		{
+			List<ViewCustomer> listViewCustomer = new List<ViewCustomer>();
+			string query = "select * from ViewCustomer";
+			DataTable data = DataProvider.Instance.ExecuteQuery(query);
+			foreach (DataRow item in data.Rows)
+			{
+				ViewCustomer viewCustomer = new ViewCustomer(item);
+				listViewCustomer.Add(viewCustomer);
+			}
+			return listViewCustomer;
+		}
 		internal Account LoadStaffInforByUserName(string username)
 		{
 			//string query = "USP_GetNameStaffTypeByUserName @username";

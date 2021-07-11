@@ -29,33 +29,32 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Bill));
 			this.SaveCustomer = new System.Windows.Forms.SaveFileDialog();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
 			this.dataGridViewBill = new System.Windows.Forms.DataGridView();
-			this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.colIdReciveRoom = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.colCustomerName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.colStaffsetUp = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.coldDateOfCreate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.colStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.colPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.bindingBill = new System.Windows.Forms.BindingNavigator(this.components);
 			this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+			this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
+			this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
 			this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
 			this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
 			this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+			this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
+			this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
 			this.label1 = new System.Windows.Forms.Label();
 			this.label5 = new System.Windows.Forms.Label();
 			this.txtSearch = new Bunifu.Framework.UI.BunifuMetroTextbox();
 			this.cbBillSearch = new MetroFramework.Controls.MetroComboBox();
 			this.groupBox5 = new System.Windows.Forms.GroupBox();
+			this.btnSearch = new Bunifu.Framework.UI.BunifuThinButton2();
+			this.btnCancel = new Bunifu.Framework.UI.BunifuThinButton2();
 			this.groupBox4 = new System.Windows.Forms.GroupBox();
+			this.btnSendEmail = new Bunifu.Framework.UI.BunifuThinButton2();
+			this.btnSeenBill = new Bunifu.Framework.UI.BunifuThinButton2();
 			this.label20 = new System.Windows.Forms.Label();
 			this.label15 = new System.Windows.Forms.Label();
 			this.label16 = new System.Windows.Forms.Label();
@@ -73,15 +72,16 @@
 			this.label4 = new System.Windows.Forms.Label();
 			this.txbPrice = new Bunifu.Framework.UI.BunifuMetroTextbox();
 			this.label13 = new System.Windows.Forms.Label();
-			this.btnSeenBill = new Bunifu.Framework.UI.BunifuThinButton2();
-			this.btnSearch = new Bunifu.Framework.UI.BunifuThinButton2();
-			this.btnCancel = new Bunifu.Framework.UI.BunifuThinButton2();
 			this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
-			this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-			this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
-			this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-			this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-			this.btnSendEmail = new Bunifu.Framework.UI.BunifuThinButton2();
+			this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.colIdReciveRoom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.colCustomerName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.colStaffsetUp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.coldDateOfCreate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.colStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.colPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.groupBox1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridViewBill)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.bindingBill)).BeginInit();
@@ -104,7 +104,7 @@
 			this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
 			this.groupBox1.Location = new System.Drawing.Point(471, 67);
 			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(731, 661);
+			this.groupBox1.Size = new System.Drawing.Size(891, 654);
 			this.groupBox1.TabIndex = 39;
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Daftar Pelanggan";
@@ -116,14 +116,14 @@
 			this.dataGridViewBill.AllowUserToResizeRows = false;
 			this.dataGridViewBill.BackgroundColor = System.Drawing.Color.White;
 			this.dataGridViewBill.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 12F);
-			dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dataGridViewBill.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+			dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F);
+			dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dataGridViewBill.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
 			this.dataGridViewBill.ColumnHeadersHeight = 29;
 			this.dataGridViewBill.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
 			this.dataGridViewBill.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -136,117 +136,34 @@
             this.colPrice,
             this.Column1,
             this.Column2});
-			dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-			dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 12F);
-			dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.dataGridViewBill.DefaultCellStyle = dataGridViewCellStyle5;
+			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+			dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F);
+			dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.dataGridViewBill.DefaultCellStyle = dataGridViewCellStyle2;
 			this.dataGridViewBill.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.dataGridViewBill.GridColor = System.Drawing.Color.White;
 			this.dataGridViewBill.Location = new System.Drawing.Point(3, 68);
 			this.dataGridViewBill.Name = "dataGridViewBill";
 			this.dataGridViewBill.ReadOnly = true;
-			dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 12F);
-			dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dataGridViewBill.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+			dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F);
+			dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dataGridViewBill.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
 			this.dataGridViewBill.RowHeadersVisible = false;
 			this.dataGridViewBill.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
 			this.dataGridViewBill.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F);
 			this.dataGridViewBill.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.dataGridViewBill.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-			this.dataGridViewBill.Size = new System.Drawing.Size(725, 590);
+			this.dataGridViewBill.Size = new System.Drawing.Size(885, 583);
 			this.dataGridViewBill.TabIndex = 30;
-			// 
-			// colID
-			// 
-			this.colID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-			this.colID.DataPropertyName = "id";
-			this.colID.FillWeight = 30F;
-			this.colID.HeaderText = "Kode Tagihan";
-			this.colID.Name = "colID";
-			this.colID.ReadOnly = true;
-			this.colID.Width = 127;
-			// 
-			// colIdReciveRoom
-			// 
-			this.colIdReciveRoom.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-			this.colIdReciveRoom.DataPropertyName = "roomName";
-			this.colIdReciveRoom.FillWeight = 30F;
-			this.colIdReciveRoom.HeaderText = "Nama Kamar";
-			this.colIdReciveRoom.Name = "colIdReciveRoom";
-			this.colIdReciveRoom.ReadOnly = true;
-			this.colIdReciveRoom.Width = 126;
-			// 
-			// colCustomerName
-			// 
-			this.colCustomerName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-			this.colCustomerName.DataPropertyName = "customername";
-			this.colCustomerName.HeaderText = "Nama Customer";
-			this.colCustomerName.Name = "colCustomerName";
-			this.colCustomerName.ReadOnly = true;
-			this.colCustomerName.Width = 149;
-			// 
-			// colStaffsetUp
-			// 
-			this.colStaffsetUp.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-			this.colStaffsetUp.DataPropertyName = "StaffSetUp";
-			this.colStaffsetUp.FillWeight = 30F;
-			this.colStaffsetUp.HeaderText = "Tanggal Dibuat";
-			this.colStaffsetUp.Name = "colStaffsetUp";
-			this.colStaffsetUp.ReadOnly = true;
-			this.colStaffsetUp.Visible = false;
-			this.colStaffsetUp.Width = 138;
-			// 
-			// coldDateOfCreate
-			// 
-			this.coldDateOfCreate.DataPropertyName = "DateOfCreate";
-			this.coldDateOfCreate.FillWeight = 30F;
-			this.coldDateOfCreate.HeaderText = "Status";
-			this.coldDateOfCreate.Name = "coldDateOfCreate";
-			this.coldDateOfCreate.ReadOnly = true;
-			// 
-			// colStatus
-			// 
-			this.colStatus.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-			this.colStatus.DataPropertyName = "name";
-			this.colStatus.HeaderText = "Status";
-			this.colStatus.Name = "colStatus";
-			this.colStatus.ReadOnly = true;
-			this.colStatus.Width = 77;
-			// 
-			// colPrice
-			// 
-			this.colPrice.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-			this.colPrice.DataPropertyName = "TotalPrice";
-			this.colPrice.FillWeight = 30F;
-			this.colPrice.HeaderText = "Harga Awal";
-			this.colPrice.Name = "colPrice";
-			this.colPrice.ReadOnly = true;
-			this.colPrice.Width = 115;
-			// 
-			// Column1
-			// 
-			this.Column1.DataPropertyName = "discount";
-			this.Column1.HeaderText = "Diskon";
-			this.Column1.Name = "Column1";
-			this.Column1.ReadOnly = true;
-			this.Column1.Width = 50;
-			// 
-			// Column2
-			// 
-			this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-			this.Column2.DataPropertyName = "finalPrice";
-			this.Column2.HeaderText = "Harga Akhir";
-			this.Column2.Name = "Column2";
-			this.Column2.ReadOnly = true;
 			// 
 			// bindingBill
 			// 
@@ -274,7 +191,7 @@
 			this.bindingBill.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
 			this.bindingBill.Name = "bindingBill";
 			this.bindingBill.PositionItem = this.bindingNavigatorPositionItem;
-			this.bindingBill.Size = new System.Drawing.Size(725, 43);
+			this.bindingBill.Size = new System.Drawing.Size(885, 43);
 			this.bindingBill.TabIndex = 29;
 			this.bindingBill.Text = "binding";
 			// 
@@ -284,6 +201,28 @@
 			this.bindingNavigatorCountItem.Size = new System.Drawing.Size(51, 40);
 			this.bindingNavigatorCountItem.Text = "Dari {0}";
 			this.bindingNavigatorCountItem.ToolTipText = "Tổng số khách hàng";
+			// 
+			// bindingNavigatorMoveFirstItem
+			// 
+			this.bindingNavigatorMoveFirstItem.AutoSize = false;
+			this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
+			this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
+			this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
+			this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(50, 22);
+			this.bindingNavigatorMoveFirstItem.Text = "Move first";
+			this.bindingNavigatorMoveFirstItem.ToolTipText = "Khách hàng đầu tiên";
+			// 
+			// bindingNavigatorMovePreviousItem
+			// 
+			this.bindingNavigatorMovePreviousItem.AutoSize = false;
+			this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
+			this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
+			this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+			this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(50, 22);
+			this.bindingNavigatorMovePreviousItem.Text = "Move previous";
+			this.bindingNavigatorMovePreviousItem.ToolTipText = "Khách hàng trước đó";
 			// 
 			// bindingNavigatorSeparator
 			// 
@@ -303,6 +242,28 @@
 			// 
 			this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
 			this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 43);
+			// 
+			// bindingNavigatorMoveNextItem
+			// 
+			this.bindingNavigatorMoveNextItem.AutoSize = false;
+			this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
+			this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
+			this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
+			this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(50, 22);
+			this.bindingNavigatorMoveNextItem.Text = "Move next";
+			this.bindingNavigatorMoveNextItem.ToolTipText = "Khách hàng kế tiếp";
+			// 
+			// bindingNavigatorMoveLastItem
+			// 
+			this.bindingNavigatorMoveLastItem.AutoSize = false;
+			this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
+			this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
+			this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
+			this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(50, 22);
+			this.bindingNavigatorMoveLastItem.Text = "Move last";
+			this.bindingNavigatorMoveLastItem.ToolTipText = "Khách hàng cuối cùng";
 			// 
 			// label1
 			// 
@@ -382,6 +343,59 @@
 			this.groupBox5.TabStop = false;
 			this.groupBox5.Text = "Cari";
 			// 
+			// btnSearch
+			// 
+			this.btnSearch.ActiveBorderThickness = 1;
+			this.btnSearch.ActiveCornerRadius = 20;
+			this.btnSearch.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSearch.ActiveForecolor = System.Drawing.Color.White;
+			this.btnSearch.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSearch.BackColor = System.Drawing.Color.White;
+			this.btnSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearch.BackgroundImage")));
+			this.btnSearch.ButtonText = "Cari";
+			this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSearch.IdleBorderThickness = 1;
+			this.btnSearch.IdleCornerRadius = 20;
+			this.btnSearch.IdleFillColor = System.Drawing.Color.White;
+			this.btnSearch.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSearch.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSearch.Location = new System.Drawing.Point(235, 71);
+			this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.btnSearch.Name = "btnSearch";
+			this.btnSearch.Size = new System.Drawing.Size(175, 40);
+			this.btnSearch.TabIndex = 46;
+			this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.btnSearch.Click += new System.EventHandler(this.BtnSearch_Click);
+			// 
+			// btnCancel
+			// 
+			this.btnCancel.ActiveBorderThickness = 1;
+			this.btnCancel.ActiveCornerRadius = 20;
+			this.btnCancel.ActiveFillColor = System.Drawing.Color.Red;
+			this.btnCancel.ActiveForecolor = System.Drawing.Color.White;
+			this.btnCancel.ActiveLineColor = System.Drawing.Color.Red;
+			this.btnCancel.BackColor = System.Drawing.Color.White;
+			this.btnCancel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCancel.BackgroundImage")));
+			this.btnCancel.ButtonText = "Batalkan Pencarian";
+			this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnCancel.IdleBorderThickness = 1;
+			this.btnCancel.IdleCornerRadius = 20;
+			this.btnCancel.IdleFillColor = System.Drawing.Color.White;
+			this.btnCancel.IdleForecolor = System.Drawing.Color.Red;
+			this.btnCancel.IdleLineColor = System.Drawing.Color.Red;
+			this.btnCancel.Location = new System.Drawing.Point(235, 67);
+			this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.btnCancel.Name = "btnCancel";
+			this.btnCancel.Size = new System.Drawing.Size(175, 40);
+			this.btnCancel.TabIndex = 49;
+			this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.btnCancel.Visible = false;
+			this.btnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
+			// 
 			// groupBox4
 			// 
 			this.groupBox4.Controls.Add(this.btnSendEmail);
@@ -395,6 +409,60 @@
 			this.groupBox4.TabIndex = 62;
 			this.groupBox4.TabStop = false;
 			this.groupBox4.Text = "Menu";
+			// 
+			// btnSendEmail
+			// 
+			this.btnSendEmail.ActiveBorderThickness = 1;
+			this.btnSendEmail.ActiveCornerRadius = 20;
+			this.btnSendEmail.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSendEmail.ActiveForecolor = System.Drawing.Color.White;
+			this.btnSendEmail.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSendEmail.BackColor = System.Drawing.Color.White;
+			this.btnSendEmail.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSendEmail.BackgroundImage")));
+			this.btnSendEmail.ButtonText = "Kirim Email Customer";
+			this.btnSendEmail.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnSendEmail.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnSendEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSendEmail.IdleBorderThickness = 1;
+			this.btnSendEmail.IdleCornerRadius = 20;
+			this.btnSendEmail.IdleFillColor = System.Drawing.Color.White;
+			this.btnSendEmail.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSendEmail.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSendEmail.Location = new System.Drawing.Point(230, 48);
+			this.btnSendEmail.Margin = new System.Windows.Forms.Padding(4);
+			this.btnSendEmail.Name = "btnSendEmail";
+			this.btnSendEmail.Size = new System.Drawing.Size(175, 40);
+			this.btnSendEmail.TabIndex = 52;
+			this.btnSendEmail.TabStop = false;
+			this.btnSendEmail.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.btnSendEmail.Click += new System.EventHandler(this.btnSendEmail_Click);
+			// 
+			// btnSeenBill
+			// 
+			this.btnSeenBill.ActiveBorderThickness = 1;
+			this.btnSeenBill.ActiveCornerRadius = 20;
+			this.btnSeenBill.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSeenBill.ActiveForecolor = System.Drawing.Color.White;
+			this.btnSeenBill.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSeenBill.BackColor = System.Drawing.Color.White;
+			this.btnSeenBill.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSeenBill.BackgroundImage")));
+			this.btnSeenBill.ButtonText = "Detail Tagihan";
+			this.btnSeenBill.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnSeenBill.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnSeenBill.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSeenBill.IdleBorderThickness = 1;
+			this.btnSeenBill.IdleCornerRadius = 20;
+			this.btnSeenBill.IdleFillColor = System.Drawing.Color.White;
+			this.btnSeenBill.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSeenBill.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnSeenBill.Location = new System.Drawing.Point(34, 48);
+			this.btnSeenBill.Margin = new System.Windows.Forms.Padding(4);
+			this.btnSeenBill.Name = "btnSeenBill";
+			this.btnSeenBill.Size = new System.Drawing.Size(175, 40);
+			this.btnSeenBill.TabIndex = 51;
+			this.btnSeenBill.TabStop = false;
+			this.btnSeenBill.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.btnSeenBill.Click += new System.EventHandler(this.BtnSeenBill_Click);
 			// 
 			// label20
 			// 
@@ -663,86 +731,6 @@
 			this.label13.TabIndex = 74;
 			this.label13.Text = "Harga Awal:";
 			// 
-			// btnSeenBill
-			// 
-			this.btnSeenBill.ActiveBorderThickness = 1;
-			this.btnSeenBill.ActiveCornerRadius = 20;
-			this.btnSeenBill.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSeenBill.ActiveForecolor = System.Drawing.Color.White;
-			this.btnSeenBill.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSeenBill.BackColor = System.Drawing.Color.White;
-			this.btnSeenBill.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSeenBill.BackgroundImage")));
-			this.btnSeenBill.ButtonText = "Detail Tagihan";
-			this.btnSeenBill.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnSeenBill.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnSeenBill.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSeenBill.IdleBorderThickness = 1;
-			this.btnSeenBill.IdleCornerRadius = 20;
-			this.btnSeenBill.IdleFillColor = System.Drawing.Color.White;
-			this.btnSeenBill.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSeenBill.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSeenBill.Location = new System.Drawing.Point(34, 48);
-			this.btnSeenBill.Margin = new System.Windows.Forms.Padding(4);
-			this.btnSeenBill.Name = "btnSeenBill";
-			this.btnSeenBill.Size = new System.Drawing.Size(175, 40);
-			this.btnSeenBill.TabIndex = 51;
-			this.btnSeenBill.TabStop = false;
-			this.btnSeenBill.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.btnSeenBill.Click += new System.EventHandler(this.BtnSeenBill_Click);
-			// 
-			// btnSearch
-			// 
-			this.btnSearch.ActiveBorderThickness = 1;
-			this.btnSearch.ActiveCornerRadius = 20;
-			this.btnSearch.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSearch.ActiveForecolor = System.Drawing.Color.White;
-			this.btnSearch.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSearch.BackColor = System.Drawing.Color.White;
-			this.btnSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearch.BackgroundImage")));
-			this.btnSearch.ButtonText = "Cari";
-			this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSearch.IdleBorderThickness = 1;
-			this.btnSearch.IdleCornerRadius = 20;
-			this.btnSearch.IdleFillColor = System.Drawing.Color.White;
-			this.btnSearch.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSearch.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSearch.Location = new System.Drawing.Point(235, 71);
-			this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-			this.btnSearch.Name = "btnSearch";
-			this.btnSearch.Size = new System.Drawing.Size(175, 40);
-			this.btnSearch.TabIndex = 46;
-			this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.btnSearch.Click += new System.EventHandler(this.BtnSearch_Click);
-			// 
-			// btnCancel
-			// 
-			this.btnCancel.ActiveBorderThickness = 1;
-			this.btnCancel.ActiveCornerRadius = 20;
-			this.btnCancel.ActiveFillColor = System.Drawing.Color.Red;
-			this.btnCancel.ActiveForecolor = System.Drawing.Color.White;
-			this.btnCancel.ActiveLineColor = System.Drawing.Color.Red;
-			this.btnCancel.BackColor = System.Drawing.Color.White;
-			this.btnCancel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCancel.BackgroundImage")));
-			this.btnCancel.ButtonText = "Batalkan Pencarian";
-			this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnCancel.IdleBorderThickness = 1;
-			this.btnCancel.IdleCornerRadius = 20;
-			this.btnCancel.IdleFillColor = System.Drawing.Color.White;
-			this.btnCancel.IdleForecolor = System.Drawing.Color.Red;
-			this.btnCancel.IdleLineColor = System.Drawing.Color.Red;
-			this.btnCancel.Location = new System.Drawing.Point(235, 67);
-			this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-			this.btnCancel.Name = "btnCancel";
-			this.btnCancel.Size = new System.Drawing.Size(175, 40);
-			this.btnCancel.TabIndex = 49;
-			this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.btnCancel.Visible = false;
-			this.btnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
-			// 
 			// bunifuSeparator1
 			// 
 			this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
@@ -755,79 +743,91 @@
 			this.bunifuSeparator1.Location = new System.Drawing.Point(21, 46);
 			this.bunifuSeparator1.Name = "bunifuSeparator1";
 			this.bunifuSeparator1.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
-			this.bunifuSeparator1.Size = new System.Drawing.Size(1181, 15);
+			this.bunifuSeparator1.Size = new System.Drawing.Size(1341, 15);
 			this.bunifuSeparator1.TabIndex = 54;
 			// 
-			// bindingNavigatorMoveFirstItem
+			// colID
 			// 
-			this.bindingNavigatorMoveFirstItem.AutoSize = false;
-			this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-			this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-			this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-			this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(50, 22);
-			this.bindingNavigatorMoveFirstItem.Text = "Move first";
-			this.bindingNavigatorMoveFirstItem.ToolTipText = "Khách hàng đầu tiên";
+			this.colID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+			this.colID.DataPropertyName = "id";
+			this.colID.FillWeight = 30F;
+			this.colID.HeaderText = "Kode Tagihan";
+			this.colID.Name = "colID";
+			this.colID.ReadOnly = true;
+			this.colID.Width = 127;
 			// 
-			// bindingNavigatorMovePreviousItem
+			// colIdReciveRoom
 			// 
-			this.bindingNavigatorMovePreviousItem.AutoSize = false;
-			this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-			this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-			this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-			this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(50, 22);
-			this.bindingNavigatorMovePreviousItem.Text = "Move previous";
-			this.bindingNavigatorMovePreviousItem.ToolTipText = "Khách hàng trước đó";
+			this.colIdReciveRoom.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+			this.colIdReciveRoom.DataPropertyName = "roomName";
+			this.colIdReciveRoom.FillWeight = 30F;
+			this.colIdReciveRoom.HeaderText = "Nama Kamar";
+			this.colIdReciveRoom.Name = "colIdReciveRoom";
+			this.colIdReciveRoom.ReadOnly = true;
+			this.colIdReciveRoom.Width = 126;
 			// 
-			// bindingNavigatorMoveNextItem
+			// colCustomerName
 			// 
-			this.bindingNavigatorMoveNextItem.AutoSize = false;
-			this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-			this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-			this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-			this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(50, 22);
-			this.bindingNavigatorMoveNextItem.Text = "Move next";
-			this.bindingNavigatorMoveNextItem.ToolTipText = "Khách hàng kế tiếp";
+			this.colCustomerName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+			this.colCustomerName.DataPropertyName = "customername";
+			this.colCustomerName.HeaderText = "Nama Customer";
+			this.colCustomerName.Name = "colCustomerName";
+			this.colCustomerName.ReadOnly = true;
+			this.colCustomerName.Width = 149;
 			// 
-			// bindingNavigatorMoveLastItem
+			// colStaffsetUp
 			// 
-			this.bindingNavigatorMoveLastItem.AutoSize = false;
-			this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-			this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-			this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-			this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(50, 22);
-			this.bindingNavigatorMoveLastItem.Text = "Move last";
-			this.bindingNavigatorMoveLastItem.ToolTipText = "Khách hàng cuối cùng";
+			this.colStaffsetUp.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+			this.colStaffsetUp.DataPropertyName = "StaffSetUp";
+			this.colStaffsetUp.FillWeight = 30F;
+			this.colStaffsetUp.HeaderText = "Tanggal Dibuat";
+			this.colStaffsetUp.Name = "colStaffsetUp";
+			this.colStaffsetUp.ReadOnly = true;
+			this.colStaffsetUp.Visible = false;
+			this.colStaffsetUp.Width = 138;
 			// 
-			// btnSendEmail
+			// coldDateOfCreate
 			// 
-			this.btnSendEmail.ActiveBorderThickness = 1;
-			this.btnSendEmail.ActiveCornerRadius = 20;
-			this.btnSendEmail.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSendEmail.ActiveForecolor = System.Drawing.Color.White;
-			this.btnSendEmail.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSendEmail.BackColor = System.Drawing.Color.White;
-			this.btnSendEmail.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSendEmail.BackgroundImage")));
-			this.btnSendEmail.ButtonText = "Kirim Email Customer";
-			this.btnSendEmail.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnSendEmail.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnSendEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSendEmail.IdleBorderThickness = 1;
-			this.btnSendEmail.IdleCornerRadius = 20;
-			this.btnSendEmail.IdleFillColor = System.Drawing.Color.White;
-			this.btnSendEmail.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSendEmail.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSendEmail.Location = new System.Drawing.Point(230, 48);
-			this.btnSendEmail.Margin = new System.Windows.Forms.Padding(4);
-			this.btnSendEmail.Name = "btnSendEmail";
-			this.btnSendEmail.Size = new System.Drawing.Size(175, 40);
-			this.btnSendEmail.TabIndex = 52;
-			this.btnSendEmail.TabStop = false;
-			this.btnSendEmail.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.btnSendEmail.Click += new System.EventHandler(this.btnSendEmail_Click);
+			this.coldDateOfCreate.DataPropertyName = "DateOfCreate";
+			this.coldDateOfCreate.FillWeight = 30F;
+			this.coldDateOfCreate.HeaderText = "Status";
+			this.coldDateOfCreate.Name = "coldDateOfCreate";
+			this.coldDateOfCreate.ReadOnly = true;
+			// 
+			// colStatus
+			// 
+			this.colStatus.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+			this.colStatus.DataPropertyName = "name";
+			this.colStatus.HeaderText = "Status";
+			this.colStatus.Name = "colStatus";
+			this.colStatus.ReadOnly = true;
+			this.colStatus.Width = 77;
+			// 
+			// colPrice
+			// 
+			this.colPrice.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+			this.colPrice.DataPropertyName = "TotalPrice";
+			this.colPrice.FillWeight = 30F;
+			this.colPrice.HeaderText = "Harga Awal";
+			this.colPrice.Name = "colPrice";
+			this.colPrice.ReadOnly = true;
+			this.colPrice.Width = 115;
+			// 
+			// Column1
+			// 
+			this.Column1.DataPropertyName = "discount";
+			this.Column1.HeaderText = "Diskon";
+			this.Column1.Name = "Column1";
+			this.Column1.ReadOnly = true;
+			this.Column1.Width = 80;
+			// 
+			// Column2
+			// 
+			this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.Column2.DataPropertyName = "finalPrice";
+			this.Column2.HeaderText = "Harga Akhir";
+			this.Column2.Name = "Column2";
+			this.Column2.ReadOnly = true;
 			// 
 			// UC_Bill
 			// 
@@ -842,7 +842,7 @@
 			this.Controls.Add(this.groupBox1);
 			this.Controls.Add(this.groupCustomer);
 			this.Name = "UC_Bill";
-			this.Size = new System.Drawing.Size(1220, 745);
+			this.Size = new System.Drawing.Size(1383, 745);
 			this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FBill_KeyPress);
 			this.groupBox1.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.dataGridViewBill)).EndInit();
@@ -898,6 +898,7 @@
 		private Bunifu.Framework.UI.BunifuMetroTextbox txbPrice;
 		private System.Windows.Forms.Label label13;
 		private System.Windows.Forms.DataGridView dataGridViewBill;
+		private Bunifu.Framework.UI.BunifuThinButton2 btnSendEmail;
 		private System.Windows.Forms.DataGridViewTextBoxColumn colID;
 		private System.Windows.Forms.DataGridViewTextBoxColumn colIdReciveRoom;
 		private System.Windows.Forms.DataGridViewTextBoxColumn colCustomerName;
@@ -907,6 +908,5 @@
 		private System.Windows.Forms.DataGridViewTextBoxColumn colPrice;
 		private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
 		private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-		private Bunifu.Framework.UI.BunifuThinButton2 btnSendEmail;
 	}
 }

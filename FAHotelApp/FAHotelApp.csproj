@@ -168,8 +168,21 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
       <HintPath>..\..\dll\Microsoft.Office.Interop.Excel.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="S22.Imap">
+      <HintPath>..\..\dll\S22.Imap.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -203,6 +216,7 @@
     <Compile Include="DTO\Account.cs" />
     <Compile Include="DTO\AccountType.cs" />
     <Compile Include="DTO\Bill.cs" />
+    <Compile Include="DTO\ViewCustomer.cs" />
     <Compile Include="DTO\Customer.cs" />
     <Compile Include="DTO\CustomerType.cs" />
     <Compile Include="DTO\Parameter.cs" />
@@ -218,6 +232,12 @@
     </Compile>
     <Compile Include="Forms\FormAccess.Designer.cs">
       <DependentUpon>FormAccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormEmailManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormEmailManager.designer.cs">
+      <DependentUpon>FormEmailManager.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FormSendEmailCustomer.cs">
       <SubType>Form</SubType>
@@ -445,6 +465,9 @@
     </Compile>
     <EmbeddedResource Include="Forms\FormAccess.resx">
       <DependentUpon>FormAccess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormEmailManager.resx">
+      <DependentUpon>FormEmailManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormSendEmailCustomer.resx">
       <DependentUpon>FormSendEmailCustomer.cs</DependentUpon>
@@ -718,6 +741,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\exit_120px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\staff_120px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\service_120px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empty_bed_120pxR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empty_bed_120pxP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empty_bed_120pxPU.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email_open_120px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -67,7 +67,25 @@ namespace FAHotelApp.UC
 		}
 		private void ToolStripLabel1_Click(object sender, EventArgs e)
 		{
-
+			bool check;
+			if (saveRoom.ShowDialog() == DialogResult.Cancel)
+				return;
+			switch (saveRoom.FilterIndex)
+			{
+				case 2:
+					check = ExportToExcel.Instance.Export(dataGridViewRoom, saveRoom.FileName, ModeExportToExcel.XLSX);
+					break;
+				case 3:
+					check = ExportToExcel.Instance.Export(dataGridViewRoom, saveRoom.FileName, ModeExportToExcel.PDF);
+					break;
+				default:
+					check = ExportToExcel.Instance.Export(dataGridViewRoom, saveRoom.FileName, ModeExportToExcel.XLS);
+					break;
+			}
+			if (check)
+				MessageBox.Show("Ekspor Berhasil", "Pemberitahuan", MessageBoxButtons.OK, MessageBoxIcon.Information);
+			else
+				MessageBox.Show("Error (Harus Menginstall Office)", "Pemberitahuan", MessageBoxButtons.OK, MessageBoxIcon.Error);
 		}
 
 		#endregion
@@ -293,6 +311,5 @@ namespace FAHotelApp.UC
 			BtnCancel_Click(sender, null);
 		}
 		#endregion
-
 	}
 }

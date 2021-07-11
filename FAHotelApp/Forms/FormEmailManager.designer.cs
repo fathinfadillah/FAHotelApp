@@ -1,6 +1,6 @@
 ﻿namespace FAHotelApp.Forms
 {
-	partial class FormSendEmailCustomer
+	partial class FormEmailManager
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -29,7 +29,7 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSendEmailCustomer));
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEmailManager));
 			this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
 			this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
 			this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
@@ -52,11 +52,17 @@
 			this.epWarning = new System.Windows.Forms.ErrorProvider(this.components);
 			this.epWrong = new System.Windows.Forms.ErrorProvider(this.components);
 			this.epCorrect = new System.Windows.Forms.ErrorProvider(this.components);
+			this.groupBox1 = new System.Windows.Forms.GroupBox();
+			this.groupBox2 = new System.Windows.Forms.GroupBox();
+			this.btnReceive = new Guna.UI2.WinForms.Guna2Button();
+			this.rtxtReceive = new System.Windows.Forms.RichTextBox();
 			this.guna2Panel2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.epWarning)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.epWrong)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.epCorrect)).BeginInit();
+			this.groupBox1.SuspendLayout();
+			this.groupBox2.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// guna2Elipse1
@@ -73,25 +79,18 @@
 			// 
 			this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
 			this.guna2Panel2.Controls.Add(this.btnBack);
-			this.guna2Panel2.Controls.Add(this.btnBrowse);
-			this.guna2Panel2.Controls.Add(this.label3);
-			this.guna2Panel2.Controls.Add(this.txtSubject);
-			this.guna2Panel2.Controls.Add(this.label1);
-			this.guna2Panel2.Controls.Add(this.tsSubjectManual);
-			this.guna2Panel2.Controls.Add(this.cbSubject);
-			this.guna2Panel2.Controls.Add(this.txtBody);
+			this.guna2Panel2.Controls.Add(this.groupBox2);
+			this.guna2Panel2.Controls.Add(this.groupBox1);
 			this.guna2Panel2.Controls.Add(this.lbTime);
 			this.guna2Panel2.Controls.Add(this.lbDate);
 			this.guna2Panel2.Controls.Add(this.label5);
 			this.guna2Panel2.Controls.Add(this.label4);
-			this.guna2Panel2.Controls.Add(this.btnSend);
-			this.guna2Panel2.Controls.Add(this.txtEmailRecipient);
 			this.guna2Panel2.Controls.Add(this.guna2PictureBox1);
 			this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Left;
 			this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
 			this.guna2Panel2.Name = "guna2Panel2";
 			this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-			this.guna2Panel2.Size = new System.Drawing.Size(1040, 603);
+			this.guna2Panel2.Size = new System.Drawing.Size(1040, 895);
 			this.guna2Panel2.TabIndex = 5;
 			// 
 			// btnBack
@@ -107,7 +106,7 @@
 			this.btnBack.ForeColor = System.Drawing.Color.White;
 			this.btnBack.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
 			this.btnBack.HoverState.Parent = this.btnBack;
-			this.btnBack.Location = new System.Drawing.Point(121, 485);
+			this.btnBack.Location = new System.Drawing.Point(154, 819);
 			this.btnBack.Name = "btnBack";
 			this.btnBack.ShadowDecoration.Parent = this.btnBack;
 			this.btnBack.Size = new System.Drawing.Size(336, 39);
@@ -129,7 +128,7 @@
 			this.btnBrowse.ForeColor = System.Drawing.Color.White;
 			this.btnBrowse.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
 			this.btnBrowse.HoverState.Parent = this.btnBrowse;
-			this.btnBrowse.Location = new System.Drawing.Point(239, 393);
+			this.btnBrowse.Location = new System.Drawing.Point(151, 412);
 			this.btnBrowse.Name = "btnBrowse";
 			this.btnBrowse.ShadowDecoration.Parent = this.btnBrowse;
 			this.btnBrowse.Size = new System.Drawing.Size(108, 39);
@@ -143,7 +142,7 @@
 			this.label3.AutoSize = true;
 			this.label3.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label3.ForeColor = System.Drawing.Color.Black;
-			this.label3.Location = new System.Drawing.Point(118, 403);
+			this.label3.Location = new System.Drawing.Point(30, 422);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(108, 18);
 			this.label3.TabIndex = 28;
@@ -166,7 +165,7 @@
 			this.txtSubject.ForeColor = System.Drawing.Color.Black;
 			this.txtSubject.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(201)))), ((int)(((byte)(71)))));
 			this.txtSubject.HoverState.Parent = this.txtSubject;
-			this.txtSubject.Location = new System.Drawing.Point(121, 322);
+			this.txtSubject.Location = new System.Drawing.Point(33, 135);
 			this.txtSubject.Name = "txtSubject";
 			this.txtSubject.PasswordChar = '\0';
 			this.txtSubject.PlaceholderText = "Subjek";
@@ -180,7 +179,7 @@
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label1.ForeColor = System.Drawing.Color.Black;
-			this.label1.Location = new System.Drawing.Point(162, 366);
+			this.label1.Location = new System.Drawing.Point(74, 179);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(122, 15);
 			this.label1.TabIndex = 24;
@@ -195,7 +194,7 @@
 			this.tsSubjectManual.CheckedState.InnerBorderColor = System.Drawing.Color.White;
 			this.tsSubjectManual.CheckedState.InnerColor = System.Drawing.Color.White;
 			this.tsSubjectManual.CheckedState.Parent = this.tsSubjectManual;
-			this.tsSubjectManual.Location = new System.Drawing.Point(121, 364);
+			this.tsSubjectManual.Location = new System.Drawing.Point(33, 177);
 			this.tsSubjectManual.Name = "tsSubjectManual";
 			this.tsSubjectManual.ShadowDecoration.Parent = this.tsSubjectManual;
 			this.tsSubjectManual.Size = new System.Drawing.Size(35, 20);
@@ -225,7 +224,7 @@
             "Invoice Pembayaran",
             "Status Pembayaran"});
 			this.cbSubject.ItemsAppearance.Parent = this.cbSubject;
-			this.cbSubject.Location = new System.Drawing.Point(121, 280);
+			this.cbSubject.Location = new System.Drawing.Point(33, 93);
 			this.cbSubject.Name = "cbSubject";
 			this.cbSubject.ShadowDecoration.Parent = this.cbSubject;
 			this.cbSubject.Size = new System.Drawing.Size(336, 36);
@@ -249,7 +248,7 @@
 			this.txtBody.ForeColor = System.Drawing.Color.Black;
 			this.txtBody.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(201)))), ((int)(((byte)(71)))));
 			this.txtBody.HoverState.Parent = this.txtBody;
-			this.txtBody.Location = new System.Drawing.Point(591, 238);
+			this.txtBody.Location = new System.Drawing.Point(33, 203);
 			this.txtBody.Multiline = true;
 			this.txtBody.Name = "txtBody";
 			this.txtBody.PasswordChar = '\0';
@@ -292,9 +291,9 @@
 			this.label5.ForeColor = System.Drawing.Color.Black;
 			this.label5.Location = new System.Drawing.Point(118, 191);
 			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(504, 18);
+			this.label5.Size = new System.Drawing.Size(293, 18);
 			this.label5.TabIndex = 10;
-			this.label5.Text = "Silakan masukkan email pelanggan untuk memberitahukan informasi hotel\r\n";
+			this.label5.Text = "Silahkan mengisi email penerima dan isinya";
 			// 
 			// label4
 			// 
@@ -303,9 +302,9 @@
 			this.label4.ForeColor = System.Drawing.Color.Black;
 			this.label4.Location = new System.Drawing.Point(114, 138);
 			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(391, 40);
+			this.label4.Size = new System.Drawing.Size(102, 40);
 			this.label4.TabIndex = 9;
-			this.label4.Text = "Kirim Email ke Customer\r\n";
+			this.label4.Text = "Email\r\n";
 			// 
 			// btnSend
 			// 
@@ -320,7 +319,7 @@
 			this.btnSend.ForeColor = System.Drawing.Color.White;
 			this.btnSend.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
 			this.btnSend.HoverState.Parent = this.btnSend;
-			this.btnSend.Location = new System.Drawing.Point(591, 485);
+			this.btnSend.Location = new System.Drawing.Point(33, 479);
 			this.btnSend.Name = "btnSend";
 			this.btnSend.ShadowDecoration.Parent = this.btnSend;
 			this.btnSend.Size = new System.Drawing.Size(336, 39);
@@ -346,7 +345,7 @@
 			this.txtEmailRecipient.ForeColor = System.Drawing.Color.Black;
 			this.txtEmailRecipient.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(201)))), ((int)(((byte)(71)))));
 			this.txtEmailRecipient.HoverState.Parent = this.txtEmailRecipient;
-			this.txtEmailRecipient.Location = new System.Drawing.Point(121, 238);
+			this.txtEmailRecipient.Location = new System.Drawing.Point(33, 51);
 			this.txtEmailRecipient.Name = "txtEmailRecipient";
 			this.txtEmailRecipient.PasswordChar = '\0';
 			this.txtEmailRecipient.PlaceholderText = "Email Penerima";
@@ -389,15 +388,80 @@
 			this.epCorrect.ContainerControl = this;
 			this.epCorrect.Icon = ((System.Drawing.Icon)(resources.GetObject("epCorrect.Icon")));
 			// 
-			// FormSendEmailCustomer
+			// groupBox1
+			// 
+			this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+			this.groupBox1.Controls.Add(this.txtEmailRecipient);
+			this.groupBox1.Controls.Add(this.cbSubject);
+			this.groupBox1.Controls.Add(this.txtBody);
+			this.groupBox1.Controls.Add(this.btnBrowse);
+			this.groupBox1.Controls.Add(this.tsSubjectManual);
+			this.groupBox1.Controls.Add(this.label3);
+			this.groupBox1.Controls.Add(this.label1);
+			this.groupBox1.Controls.Add(this.btnSend);
+			this.groupBox1.Controls.Add(this.txtSubject);
+			this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F);
+			this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.groupBox1.Location = new System.Drawing.Point(121, 238);
+			this.groupBox1.Name = "groupBox1";
+			this.groupBox1.Size = new System.Drawing.Size(403, 545);
+			this.groupBox1.TabIndex = 76;
+			this.groupBox1.TabStop = false;
+			this.groupBox1.Text = "Kirim";
+			// 
+			// groupBox2
+			// 
+			this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+			this.groupBox2.Controls.Add(this.rtxtReceive);
+			this.groupBox2.Controls.Add(this.btnReceive);
+			this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 12F);
+			this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.groupBox2.Location = new System.Drawing.Point(560, 238);
+			this.groupBox2.Name = "groupBox2";
+			this.groupBox2.Size = new System.Drawing.Size(403, 545);
+			this.groupBox2.TabIndex = 77;
+			this.groupBox2.TabStop = false;
+			this.groupBox2.Text = "Terima";
+			// 
+			// btnReceive
+			// 
+			this.btnReceive.Animated = true;
+			this.btnReceive.BackColor = System.Drawing.Color.Transparent;
+			this.btnReceive.BorderRadius = 10;
+			this.btnReceive.CheckedState.Parent = this.btnReceive;
+			this.btnReceive.CustomImages.Parent = this.btnReceive;
+			this.btnReceive.DisabledState.Parent = this.btnReceive;
+			this.btnReceive.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnReceive.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnReceive.ForeColor = System.Drawing.Color.White;
+			this.btnReceive.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+			this.btnReceive.HoverState.Parent = this.btnReceive;
+			this.btnReceive.Location = new System.Drawing.Point(30, 479);
+			this.btnReceive.Name = "btnReceive";
+			this.btnReceive.ShadowDecoration.Parent = this.btnReceive;
+			this.btnReceive.Size = new System.Drawing.Size(336, 39);
+			this.btnReceive.TabIndex = 11;
+			this.btnReceive.Text = "Terima";
+			this.btnReceive.UseTransparentBackground = true;
+			this.btnReceive.Click += new System.EventHandler(this.btnReceive_Click);
+			// 
+			// rtxtReceive
+			// 
+			this.rtxtReceive.Location = new System.Drawing.Point(30, 51);
+			this.rtxtReceive.Name = "rtxtReceive";
+			this.rtxtReceive.Size = new System.Drawing.Size(336, 400);
+			this.rtxtReceive.TabIndex = 12;
+			this.rtxtReceive.Text = "";
+			// 
+			// FormEmailManager
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
-			this.ClientSize = new System.Drawing.Size(1040, 603);
+			this.ClientSize = new System.Drawing.Size(1040, 895);
 			this.Controls.Add(this.guna2Panel2);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-			this.Name = "FormSendEmailCustomer";
+			this.Name = "FormEmailManager";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Contact Admin";
 			this.Load += new System.EventHandler(this.FormContactAdmin_Load);
@@ -407,6 +471,9 @@
 			((System.ComponentModel.ISupportInitialize)(this.epWarning)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.epWrong)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.epCorrect)).EndInit();
+			this.groupBox1.ResumeLayout(false);
+			this.groupBox1.PerformLayout();
+			this.groupBox2.ResumeLayout(false);
 			this.ResumeLayout(false);
 
 		}
@@ -435,5 +502,9 @@
 		private Guna.UI2.WinForms.Guna2TextBox txtBody;
 		private Guna.UI2.WinForms.Guna2Button btnBrowse;
 		private Guna.UI2.WinForms.Guna2Button btnBack;
+		private System.Windows.Forms.GroupBox groupBox1;
+		private System.Windows.Forms.GroupBox groupBox2;
+		private Guna.UI2.WinForms.Guna2Button btnReceive;
+		private System.Windows.Forms.RichTextBox rtxtReceive;
 	}
 }
