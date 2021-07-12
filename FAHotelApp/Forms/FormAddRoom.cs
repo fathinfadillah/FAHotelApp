@@ -52,7 +52,7 @@ namespace FAHotelApp.Forms
 		{
 			if (!UC_Customer.CheckFillInText(new Control[] { txtNameRoom, cbRoomType }))
 			{
-				MessageBox.Show("Bukan Untuk Di", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				MessageBox.Show("Tidak Boleh Kosong", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				return;
 			}
 			try

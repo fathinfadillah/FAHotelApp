@@ -29,13 +29,13 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-			System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-			System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-			System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+			System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+			System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+			System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Dashboard));
 			this.label8 = new System.Windows.Forms.Label();
 			this.bindingReport = new System.Windows.Forms.BindingNavigator(this.components);
@@ -58,6 +58,11 @@
 			this.saveReport = new System.Windows.Forms.SaveFileDialog();
 			this.chartReport = new System.Windows.Forms.DataVisualization.Charting.Chart();
 			this.lbViewEmail = new System.Windows.Forms.Label();
+			this.bunifuPanel7 = new Bunifu.UI.WinForms.BunifuPanel();
+			this.pictureBox8 = new System.Windows.Forms.PictureBox();
+			this.lbPendapatan = new System.Windows.Forms.Label();
+			this.label11 = new System.Windows.Forms.Label();
+			this.bunifuShapes7 = new Bunifu.UI.WinForms.BunifuShapes();
 			this.pictureBox7 = new System.Windows.Forms.PictureBox();
 			this.btnSearch = new Bunifu.Framework.UI.BunifuThinButton2();
 			this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -102,6 +107,8 @@
 			this.groupBox3.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.numericYear)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.chartReport)).BeginInit();
+			this.bunifuPanel7.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
 			this.bunifuPanel6.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -123,7 +130,7 @@
 			this.label8.AutoSize = true;
 			this.label8.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.label8.Location = new System.Drawing.Point(81, 12);
+			this.label8.Location = new System.Drawing.Point(64, 12);
 			this.label8.Name = "label8";
 			this.label8.Size = new System.Drawing.Size(147, 37);
 			this.label8.TabIndex = 7;
@@ -200,7 +207,7 @@
 			this.groupBox1.Controls.Add(this.bindingReport);
 			this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.groupBox1.Location = new System.Drawing.Point(441, 442);
+			this.groupBox1.Location = new System.Drawing.Point(424, 442);
 			this.groupBox1.Name = "groupBox1";
 			this.groupBox1.Size = new System.Drawing.Size(393, 327);
 			this.groupBox1.TabIndex = 74;
@@ -213,14 +220,14 @@
 			this.dataGridReport.AllowUserToResizeRows = false;
 			this.dataGridReport.BackgroundColor = System.Drawing.Color.White;
 			this.dataGridReport.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.ActiveCaption;
-			dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dataGridReport.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+			dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+			dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dataGridReport.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
 			this.dataGridReport.ColumnHeadersHeight = 29;
 			this.dataGridReport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
 			this.dataGridReport.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -228,27 +235,27 @@
             this.col,
             this.colRevenue,
             this.colRate});
-			dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-			dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.dataGridReport.DefaultCellStyle = dataGridViewCellStyle5;
+			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+			dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.dataGridReport.DefaultCellStyle = dataGridViewCellStyle2;
 			this.dataGridReport.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.dataGridReport.GridColor = System.Drawing.Color.White;
 			this.dataGridReport.Location = new System.Drawing.Point(3, 64);
 			this.dataGridReport.Name = "dataGridReport";
 			this.dataGridReport.ReadOnly = true;
-			dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dataGridReport.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+			dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dataGridReport.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
 			this.dataGridReport.RowHeadersVisible = false;
 			this.dataGridReport.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
 			this.dataGridReport.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -306,7 +313,7 @@
 			this.groupBox3.Controls.Add(this.label9);
 			this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 12F);
 			this.groupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.groupBox3.Location = new System.Drawing.Point(81, 367);
+			this.groupBox3.Location = new System.Drawing.Point(64, 367);
 			this.groupBox3.Name = "groupBox3";
 			this.groupBox3.Size = new System.Drawing.Size(753, 69);
 			this.groupBox3.TabIndex = 75;
@@ -397,11 +404,11 @@
 			// chartReport
 			// 
 			this.chartReport.Anchor = System.Windows.Forms.AnchorStyles.Top;
-			chartArea2.Name = "ChartArea1";
-			this.chartReport.ChartAreas.Add(chartArea2);
-			legend2.Name = "Legend1";
-			this.chartReport.Legends.Add(legend2);
-			this.chartReport.Location = new System.Drawing.Point(81, 442);
+			chartArea1.Name = "ChartArea1";
+			this.chartReport.ChartAreas.Add(chartArea1);
+			legend1.Name = "Legend1";
+			this.chartReport.Legends.Add(legend1);
+			this.chartReport.Location = new System.Drawing.Point(64, 442);
 			this.chartReport.Name = "chartReport";
 			this.chartReport.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
 			this.chartReport.PaletteCustomColors = new System.Drawing.Color[] {
@@ -409,23 +416,23 @@
         System.Drawing.Color.Violet,
         System.Drawing.Color.DeepSkyBlue,
         System.Drawing.Color.LimeGreen};
-			series2.ChartArea = "ChartArea1";
-			series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-			series2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			series2.IsValueShownAsLabel = true;
-			series2.LabelFormat = "{0:0.##}%";
-			series2.Legend = "Legend1";
-			series2.Name = "s1";
-			series2.XValueMember = "name";
-			series2.YValueMembers = "rate";
-			this.chartReport.Series.Add(series2);
+			series1.ChartArea = "ChartArea1";
+			series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+			series1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			series1.IsValueShownAsLabel = true;
+			series1.LabelFormat = "{0:0.##}%";
+			series1.Legend = "Legend1";
+			series1.Name = "s1";
+			series1.XValueMember = "name";
+			series1.YValueMembers = "rate";
+			this.chartReport.Series.Add(series1);
 			this.chartReport.Size = new System.Drawing.Size(354, 327);
 			this.chartReport.TabIndex = 76;
 			this.chartReport.Text = "chart1";
-			title2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			title2.Name = "Title1";
-			title2.Text = "Tingkat pendapatan menurut tipe kamar";
-			this.chartReport.Titles.Add(title2);
+			title1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			title1.Name = "Title1";
+			title1.Text = "Tingkat pendapatan menurut tipe kamar";
+			this.chartReport.Titles.Add(title1);
 			// 
 			// lbViewEmail
 			// 
@@ -434,19 +441,88 @@
 			this.lbViewEmail.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.lbViewEmail.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lbViewEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.lbViewEmail.Location = new System.Drawing.Point(709, 19);
+			this.lbViewEmail.Location = new System.Drawing.Point(692, 19);
 			this.lbViewEmail.Name = "lbViewEmail";
 			this.lbViewEmail.Size = new System.Drawing.Size(58, 25);
 			this.lbViewEmail.TabIndex = 77;
 			this.lbViewEmail.Text = "Email";
 			this.lbViewEmail.Click += new System.EventHandler(this.lbViewEmail_Click);
 			// 
+			// bunifuPanel7
+			// 
+			this.bunifuPanel7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+			this.bunifuPanel7.BackgroundColor = System.Drawing.SystemColors.Control;
+			this.bunifuPanel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel7.BackgroundImage")));
+			this.bunifuPanel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.bunifuPanel7.BorderColor = System.Drawing.Color.Transparent;
+			this.bunifuPanel7.BorderRadius = 15;
+			this.bunifuPanel7.BorderThickness = 1;
+			this.bunifuPanel7.Controls.Add(this.pictureBox8);
+			this.bunifuPanel7.Controls.Add(this.lbPendapatan);
+			this.bunifuPanel7.Controls.Add(this.label11);
+			this.bunifuPanel7.Controls.Add(this.bunifuShapes7);
+			this.bunifuPanel7.Location = new System.Drawing.Point(64, 267);
+			this.bunifuPanel7.Name = "bunifuPanel7";
+			this.bunifuPanel7.ShowBorders = true;
+			this.bunifuPanel7.Size = new System.Drawing.Size(244, 85);
+			this.bunifuPanel7.TabIndex = 4;
+			// 
+			// pictureBox8
+			// 
+			this.pictureBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(50)))), ((int)(((byte)(65)))));
+			this.pictureBox8.Image = global::FAHotelApp.Properties.Resources.money_120px;
+			this.pictureBox8.Location = new System.Drawing.Point(34, 23);
+			this.pictureBox8.Name = "pictureBox8";
+			this.pictureBox8.Size = new System.Drawing.Size(39, 36);
+			this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox8.TabIndex = 1;
+			this.pictureBox8.TabStop = false;
+			// 
+			// lbPendapatan
+			// 
+			this.lbPendapatan.AutoSize = true;
+			this.lbPendapatan.BackColor = System.Drawing.Color.Transparent;
+			this.lbPendapatan.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbPendapatan.Location = new System.Drawing.Point(106, 22);
+			this.lbPendapatan.Name = "lbPendapatan";
+			this.lbPendapatan.Size = new System.Drawing.Size(131, 21);
+			this.lbPendapatan.TabIndex = 2;
+			this.lbPendapatan.Text = "countpendapatan";
+			// 
+			// label11
+			// 
+			this.label11.AutoSize = true;
+			this.label11.BackColor = System.Drawing.Color.Transparent;
+			this.label11.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.label11.Location = new System.Drawing.Point(106, 43);
+			this.label11.Name = "label11";
+			this.label11.Size = new System.Drawing.Size(87, 20);
+			this.label11.TabIndex = 1;
+			this.label11.Text = "Pendapatan";
+			// 
+			// bunifuShapes7
+			// 
+			this.bunifuShapes7.Angle = 0F;
+			this.bunifuShapes7.BackColor = System.Drawing.Color.Transparent;
+			this.bunifuShapes7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(50)))), ((int)(((byte)(65)))));
+			this.bunifuShapes7.BorderThickness = 0;
+			this.bunifuShapes7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(50)))), ((int)(((byte)(65)))));
+			this.bunifuShapes7.FillShape = true;
+			this.bunifuShapes7.Location = new System.Drawing.Point(24, 13);
+			this.bunifuShapes7.Name = "bunifuShapes7";
+			this.bunifuShapes7.Shape = Bunifu.UI.WinForms.BunifuShapes.Shapes.Circle;
+			this.bunifuShapes7.Sides = 5;
+			this.bunifuShapes7.Size = new System.Drawing.Size(59, 59);
+			this.bunifuShapes7.TabIndex = 0;
+			this.bunifuShapes7.Text = "bunifuShapes7";
+			// 
 			// pictureBox7
 			// 
 			this.pictureBox7.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.pictureBox7.BackColor = System.Drawing.Color.White;
 			this.pictureBox7.Image = global::FAHotelApp.Properties.Resources.email_open_120px;
-			this.pictureBox7.Location = new System.Drawing.Point(781, 13);
+			this.pictureBox7.Location = new System.Drawing.Point(764, 13);
 			this.pictureBox7.Name = "pictureBox7";
 			this.pictureBox7.Size = new System.Drawing.Size(39, 36);
 			this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -535,7 +611,7 @@
 			this.bunifuPanel6.Controls.Add(this.lbService);
 			this.bunifuPanel6.Controls.Add(this.label6);
 			this.bunifuPanel6.Controls.Add(this.bunifuShapes6);
-			this.bunifuPanel6.Location = new System.Drawing.Point(581, 85);
+			this.bunifuPanel6.Location = new System.Drawing.Point(564, 85);
 			this.bunifuPanel6.Name = "bunifuPanel6";
 			this.bunifuPanel6.ShowBorders = true;
 			this.bunifuPanel6.Size = new System.Drawing.Size(244, 85);
@@ -543,7 +619,7 @@
 			// 
 			// pictureBox6
 			// 
-			this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(209)))), ((int)(((byte)(0)))));
+			this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(50)))), ((int)(((byte)(65)))));
 			this.pictureBox6.Image = global::FAHotelApp.Properties.Resources.service_120px;
 			this.pictureBox6.Location = new System.Drawing.Point(34, 23);
 			this.pictureBox6.Name = "pictureBox6";
@@ -579,9 +655,9 @@
 			// 
 			this.bunifuShapes6.Angle = 0F;
 			this.bunifuShapes6.BackColor = System.Drawing.Color.Transparent;
-			this.bunifuShapes6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(209)))), ((int)(((byte)(0)))));
+			this.bunifuShapes6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(50)))), ((int)(((byte)(65)))));
 			this.bunifuShapes6.BorderThickness = 0;
-			this.bunifuShapes6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(209)))), ((int)(((byte)(0)))));
+			this.bunifuShapes6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(50)))), ((int)(((byte)(65)))));
 			this.bunifuShapes6.FillShape = true;
 			this.bunifuShapes6.Location = new System.Drawing.Point(24, 13);
 			this.bunifuShapes6.Name = "bunifuShapes6";
@@ -604,7 +680,7 @@
 			this.bunifuPanel5.Controls.Add(this.lbRoomAmount);
 			this.bunifuPanel5.Controls.Add(this.label4);
 			this.bunifuPanel5.Controls.Add(this.bunifuShapes5);
-			this.bunifuPanel5.Location = new System.Drawing.Point(581, 176);
+			this.bunifuPanel5.Location = new System.Drawing.Point(564, 176);
 			this.bunifuPanel5.Name = "bunifuPanel5";
 			this.bunifuPanel5.ShowBorders = true;
 			this.bunifuPanel5.Size = new System.Drawing.Size(244, 85);
@@ -670,7 +746,7 @@
 			this.bunifuSeparator1.LineColor = System.Drawing.Color.Silver;
 			this.bunifuSeparator1.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
 			this.bunifuSeparator1.LineThickness = 1;
-			this.bunifuSeparator1.Location = new System.Drawing.Point(81, 52);
+			this.bunifuSeparator1.Location = new System.Drawing.Point(64, 52);
 			this.bunifuSeparator1.Name = "bunifuSeparator1";
 			this.bunifuSeparator1.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
 			this.bunifuSeparator1.Size = new System.Drawing.Size(744, 15);
@@ -689,7 +765,7 @@
 			this.bunifuPanel4.Controls.Add(this.lbKamarTerisi);
 			this.bunifuPanel4.Controls.Add(this.label7);
 			this.bunifuPanel4.Controls.Add(this.bunifuShapes4);
-			this.bunifuPanel4.Location = new System.Drawing.Point(331, 176);
+			this.bunifuPanel4.Location = new System.Drawing.Point(314, 176);
 			this.bunifuPanel4.Name = "bunifuPanel4";
 			this.bunifuPanel4.ShowBorders = true;
 			this.bunifuPanel4.Size = new System.Drawing.Size(244, 85);
@@ -758,7 +834,7 @@
 			this.bunifuPanel3.Controls.Add(this.lbKamarTersedia);
 			this.bunifuPanel3.Controls.Add(this.label5);
 			this.bunifuPanel3.Controls.Add(this.bunifuShapes3);
-			this.bunifuPanel3.Location = new System.Drawing.Point(81, 176);
+			this.bunifuPanel3.Location = new System.Drawing.Point(64, 176);
 			this.bunifuPanel3.Name = "bunifuPanel3";
 			this.bunifuPanel3.ShowBorders = true;
 			this.bunifuPanel3.Size = new System.Drawing.Size(244, 85);
@@ -827,7 +903,7 @@
 			this.bunifuPanel2.Controls.Add(this.lbStaff);
 			this.bunifuPanel2.Controls.Add(this.label3);
 			this.bunifuPanel2.Controls.Add(this.bunifuShapes2);
-			this.bunifuPanel2.Location = new System.Drawing.Point(331, 85);
+			this.bunifuPanel2.Location = new System.Drawing.Point(314, 85);
 			this.bunifuPanel2.Name = "bunifuPanel2";
 			this.bunifuPanel2.ShowBorders = true;
 			this.bunifuPanel2.Size = new System.Drawing.Size(244, 85);
@@ -835,7 +911,7 @@
 			// 
 			// pictureBox2
 			// 
-			this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(255)))), ((int)(((byte)(211)))));
+			this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(50)))), ((int)(((byte)(65)))));
 			this.pictureBox2.Image = global::FAHotelApp.Properties.Resources.staff_120px;
 			this.pictureBox2.Location = new System.Drawing.Point(34, 23);
 			this.pictureBox2.Name = "pictureBox2";
@@ -871,9 +947,9 @@
 			// 
 			this.bunifuShapes2.Angle = 0F;
 			this.bunifuShapes2.BackColor = System.Drawing.Color.Transparent;
-			this.bunifuShapes2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(255)))), ((int)(((byte)(211)))));
+			this.bunifuShapes2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(50)))), ((int)(((byte)(65)))));
 			this.bunifuShapes2.BorderThickness = 0;
-			this.bunifuShapes2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(255)))), ((int)(((byte)(211)))));
+			this.bunifuShapes2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(50)))), ((int)(((byte)(65)))));
 			this.bunifuShapes2.FillShape = true;
 			this.bunifuShapes2.Location = new System.Drawing.Point(24, 13);
 			this.bunifuShapes2.Name = "bunifuShapes2";
@@ -896,7 +972,7 @@
 			this.bunifuPanel1.Controls.Add(this.lbCustomer);
 			this.bunifuPanel1.Controls.Add(this.label1);
 			this.bunifuPanel1.Controls.Add(this.bunifuShapes1);
-			this.bunifuPanel1.Location = new System.Drawing.Point(81, 85);
+			this.bunifuPanel1.Location = new System.Drawing.Point(64, 85);
 			this.bunifuPanel1.Name = "bunifuPanel1";
 			this.bunifuPanel1.ShowBorders = true;
 			this.bunifuPanel1.Size = new System.Drawing.Size(244, 85);
@@ -904,7 +980,7 @@
 			// 
 			// pictureBox1
 			// 
-			this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(50)))), ((int)(((byte)(65)))));
 			this.pictureBox1.Image = global::FAHotelApp.Properties.Resources.customer_120px;
 			this.pictureBox1.Location = new System.Drawing.Point(34, 23);
 			this.pictureBox1.Name = "pictureBox1";
@@ -940,9 +1016,9 @@
 			// 
 			this.bunifuShapes1.Angle = 0F;
 			this.bunifuShapes1.BackColor = System.Drawing.Color.Transparent;
-			this.bunifuShapes1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			this.bunifuShapes1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(50)))), ((int)(((byte)(65)))));
 			this.bunifuShapes1.BorderThickness = 0;
-			this.bunifuShapes1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			this.bunifuShapes1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(50)))), ((int)(((byte)(65)))));
 			this.bunifuShapes1.FillShape = true;
 			this.bunifuShapes1.Location = new System.Drawing.Point(24, 13);
 			this.bunifuShapes1.Name = "bunifuShapes1";
@@ -958,6 +1034,7 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.AutoScroll = true;
 			this.BackColor = System.Drawing.Color.White;
+			this.Controls.Add(this.bunifuPanel7);
 			this.Controls.Add(this.pictureBox7);
 			this.Controls.Add(this.lbViewEmail);
 			this.Controls.Add(this.chartReport);
@@ -973,7 +1050,7 @@
 			this.Controls.Add(this.bunifuPanel1);
 			this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.Name = "UC_Dashboard";
-			this.Size = new System.Drawing.Size(906, 697);
+			this.Size = new System.Drawing.Size(872, 697);
 			this.Load += new System.EventHandler(this.UC_Dashboard_Load);
 			((System.ComponentModel.ISupportInitialize)(this.bindingReport)).EndInit();
 			this.bindingReport.ResumeLayout(false);
@@ -984,6 +1061,9 @@
 			this.groupBox3.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.numericYear)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.chartReport)).EndInit();
+			this.bunifuPanel7.ResumeLayout(false);
+			this.bunifuPanel7.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
 			this.bunifuPanel6.ResumeLayout(false);
 			this.bunifuPanel6.PerformLayout();
@@ -1068,5 +1148,10 @@
 		private System.Windows.Forms.DataVisualization.Charting.Chart chartReport;
 		private System.Windows.Forms.Label lbViewEmail;
 		private System.Windows.Forms.PictureBox pictureBox7;
+		private Bunifu.UI.WinForms.BunifuPanel bunifuPanel7;
+		private System.Windows.Forms.PictureBox pictureBox8;
+		private System.Windows.Forms.Label lbPendapatan;
+		private System.Windows.Forms.Label label11;
+		private Bunifu.UI.WinForms.BunifuShapes bunifuShapes7;
 	}
 }

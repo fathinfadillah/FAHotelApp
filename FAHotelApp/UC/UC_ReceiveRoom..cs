@@ -67,7 +67,6 @@ namespace FAHotelApp.UC
 			CultureInfo cultureInfo = new CultureInfo("id-ID");
 			//txtPrice.Text = dataRow["Price"].ToString().ToString("c", cultureInfo);
 			decimal money = decimal.Parse(txtPrice.Text = dataRow["Price"].ToString());
-
 			txtPrice.Text = money.ToString("c");
 		}
 		public bool InsertReceiveRoom(int idBookRoom, int idRoom)

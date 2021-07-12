@@ -12,6 +12,7 @@ using FAHotelApp.DAO;
 using FAHotelApp.DTO;
 using System.Globalization;
 using FAHotelApp.UC;
+using System.Text.RegularExpressions;
 
 namespace FAHotelApp.Forms
 {
@@ -64,7 +65,7 @@ namespace FAHotelApp.Forms
 		}
 		//private void BtnAddRoomType_Click(object sender, EventArgs e)
 		//{
-		//    DialogResult result = MessageBox.Show( "Bạn có muốn thêm loại phòng mới?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
+		//    DialogResult result = MessageBox.Show( "Apakah Anda ingin menambahkan tipe kamar baru?", "Pemberitahuan", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
 		//    if(result == DialogResult.OK)
 		//        InsertRoomType();
 		//}
@@ -258,6 +259,25 @@ namespace FAHotelApp.Forms
 			LoadFullRoomType(GetSearchRoomType());
 		}
 
+		//public static string ToRupiah(this int angka)
+		//{
+		//	return String.Format(CultureInfo.CreateSpecificCulture("id-id"), "Rp. {0:N}", angka);
+		//}
+		/**
+		 * // Usage example: //
+		 * int angka = 10000000;
+		 * System.Console.WriteLine(angka.ToRupiah()); // -> Rp. 10.000.000
+		 */
+
+		//public static int ToAngka(this string rupiah)
+		//{
+		//	return int.Parse(Regex.Replace(rupiah, @",.*|\D", ""));
+		//}
+		/**
+		 * // Usage example: //
+		 * string rupiah = "Rp 10.000.123,00";
+		 * System.Console.WriteLine(rupiah.ToAngka()); // -> 10000123
+		 */
 		#endregion
 
 		#region Change
@@ -294,13 +314,12 @@ namespace FAHotelApp.Forms
 		private string IntToString(string text)
 		{
 			if (text == string.Empty)
-				return 0.ToString("Rp.", CultureInfo.CreateSpecificCulture("id-ID"));
+				return 0.ToString("c", CultureInfo.CreateSpecificCulture("id-ID"));
 			if (text.Contains(".") || text.Contains(" "))
 				return text;
 			else
-				return (int.Parse(text).ToString("Rp.", CultureInfo.CreateSpecificCulture("id-ID")));
+				return (int.Parse(text).ToString("c", CultureInfo.CreateSpecificCulture("id-ID")));
 		}
-
 		#endregion
 
 		#region Check Idigit
@@ -339,16 +358,11 @@ namespace FAHotelApp.Forms
 		}
 		private void TxtPrice_Leave(object sender, EventArgs e)
 		{
-			Double value;
-			if (Double.TryParse(txtPrice.Text, out value))
-				txtPrice.Text = string.Format("{0:n0}", int.Parse(txtPrice.Text));
+			int value;
+			if (int.TryParse(txtPrice.Text, out value))
+				txtPrice.Text = string.Format("{0:n}", int.Parse(txtPrice.Text));
 			else
 				txtPrice.Text = String.Empty;
-		}
-		private void TxtLimitPerson_Leave(object sender, EventArgs e)
-		{
-			if (txtLimitPerson.Text == string.Empty)
-				txtLimitPerson.Text = txtLimitPerson.Tag as String;
 		}
 		#endregion
 
@@ -356,7 +370,8 @@ namespace FAHotelApp.Forms
 		private void TxtPrice_Enter(object sender, EventArgs e)
 		{
 			txtPrice.Tag = txtPrice.Text;
-			txtPrice.Text = StringToInt(txtPrice.Text);
+			txtPrice.Text = "";
+			//txtPrice.Text = StringToInt(txtPrice.Text);
 		}
 		private void TxtName_Enter(object sender, EventArgs e)
 		{

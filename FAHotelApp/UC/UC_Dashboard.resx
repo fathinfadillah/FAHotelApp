@@ -173,9 +173,6 @@
   <metadata name="colRate.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="saveReport.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>155, 19</value>
-  </metadata>
   <data name="btnSearch.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAK8AAAAoCAYAAACIJ6oVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -189,6 +186,24 @@
         Bkp27lUE5RRkjhdv3p3lR6qz8q8YUMXLqsv9oPXm39ZnpHrhpg8TQjkBWcULBuFyxUKqE8JlceUSZtEW
         L1h5CbhccpOGjfmWFff/cNERLxgh2H2gdF7ZeTFTg8ZoUOZbXqB1uyzRNd6C0tmSeDT7LW8K+/gM6uF2
         T/lXY730jVeqM+NVWMarsIxXYRmvgkrpHzZLemtLWhcaAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <metadata name="saveReport.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>155, 19</value>
+  </metadata>
+  <data name="bunifuPanel7.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAPQAAABVCAYAAAB+b8m1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIJSURBVHhe7dchbhthFIVRw8DAQMPCLsGw0LAwsLAw0KxL
+        KOwysoTCwsLCQHuskQqnz85fuXL+SGWduT1XOooUvwn7NPHKzP6T7ff727IpO+Cf24zjeNfy/PvVg/eH
+        w+FHmYB5qT6f6udDy/X11eHtMAyP138AmJ/q9WtZt3xfTsywON+mabppCV9WH3y4OgQWoF7En1rGl9UH
+        ++tDYBlOX5dbyufvzuveEbAM1fCm5XwOets7ApahGv7Ycj4HvesdActwarjlLGhYOkFDEEFDEEFDEEFD
+        EEFDEEFDEEFDEEFDEEFDEEFDEEFDEEFDEEFDEEFDEEFDEEFDEEFDEEFDEEFDEEFDEEFDEEFDEEFDEEFD
+        EEFDEEFDEEFDEEFDEEFDEEFDEEFDEEFDEEFDEEFDEEFDEEFDEEFDEEFDEEFDEEFDEEFDEEFDEEFDEEFD
+        EEFDEEFDEEFDEEFDEEFDEEFDEEFDEEFDEEFDEEFDEEFDEEFDEEFDEEFDEEFDEEFDEEFDEEFDEEFDEEFD
+        EEFDkOug73tHwGI8tJzPQb/tHAALUQ1vW87Pq1/87B0C8zeO411L+XnDMHzuHQLzVu0+towvm6bppt7S
+        33sPAPNUzT69eDv/3um79Omg9yAwO/vyruXbXwV9W0df/ngImJnTv9mvvpl7q7DXZVt2wDxUzO+Px+Ob
+        lqmZ5W61+gWxVM4aMlaOmgAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="bunifuPanel6.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

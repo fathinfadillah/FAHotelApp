@@ -313,6 +313,16 @@ namespace FAHotelApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap money_120px {
+            get {
+                object obj = ResourceManager.GetObject("money_120px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap paycheque_120px {
             get {
                 object obj = ResourceManager.GetObject("paycheque_120px", resourceCulture);

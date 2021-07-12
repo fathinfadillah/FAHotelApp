@@ -29,10 +29,10 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormRoomType));
 			this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
 			this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
@@ -48,32 +48,32 @@
 			this.col = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.bindingRoomType = new System.Windows.Forms.BindingNavigator(this.components);
 			this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+			this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
+			this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
 			this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
 			this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
 			this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+			this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
+			this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
 			this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
 			this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
+			this.btnBack = new Bunifu.Framework.UI.BunifuThinButton2();
+			this.btnUpdate = new Bunifu.Framework.UI.BunifuThinButton2();
 			this.groupBox3 = new System.Windows.Forms.GroupBox();
 			this.txtSearch = new Bunifu.Framework.UI.BunifuMetroTextbox();
 			this.label5 = new System.Windows.Forms.Label();
+			this.btnSearch = new Bunifu.Framework.UI.BunifuThinButton2();
+			this.btnCancel = new Bunifu.Framework.UI.BunifuThinButton2();
 			this.groupRoomType = new System.Windows.Forms.GroupBox();
+			this.txtPrice = new Bunifu.Framework.UI.BunifuMetroTextbox();
 			this.cbID = new MetroFramework.Controls.MetroComboBox();
 			this.txtLimitPerson = new Bunifu.Framework.UI.BunifuMetroTextbox();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
-			this.txtPrice = new Bunifu.Framework.UI.BunifuMetroTextbox();
 			this.label4 = new System.Windows.Forms.Label();
 			this.txtName = new Bunifu.Framework.UI.BunifuMetroTextbox();
 			this.label16 = new System.Windows.Forms.Label();
-			this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-			this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
-			this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-			this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-			this.btnBack = new Bunifu.Framework.UI.BunifuThinButton2();
-			this.btnUpdate = new Bunifu.Framework.UI.BunifuThinButton2();
-			this.btnSearch = new Bunifu.Framework.UI.BunifuThinButton2();
-			this.btnCancel = new Bunifu.Framework.UI.BunifuThinButton2();
 			this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
 			this.groupBox1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridViewRoomType)).BeginInit();
@@ -143,14 +143,14 @@
 			this.dataGridViewRoomType.AllowUserToResizeRows = false;
 			this.dataGridViewRoomType.BackgroundColor = System.Drawing.Color.White;
 			this.dataGridViewRoomType.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F);
-			dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dataGridViewRoomType.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+			dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 12F);
+			dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dataGridViewRoomType.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
 			this.dataGridViewRoomType.ColumnHeadersHeight = 29;
 			this.dataGridViewRoomType.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
 			this.dataGridViewRoomType.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -159,31 +159,31 @@
             this.colLimitPerson,
             this.colPrice,
             this.col});
-			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-			dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F);
-			dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.dataGridViewRoomType.DefaultCellStyle = dataGridViewCellStyle2;
+			dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+			dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 12F);
+			dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.dataGridViewRoomType.DefaultCellStyle = dataGridViewCellStyle6;
 			this.dataGridViewRoomType.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.dataGridViewRoomType.GridColor = System.Drawing.Color.White;
 			this.dataGridViewRoomType.Location = new System.Drawing.Point(3, 68);
 			this.dataGridViewRoomType.Name = "dataGridViewRoomType";
 			this.dataGridViewRoomType.ReadOnly = true;
-			dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F);
-			dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dataGridViewRoomType.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+			dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 12F);
+			dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dataGridViewRoomType.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
 			this.dataGridViewRoomType.RowHeadersVisible = false;
-			dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.dataGridViewRoomType.RowsDefaultCellStyle = dataGridViewCellStyle4;
+			dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.dataGridViewRoomType.RowsDefaultCellStyle = dataGridViewCellStyle8;
 			this.dataGridViewRoomType.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
 			this.dataGridViewRoomType.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.dataGridViewRoomType.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -273,6 +273,26 @@
 			this.bindingNavigatorCountItem.Text = "dari {0}";
 			this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
 			// 
+			// bindingNavigatorMoveFirstItem
+			// 
+			this.bindingNavigatorMoveFirstItem.AutoSize = false;
+			this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
+			this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
+			this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
+			this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(40, 40);
+			this.bindingNavigatorMoveFirstItem.Text = "Move first";
+			// 
+			// bindingNavigatorMovePreviousItem
+			// 
+			this.bindingNavigatorMovePreviousItem.AutoSize = false;
+			this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
+			this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
+			this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+			this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(40, 40);
+			this.bindingNavigatorMovePreviousItem.Text = "Move previous";
+			// 
 			// bindingNavigatorSeparator
 			// 
 			this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
@@ -291,6 +311,26 @@
 			// 
 			this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
 			this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 43);
+			// 
+			// bindingNavigatorMoveNextItem
+			// 
+			this.bindingNavigatorMoveNextItem.AutoSize = false;
+			this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
+			this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
+			this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
+			this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(40, 40);
+			this.bindingNavigatorMoveNextItem.Text = "Move next";
+			// 
+			// bindingNavigatorMoveLastItem
+			// 
+			this.bindingNavigatorMoveLastItem.AutoSize = false;
+			this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
+			this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
+			this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
+			this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(40, 40);
+			this.bindingNavigatorMoveLastItem.Text = "Move last";
 			// 
 			// bindingNavigatorSeparator2
 			// 
@@ -317,234 +357,6 @@
 			this.groupBox2.TabIndex = 22;
 			this.groupBox2.TabStop = false;
 			this.groupBox2.Text = "Fungsi";
-			// 
-			// groupBox3
-			// 
-			this.groupBox3.Controls.Add(this.txtSearch);
-			this.groupBox3.Controls.Add(this.label5);
-			this.groupBox3.Controls.Add(this.btnSearch);
-			this.groupBox3.Controls.Add(this.btnCancel);
-			this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 12F);
-			this.groupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.groupBox3.Location = new System.Drawing.Point(15, 73);
-			this.groupBox3.Name = "groupBox3";
-			this.groupBox3.Size = new System.Drawing.Size(239, 180);
-			this.groupBox3.TabIndex = 19;
-			this.groupBox3.TabStop = false;
-			this.groupBox3.Text = "Cari";
-			// 
-			// txtSearch
-			// 
-			this.txtSearch.BackColor = System.Drawing.Color.White;
-			this.txtSearch.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.txtSearch.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.txtSearch.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.txtSearch.BorderThickness = 1;
-			this.txtSearch.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-			this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.txtSearch.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-			this.txtSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.txtSearch.isPassword = false;
-			this.txtSearch.Location = new System.Drawing.Point(34, 63);
-			this.txtSearch.Margin = new System.Windows.Forms.Padding(5);
-			this.txtSearch.MaxLength = 32767;
-			this.txtSearch.Name = "txtSearch";
-			this.txtSearch.Size = new System.Drawing.Size(175, 29);
-			this.txtSearch.TabIndex = 0;
-			this.txtSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-			this.txtSearch.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtSearch_KeyPress);
-			// 
-			// label5
-			// 
-			this.label5.AutoSize = true;
-			this.label5.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-			this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.label5.Location = new System.Drawing.Point(30, 37);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(173, 20);
-			this.label5.TabIndex = 28;
-			this.label5.Text = "Kode/Nama Tipe Kamar:";
-			// 
-			// groupRoomType
-			// 
-			this.groupRoomType.Controls.Add(this.cbID);
-			this.groupRoomType.Controls.Add(this.txtLimitPerson);
-			this.groupRoomType.Controls.Add(this.label2);
-			this.groupRoomType.Controls.Add(this.label3);
-			this.groupRoomType.Controls.Add(this.txtPrice);
-			this.groupRoomType.Controls.Add(this.label4);
-			this.groupRoomType.Controls.Add(this.txtName);
-			this.groupRoomType.Controls.Add(this.label16);
-			this.groupRoomType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.groupRoomType.Font = new System.Drawing.Font("Segoe UI", 12F);
-			this.groupRoomType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.groupRoomType.Location = new System.Drawing.Point(15, 273);
-			this.groupRoomType.Name = "groupRoomType";
-			this.groupRoomType.Size = new System.Drawing.Size(239, 334);
-			this.groupRoomType.TabIndex = 20;
-			this.groupRoomType.TabStop = false;
-			this.groupRoomType.Text = "Informasi Tipe Kamar";
-			// 
-			// cbID
-			// 
-			this.cbID.FormattingEnabled = true;
-			this.cbID.ItemHeight = 23;
-			this.cbID.Location = new System.Drawing.Point(32, 55);
-			this.cbID.Name = "cbID";
-			this.cbID.Size = new System.Drawing.Size(175, 29);
-			this.cbID.Style = MetroFramework.MetroColorStyle.Yellow;
-			this.cbID.TabIndex = 30;
-			this.cbID.UseSelectable = true;
-			// 
-			// txtLimitPerson
-			// 
-			this.txtLimitPerson.BackColor = System.Drawing.Color.White;
-			this.txtLimitPerson.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.txtLimitPerson.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.txtLimitPerson.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.txtLimitPerson.BorderThickness = 1;
-			this.txtLimitPerson.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-			this.txtLimitPerson.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.txtLimitPerson.Enabled = false;
-			this.txtLimitPerson.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtLimitPerson.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.txtLimitPerson.isPassword = false;
-			this.txtLimitPerson.Location = new System.Drawing.Point(32, 200);
-			this.txtLimitPerson.Margin = new System.Windows.Forms.Padding(0);
-			this.txtLimitPerson.MaxLength = 32767;
-			this.txtLimitPerson.Name = "txtLimitPerson";
-			this.txtLimitPerson.Size = new System.Drawing.Size(175, 29);
-			this.txtLimitPerson.TabIndex = 29;
-			this.txtLimitPerson.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-			// 
-			// label2
-			// 
-			this.label2.AutoSize = true;
-			this.label2.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-			this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.label2.Location = new System.Drawing.Point(30, 180);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(179, 20);
-			this.label2.TabIndex = 28;
-			this.label2.Text = "Jumlah Maksimum Orang:";
-			// 
-			// label3
-			// 
-			this.label3.AutoSize = true;
-			this.label3.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-			this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.label3.Location = new System.Drawing.Point(32, 253);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(53, 20);
-			this.label3.TabIndex = 26;
-			this.label3.Text = "Harga:";
-			// 
-			// txtPrice
-			// 
-			this.txtPrice.BackColor = System.Drawing.Color.White;
-			this.txtPrice.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.txtPrice.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.txtPrice.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.txtPrice.BorderThickness = 1;
-			this.txtPrice.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-			this.txtPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.txtPrice.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.txtPrice.isPassword = false;
-			this.txtPrice.Location = new System.Drawing.Point(32, 273);
-			this.txtPrice.Margin = new System.Windows.Forms.Padding(0);
-			this.txtPrice.MaxLength = 32767;
-			this.txtPrice.Name = "txtPrice";
-			this.txtPrice.Size = new System.Drawing.Size(175, 29);
-			this.txtPrice.TabIndex = 2;
-			this.txtPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-			this.txtPrice.Enter += new System.EventHandler(this.TxtPrice_Enter);
-			this.txtPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtPrice_KeyPress);
-			this.txtPrice.Leave += new System.EventHandler(this.TxtPrice_Leave);
-			// 
-			// label4
-			// 
-			this.label4.AutoSize = true;
-			this.label4.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-			this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.label4.Location = new System.Drawing.Point(32, 104);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(132, 20);
-			this.label4.TabIndex = 24;
-			this.label4.Text = "Nama Tipe Kamar:";
-			// 
-			// txtName
-			// 
-			this.txtName.BackColor = System.Drawing.Color.White;
-			this.txtName.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.txtName.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.txtName.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.txtName.BorderThickness = 1;
-			this.txtName.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-			this.txtName.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.txtName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.txtName.isPassword = false;
-			this.txtName.Location = new System.Drawing.Point(32, 127);
-			this.txtName.Margin = new System.Windows.Forms.Padding(0);
-			this.txtName.MaxLength = 32767;
-			this.txtName.Name = "txtName";
-			this.txtName.Size = new System.Drawing.Size(175, 29);
-			this.txtName.TabIndex = 0;
-			this.txtName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-			this.txtName.Enter += new System.EventHandler(this.TxtName_Enter);
-			this.txtName.Leave += new System.EventHandler(this.TxtName_Leave);
-			// 
-			// label16
-			// 
-			this.label16.AutoSize = true;
-			this.label16.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-			this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.label16.Location = new System.Drawing.Point(32, 32);
-			this.label16.Name = "label16";
-			this.label16.Size = new System.Drawing.Size(94, 20);
-			this.label16.TabIndex = 22;
-			this.label16.Text = "Kode Kamar:";
-			// 
-			// bindingNavigatorMoveFirstItem
-			// 
-			this.bindingNavigatorMoveFirstItem.AutoSize = false;
-			this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-			this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-			this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-			this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(40, 40);
-			this.bindingNavigatorMoveFirstItem.Text = "Move first";
-			// 
-			// bindingNavigatorMovePreviousItem
-			// 
-			this.bindingNavigatorMovePreviousItem.AutoSize = false;
-			this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-			this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-			this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-			this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(40, 40);
-			this.bindingNavigatorMovePreviousItem.Text = "Move previous";
-			// 
-			// bindingNavigatorMoveNextItem
-			// 
-			this.bindingNavigatorMoveNextItem.AutoSize = false;
-			this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-			this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-			this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-			this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(40, 40);
-			this.bindingNavigatorMoveNextItem.Text = "Move next";
-			// 
-			// bindingNavigatorMoveLastItem
-			// 
-			this.bindingNavigatorMoveLastItem.AutoSize = false;
-			this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-			this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-			this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-			this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(40, 40);
-			this.bindingNavigatorMoveLastItem.Text = "Move last";
 			// 
 			// btnBack
 			// 
@@ -600,6 +412,53 @@
 			this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			this.btnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
 			// 
+			// groupBox3
+			// 
+			this.groupBox3.Controls.Add(this.txtSearch);
+			this.groupBox3.Controls.Add(this.label5);
+			this.groupBox3.Controls.Add(this.btnSearch);
+			this.groupBox3.Controls.Add(this.btnCancel);
+			this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 12F);
+			this.groupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.groupBox3.Location = new System.Drawing.Point(15, 73);
+			this.groupBox3.Name = "groupBox3";
+			this.groupBox3.Size = new System.Drawing.Size(239, 180);
+			this.groupBox3.TabIndex = 19;
+			this.groupBox3.TabStop = false;
+			this.groupBox3.Text = "Cari";
+			// 
+			// txtSearch
+			// 
+			this.txtSearch.BackColor = System.Drawing.Color.White;
+			this.txtSearch.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.txtSearch.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.txtSearch.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.txtSearch.BorderThickness = 1;
+			this.txtSearch.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.txtSearch.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+			this.txtSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.txtSearch.isPassword = false;
+			this.txtSearch.Location = new System.Drawing.Point(34, 63);
+			this.txtSearch.Margin = new System.Windows.Forms.Padding(5);
+			this.txtSearch.MaxLength = 32767;
+			this.txtSearch.Name = "txtSearch";
+			this.txtSearch.Size = new System.Drawing.Size(175, 29);
+			this.txtSearch.TabIndex = 0;
+			this.txtSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtSearch.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtSearch_KeyPress);
+			// 
+			// label5
+			// 
+			this.label5.AutoSize = true;
+			this.label5.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+			this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.label5.Location = new System.Drawing.Point(30, 37);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(173, 20);
+			this.label5.TabIndex = 28;
+			this.label5.Text = "Kode/Nama Tipe Kamar:";
+			// 
 			// btnSearch
 			// 
 			this.btnSearch.ActiveBorderThickness = 1;
@@ -653,6 +512,147 @@
 			this.btnCancel.Visible = false;
 			this.btnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
 			// 
+			// groupRoomType
+			// 
+			this.groupRoomType.Controls.Add(this.txtPrice);
+			this.groupRoomType.Controls.Add(this.cbID);
+			this.groupRoomType.Controls.Add(this.txtLimitPerson);
+			this.groupRoomType.Controls.Add(this.label2);
+			this.groupRoomType.Controls.Add(this.label3);
+			this.groupRoomType.Controls.Add(this.label4);
+			this.groupRoomType.Controls.Add(this.txtName);
+			this.groupRoomType.Controls.Add(this.label16);
+			this.groupRoomType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.groupRoomType.Font = new System.Drawing.Font("Segoe UI", 12F);
+			this.groupRoomType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.groupRoomType.Location = new System.Drawing.Point(15, 273);
+			this.groupRoomType.Name = "groupRoomType";
+			this.groupRoomType.Size = new System.Drawing.Size(239, 334);
+			this.groupRoomType.TabIndex = 20;
+			this.groupRoomType.TabStop = false;
+			this.groupRoomType.Text = "Informasi Tipe Kamar";
+			// 
+			// txtPrice
+			// 
+			this.txtPrice.BackColor = System.Drawing.Color.White;
+			this.txtPrice.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.txtPrice.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.txtPrice.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.txtPrice.BorderThickness = 1;
+			this.txtPrice.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.txtPrice.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.txtPrice.isPassword = false;
+			this.txtPrice.Location = new System.Drawing.Point(32, 273);
+			this.txtPrice.Margin = new System.Windows.Forms.Padding(0);
+			this.txtPrice.MaxLength = 32767;
+			this.txtPrice.Name = "txtPrice";
+			this.txtPrice.Size = new System.Drawing.Size(175, 29);
+			this.txtPrice.TabIndex = 31;
+			this.txtPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtPrice.Enter += new System.EventHandler(this.TxtPrice_Enter);
+			this.txtPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtPrice_KeyPress);
+			this.txtPrice.Leave += new System.EventHandler(this.TxtPrice_Leave);
+			// 
+			// cbID
+			// 
+			this.cbID.FormattingEnabled = true;
+			this.cbID.ItemHeight = 23;
+			this.cbID.Location = new System.Drawing.Point(32, 55);
+			this.cbID.Name = "cbID";
+			this.cbID.Size = new System.Drawing.Size(175, 29);
+			this.cbID.Style = MetroFramework.MetroColorStyle.Yellow;
+			this.cbID.TabIndex = 30;
+			this.cbID.UseSelectable = true;
+			// 
+			// txtLimitPerson
+			// 
+			this.txtLimitPerson.BackColor = System.Drawing.Color.White;
+			this.txtLimitPerson.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.txtLimitPerson.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.txtLimitPerson.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.txtLimitPerson.BorderThickness = 1;
+			this.txtLimitPerson.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtLimitPerson.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.txtLimitPerson.Enabled = false;
+			this.txtLimitPerson.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtLimitPerson.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.txtLimitPerson.isPassword = false;
+			this.txtLimitPerson.Location = new System.Drawing.Point(32, 200);
+			this.txtLimitPerson.Margin = new System.Windows.Forms.Padding(0);
+			this.txtLimitPerson.MaxLength = 32767;
+			this.txtLimitPerson.Name = "txtLimitPerson";
+			this.txtLimitPerson.Size = new System.Drawing.Size(175, 29);
+			this.txtLimitPerson.TabIndex = 29;
+			this.txtLimitPerson.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			// 
+			// label2
+			// 
+			this.label2.AutoSize = true;
+			this.label2.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+			this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.label2.Location = new System.Drawing.Point(30, 180);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(179, 20);
+			this.label2.TabIndex = 28;
+			this.label2.Text = "Jumlah Maksimum Orang:";
+			// 
+			// label3
+			// 
+			this.label3.AutoSize = true;
+			this.label3.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+			this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.label3.Location = new System.Drawing.Point(32, 253);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(53, 20);
+			this.label3.TabIndex = 26;
+			this.label3.Text = "Harga:";
+			// 
+			// label4
+			// 
+			this.label4.AutoSize = true;
+			this.label4.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+			this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.label4.Location = new System.Drawing.Point(32, 104);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(132, 20);
+			this.label4.TabIndex = 24;
+			this.label4.Text = "Nama Tipe Kamar:";
+			// 
+			// txtName
+			// 
+			this.txtName.BackColor = System.Drawing.Color.White;
+			this.txtName.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.txtName.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.txtName.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.txtName.BorderThickness = 1;
+			this.txtName.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtName.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.txtName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.txtName.isPassword = false;
+			this.txtName.Location = new System.Drawing.Point(32, 127);
+			this.txtName.Margin = new System.Windows.Forms.Padding(0);
+			this.txtName.MaxLength = 32767;
+			this.txtName.Name = "txtName";
+			this.txtName.Size = new System.Drawing.Size(175, 29);
+			this.txtName.TabIndex = 0;
+			this.txtName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtName.Enter += new System.EventHandler(this.TxtName_Enter);
+			this.txtName.Leave += new System.EventHandler(this.TxtName_Leave);
+			// 
+			// label16
+			// 
+			this.label16.AutoSize = true;
+			this.label16.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+			this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.label16.Location = new System.Drawing.Point(32, 32);
+			this.label16.Name = "label16";
+			this.label16.Size = new System.Drawing.Size(94, 20);
+			this.label16.TabIndex = 22;
+			this.label16.Text = "Kode Kamar:";
+			// 
 			// bunifuSeparator1
 			// 
 			this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
@@ -673,7 +673,7 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
-			this.ClientSize = new System.Drawing.Size(1149, 788);
+			this.ClientSize = new System.Drawing.Size(1149, 808);
 			this.Controls.Add(this.groupBox1);
 			this.Controls.Add(this.groupBox2);
 			this.Controls.Add(this.groupBox3);

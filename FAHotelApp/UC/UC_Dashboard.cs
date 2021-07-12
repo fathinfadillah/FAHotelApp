@@ -31,6 +31,7 @@ namespace FAHotelApp.UC
 			LoadViewRoomNotAvailable();
 			LoadViewRoom();
 			LoadViewService();
+			LoadTotalIncome();
 			dataGridReport.Font = new System.Drawing.Font("Segoe UI", 9.75F);
 		}
 
@@ -168,6 +169,28 @@ namespace FAHotelApp.UC
 				while (rdr.Read())
 				{
 					lbService.Text = rdr["ServiceAmount"].ToString();
+				}
+				rdr.Close();
+				connection.Close();
+
+			}
+		}
+
+		private void LoadTotalIncome()
+		{
+			string query = "select * from ViewTotalIncome";
+
+			using (SqlConnection connection = new SqlConnection(connectionString))
+			using (SqlCommand command = new SqlCommand(query, connection))
+			using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+			{
+				connection.Open();
+				SqlDataReader rdr = command.ExecuteReader();
+
+				while (rdr.Read())
+				{
+					decimal money = decimal.Parse(lbPendapatan.Text = rdr["TotalIncome"].ToString());
+					lbPendapatan.Text = money.ToString("c", CultureInfo.CreateSpecificCulture("id-ID"));
 				}
 				rdr.Close();
 				connection.Close();

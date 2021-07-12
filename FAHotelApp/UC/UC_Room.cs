@@ -44,7 +44,6 @@ namespace FAHotelApp.UC
 		}
 		private void BtnRoomType_Click(object sender, EventArgs e)
 		{
-			this.Hide();
 			_FormRoomtType.ShowDialog();
 			LoadFullRoom(GetFullRoom());
 			cbRoomType.DataSource = _FormRoomtType.TableRoomType;
