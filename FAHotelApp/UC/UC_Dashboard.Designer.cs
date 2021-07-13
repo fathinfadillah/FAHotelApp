@@ -29,6 +29,7 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Dashboard));
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -36,13 +37,16 @@
 			System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
 			System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
 			System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Dashboard));
 			this.label8 = new System.Windows.Forms.Label();
 			this.bindingReport = new System.Windows.Forms.BindingNavigator(this.components);
 			this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+			this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
+			this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
 			this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
 			this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
 			this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+			this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
+			this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
 			this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
 			this.dataGridReport = new System.Windows.Forms.DataGridView();
@@ -52,6 +56,7 @@
 			this.colRate = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.groupBox3 = new System.Windows.Forms.GroupBox();
 			this.label2 = new System.Windows.Forms.Label();
+			this.btnViewReport = new Bunifu.Framework.UI.BunifuThinButton2();
 			this.numericYear = new System.Windows.Forms.NumericUpDown();
 			this.comboBoxMonth = new MetroFramework.Controls.MetroComboBox();
 			this.label9 = new System.Windows.Forms.Label();
@@ -64,11 +69,6 @@
 			this.label11 = new System.Windows.Forms.Label();
 			this.bunifuShapes7 = new Bunifu.UI.WinForms.BunifuShapes();
 			this.pictureBox7 = new System.Windows.Forms.PictureBox();
-			this.btnSearch = new Bunifu.Framework.UI.BunifuThinButton2();
-			this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-			this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
-			this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-			this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
 			this.bunifuPanel6 = new Bunifu.UI.WinForms.BunifuPanel();
 			this.pictureBox6 = new System.Windows.Forms.PictureBox();
 			this.lbService = new System.Windows.Forms.Label();
@@ -130,7 +130,7 @@
 			this.label8.AutoSize = true;
 			this.label8.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.label8.Location = new System.Drawing.Point(64, 12);
+			this.label8.Location = new System.Drawing.Point(55, 12);
 			this.label8.Name = "label8";
 			this.label8.Size = new System.Drawing.Size(147, 37);
 			this.label8.TabIndex = 7;
@@ -174,6 +174,28 @@
 			this.bindingNavigatorCountItem.Text = "Dari {0}";
 			this.bindingNavigatorCountItem.ToolTipText = "Tổng số khách hàng";
 			// 
+			// bindingNavigatorMoveFirstItem
+			// 
+			this.bindingNavigatorMoveFirstItem.AutoSize = false;
+			this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
+			this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
+			this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
+			this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(50, 22);
+			this.bindingNavigatorMoveFirstItem.Text = "Move first";
+			this.bindingNavigatorMoveFirstItem.ToolTipText = "Khách hàng đầu tiên";
+			// 
+			// bindingNavigatorMovePreviousItem
+			// 
+			this.bindingNavigatorMovePreviousItem.AutoSize = false;
+			this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
+			this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
+			this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+			this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(50, 22);
+			this.bindingNavigatorMovePreviousItem.Text = "Move previous";
+			this.bindingNavigatorMovePreviousItem.ToolTipText = "Khách hàng trước đó";
+			// 
 			// bindingNavigatorSeparator
 			// 
 			this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
@@ -193,6 +215,28 @@
 			this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
 			this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 43);
 			// 
+			// bindingNavigatorMoveNextItem
+			// 
+			this.bindingNavigatorMoveNextItem.AutoSize = false;
+			this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
+			this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
+			this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
+			this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(50, 22);
+			this.bindingNavigatorMoveNextItem.Text = "Move next";
+			this.bindingNavigatorMoveNextItem.ToolTipText = "Khách hàng kế tiếp";
+			// 
+			// bindingNavigatorMoveLastItem
+			// 
+			this.bindingNavigatorMoveLastItem.AutoSize = false;
+			this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
+			this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
+			this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
+			this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(50, 22);
+			this.bindingNavigatorMoveLastItem.Text = "Move last";
+			this.bindingNavigatorMoveLastItem.ToolTipText = "Khách hàng cuối cùng";
+			// 
 			// toolStripLabel1
 			// 
 			this.toolStripLabel1.Name = "toolStripLabel1";
@@ -207,7 +251,7 @@
 			this.groupBox1.Controls.Add(this.bindingReport);
 			this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.groupBox1.Location = new System.Drawing.Point(424, 442);
+			this.groupBox1.Location = new System.Drawing.Point(415, 442);
 			this.groupBox1.Name = "groupBox1";
 			this.groupBox1.Size = new System.Drawing.Size(393, 327);
 			this.groupBox1.TabIndex = 74;
@@ -307,13 +351,13 @@
 			// 
 			this.groupBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.groupBox3.Controls.Add(this.label2);
-			this.groupBox3.Controls.Add(this.btnSearch);
+			this.groupBox3.Controls.Add(this.btnViewReport);
 			this.groupBox3.Controls.Add(this.numericYear);
 			this.groupBox3.Controls.Add(this.comboBoxMonth);
 			this.groupBox3.Controls.Add(this.label9);
 			this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 12F);
 			this.groupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.groupBox3.Location = new System.Drawing.Point(64, 367);
+			this.groupBox3.Location = new System.Drawing.Point(55, 367);
 			this.groupBox3.Name = "groupBox3";
 			this.groupBox3.Size = new System.Drawing.Size(753, 69);
 			this.groupBox3.TabIndex = 75;
@@ -330,6 +374,32 @@
 			this.label2.Size = new System.Drawing.Size(49, 20);
 			this.label2.TabIndex = 65;
 			this.label2.Text = "Bulan:";
+			// 
+			// btnViewReport
+			// 
+			this.btnViewReport.ActiveBorderThickness = 1;
+			this.btnViewReport.ActiveCornerRadius = 20;
+			this.btnViewReport.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnViewReport.ActiveForecolor = System.Drawing.Color.White;
+			this.btnViewReport.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnViewReport.BackColor = System.Drawing.Color.White;
+			this.btnViewReport.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnViewReport.BackgroundImage")));
+			this.btnViewReport.ButtonText = "Lihat Laporan";
+			this.btnViewReport.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnViewReport.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnViewReport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnViewReport.IdleBorderThickness = 1;
+			this.btnViewReport.IdleCornerRadius = 20;
+			this.btnViewReport.IdleFillColor = System.Drawing.Color.White;
+			this.btnViewReport.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnViewReport.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnViewReport.Location = new System.Drawing.Point(534, 21);
+			this.btnViewReport.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.btnViewReport.Name = "btnViewReport";
+			this.btnViewReport.Size = new System.Drawing.Size(175, 40);
+			this.btnViewReport.TabIndex = 64;
+			this.btnViewReport.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.btnViewReport.Click += new System.EventHandler(this.BtnViewReport_Click);
 			// 
 			// numericYear
 			// 
@@ -408,7 +478,7 @@
 			this.chartReport.ChartAreas.Add(chartArea1);
 			legend1.Name = "Legend1";
 			this.chartReport.Legends.Add(legend1);
-			this.chartReport.Location = new System.Drawing.Point(64, 442);
+			this.chartReport.Location = new System.Drawing.Point(55, 442);
 			this.chartReport.Name = "chartReport";
 			this.chartReport.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
 			this.chartReport.PaletteCustomColors = new System.Drawing.Color[] {
@@ -441,7 +511,7 @@
 			this.lbViewEmail.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.lbViewEmail.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lbViewEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.lbViewEmail.Location = new System.Drawing.Point(692, 19);
+			this.lbViewEmail.Location = new System.Drawing.Point(683, 19);
 			this.lbViewEmail.Name = "lbViewEmail";
 			this.lbViewEmail.Size = new System.Drawing.Size(58, 25);
 			this.lbViewEmail.TabIndex = 77;
@@ -461,7 +531,7 @@
 			this.bunifuPanel7.Controls.Add(this.lbPendapatan);
 			this.bunifuPanel7.Controls.Add(this.label11);
 			this.bunifuPanel7.Controls.Add(this.bunifuShapes7);
-			this.bunifuPanel7.Location = new System.Drawing.Point(64, 267);
+			this.bunifuPanel7.Location = new System.Drawing.Point(55, 267);
 			this.bunifuPanel7.Name = "bunifuPanel7";
 			this.bunifuPanel7.ShowBorders = true;
 			this.bunifuPanel7.Size = new System.Drawing.Size(244, 85);
@@ -522,81 +592,12 @@
 			this.pictureBox7.Anchor = System.Windows.Forms.AnchorStyles.Top;
 			this.pictureBox7.BackColor = System.Drawing.Color.White;
 			this.pictureBox7.Image = global::FAHotelApp.Properties.Resources.email_open_120px;
-			this.pictureBox7.Location = new System.Drawing.Point(764, 13);
+			this.pictureBox7.Location = new System.Drawing.Point(755, 13);
 			this.pictureBox7.Name = "pictureBox7";
 			this.pictureBox7.Size = new System.Drawing.Size(39, 36);
 			this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.pictureBox7.TabIndex = 78;
 			this.pictureBox7.TabStop = false;
-			// 
-			// btnSearch
-			// 
-			this.btnSearch.ActiveBorderThickness = 1;
-			this.btnSearch.ActiveCornerRadius = 20;
-			this.btnSearch.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSearch.ActiveForecolor = System.Drawing.Color.White;
-			this.btnSearch.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSearch.BackColor = System.Drawing.Color.White;
-			this.btnSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearch.BackgroundImage")));
-			this.btnSearch.ButtonText = "Lihat Laporan";
-			this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSearch.IdleBorderThickness = 1;
-			this.btnSearch.IdleCornerRadius = 20;
-			this.btnSearch.IdleFillColor = System.Drawing.Color.White;
-			this.btnSearch.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSearch.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnSearch.Location = new System.Drawing.Point(534, 21);
-			this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-			this.btnSearch.Name = "btnSearch";
-			this.btnSearch.Size = new System.Drawing.Size(175, 40);
-			this.btnSearch.TabIndex = 64;
-			this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// bindingNavigatorMoveFirstItem
-			// 
-			this.bindingNavigatorMoveFirstItem.AutoSize = false;
-			this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-			this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-			this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-			this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(50, 22);
-			this.bindingNavigatorMoveFirstItem.Text = "Move first";
-			this.bindingNavigatorMoveFirstItem.ToolTipText = "Khách hàng đầu tiên";
-			// 
-			// bindingNavigatorMovePreviousItem
-			// 
-			this.bindingNavigatorMovePreviousItem.AutoSize = false;
-			this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-			this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-			this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-			this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(50, 22);
-			this.bindingNavigatorMovePreviousItem.Text = "Move previous";
-			this.bindingNavigatorMovePreviousItem.ToolTipText = "Khách hàng trước đó";
-			// 
-			// bindingNavigatorMoveNextItem
-			// 
-			this.bindingNavigatorMoveNextItem.AutoSize = false;
-			this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-			this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-			this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-			this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(50, 22);
-			this.bindingNavigatorMoveNextItem.Text = "Move next";
-			this.bindingNavigatorMoveNextItem.ToolTipText = "Khách hàng kế tiếp";
-			// 
-			// bindingNavigatorMoveLastItem
-			// 
-			this.bindingNavigatorMoveLastItem.AutoSize = false;
-			this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-			this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-			this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-			this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(50, 22);
-			this.bindingNavigatorMoveLastItem.Text = "Move last";
-			this.bindingNavigatorMoveLastItem.ToolTipText = "Khách hàng cuối cùng";
 			// 
 			// bunifuPanel6
 			// 
@@ -611,7 +612,7 @@
 			this.bunifuPanel6.Controls.Add(this.lbService);
 			this.bunifuPanel6.Controls.Add(this.label6);
 			this.bunifuPanel6.Controls.Add(this.bunifuShapes6);
-			this.bunifuPanel6.Location = new System.Drawing.Point(564, 85);
+			this.bunifuPanel6.Location = new System.Drawing.Point(555, 85);
 			this.bunifuPanel6.Name = "bunifuPanel6";
 			this.bunifuPanel6.ShowBorders = true;
 			this.bunifuPanel6.Size = new System.Drawing.Size(244, 85);
@@ -680,7 +681,7 @@
 			this.bunifuPanel5.Controls.Add(this.lbRoomAmount);
 			this.bunifuPanel5.Controls.Add(this.label4);
 			this.bunifuPanel5.Controls.Add(this.bunifuShapes5);
-			this.bunifuPanel5.Location = new System.Drawing.Point(564, 176);
+			this.bunifuPanel5.Location = new System.Drawing.Point(555, 176);
 			this.bunifuPanel5.Name = "bunifuPanel5";
 			this.bunifuPanel5.ShowBorders = true;
 			this.bunifuPanel5.Size = new System.Drawing.Size(244, 85);
@@ -746,7 +747,7 @@
 			this.bunifuSeparator1.LineColor = System.Drawing.Color.Silver;
 			this.bunifuSeparator1.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
 			this.bunifuSeparator1.LineThickness = 1;
-			this.bunifuSeparator1.Location = new System.Drawing.Point(64, 52);
+			this.bunifuSeparator1.Location = new System.Drawing.Point(55, 52);
 			this.bunifuSeparator1.Name = "bunifuSeparator1";
 			this.bunifuSeparator1.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
 			this.bunifuSeparator1.Size = new System.Drawing.Size(744, 15);
@@ -765,7 +766,7 @@
 			this.bunifuPanel4.Controls.Add(this.lbKamarTerisi);
 			this.bunifuPanel4.Controls.Add(this.label7);
 			this.bunifuPanel4.Controls.Add(this.bunifuShapes4);
-			this.bunifuPanel4.Location = new System.Drawing.Point(314, 176);
+			this.bunifuPanel4.Location = new System.Drawing.Point(305, 176);
 			this.bunifuPanel4.Name = "bunifuPanel4";
 			this.bunifuPanel4.ShowBorders = true;
 			this.bunifuPanel4.Size = new System.Drawing.Size(244, 85);
@@ -834,7 +835,7 @@
 			this.bunifuPanel3.Controls.Add(this.lbKamarTersedia);
 			this.bunifuPanel3.Controls.Add(this.label5);
 			this.bunifuPanel3.Controls.Add(this.bunifuShapes3);
-			this.bunifuPanel3.Location = new System.Drawing.Point(64, 176);
+			this.bunifuPanel3.Location = new System.Drawing.Point(55, 176);
 			this.bunifuPanel3.Name = "bunifuPanel3";
 			this.bunifuPanel3.ShowBorders = true;
 			this.bunifuPanel3.Size = new System.Drawing.Size(244, 85);
@@ -903,7 +904,7 @@
 			this.bunifuPanel2.Controls.Add(this.lbStaff);
 			this.bunifuPanel2.Controls.Add(this.label3);
 			this.bunifuPanel2.Controls.Add(this.bunifuShapes2);
-			this.bunifuPanel2.Location = new System.Drawing.Point(314, 85);
+			this.bunifuPanel2.Location = new System.Drawing.Point(305, 85);
 			this.bunifuPanel2.Name = "bunifuPanel2";
 			this.bunifuPanel2.ShowBorders = true;
 			this.bunifuPanel2.Size = new System.Drawing.Size(244, 85);
@@ -972,7 +973,7 @@
 			this.bunifuPanel1.Controls.Add(this.lbCustomer);
 			this.bunifuPanel1.Controls.Add(this.label1);
 			this.bunifuPanel1.Controls.Add(this.bunifuShapes1);
-			this.bunifuPanel1.Location = new System.Drawing.Point(64, 85);
+			this.bunifuPanel1.Location = new System.Drawing.Point(55, 85);
 			this.bunifuPanel1.Name = "bunifuPanel1";
 			this.bunifuPanel1.ShowBorders = true;
 			this.bunifuPanel1.Size = new System.Drawing.Size(244, 85);
@@ -1050,7 +1051,7 @@
 			this.Controls.Add(this.bunifuPanel1);
 			this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.Name = "UC_Dashboard";
-			this.Size = new System.Drawing.Size(872, 697);
+			this.Size = new System.Drawing.Size(855, 697);
 			this.Load += new System.EventHandler(this.UC_Dashboard_Load);
 			((System.ComponentModel.ISupportInitialize)(this.bindingReport)).EndInit();
 			this.bindingReport.ResumeLayout(false);
@@ -1140,7 +1141,7 @@
 		private System.Windows.Forms.DataGridViewTextBoxColumn colRate;
 		private System.Windows.Forms.GroupBox groupBox3;
 		private System.Windows.Forms.Label label2;
-		private Bunifu.Framework.UI.BunifuThinButton2 btnSearch;
+		private Bunifu.Framework.UI.BunifuThinButton2 btnViewReport;
 		private System.Windows.Forms.NumericUpDown numericYear;
 		private MetroFramework.Controls.MetroComboBox comboBoxMonth;
 		private System.Windows.Forms.Label label9;

@@ -23,7 +23,7 @@ namespace FAHotelApp.Forms
 			InitializeComponent();
 			bunifuFormDock1.SubscribeControlToDragEvents(panelHeader);
 			lbUser.Text = staff.DisplayName;
-			lbUserType.Text = Properties.Settings.Default.UserTypeView;
+			lbUserType.Text = AccountTypeDAO.Instance.GetStaffTypeByUserName(userName).Name;
 			if (staff != null)
 			{
 				if (!string.IsNullOrEmpty(staff.ImageUrl))

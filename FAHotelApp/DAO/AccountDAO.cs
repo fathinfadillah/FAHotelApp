@@ -24,11 +24,11 @@ namespace FAHotelApp.DAO
 			}
 			return hashPass;
 		}
-		internal bool Login(string userName, string passWord, int deparTment)
+		internal bool Login(string userName, string passWord)
 		{
 			string hashPass = HashPass(passWord);
-			string query = "USP_Login @userName , @passWord , @deparTment";
-			DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { userName, hashPass, deparTment });
+			string query = "USP_Login @userName , @passWord";
+			DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { userName, hashPass});
 			return data.Rows.Count > 0;
 		}
 		public List<StaffType> LoadListStaffType()

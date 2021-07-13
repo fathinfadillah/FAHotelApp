@@ -75,7 +75,7 @@ namespace FAHotelApp.Forms
 					Clean();
 				}
 				else
-					MessageBox.Show("Pelanggan Sudah Adai\nNIK Duplikat", "Error", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+					MessageBox.Show("Pelanggan Sudah Ada\nNIK Duplikat", "Error", MessageBoxButtons.OK, MessageBoxIcon.Stop);
 			}
 			catch
 			{

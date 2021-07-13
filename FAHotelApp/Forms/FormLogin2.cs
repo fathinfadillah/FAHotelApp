@@ -24,13 +24,11 @@ namespace FAHotelApp.Forms
 
 		public bool Login()
 		{
-			return AccountDAO.Instance.Login(txtUsername.Text, txtPassword.Text, cbDepartement.SelectedIndex);
+			return AccountDAO.Instance.Login(txtUsername.Text, txtPassword.Text);
 		}
 
 		private void FormLogin_Load(object sender, EventArgs e)
 		{
-			cbDepartement.DataSource = AccountDAO.Instance.LoadListStaffType();
-			cbDepartement.DisplayMember = "Name";
 
 			timer1.Start();
 
@@ -43,7 +41,6 @@ namespace FAHotelApp.Forms
 			{
 				txtUsername.Text = Properties.Settings.Default.Username;
 				txtPassword.Text = Properties.Settings.Default.Password;
-				cbDepartement.Text = Properties.Settings.Default.UserType;
 			}
 		}
 
@@ -57,7 +54,6 @@ namespace FAHotelApp.Forms
 		private void btnLogin_Click(object sender, EventArgs e)
 		{
 			Properties.Settings.Default.UsernameView = txtUsername.Text;
-			Properties.Settings.Default.UserTypeView = cbDepartement.Text;
 
 			if (txtUsername.Text == "" || txtPassword.Text == "")
 			{
@@ -81,7 +77,6 @@ namespace FAHotelApp.Forms
 			{
 				Properties.Settings.Default.Username = txtUsername.Text;
 				Properties.Settings.Default.Password = txtPassword.Text;
-				Properties.Settings.Default.UserType = cbDepartement.Text;
 				Properties.Settings.Default.Save();
 			}
 			if (tsRememberMe.Checked == false)
@@ -162,22 +157,6 @@ namespace FAHotelApp.Forms
 		{
 			FormTC f = new FormTC();
 			f.Show();
-		}
-
-		private void cbDepartement_Leave(object sender, EventArgs e)
-		{
-			if (cbDepartement.SelectedIndex == 0)
-			{
-				epWarning.SetError(cbDepartement, "Pilih Departement terlebih dahulu");
-				epWrong.SetError(cbDepartement, "");
-				epCorrect.SetError(cbDepartement, "");
-			}
-			else
-			{
-				epWarning.SetError(cbDepartement, "");
-				epWrong.SetError(cbDepartement, "");
-				epCorrect.SetError(cbDepartement, "Terisi!");
-			}
 		}
 	}
 }

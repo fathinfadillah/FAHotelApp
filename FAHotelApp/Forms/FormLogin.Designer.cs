@@ -33,7 +33,6 @@
 			this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
 			this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
 			this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-			this.cbDepartement = new Guna.UI2.WinForms.Guna2ComboBox();
 			this.tsShowPassword = new Guna.UI2.WinForms.Guna2ToggleSwitch();
 			this.label6 = new System.Windows.Forms.Label();
 			this.lbTermCon = new System.Windows.Forms.Label();
@@ -80,7 +79,6 @@
 			// guna2Panel2
 			// 
 			this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
-			this.guna2Panel2.Controls.Add(this.cbDepartement);
 			this.guna2Panel2.Controls.Add(this.tsShowPassword);
 			this.guna2Panel2.Controls.Add(this.label6);
 			this.guna2Panel2.Controls.Add(this.lbTermCon);
@@ -103,30 +101,6 @@
 			this.guna2Panel2.Size = new System.Drawing.Size(563, 666);
 			this.guna2Panel2.TabIndex = 5;
 			// 
-			// cbDepartement
-			// 
-			this.cbDepartement.BackColor = System.Drawing.Color.Transparent;
-			this.cbDepartement.BorderColor = System.Drawing.Color.Black;
-			this.cbDepartement.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-			this.cbDepartement.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.cbDepartement.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.cbDepartement.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-			this.cbDepartement.FocusedState.Parent = this.cbDepartement;
-			this.cbDepartement.Font = new System.Drawing.Font("Segoe UI", 10F);
-			this.cbDepartement.ForeColor = System.Drawing.Color.Black;
-			this.cbDepartement.HoverState.Parent = this.cbDepartement;
-			this.cbDepartement.ItemHeight = 30;
-			this.cbDepartement.Items.AddRange(new object[] {
-            "Departement"});
-			this.cbDepartement.ItemsAppearance.Parent = this.cbDepartement;
-			this.cbDepartement.Location = new System.Drawing.Point(114, 320);
-			this.cbDepartement.Name = "cbDepartement";
-			this.cbDepartement.ShadowDecoration.Parent = this.cbDepartement;
-			this.cbDepartement.Size = new System.Drawing.Size(336, 36);
-			this.cbDepartement.StartIndex = 0;
-			this.cbDepartement.TabIndex = 3;
-			this.cbDepartement.Leave += new System.EventHandler(this.cbDepartement_Leave);
-			// 
 			// tsShowPassword
 			// 
 			this.tsShowPassword.Animated = true;
@@ -136,7 +110,7 @@
 			this.tsShowPassword.CheckedState.InnerBorderColor = System.Drawing.Color.White;
 			this.tsShowPassword.CheckedState.InnerColor = System.Drawing.Color.White;
 			this.tsShowPassword.CheckedState.Parent = this.tsShowPassword;
-			this.tsShowPassword.Location = new System.Drawing.Point(114, 369);
+			this.tsShowPassword.Location = new System.Drawing.Point(107, 343);
 			this.tsShowPassword.Name = "tsShowPassword";
 			this.tsShowPassword.ShadowDecoration.Parent = this.tsShowPassword;
 			this.tsShowPassword.Size = new System.Drawing.Size(35, 20);
@@ -182,7 +156,7 @@
 			this.label3.Font = new System.Drawing.Font("Montserrat", 8.249999F);
 			this.label3.ForeColor = System.Drawing.Color.Black;
 			this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-			this.label3.Location = new System.Drawing.Point(154, 371);
+			this.label3.Location = new System.Drawing.Point(147, 345);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(93, 15);
 			this.label3.TabIndex = 13;
@@ -201,7 +175,7 @@
 			this.btnExit.ForeColor = System.Drawing.Color.White;
 			this.btnExit.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
 			this.btnExit.HoverState.Parent = this.btnExit;
-			this.btnExit.Location = new System.Drawing.Point(114, 492);
+			this.btnExit.Location = new System.Drawing.Point(107, 466);
 			this.btnExit.Name = "btnExit";
 			this.btnExit.ShadowDecoration.Parent = this.btnExit;
 			this.btnExit.Size = new System.Drawing.Size(336, 39);
@@ -216,7 +190,7 @@
 			this.label5.Font = new System.Drawing.Font("Montserrat", 9.749999F);
 			this.label5.ForeColor = System.Drawing.Color.Black;
 			this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-			this.label5.Location = new System.Drawing.Point(111, 189);
+			this.label5.Location = new System.Drawing.Point(104, 207);
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(359, 18);
 			this.label5.TabIndex = 10;
@@ -228,7 +202,7 @@
 			this.label4.Font = new System.Drawing.Font("Montserrat", 21.75F, System.Drawing.FontStyle.Bold);
 			this.label4.ForeColor = System.Drawing.Color.Black;
 			this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-			this.label4.Location = new System.Drawing.Point(107, 136);
+			this.label4.Location = new System.Drawing.Point(100, 154);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(117, 40);
 			this.label4.TabIndex = 9;
@@ -261,7 +235,7 @@
 			this.btnLogin.ForeColor = System.Drawing.Color.White;
 			this.btnLogin.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
 			this.btnLogin.HoverState.Parent = this.btnLogin;
-			this.btnLogin.Location = new System.Drawing.Point(114, 447);
+			this.btnLogin.Location = new System.Drawing.Point(107, 421);
 			this.btnLogin.Name = "btnLogin";
 			this.btnLogin.ShadowDecoration.Parent = this.btnLogin;
 			this.btnLogin.Size = new System.Drawing.Size(336, 39);
@@ -277,7 +251,7 @@
 			this.lbForgotPassword.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Underline);
 			this.lbForgotPassword.ForeColor = System.Drawing.Color.Black;
 			this.lbForgotPassword.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-			this.lbForgotPassword.Location = new System.Drawing.Point(351, 371);
+			this.lbForgotPassword.Location = new System.Drawing.Point(344, 345);
 			this.lbForgotPassword.Name = "lbForgotPassword";
 			this.lbForgotPassword.Size = new System.Drawing.Size(99, 15);
 			this.lbForgotPassword.TabIndex = 5;
@@ -290,7 +264,7 @@
 			this.label1.Font = new System.Drawing.Font("Montserrat", 8.249999F);
 			this.label1.ForeColor = System.Drawing.Color.Black;
 			this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-			this.label1.Location = new System.Drawing.Point(154, 401);
+			this.label1.Location = new System.Drawing.Point(147, 375);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(63, 15);
 			this.label1.TabIndex = 5;
@@ -305,7 +279,7 @@
 			this.tsRememberMe.CheckedState.InnerBorderColor = System.Drawing.Color.White;
 			this.tsRememberMe.CheckedState.InnerColor = System.Drawing.Color.White;
 			this.tsRememberMe.CheckedState.Parent = this.tsRememberMe;
-			this.tsRememberMe.Location = new System.Drawing.Point(114, 399);
+			this.tsRememberMe.Location = new System.Drawing.Point(107, 373);
 			this.tsRememberMe.Name = "tsRememberMe";
 			this.tsRememberMe.ShadowDecoration.Parent = this.tsRememberMe;
 			this.tsRememberMe.Size = new System.Drawing.Size(35, 20);
@@ -334,7 +308,7 @@
 			this.txtPassword.ForeColor = System.Drawing.Color.Black;
 			this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
 			this.txtPassword.HoverState.Parent = this.txtPassword;
-			this.txtPassword.Location = new System.Drawing.Point(114, 278);
+			this.txtPassword.Location = new System.Drawing.Point(107, 296);
 			this.txtPassword.Name = "txtPassword";
 			this.txtPassword.PasswordChar = '\0';
 			this.txtPassword.PlaceholderText = "Password";
@@ -362,7 +336,7 @@
 			this.txtUsername.ForeColor = System.Drawing.Color.Black;
 			this.txtUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
 			this.txtUsername.HoverState.Parent = this.txtUsername;
-			this.txtUsername.Location = new System.Drawing.Point(114, 236);
+			this.txtUsername.Location = new System.Drawing.Point(107, 254);
 			this.txtUsername.Name = "txtUsername";
 			this.txtUsername.PasswordChar = '\0';
 			this.txtUsername.PlaceholderText = "Username";
@@ -534,6 +508,5 @@
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.Label lbTermCon;
 		private Guna.UI2.WinForms.Guna2ToggleSwitch tsShowPassword;
-		private Guna.UI2.WinForms.Guna2ComboBox cbDepartement;
 	}
 }
