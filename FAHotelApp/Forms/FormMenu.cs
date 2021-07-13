@@ -29,14 +29,14 @@ namespace FAHotelApp.Forms
 				if (!string.IsNullOrEmpty(staff.ImageUrl))
 					pictureBox.Image = Image.FromFile(staff.ImageUrl);
 			}
-
 			System.Drawing.Drawing2D.GraphicsPath gp = new System.Drawing.Drawing2D.GraphicsPath();
 			gp.AddEllipse(0, 0, pictureBox.Width - 3, pictureBox.Height - 3);
 			Region rg = new Region(gp);
 			pictureBox.Region = rg;
-
+			bunifuPages1.SetPage(FirstView);
 			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 		}
+
 		private void txtSearch_TextChanged(object sender, EventArgs e)
 		{
 			foreach (var btn in panelMenu.Controls)
@@ -67,7 +67,11 @@ namespace FAHotelApp.Forms
 
 		private void btnBooking_Click(object sender, EventArgs e)
 		{
-			bunifuPages1.SetPage(BookingKamar);
+			if (CheckAccess("BookingKamar"))
+			{
+				bunifuPages1.SetPage(BookingKamar);
+			}
+			else MessageBox.Show("Anda tidak memiliki izin untuk mengakses.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 		}
 
 		private void bunifuButton2_Click(object sender, EventArgs e)

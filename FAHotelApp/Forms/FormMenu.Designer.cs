@@ -64,6 +64,7 @@
 			this.ManajerPelayanan = new System.Windows.Forms.TabPage();
 			this.PeraturanHotel = new System.Windows.Forms.TabPage();
 			this.Peraturan = new System.Windows.Forms.TabPage();
+			this.FirstView = new System.Windows.Forms.TabPage();
 			this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
 			this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
 			this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
@@ -94,6 +95,7 @@
 			this.uC_Bill1 = new FAHotelApp.UC.UC_Bill();
 			this.uC_Service1 = new FAHotelApp.UC.UC_Service();
 			this.uC_Parameter1 = new FAHotelApp.UC.UC_Parameter();
+			this.uC_FirstView1 = new FAHotelApp.UC.UC_FirstView();
 			this.panel1.SuspendLayout();
 			this.panelMenu.SuspendLayout();
 			this.panel2.SuspendLayout();
@@ -108,6 +110,7 @@
 			this.ManajerTagihan.SuspendLayout();
 			this.ManajerPelayanan.SuspendLayout();
 			this.PeraturanHotel.SuspendLayout();
+			this.FirstView.SuspendLayout();
 			this.panelHeader.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -209,14 +212,15 @@
 			this.bunifuPages1.Controls.Add(this.ManajerPelayanan);
 			this.bunifuPages1.Controls.Add(this.PeraturanHotel);
 			this.bunifuPages1.Controls.Add(this.Peraturan);
+			this.bunifuPages1.Controls.Add(this.FirstView);
 			this.bunifuPages1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.bunifuPages1.Location = new System.Drawing.Point(306, 105);
 			this.bunifuPages1.Multiline = true;
 			this.bunifuPages1.Name = "bunifuPages1";
-			this.bunifuPages1.Page = this.ManajerTagihan;
-			this.bunifuPages1.PageIndex = 7;
-			this.bunifuPages1.PageName = "ManajerTagihan";
-			this.bunifuPages1.PageTitle = "Manajer Tagihan";
+			this.bunifuPages1.Page = this.FirstView;
+			this.bunifuPages1.PageIndex = 11;
+			this.bunifuPages1.PageName = "FirstView";
+			this.bunifuPages1.PageTitle = "First View";
 			this.bunifuPages1.SelectedIndex = 0;
 			this.bunifuPages1.Size = new System.Drawing.Size(958, 599);
 			this.bunifuPages1.TabIndex = 3;
@@ -357,6 +361,17 @@
 			this.Peraturan.TabIndex = 10;
 			this.Peraturan.Text = "Peraturan";
 			this.Peraturan.UseVisualStyleBackColor = true;
+			// 
+			// FirstView
+			// 
+			this.FirstView.Controls.Add(this.uC_FirstView1);
+			this.FirstView.Location = new System.Drawing.Point(4, 4);
+			this.FirstView.Name = "FirstView";
+			this.FirstView.Padding = new System.Windows.Forms.Padding(3);
+			this.FirstView.Size = new System.Drawing.Size(950, 555);
+			this.FirstView.TabIndex = 11;
+			this.FirstView.Text = "First View";
+			this.FirstView.UseVisualStyleBackColor = true;
 			// 
 			// bunifuFormDock1
 			// 
@@ -1741,6 +1756,15 @@
 			this.uC_Parameter1.Size = new System.Drawing.Size(944, 549);
 			this.uC_Parameter1.TabIndex = 0;
 			// 
+			// uC_FirstView1
+			// 
+			this.uC_FirstView1.BackColor = System.Drawing.Color.White;
+			this.uC_FirstView1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.uC_FirstView1.Location = new System.Drawing.Point(3, 3);
+			this.uC_FirstView1.Name = "uC_FirstView1";
+			this.uC_FirstView1.Size = new System.Drawing.Size(944, 549);
+			this.uC_FirstView1.TabIndex = 0;
+			// 
 			// FormMenu
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1770,6 +1794,7 @@
 			this.ManajerTagihan.ResumeLayout(false);
 			this.ManajerPelayanan.ResumeLayout(false);
 			this.PeraturanHotel.ResumeLayout(false);
+			this.FirstView.ResumeLayout(false);
 			this.panelHeader.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
@@ -1827,5 +1852,7 @@
 		private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton10;
 		private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton11;
 		private System.Windows.Forms.PictureBox pictureBox;
+		private System.Windows.Forms.TabPage FirstView;
+		private UC.UC_FirstView uC_FirstView1;
 	}
 }
