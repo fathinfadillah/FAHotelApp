@@ -108,7 +108,41 @@ namespace FAHotelApp.UC
 				Search();
 			}
 		}
-		private void BtnCancel_Click(object sender, EventArgs e)
+
+        private void ToolStripLabel1_Click(object sender, EventArgs e)
+        {
+            if (SaveCustomer.ShowDialog() == DialogResult.Cancel)
+                return;
+            else
+            {
+                bool check;
+                try
+                {
+                    switch (SaveCustomer.FilterIndex)
+                    {
+                        case 2:
+                            check = ExportToExcel.Instance.Export(dataGridViewBill, SaveCustomer.FileName, ModeExportToExcel.XLSX);
+                            break;
+                        case 3:
+                            check = ExportToExcel.Instance.Export(dataGridViewBill, SaveCustomer.FileName, ModeExportToExcel.PDF);
+                            break;
+                        default:
+                            check = ExportToExcel.Instance.Export(dataGridViewBill, SaveCustomer.FileName, ModeExportToExcel.XLS);
+                            break;
+                    }
+                    if (check)
+                        MessageBox.Show("Export Berhasil", "Pemberitahuan", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    else
+                        MessageBox.Show("Export Gagal", "Pemberitahuan", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                catch
+                {
+                    MessageBox.Show("Error (Perlu Menginstal Office)", "Pemberitahuan", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void BtnCancel_Click(object sender, EventArgs e)
 		{
 			LoadFullBill(GetFullBill());
 			btnCancel.Visible = false;

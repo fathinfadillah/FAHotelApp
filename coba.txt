@@ -1,0 +1,11 @@
+//public void loaddata()
+        //{
+            //string connectionStr = @"Data Source=localhost;Initial Catalog=FAHotel;Integrated Security=True";
+            //SqlConnection openCon = new SqlConnection(connectionStr);
+            //openCon.Open();
+
+            //string SQL = string.Format("SELECT * FROM ViewRoomAvailable");
+
+            //SqlCommand command = new SqlCommand(SQL);
+            //kamartersedia.Text = (String)command.ExecuteReader();
+        //}
