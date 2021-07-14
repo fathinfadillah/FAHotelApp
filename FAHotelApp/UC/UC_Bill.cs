@@ -111,23 +111,23 @@ namespace FAHotelApp.UC
 
         private void ToolStripLabel1_Click(object sender, EventArgs e)
         {
-            if (SaveCustomer.ShowDialog() == DialogResult.Cancel)
+            if (SaveBill.ShowDialog() == DialogResult.Cancel)
                 return;
             else
             {
                 bool check;
                 try
                 {
-                    switch (SaveCustomer.FilterIndex)
+                    switch (SaveBill.FilterIndex)
                     {
                         case 2:
-                            check = ExportToExcel.Instance.Export(dataGridViewBill, SaveCustomer.FileName, ModeExportToExcel.XLSX);
+                            check = ExportToExcel.Instance.Export(dataGridViewBill, SaveBill.FileName, ModeExportToExcel.XLSX);
                             break;
                         case 3:
-                            check = ExportToExcel.Instance.Export(dataGridViewBill, SaveCustomer.FileName, ModeExportToExcel.PDF);
+                            check = ExportToExcel.Instance.Export(dataGridViewBill, SaveBill.FileName, ModeExportToExcel.PDF);
                             break;
                         default:
-                            check = ExportToExcel.Instance.Export(dataGridViewBill, SaveCustomer.FileName, ModeExportToExcel.XLS);
+                            check = ExportToExcel.Instance.Export(dataGridViewBill, SaveBill.FileName, ModeExportToExcel.XLS);
                             break;
                     }
                     if (check)
@@ -193,8 +193,7 @@ namespace FAHotelApp.UC
 			if (e.KeyChar == 27 && btnCancel.Visible == true)
 				BtnCancel_Click(sender, null);
 		}
-		#endregion
 
-		
+		#endregion
 	}
 }

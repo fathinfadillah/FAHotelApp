@@ -609,6 +609,7 @@
 			this.bindingStaff.CountItem = this.bindingNavigatorCountItem;
 			this.bindingStaff.CountItemFormat = "dari {0}";
 			this.bindingStaff.DeleteItem = null;
+			this.bindingStaff.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.bindingStaff.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
 			this.bindingStaff.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
@@ -708,7 +709,7 @@
 			// toolStripLabel1
 			// 
 			this.toolStripLabel1.Name = "toolStripLabel1";
-			this.toolStripLabel1.Size = new System.Drawing.Size(42, 40);
+			this.toolStripLabel1.Size = new System.Drawing.Size(48, 40);
 			this.toolStripLabel1.Text = "Ekspor";
 			this.toolStripLabel1.Click += new System.EventHandler(this.ToolStripLabel1_Click);
 			// 

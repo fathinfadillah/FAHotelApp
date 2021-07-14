@@ -33,7 +33,6 @@
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Parameter));
-			this.SaveCustomer = new System.Windows.Forms.SaveFileDialog();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
 			this.dataGridViewParameter = new System.Windows.Forms.DataGridView();
 			this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -75,11 +74,6 @@
 			this.groupParameter.SuspendLayout();
 			this.groupBox4.SuspendLayout();
 			this.SuspendLayout();
-			// 
-			// SaveCustomer
-			// 
-			this.SaveCustomer.FileName = "Danh Sách Khách hàng";
-			this.SaveCustomer.Filter = "Excel File(*.xls)|*.xls|Excel File (*.xlsx) |.xlsx|PDF File(*.pdf)|*.pdf";
 			// 
 			// groupBox1
 			// 
@@ -589,7 +583,6 @@
 		}
 
 		#endregion
-		private System.Windows.Forms.SaveFileDialog SaveCustomer;
 		private System.Windows.Forms.GroupBox groupBox1;
 		private System.Windows.Forms.BindingNavigator bindingSurcharge;
 		private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
