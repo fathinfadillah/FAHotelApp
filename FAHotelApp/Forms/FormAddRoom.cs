@@ -21,8 +21,9 @@ namespace FAHotelApp.Forms
 		{
 			InitializeComponent();
 			LoadFullRoomType();
+			txtNameRoom.Text = generateid();
 		}
-
+		string connectionstring = @"Integrated Security=True;Data Source=localhost;Initial Catalog=FAHotel";
 		private void LoadFullRoomType()
 		{
 			DataTable table = GetFullRoomType();
@@ -76,6 +77,7 @@ namespace FAHotelApp.Forms
 			DialogResult result = MessageBox.Show("Apakah Anda Ingin Menambahkan Kamar Baru?", "Pemberitahuan", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
 			if (result == DialogResult.OK)
 				InsertRoom();
+			txtNameRoom.Text = generateid();
 		}
 		private void ChangePrice(DataTable table)
 		{
@@ -89,6 +91,38 @@ namespace FAHotelApp.Forms
 		private void btnClose_Click(object sender, EventArgs e)
 		{
 			Close();
+		}
+		private string generateid()
+		{
+			SqlConnection connection = new SqlConnection(connectionstring);
+
+			string autoid = null;
+
+			connection.Open();
+
+			string sqlQuery = "SELECT TOP 1 name FROM Room ORDER BY name DESC";
+			SqlCommand cmd = new SqlCommand(sqlQuery, connection);
+			SqlDataReader dr = cmd.ExecuteReader();
+
+			while (dr.Read())
+			{
+				string input = dr["name"].ToString();
+				string angka = input.Substring(input.Length - Math.Min(3, input.Length));
+				int number = Convert.ToInt32(angka);
+				number += 1;
+				string str = number.ToString("D3");
+
+				autoid = "Kamar " + str;
+			}
+
+			if (autoid == null)
+			{
+				autoid = "Kamar 101";
+			}
+
+			connection.Close();
+
+			return autoid;
 		}
 	}
 }

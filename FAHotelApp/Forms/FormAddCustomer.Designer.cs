@@ -35,6 +35,8 @@
 			this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
 			this.label1 = new System.Windows.Forms.Label();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
+			this.btnClose = new Bunifu.Framework.UI.BunifuThinButton2();
+			this.btnAddCustomer = new Bunifu.Framework.UI.BunifuThinButton2();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
 			this.cbNationality = new MetroFramework.Controls.MetroComboBox();
 			this.dtpDateOfBirth = new Bunifu.Framework.UI.BunifuDatepicker();
@@ -53,8 +55,6 @@
 			this.label15 = new System.Windows.Forms.Label();
 			this.txtFullName = new Bunifu.Framework.UI.BunifuMetroTextbox();
 			this.label16 = new System.Windows.Forms.Label();
-			this.btnClose = new Bunifu.Framework.UI.BunifuThinButton2();
-			this.btnAddCustomer = new Bunifu.Framework.UI.BunifuThinButton2();
 			this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
 			this.groupBox1.SuspendLayout();
 			this.groupBox2.SuspendLayout();
@@ -67,6 +67,7 @@
 			// 
 			// guna2DragControl1
 			// 
+			this.guna2DragControl1.TargetControl = this;
 			this.guna2DragControl1.TransparentWhileDrag = true;
 			this.guna2DragControl1.UseTransparentDrag = true;
 			// 
@@ -105,6 +106,58 @@
 			this.groupBox1.TabIndex = 53;
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Menu";
+			// 
+			// btnClose
+			// 
+			this.btnClose.ActiveBorderThickness = 1;
+			this.btnClose.ActiveCornerRadius = 20;
+			this.btnClose.ActiveFillColor = System.Drawing.Color.DarkOrange;
+			this.btnClose.ActiveForecolor = System.Drawing.Color.White;
+			this.btnClose.ActiveLineColor = System.Drawing.Color.DarkOrange;
+			this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
+			this.btnClose.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnClose.BackgroundImage")));
+			this.btnClose.ButtonText = "Kembali";
+			this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnClose.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnClose.ForeColor = System.Drawing.Color.DarkOrange;
+			this.btnClose.IdleBorderThickness = 1;
+			this.btnClose.IdleCornerRadius = 20;
+			this.btnClose.IdleFillColor = System.Drawing.Color.White;
+			this.btnClose.IdleForecolor = System.Drawing.Color.DarkOrange;
+			this.btnClose.IdleLineColor = System.Drawing.Color.DarkOrange;
+			this.btnClose.Location = new System.Drawing.Point(247, 47);
+			this.btnClose.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.btnClose.Name = "btnClose";
+			this.btnClose.Size = new System.Drawing.Size(203, 40);
+			this.btnClose.TabIndex = 51;
+			this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+			// 
+			// btnAddCustomer
+			// 
+			this.btnAddCustomer.ActiveBorderThickness = 1;
+			this.btnAddCustomer.ActiveCornerRadius = 20;
+			this.btnAddCustomer.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnAddCustomer.ActiveForecolor = System.Drawing.Color.White;
+			this.btnAddCustomer.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnAddCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
+			this.btnAddCustomer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddCustomer.BackgroundImage")));
+			this.btnAddCustomer.ButtonText = "Tambah Customer";
+			this.btnAddCustomer.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnAddCustomer.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnAddCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnAddCustomer.IdleBorderThickness = 1;
+			this.btnAddCustomer.IdleCornerRadius = 20;
+			this.btnAddCustomer.IdleFillColor = System.Drawing.Color.White;
+			this.btnAddCustomer.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnAddCustomer.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.btnAddCustomer.Location = new System.Drawing.Point(19, 47);
+			this.btnAddCustomer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.btnAddCustomer.Name = "btnAddCustomer";
+			this.btnAddCustomer.Size = new System.Drawing.Size(203, 40);
+			this.btnAddCustomer.TabIndex = 48;
+			this.btnAddCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.btnAddCustomer.Click += new System.EventHandler(this.btnAddCustomer_Click);
 			// 
 			// groupBox2
 			// 
@@ -397,58 +450,6 @@
 			this.label16.Size = new System.Drawing.Size(52, 20);
 			this.label16.TabIndex = 22;
 			this.label16.Text = "Nama:";
-			// 
-			// btnClose
-			// 
-			this.btnClose.ActiveBorderThickness = 1;
-			this.btnClose.ActiveCornerRadius = 20;
-			this.btnClose.ActiveFillColor = System.Drawing.Color.DarkOrange;
-			this.btnClose.ActiveForecolor = System.Drawing.Color.White;
-			this.btnClose.ActiveLineColor = System.Drawing.Color.DarkOrange;
-			this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
-			this.btnClose.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnClose.BackgroundImage")));
-			this.btnClose.ButtonText = "Kembali";
-			this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnClose.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnClose.ForeColor = System.Drawing.Color.DarkOrange;
-			this.btnClose.IdleBorderThickness = 1;
-			this.btnClose.IdleCornerRadius = 20;
-			this.btnClose.IdleFillColor = System.Drawing.Color.White;
-			this.btnClose.IdleForecolor = System.Drawing.Color.DarkOrange;
-			this.btnClose.IdleLineColor = System.Drawing.Color.DarkOrange;
-			this.btnClose.Location = new System.Drawing.Point(247, 47);
-			this.btnClose.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-			this.btnClose.Name = "btnClose";
-			this.btnClose.Size = new System.Drawing.Size(203, 40);
-			this.btnClose.TabIndex = 51;
-			this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-			// 
-			// btnAddCustomer
-			// 
-			this.btnAddCustomer.ActiveBorderThickness = 1;
-			this.btnAddCustomer.ActiveCornerRadius = 20;
-			this.btnAddCustomer.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnAddCustomer.ActiveForecolor = System.Drawing.Color.White;
-			this.btnAddCustomer.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnAddCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
-			this.btnAddCustomer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddCustomer.BackgroundImage")));
-			this.btnAddCustomer.ButtonText = "Tambah Customer";
-			this.btnAddCustomer.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnAddCustomer.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnAddCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnAddCustomer.IdleBorderThickness = 1;
-			this.btnAddCustomer.IdleCornerRadius = 20;
-			this.btnAddCustomer.IdleFillColor = System.Drawing.Color.White;
-			this.btnAddCustomer.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnAddCustomer.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			this.btnAddCustomer.Location = new System.Drawing.Point(19, 47);
-			this.btnAddCustomer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-			this.btnAddCustomer.Name = "btnAddCustomer";
-			this.btnAddCustomer.Size = new System.Drawing.Size(203, 40);
-			this.btnAddCustomer.TabIndex = 48;
-			this.btnAddCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.btnAddCustomer.Click += new System.EventHandler(this.btnAddCustomer_Click);
 			// 
 			// bunifuSeparator1
 			// 
