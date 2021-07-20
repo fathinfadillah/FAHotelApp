@@ -67,7 +67,7 @@ namespace FAHotelApp.Forms
 
 			if (txtUsername.Text == "" || txtPassword.Text == "")
 			{
-				MessageBox.Show("Mohon masukkan nama pengguna dan kata sandi Anda terlebih dahulu!");
+				MessageBox.Show("Mohon masukkan nama pengguna dan kata sandi Anda terlebih dahulu!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 			}
 			else
 			{

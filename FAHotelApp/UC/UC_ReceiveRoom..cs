@@ -175,10 +175,18 @@ namespace FAHotelApp.UC
 		}
 		private void btnDetails_Click(object sender, EventArgs e)
 		{
-			FormReceiveRoomDetails f = new FormReceiveRoomDetails((int)dataGridViewReceiveRoom.SelectedRows[0].Cells[0].Value);
-			f.ShowDialog();
-			Show();
-			LoadReceiveRoomInfo();
+			if (dataGridViewReceiveRoom.Rows.Count == 0)
+			{
+				MessageBox.Show("Belum ada check-in untuk hari ini.\nSilahkan membuat check-in kamar terlebih dahulu!", "Pemberitahuan", MessageBoxButtons.OK, MessageBoxIcon.Information);
+				return;
+			}
+			else
+			{
+				FormReceiveRoomDetails f = new FormReceiveRoomDetails((int)dataGridViewReceiveRoom.SelectedRows[0].Cells[0].Value);
+				f.ShowDialog();
+				Show();
+				LoadReceiveRoomInfo();
+			}
 		}
 	}
 }

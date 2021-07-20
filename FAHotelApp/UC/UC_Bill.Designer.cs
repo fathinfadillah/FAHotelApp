@@ -29,22 +29,13 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Bill));
 			this.SaveBill = new System.Windows.Forms.SaveFileDialog();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
 			this.dataGridViewBill = new System.Windows.Forms.DataGridView();
-			this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.colIdReciveRoom = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.colCustomerName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.colStaffsetUp = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.coldDateOfCreate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.colStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.colPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.bindingBill = new System.Windows.Forms.BindingNavigator(this.components);
 			this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
 			this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -83,6 +74,15 @@
 			this.txbPrice = new Bunifu.Framework.UI.BunifuMetroTextbox();
 			this.label13 = new System.Windows.Forms.Label();
 			this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
+			this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.colIdReciveRoom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.colCustomerName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.colStaffsetUp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.coldDateOfCreate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.colStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.colPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.groupBox1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridViewBill)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.bindingBill)).BeginInit();
@@ -117,14 +117,14 @@
 			this.dataGridViewBill.AllowUserToResizeRows = false;
 			this.dataGridViewBill.BackgroundColor = System.Drawing.Color.White;
 			this.dataGridViewBill.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 12F);
-			dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dataGridViewBill.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+			dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F);
+			dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dataGridViewBill.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
 			this.dataGridViewBill.ColumnHeadersHeight = 29;
 			this.dataGridViewBill.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
 			this.dataGridViewBill.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -137,27 +137,27 @@
             this.colPrice,
             this.Column1,
             this.Column2});
-			dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
-			dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 12F);
-			dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.dataGridViewBill.DefaultCellStyle = dataGridViewCellStyle11;
+			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+			dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F);
+			dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.dataGridViewBill.DefaultCellStyle = dataGridViewCellStyle2;
 			this.dataGridViewBill.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.dataGridViewBill.GridColor = System.Drawing.Color.White;
 			this.dataGridViewBill.Location = new System.Drawing.Point(3, 68);
 			this.dataGridViewBill.Name = "dataGridViewBill";
 			this.dataGridViewBill.ReadOnly = true;
-			dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 12F);
-			dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dataGridViewBill.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+			dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F);
+			dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dataGridViewBill.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
 			this.dataGridViewBill.RowHeadersVisible = false;
 			this.dataGridViewBill.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
 			this.dataGridViewBill.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F);
@@ -165,89 +165,6 @@
 			this.dataGridViewBill.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
 			this.dataGridViewBill.Size = new System.Drawing.Size(885, 583);
 			this.dataGridViewBill.TabIndex = 30;
-			// 
-			// colID
-			// 
-			this.colID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-			this.colID.DataPropertyName = "id";
-			this.colID.FillWeight = 30F;
-			this.colID.HeaderText = "Kode Tagihan";
-			this.colID.Name = "colID";
-			this.colID.ReadOnly = true;
-			this.colID.Width = 127;
-			// 
-			// colIdReciveRoom
-			// 
-			this.colIdReciveRoom.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-			this.colIdReciveRoom.DataPropertyName = "roomName";
-			this.colIdReciveRoom.FillWeight = 30F;
-			this.colIdReciveRoom.HeaderText = "Nama Kamar";
-			this.colIdReciveRoom.Name = "colIdReciveRoom";
-			this.colIdReciveRoom.ReadOnly = true;
-			this.colIdReciveRoom.Width = 126;
-			// 
-			// colCustomerName
-			// 
-			this.colCustomerName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-			this.colCustomerName.DataPropertyName = "customername";
-			this.colCustomerName.HeaderText = "Nama Customer";
-			this.colCustomerName.Name = "colCustomerName";
-			this.colCustomerName.ReadOnly = true;
-			this.colCustomerName.Width = 149;
-			// 
-			// colStaffsetUp
-			// 
-			this.colStaffsetUp.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-			this.colStaffsetUp.DataPropertyName = "StaffSetUp";
-			this.colStaffsetUp.FillWeight = 30F;
-			this.colStaffsetUp.HeaderText = "Tanggal Dibuat";
-			this.colStaffsetUp.Name = "colStaffsetUp";
-			this.colStaffsetUp.ReadOnly = true;
-			this.colStaffsetUp.Visible = false;
-			this.colStaffsetUp.Width = 138;
-			// 
-			// coldDateOfCreate
-			// 
-			this.coldDateOfCreate.DataPropertyName = "DateOfCreate";
-			this.coldDateOfCreate.FillWeight = 30F;
-			this.coldDateOfCreate.HeaderText = "Status";
-			this.coldDateOfCreate.Name = "coldDateOfCreate";
-			this.coldDateOfCreate.ReadOnly = true;
-			// 
-			// colStatus
-			// 
-			this.colStatus.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-			this.colStatus.DataPropertyName = "name";
-			this.colStatus.HeaderText = "Status";
-			this.colStatus.Name = "colStatus";
-			this.colStatus.ReadOnly = true;
-			this.colStatus.Width = 77;
-			// 
-			// colPrice
-			// 
-			this.colPrice.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-			this.colPrice.DataPropertyName = "TotalPrice";
-			this.colPrice.FillWeight = 30F;
-			this.colPrice.HeaderText = "Harga Awal";
-			this.colPrice.Name = "colPrice";
-			this.colPrice.ReadOnly = true;
-			this.colPrice.Width = 115;
-			// 
-			// Column1
-			// 
-			this.Column1.DataPropertyName = "discount";
-			this.Column1.HeaderText = "Diskon";
-			this.Column1.Name = "Column1";
-			this.Column1.ReadOnly = true;
-			this.Column1.Width = 80;
-			// 
-			// Column2
-			// 
-			this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-			this.Column2.DataPropertyName = "finalPrice";
-			this.Column2.HeaderText = "Harga Akhir";
-			this.Column2.Name = "Column2";
-			this.Column2.ReadOnly = true;
 			// 
 			// bindingBill
 			// 
@@ -839,6 +756,89 @@
 			this.bunifuSeparator1.Size = new System.Drawing.Size(1341, 15);
 			this.bunifuSeparator1.TabIndex = 54;
 			// 
+			// colID
+			// 
+			this.colID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+			this.colID.DataPropertyName = "id";
+			this.colID.FillWeight = 30F;
+			this.colID.HeaderText = "Kode Tagihan";
+			this.colID.Name = "colID";
+			this.colID.ReadOnly = true;
+			this.colID.Width = 127;
+			// 
+			// colIdReciveRoom
+			// 
+			this.colIdReciveRoom.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+			this.colIdReciveRoom.DataPropertyName = "roomName";
+			this.colIdReciveRoom.FillWeight = 30F;
+			this.colIdReciveRoom.HeaderText = "Nama Kamar";
+			this.colIdReciveRoom.Name = "colIdReciveRoom";
+			this.colIdReciveRoom.ReadOnly = true;
+			this.colIdReciveRoom.Width = 126;
+			// 
+			// colCustomerName
+			// 
+			this.colCustomerName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+			this.colCustomerName.DataPropertyName = "customername";
+			this.colCustomerName.HeaderText = "Nama Customer";
+			this.colCustomerName.Name = "colCustomerName";
+			this.colCustomerName.ReadOnly = true;
+			this.colCustomerName.Width = 149;
+			// 
+			// colStaffsetUp
+			// 
+			this.colStaffsetUp.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+			this.colStaffsetUp.DataPropertyName = "StaffSetUp";
+			this.colStaffsetUp.FillWeight = 30F;
+			this.colStaffsetUp.HeaderText = "Tanggal Dibuat";
+			this.colStaffsetUp.Name = "colStaffsetUp";
+			this.colStaffsetUp.ReadOnly = true;
+			this.colStaffsetUp.Visible = false;
+			this.colStaffsetUp.Width = 138;
+			// 
+			// coldDateOfCreate
+			// 
+			this.coldDateOfCreate.DataPropertyName = "DateOfCreate";
+			this.coldDateOfCreate.FillWeight = 30F;
+			this.coldDateOfCreate.HeaderText = "Tanggal Dibuat";
+			this.coldDateOfCreate.Name = "coldDateOfCreate";
+			this.coldDateOfCreate.ReadOnly = true;
+			// 
+			// colStatus
+			// 
+			this.colStatus.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+			this.colStatus.DataPropertyName = "name";
+			this.colStatus.HeaderText = "Status";
+			this.colStatus.Name = "colStatus";
+			this.colStatus.ReadOnly = true;
+			this.colStatus.Width = 77;
+			// 
+			// colPrice
+			// 
+			this.colPrice.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+			this.colPrice.DataPropertyName = "TotalPrice";
+			this.colPrice.FillWeight = 30F;
+			this.colPrice.HeaderText = "Harga Awal";
+			this.colPrice.Name = "colPrice";
+			this.colPrice.ReadOnly = true;
+			this.colPrice.Width = 115;
+			// 
+			// Column1
+			// 
+			this.Column1.DataPropertyName = "discount";
+			this.Column1.HeaderText = "Diskon";
+			this.Column1.Name = "Column1";
+			this.Column1.ReadOnly = true;
+			this.Column1.Width = 80;
+			// 
+			// Column2
+			// 
+			this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.Column2.DataPropertyName = "finalPrice";
+			this.Column2.HeaderText = "Harga Akhir";
+			this.Column2.Name = "Column2";
+			this.Column2.ReadOnly = true;
+			// 
 			// UC_Bill
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -909,6 +909,7 @@
 		private System.Windows.Forms.Label label13;
 		private System.Windows.Forms.DataGridView dataGridViewBill;
 		private Bunifu.Framework.UI.BunifuThinButton2 btnSendEmail;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
 		private System.Windows.Forms.DataGridViewTextBoxColumn colID;
 		private System.Windows.Forms.DataGridViewTextBoxColumn colIdReciveRoom;
 		private System.Windows.Forms.DataGridViewTextBoxColumn colCustomerName;
@@ -918,6 +919,5 @@
 		private System.Windows.Forms.DataGridViewTextBoxColumn colPrice;
 		private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
 		private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
-    }
+	}
 }

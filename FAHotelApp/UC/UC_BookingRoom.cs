@@ -177,12 +177,20 @@ namespace FAHotelApp.UC
 
 		private void btnDetails_Click(object sender, EventArgs e)
 		{
-			int idBookRoom = (int)dataGridViewBookRoom.SelectedRows[0].Cells[0].Value;
-			string idCard = dataGridViewBookRoom.SelectedRows[0].Cells[2].Value.ToString();
-			FormBookRoomDetails f = new FormBookRoomDetails(idBookRoom, idCard);
-			f.ShowDialog();
-			Show();
-			LoadListBookRoom();
+			if (dataGridViewBookRoom.Rows.Count == 0)
+			{
+				MessageBox.Show("Belum ada pemesan untuk hari ini.\nSilahkan membuat booking kamar terlebih dahulu!", "Pemberitahuan", MessageBoxButtons.OK, MessageBoxIcon.Information);
+				return;
+			}
+			else
+			{
+				int idBookRoom = (int)dataGridViewBookRoom.SelectedRows[0].Cells[0].Value;
+				string idCard = dataGridViewBookRoom.SelectedRows[0].Cells[2].Value.ToString();
+				FormBookRoomDetails f = new FormBookRoomDetails(idBookRoom, idCard);
+				f.ShowDialog();
+				Show();
+				LoadListBookRoom();
+			}
 		}
 
 		private void txbPhoneNumber_KeyPress(object sender, KeyPressEventArgs e)
