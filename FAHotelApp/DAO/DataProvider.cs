@@ -11,8 +11,6 @@ namespace FAHotelApp.DAO
 	class DataProvider
 	{
 		private static DataProvider instance;
-		//private string connectionStr = @"Data Source=DESKTOP-9RPMM7S;Initial Catalog=FAHotel;Persist Security Info=True;User ID=aryobimo;Pwd=bimo123";
-		//private string connectionStr = @"Data Source=localhost;Initial Catalog=FAHotel;Integrated Security=True;User ID=sa;Pwd=123456";
 		private string connectionStr = @"Data Source=localhost;Initial Catalog=FAHotel;Integrated Security=True";
 		public DataTable ExecuteQuery(string query, object[] parameter = null)
 		{

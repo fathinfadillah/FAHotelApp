@@ -29,9 +29,9 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Service));
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
 			this.dataGridViewService = new System.Windows.Forms.DataGridView();
@@ -41,16 +41,6 @@
 			this.col = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.colNameServiceType = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.colIdServiceType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.bindingService = new System.Windows.Forms.BindingNavigator(this.components);
-			this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-			this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-			this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
-			this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
-			this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-			this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-			this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-			this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-			this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
 			this.label1 = new System.Windows.Forms.Label();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
 			this.btnServiceType = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -72,13 +62,23 @@
 			this.btnCancel = new Bunifu.Framework.UI.BunifuThinButton2();
 			this.saveService = new System.Windows.Forms.SaveFileDialog();
 			this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
+			this.bindingService = new System.Windows.Forms.BindingNavigator(this.components);
+			this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+			this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
+			this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
+			this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
+			this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
+			this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+			this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
+			this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
+			this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
 			this.groupBox1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridViewService)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.bindingService)).BeginInit();
-			this.bindingService.SuspendLayout();
 			this.groupBox2.SuspendLayout();
 			this.groupService.SuspendLayout();
 			this.groupBox4.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.bindingService)).BeginInit();
+			this.bindingService.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// groupBox1
@@ -101,14 +101,14 @@
 			this.dataGridViewService.AllowUserToResizeRows = false;
 			this.dataGridViewService.BackgroundColor = System.Drawing.Color.White;
 			this.dataGridViewService.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 12F);
-			dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dataGridViewService.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+			dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 12F);
+			dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dataGridViewService.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
 			this.dataGridViewService.ColumnHeadersHeight = 29;
 			this.dataGridViewService.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
 			this.dataGridViewService.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -118,27 +118,27 @@
             this.col,
             this.colNameServiceType,
             this.colIdServiceType});
-			dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
-			dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 12F);
-			dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.dataGridViewService.DefaultCellStyle = dataGridViewCellStyle8;
+			dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+			dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 12F);
+			dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.dataGridViewService.DefaultCellStyle = dataGridViewCellStyle5;
 			this.dataGridViewService.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.dataGridViewService.GridColor = System.Drawing.Color.White;
 			this.dataGridViewService.Location = new System.Drawing.Point(3, 68);
 			this.dataGridViewService.Name = "dataGridViewService";
 			this.dataGridViewService.ReadOnly = true;
-			dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 12F);
-			dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dataGridViewService.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+			dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 12F);
+			dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dataGridViewService.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
 			this.dataGridViewService.RowHeadersVisible = false;
 			this.dataGridViewService.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
 			this.dataGridViewService.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F);
@@ -202,114 +202,6 @@
 			this.colIdServiceType.Name = "colIdServiceType";
 			this.colIdServiceType.ReadOnly = true;
 			this.colIdServiceType.Visible = false;
-			// 
-			// bindingService
-			// 
-			this.bindingService.AddNewItem = null;
-			this.bindingService.AutoSize = false;
-			this.bindingService.BackColor = System.Drawing.Color.Transparent;
-			this.bindingService.CountItem = this.bindingNavigatorCountItem;
-			this.bindingService.CountItemFormat = "Dari {0}";
-			this.bindingService.DeleteItem = null;
-			this.bindingService.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.bindingService.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-			this.bindingService.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bindingNavigatorMoveFirstItem,
-            this.bindingNavigatorMovePreviousItem,
-            this.bindingNavigatorSeparator,
-            this.bindingNavigatorPositionItem,
-            this.bindingNavigatorCountItem,
-            this.bindingNavigatorSeparator1,
-            this.bindingNavigatorMoveNextItem,
-            this.bindingNavigatorMoveLastItem,
-            this.toolStripLabel1});
-			this.bindingService.Location = new System.Drawing.Point(3, 25);
-			this.bindingService.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-			this.bindingService.MoveLastItem = this.bindingNavigatorMoveLastItem;
-			this.bindingService.MoveNextItem = this.bindingNavigatorMoveNextItem;
-			this.bindingService.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-			this.bindingService.Name = "bindingService";
-			this.bindingService.PositionItem = this.bindingNavigatorPositionItem;
-			this.bindingService.Size = new System.Drawing.Size(725, 43);
-			this.bindingService.TabIndex = 29;
-			this.bindingService.Text = "binding";
-			// 
-			// bindingNavigatorCountItem
-			// 
-			this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-			this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 40);
-			this.bindingNavigatorCountItem.Text = "Dari {0}";
-			this.bindingNavigatorCountItem.ToolTipText = "Tổng số khách hàng";
-			// 
-			// bindingNavigatorMoveFirstItem
-			// 
-			this.bindingNavigatorMoveFirstItem.AutoSize = false;
-			this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-			this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-			this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-			this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(50, 22);
-			this.bindingNavigatorMoveFirstItem.Text = "Move first";
-			this.bindingNavigatorMoveFirstItem.ToolTipText = "Khách hàng đầu tiên";
-			// 
-			// bindingNavigatorMovePreviousItem
-			// 
-			this.bindingNavigatorMovePreviousItem.AutoSize = false;
-			this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-			this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-			this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-			this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(50, 22);
-			this.bindingNavigatorMovePreviousItem.Text = "Move previous";
-			this.bindingNavigatorMovePreviousItem.ToolTipText = "Khách hàng trước đó";
-			// 
-			// bindingNavigatorSeparator
-			// 
-			this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-			this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 43);
-			// 
-			// bindingNavigatorPositionItem
-			// 
-			this.bindingNavigatorPositionItem.AccessibleName = "Position";
-			this.bindingNavigatorPositionItem.AutoSize = false;
-			this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-			this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 25);
-			this.bindingNavigatorPositionItem.Text = "0";
-			this.bindingNavigatorPositionItem.ToolTipText = "Vị trí khách hàng";
-			// 
-			// bindingNavigatorSeparator1
-			// 
-			this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-			this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 43);
-			// 
-			// bindingNavigatorMoveNextItem
-			// 
-			this.bindingNavigatorMoveNextItem.AutoSize = false;
-			this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-			this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-			this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-			this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(50, 22);
-			this.bindingNavigatorMoveNextItem.Text = "Move next";
-			this.bindingNavigatorMoveNextItem.ToolTipText = "Khách hàng kế tiếp";
-			// 
-			// bindingNavigatorMoveLastItem
-			// 
-			this.bindingNavigatorMoveLastItem.AutoSize = false;
-			this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-			this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-			this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-			this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(50, 22);
-			this.bindingNavigatorMoveLastItem.Text = "Move last";
-			this.bindingNavigatorMoveLastItem.ToolTipText = "Daftar Layanan";
-			// 
-			// toolStripLabel1
-			// 
-			this.toolStripLabel1.Name = "toolStripLabel1";
-			this.toolStripLabel1.Size = new System.Drawing.Size(42, 40);
-			this.toolStripLabel1.Text = "Ekspor";
-			this.toolStripLabel1.Click += new System.EventHandler(this.ToolStripLabel1_Click);
 			// 
 			// label1
 			// 
@@ -668,6 +560,115 @@
 			this.bunifuSeparator1.Size = new System.Drawing.Size(1181, 15);
 			this.bunifuSeparator1.TabIndex = 54;
 			// 
+			// bindingService
+			// 
+			this.bindingService.AddNewItem = null;
+			this.bindingService.AutoSize = false;
+			this.bindingService.BackColor = System.Drawing.Color.Transparent;
+			this.bindingService.CountItem = this.bindingNavigatorCountItem;
+			this.bindingService.CountItemFormat = "Dari {0}";
+			this.bindingService.DeleteItem = null;
+			this.bindingService.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.bindingService.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+			this.bindingService.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bindingNavigatorMoveFirstItem,
+            this.bindingNavigatorMovePreviousItem,
+            this.bindingNavigatorSeparator,
+            this.bindingNavigatorPositionItem,
+            this.bindingNavigatorCountItem,
+            this.bindingNavigatorSeparator1,
+            this.bindingNavigatorMoveNextItem,
+            this.bindingNavigatorMoveLastItem,
+            this.toolStripLabel1});
+			this.bindingService.Location = new System.Drawing.Point(3, 25);
+			this.bindingService.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+			this.bindingService.MoveLastItem = this.bindingNavigatorMoveLastItem;
+			this.bindingService.MoveNextItem = this.bindingNavigatorMoveNextItem;
+			this.bindingService.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+			this.bindingService.Name = "bindingService";
+			this.bindingService.PositionItem = this.bindingNavigatorPositionItem;
+			this.bindingService.Size = new System.Drawing.Size(725, 43);
+			this.bindingService.TabIndex = 31;
+			this.bindingService.Text = "binding";
+			// 
+			// bindingNavigatorCountItem
+			// 
+			this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+			this.bindingNavigatorCountItem.Size = new System.Drawing.Size(51, 40);
+			this.bindingNavigatorCountItem.Text = "Dari {0}";
+			this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+			// 
+			// bindingNavigatorMoveFirstItem
+			// 
+			this.bindingNavigatorMoveFirstItem.AutoSize = false;
+			this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
+			this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
+			this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
+			this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(50, 22);
+			this.bindingNavigatorMoveFirstItem.Text = "Move first";
+			this.bindingNavigatorMoveFirstItem.ToolTipText = "Move first";
+			// 
+			// bindingNavigatorMovePreviousItem
+			// 
+			this.bindingNavigatorMovePreviousItem.AutoSize = false;
+			this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
+			this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
+			this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+			this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(50, 22);
+			this.bindingNavigatorMovePreviousItem.Text = "Move previous";
+			this.bindingNavigatorMovePreviousItem.ToolTipText = "Move previous";
+			// 
+			// bindingNavigatorSeparator
+			// 
+			this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
+			this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 43);
+			// 
+			// bindingNavigatorPositionItem
+			// 
+			this.bindingNavigatorPositionItem.AccessibleName = "Position";
+			this.bindingNavigatorPositionItem.AutoSize = false;
+			this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
+			this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 25);
+			this.bindingNavigatorPositionItem.Text = "0";
+			this.bindingNavigatorPositionItem.ToolTipText = "Current position";
+			// 
+			// bindingNavigatorSeparator1
+			// 
+			this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+			this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 43);
+			// 
+			// bindingNavigatorMoveNextItem
+			// 
+			this.bindingNavigatorMoveNextItem.AutoSize = false;
+			this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
+			this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
+			this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
+			this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(50, 22);
+			this.bindingNavigatorMoveNextItem.Text = "Move next";
+			this.bindingNavigatorMoveNextItem.ToolTipText = "Move next";
+			// 
+			// bindingNavigatorMoveLastItem
+			// 
+			this.bindingNavigatorMoveLastItem.AutoSize = false;
+			this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
+			this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
+			this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
+			this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(50, 22);
+			this.bindingNavigatorMoveLastItem.Text = "Move last";
+			this.bindingNavigatorMoveLastItem.ToolTipText = "Move last";
+			// 
+			// toolStripLabel1
+			// 
+			this.toolStripLabel1.Name = "toolStripLabel1";
+			this.toolStripLabel1.Size = new System.Drawing.Size(48, 40);
+			this.toolStripLabel1.Text = "Ekspor";
+			this.toolStripLabel1.ToolTipText = "Export";
+			this.toolStripLabel1.Click += new System.EventHandler(this.ToolStripLabel1_Click);
+			// 
 			// UC_Service
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -684,14 +685,14 @@
 			this.Size = new System.Drawing.Size(1227, 612);
 			this.groupBox1.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.dataGridViewService)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.bindingService)).EndInit();
-			this.bindingService.ResumeLayout(false);
-			this.bindingService.PerformLayout();
 			this.groupBox2.ResumeLayout(false);
 			this.groupService.ResumeLayout(false);
 			this.groupService.PerformLayout();
 			this.groupBox4.ResumeLayout(false);
 			this.groupBox4.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.bindingService)).EndInit();
+			this.bindingService.ResumeLayout(false);
+			this.bindingService.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -699,15 +700,6 @@
 
 		#endregion
 		private System.Windows.Forms.GroupBox groupBox1;
-		private System.Windows.Forms.BindingNavigator bindingService;
-		private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
-		private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
-		private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
-		private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
-		private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
-		private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
-		private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
-		private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
 		private Bunifu.UI.WinForms.BunifuSeparator bunifuSeparator1;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.DataGridView dataGridViewService;
@@ -736,6 +728,15 @@
 		private Bunifu.Framework.UI.BunifuThinButton2 btnInsert;
 		private Bunifu.Framework.UI.BunifuThinButton2 btnUpdate;
 		private System.Windows.Forms.SaveFileDialog saveService;
+		private System.Windows.Forms.BindingNavigator bindingService;
+		private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
+		private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
+		private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
+		private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
+		private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
+		private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
+		private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
+		private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
 		private System.Windows.Forms.ToolStripLabel toolStripLabel1;
 	}
 }

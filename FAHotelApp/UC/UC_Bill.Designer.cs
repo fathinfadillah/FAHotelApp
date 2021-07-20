@@ -29,9 +29,9 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Bill));
 			this.SaveBill = new System.Windows.Forms.SaveFileDialog();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -117,14 +117,14 @@
 			this.dataGridViewBill.AllowUserToResizeRows = false;
 			this.dataGridViewBill.BackgroundColor = System.Drawing.Color.White;
 			this.dataGridViewBill.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F);
-			dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dataGridViewBill.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+			dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 12F);
+			dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dataGridViewBill.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
 			this.dataGridViewBill.ColumnHeadersHeight = 29;
 			this.dataGridViewBill.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
 			this.dataGridViewBill.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -137,27 +137,27 @@
             this.colPrice,
             this.Column1,
             this.Column2});
-			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-			dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F);
-			dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.dataGridViewBill.DefaultCellStyle = dataGridViewCellStyle2;
+			dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
+			dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 12F);
+			dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.dataGridViewBill.DefaultCellStyle = dataGridViewCellStyle8;
 			this.dataGridViewBill.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.dataGridViewBill.GridColor = System.Drawing.Color.White;
 			this.dataGridViewBill.Location = new System.Drawing.Point(3, 68);
 			this.dataGridViewBill.Name = "dataGridViewBill";
 			this.dataGridViewBill.ReadOnly = true;
-			dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F);
-			dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dataGridViewBill.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+			dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 12F);
+			dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dataGridViewBill.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
 			this.dataGridViewBill.RowHeadersVisible = false;
 			this.dataGridViewBill.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
 			this.dataGridViewBill.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F);
@@ -285,7 +285,7 @@
 			this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
 			this.bindingNavigatorCountItem.Size = new System.Drawing.Size(51, 40);
 			this.bindingNavigatorCountItem.Text = "Dari {0}";
-			this.bindingNavigatorCountItem.ToolTipText = "Tổng số khách hàng";
+			this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
 			// 
 			// bindingNavigatorMoveFirstItem
 			// 
@@ -296,7 +296,7 @@
 			this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
 			this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(50, 22);
 			this.bindingNavigatorMoveFirstItem.Text = "Move first";
-			this.bindingNavigatorMoveFirstItem.ToolTipText = "Khách hàng đầu tiên";
+			this.bindingNavigatorMoveFirstItem.ToolTipText = "Move first";
 			// 
 			// bindingNavigatorMovePreviousItem
 			// 
@@ -307,7 +307,7 @@
 			this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
 			this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(50, 22);
 			this.bindingNavigatorMovePreviousItem.Text = "Move previous";
-			this.bindingNavigatorMovePreviousItem.ToolTipText = "Khách hàng trước đó";
+			this.bindingNavigatorMovePreviousItem.ToolTipText = "Move previous";
 			// 
 			// bindingNavigatorSeparator
 			// 
@@ -321,7 +321,7 @@
 			this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
 			this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 25);
 			this.bindingNavigatorPositionItem.Text = "0";
-			this.bindingNavigatorPositionItem.ToolTipText = "Vị trí khách hàng";
+			this.bindingNavigatorPositionItem.ToolTipText = "Current position";
 			// 
 			// bindingNavigatorSeparator1
 			// 
@@ -337,7 +337,7 @@
 			this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
 			this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(50, 22);
 			this.bindingNavigatorMoveNextItem.Text = "Move next";
-			this.bindingNavigatorMoveNextItem.ToolTipText = "Khách hàng kế tiếp";
+			this.bindingNavigatorMoveNextItem.ToolTipText = "Move next";
 			// 
 			// bindingNavigatorMoveLastItem
 			// 
@@ -348,13 +348,14 @@
 			this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
 			this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(50, 22);
 			this.bindingNavigatorMoveLastItem.Text = "Move last";
-			this.bindingNavigatorMoveLastItem.ToolTipText = "Khách hàng cuối cùng";
+			this.bindingNavigatorMoveLastItem.ToolTipText = "Move last";
 			// 
 			// toolStripLabel1
 			// 
 			this.toolStripLabel1.Name = "toolStripLabel1";
 			this.toolStripLabel1.Size = new System.Drawing.Size(48, 40);
 			this.toolStripLabel1.Text = "Ekspor";
+			this.toolStripLabel1.ToolTipText = "Export";
 			this.toolStripLabel1.Click += new System.EventHandler(this.ToolStripLabel1_Click);
 			// 
 			// label1

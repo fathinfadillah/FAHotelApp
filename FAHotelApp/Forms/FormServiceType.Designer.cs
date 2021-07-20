@@ -129,9 +129,9 @@
 			// txtSearch
 			// 
 			this.txtSearch.BackColor = System.Drawing.Color.White;
-			this.txtSearch.BorderColorFocused = System.Drawing.Color.SeaGreen;
-			this.txtSearch.BorderColorIdle = System.Drawing.Color.SeaGreen;
-			this.txtSearch.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+			this.txtSearch.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.txtSearch.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
+			this.txtSearch.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
 			this.txtSearch.BorderThickness = 1;
 			this.txtSearch.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
 			this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -281,7 +281,7 @@
 			dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
 			dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F);
 			dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
-			dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SeaGreen;
+			dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
 			dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
 			dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
 			this.dataGridViewServiceType.DefaultCellStyle = dataGridViewCellStyle2;
@@ -431,7 +431,7 @@
 			this.btnCancel.ButtonText = "Batalkan Pencarian";
 			this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnCancel.ForeColor = System.Drawing.Color.SeaGreen;
+			this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(90)))), ((int)(((byte)(219)))));
 			this.btnCancel.IdleBorderThickness = 1;
 			this.btnCancel.IdleCornerRadius = 20;
 			this.btnCancel.IdleFillColor = System.Drawing.Color.White;

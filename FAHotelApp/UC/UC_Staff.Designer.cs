@@ -711,6 +711,7 @@
 			this.toolStripLabel1.Name = "toolStripLabel1";
 			this.toolStripLabel1.Size = new System.Drawing.Size(48, 40);
 			this.toolStripLabel1.Text = "Ekspor";
+			this.toolStripLabel1.ToolTipText = "Export";
 			this.toolStripLabel1.Click += new System.EventHandler(this.ToolStripLabel1_Click);
 			// 
 			// bunifuSeparator1

@@ -73,7 +73,6 @@ namespace FAHotelApp.UC
 		}
 		private void BtnServiceType_Click(object sender, EventArgs e)
 		{
-			this.Hide();
 			_FormServiceType.ShowDialog();
 			this.LoadFullService(GetFullService());
 			cbServiceType.DataSource = _FormServiceType.TableSerViceType;
