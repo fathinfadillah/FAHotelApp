@@ -57,19 +57,20 @@ namespace FAHotelApp.Forms
 
 			if (txtUsername.Text == "" || txtPassword.Text == "")
 			{
-				MessageBox.Show("Mohon masukkan username dan password anda terlebih dahulu !");
+				MessageBox.Show("Mohon masukkan nama pengguna dan kata sandi Anda terlebih dahulu!");
 			}
 			else
 			{
 				if (Login())
 				{
+					MessageBox.Show("Login Berhasil\nSelamat Datang " + txtUsername.Text, "Pemberitahuan", MessageBoxButtons.OK, MessageBoxIcon.Information);
 					this.Hide();
 					FormMenu f = new FormMenu(txtUsername.Text);
 					f.ShowDialog();
 				}
 				else
 				{
-					MessageBox.Show("Username tidak ada atau Password salah.\nSilahkan masuk kembali !", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+					MessageBox.Show("Nama pengguna tidak ada atau Kata Sandi salah.\nSilahkan login kembali!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				}
 			}
 

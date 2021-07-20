@@ -298,6 +298,26 @@ namespace FAHotelApp.UC
 			this.Show();
 		}
 
+		private void btnReportPendapatan_Click(object sender, EventArgs e)
+		{
+			FormIncome f = new FormIncome();
+			f.ShowDialog();
+			this.Show();
+		}
+		private void btnReportTagihan_Click(object sender, EventArgs e)
+		{
+			FormBill f = new FormBill();
+			f.ShowDialog();
+			this.Show();
+		}
+		private void bunifuThinButton21_Click(object sender, EventArgs e)
+		{
+			FormRooms f = new FormRooms();
+			f.ShowDialog();
+			this.Show();
+		}
 		#endregion
+
+
 	}
 }

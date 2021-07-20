@@ -396,5 +396,10 @@ namespace FAHotelApp.Forms
 				listViewUseService.Items.Clear();
 			}
 		}
+
+		private void btnBack_Click(object sender, EventArgs e)
+		{
+			Close();
+		}
 	}
 }

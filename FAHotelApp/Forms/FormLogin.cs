@@ -67,7 +67,7 @@ namespace FAHotelApp.Forms
 
 			if (txtUsername.Text == "" || txtPassword.Text == "")
 			{
-				MessageBox.Show("Silakan masukkan nama pengguna, kata sandi, dan departement Anda terlebih dahulu!");
+				MessageBox.Show("Mohon masukkan nama pengguna dan kata sandi Anda terlebih dahulu!");
 			}
 			else
 			{
@@ -80,7 +80,7 @@ namespace FAHotelApp.Forms
 				}
 				else
 				{
-					MessageBox.Show("Nama pengguna tidak ada, Kata Sandi salah atau Departement salah.\nSilahkan login kembali!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+					MessageBox.Show("Nama pengguna tidak ada atau Kata Sandi salah.\nSilahkan login kembali!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				}
 			}
 

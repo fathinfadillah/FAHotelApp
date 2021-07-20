@@ -94,6 +94,7 @@
 			this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
 			this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
 			this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
+			this.btnBack = new Bunifu.Framework.UI.BunifuThinButton2();
 			this.groupBox2.SuspendLayout();
 			this.groupBillRoom.SuspendLayout();
 			this.groupBoxBill.SuspendLayout();
@@ -369,6 +370,7 @@
 			// 
 			// groupBox5
 			// 
+			this.groupBox5.Controls.Add(this.btnBack);
 			this.groupBox5.Controls.Add(this.btnAddCustomer);
 			this.groupBox5.Controls.Add(this.numericUpDown1);
 			this.groupBox5.Controls.Add(this.label2);
@@ -830,6 +832,32 @@
 			this.bunifuSeparator1.Size = new System.Drawing.Size(1243, 15);
 			this.bunifuSeparator1.TabIndex = 62;
 			// 
+			// btnBack
+			// 
+			this.btnBack.ActiveBorderThickness = 1;
+			this.btnBack.ActiveCornerRadius = 20;
+			this.btnBack.ActiveFillColor = System.Drawing.Color.DarkOrange;
+			this.btnBack.ActiveForecolor = System.Drawing.Color.White;
+			this.btnBack.ActiveLineColor = System.Drawing.Color.DarkOrange;
+			this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
+			this.btnBack.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBack.BackgroundImage")));
+			this.btnBack.ButtonText = "Kembali";
+			this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnBack.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnBack.ForeColor = System.Drawing.Color.DarkOrange;
+			this.btnBack.IdleBorderThickness = 1;
+			this.btnBack.IdleCornerRadius = 20;
+			this.btnBack.IdleFillColor = System.Drawing.Color.White;
+			this.btnBack.IdleForecolor = System.Drawing.Color.DarkOrange;
+			this.btnBack.IdleLineColor = System.Drawing.Color.DarkOrange;
+			this.btnBack.Location = new System.Drawing.Point(17, 197);
+			this.btnBack.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.btnBack.Name = "btnBack";
+			this.btnBack.Size = new System.Drawing.Size(203, 40);
+			this.btnBack.TabIndex = 65;
+			this.btnBack.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+			// 
 			// FormUseService
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -933,5 +961,6 @@
 		private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
 		private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
 		private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
+		private Bunifu.Framework.UI.BunifuThinButton2 btnBack;
 	}
 }
