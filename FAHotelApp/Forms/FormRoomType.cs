@@ -152,7 +152,13 @@ namespace FAHotelApp.Forms
 				roomType.Id = int.Parse(cbID.Text);
 
 			roomType.Name = txtName.Text;
-			roomType.Price = int.Parse(StringToInt(txtPrice.Text));
+			string s = txtPrice.Text;
+			int i;
+			if (Int32.TryParse(s, NumberStyles.AllowThousands, CultureInfo.InvariantCulture, out i))
+			{
+				roomType.Price = i;
+			}
+			//roomType.Price = Int32.Parse(txtPrice.Text, NumberStyles.AllowThousands);
 			roomType.LimitPerson = int.Parse(txtLimitPerson.Text);
 			return roomType;
 		}
@@ -167,29 +173,6 @@ namespace FAHotelApp.Forms
 		#endregion
 
 		#region Method
-		//private void InsertRoomType()
-		//{
-		//    if (fCustomer.CheckFillInText(new Control[] { txtName, txtPrice, txtLimitPerson }))
-		//    {
-		//        try
-		//        {
-		//            RoomType roomTypeNow = GetRoomTypeNow();
-		//            if (RoomTypeDAO.Instance.InsertRoomType(roomTypeNow))
-		//            {
-		//                MessageBox.Show( "Thêm Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-		//                this.LoadFullRoomType();
-		//            }
-		//            else
-		//                MessageBox.Show( "Loại phòng này đã tồn tại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-		//        }
-		//        catch
-		//        {
-		//            MessageBox.Show( "Lỗi loại phòng này đã tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-		//        }
-		//    }
-		//    else
-		//        MessageBox.Show( "Không được để trống", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-		//}
 		private void UpdateRoomType()
 		{
 			if (cbID.Text == string.Empty)
@@ -358,11 +341,12 @@ namespace FAHotelApp.Forms
 		}
 		private void TxtPrice_Leave(object sender, EventArgs e)
 		{
-			int value;
-			if (int.TryParse(txtPrice.Text, out value))
-				txtPrice.Text = string.Format("{0:n}", int.Parse(txtPrice.Text));
-			else
-				txtPrice.Text = String.Empty;
+			if(!string.IsNullOrEmpty(txtPrice.Text))
+			{
+				System.Globalization.CultureInfo culture = new System.Globalization.CultureInfo("en-US");
+				int valueBefore = Int32.Parse(txtPrice.Text, System.Globalization.NumberStyles.AllowThousands);
+				txtPrice.Text = String.Format(culture, "{0:N0}", valueBefore);
+			}
 		}
 		#endregion
 

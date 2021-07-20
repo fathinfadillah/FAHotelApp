@@ -21,7 +21,7 @@ namespace FAHotelApp.Forms
 		{
 			InitializeComponent();
 			LoadFullServiceType();
-			txtPrice.Text = IntToString("100000");
+			txtPrice.Text = "100,000";
 		}
 
 		private void LoadFullServiceType()
@@ -42,7 +42,12 @@ namespace FAHotelApp.Forms
 			Service service = new Service();
 			txtName.Text = txtName.Text.Trim();
 			service.Name = txtName.Text;
-			service.Price = int.Parse(StringToInt(txtPrice.Text));
+			string s = txtPrice.Text;
+			int i;
+			if (Int32.TryParse(s, NumberStyles.AllowThousands, CultureInfo.InvariantCulture, out i))
+			{
+				service.Price = i;
+			}
 			int index = cbServiceType.SelectedIndex;
 			service.IdServiceType = (int)((DataTable)cbServiceType.DataSource).Rows[index]["id"];
 			return service;
@@ -89,10 +94,12 @@ namespace FAHotelApp.Forms
 
 		private void txtPrice_Leave(object sender, EventArgs e)
 		{
-			if (txtPrice.Text == string.Empty)
-				txtPrice.Text = txtPrice.Tag as string;
-			else
-				txtPrice.Text = IntToString(txtPrice.Text);
+			if (!string.IsNullOrEmpty(txtPrice.Text))
+			{
+				System.Globalization.CultureInfo culture = new System.Globalization.CultureInfo("en-US");
+				int valueBefore = Int32.Parse(txtPrice.Text, System.Globalization.NumberStyles.AllowThousands);
+				txtPrice.Text = String.Format(culture, "{0:N0}", valueBefore);
+			}
 		}
 		private void txtPrice_Enter(object sender, EventArgs e)
 		{
@@ -113,7 +120,7 @@ namespace FAHotelApp.Forms
 				{
 					MessageBox.Show("Tambah Pelayanan Berhasil", "Pemberitahuan", MessageBoxButtons.OK, MessageBoxIcon.Information);
 					txtName.Text = string.Empty;
-					txtPrice.Text = IntToString("100000");
+					txtPrice.Text = "100,000";
 				}
 				else
 					MessageBox.Show("Layanan Sudah Ada", "Error", MessageBoxButtons.OK, MessageBoxIcon.Stop);
