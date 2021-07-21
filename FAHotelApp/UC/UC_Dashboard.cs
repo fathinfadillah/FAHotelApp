@@ -189,8 +189,8 @@ namespace FAHotelApp.UC
 
 				while (rdr.Read())
 				{
-					//decimal money = decimal.Parse(lbPendapatan.Text = rdr["TotalIncome"].ToString());
-					//lbPendapatan.Text = money.ToString("c", CultureInfo.CreateSpecificCulture("id-ID"));
+					decimal money = decimal.Parse(lbPendapatan.Text = rdr["TotalIncome"].ToString());
+					lbPendapatan.Text = money.ToString("c", CultureInfo.CreateSpecificCulture("id-ID"));
 				}
 				rdr.Close();
 				connection.Close();

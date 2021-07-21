@@ -11,7 +11,8 @@ namespace FAHotelApp.DAO
 	class DataProvider
 	{
 		private static DataProvider instance;
-		private string connectionStr = @"Data Source=localhost;Initial Catalog=FAHotel;Integrated Security=True";
+		//revisi (manage config (mengambil data diapp config)) buat 1 connection string saja
+		private string connectionStr = Properties.Settings.Default.FAHotelConnectionString;
 		public DataTable ExecuteQuery(string query, object[] parameter = null)
 		{
 			DataTable data = new DataTable();

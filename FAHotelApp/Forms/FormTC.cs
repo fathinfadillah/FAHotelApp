@@ -22,11 +22,11 @@ namespace FAHotelApp.Forms
 
 		private void FormTC_Load(object sender, EventArgs e)
 		{
-			// temporary file path - your temp file = Terms-and-Conditions-FAHotel.pdf
-			var strTempFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Terms-and-Conditions-FAHotel.pdf");
-
 			try
 			{
+				// temporary file path - your temp file = Terms-and-Conditions-FAHotel.pdf
+				var strTempFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Terms-and-Conditions-FAHotel.pdf");
+
 				// ResourceName = the resource you want to play
 				File.WriteAllBytes(strTempFile, Properties.Resources.Terms_and_Conditions_FAHotel);
 				axAcroPDF1.src = strTempFile;

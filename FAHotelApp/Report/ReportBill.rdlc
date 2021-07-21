@@ -603,6 +603,7 @@
                               <Value>=Fields!RoomPrice.Value</Value>
                               <Style>
                                 <FontWeight>Normal</FontWeight>
+                                <Format>'Rp'#,0.00;('Rp'#,0.00)</Format>
                                 <Color>#333333</Color>
                               </Style>
                             </TextRun>
@@ -622,6 +623,7 @@
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
+                        <rd:FormatSymbolCulture>en-ID</rd:FormatSymbolCulture>
                       </Style>
                     </Textbox>
                   </CellContents>
@@ -638,6 +640,7 @@
                               <Value>=Fields!ServicePrice.Value</Value>
                               <Style>
                                 <FontWeight>Normal</FontWeight>
+                                <Format>'Rp'#,0.00;('Rp'#,0.00)</Format>
                                 <Color>#333333</Color>
                               </Style>
                             </TextRun>
@@ -657,6 +660,7 @@
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
+                        <rd:FormatSymbolCulture>en-ID</rd:FormatSymbolCulture>
                       </Style>
                     </Textbox>
                   </CellContents>
@@ -673,6 +677,7 @@
                               <Value>=Fields!TotalPrice.Value</Value>
                               <Style>
                                 <FontWeight>Normal</FontWeight>
+                                <Format>'Rp'#,0.00;('Rp'#,0.00)</Format>
                                 <Color>#333333</Color>
                               </Style>
                             </TextRun>
@@ -692,6 +697,7 @@
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
+                        <rd:FormatSymbolCulture>en-ID</rd:FormatSymbolCulture>
                       </Style>
                     </Textbox>
                   </CellContents>
@@ -776,6 +782,7 @@
                               <Value>=Fields!Surcharge.Value</Value>
                               <Style>
                                 <FontWeight>Normal</FontWeight>
+                                <Format>#,0.00;(#,0.00)</Format>
                                 <Color>#333333</Color>
                               </Style>
                             </TextRun>
@@ -797,6 +804,7 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>
@@ -831,7 +839,7 @@
         <Top>1.74625cm</Top>
         <Left>1.98438cm</Left>
         <Height>1.2cm</Height>
-        <Width>28.04271cm</Width>
+        <Width>28.04272cm</Width>
         <Style>
           <Border>
             <Style>None</Style>

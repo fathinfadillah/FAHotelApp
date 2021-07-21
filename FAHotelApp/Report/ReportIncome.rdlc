@@ -229,6 +229,7 @@
                               <Value>=Fields!value.Value</Value>
                               <Style>
                                 <FontWeight>Normal</FontWeight>
+                                <Format>'Rp'#,0.00;('Rp'#,0.00)</Format>
                                 <Color>#333333</Color>
                               </Style>
                             </TextRun>
@@ -248,6 +249,7 @@
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
+                        <rd:FormatSymbolCulture>en-ID</rd:FormatSymbolCulture>
                       </Style>
                     </Textbox>
                   </CellContents>
@@ -337,6 +339,7 @@
                               <Value>=Sum(Fields!value.Value)</Value>
                               <Style>
                                 <FontWeight>Normal</FontWeight>
+                                <Format>'Rp'#,0.00;('Rp'#,0.00)</Format>
                                 <Color>#333333</Color>
                               </Style>
                             </TextRun>
@@ -356,8 +359,10 @@
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
+                        <rd:FormatSymbolCulture>en-ID</rd:FormatSymbolCulture>
                       </Style>
                     </Textbox>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>

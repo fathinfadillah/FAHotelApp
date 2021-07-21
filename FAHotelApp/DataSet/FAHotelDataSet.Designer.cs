@@ -1822,7 +1822,7 @@ namespace FAHotelApp.DataSet.FAHotelDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::FAHotelApp.Properties.Settings.Default.FAHotelConnectionString1;
+            this._connection.ConnectionString = global::FAHotelApp.Properties.Settings.Default.FAHotelConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1997,7 +1997,7 @@ namespace FAHotelApp.DataSet.FAHotelDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::FAHotelApp.Properties.Settings.Default.FAHotelConnectionString1;
+            this._connection.ConnectionString = global::FAHotelApp.Properties.Settings.Default.FAHotelConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2174,7 +2174,7 @@ namespace FAHotelApp.DataSet.FAHotelDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::FAHotelApp.Properties.Settings.Default.FAHotelConnectionString1;
+            this._connection.ConnectionString = global::FAHotelApp.Properties.Settings.Default.FAHotelConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
