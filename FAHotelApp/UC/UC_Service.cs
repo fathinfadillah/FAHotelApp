@@ -332,6 +332,15 @@ namespace FAHotelApp.UC
 			if (txtName.Text == string.Empty)
 				txtName.Text = txtName.Tag as string;
 		}
+		private void txtPrice_Leave(object sender, EventArgs e)
+		{
+			if (!string.IsNullOrEmpty(txtPrice.Text))
+			{
+				System.Globalization.CultureInfo culture = new System.Globalization.CultureInfo("en-US");
+				int valueBefore = Int32.Parse(txtPrice.Text, System.Globalization.NumberStyles.AllowThousands);
+				txtPrice.Text = String.Format(culture, "{0:N0}", valueBefore);
+			}
+		}
 		#endregion
 
 		#region Close
@@ -340,6 +349,5 @@ namespace FAHotelApp.UC
 			BtnCancel_Click(sender, null);
 		}
 		#endregion
-
 	}
 }

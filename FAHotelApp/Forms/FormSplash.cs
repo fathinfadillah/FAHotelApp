@@ -20,7 +20,6 @@ namespace FAHotelApp.Forms
 
 		private void Form2_Load(object sender, EventArgs e)
 		{
-			lbUser.Text = Properties.Settings.Default.UsernameView;
 			this.Opacity = 0.0;
 			timer1.Start();
 		}

@@ -98,45 +98,45 @@ namespace FAHotelApp.Forms
 
 		private void bunifuButton1_Click(object sender, EventArgs e)
 		{
-			if (CheckAccess("ManajerKamar"))
+			if (CheckAccess("KelolaKamar"))
 			{
-				bunifuPages1.SetPage(ManajerKamar);
+				bunifuPages1.SetPage(KelolaKamar);
 			}
 			else MessageBox.Show("Anda tidak memiliki izin untuk mengakses.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 		}
 
 		private void bunifuButton5_Click(object sender, EventArgs e)
 		{
-			if (CheckAccess("ManajerKaryawan"))
+			if (CheckAccess("KelolaKaryawan"))
 			{
-				bunifuPages1.SetPage(ManajerKaryawan);
+				bunifuPages1.SetPage(KelolaKaryawan);
 			}
 			else MessageBox.Show("Anda tidak memiliki izin untuk mengakses.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 		}
 
 		private void bunifuButton6_Click(object sender, EventArgs e)
 		{
-			if (CheckAccess("ManajerPelanggan"))
+			if (CheckAccess("KelolaPelanggan"))
 			{
-				bunifuPages1.SetPage(ManajerPelanggan);
+				bunifuPages1.SetPage(KelolaPelanggan);
 			}
 			else MessageBox.Show("Anda tidak memiliki izin untuk mengakses.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 		}
 
 		private void bunifuButton7_Click(object sender, EventArgs e)
 		{
-			if (CheckAccess("ManajerTagihan"))
+			if (CheckAccess("KelolaTagihan"))
 			{
-				bunifuPages1.SetPage(ManajerTagihan);
+				bunifuPages1.SetPage(KelolaTagihan);
 			}
 			else MessageBox.Show("Anda tidak memiliki izin untuk mengakses.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 		}
 
 		private void bunifuButton8_Click(object sender, EventArgs e)
 		{
-			if (CheckAccess("ManajerPelayanan"))
+			if (CheckAccess("KelolaPelayanan"))
 			{
-				bunifuPages1.SetPage(ManajerPelayanan);
+				bunifuPages1.SetPage(KelolaPelayanan);
 			}
 			else MessageBox.Show("Anda tidak memiliki izin untuk mengakses.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 		}

@@ -76,15 +76,15 @@
 			this.uC_ReceiveRoom1 = new FAHotelApp.UC.UC_ReceiveRoom();
 			this.LayanandanPembayaran = new System.Windows.Forms.TabPage();
 			this.uC_UseService1 = new FAHotelApp.UC.UC_UseService();
-			this.ManajerKamar = new System.Windows.Forms.TabPage();
+			this.KelolaKamar = new System.Windows.Forms.TabPage();
 			this.uC_Room1 = new FAHotelApp.UC.UC_Room();
-			this.ManajerKaryawan = new System.Windows.Forms.TabPage();
+			this.KelolaKaryawan = new System.Windows.Forms.TabPage();
 			this.uC_Staff1 = new FAHotelApp.UC.UC_Staff();
-			this.ManajerPelanggan = new System.Windows.Forms.TabPage();
+			this.KelolaPelanggan = new System.Windows.Forms.TabPage();
 			this.uC_Customer1 = new FAHotelApp.UC.UC_Customer();
-			this.ManajerTagihan = new System.Windows.Forms.TabPage();
+			this.KelolaTagihan = new System.Windows.Forms.TabPage();
 			this.uC_Bill1 = new FAHotelApp.UC.UC_Bill();
-			this.ManajerPelayanan = new System.Windows.Forms.TabPage();
+			this.KelolaPelayanan = new System.Windows.Forms.TabPage();
 			this.uC_Service1 = new FAHotelApp.UC.UC_Service();
 			this.PeraturanHotel = new System.Windows.Forms.TabPage();
 			this.uC_Parameter1 = new FAHotelApp.UC.UC_Parameter();
@@ -106,11 +106,11 @@
 			this.BookingKamar.SuspendLayout();
 			this.CheckInKamar.SuspendLayout();
 			this.LayanandanPembayaran.SuspendLayout();
-			this.ManajerKamar.SuspendLayout();
-			this.ManajerKaryawan.SuspendLayout();
-			this.ManajerPelanggan.SuspendLayout();
-			this.ManajerTagihan.SuspendLayout();
-			this.ManajerPelayanan.SuspendLayout();
+			this.KelolaKamar.SuspendLayout();
+			this.KelolaKaryawan.SuspendLayout();
+			this.KelolaPelanggan.SuspendLayout();
+			this.KelolaTagihan.SuspendLayout();
+			this.KelolaPelayanan.SuspendLayout();
 			this.PeraturanHotel.SuspendLayout();
 			this.FirstView.SuspendLayout();
 			this.panelHeader.SuspendLayout();
@@ -512,7 +512,7 @@
 			this.bunifuButton8.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
 			this.bunifuButton8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton8.BackgroundImage")));
 			this.bunifuButton8.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-			this.bunifuButton8.ButtonText = "Manajer Pelayanan";
+			this.bunifuButton8.ButtonText = "Kelola Pelayanan";
 			this.bunifuButton8.ButtonTextMarginLeft = 0;
 			this.bunifuButton8.ColorContrastOnClick = 45;
 			this.bunifuButton8.ColorContrastOnHover = 45;
@@ -603,7 +603,7 @@
 			this.bunifuButton7.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
 			this.bunifuButton7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton7.BackgroundImage")));
 			this.bunifuButton7.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-			this.bunifuButton7.ButtonText = "Manajer Tagihan";
+			this.bunifuButton7.ButtonText = "Kelola Tagihan";
 			this.bunifuButton7.ButtonTextMarginLeft = 0;
 			this.bunifuButton7.ColorContrastOnClick = 45;
 			this.bunifuButton7.ColorContrastOnHover = 45;
@@ -694,7 +694,7 @@
 			this.bunifuButton6.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
 			this.bunifuButton6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton6.BackgroundImage")));
 			this.bunifuButton6.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-			this.bunifuButton6.ButtonText = "Manajer Pelanggan";
+			this.bunifuButton6.ButtonText = "Kelola Pelanggan";
 			this.bunifuButton6.ButtonTextMarginLeft = 0;
 			this.bunifuButton6.ColorContrastOnClick = 45;
 			this.bunifuButton6.ColorContrastOnHover = 45;
@@ -785,7 +785,7 @@
 			this.bunifuButton5.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
 			this.bunifuButton5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton5.BackgroundImage")));
 			this.bunifuButton5.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-			this.bunifuButton5.ButtonText = "Manajer Karyawan";
+			this.bunifuButton5.ButtonText = "Kelola Karyawan";
 			this.bunifuButton5.ButtonTextMarginLeft = 0;
 			this.bunifuButton5.ColorContrastOnClick = 45;
 			this.bunifuButton5.ColorContrastOnHover = 45;
@@ -876,7 +876,7 @@
 			this.bunifuButton1.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
 			this.bunifuButton1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton1.BackgroundImage")));
 			this.bunifuButton1.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-			this.bunifuButton1.ButtonText = "Manajer Kamar";
+			this.bunifuButton1.ButtonText = "Kelola Kamar";
 			this.bunifuButton1.ButtonTextMarginLeft = 0;
 			this.bunifuButton1.ColorContrastOnClick = 45;
 			this.bunifuButton1.ColorContrastOnHover = 45;
@@ -1395,11 +1395,11 @@
 			this.bunifuPages1.Controls.Add(this.BookingKamar);
 			this.bunifuPages1.Controls.Add(this.CheckInKamar);
 			this.bunifuPages1.Controls.Add(this.LayanandanPembayaran);
-			this.bunifuPages1.Controls.Add(this.ManajerKamar);
-			this.bunifuPages1.Controls.Add(this.ManajerKaryawan);
-			this.bunifuPages1.Controls.Add(this.ManajerPelanggan);
-			this.bunifuPages1.Controls.Add(this.ManajerTagihan);
-			this.bunifuPages1.Controls.Add(this.ManajerPelayanan);
+			this.bunifuPages1.Controls.Add(this.KelolaKamar);
+			this.bunifuPages1.Controls.Add(this.KelolaKaryawan);
+			this.bunifuPages1.Controls.Add(this.KelolaPelanggan);
+			this.bunifuPages1.Controls.Add(this.KelolaTagihan);
+			this.bunifuPages1.Controls.Add(this.KelolaPelayanan);
 			this.bunifuPages1.Controls.Add(this.PeraturanHotel);
 			this.bunifuPages1.Controls.Add(this.Peraturan);
 			this.bunifuPages1.Controls.Add(this.FirstView);
@@ -1407,10 +1407,10 @@
 			this.bunifuPages1.Location = new System.Drawing.Point(306, 105);
 			this.bunifuPages1.Multiline = true;
 			this.bunifuPages1.Name = "bunifuPages1";
-			this.bunifuPages1.Page = this.FirstView;
-			this.bunifuPages1.PageIndex = 11;
-			this.bunifuPages1.PageName = "FirstView";
-			this.bunifuPages1.PageTitle = "First View";
+			this.bunifuPages1.Page = this.KelolaPelayanan;
+			this.bunifuPages1.PageIndex = 8;
+			this.bunifuPages1.PageName = "KelolaPelayanan";
+			this.bunifuPages1.PageTitle = "Kelola Pelayanan";
 			this.bunifuPages1.SelectedIndex = 0;
 			this.bunifuPages1.Size = new System.Drawing.Size(958, 599);
 			this.bunifuPages1.TabIndex = 3;
@@ -1514,16 +1514,16 @@
 			this.uC_UseService1.Size = new System.Drawing.Size(944, 549);
 			this.uC_UseService1.TabIndex = 0;
 			// 
-			// ManajerKamar
+			// KelolaKamar
 			// 
-			this.ManajerKamar.BackColor = System.Drawing.SystemColors.Control;
-			this.ManajerKamar.Controls.Add(this.uC_Room1);
-			this.ManajerKamar.Location = new System.Drawing.Point(4, 4);
-			this.ManajerKamar.Name = "ManajerKamar";
-			this.ManajerKamar.Padding = new System.Windows.Forms.Padding(3);
-			this.ManajerKamar.Size = new System.Drawing.Size(950, 555);
-			this.ManajerKamar.TabIndex = 4;
-			this.ManajerKamar.Text = "Manajer Kamar";
+			this.KelolaKamar.BackColor = System.Drawing.SystemColors.Control;
+			this.KelolaKamar.Controls.Add(this.uC_Room1);
+			this.KelolaKamar.Location = new System.Drawing.Point(4, 4);
+			this.KelolaKamar.Name = "KelolaKamar";
+			this.KelolaKamar.Padding = new System.Windows.Forms.Padding(3);
+			this.KelolaKamar.Size = new System.Drawing.Size(950, 555);
+			this.KelolaKamar.TabIndex = 4;
+			this.KelolaKamar.Text = "Kelola Kamar";
 			// 
 			// uC_Room1
 			// 
@@ -1535,16 +1535,16 @@
 			this.uC_Room1.Size = new System.Drawing.Size(944, 549);
 			this.uC_Room1.TabIndex = 0;
 			// 
-			// ManajerKaryawan
+			// KelolaKaryawan
 			// 
-			this.ManajerKaryawan.BackColor = System.Drawing.SystemColors.Control;
-			this.ManajerKaryawan.Controls.Add(this.uC_Staff1);
-			this.ManajerKaryawan.Location = new System.Drawing.Point(4, 4);
-			this.ManajerKaryawan.Name = "ManajerKaryawan";
-			this.ManajerKaryawan.Padding = new System.Windows.Forms.Padding(3);
-			this.ManajerKaryawan.Size = new System.Drawing.Size(950, 555);
-			this.ManajerKaryawan.TabIndex = 5;
-			this.ManajerKaryawan.Text = "Manajer Karyawan";
+			this.KelolaKaryawan.BackColor = System.Drawing.SystemColors.Control;
+			this.KelolaKaryawan.Controls.Add(this.uC_Staff1);
+			this.KelolaKaryawan.Location = new System.Drawing.Point(4, 4);
+			this.KelolaKaryawan.Name = "KelolaKaryawan";
+			this.KelolaKaryawan.Padding = new System.Windows.Forms.Padding(3);
+			this.KelolaKaryawan.Size = new System.Drawing.Size(950, 555);
+			this.KelolaKaryawan.TabIndex = 5;
+			this.KelolaKaryawan.Text = "Kelola Karyawan";
 			// 
 			// uC_Staff1
 			// 
@@ -1556,16 +1556,16 @@
 			this.uC_Staff1.Size = new System.Drawing.Size(944, 549);
 			this.uC_Staff1.TabIndex = 0;
 			// 
-			// ManajerPelanggan
+			// KelolaPelanggan
 			// 
-			this.ManajerPelanggan.BackColor = System.Drawing.SystemColors.Control;
-			this.ManajerPelanggan.Controls.Add(this.uC_Customer1);
-			this.ManajerPelanggan.Location = new System.Drawing.Point(4, 4);
-			this.ManajerPelanggan.Name = "ManajerPelanggan";
-			this.ManajerPelanggan.Padding = new System.Windows.Forms.Padding(3);
-			this.ManajerPelanggan.Size = new System.Drawing.Size(950, 555);
-			this.ManajerPelanggan.TabIndex = 6;
-			this.ManajerPelanggan.Text = "Manajer Pelanggan";
+			this.KelolaPelanggan.BackColor = System.Drawing.SystemColors.Control;
+			this.KelolaPelanggan.Controls.Add(this.uC_Customer1);
+			this.KelolaPelanggan.Location = new System.Drawing.Point(4, 4);
+			this.KelolaPelanggan.Name = "KelolaPelanggan";
+			this.KelolaPelanggan.Padding = new System.Windows.Forms.Padding(3);
+			this.KelolaPelanggan.Size = new System.Drawing.Size(950, 555);
+			this.KelolaPelanggan.TabIndex = 6;
+			this.KelolaPelanggan.Text = "Kelola Pelanggan";
 			// 
 			// uC_Customer1
 			// 
@@ -1577,16 +1577,16 @@
 			this.uC_Customer1.Size = new System.Drawing.Size(944, 549);
 			this.uC_Customer1.TabIndex = 0;
 			// 
-			// ManajerTagihan
+			// KelolaTagihan
 			// 
-			this.ManajerTagihan.BackColor = System.Drawing.SystemColors.Control;
-			this.ManajerTagihan.Controls.Add(this.uC_Bill1);
-			this.ManajerTagihan.Location = new System.Drawing.Point(4, 4);
-			this.ManajerTagihan.Name = "ManajerTagihan";
-			this.ManajerTagihan.Padding = new System.Windows.Forms.Padding(3);
-			this.ManajerTagihan.Size = new System.Drawing.Size(950, 555);
-			this.ManajerTagihan.TabIndex = 7;
-			this.ManajerTagihan.Text = "Manajer Tagihan";
+			this.KelolaTagihan.BackColor = System.Drawing.SystemColors.Control;
+			this.KelolaTagihan.Controls.Add(this.uC_Bill1);
+			this.KelolaTagihan.Location = new System.Drawing.Point(4, 4);
+			this.KelolaTagihan.Name = "KelolaTagihan";
+			this.KelolaTagihan.Padding = new System.Windows.Forms.Padding(3);
+			this.KelolaTagihan.Size = new System.Drawing.Size(950, 555);
+			this.KelolaTagihan.TabIndex = 7;
+			this.KelolaTagihan.Text = "Kelola Tagihan";
 			// 
 			// uC_Bill1
 			// 
@@ -1598,16 +1598,16 @@
 			this.uC_Bill1.Size = new System.Drawing.Size(944, 549);
 			this.uC_Bill1.TabIndex = 0;
 			// 
-			// ManajerPelayanan
+			// KelolaPelayanan
 			// 
-			this.ManajerPelayanan.BackColor = System.Drawing.SystemColors.Control;
-			this.ManajerPelayanan.Controls.Add(this.uC_Service1);
-			this.ManajerPelayanan.Location = new System.Drawing.Point(4, 4);
-			this.ManajerPelayanan.Name = "ManajerPelayanan";
-			this.ManajerPelayanan.Padding = new System.Windows.Forms.Padding(3);
-			this.ManajerPelayanan.Size = new System.Drawing.Size(950, 555);
-			this.ManajerPelayanan.TabIndex = 8;
-			this.ManajerPelayanan.Text = "Manajer Pelayanan";
+			this.KelolaPelayanan.BackColor = System.Drawing.SystemColors.Control;
+			this.KelolaPelayanan.Controls.Add(this.uC_Service1);
+			this.KelolaPelayanan.Location = new System.Drawing.Point(4, 4);
+			this.KelolaPelayanan.Name = "KelolaPelayanan";
+			this.KelolaPelayanan.Padding = new System.Windows.Forms.Padding(3);
+			this.KelolaPelayanan.Size = new System.Drawing.Size(950, 555);
+			this.KelolaPelayanan.TabIndex = 8;
+			this.KelolaPelayanan.Text = "Kelola Pelayanan";
 			// 
 			// uC_Service1
 			// 
@@ -1790,11 +1790,11 @@
 			this.BookingKamar.ResumeLayout(false);
 			this.CheckInKamar.ResumeLayout(false);
 			this.LayanandanPembayaran.ResumeLayout(false);
-			this.ManajerKamar.ResumeLayout(false);
-			this.ManajerKaryawan.ResumeLayout(false);
-			this.ManajerPelanggan.ResumeLayout(false);
-			this.ManajerTagihan.ResumeLayout(false);
-			this.ManajerPelayanan.ResumeLayout(false);
+			this.KelolaKamar.ResumeLayout(false);
+			this.KelolaKaryawan.ResumeLayout(false);
+			this.KelolaPelanggan.ResumeLayout(false);
+			this.KelolaTagihan.ResumeLayout(false);
+			this.KelolaPelayanan.ResumeLayout(false);
 			this.PeraturanHotel.ResumeLayout(false);
 			this.FirstView.ResumeLayout(false);
 			this.panelHeader.ResumeLayout(false);
@@ -1821,17 +1821,17 @@
 		private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnBooking;
 		private System.Windows.Forms.TabPage CheckInKamar;
 		private System.Windows.Forms.TabPage LayanandanPembayaran;
-		private System.Windows.Forms.TabPage ManajerKamar;
+		private System.Windows.Forms.TabPage KelolaKamar;
 		private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton9;
 		private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton8;
 		private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton7;
 		private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton6;
 		private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton5;
 		private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton1;
-		private System.Windows.Forms.TabPage ManajerKaryawan;
-		private System.Windows.Forms.TabPage ManajerPelanggan;
-		private System.Windows.Forms.TabPage ManajerTagihan;
-		private System.Windows.Forms.TabPage ManajerPelayanan;
+		private System.Windows.Forms.TabPage KelolaKaryawan;
+		private System.Windows.Forms.TabPage KelolaPelanggan;
+		private System.Windows.Forms.TabPage KelolaTagihan;
+		private System.Windows.Forms.TabPage KelolaPelayanan;
 		private System.Windows.Forms.TabPage PeraturanHotel;
 		private Bunifu.UI.WinForms.BunifuFormDock bunifuFormDock1;
 		private UC.UC_Dashboard uC_Dashboard1;

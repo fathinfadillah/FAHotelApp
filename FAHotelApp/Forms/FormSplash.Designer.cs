@@ -29,6 +29,7 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSplash));
 			this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
 			this.lbUser = new System.Windows.Forms.Label();
 			this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -54,12 +55,13 @@
 			this.lbUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(49)))));
 			this.lbUser.Location = new System.Drawing.Point(390, 156);
 			this.lbUser.Name = "lbUser";
-			this.lbUser.Size = new System.Drawing.Size(141, 66);
+			this.lbUser.Size = new System.Drawing.Size(230, 66);
 			this.lbUser.TabIndex = 13;
-			this.lbUser.Text = "User";
+			this.lbUser.Text = "Loading";
 			// 
 			// guna2PictureBox2
 			// 
+			this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
 			this.guna2PictureBox2.ImageRotate = 0F;
 			this.guna2PictureBox2.Location = new System.Drawing.Point(21, 115);
 			this.guna2PictureBox2.Name = "guna2PictureBox2";
@@ -117,6 +119,7 @@
 			this.Name = "FormSplash";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Form2";
+			this.TopMost = true;
 			this.Load += new System.EventHandler(this.Form2_Load);
 			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();

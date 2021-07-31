@@ -74,7 +74,7 @@ namespace FAHotelApp.Forms
 
 					clientDetails.Send(mailDetails);
 
-					MessageBox.Show("Email Sent!");
+					MessageBox.Show("Email Terkirim!");
 
 					fileName = "";
 				}
@@ -110,7 +110,7 @@ namespace FAHotelApp.Forms
 
 					clientDetails.Send(mailDetails);
 
-					MessageBox.Show("Email Sent!");
+					MessageBox.Show("Email Terkirim!");
 
 					fileName = "";
 				}
@@ -119,7 +119,6 @@ namespace FAHotelApp.Forms
 					MessageBox.Show(ex.Message);
 				}
 			}
-			
 		}
 
 		private void btnBrowse_Click(object sender, EventArgs e)
